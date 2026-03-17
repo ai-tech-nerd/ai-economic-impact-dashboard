@@ -1,0 +1,3728 @@
+[
+  {
+    "id": "ms-001",
+    "company": "openai",
+    "date": "2015-12-11",
+    "type": "company-launch",
+    "name": "OpenAI Announced",
+    "description": "OpenAI publicly launches as a non-profit AI research company with the mission to ensure artificial general intelligence benefits all of humanity.",
+    "category": "company",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://openai.com/index/introducing-openai/",
+        "title": "Introducing OpenAI",
+        "publisher": "OpenAI",
+        "date": "2015-12-11"
+      }
+    ]
+  },
+  {
+    "id": "ms-002",
+    "company": "google",
+    "date": "2016-02-18",
+    "type": "company-launch",
+    "name": "Google Cloud Vision API Public Beta",
+    "description": "Google Cloud Vision API enters public beta, offering image understanding capabilities including label detection, OCR, and logo detection to developers and businesses.",
+    "category": "developer-tools",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://cloud.google.com/blog/products/gcp/google-cloud-vision-api-enters-beta-open-to-all-to-try",
+        "title": "Google Cloud Vision API enters Beta, open to all to try!",
+        "publisher": "Google Cloud Blog",
+        "date": "2016-02-18"
+      }
+    ]
+  },
+  {
+    "id": "ms-003",
+    "company": "openai",
+    "date": "2018-06-01",
+    "type": "model-release",
+    "name": "GPT-1",
+    "description": "OpenAI releases GPT-1, the first Generative Pre-Training model for language understanding, establishing the transformer-based approach that would define the GPT series.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
+        "title": "Improving Language Understanding by Generative Pre-Training",
+        "publisher": "OpenAI",
+        "date": "2018-06-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-004",
+    "company": "singapore",
+    "date": "2019-01-23",
+    "type": "regulation",
+    "name": "Singapore Model AI Governance Framework (1st Edition)",
+    "description": "Singapore releases the first edition of its Model AI Governance Framework, an accountability-based voluntary governance framework for AI.",
+    "category": "regulation",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://www.imda.gov.sg/-/media/imda/files/infocomm-media-landscape/sg-digital/tech-pillars/artificial-intelligence/second-edition-of-the-model-ai-governance-framework.pdf",
+        "title": "Model AI Governance Framework",
+        "publisher": "Singapore IMDA/PDPC",
+        "date": "2019-01-23"
+      }
+    ]
+  },
+  {
+    "id": "ms-005",
+    "company": "openai",
+    "date": "2019-02-14",
+    "type": "model-release",
+    "name": "GPT-2",
+    "description": "OpenAI introduces GPT-2 with a staged release strategy due to concerns about misuse, marking one of the first major discussions about responsible AI release practices.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://openai.com/index/better-language-models/",
+        "title": "Better language models and their implications",
+        "publisher": "OpenAI",
+        "date": "2019-02-14"
+      }
+    ]
+  },
+  {
+    "id": "ms-006",
+    "company": "oecd",
+    "date": "2019-05-22",
+    "type": "regulation",
+    "name": "OECD AI Principles Adopted",
+    "description": "The OECD adopts the first intergovernmental AI principles, establishing soft law guidelines for responsible AI development across member nations.",
+    "category": "regulation",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://oecd.ai/en/ai-principles",
+        "title": "OECD AI Principles overview",
+        "publisher": "OECD",
+        "date": "2019-05-22"
+      }
+    ]
+  },
+  {
+    "id": "ms-188",
+    "company": "openai",
+    "date": "2019-07-22",
+    "type": "partnership",
+    "name": "OpenAI–Microsoft Azure Exclusive Partnership",
+    "description": "Microsoft becomes OpenAI's exclusive cloud provider with a $1B investment, establishing joint Azure AI supercomputing infrastructure.",
+    "category": "cloud",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://news.microsoft.com/source/2019/07/22/openai-forms-exclusive-computing-partnership-with-microsoft-to-build-new-azure-ai-supercomputing-technologies/",
+        "title": "OpenAI forms exclusive computing partnership with Microsoft",
+        "publisher": "Microsoft",
+        "date": "2019-07-22"
+      }
+    ]
+  },
+  {
+    "id": "ms-007",
+    "company": "singapore",
+    "date": "2020-01-21",
+    "type": "regulation",
+    "name": "Singapore Model AI Governance Framework (2nd Edition)",
+    "description": "Singapore releases the updated second edition of its Model AI Governance Framework with expanded guidance and implementation examples.",
+    "category": "regulation",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://www.imda.gov.sg/-/media/imda/files/infocomm-media-landscape/sg-digital/tech-pillars/artificial-intelligence/second-edition-of-the-model-ai-governance-framework.pdf",
+        "title": "Second Edition of the Model AI Governance Framework",
+        "publisher": "Singapore IMDA/PDPC",
+        "date": "2020-01-21"
+      }
+    ]
+  },
+  {
+    "id": "ms-008",
+    "company": "openai",
+    "date": "2020-05-01",
+    "type": "model-release",
+    "name": "GPT-3",
+    "description": "OpenAI releases GPT-3, demonstrating that large language models are powerful few-shot learners. Its 175 billion parameters represented a massive leap in scale and capability.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://openai.com/index/language-models-are-few-shot-learners/",
+        "title": "Language models are few-shot learners",
+        "publisher": "OpenAI",
+        "date": "2020-05-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-009",
+    "company": "openai",
+    "date": "2020-06-11",
+    "type": "company-launch",
+    "name": "OpenAI API Announced",
+    "description": "OpenAI publicly describes its API program, opening access to GPT-3 and establishing the commercial platform that would become central to the AI ecosystem.",
+    "category": "platform",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://openai.com/index/openai-api/",
+        "title": "OpenAI API",
+        "publisher": "OpenAI",
+        "date": "2020-06-11"
+      }
+    ]
+  },
+  {
+    "id": "ms-010",
+    "company": "anthropic",
+    "date": "2021-01-01",
+    "type": "company-launch",
+    "name": "Anthropic Founded",
+    "description": "Anthropic is founded as an AI safety and research company (public benefit corporation), with a mission to build safe and reliable AI systems.",
+    "category": "company",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Anthropic",
+        "title": "Anthropic",
+        "publisher": "Wikipedia",
+        "date": "2021-01-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-011",
+    "company": "openai",
+    "date": "2021-01-05",
+    "type": "model-release",
+    "name": "DALL-E (Original)",
+    "description": "OpenAI introduces DALL-E, an early text-to-image generation model marking a significant milestone in multimodal AI capabilities.",
+    "category": "image",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://openai.com/index/dall-e/",
+        "title": "DALL-E",
+        "publisher": "OpenAI",
+        "date": "2021-01-05"
+      }
+    ]
+  },
+  {
+    "id": "ms-012",
+    "company": "eu",
+    "date": "2021-04-21",
+    "type": "regulation",
+    "name": "EU AI Act Proposed",
+    "description": "The European Commission proposes the EU Artificial Intelligence Act, a risk-based regulatory framework that would become the world's first comprehensive AI law.",
+    "category": "regulation",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.europarl.europa.eu/legislative-train/theme-a-europe-fit-for-the-digital-age/file-regulation-on-artificial-intelligence",
+        "title": "Legislative Train: Artificial intelligence act",
+        "publisher": "European Parliament",
+        "date": "2021-04-21"
+      }
+    ]
+  },
+  {
+    "id": "ms-013",
+    "company": "google",
+    "date": "2021-05-18",
+    "type": "company-launch",
+    "name": "Vertex AI Generally Available",
+    "description": "Google Cloud launches Vertex AI, a unified ML platform for building, training, and deploying machine learning models including AutoML and MLOps tooling.",
+    "category": "platform",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://www.googlecloudpresscorner.com/2021-05-18-Google-Cloud-Launches-Vertex-AI%2C-Making-Machine-Learning-More-Accessible-and-Useful-For-Developers-and-Businesses",
+        "title": "Google Cloud Launches Vertex AI",
+        "publisher": "Google Cloud Press Corner",
+        "date": "2021-05-18"
+      }
+    ]
+  },
+  {
+    "id": "ms-014",
+    "company": "google",
+    "date": "2021-05-18",
+    "type": "model-release",
+    "name": "LaMDA Announced",
+    "description": "Google introduces LaMDA, a dialogue-focused large language model, at Google I/O 2021, marking Google's entry into conversational AI models.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://blog.google/innovation-and-ai/technology/ai/lamda/",
+        "title": "LaMDA: our breakthrough conversation technology",
+        "publisher": "Google",
+        "date": "2021-05-18"
+      }
+    ]
+  },
+  {
+    "id": "ms-015",
+    "company": "google",
+    "date": "2021-10-19",
+    "type": "company-launch",
+    "name": "Live Translate on Pixel 6",
+    "description": "Google introduces Live Translate on Pixel 6, providing real-time on-device message translation and interpreter mode that works offline.",
+    "category": "product",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://blog.google/products-and-platforms/devices/pixel/meet-pixel-6-pixel-6-pro/",
+        "title": "More personal, more powerful: Meet Pixel 6 and Pixel 6 Pro",
+        "publisher": "Google",
+        "date": "2021-10-19"
+      }
+    ]
+  },
+  {
+    "id": "ms-016",
+    "company": "unesco",
+    "date": "2021-11-23",
+    "type": "regulation",
+    "name": "UNESCO Recommendation on the Ethics of AI",
+    "description": "UNESCO Member States adopt the Recommendation on the Ethics of Artificial Intelligence, establishing a global ethical standard for AI development and use.",
+    "category": "regulation",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://unesdoc.unesco.org/ark%3A/48223/pf0000380455",
+        "title": "Recommendation on the Ethics of Artificial Intelligence",
+        "publisher": "UNESCO",
+        "date": "2021-11-23"
+      }
+    ]
+  },
+  {
+    "id": "ms-017",
+    "company": "china",
+    "date": "2021-12-31",
+    "type": "regulation",
+    "name": "China Algorithmic Recommendation Provisions Issued",
+    "description": "China issues binding rules for algorithmic recommendation services, establishing one of the world's first comprehensive regulations targeting AI-driven content recommendation systems.",
+    "category": "regulation",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.chinalawtranslate.com/en/algorithms/",
+        "title": "Algorithmic recommendation provisions",
+        "publisher": "China Law Translate",
+        "date": "2021-12-31"
+      }
+    ]
+  },
+  {
+    "id": "ms-018",
+    "company": "china",
+    "date": "2022-03-01",
+    "type": "regulation",
+    "name": "China Algorithmic Recommendation Provisions Take Effect",
+    "description": "China's algorithmic recommendation rules officially take effect, requiring transparency and user control over algorithmic recommendation services.",
+    "category": "regulation",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://www.chinalawtranslate.com/en/algorithms/",
+        "title": "Algorithmic recommendation provisions",
+        "publisher": "China Law Translate",
+        "date": "2022-03-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-019",
+    "company": "google",
+    "date": "2022-04-04",
+    "type": "model-release",
+    "name": "PaLM Announced",
+    "description": "Google announces the Pathways Language Model (PaLM), scaling to 540 billion parameters and demonstrating breakthrough performance across language tasks.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://research.google/blog/pathways-language-model-palm-scaling-to-540-billion-parameters-for-breakthrough-performance/",
+        "title": "Pathways Language Model (PaLM): Scaling to 540 Billion Parameters for Breakthrough Performance",
+        "publisher": "Google Research Blog",
+        "date": "2022-04-04"
+      }
+    ]
+  },
+  {
+    "id": "ms-020",
+    "company": "anthropic",
+    "date": "2022-04-29",
+    "type": "partnership",
+    "name": "Anthropic Series B Funding",
+    "description": "Anthropic announces its Series B funding round, a major early financing milestone to build safe, reliable AI systems and infrastructure.",
+    "category": "funding",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://www.anthropic.com/news/anthropic-raises-series-b-to-build-safe-reliable-ai",
+        "title": "Anthropic Raises Series B to build steerable, interpretable, robust AI systems",
+        "publisher": "Anthropic",
+        "date": "2022-04-29"
+      }
+    ]
+  },
+  {
+    "id": "ms-021",
+    "company": "meta",
+    "date": "2022-05-03",
+    "type": "model-release",
+    "name": "OPT-175B Released",
+    "description": "Meta shares OPT-175B (Open Pretrained Transformer) and related tooling, marking a major milestone in open large language model research.",
+    "category": "language-model",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://ai.meta.com/blog/democratizing-access-to-large-scale-language-models-with-opt-175b/",
+        "title": "Democratizing access to large-scale language models with OPT-175B",
+        "publisher": "Meta AI",
+        "date": "2022-05-03"
+      }
+    ]
+  },
+  {
+    "id": "ms-022",
+    "company": "canada",
+    "date": "2022-06-01",
+    "type": "regulation",
+    "name": "Canada Bill C-27 (AIDA) Introduced",
+    "description": "Canada introduces Bill C-27 which includes the Artificial Intelligence and Data Act (AIDA), a proposed national AI law.",
+    "category": "regulation",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://www.parl.ca/legisinfo/en/bill/44-1/c-27",
+        "title": "LEGISinfo: Bill C-27",
+        "publisher": "Parliament of Canada",
+        "date": "2022-06-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-023",
+    "company": "github",
+    "date": "2022-06-21",
+    "type": "company-launch",
+    "name": "GitHub Copilot General Availability",
+    "description": "GitHub launched Copilot as a generally available product, an AI pair programming tool powered by OpenAI Codex that suggests code completions in real-time. It became the first widely adopted AI coding assistant.",
+    "category": "developer-tools",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://github.blog/2022-06-21-github-copilot-is-generally-available-to-all-developers/",
+        "title": "GitHub Copilot is generally available to all developers",
+        "publisher": "GitHub Blog",
+        "date": "2022-06-21"
+      }
+    ]
+  },
+  {
+    "id": "ms-157",
+    "company": "midjourney",
+    "date": "2022-07-12",
+    "type": "company-launch",
+    "name": "Midjourney Open Beta",
+    "description": "Midjourney enters open beta, making its AI image generation tool available to the public via Discord and quickly becoming one of the most popular AI art platforms.",
+    "category": "image",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Midjourney",
+        "title": "Midjourney",
+        "publisher": "Wikipedia",
+        "date": "2022-07-12"
+      }
+    ]
+  },
+  {
+    "id": "ms-024",
+    "company": "stability-ai",
+    "date": "2022-08-22",
+    "type": "model-release",
+    "name": "Stable Diffusion Public Release",
+    "description": "Stability AI publicly released Stable Diffusion, an open-source text-to-image model. Its open nature allowed anyone to run it locally, sparking an explosion of AI art tools and community innovation.",
+    "category": "image",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://stability.ai/blog/stable-diffusion-public-release",
+        "title": "Stable Diffusion Public Release",
+        "publisher": "Stability AI",
+        "date": "2022-08-22"
+      }
+    ]
+  },
+  {
+    "id": "ms-158",
+    "company": "heygen",
+    "date": "2022-09-01",
+    "type": "company-launch",
+    "name": "HeyGen App Launch",
+    "description": "HeyGen launches its AI avatar video creation platform, enabling users to generate professional videos with AI-powered virtual presenters.",
+    "category": "video",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/HeyGen",
+        "title": "HeyGen",
+        "publisher": "Wikipedia",
+        "date": "2022-09-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-025",
+    "company": "openai",
+    "date": "2022-09-21",
+    "type": "model-release",
+    "name": "Whisper Open-Source Speech Recognition",
+    "description": "OpenAI releases Whisper, an open-source speech recognition system offering robust multilingual transcription capabilities.",
+    "category": "audio",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://openai.com/index/whisper/",
+        "title": "Introducing Whisper",
+        "publisher": "OpenAI",
+        "date": "2022-09-21"
+      }
+    ]
+  },
+  {
+    "id": "ms-026",
+    "company": "eu",
+    "date": "2022-09-28",
+    "type": "regulation",
+    "name": "EU AI Liability Directive Proposed",
+    "description": "The EU proposes the AI Liability Directive (AILD), establishing procedural liability rules addressing proof and disclosure issues for AI-related tort claims.",
+    "category": "regulation",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A52022PC0496",
+        "title": "AI Liability Directive proposal",
+        "publisher": "EUR-Lex",
+        "date": "2022-09-28"
+      }
+    ]
+  },
+  {
+    "id": "ms-027",
+    "company": "stability-ai",
+    "date": "2022-10-17",
+    "type": "partnership",
+    "name": "Stability AI $101M Seed Round",
+    "description": "Stability AI raises $101 million in seed funding, one of the largest seed rounds at the time, to expand its open-source AI model development.",
+    "category": "funding",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://stability.ai/blog/stable-diffusion-announcement",
+        "title": "Stability AI Funding Announcement",
+        "publisher": "Stability AI",
+        "date": "2022-10-17"
+      }
+    ]
+  },
+  {
+    "id": "ms-028",
+    "company": "china",
+    "date": "2022-11-25",
+    "type": "regulation",
+    "name": "China Deep Synthesis Provisions Issued",
+    "description": "China issues binding deep synthesis (deepfake/synthetic media) rules requiring labeling, security assessments, and governance of AI-generated content.",
+    "category": "regulation",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://www.loc.gov/item/global-legal-monitor/2023-04-25/china-provisions-on-deep-synthesis-technology-enter-into-effect/",
+        "title": "China: Provisions on Deep Synthesis Technology Enter into Effect",
+        "publisher": "Law Library of Congress",
+        "date": "2022-11-25"
+      }
+    ]
+  },
+  {
+    "id": "ms-029",
+    "company": "openai",
+    "date": "2022-11-30",
+    "type": "company-launch",
+    "name": "ChatGPT Launch",
+    "description": "OpenAI launches ChatGPT as a research preview, a conversational AI interface that rapidly becomes the fastest-growing consumer application in history, fundamentally changing public perception of AI capabilities.",
+    "category": "product",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://openai.com/index/chatgpt/",
+        "title": "Introducing ChatGPT",
+        "publisher": "OpenAI",
+        "date": "2022-11-30"
+      }
+    ]
+  },
+  {
+    "id": "ms-159",
+    "company": "perplexity",
+    "date": "2022-12-01",
+    "type": "company-launch",
+    "name": "Perplexity Answer Engine Launch",
+    "description": "Perplexity launches its AI-powered answer engine, offering a conversational search experience that combines LLM capabilities with real-time web search and cited sources.",
+    "category": "product",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://builtin.com/artificial-intelligence/what-is-perplexity-ai",
+        "title": "What Is Perplexity AI?",
+        "publisher": "Built In",
+        "date": "2022-12-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-030",
+    "company": "anthropic",
+    "date": "2022-12-15",
+    "type": "breakthrough",
+    "name": "Constitutional AI Paper Published",
+    "description": "Anthropic publishes the Constitutional AI paper, introducing a novel approach for training AI assistants to be harmless via AI feedback rather than human labeling.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://arxiv.org/pdf/2212.08073",
+        "title": "Constitutional AI: Harmlessness from AI Feedback",
+        "publisher": "arXiv",
+        "date": "2022-12-15"
+      }
+    ]
+  },
+  {
+    "id": "ms-160",
+    "company": "elevenlabs",
+    "date": "2023-01-01",
+    "type": "company-launch",
+    "name": "ElevenLabs AI Voice Platform Launch",
+    "description": "ElevenLabs launches its first human-like AI voice synthesis model, offering realistic text-to-speech and voice cloning capabilities that set a new standard for AI-generated audio.",
+    "category": "audio",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/ElevenLabs",
+        "title": "ElevenLabs",
+        "publisher": "Wikipedia",
+        "date": "2023-01-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-161",
+    "company": "cursor",
+    "date": "2023-01-01",
+    "type": "company-launch",
+    "name": "Cursor AI Code Editor Launch",
+    "description": "Cursor launches as an AI-native code editor forked from VS Code, integrating large language models directly into the development workflow for code generation and editing.",
+    "category": "developer-tools",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Cursor_(code_editor)",
+        "title": "Cursor (code editor)",
+        "publisher": "Wikipedia",
+        "date": "2023-01-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-031",
+    "company": "china",
+    "date": "2023-01-10",
+    "type": "regulation",
+    "name": "China Deep Synthesis Provisions Take Effect",
+    "description": "China's deep synthesis provisions take effect, requiring providers of AI-generated synthetic media to implement labeling, security, and governance measures.",
+    "category": "regulation",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://www.loc.gov/item/global-legal-monitor/2023-04-25/china-provisions-on-deep-synthesis-technology-enter-into-effect/",
+        "title": "China: Provisions on Deep Synthesis Technology Enter into Effect",
+        "publisher": "Law Library of Congress",
+        "date": "2023-01-10"
+      }
+    ]
+  },
+  {
+    "id": "ms-189",
+    "company": "openai",
+    "date": "2023-01-23",
+    "type": "partnership",
+    "name": "OpenAI–Microsoft Multibillion-Dollar Partnership Extension",
+    "description": "Microsoft and OpenAI extend their partnership with a multiyear, multibillion-dollar investment to scale Azure infrastructure for ChatGPT-era growth and model training.",
+    "category": "cloud",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://blogs.microsoft.com/blog/2023/01/23/microsoftandopenaiextendpartnership/",
+        "title": "Microsoft and OpenAI extend partnership",
+        "publisher": "Microsoft",
+        "date": "2023-01-23"
+      }
+    ]
+  },
+  {
+    "id": "ms-190",
+    "company": "anthropic",
+    "date": "2023-02-03",
+    "type": "partnership",
+    "name": "Anthropic–Google Cloud Partnership",
+    "description": "Anthropic selects Google Cloud as preferred cloud provider, with Google committing TPU/GPU clusters for model training and deployment.",
+    "category": "cloud",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.googlecloudpresscorner.com/2023-02-03-Anthropic-Forges-Partnership-With-Google-Cloud-to-Help-Deliver-Reliable-and-Responsible-AI",
+        "title": "Anthropic Forges Partnership With Google Cloud",
+        "publisher": "Google Cloud",
+        "date": "2023-02-03"
+      }
+    ]
+  },
+  {
+    "id": "ms-162",
+    "company": "replit",
+    "date": "2023-02-14",
+    "type": "company-launch",
+    "name": "Replit Ghostwriter Chat",
+    "description": "Replit launches Ghostwriter Chat, bringing conversational AI coding assistance to its online IDE, enabling developers to generate, debug, and explain code through natural language.",
+    "category": "developer-tools",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://blog.replit.com/ghostwriter-chat",
+        "title": "Announcing Ghostwriter Chat",
+        "publisher": "Replit Blog",
+        "date": "2023-02-14"
+      }
+    ]
+  },
+  {
+    "id": "ms-032",
+    "company": "meta",
+    "date": "2023-02-24",
+    "type": "model-release",
+    "name": "LLaMA (Llama 1) Announced",
+    "description": "Meta announces the first Llama family of large language models, initially with gated research access, establishing Meta as a major open-model player.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://ai.meta.com/blog/large-language-model-llama-meta-ai/",
+        "title": "Introducing LLaMA: A foundational, 65-billion-parameter large language model",
+        "publisher": "Meta AI",
+        "date": "2023-02-24"
+      }
+    ]
+  },
+  {
+    "id": "ms-033",
+    "company": "anthropic",
+    "date": "2023-03-14",
+    "type": "model-release",
+    "name": "Claude and Claude Instant Introduced",
+    "description": "Anthropic announces Claude and Claude Instant, its first commercially available AI assistant models, moving beyond closed alpha to broader availability.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.anthropic.com/news/introducing-claude",
+        "title": "Introducing Claude",
+        "publisher": "Anthropic",
+        "date": "2023-03-14"
+      }
+    ]
+  },
+  {
+    "id": "ms-034",
+    "company": "openai",
+    "date": "2023-03-14",
+    "type": "model-release",
+    "name": "GPT-4 Released",
+    "description": "OpenAI releases GPT-4, a large multimodal model accepting image and text inputs, representing a significant leap in reasoning and problem-solving capabilities.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://openai.com/index/gpt-4-research/",
+        "title": "GPT-4",
+        "publisher": "OpenAI",
+        "date": "2023-03-14"
+      }
+    ]
+  },
+  {
+    "id": "ms-035",
+    "company": "google",
+    "date": "2023-03-21",
+    "type": "company-launch",
+    "name": "Google Bard Early Access",
+    "description": "Google opens early access to Bard, its consumer AI chatbot, beginning the public rollout that would later be rebranded to Gemini.",
+    "category": "product",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://blog.google/innovation-and-ai/technology/ai/bard-google-ai-search-updates/",
+        "title": "Google AI updates: Bard and new AI features in Search",
+        "publisher": "Google",
+        "date": "2023-03-21"
+      }
+    ]
+  },
+  {
+    "id": "ms-163",
+    "company": "adobe",
+    "date": "2023-03-21",
+    "type": "company-launch",
+    "name": "Adobe Firefly Public Beta",
+    "description": "Adobe launches the Firefly generative AI public beta, offering commercially safe AI image generation trained on licensed content, integrated into Creative Cloud workflows.",
+    "category": "image",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://news.adobe.com/news/news-details/2023/adobe-unveils-firefly-a-family-of-new-creative-generative-ai",
+        "title": "Adobe Unveils Firefly, a Family of New Creative Generative AI",
+        "publisher": "Adobe Newsroom",
+        "date": "2023-03-21"
+      }
+    ]
+  },
+  {
+    "id": "ms-036",
+    "company": "uk",
+    "date": "2023-03-29",
+    "type": "regulation",
+    "name": "UK AI Regulation Pro-Innovation White Paper",
+    "description": "The UK publishes its 'AI regulation: a pro-innovation approach' white paper, outlining a regulator-led principles-based approach rather than a single comprehensive AI statute.",
+    "category": "regulation",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach",
+        "title": "AI regulation: a pro-innovation approach",
+        "publisher": "UK Government",
+        "date": "2023-03-29"
+      }
+    ]
+  },
+  {
+    "id": "ms-037",
+    "company": "meta",
+    "date": "2023-04-05",
+    "type": "model-release",
+    "name": "Segment Anything (SAM) Released",
+    "description": "Meta releases Segment Anything Model (SAM), a foundation model for image segmentation along with a large dataset, enabling promptable segmentation of any object in images.",
+    "category": "image",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://ai.meta.com/blog/segment-anything-foundation-model-image-segmentation/",
+        "title": "Introducing Segment Anything",
+        "publisher": "Meta AI",
+        "date": "2023-04-05"
+      }
+    ]
+  },
+  {
+    "id": "ms-164",
+    "company": "inflection-ai",
+    "date": "2023-05-02",
+    "type": "company-launch",
+    "name": "Inflection AI Launches Pi",
+    "description": "Inflection AI launches Pi (Personal Intelligence), a conversational AI assistant designed for empathetic, supportive dialogue rather than task completion.",
+    "category": "product",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.forbes.com/sites/alexkonrad/2023/05/02/inflection-ai-ex-deepmind-launches-pi-chatbot/",
+        "title": "Inflection AI Launches Pi Chatbot",
+        "publisher": "Forbes",
+        "date": "2023-05-02"
+      }
+    ]
+  },
+  {
+    "id": "ms-038",
+    "company": "google",
+    "date": "2023-05-10",
+    "type": "company-launch",
+    "name": "Project Tailwind (NotebookLM Prototype) Revealed",
+    "description": "Google reveals Project Tailwind at I/O, an AI notebook concept that learns from uploaded documents, which would become NotebookLM.",
+    "category": "product",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://techcrunch.com/2023/05/10/with-project-tailwind-google-aims-to-make-note-taking-smarter/",
+        "title": "With Project Tailwind, Google aims to make note-taking smarter",
+        "publisher": "TechCrunch",
+        "date": "2023-05-10"
+      }
+    ]
+  },
+  {
+    "id": "ms-191",
+    "company": "oracle",
+    "date": "2023-06-13",
+    "type": "partnership",
+    "name": "Oracle–Cohere Enterprise AI Partnership",
+    "description": "Cohere models integrated into Oracle Cloud Infrastructure to deliver secure generative AI services for enterprise customers.",
+    "category": "enterprise",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://www.oracle.com/news/announcement/oracle-to-deliver-powerful-and-secure-generative-ai-service-for-business-2023-06-13/",
+        "title": "Oracle to Deliver Powerful and Secure Generative AI Service",
+        "publisher": "Oracle",
+        "date": "2023-06-13"
+      }
+    ]
+  },
+  {
+    "id": "ms-039",
+    "company": "openai",
+    "date": "2023-07-01",
+    "type": "company-launch",
+    "name": "Function Calling and API Updates",
+    "description": "OpenAI releases function calling capabilities and other API updates, enabling developers to build more structured and capable AI applications.",
+    "category": "platform",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://openai.com/index/function-calling-and-other-api-updates/",
+        "title": "Function calling and other API updates",
+        "publisher": "OpenAI",
+        "date": "2023-07-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-040",
+    "company": "us",
+    "date": "2023-07-05",
+    "type": "regulation",
+    "name": "NYC Local Law 144 AEDT Enforcement Begins",
+    "description": "New York City begins enforcement of Local Law 144, requiring bias audits and notices for automated employment decision tools (AEDTs).",
+    "category": "regulation",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://rules.cityofnewyork.us/rule/automated-employment-decision-tools-updated/",
+        "title": "AEDT Rules (Updated)",
+        "publisher": "NYC DCWP",
+        "date": "2023-07-05"
+      }
+    ]
+  },
+  {
+    "id": "ms-041",
+    "company": "anthropic",
+    "date": "2023-07-11",
+    "type": "model-release",
+    "name": "Claude 2 and claude.ai Public Beta",
+    "description": "Anthropic launches Claude 2 alongside the public-facing claude.ai beta interface, significantly expanding access to Claude's capabilities.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.anthropic.com/news/claude-2",
+        "title": "Claude 2",
+        "publisher": "Anthropic",
+        "date": "2023-07-11"
+      }
+    ]
+  },
+  {
+    "id": "ms-042",
+    "company": "google",
+    "date": "2023-07-12",
+    "type": "company-launch",
+    "name": "NotebookLM Introduced",
+    "description": "Google launches NotebookLM as a Google Labs product, an AI-first notebook grounded in user-uploaded documents for summaries, synthesis, and Q&A.",
+    "category": "product",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://blog.google/innovation-and-ai/technology/ai/notebooklm-google-ai/",
+        "title": "Introducing NotebookLM",
+        "publisher": "Google",
+        "date": "2023-07-12"
+      }
+    ]
+  },
+  {
+    "id": "ms-165",
+    "company": "xai",
+    "date": "2023-07-12",
+    "type": "company-launch",
+    "name": "xAI Publicly Announced",
+    "description": "Elon Musk publicly announces xAI, a new artificial intelligence company focused on understanding the true nature of the universe, positioning it as a competitor to OpenAI and Google.",
+    "category": "company",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://x.ai/news/grok",
+        "title": "Announcing xAI",
+        "publisher": "xAI",
+        "date": "2023-07-12"
+      }
+    ]
+  },
+  {
+    "id": "ms-043",
+    "company": "meta",
+    "date": "2023-07-18",
+    "type": "model-release",
+    "name": "Llama 2 Released",
+    "description": "Meta and Microsoft announce Llama 2 with chat-tuned variants under a more permissive license than Llama 1, enabling both research and commercial use of open-weight models.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://about.fb.com/news/2023/07/llama-2/",
+        "title": "Meta and Microsoft Introduce the Next Generation of Llama",
+        "publisher": "Meta Newsroom",
+        "date": "2023-07-18"
+      }
+    ]
+  },
+  {
+    "id": "ms-044",
+    "company": "google",
+    "date": "2023-08-04",
+    "type": "company-launch",
+    "name": "MakerSuite Expands to 179 Countries",
+    "description": "Google expands MakerSuite, its browser-based prompt prototyping tool and precursor to Google AI Studio, to 179 countries and territories.",
+    "category": "developer-tools",
+    "significance": "low",
+    "sources": [
+      {
+        "url": "https://developers.googleblog.com/makersuite-expands-to-179-countries-and-territories-and-adds-helpful-features-for-ai-makers/",
+        "title": "MakerSuite expands to 179 countries and territories",
+        "publisher": "Google Developers Blog",
+        "date": "2023-08-04"
+      }
+    ]
+  },
+  {
+    "id": "ms-045",
+    "company": "meta",
+    "date": "2023-08-24",
+    "type": "model-release",
+    "name": "Code Llama Released",
+    "description": "Meta releases Code Llama, code-specialized variants of Llama 2 for code generation and discussion, available for research and commercial use.",
+    "category": "developer-tools",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://about.fb.com/news/2023/08/code-llama-ai-for-coding/",
+        "title": "Introducing Code Llama, an AI Tool for Coding",
+        "publisher": "Meta Newsroom",
+        "date": "2023-08-24"
+      }
+    ]
+  },
+  {
+    "id": "ms-046",
+    "company": "google-deepmind",
+    "date": "2023-08-29",
+    "type": "breakthrough",
+    "name": "SynthID for AI-Generated Images (Beta)",
+    "description": "Google DeepMind introduces SynthID, an imperceptible watermarking and detection system for AI-generated images, advancing AI safety and content authenticity.",
+    "category": "safety",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://deepmind.google/blog/identifying-ai-generated-images-with-synthid/",
+        "title": "Identifying AI-generated images with SynthID",
+        "publisher": "Google DeepMind",
+        "date": "2023-08-29"
+      }
+    ]
+  },
+  {
+    "id": "ms-047",
+    "company": "anthropic",
+    "date": "2023-09-07",
+    "type": "company-launch",
+    "name": "Claude Pro Plan Launched",
+    "description": "Anthropic introduces Claude Pro, a paid subscription plan for claude.ai, initially available in the US and UK.",
+    "category": "product",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://www.anthropic.com/news/claude-pro",
+        "title": "Introducing Claude Pro",
+        "publisher": "Anthropic",
+        "date": "2023-09-07"
+      }
+    ]
+  },
+  {
+    "id": "ms-192",
+    "company": "anthropic",
+    "date": "2023-09-25",
+    "type": "partnership",
+    "name": "Anthropic–Amazon $4B Investment Partnership",
+    "description": "Amazon invests up to $4B in Anthropic, with AWS becoming Anthropic's primary cloud and training partner. Claude becomes available via Amazon Bedrock.",
+    "category": "cloud",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://techcrunch.com/2023/09/25/amazon-to-invest-up-to-4-billion-in-ai-startup-anthropic/",
+        "title": "Amazon to invest up to $4 billion in Anthropic",
+        "publisher": "TechCrunch",
+        "date": "2023-09-25"
+      }
+    ]
+  },
+  {
+    "id": "ms-048",
+    "company": "meta",
+    "date": "2023-09-27",
+    "type": "company-launch",
+    "name": "Meta AI Assistant and AI Characters Announced",
+    "description": "Meta introduces its AI assistant across WhatsApp, Messenger, and Instagram, alongside AI characters and Emu-based creative tools including image generation and AI stickers.",
+    "category": "product",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://about.fb.com/news/2023/09/introducing-ai-powered-assistants-characters-and-creative-tools/",
+        "title": "Introducing New AI Experiences Across Our Family of Apps and Devices",
+        "publisher": "Meta Newsroom",
+        "date": "2023-09-27"
+      }
+    ]
+  },
+  {
+    "id": "ms-166",
+    "company": "mistral",
+    "date": "2023-09-27",
+    "type": "model-release",
+    "name": "Mistral 7B Released",
+    "description": "Mistral AI releases Mistral 7B, its first open-weight model that outperforms larger competitors, establishing Mistral as a leading European AI company and champion of open-source AI.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://mistral.ai/news/announcing-mistral-7b/",
+        "title": "Announcing Mistral 7B",
+        "publisher": "Mistral AI",
+        "date": "2023-09-27"
+      }
+    ]
+  },
+  {
+    "id": "ms-167",
+    "company": "xai",
+    "date": "2023-11-03",
+    "type": "model-release",
+    "name": "Grok Announced",
+    "description": "xAI announces Grok, its first flagship AI chatbot and model family, initially available to X Premium+ subscribers with real-time access to X platform data.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://x.ai/news/grok",
+        "title": "Announcing Grok",
+        "publisher": "xAI",
+        "date": "2023-11-03"
+      }
+    ]
+  },
+  {
+    "id": "ms-049",
+    "company": "openai",
+    "date": "2023-11-06",
+    "type": "model-release",
+    "name": "GPT-4 Turbo + Assistants API + DALL-E 3 API",
+    "description": "At DevDay, OpenAI announces GPT-4 Turbo, Assistants API (with Retrieval and Code Interpreter), JSON mode, seed control, and DALL-E 3 API access.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://openai.com/index/new-models-and-developer-products-announced-at-devday/",
+        "title": "New models and developer products announced at DevDay",
+        "publisher": "OpenAI",
+        "date": "2023-11-06"
+      }
+    ]
+  },
+  {
+    "id": "ms-050",
+    "company": "openai",
+    "date": "2023-11-06",
+    "type": "company-launch",
+    "name": "GPTs (Custom ChatGPTs) Introduced",
+    "description": "OpenAI introduces GPTs, allowing users to create custom versions of ChatGPT for specific purposes, democratizing AI application building.",
+    "category": "product",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://openai.com/index/introducing-gpts/",
+        "title": "Introducing GPTs",
+        "publisher": "OpenAI",
+        "date": "2023-11-06"
+      }
+    ]
+  },
+  {
+    "id": "ms-051",
+    "company": "meta",
+    "date": "2023-11-16",
+    "type": "model-release",
+    "name": "Emu Video and Emu Edit (Research)",
+    "description": "Meta publishes Emu Video (text-to-video) and Emu Edit (instruction-based image editing) research, advancing generative media capabilities.",
+    "category": "video",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://ai.meta.com/blog/emu-text-to-video-generation-image-editing-research/",
+        "title": "Emu Video and Emu Edit: Our latest generative AI research",
+        "publisher": "Meta AI",
+        "date": "2023-11-16"
+      }
+    ]
+  },
+  {
+    "id": "ms-052",
+    "company": "anthropic",
+    "date": "2023-11-21",
+    "type": "model-release",
+    "name": "Claude 2.1 Released",
+    "description": "Anthropic releases Claude 2.1 with 200K context window, improved reliability, and beta tool use capabilities.",
+    "category": "language-model",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://www.anthropic.com/news/claude-2-1",
+        "title": "Introducing Claude 2.1",
+        "publisher": "Anthropic",
+        "date": "2023-11-21"
+      }
+    ]
+  },
+  {
+    "id": "ms-168",
+    "company": "pika",
+    "date": "2023-11-28",
+    "type": "company-launch",
+    "name": "Pika 1.0 Released",
+    "description": "Pika Labs releases Pika 1.0, its first major public AI video generation platform, enabling users to create and edit videos from text, images, and other videos.",
+    "category": "video",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://techcrunch.com/2023/11/28/pika-labs-which-is-building-ai-tools-to-generate-and-edit-videos-raises-55m/",
+        "title": "Pika, which is building AI tools to generate and edit videos, raises $55M",
+        "publisher": "TechCrunch",
+        "date": "2023-11-28"
+      }
+    ]
+  },
+  {
+    "id": "ms-053",
+    "company": "google",
+    "date": "2023-12-06",
+    "type": "model-release",
+    "name": "Gemini 1.0 Introduced (Ultra/Pro/Nano)",
+    "description": "Google introduces the Gemini era with the Gemini 1.0 family of multimodal foundation models in Ultra, Pro, and Nano sizes.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://blog.google/innovation-and-ai/technology/ai/google-gemini-ai/",
+        "title": "Introducing Gemini: our largest and most capable AI model",
+        "publisher": "Google",
+        "date": "2023-12-06"
+      }
+    ]
+  },
+  {
+    "id": "ms-169",
+    "company": "mistral",
+    "date": "2023-12-11",
+    "type": "model-release",
+    "name": "Mixtral 8x7B Released",
+    "description": "Mistral AI releases Mixtral 8x7B with open weights, a sparse mixture-of-experts model that matches or exceeds GPT-3.5 performance while being far more efficient, advancing the open-source AI movement.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://mistral.ai/news/mixtral-of-experts",
+        "title": "Mixtral of experts",
+        "publisher": "Mistral AI",
+        "date": "2023-12-11"
+      }
+    ]
+  },
+  {
+    "id": "ms-054",
+    "company": "google",
+    "date": "2023-12-13",
+    "type": "company-launch",
+    "name": "Gemini API + Google AI Studio Available",
+    "description": "Google launches the Gemini API and Google AI Studio (evolved from MakerSuite), providing developer access to Gemini Pro for prototyping and building AI applications.",
+    "category": "developer-tools",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://blog.google/innovation-and-ai/technology/ai/google-gemini-ai/",
+        "title": "Introducing Gemini",
+        "publisher": "Google",
+        "date": "2023-12-13"
+      }
+    ]
+  },
+  {
+    "id": "ms-055",
+    "company": "google",
+    "date": "2023-12-13",
+    "type": "model-release",
+    "name": "Imagen 2 GA on Vertex AI",
+    "description": "Google makes Imagen 2 generally available on Vertex AI, providing enterprise access to its text-to-image generation capabilities.",
+    "category": "image",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://cloud.google.com/blog/products/ai-machine-learning/imagen-2-on-vertex-ai-is-now-generally-available",
+        "title": "Imagen 2 on Vertex AI is now generally available",
+        "publisher": "Google Cloud Blog",
+        "date": "2023-12-13"
+      }
+    ]
+  },
+  {
+    "id": "ms-193",
+    "company": "openai",
+    "date": "2023-12-13",
+    "type": "partnership",
+    "name": "OpenAI–Axel Springer Media Licensing Deal",
+    "description": "OpenAI licenses Axel Springer publisher content for ChatGPT with attribution, setting an early precedent for AI media licensing partnerships.",
+    "category": "media",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://openai.com/index/axel-springer-partnership/",
+        "title": "Partnership with Axel Springer",
+        "publisher": "OpenAI",
+        "date": "2023-12-13"
+      }
+    ]
+  },
+  {
+    "id": "ms-056",
+    "company": "anthropic",
+    "date": "2023-12-19",
+    "type": "company-launch",
+    "name": "Beta Messages API and Commercial Updates",
+    "description": "Anthropic introduces the Beta Messages API for a streamlined developer experience, along with expanded commercial terms and copyright indemnity changes.",
+    "category": "platform",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://www.anthropic.com/news/expanded-legal-protections-api-improvements",
+        "title": "Expanded legal protections and improvements to our API",
+        "publisher": "Anthropic",
+        "date": "2023-12-19"
+      }
+    ]
+  },
+  {
+    "id": "ms-170",
+    "company": "suno",
+    "date": "2023-12-20",
+    "type": "company-launch",
+    "name": "Suno AI Music Platform Launch",
+    "description": "Suno launches its AI music generation web app out of stealth, enabling users to create original songs with vocals and instrumentation from text prompts.",
+    "category": "audio",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.axios.com/2023/12/20/suno-gen-ai-music-microsoft",
+        "title": "Exclusive: Gen AI music app Suno comes out of stealth",
+        "publisher": "Axios",
+        "date": "2023-12-20"
+      }
+    ]
+  },
+  {
+    "id": "ms-057",
+    "company": "google",
+    "date": "2024-02-08",
+    "type": "company-launch",
+    "name": "Bard Rebranded to Gemini + Gemini App",
+    "description": "Google rebrands Bard to Gemini, making it the primary consumer AI assistant experience, and introduces Gemini Advanced with Ultra 1.0.",
+    "category": "product",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://blog.google/products-and-platforms/products/gemini/bard-gemini-advanced-app/",
+        "title": "Bard becomes Gemini: Try Ultra 1.0 and a new mobile app",
+        "publisher": "Google",
+        "date": "2024-02-08"
+      }
+    ]
+  },
+  {
+    "id": "ms-058",
+    "company": "openai",
+    "date": "2024-02-15",
+    "type": "model-release",
+    "name": "Sora (Research Preview)",
+    "description": "OpenAI introduces Sora, a video generation model described as understanding world simulators, marking a major breakthrough in AI-generated video.",
+    "category": "video",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://openai.com/index/video-generation-models-as-world-simulators/",
+        "title": "Video generation models as world simulators",
+        "publisher": "OpenAI",
+        "date": "2024-02-15"
+      }
+    ]
+  },
+  {
+    "id": "ms-059",
+    "company": "google",
+    "date": "2024-02-15",
+    "type": "model-release",
+    "name": "Gemini 1.5 (Early Access)",
+    "description": "Google begins rolling out Gemini 1.5 with major long-context and multimodal upgrades in the Gemini model line.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://blog.google/innovation-and-ai/technology/ai/google-gemini-ai/",
+        "title": "Gemini 1.5",
+        "publisher": "Google",
+        "date": "2024-02-15"
+      }
+    ]
+  },
+  {
+    "id": "ms-194",
+    "company": "mistral",
+    "date": "2024-02-26",
+    "type": "partnership",
+    "name": "Microsoft–Mistral AI Azure Partnership",
+    "description": "Microsoft partners with Mistral AI to distribute Mistral Large and other models via Azure, taking a minority stake in the company.",
+    "category": "cloud",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://azure.microsoft.com/en-us/blog/microsoft-and-mistral-ai-announce-new-partnership-to-accelerate-ai-innovation-and-introduce-mistral-large-first-on-azure/",
+        "title": "Microsoft and Mistral AI announce new partnership",
+        "publisher": "Microsoft Azure",
+        "date": "2024-02-26"
+      }
+    ]
+  },
+  {
+    "id": "ms-060",
+    "company": "anthropic",
+    "date": "2024-03-04",
+    "type": "model-release",
+    "name": "Claude 3 Family (Haiku, Sonnet, Opus)",
+    "description": "Anthropic introduces the Claude 3 family with three models: Haiku (fast/affordable), Sonnet (balanced), and Opus (most capable), representing a major generational leap.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.anthropic.com/news/claude-3-family",
+        "title": "Introducing the next generation of Claude",
+        "publisher": "Anthropic",
+        "date": "2024-03-04"
+      }
+    ]
+  },
+  {
+    "id": "ms-061",
+    "company": "eu",
+    "date": "2024-03-13",
+    "type": "regulation",
+    "name": "EU AI Act Adopted by Parliament",
+    "description": "The European Parliament adopts the EU AI Act, the world's first comprehensive AI regulation, establishing a risk-based framework for AI systems.",
+    "category": "regulation",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.europarl.europa.eu/news/en/press-room/20240308IPR19015/artificial-intelligence-act-meps-adopt-landmark-law",
+        "title": "Artificial Intelligence Act: MEPs adopt landmark law",
+        "publisher": "European Parliament",
+        "date": "2024-03-13"
+      }
+    ]
+  },
+  {
+    "id": "ms-062",
+    "company": "us",
+    "date": "2024-03-13",
+    "type": "regulation",
+    "name": "Utah AI Consumer Protection Act (SB149) Signed",
+    "description": "Utah signs SB149 'Artificial Intelligence Amendments', enacting AI-focused consumer protection disclosures including chatbot/AI disclosure requirements.",
+    "category": "regulation",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://le.utah.gov/~2024/bills/static/SB0149.html",
+        "title": "S.B. 149 Artificial Intelligence Amendments",
+        "publisher": "Utah Legislature",
+        "date": "2024-03-13"
+      }
+    ]
+  },
+  {
+    "id": "ms-063",
+    "company": "india",
+    "date": "2024-03-15",
+    "type": "regulation",
+    "name": "India AI Advisory Revised/Softened",
+    "description": "India revises its AI advisory after industry concern, removing the mandate requiring AI models to seek government approval before deployment.",
+    "category": "regulation",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://m.economictimes.com/tech/technology/govt-withdraws-advisory-on-regulation-of-ai-platforms/articleshow/108531687.cms",
+        "title": "Govt withdraws mandate requiring AI models to seek approval",
+        "publisher": "Economic Times",
+        "date": "2024-03-15"
+      }
+    ]
+  },
+  {
+    "id": "ms-171",
+    "company": "inflection-ai",
+    "date": "2024-03-19",
+    "type": "acquisition",
+    "name": "Microsoft Hires Inflection AI Leadership",
+    "description": "Microsoft hires Inflection AI co-founder Mustafa Suleyman and most of the technical team to lead its consumer AI division, effectively ending Inflection's consumer Pi product and pivoting the company to enterprise.",
+    "category": "company",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://blogs.microsoft.com/blog/2024/03/19/mustafa-suleyman-deepmind-and-inflection-co-founder-joins-microsoft-to-lead-copilot/",
+        "title": "Mustafa Suleyman joins Microsoft to lead Copilot",
+        "publisher": "Microsoft",
+        "date": "2024-03-19"
+      }
+    ]
+  },
+  {
+    "id": "ms-172",
+    "company": "suno",
+    "date": "2024-03-21",
+    "type": "model-release",
+    "name": "Suno v3 Released",
+    "description": "Suno releases v3, a major quality and capability upgrade enabling full-length, radio-quality songs with improved vocals, instrumentation, and longer duration outputs.",
+    "category": "audio",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://suno.com/blog/v3",
+        "title": "Introducing v3",
+        "publisher": "Suno Blog",
+        "date": "2024-03-21"
+      }
+    ]
+  },
+  {
+    "id": "ms-195",
+    "company": "anthropic",
+    "date": "2024-03-27",
+    "type": "partnership",
+    "name": "Amazon–Anthropic $4B Investment Completed",
+    "description": "Amazon formalizes the completion of its $4B investment in Anthropic, deepening Claude distribution across AWS services.",
+    "category": "cloud",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.aboutamazon.com/news/company-news/amazon-anthropic-ai-investment",
+        "title": "Amazon and Anthropic deepen their shared commitment",
+        "publisher": "Amazon",
+        "date": "2024-03-27"
+      }
+    ]
+  },
+  {
+    "id": "ms-064",
+    "company": "meta",
+    "date": "2024-04-18",
+    "type": "model-release",
+    "name": "Meta Llama 3 Released (8B, 70B)",
+    "description": "Meta releases the Llama 3 family with 8B and 70B parameter models, representing a major upgrade in open-weight model capabilities.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://ai.meta.com/blog/meta-llama-3/",
+        "title": "Introducing Meta Llama 3",
+        "publisher": "Meta AI",
+        "date": "2024-04-18"
+      }
+    ]
+  },
+  {
+    "id": "ms-065",
+    "company": "meta",
+    "date": "2024-04-18",
+    "type": "company-launch",
+    "name": "Meta AI Built with Llama 3",
+    "description": "Meta positions Meta AI as its flagship assistant experience built on Llama 3, integrated across Meta's family of apps.",
+    "category": "product",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://about.fb.com/news/2024/04/meta-ai-assistant-built-with-llama-3/",
+        "title": "Meet Your New Assistant: Meta AI, Built With Llama 3",
+        "publisher": "Meta Newsroom",
+        "date": "2024-04-18"
+      }
+    ]
+  },
+  {
+    "id": "ms-066",
+    "company": "openai",
+    "date": "2024-04-24",
+    "type": "company-launch",
+    "name": "GPT-3.5 Turbo + Whisper APIs",
+    "description": "OpenAI announces API availability updates for GPT-3.5 Turbo and Whisper, clarifying the ChatGPT API naming and positioning.",
+    "category": "platform",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://openai.com/index/introducing-chatgpt-and-whisper-apis/",
+        "title": "Introducing APIs for GPT-3.5 Turbo and Whisper",
+        "publisher": "OpenAI",
+        "date": "2024-04-24"
+      }
+    ]
+  },
+  {
+    "id": "ms-196",
+    "company": "openai",
+    "date": "2024-04-29",
+    "type": "partnership",
+    "name": "OpenAI–Financial Times Content Partnership",
+    "description": "OpenAI licenses Financial Times journalism for ChatGPT with attribution, enabling product collaboration and improved model responses.",
+    "category": "media",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://aboutus.ft.com/press_release/openai",
+        "title": "FT announces strategic partnership with OpenAI",
+        "publisher": "Financial Times",
+        "date": "2024-04-29"
+      }
+    ]
+  },
+  {
+    "id": "ms-067",
+    "company": "anthropic",
+    "date": "2024-05-01",
+    "type": "company-launch",
+    "name": "Claude Team Plan and iOS App",
+    "description": "Anthropic launches the Claude Team plan for organizations and releases the Claude iOS app, expanding access across platforms.",
+    "category": "product",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://claude.com/blog/team-plan-and-ios",
+        "title": "Introducing the Claude Team plan and iOS app",
+        "publisher": "Claude Blog",
+        "date": "2024-05-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-068",
+    "company": "us",
+    "date": "2024-05-01",
+    "type": "regulation",
+    "name": "Utah AI Consumer Protection (SB149) Takes Effect",
+    "description": "Utah's AI consumer protection amendments take effect, requiring disclosure when consumers interact with AI systems.",
+    "category": "regulation",
+    "significance": "low",
+    "sources": [
+      {
+        "url": "https://le.utah.gov/~2024/bills/static/SB0149.html",
+        "title": "S.B. 149 Artificial Intelligence Amendments",
+        "publisher": "Utah Legislature",
+        "date": "2024-05-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-069",
+    "company": "openai",
+    "date": "2024-05-13",
+    "type": "model-release",
+    "name": "GPT-4o (Omni) Released",
+    "description": "OpenAI releases GPT-4o, a real-time multimodal model handling text, vision, and audio natively, significantly advancing AI interaction capabilities.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://openai.com/index/hello-gpt-4o/",
+        "title": "Hello GPT-4o",
+        "publisher": "OpenAI",
+        "date": "2024-05-13"
+      }
+    ]
+  },
+  {
+    "id": "ms-070",
+    "company": "anthropic",
+    "date": "2024-05-14",
+    "type": "company-launch",
+    "name": "Claude Available in Europe",
+    "description": "Anthropic expands Claude availability to Europe, including Pro and Team pricing in local currencies.",
+    "category": "product",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://www.anthropic.com/news/claude-europe",
+        "title": "Claude is now available in Europe",
+        "publisher": "Anthropic",
+        "date": "2024-05-14"
+      }
+    ]
+  },
+  {
+    "id": "ms-071",
+    "company": "google-deepmind",
+    "date": "2024-05-14",
+    "type": "model-release",
+    "name": "Veo Announced (Text-to-Video)",
+    "description": "Google DeepMind introduces Veo, a high-quality text-to-video generation model, expanding generative AI into video creation.",
+    "category": "video",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://blog.google/innovation-and-ai/products/google-io-2024-100-announcements/",
+        "title": "100 things we announced at I/O 2024",
+        "publisher": "Google",
+        "date": "2024-05-14"
+      }
+    ]
+  },
+  {
+    "id": "ms-072",
+    "company": "google",
+    "date": "2024-05-14",
+    "type": "model-release",
+    "name": "Imagen 3 Unveiled",
+    "description": "Google announces Imagen 3, its next-generation text-to-image model with improved quality and capabilities.",
+    "category": "image",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://blog.google/innovation-and-ai/products/google-io-2024-100-announcements/",
+        "title": "100 things we announced at I/O 2024",
+        "publisher": "Google",
+        "date": "2024-05-14"
+      }
+    ]
+  },
+  {
+    "id": "ms-073",
+    "company": "google",
+    "date": "2024-05-14",
+    "type": "company-launch",
+    "name": "VideoFX, ImageFX, MusicFX Updates + Ask Photos",
+    "description": "Google Labs expands creative AI experiments with VideoFX and updates to ImageFX and MusicFX, plus announces Ask Photos for Gemini-powered photo search.",
+    "category": "product",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://blog.google/innovation-and-ai/products/google-labs-video-fx-generative-ai/",
+        "title": "Introducing VideoFX, plus new features for ImageFX and MusicFX",
+        "publisher": "Google",
+        "date": "2024-05-14"
+      }
+    ]
+  },
+  {
+    "id": "ms-074",
+    "company": "google-deepmind",
+    "date": "2024-05-14",
+    "type": "breakthrough",
+    "name": "SynthID Expands to Text and Video Watermarking",
+    "description": "Google DeepMind expands SynthID beyond images to watermark AI-generated text and video, with broader product integrations.",
+    "category": "safety",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://deepmind.google/blog/watermarking-ai-generated-text-and-video-with-synthid/",
+        "title": "Watermarking AI-generated text and video with SynthID",
+        "publisher": "Google DeepMind",
+        "date": "2024-05-14"
+      }
+    ]
+  },
+  {
+    "id": "ms-197",
+    "company": "openai",
+    "date": "2024-05-16",
+    "type": "partnership",
+    "name": "OpenAI–Reddit Data Partnership",
+    "description": "OpenAI gains access to Reddit's Data API for incorporating content into products. Reddit uses OpenAI models for new AI features.",
+    "category": "platform",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://openai.com/index/openai-and-reddit-partnership/",
+        "title": "OpenAI and Reddit Partnership",
+        "publisher": "OpenAI",
+        "date": "2024-05-16"
+      }
+    ]
+  },
+  {
+    "id": "ms-075",
+    "company": "us",
+    "date": "2024-05-17",
+    "type": "regulation",
+    "name": "Colorado AI Consumer Protection Act (SB24-205) Signed",
+    "description": "Colorado enacts SB24-205, a comprehensive 'high-risk AI' consumer protection law focused on preventing algorithmic discrimination.",
+    "category": "regulation",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://leg.colorado.gov/bills/sb24-205",
+        "title": "SB24-205 Consumer Protections for Artificial Intelligence",
+        "publisher": "Colorado General Assembly",
+        "date": "2024-05-17"
+      }
+    ]
+  },
+  {
+    "id": "ms-076",
+    "company": "eu",
+    "date": "2024-05-21",
+    "type": "regulation",
+    "name": "EU AI Act Adopted by Council",
+    "description": "The EU Council formally adopts the AI Act, completing the legislative process for the world's first comprehensive AI regulation.",
+    "category": "regulation",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.europarl.europa.eu/legislative-train/theme-a-europe-fit-for-the-digital-age/file-regulation-on-artificial-intelligence",
+        "title": "Legislative Train: Artificial intelligence act",
+        "publisher": "European Parliament",
+        "date": "2024-05-21"
+      }
+    ]
+  },
+  {
+    "id": "ms-198",
+    "company": "openai",
+    "date": "2024-05-22",
+    "type": "partnership",
+    "name": "OpenAI–News Corp Multi-Year Licensing Deal",
+    "description": "Multi-year agreement for OpenAI to use News Corp content across its mastheads to improve AI products.",
+    "category": "media",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://investors.newscorp.com/news-releases/news-release-details/news-corp-and-openai-sign-landmark-multi-year-global-partnership",
+        "title": "News Corp and OpenAI Sign Landmark Partnership",
+        "publisher": "News Corp",
+        "date": "2024-05-22"
+      }
+    ]
+  },
+  {
+    "id": "ms-199",
+    "company": "openai",
+    "date": "2024-05-29",
+    "type": "partnership",
+    "name": "OpenAI–Vox Media and The Atlantic Partnerships",
+    "description": "OpenAI signs content and product partnerships with Vox Media and The Atlantic for attributed use of publisher content.",
+    "category": "media",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://www.reuters.com/business/media-telecom/openai-signs-content-deals-with-atlantic-vox-media-2024-05-29/",
+        "title": "OpenAI signs content deals with The Atlantic and Vox Media",
+        "publisher": "Reuters",
+        "date": "2024-05-29"
+      }
+    ]
+  },
+  {
+    "id": "ms-173",
+    "company": "apple",
+    "date": "2024-06-10",
+    "type": "company-launch",
+    "name": "Apple Intelligence Announced",
+    "description": "Apple announces Apple Intelligence at WWDC 2024, its personal intelligence system integrating AI capabilities across iPhone, iPad, and Mac with on-device processing and a partnership with OpenAI.",
+    "category": "product",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.apple.com/newsroom/2024/06/introducing-apple-intelligence-for-iphone-ipad-and-mac/",
+        "title": "Introducing Apple Intelligence for iPhone, iPad, and Mac",
+        "publisher": "Apple Newsroom",
+        "date": "2024-06-10"
+      }
+    ]
+  },
+  {
+    "id": "ms-200",
+    "company": "apple",
+    "date": "2024-06-10",
+    "type": "partnership",
+    "name": "Apple–OpenAI ChatGPT Integration",
+    "description": "ChatGPT integrated into Apple Intelligence across iOS, iPadOS, and macOS, including Siri handoff with user consent.",
+    "category": "platform",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.apple.com/newsroom/2024/06/introducing-apple-intelligence-for-iphone-ipad-and-mac/",
+        "title": "Introducing Apple Intelligence",
+        "publisher": "Apple",
+        "date": "2024-06-10"
+      }
+    ]
+  },
+  {
+    "id": "ms-174",
+    "company": "runway",
+    "date": "2024-06-17",
+    "type": "model-release",
+    "name": "Runway Gen-3 Alpha",
+    "description": "Runway announces Gen-3 Alpha, a major leap in AI video generation quality offering improved fidelity, consistency, and motion for text-to-video and image-to-video creation.",
+    "category": "video",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://runwayml.com/research/introducing-gen-3-alpha",
+        "title": "Introducing Gen-3 Alpha",
+        "publisher": "Runway",
+        "date": "2024-06-17"
+      }
+    ]
+  },
+  {
+    "id": "ms-077",
+    "company": "anthropic",
+    "date": "2024-06-21",
+    "type": "model-release",
+    "name": "Claude 3.5 Sonnet Released",
+    "description": "Anthropic releases Claude 3.5 Sonnet, the first model in the Claude 3.5 family, setting new benchmarks for balanced performance and speed.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.anthropic.com/news/claude-3-5-sonnet",
+        "title": "Claude 3.5 Sonnet",
+        "publisher": "Anthropic",
+        "date": "2024-06-21"
+      }
+    ]
+  },
+  {
+    "id": "ms-175",
+    "company": "synthesia",
+    "date": "2024-06-23",
+    "type": "company-launch",
+    "name": "Synthesia 2.0 Platform Launch",
+    "description": "Synthesia launches Synthesia 2.0, a major platform update transforming it from a video generation tool into a full AI video communications platform with enhanced avatar and editing capabilities.",
+    "category": "video",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://www.synthesia.io/post/introducing-synthesia-video-communications-platform",
+        "title": "Introducing Synthesia 2.0",
+        "publisher": "Synthesia",
+        "date": "2024-06-23"
+      }
+    ]
+  },
+  {
+    "id": "ms-078",
+    "company": "eu",
+    "date": "2024-07-12",
+    "type": "regulation",
+    "name": "EU AI Act Published in Official Journal",
+    "description": "The EU AI Act is published in the Official Journal of the European Union, establishing the formal legal text.",
+    "category": "regulation",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://commission.europa.eu/news-and-media/news/ai-act-enters-force-2024-08-01_en",
+        "title": "AI Act enters into force",
+        "publisher": "European Commission",
+        "date": "2024-07-12"
+      }
+    ]
+  },
+  {
+    "id": "ms-079",
+    "company": "openai",
+    "date": "2024-07-18",
+    "type": "model-release",
+    "name": "GPT-4o Mini Released",
+    "description": "OpenAI releases GPT-4o mini, a cost-efficient model in the 4o family offering strong performance at lower cost for broader adoption.",
+    "category": "language-model",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/",
+        "title": "GPT-4o mini: advancing cost-efficient intelligence",
+        "publisher": "OpenAI",
+        "date": "2024-07-18"
+      }
+    ]
+  },
+  {
+    "id": "ms-080",
+    "company": "meta",
+    "date": "2024-07-23",
+    "type": "model-release",
+    "name": "Llama 3.1 Released (8B, 70B, 405B)",
+    "description": "Meta releases Llama 3.1 including the 405B parameter model, positioned as a frontier-level open model competing with proprietary alternatives.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://ai.meta.com/blog/meta-llama-3-1/",
+        "title": "Introducing Llama 3.1",
+        "publisher": "Meta AI",
+        "date": "2024-07-23"
+      }
+    ]
+  },
+  {
+    "id": "ms-081",
+    "company": "meta",
+    "date": "2024-07-29",
+    "type": "company-launch",
+    "name": "Meta AI Studio Announced",
+    "description": "Meta introduces AI Studio for creators and users to build and share custom AI characters, built with Llama 3.1.",
+    "category": "product",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://about.fb.com/news/2024/07/create-your-own-custom-ai-with-ai-studio/",
+        "title": "Create Your Own Custom AI With AI Studio",
+        "publisher": "Meta Newsroom",
+        "date": "2024-07-29"
+      }
+    ]
+  },
+  {
+    "id": "ms-082",
+    "company": "meta",
+    "date": "2024-07-29",
+    "type": "model-release",
+    "name": "SAM 2 (Segment Anything Model 2) Released",
+    "description": "Meta releases SAM 2, expanding promptable segmentation to video and enabling real-time object tracking across frames.",
+    "category": "image",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://ai.meta.com/blog/segment-anything-2/",
+        "title": "Introducing SAM 2: The next generation of Meta Segment Anything Model",
+        "publisher": "Meta AI",
+        "date": "2024-07-29"
+      }
+    ]
+  },
+  {
+    "id": "ms-176",
+    "company": "black-forest-labs",
+    "date": "2024-08-01",
+    "type": "company-launch",
+    "name": "Black Forest Labs Launches with FLUX.1",
+    "description": "Black Forest Labs launches publicly and releases the FLUX.1 suite of text-to-image models, founded by the original creators of Stable Diffusion and offering state-of-the-art open image generation.",
+    "category": "image",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://bfl.ai/announcing-black-forest-labs/",
+        "title": "Announcing Black Forest Labs",
+        "publisher": "Black Forest Labs",
+        "date": "2024-08-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-083",
+    "company": "eu",
+    "date": "2024-08-01",
+    "type": "regulation",
+    "name": "EU AI Act Enters into Force",
+    "description": "The EU AI Act officially enters into force, beginning its staggered application timelines for different AI risk categories.",
+    "category": "regulation",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://commission.europa.eu/news-and-media/news/ai-act-enters-force-2024-08-01_en",
+        "title": "AI Act enters into force",
+        "publisher": "European Commission",
+        "date": "2024-08-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-084",
+    "company": "anthropic",
+    "date": "2024-08-27",
+    "type": "company-launch",
+    "name": "Artifacts Generally Available",
+    "description": "Anthropic rolls out Artifacts broadly across all Claude plans and mobile apps, allowing Claude to create and display interactive content alongside conversations.",
+    "category": "product",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://claude.com/blog/artifacts",
+        "title": "Artifacts are now generally available",
+        "publisher": "Claude Blog",
+        "date": "2024-08-27"
+      }
+    ]
+  },
+  {
+    "id": "ms-085",
+    "company": "openai",
+    "date": "2024-09-12",
+    "type": "model-release",
+    "name": "o1-preview and o1-mini Released",
+    "description": "OpenAI introduces the o-series reasoning models with o1-preview and o1-mini, marking the beginning of explicit chain-of-thought reasoning capabilities.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://openai.com/index/introducing-openai-o1-preview/",
+        "title": "Introducing OpenAI o1-preview",
+        "publisher": "OpenAI",
+        "date": "2024-09-12"
+      }
+    ]
+  },
+  {
+    "id": "ms-086",
+    "company": "meta",
+    "date": "2024-09-25",
+    "type": "model-release",
+    "name": "Llama 3.2 Released (Vision + Edge Models)",
+    "description": "Meta releases Llama 3.2 with vision-capable models (11B, 90B) and lightweight text-only models (1B, 3B) for edge and mobile deployment.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/",
+        "title": "Llama 3.2: Revolutionizing edge AI and vision",
+        "publisher": "Meta AI",
+        "date": "2024-09-25"
+      }
+    ]
+  },
+  {
+    "id": "ms-087",
+    "company": "meta",
+    "date": "2024-09-25",
+    "type": "company-launch",
+    "name": "Ray-Ban Meta Glasses AI Features",
+    "description": "Meta announces new AI features for Ray-Ban Meta glasses including memory/recall-style help and live translation capabilities.",
+    "category": "product",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://about.fb.com/news/2024/09/ray-ban-meta-glasses-new-ai-features-and-partner-integrations/",
+        "title": "Ray-Ban Meta Glasses Are Getting New AI Features and Partner Integrations",
+        "publisher": "Meta Newsroom",
+        "date": "2024-09-25"
+      }
+    ]
+  },
+  {
+    "id": "ms-088",
+    "company": "us",
+    "date": "2024-09-29",
+    "type": "regulation",
+    "name": "California SB 1047 (Frontier AI Safety) Vetoed",
+    "description": "California Governor vetoes SB 1047, the frontier AI safety bill, preventing it from becoming law amid debate over AI regulation approaches.",
+    "category": "regulation",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.gov.ca.gov/wp-content/uploads/2024/09/SB-1047-Veto-Message.pdf",
+        "title": "SB 1047 Veto Message",
+        "publisher": "State of California Governor",
+        "date": "2024-09-29"
+      }
+    ]
+  },
+  {
+    "id": "ms-177",
+    "company": "bolt",
+    "date": "2024-10-03",
+    "type": "company-launch",
+    "name": "Bolt.new Launches",
+    "description": "StackBlitz launches Bolt.new, an AI-powered full-stack web app builder that enables users to prompt, run, edit, and deploy applications directly in the browser, quickly reaching $40M ARR.",
+    "category": "developer-tools",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.growthunhinged.com/p/boltnew-growth-journey",
+        "title": "How Bolt.new hit $40M ARR",
+        "publisher": "Growth Unhinged",
+        "date": "2024-10-03"
+      }
+    ]
+  },
+  {
+    "id": "ms-089",
+    "company": "anthropic",
+    "date": "2024-10-22",
+    "type": "model-release",
+    "name": "Upgraded Claude 3.5 Sonnet + Claude 3.5 Haiku + Computer Use",
+    "description": "Anthropic releases an upgraded Claude 3.5 Sonnet, new Claude 3.5 Haiku, and introduces computer use capability in beta for agent-style desktop interaction.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.anthropic.com/news/3-5-models-and-computer-use",
+        "title": "Introducing computer use, a new Claude 3.5 Sonnet, and Claude 3.5 Haiku",
+        "publisher": "Anthropic",
+        "date": "2024-10-22"
+      }
+    ]
+  },
+  {
+    "id": "ms-090",
+    "company": "anthropic",
+    "date": "2024-10-24",
+    "type": "company-launch",
+    "name": "Analysis Tool in Claude.ai",
+    "description": "Anthropic introduces the analysis tool in Claude.ai, allowing Claude to write and run JavaScript for data analysis within conversations.",
+    "category": "product",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://claude.com/blog/analysis-tool",
+        "title": "Introducing the analysis tool in Claude.ai",
+        "publisher": "Claude Blog",
+        "date": "2024-10-24"
+      }
+    ]
+  },
+  {
+    "id": "ms-178",
+    "company": "apple",
+    "date": "2024-10-28",
+    "type": "model-release",
+    "name": "Apple Intelligence First Features Available",
+    "description": "Apple Intelligence first features become available with iOS 18.1, iPadOS 18.1, and macOS 15.1, including writing tools, notification summaries, and Clean Up in Photos.",
+    "category": "product",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.apple.com/newsroom/2024/10/apple-intelligence-is-available-today-on-iphone-ipad-and-mac/",
+        "title": "Apple Intelligence is available today on iPhone, iPad, and Mac",
+        "publisher": "Apple Newsroom",
+        "date": "2024-10-28"
+      }
+    ]
+  },
+  {
+    "id": "ms-091",
+    "company": "anthropic",
+    "date": "2024-10-31",
+    "type": "company-launch",
+    "name": "Claude Desktop Apps (Mac/Windows Beta)",
+    "description": "Anthropic launches Claude desktop applications for Mac and Windows in public beta, expanding access beyond the web interface.",
+    "category": "product",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://techcrunch.com/2024/10/31/claude-gets-desktop-apps-and-dictation-support/",
+        "title": "Claude gets desktop apps and dictation support",
+        "publisher": "TechCrunch",
+        "date": "2024-10-31"
+      }
+    ]
+  },
+  {
+    "id": "ms-201",
+    "company": "anthropic",
+    "date": "2024-11-07",
+    "type": "partnership",
+    "name": "Anthropic–Palantir US Government Partnership",
+    "description": "Anthropic and Palantir partner to bring Claude AI models to AWS for US government intelligence and defense operations.",
+    "category": "government",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://investors.palantir.com/news-details/2024/Anthropic-and-Palantir-Partner-to-Bring-Claude-AI-Models-to-AWS-for-U.S.-Government-Intelligence-and-Defense-Operations/",
+        "title": "Anthropic and Palantir Partner for US Gov AI",
+        "publisher": "Palantir",
+        "date": "2024-11-07"
+      }
+    ]
+  },
+  {
+    "id": "ms-179",
+    "company": "lovable",
+    "date": "2024-11-21",
+    "type": "company-launch",
+    "name": "Lovable Web App Launch",
+    "description": "Lovable launches its AI-powered web app builder, enabling users to create full-stack applications through natural language prompts with automatic deployment and rapid iteration.",
+    "category": "developer-tools",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.producthunt.com/products/lovable",
+        "title": "Lovable",
+        "publisher": "Product Hunt",
+        "date": "2024-11-21"
+      }
+    ]
+  },
+  {
+    "id": "ms-202",
+    "company": "anthropic",
+    "date": "2024-11-22",
+    "type": "partnership",
+    "name": "Amazon–Anthropic Partnership Expanded to $8B",
+    "description": "Amazon invests an additional $4B in Anthropic, bringing total investment to $8B. AWS confirmed as primary cloud and training partner.",
+    "category": "cloud",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.anthropic.com/news/anthropic-amazon-trainium",
+        "title": "Powering the next generation of AI with AWS",
+        "publisher": "Anthropic",
+        "date": "2024-11-22"
+      }
+    ]
+  },
+  {
+    "id": "ms-092",
+    "company": "anthropic",
+    "date": "2024-11-25",
+    "type": "company-launch",
+    "name": "Model Context Protocol (MCP) Open-Sourced",
+    "description": "Anthropic open-sources the Model Context Protocol (MCP), a standard for connecting AI assistants to tools and data sources, enabling extensible AI applications.",
+    "category": "platform",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.anthropic.com/news/model-context-protocol",
+        "title": "Introducing the Model Context Protocol",
+        "publisher": "Anthropic",
+        "date": "2024-11-25"
+      }
+    ]
+  },
+  {
+    "id": "ms-093",
+    "company": "meta",
+    "date": "2024-12-06",
+    "type": "model-release",
+    "name": "Llama 3.3 70B Released",
+    "description": "Meta releases Llama 3.3 70B, a text-only model positioned as significantly more efficient while approaching top-tier performance.",
+    "category": "language-model",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+        "title": "meta-llama/Llama-3.3-70B-Instruct",
+        "publisher": "Hugging Face",
+        "date": "2024-12-06"
+      }
+    ]
+  },
+  {
+    "id": "ms-094",
+    "company": "openai",
+    "date": "2024-12-09",
+    "type": "breakthrough",
+    "name": "Sora System Card Published",
+    "description": "OpenAI publishes the Sora system card documenting safety evaluation and system documentation for its video generation model.",
+    "category": "safety",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://openai.com/index/sora-system-card/",
+        "title": "Sora system card",
+        "publisher": "OpenAI",
+        "date": "2024-12-09"
+      }
+    ]
+  },
+  {
+    "id": "ms-095",
+    "company": "brazil",
+    "date": "2024-12-10",
+    "type": "regulation",
+    "name": "Brazil AI Bill Approved by Senate",
+    "description": "Brazil's Senate approves Bill 2338/2023, a major AI regulatory bill, which moves to the Chamber of Deputies for further consideration.",
+    "category": "regulation",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://artificialintelligenceact.com/brazil-ai-act/",
+        "title": "Brazil AI Act - Bill 2338/2023 approved by Senate",
+        "publisher": "AI Act Tracker",
+        "date": "2024-12-10"
+      }
+    ]
+  },
+  {
+    "id": "ms-096",
+    "company": "google",
+    "date": "2024-12-11",
+    "type": "model-release",
+    "name": "Gemini 2.0 (Flash Experimental)",
+    "description": "Google begins public rollout of the Gemini 2.0 family via experimental releases, introducing the next generation of its multimodal AI models.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/google-gemini-ai-update-december-2024/",
+        "title": "Introducing Gemini 2.0: our new AI model for the agentic era",
+        "publisher": "Google",
+        "date": "2024-12-11"
+      }
+    ]
+  },
+  {
+    "id": "ms-097",
+    "company": "google",
+    "date": "2024-12-13",
+    "type": "company-launch",
+    "name": "NotebookLM Plus Introduced",
+    "description": "Google introduces NotebookLM Plus as a premium tier with audio interactivity features and major product upgrades.",
+    "category": "product",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/notebooklm-new-features-december-2024/",
+        "title": "NotebookLM gets a new look, audio interactivity and a premium version",
+        "publisher": "Google",
+        "date": "2024-12-13"
+      }
+    ]
+  },
+  {
+    "id": "ms-098",
+    "company": "meta",
+    "date": "2024-12-19",
+    "type": "company-launch",
+    "name": "Meta 'Built with Llama' Year Recap",
+    "description": "Meta recaps the year's Llama trajectory including Llama 3.2 and 3.3, positioning open-source AI models as its core strategy.",
+    "category": "platform",
+    "significance": "low",
+    "sources": [
+      {
+        "url": "https://ai.meta.com/blog/future-of-ai-built-with-llama/",
+        "title": "The future of AI: Built with Llama",
+        "publisher": "Meta AI",
+        "date": "2024-12-19"
+      }
+    ]
+  },
+  {
+    "id": "ms-099",
+    "company": "south-korea",
+    "date": "2024-12-26",
+    "type": "regulation",
+    "name": "South Korea AI Basic Act Passed",
+    "description": "South Korea's National Assembly passes the AI Basic Act, establishing a comprehensive national framework for AI governance.",
+    "category": "regulation",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.trade.gov/market-intelligence/south-korea-artificial-intelligence-ai-basic-act",
+        "title": "South Korea Artificial Intelligence (AI) Basic Act",
+        "publisher": "U.S. Department of Commerce",
+        "date": "2024-12-26"
+      }
+    ]
+  },
+  {
+    "id": "ms-100",
+    "company": "canada",
+    "date": "2025-01-06",
+    "type": "regulation",
+    "name": "Canada Bill C-27 (AIDA) Dies",
+    "description": "Canada's Bill C-27, which included the Artificial Intelligence and Data Act (AIDA), dies when Parliament is prorogued without enactment.",
+    "category": "regulation",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://www.parl.ca/legisinfo/en/bill/44-1/c-27",
+        "title": "LEGISinfo: Bill C-27",
+        "publisher": "Parliament of Canada",
+        "date": "2025-01-06"
+      }
+    ]
+  },
+  {
+    "id": "ms-180",
+    "company": "deepseek",
+    "date": "2025-01-20",
+    "type": "company-launch",
+    "name": "DeepSeek Chatbot App Launch",
+    "description": "DeepSeek launches its AI chatbot app on iOS and Android based on the R1 reasoning model, rapidly topping app store charts and sparking global discussion about Chinese AI capabilities and cost efficiency.",
+    "category": "product",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/DeepSeek",
+        "title": "DeepSeek",
+        "publisher": "Wikipedia",
+        "date": "2025-01-20"
+      }
+    ]
+  },
+  {
+    "id": "ms-181",
+    "company": "perplexity",
+    "date": "2025-01-23",
+    "type": "company-launch",
+    "name": "Perplexity Assistant for Android",
+    "description": "Perplexity launches its AI assistant for Android, positioning it as a default assistant replacement that can answer questions, make calls, and control device functions.",
+    "category": "product",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://www.reuters.com/technology/artificial-intelligence/perplexity-debuts-ai-assistant-android-challenge-alexa-chatgpt-2025-01-23/",
+        "title": "Perplexity debuts AI assistant on Android to challenge Alexa, ChatGPT",
+        "publisher": "Reuters",
+        "date": "2025-01-23"
+      }
+    ]
+  },
+  {
+    "id": "ms-101",
+    "company": "us",
+    "date": "2025-01-23",
+    "type": "regulation",
+    "name": "US Executive Order 14110 (AI Safety) Revoked",
+    "description": "A new executive order explicitly revokes EO 14110 on AI safety and initiates review/rescission of actions taken under it, signaling a shift in US AI policy.",
+    "category": "regulation",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.whitehouse.gov/presidential-actions/2025/01/removing-barriers-to-american-leadership-in-artificial-intelligence/",
+        "title": "Removing Barriers to American Leadership in Artificial Intelligence",
+        "publisher": "The White House",
+        "date": "2025-01-23"
+      }
+    ]
+  },
+  {
+    "id": "ms-102",
+    "company": "eu",
+    "date": "2025-02-01",
+    "type": "regulation",
+    "name": "EU AI Liability Directive Withdrawal Announced",
+    "description": "The European Commission work programme indicates the AI Liability Directive (AILD) proposal will be withdrawn due to lack of foreseeable agreement.",
+    "category": "regulation",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://www.europarl.europa.eu/legislative-train/theme-a-europe-fit-for-the-digital-age/file-ai-liability-directive",
+        "title": "Legislative Train: AI liability directive",
+        "publisher": "European Parliament",
+        "date": "2025-02-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-103",
+    "company": "openai",
+    "date": "2025-02-02",
+    "type": "company-launch",
+    "name": "Deep Research Feature in ChatGPT",
+    "description": "OpenAI introduces Deep Research, a feature enabling ChatGPT to conduct comprehensive multi-step research on complex topics.",
+    "category": "product",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://openai.com/index/introducing-deep-research/",
+        "title": "Introducing deep research",
+        "publisher": "OpenAI",
+        "date": "2025-02-02"
+      }
+    ]
+  },
+  {
+    "id": "ms-104",
+    "company": "google",
+    "date": "2025-02-05",
+    "type": "company-launch",
+    "name": "NotebookLM Becomes Workspace Core Service",
+    "description": "NotebookLM and NotebookLM Plus become Google Workspace core services with enterprise-grade controls and availability.",
+    "category": "product",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://workspaceupdates.googleblog.com/2025/02/notebooklm-and-notebooklm-plus-now-workspace-core-service.html",
+        "title": "NotebookLM and NotebookLM Plus now available as a Google Workspace core service",
+        "publisher": "Google Workspace Updates",
+        "date": "2025-02-05"
+      }
+    ]
+  },
+  {
+    "id": "ms-105",
+    "company": "google",
+    "date": "2025-02-10",
+    "type": "company-launch",
+    "name": "NotebookLM Plus Available to Individuals",
+    "description": "Google expands NotebookLM Plus to individual subscribers via Google One AI Premium, beyond enterprise-only availability.",
+    "category": "product",
+    "significance": "low",
+    "sources": [
+      {
+        "url": "https://techcrunch.com/2025/02/10/google-expands-notebooklm-plus-to-individual-users/",
+        "title": "Google expands NotebookLM Plus to individual users",
+        "publisher": "TechCrunch",
+        "date": "2025-02-10"
+      }
+    ]
+  },
+  {
+    "id": "ms-182",
+    "company": "xai",
+    "date": "2025-02-18",
+    "type": "model-release",
+    "name": "Grok 3 Released",
+    "description": "xAI announces and rolls out Grok 3, its flagship model update with significantly improved reasoning and benchmark performance, positioning it as a frontier-level competitor.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://x.ai/news/grok-3",
+        "title": "Grok 3",
+        "publisher": "xAI",
+        "date": "2025-02-18"
+      }
+    ]
+  },
+  {
+    "id": "ms-106",
+    "company": "anthropic",
+    "date": "2025-02-24",
+    "type": "model-release",
+    "name": "Claude 3.7 Sonnet + Claude Code",
+    "description": "Anthropic introduces Claude 3.7 Sonnet as a hybrid reasoning model alongside Claude Code, a command-line coding tool for developers.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.anthropic.com/news/claude-3-7-sonnet",
+        "title": "Claude 3.7 Sonnet and Claude Code",
+        "publisher": "Anthropic",
+        "date": "2025-02-24"
+      }
+    ]
+  },
+  {
+    "id": "ms-107",
+    "company": "openai",
+    "date": "2025-02-27",
+    "type": "model-release",
+    "name": "GPT-4.5 (Research Preview)",
+    "description": "OpenAI introduces GPT-4.5 as a research preview, continuing the GPT-4 series evolution.",
+    "category": "language-model",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://openai.com/index/introducing-gpt-4-5/",
+        "title": "Introducing GPT-4.5",
+        "publisher": "OpenAI",
+        "date": "2025-02-27"
+      }
+    ]
+  },
+  {
+    "id": "ms-183",
+    "company": "runway",
+    "date": "2025-03-01",
+    "type": "model-release",
+    "name": "Runway Gen-4 Released",
+    "description": "Runway releases Gen-4, its next-generation AI video model with dramatically improved character consistency, scene coherence, and cinematic quality for AI filmmaking.",
+    "category": "video",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.theverge.com/news/640821/runway-gen-4-artificial-intelligence-video-generator-filmmaking",
+        "title": "Runway says its latest AI video model is Gen-4",
+        "publisher": "The Verge",
+        "date": "2025-03-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-184",
+    "company": "manus",
+    "date": "2025-03-06",
+    "type": "company-launch",
+    "name": "Manus AI Agent Launch",
+    "description": "Manus AI agent officially launches, capable of autonomously executing complex multi-step tasks across the web, generating significant attention as a general-purpose AI agent.",
+    "category": "product",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Manus_(AI_agent)",
+        "title": "Manus (AI agent)",
+        "publisher": "Wikipedia",
+        "date": "2025-03-06"
+      }
+    ]
+  },
+  {
+    "id": "ms-108",
+    "company": "openai",
+    "date": "2025-03-11",
+    "type": "company-launch",
+    "name": "New Tools for Building Agents",
+    "description": "OpenAI announces new agent-oriented tools for developers, expanding the platform's capabilities for building autonomous AI agents.",
+    "category": "platform",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://openai.com/index/new-tools-for-building-agents/",
+        "title": "New tools for building agents",
+        "publisher": "OpenAI",
+        "date": "2025-03-11"
+      }
+    ]
+  },
+  {
+    "id": "ms-109",
+    "company": "anthropic",
+    "date": "2025-03-20",
+    "type": "company-launch",
+    "name": "Web Search in Claude",
+    "description": "Anthropic introduces web search capabilities in Claude, allowing the assistant to access and reference current information from the internet.",
+    "category": "product",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://claude.com/blog/web-search",
+        "title": "Claude can now search the web",
+        "publisher": "Claude Blog",
+        "date": "2025-03-20"
+      }
+    ]
+  },
+  {
+    "id": "ms-110",
+    "company": "openai",
+    "date": "2025-03-20",
+    "type": "company-launch",
+    "name": "Next-Generation Audio Models in API",
+    "description": "OpenAI introduces new STT, TTS, and audio model capabilities for the API, advancing voice and audio AI applications.",
+    "category": "platform",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://openai.com/index/introducing-our-next-generation-audio-models/",
+        "title": "Introducing our next-generation audio models",
+        "publisher": "OpenAI",
+        "date": "2025-03-20"
+      }
+    ]
+  },
+  {
+    "id": "ms-111",
+    "company": "openai",
+    "date": "2025-03-25",
+    "type": "model-release",
+    "name": "4o Image Generation",
+    "description": "OpenAI integrates image generation capabilities directly into GPT-4o, enabling native multimodal image creation within the model.",
+    "category": "image",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://openai.com/index/introducing-4o-image-generation/",
+        "title": "Introducing 4o image generation",
+        "publisher": "OpenAI",
+        "date": "2025-03-25"
+      }
+    ]
+  },
+  {
+    "id": "ms-112",
+    "company": "google",
+    "date": "2025-03-25",
+    "type": "model-release",
+    "name": "Gemini 2.5 Introduced (Thinking)",
+    "description": "Google introduces Gemini 2.5 with 'thinking' capabilities, representing a major advancement in reasoning and developer/app availability.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-model-thinking-updates-march-2025/",
+        "title": "Gemini 2.5: Our most intelligent AI model",
+        "publisher": "Google",
+        "date": "2025-03-25"
+      }
+    ]
+  },
+  {
+    "id": "ms-185",
+    "company": "midjourney",
+    "date": "2025-04-04",
+    "type": "model-release",
+    "name": "Midjourney v7 Released",
+    "description": "Midjourney releases version 7, its most advanced image generation model with significantly improved photorealism, text rendering, and prompt understanding.",
+    "category": "image",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Midjourney",
+        "title": "Midjourney",
+        "publisher": "Wikipedia",
+        "date": "2025-04-04"
+      }
+    ]
+  },
+  {
+    "id": "ms-113",
+    "company": "meta",
+    "date": "2025-04-05",
+    "type": "model-release",
+    "name": "Llama 4 Released (Scout + Maverick)",
+    "description": "Meta releases Llama 4 models (Scout and Maverick) as natively multimodal open-weight models, with the larger Behemoth model previewed as a training foundation.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://ai.meta.com/blog/llama-4-multimodal-intelligence/",
+        "title": "The Llama 4 herd: multimodal intelligence",
+        "publisher": "Meta AI",
+        "date": "2025-04-05"
+      }
+    ]
+  },
+  {
+    "id": "ms-114",
+    "company": "anthropic",
+    "date": "2025-04-09",
+    "type": "company-launch",
+    "name": "Claude Max Plan Introduced",
+    "description": "Anthropic launches the Max plan offering expanded usage limits and priority access for power users.",
+    "category": "product",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://claude.com/blog/max-plan",
+        "title": "Introducing the Max Plan",
+        "publisher": "Claude Blog",
+        "date": "2025-04-09"
+      }
+    ]
+  },
+  {
+    "id": "ms-115",
+    "company": "openai",
+    "date": "2025-04-14",
+    "type": "model-release",
+    "name": "GPT-4.1 / 4.1 mini / 4.1 nano (API)",
+    "description": "OpenAI introduces the GPT-4.1 model family for the API with large context support, offering multiple sizes for different use cases.",
+    "category": "language-model",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://openai.com/index/gpt-4-1/",
+        "title": "GPT-4.1",
+        "publisher": "OpenAI",
+        "date": "2025-04-14"
+      }
+    ]
+  },
+  {
+    "id": "ms-116",
+    "company": "openai",
+    "date": "2025-04-16",
+    "type": "model-release",
+    "name": "o3 + o4-mini Released",
+    "description": "OpenAI releases o3 and o4-mini, the next step in its o-series reasoning models with tool-using capabilities.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://openai.com/index/introducing-o3-and-o4-mini/",
+        "title": "Introducing o3 and o4-mini",
+        "publisher": "OpenAI",
+        "date": "2025-04-16"
+      }
+    ]
+  },
+  {
+    "id": "ms-117",
+    "company": "meta",
+    "date": "2025-04-29",
+    "type": "company-launch",
+    "name": "First LlamaCon + Meta AI App Launched",
+    "description": "Meta holds its first LlamaCon developer event and launches the standalone Meta AI app with a Discover feed for accessing AI capabilities.",
+    "category": "product",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://ai.meta.com/blog/llamacon-llama-news/",
+        "title": "Everything we announced at our first-ever LlamaCon",
+        "publisher": "Meta AI",
+        "date": "2025-04-29"
+      }
+    ]
+  },
+  {
+    "id": "ms-118",
+    "company": "anthropic",
+    "date": "2025-05-01",
+    "type": "company-launch",
+    "name": "Integrations (Remote MCP Servers)",
+    "description": "Anthropic introduces integrations to connect Claude with remote MCP servers, expanding beyond local-only desktop MCP connections.",
+    "category": "platform",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://claude.com/blog/integrations",
+        "title": "Claude can now connect to your world",
+        "publisher": "Claude Blog",
+        "date": "2025-05-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-119",
+    "company": "openai",
+    "date": "2025-05-16",
+    "type": "company-launch",
+    "name": "Codex (Cloud Software Engineering Agent)",
+    "description": "OpenAI introduces Codex as an agent product powered by codex-1, a cloud-based software engineering agent for autonomous coding tasks.",
+    "category": "product",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://openai.com/index/introducing-codex/",
+        "title": "Introducing Codex",
+        "publisher": "OpenAI",
+        "date": "2025-05-16"
+      }
+    ]
+  },
+  {
+    "id": "ms-120",
+    "company": "google",
+    "date": "2025-05-19",
+    "type": "company-launch",
+    "name": "NotebookLM Mobile Apps (Android + iOS)",
+    "description": "Google releases standalone NotebookLM apps for Android and iOS, expanding access to its AI notebook tool on mobile platforms.",
+    "category": "product",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://finance.yahoo.com/news/google-launches-stand-alone-notebooklm-171607302.html",
+        "title": "Google launches stand-alone NotebookLM apps",
+        "publisher": "Yahoo Finance",
+        "date": "2025-05-19"
+      }
+    ]
+  },
+  {
+    "id": "ms-121",
+    "company": "google",
+    "date": "2025-05-20",
+    "type": "company-launch",
+    "name": "Flow AI Filmmaking Tool Introduced",
+    "description": "Google introduces Flow, an AI filmmaking tool built around Veo and related generation/editing workflows for video creation.",
+    "category": "product",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://blog.google/innovation-and-ai/products/google-flow-veo-ai-filmmaking-tool/",
+        "title": "Meet Flow: AI-powered filmmaking with Veo 3",
+        "publisher": "Google",
+        "date": "2025-05-20"
+      }
+    ]
+  },
+  {
+    "id": "ms-122",
+    "company": "google",
+    "date": "2025-05-20",
+    "type": "company-launch",
+    "name": "Stitch UI Design Tool Introduced",
+    "description": "Google Labs introduces Stitch, a UI design tool that generates UI designs and front-end code from text and images.",
+    "category": "developer-tools",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://developers.googleblog.com/stitch-a-new-way-to-design-uis/",
+        "title": "From idea to app: Introducing Stitch, a new way to design UIs",
+        "publisher": "Google Developers Blog",
+        "date": "2025-05-20"
+      }
+    ]
+  },
+  {
+    "id": "ms-123",
+    "company": "google",
+    "date": "2025-05-20",
+    "type": "model-release",
+    "name": "Veo 3 + Imagen 4 + Lyria 2 on Vertex AI",
+    "description": "Google releases Veo 3, Imagen 4, and Lyria 2 on Vertex AI in public preview, providing the next wave of generative media models for developers.",
+    "category": "image",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://cloud.google.com/blog/products/ai-machine-learning/announcing-veo-3-imagen-4-and-lyria-2-on-vertex-ai",
+        "title": "Announcing Veo 3, Imagen 4, and Lyria 2 on Vertex AI",
+        "publisher": "Google Cloud Blog",
+        "date": "2025-05-20"
+      }
+    ]
+  },
+  {
+    "id": "ms-124",
+    "company": "anthropic",
+    "date": "2025-05-22",
+    "type": "model-release",
+    "name": "Claude 4 (Opus 4 + Sonnet 4)",
+    "description": "Anthropic announces Claude 4 with Opus 4 and Sonnet 4 models featuring hybrid modes (near-instant and extended thinking), available via subscription plans and API.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.anthropic.com/news/claude-4",
+        "title": "Introducing Claude 4",
+        "publisher": "Anthropic",
+        "date": "2025-05-22"
+      }
+    ]
+  },
+  {
+    "id": "ms-186",
+    "company": "deepseek",
+    "date": "2025-05-28",
+    "type": "model-release",
+    "name": "DeepSeek R1-0528 Released",
+    "description": "DeepSeek releases R1-0528 under MIT License, a major reasoning model update that demonstrates frontier-level performance at dramatically lower training costs, intensifying competition with Western AI labs.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/DeepSeek",
+        "title": "DeepSeek",
+        "publisher": "Wikipedia",
+        "date": "2025-05-28"
+      }
+    ]
+  },
+  {
+    "id": "ms-203",
+    "company": "anthropic",
+    "date": "2025-07-14",
+    "type": "partnership",
+    "name": "Anthropic–US Department of Defense $200M Agreement",
+    "description": "Formal DoD contract for Anthropic to advance responsible AI in defense operations across workflows and partners.",
+    "category": "government",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.anthropic.com/news/anthropic-and-the-department-of-defense-to-advance-responsible-ai-in-defense-operations",
+        "title": "Anthropic and the Department of Defense",
+        "publisher": "Anthropic",
+        "date": "2025-07-14"
+      }
+    ]
+  },
+  {
+    "id": "ms-125",
+    "company": "google",
+    "date": "2025-07-24",
+    "type": "company-launch",
+    "name": "Opal AI Mini-App Builder Introduced",
+    "description": "Google Labs introduces Opal, an experimental tool for building, editing, and sharing AI mini-apps via natural language and visual workflow editing.",
+    "category": "developer-tools",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://developers.googleblog.com/introducing-opal/",
+        "title": "Introducing Opal: describe, create, and share your AI mini-apps",
+        "publisher": "Google Developers Blog",
+        "date": "2025-07-24"
+      }
+    ]
+  },
+  {
+    "id": "ms-126",
+    "company": "openai",
+    "date": "2025-08-05",
+    "type": "model-release",
+    "name": "gpt-oss Open-Weight Models",
+    "description": "OpenAI introduces gpt-oss-120b and gpt-oss-20b as its first open-weight models, marking a significant shift in OpenAI's approach to model distribution.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://openai.com/index/introducing-gpt-oss/",
+        "title": "Introducing gpt-oss",
+        "publisher": "OpenAI",
+        "date": "2025-08-05"
+      }
+    ]
+  },
+  {
+    "id": "ms-127",
+    "company": "openai",
+    "date": "2025-08-07",
+    "type": "model-release",
+    "name": "GPT-5 Released",
+    "description": "OpenAI introduces GPT-5, its next-generation flagship model representing a major leap in AI capabilities.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://openai.com/index/introducing-gpt-5/",
+        "title": "Introducing GPT-5",
+        "publisher": "OpenAI",
+        "date": "2025-08-07"
+      }
+    ]
+  },
+  {
+    "id": "ms-128",
+    "company": "google",
+    "date": "2025-08-15",
+    "type": "model-release",
+    "name": "Imagen 4 Family GA + Imagen 4 Fast",
+    "description": "Google makes the Imagen 4 family generally available in the Gemini API and introduces the Imagen 4 Fast variant for faster generation.",
+    "category": "image",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://developers.googleblog.com/announcing-imagen-4-fast-and-imagen-4-family-generally-available-in-the-gemini-api/",
+        "title": "Announcing Imagen 4 Fast and the general availability of the Imagen 4 family in the Gemini API",
+        "publisher": "Google Developers Blog",
+        "date": "2025-08-15"
+      }
+    ]
+  },
+  {
+    "id": "ms-129",
+    "company": "openai",
+    "date": "2025-08-28",
+    "type": "company-launch",
+    "name": "Realtime API Updates (gpt-realtime)",
+    "description": "OpenAI introduces updates to the Realtime API with gpt-realtime capabilities for real-time AI interaction.",
+    "category": "platform",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://openai.com/index/introducing-gpt-realtime/",
+        "title": "Introducing gpt-realtime",
+        "publisher": "OpenAI",
+        "date": "2025-08-28"
+      }
+    ]
+  },
+  {
+    "id": "ms-130",
+    "company": "anthropic",
+    "date": "2025-09-29",
+    "type": "model-release",
+    "name": "Claude Sonnet 4.5 Released",
+    "description": "Anthropic releases Claude Sonnet 4.5, positioned as a major step forward for coding, agents, and computer use capabilities.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.anthropic.com/news/claude-sonnet-4-5",
+        "title": "Introducing Claude Sonnet 4.5",
+        "publisher": "Anthropic",
+        "date": "2025-09-29"
+      }
+    ]
+  },
+  {
+    "id": "ms-131",
+    "company": "openai",
+    "date": "2025-09-30",
+    "type": "model-release",
+    "name": "Sora 2 Released",
+    "description": "OpenAI introduces Sora 2, its next-generation video generation model with improved quality and capabilities.",
+    "category": "video",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://openai.com/index/sora-2/",
+        "title": "Sora 2 is here",
+        "publisher": "OpenAI",
+        "date": "2025-09-30"
+      }
+    ]
+  },
+  {
+    "id": "ms-132",
+    "company": "openai",
+    "date": "2025-10-06",
+    "type": "company-launch",
+    "name": "Apps in ChatGPT + Apps SDK",
+    "description": "OpenAI introduces Apps in ChatGPT and the Apps SDK, enabling developers to build applications that integrate directly within the ChatGPT experience.",
+    "category": "platform",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://openai.com/index/introducing-apps-in-chatgpt/",
+        "title": "Introducing apps in ChatGPT and the new Apps SDK",
+        "publisher": "OpenAI",
+        "date": "2025-10-06"
+      }
+    ]
+  },
+  {
+    "id": "ms-133",
+    "company": "eu",
+    "date": "2025-10-06",
+    "type": "regulation",
+    "name": "EU AI Liability Directive Officially Withdrawn",
+    "description": "The EU AI Liability Directive (AILD) proposal is formally withdrawn, with notice of withdrawal published in the EU Official Journal.",
+    "category": "regulation",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://eapil.org/2025/10/09/european-commission-withdraws-two-proposals-assignments-of-claims-regulation-and-ai-liability-directive/",
+        "title": "European Commission withdraws AI Liability Directive",
+        "publisher": "EAPIL",
+        "date": "2025-10-06"
+      }
+    ]
+  },
+  {
+    "id": "ms-134",
+    "company": "anthropic",
+    "date": "2025-10-20",
+    "type": "company-launch",
+    "name": "Claude Code on the Web",
+    "description": "Anthropic introduces Claude Code on the web, enabling browser-based coding workflows without local installation.",
+    "category": "product",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://claude.com/blog/claude-code-on-the-web",
+        "title": "Claude Code on the web",
+        "publisher": "Claude Blog",
+        "date": "2025-10-20"
+      }
+    ]
+  },
+  {
+    "id": "ms-204",
+    "company": "openai",
+    "date": "2025-10-28",
+    "type": "partnership",
+    "name": "Microsoft–OpenAI Next Chapter Partnership",
+    "description": "Updated partnership terms broaden how OpenAI can serve US government national security customers across cloud providers.",
+    "category": "government",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://blogs.microsoft.com/blog/2025/10/28/the-next-chapter-of-the-microsoft-openai-partnership/",
+        "title": "The next chapter of the Microsoft-OpenAI partnership",
+        "publisher": "Microsoft",
+        "date": "2025-10-28"
+      }
+    ]
+  },
+  {
+    "id": "ms-135",
+    "company": "openai",
+    "date": "2025-11-12",
+    "type": "model-release",
+    "name": "GPT-5.1 Released",
+    "description": "OpenAI introduces GPT-5.1, continuing rapid iteration on its GPT-5 series of models.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://openai.com/index/gpt-5-1/",
+        "title": "GPT-5.1",
+        "publisher": "OpenAI",
+        "date": "2025-11-12"
+      }
+    ]
+  },
+  {
+    "id": "ms-136",
+    "company": "google",
+    "date": "2025-11-18",
+    "type": "model-release",
+    "name": "Gemini 3 Pro Preview Released",
+    "description": "Google begins the Gemini 3 series with the release of Gemini 3 Pro Preview, marking the next generation of Google's AI models.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://ai.google.dev/gemini-api/docs/changelog",
+        "title": "Gemini API release notes / changelog",
+        "publisher": "Google AI for Developers",
+        "date": "2025-11-18"
+      }
+    ]
+  },
+  {
+    "id": "ms-137",
+    "company": "openai",
+    "date": "2025-12-11",
+    "type": "model-release",
+    "name": "GPT-5.2 Released",
+    "description": "OpenAI introduces GPT-5.2, continuing the rapid advancement of its flagship model series.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://openai.com/index/introducing-gpt-5-2/",
+        "title": "Introducing GPT-5.2",
+        "publisher": "OpenAI",
+        "date": "2025-12-11"
+      }
+    ]
+  },
+  {
+    "id": "ms-205",
+    "company": "google-deepmind",
+    "date": "2025-12-11",
+    "type": "partnership",
+    "name": "Google DeepMind–UK Government AI Partnership",
+    "description": "Expanded partnership with the UK government and deeper collaboration with the UK AI Security Institute on safety and security research.",
+    "category": "government",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://deepmind.google/blog/strengthening-our-partnership-with-the-uk-government-to-support-prosperity-and-security-in-the-ai-era/",
+        "title": "Our partnership with the UK government",
+        "publisher": "Google DeepMind",
+        "date": "2025-12-10"
+      }
+    ]
+  },
+  {
+    "id": "ms-138",
+    "company": "openai",
+    "date": "2025-12-16",
+    "type": "company-launch",
+    "name": "New ChatGPT Images Experience",
+    "description": "OpenAI introduces a new ChatGPT Images experience with enhanced image generation and editing capabilities.",
+    "category": "product",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://openai.com/index/new-chatgpt-images-is-here/",
+        "title": "The new ChatGPT Images is here",
+        "publisher": "OpenAI",
+        "date": "2025-12-16"
+      }
+    ]
+  },
+  {
+    "id": "ms-139",
+    "company": "openai",
+    "date": "2025-12-18",
+    "type": "model-release",
+    "name": "GPT-5.2-Codex Released",
+    "description": "OpenAI introduces GPT-5.2-Codex, a specialized coding variant of the GPT-5.2 model optimized for software engineering tasks.",
+    "category": "language-model",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://openai.com/index/introducing-gpt-5-2-codex/",
+        "title": "Introducing GPT-5.2-Codex",
+        "publisher": "OpenAI",
+        "date": "2025-12-18"
+      }
+    ]
+  },
+  {
+    "id": "ms-187",
+    "company": "manus",
+    "date": "2025-12-29",
+    "type": "acquisition",
+    "name": "Meta Acquires Manus",
+    "description": "Meta announces the acquisition of Manus AI agent for a reported $2-3 billion valuation, integrating autonomous AI agent capabilities into Meta's product ecosystem.",
+    "category": "company",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.reuters.com/world/china/meta-acquire-chinese-startup-manus-boost-advanced-ai-features-2025-12-29/",
+        "title": "Meta to acquire Chinese startup Manus to boost advanced AI features",
+        "publisher": "Reuters",
+        "date": "2025-12-29"
+      }
+    ]
+  },
+  {
+    "id": "ms-140",
+    "company": "south-korea",
+    "date": "2026-01-01",
+    "type": "regulation",
+    "name": "South Korea AI Basic Act Takes Effect",
+    "description": "South Korea implements its AI Basic Act, establishing comprehensive regulations for AI development and deployment with associated grace periods.",
+    "category": "regulation",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.reuters.com/world/asia-pacific/south-korea-launches-landmark-laws-regulate-ai-startups-warn-compliance-burdens-2026-01-22/",
+        "title": "South Korea launches landmark laws to regulate AI",
+        "publisher": "Reuters",
+        "date": "2026-01-22"
+      }
+    ]
+  },
+  {
+    "id": "ms-141",
+    "company": "anthropic",
+    "date": "2026-01-12",
+    "type": "company-launch",
+    "name": "Cowork Research Preview",
+    "description": "Anthropic introduces Cowork as Claude Code for broader work beyond coding, available as a research preview.",
+    "category": "product",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://claude.com/blog/cowork-research-preview",
+        "title": "Cowork: Claude Code for the rest of your work",
+        "publisher": "Claude Blog",
+        "date": "2026-01-12"
+      }
+    ]
+  },
+  {
+    "id": "ms-142",
+    "company": "openai",
+    "date": "2026-01-16",
+    "type": "company-launch",
+    "name": "ChatGPT Go Worldwide",
+    "description": "OpenAI announces ChatGPT Go as available worldwide, expanding access to a lightweight version of ChatGPT.",
+    "category": "product",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://openai.com/index/introducing-chatgpt-go/",
+        "title": "Introducing ChatGPT Go",
+        "publisher": "OpenAI",
+        "date": "2026-01-16"
+      }
+    ]
+  },
+  {
+    "id": "ms-143",
+    "company": "anthropic",
+    "date": "2026-01-22",
+    "type": "company-launch",
+    "name": "Claude's New Constitution Published",
+    "description": "Anthropic publishes a new constitution describing Claude's intended values and behavior, advancing transparency in AI alignment.",
+    "category": "safety",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://www.anthropic.com/news/claude-new-constitution",
+        "title": "Claude's new constitution",
+        "publisher": "Anthropic",
+        "date": "2026-01-22"
+      }
+    ]
+  },
+  {
+    "id": "ms-144",
+    "company": "us",
+    "date": "2026-02-01",
+    "type": "regulation",
+    "name": "Colorado AI Consumer Protection (SB24-205) Takes Effect",
+    "description": "Colorado's high-risk AI consumer protection obligations take effect, requiring businesses to assess and mitigate algorithmic discrimination.",
+    "category": "regulation",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://leg.colorado.gov/bills/sb24-205",
+        "title": "SB24-205 Consumer Protections for Artificial Intelligence",
+        "publisher": "Colorado General Assembly",
+        "date": "2026-02-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-145",
+    "company": "anthropic",
+    "date": "2026-02-05",
+    "type": "model-release",
+    "name": "Claude Opus 4.6 Released",
+    "description": "Anthropic releases Claude Opus 4.6, its flagship Opus model upgrade with expanded capabilities.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.anthropic.com/news/claude-opus-4-6",
+        "title": "Introducing Claude Opus 4.6",
+        "publisher": "Anthropic",
+        "date": "2026-02-05"
+      }
+    ]
+  },
+  {
+    "id": "ms-146",
+    "company": "anthropic",
+    "date": "2026-02-12",
+    "type": "company-launch",
+    "name": "Claude Enterprise Self-Serve",
+    "description": "Anthropic makes Claude Enterprise purchasable self-serve without requiring a sales conversation, expanding enterprise adoption.",
+    "category": "product",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://claude.com/blog/self-serve-enterprise",
+        "title": "Claude Enterprise, now available self-serve",
+        "publisher": "Claude Blog",
+        "date": "2026-02-12"
+      }
+    ]
+  },
+  {
+    "id": "ms-147",
+    "company": "anthropic",
+    "date": "2026-02-17",
+    "type": "model-release",
+    "name": "Claude Sonnet 4.6 Released",
+    "description": "Anthropic releases Claude Sonnet 4.6 with 1M token context in beta and broad capability upgrades across the model.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.anthropic.com/news/claude-sonnet-4-6",
+        "title": "Introducing Claude Sonnet 4.6",
+        "publisher": "Anthropic",
+        "date": "2026-02-17"
+      }
+    ]
+  },
+  {
+    "id": "ms-148",
+    "company": "google",
+    "date": "2026-02-24",
+    "type": "company-launch",
+    "name": "ProducerAI Joins Google Labs",
+    "description": "ProducerAI becomes a Google Labs experiment for AI-assisted music creation, expanding Google's creative AI tools.",
+    "category": "product",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/producerai/",
+        "title": "ProducerAI: Your music creation partner, now in Google Labs",
+        "publisher": "Google",
+        "date": "2026-02-24"
+      }
+    ]
+  },
+  {
+    "id": "ms-149",
+    "company": "anthropic",
+    "date": "2026-02-25",
+    "type": "acquisition",
+    "name": "Anthropic Acquires Vercept",
+    "description": "Anthropic acquires Vercept to advance Claude's computer use capabilities, expanding its ability to interact with desktop applications.",
+    "category": "acquisition",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://www.anthropic.com/news/acquires-vercept",
+        "title": "Anthropic acquires Vercept to advance Claude's computer use capabilities",
+        "publisher": "Anthropic",
+        "date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "id": "ms-150",
+    "company": "openai",
+    "date": "2026-03-01",
+    "type": "model-release",
+    "name": "GPT-5.4 (Thinking + Pro)",
+    "description": "OpenAI introduces GPT-5.4 with Thinking capabilities and a Pro variant, representing the latest iteration of its flagship model series.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://openai.com/index/introducing-gpt-5-4/",
+        "title": "Introducing GPT-5.4",
+        "publisher": "OpenAI",
+        "date": "2026-03-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-206",
+    "company": "openai",
+    "date": "2026-03-02",
+    "type": "partnership",
+    "name": "OpenAI–Department of War Agreement",
+    "description": "OpenAI publishes agreement describing guardrails for how its AI systems would be deployed for defense and government use cases.",
+    "category": "government",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://openai.com/index/our-agreement-with-the-department-of-war/",
+        "title": "Our agreement with the Department of War",
+        "publisher": "OpenAI",
+        "date": "2026-03-02"
+      }
+    ]
+  },
+  {
+    "id": "ms-151",
+    "company": "anthropic",
+    "date": "2026-03-09",
+    "type": "company-launch",
+    "name": "Code Review for Claude Code",
+    "description": "Anthropic introduces code review capabilities for Claude Code, enabling automated code review within the developer workflow.",
+    "category": "developer-tools",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://claude.com/blog/code-review",
+        "title": "Code Review for Claude Code",
+        "publisher": "Claude Blog",
+        "date": "2026-03-09"
+      }
+    ]
+  },
+  {
+    "id": "ms-152",
+    "company": "openai",
+    "date": "2026-03-11",
+    "type": "company-launch",
+    "name": "GPT-5.1 Retired in ChatGPT",
+    "description": "OpenAI removes GPT-5.1 models from ChatGPT availability as part of model migration to newer versions.",
+    "category": "platform",
+    "significance": "low",
+    "sources": [
+      {
+        "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+        "title": "ChatGPT Release Notes",
+        "publisher": "OpenAI Help Center",
+        "date": "2026-03-11"
+      }
+    ]
+  },
+  {
+    "id": "ms-153",
+    "company": "anthropic",
+    "date": "2026-03-12",
+    "type": "company-launch",
+    "name": "Interactive Visuals in Claude Conversations",
+    "description": "Anthropic introduces the ability for Claude to create interactive charts, diagrams, and visualizations directly within conversations.",
+    "category": "product",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://claude.com/blog/claude-builds-visuals",
+        "title": "Claude builds interactive visuals right in your conversation",
+        "publisher": "Claude Blog",
+        "date": "2026-03-12"
+      }
+    ]
+  },
+  {
+    "id": "ms-154",
+    "company": "google",
+    "date": "2026-03-12",
+    "type": "company-launch",
+    "name": "Ask Maps (Gemini in Google Maps)",
+    "description": "Google rolls out Ask Maps, a conversational Gemini-powered experience in Google Maps, initially in the US and India on mobile.",
+    "category": "product",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://apnews.com/article/1933c40eaecfdbb9aa54d8ae3efcec2e",
+        "title": "Google overhauls its Maps app, adding in more AI features",
+        "publisher": "Associated Press",
+        "date": "2026-03-12"
+      }
+    ]
+  },
+  {
+    "id": "ms-155",
+    "company": "meta",
+    "date": "2026-03-12",
+    "type": "company-launch",
+    "name": "Meta Delays 'Avocado' Flagship Model",
+    "description": "Reports indicate Meta pushed the rollout of its next flagship model 'Avocado' to at least May 2026 due to performance concerns.",
+    "category": "company",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://www.reuters.com/technology/meta-delays-rollout-new-ai-model-nyt-reports-2026-03-12/",
+        "title": "Meta delays rollout new AI model 'Avocado'",
+        "publisher": "Reuters",
+        "date": "2026-03-12"
+      }
+    ]
+  },
+  {
+    "id": "ms-156",
+    "company": "anthropic",
+    "date": "2026-03-13",
+    "type": "company-launch",
+    "name": "1M Context GA for Opus 4.6 and Sonnet 4.6",
+    "description": "Anthropic makes 1M token context generally available for both Opus 4.6 and Sonnet 4.6 with standard pricing across the full context window.",
+    "category": "platform",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://claude.com/blog/1m-context-ga",
+        "title": "1M context is now generally available for Opus 4.6 and Sonnet 4.6",
+        "publisher": "Claude Blog",
+        "date": "2026-03-13"
+      }
+    ]
+  },
+  {
+    "id": "ms-207",
+    "company": "openai",
+    "date": "2026-03-17",
+    "type": "partnership",
+    "name": "OpenAI–AWS US Defense AI Distribution Deal",
+    "description": "OpenAI partners with AWS to sell AI to US defense and government agencies through classified and unclassified cloud environments.",
+    "category": "government",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.reuters.com/business/retail-consumer/openai-sell-ai-us-agencies-through-amazon-cloud-unit-information-reports-2026-03-17/",
+        "title": "OpenAI to sell AI to US agencies through Amazon cloud unit",
+        "publisher": "Reuters",
+        "date": "2026-03-17"
+      }
+    ]
+  }
+]
