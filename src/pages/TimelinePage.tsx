@@ -24,6 +24,7 @@ export function TimelinePage({ events }: TimelinePageProps) {
     <PageLayout
       title="Timeline"
       subtitle="Watch AI workforce displacement unfold over time"
+      embedPath="/timeline"
     >
       <div className="flex gap-2 mb-6">
         <button

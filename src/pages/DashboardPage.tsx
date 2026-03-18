@@ -19,6 +19,7 @@ export function DashboardPage({ events }: DashboardPageProps) {
     <PageLayout
       title="AI Economic Impact Dashboard"
       subtitle="Tracking workforce displacement driven by artificial intelligence adoption"
+      embedPath="/dashboard"
     >
       <div className="space-y-8">
         <TotalCounter

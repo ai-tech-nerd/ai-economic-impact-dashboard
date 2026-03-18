@@ -131,6 +131,7 @@ export function AITimelinePage({ milestones }: AITimelinePageProps) {
     <PageLayout
       title="AI Advancements"
       subtitle="Major AI milestones over time"
+      embedPath="/ai-advances"
     >
       {/* Type filter — pill buttons */}
       <div className="flex flex-wrap gap-2 mb-4">

@@ -29,6 +29,7 @@ export function LearningPage() {
     <PageLayout
       title="Learn & Prepare"
       subtitle="Practical resources for understanding AI and positioning yourself for success"
+      embedPath="/learn"
     >
       <div className="flex flex-wrap gap-2 mb-8 border-b border-surface-200 pb-4">
         {TABS.map((tab) => (

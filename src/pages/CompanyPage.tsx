@@ -243,6 +243,7 @@ function CompanyList({
     <PageLayout
       title="AI Companies"
       subtitle="How major AI companies are evolving and their impact on the workforce"
+      embedPath="/companies"
     >
       <div className="flex flex-wrap items-center gap-3 mb-6">
         <input

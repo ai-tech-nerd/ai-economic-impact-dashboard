@@ -30,6 +30,7 @@ export function PredictionsPage({ predictions }: PredictionsPageProps) {
     <PageLayout
       title="Predictions"
       subtitle="Estimated jobs at risk based on current trends and announced plans"
+      embedPath="/predictions"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
         {grouped.map(({ timeframe, label, items }) => (
