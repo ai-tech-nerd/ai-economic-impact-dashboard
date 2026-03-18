@@ -1,5 +1,185 @@
 [
   {
+    "id": "ms-h01",
+    "company": "academic",
+    "date": "1950-10-01",
+    "type": "breakthrough",
+    "name": "Alan Turing Proposes the Turing Test",
+    "description": "Alan Turing publishes 'Computing Machinery and Intelligence,' proposing the Turing Test as a measure of machine intelligence — a foundational concept in AI.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Turing_test",
+        "title": "Turing Test",
+        "publisher": "Wikipedia",
+        "date": "1950-10-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-h02",
+    "company": "academic",
+    "date": "1956-08-31",
+    "type": "breakthrough",
+    "name": "Artificial Intelligence Coined at Dartmouth",
+    "description": "The term 'Artificial Intelligence' is coined at the Dartmouth Conference, organized by John McCarthy, Marvin Minsky, Nathaniel Rochester, and Claude Shannon. Widely considered the birth of AI as a field.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Dartmouth_workshop",
+        "title": "Dartmouth Workshop",
+        "publisher": "Wikipedia",
+        "date": "1956-08-31"
+      }
+    ]
+  },
+  {
+    "id": "ms-h03",
+    "company": "mit",
+    "date": "1966-01-01",
+    "type": "breakthrough",
+    "name": "ELIZA Chatbot Created",
+    "description": "ELIZA, one of the earliest chatbots, is created by Joseph Weizenbaum at MIT. It simulated conversation by pattern matching, foreshadowing modern conversational AI.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/ELIZA",
+        "title": "ELIZA",
+        "publisher": "Wikipedia",
+        "date": "1966-01-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-h04",
+    "company": "stanford",
+    "date": "1969-01-01",
+    "type": "breakthrough",
+    "name": "Shakey the Robot",
+    "description": "Shakey, the first general-purpose mobile robot capable of reasoning about its actions, is developed at Stanford Research Institute (SRI International).",
+    "category": "robotics",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Shakey_the_robot",
+        "title": "Shakey the Robot",
+        "publisher": "Wikipedia",
+        "date": "1969-01-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-h05",
+    "company": "japan-gov",
+    "date": "1981-04-01",
+    "type": "breakthrough",
+    "name": "Japan's Fifth Generation Computer Project",
+    "description": "The Japanese government launches the Fifth Generation Computer Project, a 10-year initiative to create computers using massively parallel processing and AI. It spurred global AI investment.",
+    "category": "government",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Fifth_Generation_Computer_Systems",
+        "title": "Fifth Generation Computer Systems",
+        "publisher": "Wikipedia",
+        "date": "1981-04-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-h06",
+    "company": "ibm",
+    "date": "1997-05-11",
+    "type": "breakthrough",
+    "name": "IBM Deep Blue Defeats Garry Kasparov",
+    "description": "IBM's Deep Blue defeats world chess champion Garry Kasparov in a six-game match, marking the first time a computer beat a reigning world champion under standard chess rules.",
+    "category": "competition",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Deep_Blue_(chess_computer)",
+        "title": "Deep Blue",
+        "publisher": "Wikipedia",
+        "date": "1997-05-11"
+      }
+    ]
+  },
+  {
+    "id": "ms-h07",
+    "company": "irobot",
+    "date": "2002-09-17",
+    "type": "company-launch",
+    "name": "iRobot Roomba Launches",
+    "description": "iRobot launches the Roomba, bringing AI-powered autonomous navigation into consumer homes and popularizing robotics in everyday life.",
+    "category": "consumer",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Roomba",
+        "title": "Roomba",
+        "publisher": "Wikipedia",
+        "date": "2002-09-17"
+      }
+    ]
+  },
+  {
+    "id": "ms-h08",
+    "company": "darpa",
+    "date": "2005-10-08",
+    "type": "breakthrough",
+    "name": "DARPA Grand Challenge for Autonomous Vehicles",
+    "description": "DARPA holds the Grand Challenge, a prize competition for autonomous vehicles that successfully navigate a 132-mile desert course. Stanford's Stanley wins, accelerating self-driving car development.",
+    "category": "robotics",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/DARPA_Grand_Challenge_(2005)",
+        "title": "DARPA Grand Challenge 2005",
+        "publisher": "Wikipedia",
+        "date": "2005-10-08"
+      }
+    ]
+  },
+  {
+    "id": "ms-h09",
+    "company": "ibm",
+    "date": "2011-02-16",
+    "type": "breakthrough",
+    "name": "IBM Watson Wins Jeopardy!",
+    "description": "IBM Watson defeats Jeopardy! champions Ken Jennings and Brad Rutter, demonstrating advanced natural language understanding and question-answering capabilities.",
+    "category": "competition",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Watson_(computer)#Jeopardy!",
+        "title": "Watson Jeopardy!",
+        "publisher": "Wikipedia",
+        "date": "2011-02-16"
+      }
+    ]
+  },
+  {
+    "id": "ms-h10",
+    "company": "google",
+    "date": "2012-06-26",
+    "type": "breakthrough",
+    "name": "Google's Deep Learning Image Recognition Breakthrough",
+    "description": "Google's deep learning research team, led by Jeff Dean and Andrew Ng, trains a neural network on 10 million YouTube images that autonomously learns to recognize cats — demonstrating unsupervised feature learning at scale.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/1112.6209",
+        "title": "Building High-level Features Using Large Scale Unsupervised Learning",
+        "publisher": "arXiv",
+        "date": "2012-06-26"
+      }
+    ]
+  },
+  {
     "id": "ms-001",
     "company": "openai",
     "date": "2015-12-11",
@@ -36,6 +216,42 @@
     ]
   },
   {
+    "id": "ms-h11",
+    "company": "deepmind",
+    "date": "2016-03-15",
+    "type": "breakthrough",
+    "name": "AlphaGo Defeats World Champion Lee Sedol",
+    "description": "DeepMind's AlphaGo defeats world Go champion Lee Sedol 4–1, mastering a game long considered too complex for AI due to its vast number of possible moves.",
+    "category": "competition",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://deepmind.google/research/breakthroughs/alphago/",
+        "title": "AlphaGo",
+        "publisher": "DeepMind",
+        "date": "2016-03-15"
+      }
+    ]
+  },
+  {
+    "id": "ms-h12",
+    "company": "google",
+    "date": "2017-06-12",
+    "type": "breakthrough",
+    "name": "Transformer Architecture Introduced",
+    "description": "Google researchers publish 'Attention Is All You Need,' introducing the Transformer architecture that becomes the foundation for GPT, BERT, and virtually all modern large language models.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/1706.03762",
+        "title": "Attention Is All You Need",
+        "publisher": "arXiv",
+        "date": "2017-06-12"
+      }
+    ]
+  },
+  {
     "id": "ms-003",
     "company": "openai",
     "date": "2018-06-01",
@@ -50,6 +266,42 @@
         "title": "Improving Language Understanding by Generative Pre-Training",
         "publisher": "OpenAI",
         "date": "2018-06-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-h14",
+    "company": "openai",
+    "date": "2018-06-11",
+    "type": "model-release",
+    "name": "GPT-1 Released",
+    "description": "OpenAI releases GPT-1, the first Generative Pre-trained Transformer, demonstrating that unsupervised pre-training followed by fine-tuning could achieve strong NLP performance.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://openai.com/index/language-unsupervised/",
+        "title": "Improving Language Understanding by Generative Pre-Training",
+        "publisher": "OpenAI",
+        "date": "2018-06-11"
+      }
+    ]
+  },
+  {
+    "id": "ms-h13",
+    "company": "google",
+    "date": "2018-10-11",
+    "type": "model-release",
+    "name": "BERT Released",
+    "description": "Google releases BERT (Bidirectional Encoder Representations from Transformers), achieving state-of-the-art results on 11 NLP tasks and transforming how search engines understand language.",
+    "category": "language-model",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/1810.04805",
+        "title": "BERT: Pre-training of Deep Bidirectional Transformers",
+        "publisher": "arXiv",
+        "date": "2018-10-11"
       }
     ]
   },

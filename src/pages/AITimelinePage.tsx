@@ -54,6 +54,14 @@ const COMPANY_LABELS: Record<string, string> = {
   lovable: 'Lovable',
   replit: 'Replit',
   manus: 'Manus',
+  academic: 'Academic',
+  mit: 'MIT',
+  stanford: 'Stanford',
+  darpa: 'DARPA',
+  ibm: 'IBM',
+  irobot: 'iRobot',
+  deepmind: 'DeepMind',
+  'japan-gov': 'Japan Government',
 };
 
 // Country/jurisdiction slugs used for regulation entries

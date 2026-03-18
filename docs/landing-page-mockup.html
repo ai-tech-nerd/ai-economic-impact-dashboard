@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landing Page Mockup — AI Economic Impact Dashboard</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #1a1a2e; line-height: 1.6; }
+
+  /* Hero */
+  .hero {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+    color: white; text-align: center; padding: 100px 24px 80px;
+    position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(ellipse at 50% 0%, rgba(59,130,246,0.15) 0%, transparent 70%);
+  }
+  .hero * { position: relative; }
+  .hero h1 { font-size: 3rem; font-weight: 800; max-width: 800px; margin: 0 auto 20px; line-height: 1.15; }
+  .hero p.sub { font-size: 1.2rem; color: #94a3b8; max-width: 650px; margin: 0 auto 36px; }
+  .hero .cta { display: inline-block; background: #3b82f6; color: white; padding: 16px 40px; border-radius: 8px; text-decoration: none; font-size: 1.1rem; font-weight: 600; transition: background 0.2s; }
+  .hero .cta:hover { background: #2563eb; }
+  .hero .note { color: #64748b; font-size: 0.9rem; margin-top: 16px; }
+  .hero-screenshot { max-width: 1000px; margin: 50px auto 0; border-radius: 12px; box-shadow: 0 25px 60px rgba(0,0,0,0.5); overflow: hidden; border: 1px solid rgba(255,255,255,0.1); }
+  .hero-screenshot .placeholder { background: #1e293b; padding: 60px; text-align: center; color: #475569; font-style: italic; border-radius: 12px; }
+
+  /* Sections */
+  section { padding: 80px 24px; max-width: 1100px; margin: 0 auto; }
+  section:nth-child(even) { background: #f8fafc; max-width: 100%; }
+  section:nth-child(even) .inner { max-width: 1100px; margin: 0 auto; }
+  h2 { font-size: 2rem; font-weight: 700; margin-bottom: 20px; color: #0f172a; }
+  h3 { font-size: 1.4rem; font-weight: 600; margin-bottom: 12px; color: #1e293b; }
+  p { color: #475569; font-size: 1.05rem; margin-bottom: 16px; max-width: 750px; }
+
+  /* Stats Row */
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin: 40px 0; }
+  .stat { text-align: center; padding: 28px 16px; background: white; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); border: 1px solid #e2e8f0; }
+  .stat .num { font-size: 2.2rem; font-weight: 800; color: #3b82f6; }
+  .stat .label { font-size: 0.9rem; color: #64748b; margin-top: 4px; }
+
+  /* Feature Cards */
+  .features { display: grid; gap: 60px; margin-top: 40px; }
+  .feature { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+  .feature:nth-child(even) { direction: rtl; }
+  .feature:nth-child(even) > * { direction: ltr; }
+  .feature .text h3 { color: #3b82f6; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px; }
+  .feature .text h3 + h4 { font-size: 1.3rem; font-weight: 700; color: #0f172a; margin-bottom: 12px; }
+  .feature .text p { font-size: 0.95rem; }
+  .feature .screenshot { background: #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+  .feature .screenshot .placeholder { padding: 120px 40px; text-align: center; color: #64748b; font-style: italic; }
+
+  /* Audience Cards */
+  .audience-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 30px; }
+  .audience-card { background: white; border-radius: 12px; padding: 28px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); border: 1px solid #e2e8f0; }
+  .audience-card h4 { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; color: #0f172a; }
+  .audience-card p { font-size: 0.95rem; margin-bottom: 0; }
+
+  /* Methodology */
+  .method-list { list-style: none; margin: 20px 0; }
+  .method-list li { padding: 10px 0 10px 32px; position: relative; color: #475569; font-size: 1.05rem; }
+  .method-list li::before { content: '✓'; position: absolute; left: 0; color: #22c55e; font-weight: 700; font-size: 1.2rem; }
+
+  /* Final CTA */
+  .final-cta {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    text-align: center; padding: 80px 24px; color: white;
+    max-width: 100%;
+  }
+  .final-cta h2 { color: white; margin-bottom: 12px; }
+  .final-cta p.sub { color: #94a3b8; font-size: 1.15rem; max-width: 500px; margin: 0 auto 32px; }
+  .final-cta .cta { display: inline-block; background: #3b82f6; color: white; padding: 16px 40px; border-radius: 8px; text-decoration: none; font-size: 1.1rem; font-weight: 600; }
+  .final-cta .note { color: #64748b; font-size: 0.85rem; margin-top: 14px; }
+
+  /* Open Source Banner */
+  .opensource { text-align: center; padding: 50px 24px; background: #f0f9ff; border-top: 1px solid #bae6fd; border-bottom: 1px solid #bae6fd; max-width: 100%; }
+  .opensource a { color: #3b82f6; font-weight: 600; text-decoration: none; font-size: 1.05rem; }
+  .opensource a:hover { text-decoration: underline; }
+
+  /* Layout label */
+  .layout-label { position: fixed; top: 10px; right: 10px; background: #fbbf24; color: #1a1a2e; padding: 6px 14px; border-radius: 6px; font-size: 0.75rem; font-weight: 700; z-index: 999; text-transform: uppercase; letter-spacing: 0.05em; }
+
+  @media (max-width: 768px) {
+    .hero h1 { font-size: 2rem; }
+    .stats { grid-template-columns: repeat(2, 1fr); }
+    .feature { grid-template-columns: 1fr; }
+    .feature:nth-child(even) { direction: ltr; }
+    .audience-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="layout-label">Mockup — Layout Reference</div>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>How Many Jobs Has AI Already Displaced?</h1>
+  <p class="sub">An interactive, open-source dashboard tracking verified AI-driven workforce displacement — from ChatGPT's launch to today. Every number is sourced. Every event is documented.</p>
+  <a href="https://aishift.michaelkristof.com" class="cta">Explore the Dashboard →</a>
+  <p class="note">Free. No sign-ups. No paywalls. Updated regularly.</p>
+  <div class="hero-screenshot">
+    <div class="placeholder">[ Dashboard Main View Screenshot — 102,568 counter + cumulative chart ]</div>
+  </div>
+</section>
+
+<!-- WHAT IT TRACKS -->
+<section>
+  <h2>Real numbers. Real companies. Real impact.</h2>
+  <p>Most conversations about AI and jobs deal in predictions and speculation. This dashboard deals in what's already happened.</p>
+  <p>Every data point comes from verified company announcements — earnings calls, press releases, SEC filings, and official statements. No estimates. No projections mixed in with facts.</p>
+
+  <div class="stats">
+    <div class="stat"><div class="num">102,000+</div><div class="label">Jobs displaced by AI</div></div>
+    <div class="stat"><div class="num">21</div><div class="label">Verified displacement events</div></div>
+    <div class="stat"><div class="num">207</div><div class="label">AI milestones tracked</div></div>
+    <div class="stat"><div class="num">28</div><div class="label">AI company profiles</div></div>
+  </div>
+
+  <p>The dashboard tracks workforce displacement that companies have directly attributed to artificial intelligence — from customer support automation to content production to software development. When a company says "we replaced these roles with AI," it goes in the data.</p>
+</section>
+
+<!-- SIX VIEWS -->
+<section style="background: #f8fafc; max-width: 100%; padding: 80px 24px;">
+  <div class="inner">
+    <h2>Explore the data from every angle</h2>
+    <p>Six interactive views designed to give you the complete picture — from high-level trends to individual company timelines.</p>
+
+    <div class="features">
+
+      <!-- Dashboard -->
+      <div class="feature">
+        <div class="text">
+          <h3>Dashboard</h3>
+          <h4>The full picture at a glance</h4>
+          <p>See total jobs displaced since November 30, 2022 (the day ChatGPT launched), broken down by industry, company, and time period. The cumulative displacement chart shows how AI workforce impact has accelerated — slowly at first, then all at once.</p>
+        </div>
+        <div class="screenshot">
+          <div class="placeholder">[ Dashboard screenshot ]</div>
+        </div>
+      </div>
+
+      <!-- Timeline -->
+      <div class="feature">
+        <div class="text">
+          <h3>Timeline</h3>
+          <h4>Watch AI displacement unfold in real time</h4>
+          <p>Drag through time in Slider Mode and watch the displacement chart build event by event. Or switch to Story Mode — a guided narrative walking through five chapters, starting with ChatGPT's explosive growth to 100 million users in just two months.</p>
+        </div>
+        <div class="screenshot">
+          <div class="placeholder">[ Story Mode screenshot — ChatGPT Moment ]</div>
+        </div>
+      </div>
+
+      <!-- Predictions -->
+      <div class="feature">
+        <div class="text">
+          <h3>Predictions</h3>
+          <h4>What's coming next — and how soon</h4>
+          <p>Projections for which job categories face the highest risk in the next 3 months to 5 years. Customer support, sales development, data entry, content writing, software development, and more — each with estimated job ranges and risk levels.</p>
+        </div>
+        <div class="screenshot">
+          <div class="placeholder">[ Predictions screenshot ]</div>
+        </div>
+      </div>
+
+      <!-- AI Advancements -->
+      <div class="feature">
+        <div class="text">
+          <h3>AI Advancements</h3>
+          <h4>207 milestones that shaped the AI landscape</h4>
+          <p>A chronological timeline of every major AI milestone — model releases, company launches, partnerships, regulations, breakthroughs, and acquisitions. Filter by type, company, or country. Covers OpenAI, Anthropic, Google, Meta, and 20+ other companies.</p>
+        </div>
+        <div class="screenshot">
+          <div class="placeholder">[ AI Advancements screenshot ]</div>
+        </div>
+      </div>
+
+      <!-- AI Companies -->
+      <div class="feature">
+        <div class="text">
+          <h3>AI Companies</h3>
+          <h4>28 company profiles with milestone timelines</h4>
+          <p>Explore individual AI companies — from OpenAI's 48 tracked milestones to emerging players like DeepSeek and Mistral. Each profile includes a vertical timeline of every advancement and displacement events linked to that company.</p>
+        </div>
+        <div class="screenshot">
+          <div class="placeholder">[ AI Companies + OpenAI detail screenshot ]</div>
+        </div>
+      </div>
+
+      <!-- Learn & Prepare -->
+      <div class="feature">
+        <div class="text">
+          <h3>Learn & Prepare</h3>
+          <h4>Practical resources to stay ahead</h4>
+          <p>Free AI tools, the CRAFT framework for working with AI, a 30-day skill-building plan, irreplaceable skills AI can't replicate, free courses, and privacy guidance. This isn't about fear — it's about positioning yourself for what's already happening.</p>
+        </div>
+        <div class="screenshot">
+          <div class="placeholder">[ Learn & Prepare screenshot ]</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY THIS EXISTS -->
+<section>
+  <h2>The information gap is the real risk</h2>
+  <p>The biggest threat from AI isn't the technology itself — it's not knowing what's happening until it affects you directly.</p>
+  <p>Headlines swing between "AI will take all jobs" and "AI is just a tool." Neither is useful. What's useful is seeing the actual data: which companies have made cuts, how many roles were affected, and what the trajectory looks like.</p>
+  <p>This dashboard was built as a companion to <a href="#" style="color:#3b82f6;text-decoration:none;font-weight:600;">The AI Shift</a> — a practical guide to understanding AI's workforce impact and preparing for it. The dashboard provides the data. The guide provides the strategy.</p>
+</section>
+
+<!-- WHO IT'S FOR -->
+<section style="background: #f8fafc; max-width: 100%; padding: 80px 24px;">
+  <div class="inner">
+    <h2>Built for anyone asking "what's actually happening?"</h2>
+    <div class="audience-grid">
+      <div class="audience-card">
+        <h4>Workers & Professionals</h4>
+        <p>See which industries and roles have been affected so far, and which are next. Make informed decisions about upskilling and career planning.</p>
+      </div>
+      <div class="audience-card">
+        <h4>Business Leaders & Managers</h4>
+        <p>Understand the timeline and scale of AI workforce transformation. See what other companies have done and when.</p>
+      </div>
+      <div class="audience-card">
+        <h4>Researchers & Journalists</h4>
+        <p>Access verified, sourced data on AI displacement events. Every entry includes the company, date, job count, and source.</p>
+      </div>
+      <div class="audience-card">
+        <h4>Educators & Career Counselors</h4>
+        <p>Use real data to guide students and clients through a rapidly changing job market.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- METHODOLOGY -->
+<section>
+  <h2>Methodology and transparency</h2>
+  <p>Every displacement event in this dashboard meets three criteria:</p>
+  <ul class="method-list">
+    <li><strong>Company-attributed</strong> — The company publicly stated the job cuts were related to AI adoption</li>
+    <li><strong>Documented</strong> — Each event links to earnings calls, press releases, SEC filings, or credible reporting</li>
+    <li><strong>Verified count</strong> — Job numbers come from official announcements, not estimates</li>
+  </ul>
+  <p>Predictions are clearly separated from verified data and are based on current trends, announced company AI adoption plans, industry analyst reports, and academic research.</p>
+  <p style="color:#94a3b8; font-style: italic;">This is an MVP. Data is being continuously verified and expanded. If you spot an error or have a correction, the community's accuracy matters.</p>
+</section>
+
+<!-- OPEN SOURCE -->
+<div class="opensource">
+  <p style="margin-bottom:8px;color:#0f172a;font-weight:600;font-size:1.15rem;">Fully open source. Contribute or verify.</p>
+  <p style="color:#475569;max-width:600px;margin:0 auto 16px;">The entire dashboard — code, data, and documentation — is open source on GitHub.</p>
+  <a href="https://github.com/ai-tech-nerd/ai-economic-impact-dashboard">View on GitHub →</a>
+</div>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <h2>See the data for yourself</h2>
+  <p class="sub">102,000+ jobs. 207 milestones. 28 companies. One dashboard.</p>
+  <a href="https://aishift.michaelkristof.com" class="cta">Launch the Dashboard →</a>
+  <p class="note">Free. Open source. No sign-ups. Works on desktop and mobile.</p>
+</section>
+
+</body>
+</html>

@@ -29,7 +29,7 @@ export function DashboardPage({ events }: DashboardPageProps) {
 
         <TrendLine events={events} />
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 gap-8">
           <JobTypesChart events={events} />
           <IndustryBreakdown events={events} />
         </div>

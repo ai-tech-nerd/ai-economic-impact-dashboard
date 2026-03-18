@@ -121,6 +121,34 @@ const COMPANY_DISPLAY: Record<string, { name: string; description: string }> = {
     name: 'Manus',
     description: 'AI agent platform acquired by Meta to advance autonomous AI capabilities.',
   },
+  academic: {
+    name: 'Academic',
+    description: 'Foundational AI research from universities and conferences that shaped the field.',
+  },
+  mit: {
+    name: 'MIT',
+    description: 'Massachusetts Institute of Technology — pioneering AI research including early chatbots and robotics.',
+  },
+  stanford: {
+    name: 'Stanford',
+    description: 'Stanford University and SRI International — home of Shakey the Robot and key autonomous vehicle research.',
+  },
+  darpa: {
+    name: 'DARPA',
+    description: 'Defense Advanced Research Projects Agency — funded foundational AI and autonomous vehicle competitions.',
+  },
+  ibm: {
+    name: 'IBM',
+    description: 'Built Deep Blue and Watson, pioneering AI in chess, Jeopardy!, and enterprise applications.',
+  },
+  irobot: {
+    name: 'iRobot',
+    description: 'Creator of the Roomba, bringing AI-powered autonomous navigation into consumer homes.',
+  },
+  deepmind: {
+    name: 'DeepMind',
+    description: 'AI research lab behind AlphaGo, AlphaFold, and foundational reinforcement learning breakthroughs. Acquired by Google in 2014.',
+  },
 };
 
 // Country/jurisdiction slugs to exclude from company listings
