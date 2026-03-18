@@ -18,6 +18,7 @@ export interface DisplacementEvent {
   aiReplacement: boolean;
   aiToolsMentioned?: string[];
   isProjection?: boolean;
+  reasonGiven?: string;
   description: string;
   sources: Source[];
   verificationStatus: 'verified' | 'pending' | 'unverified';

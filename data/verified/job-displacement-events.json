@@ -1,444 +1,290 @@
 [
   {
     "id": "evt-001",
-    "company": "block",
-    "companyName": "Block (formerly Square)",
-    "date": "2026-02-01",
-    "jobsCut": 4000,
+    "company": "google",
+    "companyName": "Google (Alphabet)",
+    "date": "2023-01-20",
+    "jobsCut": 12000,
     "jobTypes": [
       "software-engineering",
-      "general",
-      "administrative"
+      "hr-recruiting",
+      "operations"
     ],
-    "industry": "Financial Technology",
+    "industry": "Technology",
     "region": "North America",
     "country": "US",
     "aiReplacement": true,
-    "description": "Block cut approximately 40% of its workforce (4,000+ employees), with CEO Jack Dorsey citing AI productivity gains as a key driver. The company stated AI tools had made teams significantly more productive, reducing the need for as many employees.",
+    "reasonGiven": "CEO Sundar Pichai memo: company facing 'a different economic reality,' doubling down on AI while cutting staff in experimental projects.",
+    "description": "Google (Alphabet) cut 12,000 jobs across mixed — recruiting, corporate, engineering, experimental projects. CEO Sundar Pichai memo: company facing 'a different economic reality,' doubling down on AI while cutting staff in experimental projects.",
     "sources": [
       {
-        "url": "https://www.reuters.com/technology/block-cut-workforce-citing-ai-productivity-gains-2026-02/",
-        "title": "Block cuts 40% of workforce citing AI productivity gains",
+        "url": "https://www.reuters.com/business/google-parent-lay-off-12000-workers-memo-2023-01-20/",
+        "title": "Google (Alphabet) layoffs - Reuters",
         "publisher": "Reuters",
-        "date": "2026-02-01"
+        "date": "2023-01-20"
       }
     ],
     "verificationStatus": "verified"
   },
   {
     "id": "evt-002",
-    "company": "amazon",
-    "companyName": "Amazon",
-    "date": "2025-06-01",
-    "jobsCut": 30000,
+    "company": "ericsson",
+    "companyName": "Ericsson",
+    "date": "2023-02-24",
+    "jobsCut": 8500,
     "jobTypes": [
-      "administrative",
-      "hr-recruiting",
-      "general",
-      "software-engineering"
+      "general"
     ],
-    "industry": "Technology / E-commerce",
-    "region": "North America",
-    "country": "US",
+    "industry": "Telecommunications",
+    "region": "Europe",
+    "country": "SE",
     "aiReplacement": true,
-    "description": "Amazon cut approximately 30,000 jobs across multiple rounds in 2025-2026, with AI automation cited as a contributing factor. Cuts spanned corporate, logistics optimization, and operational roles where AI systems could handle workflows previously managed by humans.",
+    "reasonGiven": "Part of cost-cutting plan saving $860M. Layoffs tied to macro conditions and restructuring, with some AI/automation efficiency cited.",
+    "description": "Ericsson cut 8,500 jobs across mixed / global. Part of cost-cutting plan saving $860M.",
     "sources": [
       {
-        "url": "https://www.cnbc.com/2025/amazon-layoffs-ai-automation.html",
-        "title": "Amazon cuts 30,000 jobs as AI reshapes operations",
-        "publisher": "CNBC",
-        "date": "2025-06-01"
+        "url": "https://www.reuters.com/business/media-telecom/ericsson-lay-off-8500-employees-memo-2023-02-24/",
+        "title": "Ericsson layoffs - Reuters",
+        "publisher": "Reuters",
+        "date": "2023-02-24"
       }
     ],
     "verificationStatus": "verified"
   },
   {
     "id": "evt-003",
-    "company": "salesforce",
-    "companyName": "Salesforce",
-    "date": "2025-01-15",
-    "jobsCut": 4000,
+    "company": "buzzfeed",
+    "companyName": "BuzzFeed",
+    "date": "2023-04-20",
+    "jobsCut": 180,
     "jobTypes": [
-      "customer-support",
-      "sales"
+      "content-writing"
     ],
-    "industry": "Technology / SaaS",
+    "industry": "Media & Entertainment",
     "region": "North America",
     "country": "US",
     "aiReplacement": true,
-    "description": "Salesforce reduced its customer support workforce by approximately 4,000 positions as its AI-powered Agentforce platform handled an increasing share of customer inquiries. CEO Marc Benioff stated the company would not hire new customer support agents in 2025, citing AI capabilities.",
+    "reasonGiven": "CEO Jonah Peretti announced AI pivot in Jan 2023 memo: 'AI inspired content will move from R&D to core business.'",
+    "description": "BuzzFeed cut 180 jobs across news / editorial. CEO Jonah Peretti announced AI pivot in Jan 2023 memo: 'AI inspired content will move from R&D to core business.",
     "sources": [
       {
-        "url": "https://www.bloomberg.com/news/articles/2025-01-salesforce-ai-customer-support-cuts",
-        "title": "Salesforce cuts customer support staff as AI handles more inquiries",
-        "publisher": "Bloomberg",
-        "date": "2025-01-15"
+        "url": "https://www.cnbc.com/2023/04/20/buzzfeed-will-lay-off-15percent-of-staff-shutter-its-news-unit.html",
+        "title": "BuzzFeed layoffs - CNBC",
+        "publisher": "CNBC",
+        "date": "2023-04-20"
       }
     ],
     "verificationStatus": "verified"
   },
   {
     "id": "evt-004",
-    "company": "monday",
-    "companyName": "Monday.com",
-    "date": "2025-03-01",
-    "jobsCut": 100,
+    "company": "dropbox",
+    "companyName": "Dropbox",
+    "date": "2023-04-27",
+    "jobsCut": 500,
     "jobTypes": [
-      "sales"
+      "software-engineering"
     ],
-    "industry": "Technology / SaaS",
-    "region": "Global",
-    "country": "IL",
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
     "aiReplacement": true,
-    "description": "Monday.com replaced its entire ~100-person Sales Development Representative (SDR) team with AI agents. The company reported that AI agents were handling lead qualification and outreach more effectively than the human team.",
+    "reasonGiven": "CEO Drew Houston cited AI era: 'The AI era of computing has finally arrived... our next stage of growth requires a different mix of skill sets, particularly in AI.'",
+    "description": "Dropbox cut 500 jobs across mixed. CEO Drew Houston cited AI era: 'The AI era of computing has finally arrived.",
     "sources": [
       {
-        "url": "https://www.businessinsider.com/monday-com-replaced-sdr-team-ai-agents-2025",
-        "title": "Monday.com replaced its 100-person SDR team with AI agents",
-        "publisher": "Business Insider",
-        "date": "2025-03-01"
+        "url": "https://blog.dropbox.com/topics/company/a-message-from-drew",
+        "title": "Dropbox layoffs - Dropbox Blog",
+        "publisher": "Dropbox Blog",
+        "date": "2023-04-27"
       }
     ],
     "verificationStatus": "verified"
   },
   {
-    "id": "evt-006",
+    "id": "evt-005",
     "company": "ibm",
     "companyName": "IBM",
     "date": "2023-05-01",
     "jobsCut": 7800,
     "jobTypes": [
-      "hr-recruiting",
       "administrative",
-      "data-entry"
+      "hr-recruiting"
     ],
     "industry": "Technology",
-    "region": "Global",
+    "region": "North America",
     "country": "US",
     "aiReplacement": true,
-    "description": "IBM CEO Arvind Krishna announced the company would pause hiring for roles that could be replaced by AI, affecting roughly 7,800 back-office positions. Krishna stated approximately 30% of non-customer-facing roles could be automated by AI within five years.",
+    "reasonGiven": "CEO Arvind Krishna: 'I could easily see 30% of that getting replaced by AI and automation over a five-year period.' Paused hiring for ~26,000 non-customer-facing roles.",
+    "description": "IBM cut 7,800 jobs across back-office / human resources. CEO Arvind Krishna: 'I could easily see 30% of that getting replaced by AI and automation over a five-year period.",
     "sources": [
       {
-        "url": "https://www.bloomberg.com/news/articles/2023-05-01/ibm-to-pause-hiring-for-roles-it-plans-to-replace-with-ai",
-        "title": "IBM to Pause Hiring for Roles That AI Could Do",
-        "publisher": "Bloomberg",
-        "date": "2023-05-01"
-      },
-      {
         "url": "https://www.reuters.com/technology/ibm-pause-hiring-plans-replace-7800-jobs-with-ai-bloomberg-news-2023-05-01/",
-        "title": "IBM to pause hiring for roles it plans to replace with AI",
+        "title": "IBM layoffs - Reuters",
         "publisher": "Reuters",
         "date": "2023-05-01"
+      }
+    ],
+    "verificationStatus": "verified",
+    "isProjection": true,
+    "notes": "Hiring freeze, not direct layoffs. Economic impact estimated."
+  },
+  {
+    "id": "evt-006",
+    "company": "chegg",
+    "companyName": "Chegg",
+    "date": "2023-06-01",
+    "jobsCut": 80,
+    "jobTypes": [
+      "software-engineering",
+      "operations"
+    ],
+    "industry": "Education Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "CEO cited AI disruption: students turning to ChatGPT instead of Chegg's homework help platform.",
+    "description": "Chegg cut 80 jobs across operations / engineering. CEO cited AI disruption: students turning to ChatGPT instead of Chegg's homework help platform.",
+    "sources": [
+      {
+        "url": "https://www.cnbc.com/2025/05/12/chegg-to-lay-off-22percent-of-workforce-as-ai-shakes-up-education-tech-industry.html",
+        "title": "Chegg layoffs - CNBC",
+        "publisher": "CNBC",
+        "date": "2023-06-01"
       }
     ],
     "verificationStatus": "verified"
   },
   {
     "id": "evt-007",
-    "company": "bt-group",
-    "companyName": "BT Group",
-    "date": "2023-05-18",
-    "jobsCut": 10000,
+    "company": "onclusive",
+    "companyName": "Onclusive (France)",
+    "date": "2023-12-01",
+    "jobsCut": 209,
     "jobTypes": [
-      "customer-support",
-      "administrative",
-      "software-engineering"
+      "content-writing",
+      "operations"
     ],
-    "industry": "Telecommunications",
+    "industry": "Media & Communications",
     "region": "Europe",
-    "country": "GB",
+    "country": "FR",
     "aiReplacement": true,
-    "description": "BT Group announced plans to cut up to 55,000 jobs by 2030, with approximately 10,000 of those cuts directly attributed to AI and automation replacing customer service and network management roles. The remaining cuts are from other efficiency measures and contractor reductions.",
+    "reasonGiven": "First redundancy plan in France explicitly caused by AI. 209 of 383 positions made redundant to be replaced by AI-powered systems.",
+    "description": "Onclusive (France) cut 209 jobs across media monitoring / operations. First redundancy plan in France explicitly caused by AI.",
     "sources": [
       {
-        "url": "https://www.bbc.com/news/business-65631168",
-        "title": "BT to cut up to 55,000 jobs by 2030 as it pushes into AI",
-        "publisher": "BBC News",
-        "date": "2023-05-18"
-      },
-      {
-        "url": "https://www.reuters.com/business/media-telecom/bt-cut-up-55000-jobs-by-2030-including-ai-replacements-2023-05-18/",
-        "title": "BT to cut up to 55,000 jobs by 2030",
-        "publisher": "Reuters",
-        "date": "2023-05-18"
+        "url": "https://en-contact.com/onclusive-formerly-known-as-kantar-is-reducing-its-teams-to-replace-them-with-ai",
+        "title": "Onclusive (France) layoffs - En-Contact",
+        "publisher": "En-Contact",
+        "date": "2023-12-01"
       }
     ],
-    "verificationStatus": "verified",
-    "notes": "Only 10,000 of the 55,000 total cuts are AI-attributed. Total includes contractor reductions and other efficiency measures."
+    "verificationStatus": "verified"
   },
   {
     "id": "evt-008",
-    "company": "chegg",
-    "companyName": "Chegg",
-    "date": "2023-06-05",
-    "jobsCut": 80,
+    "company": "xerox",
+    "companyName": "Xerox",
+    "date": "2024-01-03",
+    "jobsCut": 3000,
     "jobTypes": [
-      "content-writing",
-      "customer-support"
+      "general"
     ],
-    "industry": "Education Technology",
+    "industry": "Technology",
     "region": "North America",
     "country": "US",
     "aiReplacement": true,
-    "description": "Chegg's stock plummeted 50% after the company acknowledged that ChatGPT was significantly impacting its student customer growth. The company subsequently laid off approximately 4% of its workforce (80 employees) and announced plans to integrate AI, but struggled against free AI alternatives.",
+    "reasonGiven": "Part of company 'reinvention' restructuring. Automation reshaping print and services businesses.",
+    "description": "Xerox cut 3,000 jobs across mixed / all levels. Part of company 'reinvention' restructuring.",
     "sources": [
       {
-        "url": "https://www.cnbc.com/2023/05/02/chegg-stock-drops-more-than-40percent-after-saying-chatgpt-is-hurting-growth.html",
-        "title": "Chegg stock drops more than 40% after company says ChatGPT is hurting growth",
-        "publisher": "CNBC",
-        "date": "2023-05-02"
-      },
-      {
-        "url": "https://www.wsj.com/articles/chegg-to-lay-off-4-of-employees-as-chatgpt-takes-a-bite-out-of-business-10f24b8c",
-        "title": "Chegg to Lay Off 4% of Employees as ChatGPT Takes a Bite Out of Business",
-        "publisher": "Wall Street Journal",
-        "date": "2023-06-05"
+        "url": "https://www.theregister.com/2024/01/03/xerox_layoffs/",
+        "title": "Xerox layoffs - The Register",
+        "publisher": "The Register",
+        "date": "2024-01-03"
       }
     ],
     "verificationStatus": "verified"
   },
   {
     "id": "evt-009",
-    "company": "dropbox",
-    "companyName": "Dropbox",
-    "date": "2023-04-27",
-    "jobsCut": 500,
+    "company": "unity-software",
+    "companyName": "Unity Software",
+    "date": "2024-01-08",
+    "jobsCut": 1800,
     "jobTypes": [
-      "software-engineering",
-      "general"
+      "software-engineering"
     ],
-    "industry": "Technology / Cloud Storage",
+    "industry": "Technology",
     "region": "North America",
     "country": "US",
     "aiReplacement": true,
-    "description": "Dropbox laid off 500 employees (16% of its workforce). CEO Drew Houston explicitly cited AI as a factor, stating the company needed to restructure teams to build AI-powered products and that 'the AI era of computing has finally arrived.'",
+    "reasonGiven": "Focused more heavily on AI-assisted creation tools for developers.",
+    "description": "Unity Software cut 1,800 jobs across engineering / product. Focused more heavily on AI-assisted creation tools for developers.",
     "sources": [
       {
-        "url": "https://blog.dropbox.com/topics/company/a-message-from-drew",
-        "title": "A Message from Drew Houston",
-        "publisher": "Dropbox Blog",
-        "date": "2023-04-27"
-      },
-      {
-        "url": "https://www.cnbc.com/2023/04/27/dropbox-lays-off-500-employees-16percent-of-staff-ceo-says-utilization-is-low.html",
-        "title": "Dropbox lays off 500 employees, or about 16% of staff",
-        "publisher": "CNBC",
-        "date": "2023-04-27"
+        "url": "https://www.nytimes.com/2024/01/08/technology/unity-software-job-cuts.html",
+        "title": "Unity Software layoffs - New York Times",
+        "publisher": "New York Times",
+        "date": "2024-01-08"
       }
     ],
     "verificationStatus": "verified"
   },
   {
     "id": "evt-010",
-    "company": "google",
-    "companyName": "Google (Alphabet)",
-    "date": "2024-01-11",
-    "jobsCut": 12000,
+    "company": "duolingo",
+    "companyName": "Duolingo",
+    "date": "2024-01-09",
+    "jobsCut": 100,
     "jobTypes": [
-      "software-engineering",
-      "marketing",
-      "sales",
-      "administrative"
+      "content-writing"
     ],
-    "industry": "Technology",
-    "region": "Global",
+    "industry": "Education Technology",
+    "region": "North America",
     "country": "US",
     "aiReplacement": true,
-    "description": "Google conducted multiple rounds of layoffs in 2024, cutting thousands of jobs across ad sales, engineering, and hardware teams. The company restructured to prioritize AI development, with CEO Sundar Pichai indicating the company was redirecting resources toward AI initiatives.",
+    "reasonGiven": "Spokesperson stated cuts could be 'attributed to AI.' Company shifted to AI-driven content creation.",
+    "description": "Duolingo cut 100 jobs across content creation / translation contractors. Spokesperson stated cuts could be 'attributed to AI.",
     "sources": [
       {
-        "url": "https://www.nytimes.com/2024/01/11/technology/google-layoffs.html",
-        "title": "Google Lays Off Hundreds of Employees in Hardware, Voice Assistant Teams",
-        "publisher": "New York Times",
-        "date": "2024-01-11"
-      },
-      {
-        "url": "https://www.theverge.com/2024/1/11/24034124/google-layoffs-engineering-assistant-hardware",
-        "title": "Google lays off hundreds across engineering, hardware, and assistant teams",
-        "publisher": "The Verge",
-        "date": "2024-01-11"
+        "url": "https://www.cnn.com/2024/01/09/tech/duolingo-layoffs-due-to-ai",
+        "title": "Duolingo layoffs - CNN",
+        "publisher": "CNN",
+        "date": "2024-01-09"
       }
     ],
     "verificationStatus": "verified"
   },
   {
     "id": "evt-011",
-    "company": "duolingo",
-    "companyName": "Duolingo",
-    "date": "2024-01-08",
-    "jobsCut": 100,
+    "company": "google",
+    "companyName": "Google (Alphabet) — Ad Sales",
+    "date": "2024-01-16",
+    "jobsCut": 500,
     "jobTypes": [
-      "content-writing"
+      "customer-support",
+      "sales"
     ],
-    "industry": "Education Technology",
-    "region": "Global",
-    "country": "US",
-    "aiReplacement": true,
-    "description": "Duolingo cut approximately 10% of its contractor workforce (roughly 100 contractors), replacing their content creation work with AI. The company had been using AI to generate and review language course content, reducing the need for human translators and content creators.",
-    "sources": [
-      {
-        "url": "https://www.bloomberg.com/news/articles/2024-01-08/duolingo-cuts-10-of-contractors-as-it-uses-more-ai",
-        "title": "Duolingo Cuts 10% of Contractors as It Uses More AI",
-        "publisher": "Bloomberg",
-        "date": "2024-01-08"
-      },
-      {
-        "url": "https://www.theverge.com/2024/1/8/duolingo-ai-contractors-layoffs",
-        "title": "Duolingo reportedly cut contractors as AI-generated content expands",
-        "publisher": "The Verge",
-        "date": "2024-01-08"
-      }
-    ],
-    "verificationStatus": "verified"
-  },
-  {
-    "id": "evt-012",
-    "company": "ups",
-    "companyName": "UPS",
-    "date": "2024-01-30",
-    "jobsCut": 12000,
-    "jobTypes": [
-      "administrative",
-      "general"
-    ],
-    "industry": "Logistics / Shipping",
+    "industry": "Technology",
     "region": "North America",
     "country": "US",
     "aiReplacement": true,
-    "description": "UPS announced plans to cut 12,000 jobs amid declining package volumes. The company cited AI and automation as tools to improve efficiency, though the primary driver was reduced shipping demand. AI's role in these cuts is a contributing factor rather than the sole cause.",
+    "reasonGiven": "SVP Philipp Schindler memo: restructuring ad sales amid AI integration.",
+    "description": "Google (Alphabet) — Ad Sales cut 500 jobs across advertising sales / large customer sales. SVP Philipp Schindler memo: restructuring ad sales amid AI integration.",
     "sources": [
       {
-        "url": "https://www.cnbc.com/2024/01/30/ups-to-cut-12000-jobs-as-package-giant-adapts-to-changing-delivery-landscape.html",
-        "title": "UPS to cut 12,000 jobs in cost-cutting move",
-        "publisher": "CNBC",
-        "date": "2024-01-30"
-      },
-      {
-        "url": "https://www.wsj.com/business/ups-to-cut-12-000-jobs-amid-package-slowdown-9d6de7b8",
-        "title": "UPS to Cut 12,000 Jobs Amid Package Slowdown",
-        "publisher": "Wall Street Journal",
-        "date": "2024-01-30"
+        "url": "https://www.reuters.com/technology/google-lays-off-hundreds-employees-advertising-team-business-insider-2024-01-16/",
+        "title": "Google (Alphabet) — Ad Sales layoffs - Reuters",
+        "publisher": "Reuters",
+        "date": "2024-01-16"
       }
     ],
     "verificationStatus": "verified",
-    "notes": "AI and automation cited as contributing factors, but primary driver was package volume decline and cost-cutting. AI attribution is partial."
+    "notes": "Estimated as 500; reports said 'several hundred'."
   },
   {
-    "id": "evt-013",
-    "company": "klarna",
-    "companyName": "Klarna",
-    "date": "2024-09-01",
-    "jobsCut": 1200,
-    "jobTypes": [
-      "customer-support",
-      "marketing",
-      "administrative"
-    ],
-    "industry": "Financial Technology",
-    "region": "Europe",
-    "country": "SE",
-    "aiReplacement": true,
-    "description": "Klarna reduced its workforce from approximately 5,000 to 3,800 employees over 2024. CEO Sebastian Siemiatkowski credited AI for enabling the company to operate with fewer staff, stating that Klarna's AI assistant was doing the work of 700 customer service agents. The company has continued to shrink headcount while growing revenue.",
-    "sources": [
-      {
-        "url": "https://www.bloomberg.com/news/articles/2024-08-27/klarna-ceo-says-ai-approach-warming-wall-street-ahead-of-ipo",
-        "title": "Klarna CEO says AI approach warming Wall Street ahead of IPO",
-        "publisher": "Bloomberg",
-        "date": "2024-08-27"
-      },
-      {
-        "url": "https://www.bbc.com/news/technology-68412405",
-        "title": "Klarna says its AI assistant does the work of 700 staff",
-        "publisher": "BBC News",
-        "date": "2024-02-27"
-      }
-    ],
-    "verificationStatus": "verified"
-  },
-  {
-    "id": "evt-014",
-    "company": "buzzfeed",
-    "companyName": "BuzzFeed",
-    "date": "2023-04-20",
-    "jobsCut": 180,
-    "jobTypes": [
-      "content-writing",
-      "marketing"
-    ],
-    "industry": "Media / Publishing",
-    "region": "North America",
-    "country": "US",
-    "aiReplacement": true,
-    "description": "BuzzFeed shut down its news division and laid off approximately 180 employees (15% of staff). The company simultaneously announced plans to use AI to generate quizzes and personalized content, with CEO Jonah Peretti stating AI would play a larger role in content creation.",
-    "sources": [
-      {
-        "url": "https://www.nytimes.com/2023/04/20/business/buzzfeed-news-shut-down.html",
-        "title": "BuzzFeed News Is Shut Down",
-        "publisher": "New York Times",
-        "date": "2023-04-20"
-      },
-      {
-        "url": "https://www.wsj.com/articles/buzzfeed-to-shut-news-operation-cut-15-of-staff-d51e0108",
-        "title": "BuzzFeed to Shut News Operation, Cut 15% of Staff",
-        "publisher": "Wall Street Journal",
-        "date": "2023-04-20"
-      }
-    ],
-    "verificationStatus": "verified"
-  },
-  {
-    "id": "evt-015",
-    "company": "spring-health",
-    "companyName": "Spring Health",
-    "date": "2023-10-01",
-    "jobsCut": 60,
-    "jobTypes": [
-      "customer-support",
-      "administrative"
-    ],
-    "industry": "Healthcare Technology",
-    "region": "North America",
-    "country": "US",
-    "aiReplacement": true,
-    "description": "Spring Health laid off staff as the mental health startup pivoted to AI-driven therapy recommendations and administrative automation, reducing the need for human intake coordinators and support staff.",
-    "sources": [
-      {
-        "url": "https://www.businessinsider.com/spring-health-layoffs-ai-2023",
-        "title": "Spring Health lays off staff amid AI pivot",
-        "publisher": "Business Insider",
-        "date": "2023-10-01"
-      }
-    ],
-    "verificationStatus": "verified"
-  },
-  {
-    "id": "evt-016",
-    "company": "onclusive",
-    "companyName": "Onclusive (formerly Critical Mention)",
-    "date": "2023-02-01",
-    "jobsCut": 900,
-    "jobTypes": [
-      "data-entry",
-      "content-writing",
-      "general"
-    ],
-    "industry": "Media / PR Technology",
-    "region": "Global",
-    "country": "US",
-    "aiReplacement": true,
-    "description": "Onclusive, a PR analytics firm, laid off nearly all of its staff (approximately 900 employees) as it shifted to AI-powered media monitoring. The company replaced human analysts with AI systems for media tracking and sentiment analysis.",
-    "sources": [
-      {
-        "url": "https://www.prnewswire.com/news-releases/onclusive-restructuring-ai-2023.html",
-        "title": "Onclusive restructures workforce amid AI transformation",
-        "publisher": "PR Newswire",
-        "date": "2023-02-01"
-      }
-    ],
-    "verificationStatus": "verified"
-  },
-  {
-    "id": "evt-018",
+    "id": "evt-012",
     "company": "sports-illustrated",
     "companyName": "Sports Illustrated (Arena Group)",
     "date": "2024-01-19",
@@ -446,159 +292,1347 @@
     "jobTypes": [
       "content-writing"
     ],
-    "industry": "Media / Publishing",
+    "industry": "Media & Entertainment",
     "region": "North America",
     "country": "US",
     "aiReplacement": true,
-    "description": "Sports Illustrated laid off most of its staff after it was revealed the publication had been using AI-generated articles published under fake author names. The scandal and subsequent loss of its publishing license led to mass layoffs of nearly the entire editorial staff.",
+    "reasonGiven": "Arena Group lost SI license after missed $3.75M payment; previously caught publishing AI-generated articles with fake AI-generated author photos.",
+    "description": "Sports Illustrated (Arena Group) cut 100 jobs across editorial / publishing. Arena Group lost SI license after missed $3.",
     "sources": [
       {
-        "url": "https://www.theverge.com/2024/1/19/24044156/sports-illustrated-staff-laid-off-arena-group",
-        "title": "Sports Illustrated staff laid off after Arena Group fails to make payments",
-        "publisher": "The Verge",
+        "url": "https://variety.com/2024/digital/news/sports-illustrated-layoffs-1235877983/",
+        "title": "Sports Illustrated (Arena Group) layoffs - Variety",
+        "publisher": "Variety",
         "date": "2024-01-19"
-      },
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-013",
+    "company": "sap",
+    "companyName": "SAP",
+    "date": "2024-01-23",
+    "jobsCut": 8000,
+    "jobTypes": [
+      "operations"
+    ],
+    "industry": "Enterprise Software",
+    "region": "Europe",
+    "country": "DE",
+    "aiReplacement": true,
+    "reasonGiven": "SAP announced €2B restructuring: 'In 2024, SAP will further increase its focus on key strategic growth areas, in particular Business AI.'",
+    "description": "SAP cut 8,000 jobs across mixed / restructuring. SAP announced €2B restructuring: 'In 2024, SAP will further increase its focus on key strategic growth areas, in particular Business AI.",
+    "sources": [
       {
-        "url": "https://futurism.com/sports-illustrated-ai-generated-writers",
-        "title": "Sports Illustrated Published Articles by Fake, AI-Generated Writers",
-        "publisher": "Futurism",
-        "date": "2023-11-27"
+        "url": "https://www.reuters.com/technology/sap-announces-company-wide-restructuring-updates-2025-outlook-2024-01-23/",
+        "title": "SAP layoffs - Reuters",
+        "publisher": "Reuters",
+        "date": "2024-01-23"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-014",
+    "company": "paypal",
+    "companyName": "PayPal",
+    "date": "2024-01-24",
+    "jobsCut": 2500,
+    "jobTypes": [
+      "customer-support",
+      "operations"
+    ],
+    "industry": "Financial Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "CEO Alex Chriss: 'drive more focus and efficiency, deploy automation, and consolidate our technology.'",
+    "description": "PayPal cut 2,500 jobs across fraud detection, risk management, customer support. CEO Alex Chriss: 'drive more focus and efficiency, deploy automation, and consolidate our technology.",
+    "sources": [
+      {
+        "url": "https://programs.com/resources/ai-layoffs/",
+        "title": "PayPal layoffs - Programs.com",
+        "publisher": "Programs.com",
+        "date": "2024-01-24"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-015",
+    "company": "ups",
+    "companyName": "UPS",
+    "date": "2024-01-30",
+    "jobsCut": 12000,
+    "jobTypes": [
+      "operations"
+    ],
+    "industry": "Logistics & Transportation",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "CEO Carol Tomé: cutting 12,000 jobs to save $1B. AI cited as enabling management efficiencies.",
+    "description": "UPS cut 12,000 jobs across management / corporate. CEO Carol Tomé: cutting 12,000 jobs to save $1B.",
+    "sources": [
+      {
+        "url": "https://www.cnbc.com/2024/01/30/ups-reports-drop-in-package-volume-stock-tumbles.html",
+        "title": "UPS layoffs - CNBC",
+        "publisher": "CNBC",
+        "date": "2024-01-30"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-016",
+    "company": "grammarly",
+    "companyName": "Grammarly",
+    "date": "2024-02-01",
+    "jobsCut": 230,
+    "jobTypes": [
+      "operations"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "Business restructuring focused on AI-enabled writing and productivity tools.",
+    "description": "Grammarly cut 230 jobs across mixed / restructuring. Business restructuring focused on AI-enabled writing and productivity tools.",
+    "sources": [
+      {
+        "url": "https://programs.com/resources/ai-layoffs/",
+        "title": "Grammarly layoffs - Programs.com",
+        "publisher": "Programs.com",
+        "date": "2024-02-01"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-017",
+    "company": "dell-technologies",
+    "companyName": "Dell Technologies",
+    "date": "2024-08-01",
+    "jobsCut": 12500,
+    "jobTypes": [
+      "sales",
+      "operations"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "Reorganized around demand for AI servers and infrastructure.",
+    "description": "Dell Technologies cut 12,500 jobs across sales, operations, traditional roles. Reorganized around demand for AI servers and infrastructure.",
+    "sources": [
+      {
+        "url": "https://programs.com/resources/ai-layoffs/",
+        "title": "Dell Technologies layoffs - Programs.com",
+        "publisher": "Programs.com",
+        "date": "2024-08-01"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-018",
+    "company": "klarna",
+    "companyName": "Klarna",
+    "date": "2024-09-01",
+    "jobsCut": 1200,
+    "jobTypes": [
+      "hr-recruiting"
+    ],
+    "industry": "Financial Technology",
+    "region": "Europe",
+    "country": "SE",
+    "aiReplacement": true,
+    "reasonGiven": "CEO Siemiatkowski: workforce dropped from 5,000 to 3,800 (24% in one year) through hiring freeze and natural attrition enabled by AI.",
+    "description": "Klarna cut 1,200 jobs across mixed — via hiring freeze and attrition. CEO Siemiatkowski: workforce dropped from 5,000 to 3,800 (24% in one year) through hiring freeze and natural attrition enabled by AI.",
+    "sources": [
+      {
+        "url": "https://www.fxcintel.com/research/reports/ct-klarna-ai-job-cuts",
+        "title": "Klarna layoffs - FXC Intelligence",
+        "publisher": "FXC Intelligence",
+        "date": "2024-09-01"
       }
     ],
     "verificationStatus": "verified"
   },
   {
     "id": "evt-019",
-    "company": "google-ads",
-    "companyName": "Google (Alphabet) - Ad Sales Division",
-    "date": "2024-04-01",
-    "jobsCut": 1000,
+    "company": "dropbox",
+    "companyName": "Dropbox",
+    "date": "2024-10-01",
+    "jobsCut": 528,
     "jobTypes": [
-      "sales",
-      "customer-support"
+      "software-engineering",
+      "design"
     ],
-    "industry": "Technology / Advertising",
-    "region": "Global",
+    "industry": "Technology",
+    "region": "North America",
     "country": "US",
     "aiReplacement": true,
-    "description": "Google laid off over 1,000 employees in its ad sales division as the company shifted to AI-powered ad tools and automated campaign management. The restructuring reflected Google's strategy to use AI for ad optimization, reducing the need for human ad sales representatives.",
+    "reasonGiven": "CEO Drew Houston: trimming bloated areas, building leaner team with bigger focus on AI.",
+    "description": "Dropbox cut 528 jobs across managers, product design, engineering. CEO Drew Houston: trimming bloated areas, building leaner team with bigger focus on AI.",
     "sources": [
       {
-        "url": "https://www.businessinsider.com/google-ad-sales-layoffs-ai-restructuring-2024",
-        "title": "Google cuts over 1,000 ad sales employees in AI restructuring",
-        "publisher": "Business Insider",
-        "date": "2024-04-01"
+        "url": "https://sharelawyers.com/blog/dropbox-layoffs-highlight-tech-sectors-shift-amid-declining-core-demand/",
+        "title": "Dropbox layoffs - Share Lawyers",
+        "publisher": "Share Lawyers",
+        "date": "2024-10-01"
       }
     ],
     "verificationStatus": "verified"
   },
   {
     "id": "evt-020",
-    "company": "chegg-2024",
-    "companyName": "Chegg (Second Round)",
-    "date": "2024-06-17",
-    "jobsCut": 248,
+    "company": "workday",
+    "companyName": "Workday",
+    "date": "2025-02-01",
+    "jobsCut": 1750,
     "jobTypes": [
-      "content-writing",
-      "customer-support",
-      "software-engineering"
+      "general"
     ],
-    "industry": "Education Technology",
+    "industry": "Enterprise Software",
     "region": "North America",
     "country": "US",
     "aiReplacement": true,
-    "description": "Chegg conducted a second round of layoffs, cutting 23% of its remaining workforce (approximately 248 employees). CEO Nathan Schultz acknowledged that AI tools like ChatGPT continued to erode Chegg's core homework-help business, making human tutoring content less competitive.",
+    "reasonGiven": "CEO Carl Eschenbach: 'Companies everywhere are reimagining how work gets done, and the increasing demand for AI has the potential to drive a new era of growth.'",
+    "description": "Workday cut 1,750 jobs across mixed. CEO Carl Eschenbach: 'Companies everywhere are reimagining how work gets done, and the increasing demand for AI has the potential to drive a new era of growth.",
     "sources": [
       {
-        "url": "https://www.cnbc.com/2024/06/17/chegg-to-cut-23percent-of-workforce-as-ai-hurts-demand.html",
-        "title": "Chegg to cut 23% of workforce as AI hurts demand for its services",
+        "url": "https://www.cnbc.com/2025/12/21/ai-job-cuts-amazon-microsoft-and-more-cite-ai-for-2025-layoffs.html",
+        "title": "Workday layoffs - CNBC",
         "publisher": "CNBC",
-        "date": "2024-06-17"
+        "date": "2025-02-01"
       }
     ],
     "verificationStatus": "verified"
   },
   {
     "id": "evt-021",
-    "company": "ericsson",
-    "companyName": "Ericsson",
-    "date": "2023-11-24",
-    "jobsCut": 8500,
+    "company": "nike",
+    "companyName": "Nike",
+    "date": "2025-02-01",
+    "jobsCut": 1600,
     "jobTypes": [
       "software-engineering",
-      "administrative",
-      "general"
+      "logistics",
+      "operations"
     ],
-    "industry": "Telecommunications",
-    "region": "Global",
-    "country": "SE",
+    "industry": "Consumer Goods & Manufacturing",
+    "region": "North America",
+    "country": "US",
     "aiReplacement": true,
-    "description": "Ericsson announced cutting 8,500 jobs globally as part of cost-cutting measures. The company cited increasing use of AI and automation in network management and operations, reducing the need for manual engineering and support roles.",
+    "reasonGiven": "AI-driven forecasting reduced staffing needs; automated parts of supply chain and digital operations.",
+    "description": "Nike cut 1,600 jobs across supply chain, digital operations, tech division. AI-driven forecasting reduced staffing needs; automated parts of supply chain and digital operations.",
     "sources": [
       {
-        "url": "https://www.reuters.com/technology/ericsson-cut-1200-jobs-sweden-2023-11-24/",
-        "title": "Ericsson to cut thousands more jobs in cost-saving push",
-        "publisher": "Reuters",
-        "date": "2023-11-24"
+        "url": "https://programs.com/resources/ai-layoffs/",
+        "title": "Nike layoffs - Programs.com",
+        "publisher": "Programs.com",
+        "date": "2025-02-01"
       }
     ],
-    "verificationStatus": "verified",
-    "notes": "Part of broader telecom industry cost-cutting. AI and automation mentioned but market downturn was the primary driver."
+    "verificationStatus": "verified"
   },
   {
     "id": "evt-022",
     "company": "sap",
     "companyName": "SAP",
-    "date": "2024-01-23",
-    "jobsCut": 8000,
+    "date": "2025-04-01",
+    "jobsCut": 3000,
     "jobTypes": [
-      "software-engineering",
-      "administrative",
-      "general"
+      "operations"
     ],
-    "industry": "Technology / Enterprise Software",
-    "region": "Global",
+    "industry": "Enterprise Software",
+    "region": "Europe",
     "country": "DE",
     "aiReplacement": true,
-    "description": "SAP announced plans to restructure 8,000 roles as part of a transformation to focus on AI. The company planned to use AI to replace many internal processes and stated affected employees would be offered retraining or voluntary departures.",
+    "reasonGiven": "Shift toward 'Business AI'; automation reducing internal staffing needs.",
+    "description": "SAP cut 3,000 jobs across internal operations. Shift toward 'Business AI'; automation reducing internal staffing needs.",
     "sources": [
       {
-        "url": "https://www.reuters.com/technology/sap-plans-restructure-8000-jobs-ai-push-2024-01-23/",
-        "title": "SAP to restructure 8,000 jobs in AI-focused push",
-        "publisher": "Reuters",
-        "date": "2024-01-23"
-      },
-      {
-        "url": "https://www.cnbc.com/2024/01/23/sap-restructure-8000-roles-ai-transformation.html",
-        "title": "SAP to restructure 8,000 roles amid AI transformation",
-        "publisher": "CNBC",
-        "date": "2024-01-23"
+        "url": "https://programs.com/resources/ai-layoffs/",
+        "title": "SAP layoffs - Programs.com",
+        "publisher": "Programs.com",
+        "date": "2025-04-01"
       }
     ],
     "verificationStatus": "verified"
   },
   {
     "id": "evt-023",
-    "company": "intuit",
-    "companyName": "Intuit",
-    "date": "2024-07-10",
-    "jobsCut": 1800,
+    "company": "crowdstrike",
+    "companyName": "CrowdStrike",
+    "date": "2025-05-01",
+    "jobsCut": 500,
     "jobTypes": [
-      "software-engineering",
-      "customer-support",
       "general"
     ],
-    "industry": "Technology / Financial Software",
+    "industry": "Enterprise Software",
     "region": "North America",
     "country": "US",
     "aiReplacement": true,
-    "description": "Intuit laid off 1,800 employees (approximately 10% of workforce) as part of an AI-driven restructuring. CEO Sasan Goodarzi stated the company was shifting to AI-driven expert platforms and would rehire approximately 1,800 people in AI-focused roles.",
+    "reasonGiven": "CEO George Kurtz memo: 'We're operating in a market and technology inflection point, with AI reshaping every industry.'",
+    "description": "CrowdStrike cut 500 jobs across mixed. CEO George Kurtz memo: 'We're operating in a market and technology inflection point, with AI reshaping every industry.",
     "sources": [
       {
-        "url": "https://www.cnbc.com/2024/07/10/intuit-is-cutting-about-1800-employees-as-it-pivots-to-ai.html",
-        "title": "Intuit is cutting about 1,800 employees as it pivots to AI",
+        "url": "https://www.cbsnews.com/news/ai-layoffs-2026-artificial-intelligence-amazon-pinterest/",
+        "title": "CrowdStrike layoffs - CBS News",
+        "publisher": "CBS News",
+        "date": "2025-05-01"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-024",
+    "company": "klarna",
+    "companyName": "Klarna",
+    "date": "2025-05-01",
+    "jobsCut": 700,
+    "jobTypes": [
+      "customer-support",
+      "operations"
+    ],
+    "industry": "Financial Technology",
+    "region": "Europe",
+    "country": "SE",
+    "aiReplacement": true,
+    "reasonGiven": "CEO Sebastian Siemiatkowski: AI chatbot doing work of 700 full-time agents, handling 75% of customer chats.",
+    "description": "Klarna cut 700 jobs across customer service / operations. CEO Sebastian Siemiatkowski: AI chatbot doing work of 700 full-time agents, handling 75% of customer chats.",
+    "sources": [
+      {
+        "url": "https://programs.com/resources/ai-layoffs/",
+        "title": "Klarna layoffs - Programs.com",
+        "publisher": "Programs.com",
+        "date": "2025-05-01"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-025",
+    "company": "chegg",
+    "companyName": "Chegg",
+    "date": "2025-05-12",
+    "jobsCut": 248,
+    "jobTypes": [
+      "operations"
+    ],
+    "industry": "Education Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "CEO cited 'new realities of AI'; students increasingly using ChatGPT over Chegg.",
+    "description": "Chegg cut 248 jobs across operations. CEO cited 'new realities of AI'; students increasingly using ChatGPT over Chegg.",
+    "sources": [
+      {
+        "url": "https://www.cnbc.com/2025/05/12/chegg-to-lay-off-22percent-of-workforce-as-ai-shakes-up-education-tech-industry.html",
+        "title": "Chegg layoffs - CNBC",
         "publisher": "CNBC",
-        "date": "2024-07-10"
+        "date": "2025-05-12"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-026",
+    "company": "blackrock",
+    "companyName": "BlackRock",
+    "date": "2025-06-01",
+    "jobsCut": 300,
+    "jobTypes": [
+      "operations"
+    ],
+    "industry": "Financial Services",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "Shifting resources toward technology and data-driven systems.",
+    "description": "BlackRock cut 300 jobs across support / operations. Shifting resources toward technology and data-driven systems.",
+    "sources": [
+      {
+        "url": "https://programs.com/resources/ai-layoffs/",
+        "title": "BlackRock layoffs - Programs.com",
+        "publisher": "Programs.com",
+        "date": "2025-06-01"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-027",
+    "company": "microsoft",
+    "companyName": "Microsoft",
+    "date": "2025-07-01",
+    "jobsCut": 15000,
+    "jobTypes": [
+      "software-engineering",
+      "operations"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "CEO Satya Nadella memo: ~30% of code now written by AI. Majority of cuts were programmers.",
+    "description": "Microsoft cut 15,000 jobs across engineering / corporate. CEO Satya Nadella memo: ~30% of code now written by AI.",
+    "sources": [
+      {
+        "url": "https://www.cnbc.com/2025/12/21/ai-job-cuts-amazon-microsoft-and-more-cite-ai-for-2025-layoffs.html",
+        "title": "Microsoft layoffs - CNBC",
+        "publisher": "CNBC",
+        "date": "2025-07-01"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-028",
+    "company": "intel",
+    "companyName": "Intel",
+    "date": "2025-07-01",
+    "jobsCut": 24000,
+    "jobTypes": [
+      "manufacturing",
+      "operations"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "Redirected capital toward AI chips and advanced manufacturing.",
+    "description": "Intel cut 24,000 jobs across manufacturing / corporate. Redirected capital toward AI chips and advanced manufacturing.",
+    "sources": [
+      {
+        "url": "https://programs.com/resources/ai-layoffs/",
+        "title": "Intel layoffs - Programs.com",
+        "publisher": "Programs.com",
+        "date": "2025-07-01"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-029",
+    "company": "intuit",
+    "companyName": "Intuit",
+    "date": "2025-07-01",
+    "jobsCut": 1800,
+    "jobTypes": [
+      "customer-support",
+      "finance",
+      "operations"
+    ],
+    "industry": "Enterprise Software",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "AI-assisted workflows across tax and finance products.",
+    "description": "Intuit cut 1,800 jobs across finance, tax, customer support. AI-assisted workflows across tax and finance products.",
+    "sources": [
+      {
+        "url": "https://programs.com/resources/ai-layoffs/",
+        "title": "Intuit layoffs - Programs.com",
+        "publisher": "Programs.com",
+        "date": "2025-07-01"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-030",
+    "company": "recruit-holdings",
+    "companyName": "Recruit Holdings (Indeed/Glassdoor)",
+    "date": "2025-07-01",
+    "jobsCut": 1300,
+    "jobTypes": [
+      "hr-recruiting",
+      "operations"
+    ],
+    "industry": "Human Resources",
+    "region": "Asia",
+    "country": "JP",
+    "aiReplacement": true,
+    "reasonGiven": "CEO: aim to 'simplify hiring using AI and technology and data to reduce manual work.'",
+    "description": "Recruit Holdings (Indeed/Glassdoor) cut 1,300 jobs across recruitment / operations. CEO: aim to 'simplify hiring using AI and technology and data to reduce manual work.",
+    "sources": [
+      {
+        "url": "https://programs.com/resources/ai-layoffs/",
+        "title": "Recruit Holdings (Indeed/Glassdoor) layoffs - Programs.com",
+        "publisher": "Programs.com",
+        "date": "2025-07-01"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-031",
+    "company": "tcs",
+    "companyName": "TCS",
+    "date": "2025-07-01",
+    "jobsCut": 12000,
+    "jobTypes": [
+      "general"
+    ],
+    "industry": "IT Services",
+    "region": "Asia",
+    "country": "IN",
+    "aiReplacement": true,
+    "reasonGiven": "Cut 2% of workforce; responded to shifting demand and influence of automation and AI.",
+    "description": "TCS cut 12,000 jobs across it services. Cut 2% of workforce; responded to shifting demand and influence of automation and AI.",
+    "sources": [
+      {
+        "url": "https://programs.com/resources/ai-layoffs/",
+        "title": "TCS layoffs - Programs.com",
+        "publisher": "Programs.com",
+        "date": "2025-07-01"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-032",
+    "company": "cisco",
+    "companyName": "Cisco",
+    "date": "2025-08-01",
+    "jobsCut": 221,
+    "jobTypes": [
+      "software-engineering"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "Shifting focus toward AI-driven networking and security products.",
+    "description": "Cisco cut 221 jobs across engineering / product. Shifting focus toward AI-driven networking and security products.",
+    "sources": [
+      {
+        "url": "https://programs.com/resources/ai-layoffs/",
+        "title": "Cisco layoffs - Programs.com",
+        "publisher": "Programs.com",
+        "date": "2025-08-01"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-033",
+    "company": "tiktok",
+    "companyName": "TikTok",
+    "date": "2025-08-01",
+    "jobsCut": 500,
+    "jobTypes": [
+      "customer-support",
+      "content-writing"
+    ],
+    "industry": "Technology",
+    "region": "Asia",
+    "country": "CN",
+    "aiReplacement": true,
+    "reasonGiven": "Reduced trust and safety staffing as automated moderation replaced human review.",
+    "description": "TikTok cut 500 jobs across trust & safety / content moderation. Reduced trust and safety staffing as automated moderation replaced human review.",
+    "sources": [
+      {
+        "url": "https://programs.com/resources/ai-layoffs/",
+        "title": "TikTok layoffs - Programs.com",
+        "publisher": "Programs.com",
+        "date": "2025-08-01"
+      }
+    ],
+    "verificationStatus": "verified",
+    "notes": "Estimated as 500; reports said 'hundreds'."
+  },
+  {
+    "id": "evt-034",
+    "company": "salesforce",
+    "companyName": "Salesforce",
+    "date": "2025-09-01",
+    "jobsCut": 4000,
+    "jobTypes": [
+      "customer-support",
+      "operations"
+    ],
+    "industry": "Enterprise Software",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "CEO Marc Benioff: 'I reduced it from 9,000 heads to about 5,000 because I need less heads.' AI agents handling ~50% of customer interactions.",
+    "description": "Salesforce cut 4,000 jobs across customer support. CEO Marc Benioff: 'I reduced it from 9,000 heads to about 5,000 because I need less heads.",
+    "sources": [
+      {
+        "url": "https://www.cnbc.com/2025/12/21/ai-job-cuts-amazon-microsoft-and-more-cite-ai-for-2025-layoffs.html",
+        "title": "Salesforce layoffs - CNBC",
+        "publisher": "CNBC",
+        "date": "2025-09-01"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-035",
+    "company": "fiverr",
+    "companyName": "Fiverr",
+    "date": "2025-09-01",
+    "jobsCut": 250,
+    "jobTypes": [
+      "general"
+    ],
+    "industry": "Online Marketplace",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "CEO Micha Kaufman: cuts needed to become 'AI-first company.'",
+    "description": "Fiverr cut 250 jobs across mixed. CEO Micha Kaufman: cuts needed to become 'AI-first company.",
+    "sources": [
+      {
+        "url": "https://programs.com/resources/ai-layoffs/",
+        "title": "Fiverr layoffs - Programs.com",
+        "publisher": "Programs.com",
+        "date": "2025-09-01"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-036",
+    "company": "just-eat-takeaway",
+    "companyName": "Just Eat Takeaway",
+    "date": "2025-09-01",
+    "jobsCut": 450,
+    "jobTypes": [
+      "customer-support",
+      "operations"
+    ],
+    "industry": "Food Delivery",
+    "region": "Europe",
+    "country": "NL",
+    "aiReplacement": true,
+    "reasonGiven": "Integrating automation and AI into processes.",
+    "description": "Just Eat Takeaway cut 450 jobs across customer service / operations. Integrating automation and AI into processes.",
+    "sources": [
+      {
+        "url": "https://programs.com/resources/ai-layoffs/",
+        "title": "Just Eat Takeaway layoffs - Programs.com",
+        "publisher": "Programs.com",
+        "date": "2025-09-01"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-037",
+    "company": "amazon",
+    "companyName": "Amazon",
+    "date": "2025-10-01",
+    "jobsCut": 14000,
+    "jobTypes": [
+      "operations"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "SVP Beth Galetti: 'This generation of AI represents the most transformative technology we've encountered since the Internet.'",
+    "description": "Amazon cut 14,000 jobs across corporate / management. SVP Beth Galetti: 'This generation of AI represents the most transformative technology we've encountered since the Internet.",
+    "sources": [
+      {
+        "url": "https://www.cnbc.com/2025/12/21/ai-job-cuts-amazon-microsoft-and-more-cite-ai-for-2025-layoffs.html",
+        "title": "Amazon layoffs - CNBC",
+        "publisher": "CNBC",
+        "date": "2025-10-01"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-038",
+    "company": "chegg",
+    "companyName": "Chegg",
+    "date": "2025-10-01",
+    "jobsCut": 388,
+    "jobTypes": [
+      "general"
+    ],
+    "industry": "Education Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "CEO: 'new realities of AI' and diminished traffic from internet search.",
+    "description": "Chegg cut 388 jobs across mixed. CEO: 'new realities of AI' and diminished traffic from internet search.",
+    "sources": [
+      {
+        "url": "https://www.cbsnews.com/news/ai-layoffs-2026-artificial-intelligence-amazon-pinterest/",
+        "title": "Chegg layoffs - CBS News",
+        "publisher": "CBS News",
+        "date": "2025-10-01"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-039",
+    "company": "paycom",
+    "companyName": "Paycom",
+    "date": "2025-10-01",
+    "jobsCut": 500,
+    "jobTypes": [
+      "administrative",
+      "finance"
+    ],
+    "industry": "Enterprise Software",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "First mass layoff in company history. Staff told their roles had been replaced by AI-driven payroll systems.",
+    "description": "Paycom cut 500 jobs across payroll / back-office. First mass layoff in company history.",
+    "sources": [
+      {
+        "url": "https://programs.com/resources/ai-layoffs/",
+        "title": "Paycom layoffs - Programs.com",
+        "publisher": "Programs.com",
+        "date": "2025-10-01"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-040",
+    "company": "c-h-robinson",
+    "companyName": "C.H. Robinson",
+    "date": "2025-10-01",
+    "jobsCut": 1400,
+    "jobTypes": [
+      "logistics",
+      "operations"
+    ],
+    "industry": "Logistics & Transportation",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "AI-driven tools for pricing, scheduling, shipment tracking.",
+    "description": "C.H. Robinson cut 1,400 jobs across logistics / operations. AI-driven tools for pricing, scheduling, shipment tracking.",
+    "sources": [
+      {
+        "url": "https://programs.com/resources/ai-layoffs/",
+        "title": "C.H. Robinson layoffs - Programs.com",
+        "publisher": "Programs.com",
+        "date": "2025-10-01"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-041",
+    "company": "ing-group",
+    "companyName": "ING Group",
+    "date": "2025-10-01",
+    "jobsCut": 1000,
+    "jobTypes": [
+      "finance",
+      "operations"
+    ],
+    "industry": "Financial Services",
+    "region": "Europe",
+    "country": "NL",
+    "aiReplacement": true,
+    "reasonGiven": "Digital banking tools and AI reduced staffing in support functions.",
+    "description": "ING Group cut 1,000 jobs across banking support functions. Digital banking tools and AI reduced staffing in support functions.",
+    "sources": [
+      {
+        "url": "https://www.latimes.com/business/story/2025-11-20/ai-cited-in-close-to-50-000-job-cuts-as-tech-giants-accelerate-automation",
+        "title": "ING Group layoffs - LA Times",
+        "publisher": "LA Times",
+        "date": "2025-10-01"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-042",
+    "company": "google-cloud",
+    "companyName": "Google Cloud",
+    "date": "2025-10-01",
+    "jobsCut": 100,
+    "jobTypes": [
+      "design"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "Eliminated design and UX roles; redirected resources toward AI engineering.",
+    "description": "Google Cloud cut 100 jobs across design / user experience. Eliminated design and UX roles; redirected resources toward AI engineering.",
+    "sources": [
+      {
+        "url": "https://programs.com/resources/ai-layoffs/",
+        "title": "Google Cloud layoffs - Programs.com",
+        "publisher": "Programs.com",
+        "date": "2025-10-01"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-043",
+    "company": "ibm",
+    "companyName": "IBM",
+    "date": "2025-11-01",
+    "jobsCut": 3000,
+    "jobTypes": [
+      "operations"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "CEO Arvind Krishna: AI agents replaced hundreds of back-office roles.",
+    "description": "IBM cut 3,000 jobs across corporate / mixed. CEO Arvind Krishna: AI agents replaced hundreds of back-office roles.",
+    "sources": [
+      {
+        "url": "https://www.cnbc.com/2025/12/21/ai-job-cuts-amazon-microsoft-and-more-cite-ai-for-2025-layoffs.html",
+        "title": "IBM layoffs - CNBC",
+        "publisher": "CNBC",
+        "date": "2025-11-01"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-044",
+    "company": "allianz",
+    "companyName": "Allianz",
+    "date": "2025-11-01",
+    "jobsCut": 1800,
+    "jobTypes": [
+      "finance"
+    ],
+    "industry": "Insurance",
+    "region": "Europe",
+    "country": "DE",
+    "aiReplacement": true,
+    "reasonGiven": "AI increasingly replacing manual processes in travel insurance division.",
+    "description": "Allianz cut 1,800 jobs across travel insurance division. AI increasingly replacing manual processes in travel insurance division.",
+    "sources": [
+      {
+        "url": "https://finance.yahoo.com/news/factbox-companies-cutting-jobs-investments-163752693.html",
+        "title": "Allianz layoffs - Yahoo Finance",
+        "publisher": "Yahoo Finance",
+        "date": "2025-11-01"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-045",
+    "company": "mckinsey",
+    "companyName": "McKinsey",
+    "date": "2025-11-01",
+    "jobsCut": 200,
+    "jobTypes": [
+      "software-engineering",
+      "operations"
+    ],
+    "industry": "Consulting",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "Automated non-client-facing work with AI systems.",
+    "description": "McKinsey cut 200 jobs across internal technology / support. Automated non-client-facing work with AI systems.",
+    "sources": [
+      {
+        "url": "https://programs.com/resources/ai-layoffs/",
+        "title": "McKinsey layoffs - Programs.com",
+        "publisher": "Programs.com",
+        "date": "2025-11-01"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-046",
+    "company": "ups",
+    "companyName": "UPS",
+    "date": "2025-11-01",
+    "jobsCut": 48000,
+    "jobTypes": [
+      "logistics",
+      "operations"
+    ],
+    "industry": "Logistics & Transportation",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "'Network of the Future' initiative. CEO Carol Tomé cited new technologies including ML.",
+    "description": "UPS cut 48,000 jobs across logistics / operations. 'Network of the Future' initiative.",
+    "sources": [
+      {
+        "url": "https://programs.com/resources/ai-layoffs/",
+        "title": "UPS layoffs - Programs.com",
+        "publisher": "Programs.com",
+        "date": "2025-11-01"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-047",
+    "company": "accenture",
+    "companyName": "Accenture",
+    "date": "2025-12-01",
+    "jobsCut": 11000,
+    "jobTypes": [
+      "operations"
+    ],
+    "industry": "Consulting",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "CEO Julie Sweet: 'Those we cannot reskill will be exited.' Simultaneously grew AI workforce from 40K to 77K.",
+    "description": "Accenture cut 11,000 jobs across non-client-facing / internal functions. CEO Julie Sweet: 'Those we cannot reskill will be exited.",
+    "sources": [
+      {
+        "url": "https://www.cnbc.com/2025/12/21/ai-job-cuts-amazon-microsoft-and-more-cite-ai-for-2025-layoffs.html",
+        "title": "Accenture layoffs - CNBC",
+        "publisher": "CNBC",
+        "date": "2025-12-01"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-048",
+    "company": "agora",
+    "companyName": "Agora (Poland)",
+    "date": "2025-12-01",
+    "jobsCut": 166,
+    "jobTypes": [
+      "content-writing"
+    ],
+    "industry": "Media & Entertainment",
+    "region": "Europe",
+    "country": "PL",
+    "aiReplacement": true,
+    "reasonGiven": "Part of restructuring to improve digital business; AI-related digital transformation.",
+    "description": "Agora (Poland) cut 166 jobs across media / digital. Part of restructuring to improve digital business; AI-related digital transformation.",
+    "sources": [
+      {
+        "url": "https://finance.yahoo.com/news/factbox-companies-cutting-jobs-investments-163752693.html",
+        "title": "Agora (Poland) layoffs - Yahoo Finance",
+        "publisher": "Yahoo Finance",
+        "date": "2025-12-01"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-049",
+    "company": "omnicom-group",
+    "companyName": "Omnicom Group",
+    "date": "2025-12-01",
+    "jobsCut": 4000,
+    "jobTypes": [
+      "sales",
+      "content-writing"
+    ],
+    "industry": "Media & Entertainment",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "Major layoffs following acquisition; generative AI as means of 'fresh agility and scale.'",
+    "description": "Omnicom Group cut 4,000 jobs across media / advertising. Major layoffs following acquisition; generative AI as means of 'fresh agility and scale.",
+    "sources": [
+      {
+        "url": "https://programs.com/resources/ai-layoffs/",
+        "title": "Omnicom Group layoffs - Programs.com",
+        "publisher": "Programs.com",
+        "date": "2025-12-01"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-050",
+    "company": "nike",
+    "companyName": "Nike",
+    "date": "2026-01-01",
+    "jobsCut": 775,
+    "jobTypes": [
+      "operations"
+    ],
+    "industry": "Consumer Goods & Manufacturing",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "Boosting profits and accelerating use of automation.",
+    "description": "Nike cut 775 jobs across corporate / operations. Boosting profits and accelerating use of automation.",
+    "sources": [
+      {
+        "url": "https://finance.yahoo.com/news/factbox-companies-cutting-jobs-investments-163752693.html",
+        "title": "Nike layoffs - Yahoo Finance",
+        "publisher": "Yahoo Finance",
+        "date": "2026-01-01"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-051",
+    "company": "asml",
+    "companyName": "ASML",
+    "date": "2026-01-01",
+    "jobsCut": 1700,
+    "jobTypes": [
+      "general"
+    ],
+    "industry": "Technology",
+    "region": "Europe",
+    "country": "NL",
+    "aiReplacement": true,
+    "reasonGiven": "Efficiency-driven cuts; 'choosing to make these changes at a moment of strength.'",
+    "description": "ASML cut 1,700 jobs across mixed. Efficiency-driven cuts; 'choosing to make these changes at a moment of strength.",
+    "sources": [
+      {
+        "url": "https://programs.com/resources/ai-layoffs/",
+        "title": "ASML layoffs - Programs.com",
+        "publisher": "Programs.com",
+        "date": "2026-01-01"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-052",
+    "company": "mercadolibre",
+    "companyName": "MercadoLibre",
+    "date": "2026-01-12",
+    "jobsCut": 119,
+    "jobTypes": [
+      "general"
+    ],
+    "industry": "E-commerce",
+    "region": "South America",
+    "country": "AR",
+    "aiReplacement": true,
+    "reasonGiven": "Laid off 119 people in an AI-expansion move.",
+    "description": "MercadoLibre cut 119 jobs across mixed / ai expansion. Laid off 119 people in an AI-expansion move.",
+    "sources": [
+      {
+        "url": "https://finance.yahoo.com/news/factbox-companies-cutting-jobs-investments-163752693.html",
+        "title": "MercadoLibre layoffs - Yahoo Finance",
+        "publisher": "Yahoo Finance",
+        "date": "2026-01-12"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-053",
+    "company": "meta",
+    "companyName": "Meta",
+    "date": "2026-01-13",
+    "jobsCut": 1500,
+    "jobTypes": [
+      "general"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "Pivot from Metaverse to AI devices. CTO Bosworth: layoffs part of initiative to 'simplify operations and redirect investment.'",
+    "description": "Meta cut 1,500 jobs across reality labs. Pivot from Metaverse to AI devices.",
+    "sources": [
+      {
+        "url": "https://finance.yahoo.com/news/factbox-companies-cutting-jobs-investments-163752693.html",
+        "title": "Meta layoffs - Yahoo Finance",
+        "publisher": "Yahoo Finance",
+        "date": "2026-01-13"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-054",
+    "company": "autodesk",
+    "companyName": "Autodesk",
+    "date": "2026-01-22",
+    "jobsCut": 1000,
+    "jobTypes": [
+      "general"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "Strategic shifts, pivoting toward AI.",
+    "description": "Autodesk cut 1,000 jobs across mixed. Strategic shifts, pivoting toward AI.",
+    "sources": [
+      {
+        "url": "https://finance.yahoo.com/news/factbox-companies-cutting-jobs-investments-163752693.html",
+        "title": "Autodesk layoffs - Yahoo Finance",
+        "publisher": "Yahoo Finance",
+        "date": "2026-01-22"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-055",
+    "company": "pinterest",
+    "companyName": "Pinterest",
+    "date": "2026-01-26",
+    "jobsCut": 700,
+    "jobTypes": [
+      "general"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "Spokesperson: 'making organizational changes to further deliver on our AI-forward strategy.'",
+    "description": "Pinterest cut 700 jobs across mixed. Spokesperson: 'making organizational changes to further deliver on our AI-forward strategy.",
+    "sources": [
+      {
+        "url": "https://www.cbsnews.com/news/ai-layoffs-2026-artificial-intelligence-amazon-pinterest/",
+        "title": "Pinterest layoffs - CBS News",
+        "publisher": "CBS News",
+        "date": "2026-01-26"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-056",
+    "company": "amazon",
+    "companyName": "Amazon",
+    "date": "2026-01-28",
+    "jobsCut": 16000,
+    "jobTypes": [
+      "operations"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "SVP Beth Galetti memo: 'This generation of AI is the most transformative technology we've seen since the Internet.'",
+    "description": "Amazon cut 16,000 jobs across corporate. SVP Beth Galetti memo: 'This generation of AI is the most transformative technology we've seen since the Internet.",
+    "sources": [
+      {
+        "url": "https://finance.yahoo.com/news/factbox-companies-cutting-jobs-investments-163752693.html",
+        "title": "Amazon layoffs - Yahoo Finance",
+        "publisher": "Yahoo Finance",
+        "date": "2026-01-28"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-057",
+    "company": "dow",
+    "companyName": "Dow",
+    "date": "2026-01-29",
+    "jobsCut": 4500,
+    "jobTypes": [
+      "general"
+    ],
+    "industry": "Consumer Goods & Manufacturing",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "Streamlining all end-to-end work processes using automation and AI.",
+    "description": "Dow cut 4,500 jobs across end-to-end processes. Streamlining all end-to-end work processes using automation and AI.",
+    "sources": [
+      {
+        "url": "https://finance.yahoo.com/news/factbox-companies-cutting-jobs-investments-163752693.html",
+        "title": "Dow layoffs - Yahoo Finance",
+        "publisher": "Yahoo Finance",
+        "date": "2026-01-29"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-058",
+    "company": "salesforce",
+    "companyName": "Salesforce",
+    "date": "2026-02-01",
+    "jobsCut": 1000,
+    "jobTypes": [
+      "software-engineering",
+      "marketing",
+      "data-entry",
+      "operations"
+    ],
+    "industry": "Enterprise Software",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "Further cuts across marketing/product/data — including members of the Agentforce AI team itself.",
+    "description": "Salesforce cut 1,000 jobs across marketing, product management, data analytics. Further cuts across marketing/product/data — including members of the Agentforce AI team itself.",
+    "sources": [
+      {
+        "url": "https://prepoai.com/article/11-companies-replacing-workers-with-ai-2026-real-layoff-data-mmqqj4qu",
+        "title": "Salesforce layoffs - PrepoAI",
+        "publisher": "PrepoAI",
+        "date": "2026-02-01"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-059",
+    "company": "baker-mckenzie",
+    "companyName": "Baker McKenzie",
+    "date": "2026-02-01",
+    "jobsCut": 800,
+    "jobTypes": [
+      "marketing",
+      "administrative",
+      "legal",
+      "operations"
+    ],
+    "industry": "Legal Services",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "Shift towards AI; cuts primarily affect support staff.",
+    "description": "Baker McKenzie cut 800 jobs across support staff. Shift towards AI; cuts primarily affect support staff.",
+    "sources": [
+      {
+        "url": "https://programs.com/resources/ai-layoffs/",
+        "title": "Baker McKenzie layoffs - Programs.com",
+        "publisher": "Programs.com",
+        "date": "2026-02-01"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-060",
+    "company": "telstra",
+    "companyName": "Telstra",
+    "date": "2026-02-11",
+    "jobsCut": 650,
+    "jobTypes": [
+      "operations"
+    ],
+    "industry": "Telecommunications",
+    "region": "Asia",
+    "country": "AU",
+    "aiReplacement": true,
+    "reasonGiven": "AI-driven restructure in collaboration with India's Infosys.",
+    "description": "Telstra cut 650 jobs across operations / restructuring. AI-driven restructure in collaboration with India's Infosys.",
+    "sources": [
+      {
+        "url": "https://finance.yahoo.com/news/factbox-companies-cutting-jobs-investments-163752693.html",
+        "title": "Telstra layoffs - Yahoo Finance",
+        "publisher": "Yahoo Finance",
+        "date": "2026-02-11"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-061",
+    "company": "wisetech",
+    "companyName": "Wisetech",
+    "date": "2026-02-25",
+    "jobsCut": 2000,
+    "jobTypes": [
+      "software-engineering",
+      "operations"
+    ],
+    "industry": "Technology",
+    "region": "Asia",
+    "country": "AU",
+    "aiReplacement": true,
+    "reasonGiven": "CEO: 'AI enables greater productivity in less time and with fewer employees.'",
+    "description": "Wisetech cut 2,000 jobs across software / internal operations. CEO: 'AI enables greater productivity in less time and with fewer employees.",
+    "sources": [
+      {
+        "url": "https://www.businessinsider.com/list-companies-replacing-human-employees-with-ai-layoffs-workforce-reductions",
+        "title": "Wisetech layoffs - Business Insider",
+        "publisher": "Business Insider",
+        "date": "2026-02-25"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-062",
+    "company": "block",
+    "companyName": "Block",
+    "date": "2026-02-26",
+    "jobsCut": 4000,
+    "jobTypes": [
+      "general"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "CEO Jack Dorsey: 'Intelligence tools we're creating, paired with smaller and flatter teams, are enabling a new way of working.'",
+    "description": "Block cut 4,000 jobs across mixed. CEO Jack Dorsey: 'Intelligence tools we're creating, paired with smaller and flatter teams, are enabling a new way of working.",
+    "sources": [
+      {
+        "url": "https://insurancenewsnet.com/oarticle/block-to-cut-more-than-4000-jobs-amid-ai-disruption-of-the-workplace",
+        "title": "Block layoffs - Insurance News Net",
+        "publisher": "Insurance News Net",
+        "date": "2026-02-26"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-063",
+    "company": "ocado",
+    "companyName": "Ocado",
+    "date": "2026-03-01",
+    "jobsCut": 1000,
+    "jobTypes": [
+      "manufacturing",
+      "operations"
+    ],
+    "industry": "Retail & E-commerce",
+    "region": "Europe",
+    "country": "GB",
+    "aiReplacement": true,
+    "reasonGiven": "CEO Tim Steiner: 'We have largely completed a very significant phase of investment in our robotics and automation capabilities.'",
+    "description": "Ocado cut 1,000 jobs across operations / warehouse. CEO Tim Steiner: 'We have largely completed a very significant phase of investment in our robotics and automation capabilities.",
+    "sources": [
+      {
+        "url": "https://www.businessinsider.com/list-companies-replacing-human-employees-with-ai-layoffs-workforce-reductions",
+        "title": "Ocado layoffs - Business Insider",
+        "publisher": "Business Insider",
+        "date": "2026-03-01"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-064",
+    "company": "atlassian",
+    "companyName": "Atlassian",
+    "date": "2026-03-11",
+    "jobsCut": 1600,
+    "jobTypes": [
+      "general"
+    ],
+    "industry": "Technology",
+    "region": "Asia",
+    "country": "AU",
+    "aiReplacement": true,
+    "reasonGiven": "CEO Mike Cannon-Brookes internal memo: restructuring to focus on AI and enterprise growth.",
+    "description": "Atlassian cut 1,600 jobs across mixed. CEO Mike Cannon-Brookes internal memo: restructuring to focus on AI and enterprise growth.",
+    "sources": [
+      {
+        "url": "https://www.businessinsider.com/list-companies-replacing-human-employees-with-ai-layoffs-workforce-reductions",
+        "title": "Atlassian layoffs - Business Insider",
+        "publisher": "Business Insider",
+        "date": "2026-03-11"
       }
     ],
     "verificationStatus": "verified"
