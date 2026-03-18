@@ -72,7 +72,7 @@ function SliderMode({
   // Get 3 most recent events for the ticker
   const recentEvents = useMemo(() => {
     return [...filteredEvents]
-      .sort((a, b) => b.date.localeCompare(a.date))
+      .sort((a, b) => a.date.localeCompare(b.date))
       .slice(0, 3);
   }, [filteredEvents]);
 
