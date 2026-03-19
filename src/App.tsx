@@ -4,6 +4,7 @@ import { Header } from './components/layout/Header';
 import { Footer } from './components/layout/Footer';
 import { EmbedLayout } from './components/layout/EmbedLayout';
 import { useData } from './hooks/useData';
+import { usePageTracking } from './hooks/usePageTracking';
 import { DashboardPage } from './pages/DashboardPage';
 import { PredictionsPage } from './pages/PredictionsPage';
 import { TimelinePage } from './pages/TimelinePage';
@@ -15,6 +16,7 @@ function AppContent() {
   const { events, milestones, companies, predictions, loading, error } = useData();
   const location = useLocation();
   const isEmbed = location.pathname.startsWith('/embed');
+  usePageTracking();
 
   const loadingEl = (
     <div className="flex items-center justify-center min-h-[60vh]">
