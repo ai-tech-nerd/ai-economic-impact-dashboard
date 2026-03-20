@@ -45,6 +45,9 @@ export interface AIMilestone {
   category: string;
   significance: 'high' | 'medium' | 'low';
   sources: Source[];
+  title?: string;
+  amount?: string;
+  source?: string;
 }
 
 export interface AIProduct {

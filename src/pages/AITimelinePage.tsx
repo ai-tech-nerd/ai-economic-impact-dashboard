@@ -258,11 +258,30 @@ export function AITimelinePage({ milestones }: AITimelinePageProps) {
                 </span>
                 <span className="text-xs text-surface-400">{formatDate(milestone.date)}</span>
               </div>
-              <h3 className="font-semibold text-surface-900">{milestone.name}</h3>
+              <h3 className="font-semibold text-surface-900">
+                {milestone.title || milestone.name}
+              </h3>
+              {milestone.type === 'acquisition' && milestone.amount && (
+                <p className="text-sm font-medium text-primary-600 mt-1">
+                  {milestone.amount}
+                </p>
+              )}
               <p className="text-sm text-surface-600 mt-1">{milestone.description}</p>
-              <p className="text-xs text-surface-400 mt-2">
-                {COMPANY_LABELS[milestone.company] || COUNTRY_LABELS[milestone.company] || milestone.company}
-              </p>
+              <div className="flex items-center justify-between mt-2">
+                <p className="text-xs text-surface-400">
+                  {COMPANY_LABELS[milestone.company] || COUNTRY_LABELS[milestone.company] || milestone.company}
+                </p>
+                {milestone.source && (
+                  <a
+                    href={milestone.source}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs text-primary-500 hover:text-primary-600 font-medium no-underline"
+                  >
+                    Source →
+                  </a>
+                )}
+              </div>
             </div>
           </motion.div>
         ))}
