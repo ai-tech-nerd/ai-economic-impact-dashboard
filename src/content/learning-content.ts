@@ -115,70 +115,117 @@ export const AI_TOOLS: AITool[] = [
   },
 ];
 
-export const CRAFT_FRAMEWORK = {
-  title: 'The CRAFT Method',
-  description: 'A structured framework for any complex AI request. The quality of AI output depends heavily on how you communicate with it.',
-  steps: [
-    {
-      letter: 'C',
-      label: 'Context',
-      description: 'Who are you? What is the situation? Who is the audience?',
-      example: '"I\'m a marketing manager preparing a quarterly report for executive leadership..."',
-    },
-    {
-      letter: 'R',
-      label: 'Role',
-      description: 'What role should AI play? (Expert, editor, analyst, devil\'s advocate)',
-      example: '"Act as a senior data analyst who specializes in market trends..."',
-    },
-    {
-      letter: 'A',
-      label: 'Action',
-      description: 'What specific task do you need completed?',
-      example: '"Analyze these sales figures and identify the top 3 growth opportunities..."',
-    },
-    {
-      letter: 'F',
-      label: 'Format',
-      description: 'How should the output look? (Length, structure, tone, reading level)',
-      example: '"Present as a 2-page executive summary with bullet points and a chart..."',
-    },
-    {
-      letter: 'T',
-      label: 'Target',
-      description: 'What does a successful result achieve?',
-      example: '"The report should convince leadership to increase Q3 budget by 15%..."',
-    },
-  ],
-};
+export interface PromptFramework {
+  id: string;
+  acronym: string;
+  title: string;
+  tagline: string;
+  description: string;
+  bestFor: string;
+  steps: { letter: string; label: string; description: string; example: string }[];
+  proTip: string;
+}
 
-export const PROMPTING_TECHNIQUES = [
+export const PROMPT_FRAMEWORKS: PromptFramework[] = [
   {
-    name: 'Chain-of-Thought',
-    description: 'Ask the AI to think step-by-step through a problem before giving a final answer. Dramatically improves accuracy on complex reasoning tasks.',
-    example: '"Walk me through this step by step before giving your final recommendation..."',
+    id: 'rtto',
+    acronym: 'R.T.T.O.',
+    title: 'Quick Start',
+    tagline: 'Your quick-start prompt for any AI request.',
+    description: 'Most people overthink their first prompt. R.T.T.O. cuts that friction — four essential building blocks to get useful output fast.',
+    bestFor: 'Beginners, simple tasks, everyday requests',
+    steps: [
+      { letter: 'R', label: 'Role', description: 'Who should the AI be in this task?', example: '"Act as a marketing strategist specializing in AI-powered solutions."' },
+      { letter: 'T', label: 'Task', description: 'What exactly are you trying to achieve?', example: '"Create a social media strategy to boost engagement for a new product launch."' },
+      { letter: 'T', label: 'Tone', description: 'How should the response sound?', example: '"Professional yet approachable, suitable for a LinkedIn audience."' },
+      { letter: 'O', label: 'Output', description: 'What should the result look like?', example: '"A numbered list with bullet points for sub-steps."' },
+    ],
+    proTip: 'R.T.T.O. is your starting point. Once the project gets complex, upgrade to CRAFT. Before you send any prompt, run it through SCORE.',
   },
   {
-    name: 'Role Prompting',
-    description: 'Assign the AI a specific persona or expertise to shape the quality and perspective of its response.',
-    example: '"You are a CFO reviewing this budget proposal. What concerns would you raise?"',
+    id: 'craft',
+    acronym: 'C.R.A.F.T.',
+    title: 'Complex Prompts',
+    tagline: 'Build high-quality prompts for complex AI requests.',
+    description: 'When the work matters — a pitch, a strategy, a campaign — you need more than a quick ask. CRAFT ensures the AI understands not just what to do, but who it\'s talking to, how to respond, and what success looks like.',
+    bestFor: 'High-stakes, multi-part work, client deliverables',
+    steps: [
+      { letter: 'C', label: 'Context', description: 'Who are you and what is the situation? Ground the AI in your world before giving it work.', example: '"I\'m a creative director preparing a brand voice presentation for a wellness client targeting women 35–55."' },
+      { letter: 'R', label: 'Role', description: 'What role should the AI play? The more precise, the more calibrated the output.', example: '"Act as a senior brand strategist with experience in wellness and lifestyle brands."' },
+      { letter: 'A', label: 'Action', description: 'What specific task needs to be completed? One task per prompt produces cleaner output.', example: '"Write three homepage headline options that communicate warmth and expertise."' },
+      { letter: 'F', label: 'Format', description: 'How should the output be structured? Define length, structure, and reading level.', example: '"Present each headline with a one-sentence rationale. Numbered list. Under 10 words each."' },
+      { letter: 'T', label: 'Target', description: 'What does a successful result achieve? Define the outcome, not just the output.', example: '"The headlines should make a first-time visitor immediately understand the brand\'s personality."' },
+    ],
+    proTip: 'After the first response, push further — "Give me three alternatives," "What\'s the weakest part of this?" or "What would you change if the audience were 10 years older?"',
   },
   {
-    name: 'Few-Shot Examples',
-    description: 'Provide 2-3 examples of the input/output format you want. The AI will follow the pattern for new inputs.',
-    example: '"Here are 3 examples of the tone I want: [example 1], [example 2], [example 3]. Now write one for..."',
+    id: 'score',
+    acronym: 'S.C.O.R.E.',
+    title: 'Prompt Audit',
+    tagline: 'Check your prompt before you wreck your prompt.',
+    description: 'A pre-send audit: five questions to run through before you hit enter. Catching a gap here takes 30 seconds. Fixing a broken output takes much longer.',
+    bestFor: 'Any prompt, any skill level — especially before high-stakes sends',
+    steps: [
+      { letter: 'S', label: 'Specific', description: 'Does the prompt make clear what you want — and what you don\'t?', example: 'Instead of "improve this copy" — "Rewrite for a landing page targeting first-time buyers. Two sentences max."' },
+      { letter: 'C', label: 'Contextualized', description: 'Does it include the background the AI actually needs?', example: '"You are a podcast editor working on a show about entrepreneurship for early-stage founders."' },
+      { letter: 'O', label: 'Ordered', description: 'Are instructions in a logical sequence? Constraints before content. Format before task.', example: '"Limit to 100 words. Formal tone. No jargon. Now summarize the following report."' },
+      { letter: 'R', label: 'Role-Defined', description: 'Have you told the AI who it is? Without a role, the AI defaults to generic.', example: '"You are an experienced creative director reviewing copy for a luxury brand."' },
+      { letter: 'E', label: 'Evaluated', description: 'Read it back as if you\'re the AI. Would a smart freelancer know what to deliver?', example: '"Would a freelancer know exactly what to deliver — or would they email back with questions?"' },
+    ],
+    proTip: 'SCORE works at any stage. Use it to audit prompts built with CRAFT, or as a quick check before any one-off request.',
   },
   {
-    name: 'Constraint Setting',
-    description: 'Set boundaries on length, format, reading level, or style to get precisely what you need.',
-    example: '"Explain this in under 100 words, at an 8th-grade reading level, using no jargon."',
+    id: 'stay',
+    acronym: 'S.T.A.Y.',
+    title: 'Session Management',
+    tagline: 'Keep your AI session on track — from first prompt to final output.',
+    description: 'Most people know how to start a conversation with AI. Few know how to sustain one. S.T.A.Y. gives you a repeatable system for managing AI across the full arc of a working session.',
+    bestFor: 'Multi-step creative projects, multi-day work, team handoffs',
+    steps: [
+      { letter: 'S', label: 'Set the Stage', description: 'Establish context before the work begins. Not just a task — a full creative brief handoff.', example: '"I\'m a creative director working on a brand refresh for a wellness company. Today we\'re writing homepage copy."' },
+      { letter: 'T', label: 'Tether Each Prompt', description: 'Connect every new request back to the established context. Don\'t assume the AI remembers.', example: '"Still in the brand refresh project. Now I need three tagline options. Same editorial tone."' },
+      { letter: 'A', label: 'Anchor and Correct', description: 'When it drifts, don\'t start over — recalibrate with a correction anchor.', example: '"That\'s too corporate. Back to the brief — warm, editorial, not clinical. Try again."' },
+      { letter: 'Y', label: 'Your Handoff Note', description: 'Before closing, have the AI summarize decisions, direction, and outputs worth keeping.', example: '"Summarize this session: direction confirmed, outputs we\'re using, what\'s unresolved."' },
+    ],
+    proTip: 'S.T.A.Y. works best paired with CRAFT (for building the initial request) and TRAIN (for debugging when outputs break down). Together they cover: Build → Sustain → Fix.',
   },
   {
-    name: 'Iterative Refinement',
-    description: 'Treat AI conversations as collaborative drafts. Push back, ask for alternatives, and refine until the output meets your standards.',
-    example: '"Make this more concise." "Give me 3 alternative approaches." "What are the weaknesses in this plan?"',
+    id: 'train',
+    acronym: 'T.R.A.I.N.',
+    title: 'Debug Outputs',
+    tagline: 'Diagnose and fix your prompts when the output isn\'t working.',
+    description: 'When AI isn\'t cooperating, most people repeat the same prompt louder, or give up. TRAIN gives you a structured debugging process — identify what\'s broken, why, and exactly how to fix it.',
+    bestFor: 'When results aren\'t working, fixing hallucinations, off-brand output',
+    steps: [
+      { letter: 'T', label: 'Test', description: 'Try variations and compare outputs. Change tone, reorder instructions, rephrase the task.', example: '"Run the same request three ways — formal, conversational, bullet-point — and compare where output improves."' },
+      { letter: 'R', label: 'Reason', description: 'Guide the AI through the logic step by step. Add a thinking path explicitly.', example: '"Before writing the headline, explain what emotion the brand is trying to trigger. Then write three options."' },
+      { letter: 'A', label: 'Align', description: 'Reconnect the output to your actual goal. Add specificity around audience and success criteria.', example: '"That\'s accurate but too clinical. The audience is creative directors, not CFOs. Rewrite with that shift."' },
+      { letter: 'I', label: 'Investigate', description: 'Find what\'s causing hallucination or drift — usually a missing constraint or too much ambiguity.', example: '"Use only examples found in the document above. Do not add outside references."' },
+      { letter: 'N', label: 'Narrow', description: 'Make the request smaller and more focused. Smaller requests produce tighter, more reliable outputs.', example: 'Instead of "write a full campaign strategy" — "First, define the target audience only. Stop there."' },
+    ],
+    proTip: 'TRAIN works best after SCORE. If your prompt passed the pre-send audit but the output still broke, TRAIN tells you why.',
   },
 ];
+
+export const FRAMEWORK_GUIDE = {
+  situations: [
+    { situation: 'First time using AI for a task', framework: 'R.T.T.O.' },
+    { situation: 'Writing a creative brief or strategy', framework: 'C.R.A.F.T.' },
+    { situation: 'Client-facing deliverable', framework: 'C.R.A.F.T. + S.C.O.R.E.' },
+    { situation: 'Long copy or multi-step project', framework: 'S.T.A.Y.' },
+    { situation: 'Output sounds generic or off-brand', framework: 'T.R.A.I.N.' },
+    { situation: 'AI is hallucinating or inventing content', framework: 'T.R.A.I.N.' },
+    { situation: 'Prompt feels vague but you\'re not sure why', framework: 'S.C.O.R.E.' },
+    { situation: 'Handing a project to a collaborator', framework: 'S.T.A.Y.' },
+  ],
+  workflow: 'Build → Check → Send → Sustain → Fix',
+  workflowSteps: [
+    { step: 'R.T.T.O. or C.R.A.F.T.', label: 'Build the prompt' },
+    { step: 'S.C.O.R.E.', label: 'Audit it' },
+    { step: 'S.T.A.Y.', label: 'Sustain the session' },
+    { step: 'T.R.A.I.N.', label: 'Fix what breaks' },
+  ],
+};
 
 export const ACTION_PLAN = {
   title: '30-Day Action Plan',

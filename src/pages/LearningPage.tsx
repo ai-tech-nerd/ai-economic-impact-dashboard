@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 import { PageLayout } from '../components/layout/PageLayout';
 import {
   AI_TOOLS,
-  CRAFT_FRAMEWORK,
-  PROMPTING_TECHNIQUES,
+  PROMPT_FRAMEWORKS,
+  FRAMEWORK_GUIDE,
   ACTION_PLAN,
   IRREPLACEABLE_SKILLS,
   FREE_RESOURCES,
@@ -12,6 +12,7 @@ import {
   NEVER_SHARE,
   AI_GLOSSARY,
 } from '../content/learning-content';
+import type { PromptFramework } from '../content/learning-content';
 
 type Tab = 'tools' | 'prompting' | 'courses' | 'glossary';
 
@@ -136,54 +137,123 @@ function ToolsSection() {
 
 /* ─── AI Prompting Guides ─── */
 
+const FRAMEWORK_COLORS: Record<string, string> = {
+  rtto: 'bg-success-500',
+  craft: 'bg-primary-600',
+  score: 'bg-warning-500',
+  stay: 'bg-purple-500',
+  train: 'bg-danger-500',
+};
+
 function PromptingSection() {
+  const [activeFramework, setActiveFramework] = useState<string>(PROMPT_FRAMEWORKS[0].id);
+  const current = PROMPT_FRAMEWORKS.find((f) => f.id === activeFramework) || PROMPT_FRAMEWORKS[0];
+
   return (
-    <div className="max-w-4xl space-y-8">
-      <p className="text-surface-600">
-        The quality of AI output depends heavily on how you communicate with it.
-        "Prompt engineering" is the skill of crafting inputs that get useful results. Here are the key frameworks to master.
+    <div className="space-y-8">
+      {/* Intro */}
+      <p className="text-surface-600 max-w-3xl">
+        Five frameworks that cover the full arc of working with AI: from your first prompt to a finished project.
+        Use the guide below to find the right one for where you are in the process.
       </p>
 
-      {/* CRAFT Framework */}
-      <div className="bg-white rounded-xl shadow-sm border border-surface-200 p-8">
-        <h2 className="text-2xl font-bold text-surface-900 mb-2">{CRAFT_FRAMEWORK.title}</h2>
-        <p className="text-surface-600 mb-8">{CRAFT_FRAMEWORK.description}</p>
+      {/* Workflow overview */}
+      <div className="bg-surface-50 rounded-xl border border-surface-200 p-5">
+        <p className="text-xs font-semibold text-surface-500 uppercase tracking-wider mb-3">How they work together</p>
+        <div className="flex flex-wrap items-center gap-2 text-sm">
+          {FRAMEWORK_GUIDE.workflowSteps.map((ws, i) => (
+            <span key={ws.step} className="flex items-center gap-2">
+              {i > 0 && <span className="text-surface-300">→</span>}
+              <span className="font-semibold text-surface-800">{ws.step}</span>
+              <span className="text-surface-400">({ws.label})</span>
+            </span>
+          ))}
+        </div>
+      </div>
 
-        <div className="space-y-6">
-          {CRAFT_FRAMEWORK.steps.map((step) => (
-            <div key={step.letter} className="flex gap-4">
-              <div className="flex-shrink-0 w-12 h-12 bg-primary-600 text-white rounded-xl flex items-center justify-center text-xl font-bold">
-                {step.letter}
-              </div>
-              <div>
-                <h3 className="font-semibold text-surface-900">{step.label}</h3>
-                <p className="text-sm text-surface-600 mb-1">{step.description}</p>
-                <p className="text-xs text-surface-400 italic">{step.example}</p>
-              </div>
+      {/* Framework selector */}
+      <div className="flex flex-wrap gap-2">
+        {PROMPT_FRAMEWORKS.map((fw) => (
+          <button
+            key={fw.id}
+            onClick={() => setActiveFramework(fw.id)}
+            className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+              activeFramework === fw.id
+                ? 'bg-primary-600 text-white'
+                : 'bg-surface-100 text-surface-600 hover:bg-surface-200'
+            }`}
+          >
+            {fw.acronym} <span className="hidden sm:inline">— {fw.title}</span>
+          </button>
+        ))}
+      </div>
+
+      {/* Active framework detail */}
+      <motion.div
+        key={current.id}
+        initial={{ opacity: 0, y: 8 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.2 }}
+      >
+        <FrameworkCard framework={current} />
+      </motion.div>
+
+      {/* Quick reference table */}
+      <div className="bg-white rounded-xl shadow-sm border border-surface-200 overflow-hidden">
+        <div className="px-5 py-4 border-b border-surface-100">
+          <h3 className="font-semibold text-surface-900">Which framework should I use?</h3>
+        </div>
+        <div className="divide-y divide-surface-100">
+          {FRAMEWORK_GUIDE.situations.map((s) => (
+            <div key={s.situation} className="flex items-center justify-between px-5 py-3">
+              <span className="text-sm text-surface-600">{s.situation}</span>
+              <span className="text-sm font-semibold text-primary-600 whitespace-nowrap ml-4">{s.framework}</span>
             </div>
           ))}
         </div>
       </div>
 
-      {/* Other Techniques */}
-      <div>
-        <h2 className="text-xl font-bold text-surface-900 mb-4">More prompting techniques</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {PROMPTING_TECHNIQUES.map((tech) => (
-            <div key={tech.name} className="bg-white rounded-xl shadow-sm border border-surface-200 p-5">
-              <h3 className="font-semibold text-surface-900 mb-2">{tech.name}</h3>
-              <p className="text-sm text-surface-600 mb-2">{tech.description}</p>
-              <p className="text-xs text-surface-400 italic">{tech.example}</p>
-            </div>
-          ))}
+      <p className="text-xs text-surface-400 text-center">
+        These frameworks work with any AI tool — Claude, ChatGPT, Gemini, or others. The principles don't change.
+      </p>
+    </div>
+  );
+}
+
+function FrameworkCard({ framework }: { framework: PromptFramework }) {
+  const color = FRAMEWORK_COLORS[framework.id] || 'bg-primary-600';
+
+  return (
+    <div className="bg-white rounded-xl shadow-sm border border-surface-200 p-6 md:p-8">
+      <div className="mb-6">
+        <div className="flex items-center gap-3 mb-2">
+          <span className={`${color} text-white text-xs font-bold px-2.5 py-1 rounded-full`}>
+            {framework.acronym}
+          </span>
+          <span className="text-sm text-surface-400">{framework.bestFor}</span>
         </div>
+        <h2 className="text-xl font-bold text-surface-900">{framework.tagline}</h2>
+        <p className="text-sm text-surface-600 mt-1">{framework.description}</p>
       </div>
 
-      <div className="p-4 bg-primary-50 rounded-lg">
+      <div className="space-y-5">
+        {framework.steps.map((step, i) => (
+          <div key={`${step.letter}-${i}`} className="flex gap-4">
+            <div className={`flex-shrink-0 w-10 h-10 ${color} text-white rounded-lg flex items-center justify-center text-lg font-bold`}>
+              {step.letter}
+            </div>
+            <div>
+              <h3 className="font-semibold text-surface-900 text-sm">{step.label}</h3>
+              <p className="text-sm text-surface-600 mb-1">{step.description}</p>
+              <p className="text-xs text-surface-400 italic">{step.example}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="mt-6 p-4 bg-primary-50 rounded-lg">
         <p className="text-sm text-primary-800">
-          <strong>Pro tip:</strong> After getting AI's first response, push it further:
-          "Make this more concise", "Give me three alternative approaches",
-          "What are the weaknesses in this plan?", or "Is this actually the best answer?"
+          <strong>Pro tip:</strong> {framework.proTip}
         </p>
       </div>
     </div>
