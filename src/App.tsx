@@ -13,7 +13,7 @@ import { CompanyPage } from './pages/CompanyPage';
 import { LearningPage } from './pages/LearningPage';
 
 function AppContent() {
-  const { events, milestones, companies, predictions, loading, error } = useData();
+  const { events, plannedEvents, creationEvents, milestones, companies, predictions, loading, error } = useData();
   const location = useLocation();
   const isEmbed = location.pathname.startsWith('/embed');
   usePageTracking();
@@ -41,7 +41,7 @@ function AppContent() {
       <EmbedLayout>
         {loading ? loadingEl : error ? errorEl : (
           <Routes>
-            <Route path="/embed/dashboard" element={<DashboardPage events={events} />} />
+            <Route path="/embed/dashboard" element={<DashboardPage events={events} plannedEvents={plannedEvents} creationEvents={creationEvents} />} />
             <Route path="/embed/predictions" element={<PredictionsPage predictions={predictions} />} />
             <Route path="/embed/timeline" element={<TimelinePage events={events} />} />
             <Route path="/embed/ai-advances" element={<AITimelinePage milestones={milestones} />} />
@@ -59,7 +59,7 @@ function AppContent() {
       <main className="flex-1">
         {loading ? loadingEl : error ? errorEl : (
           <Routes>
-            <Route path="/" element={<DashboardPage events={events} />} />
+            <Route path="/" element={<DashboardPage events={events} plannedEvents={plannedEvents} creationEvents={creationEvents} />} />
             <Route path="/predictions" element={<PredictionsPage predictions={predictions} />} />
             <Route path="/timeline" element={<TimelinePage events={events} />} />
             <Route

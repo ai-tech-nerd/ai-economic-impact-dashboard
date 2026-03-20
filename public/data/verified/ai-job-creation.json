@@ -1,0 +1,21 @@
+[
+  {
+    "id": "create-001",
+    "company": "ibm",
+    "companyName": "IBM",
+    "date": "2026-02-12",
+    "jobsCut": 0,
+    "jobTypes": ["Software developers", "HR (AI oversight)", "Customer-facing"],
+    "industry": "Technology",
+    "region": "US",
+    "country": "US",
+    "aiReplacement": false,
+    "description": "Previously froze ~7,800 back-office roles due to AI (May 2023). Now tripling U.S. entry-level hiring for 2026, but for fundamentally different roles. New hires manage chatbots, oversee AI outputs, and intervene when AI fails. CHRO Nickle LaMoreaux: 'The entry-level jobs from two to three years ago? AI can do most of them.' CEO Krishna (Oct 2025): 'We are probably going to hire more people out of college over the next 12 months than we have in the past few years.'",
+    "reasonGiven": "Tripling entry-level hiring — but for AI-management roles, not traditional back-office work.",
+    "sources": [{"url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ibm-triples-entry-level-hires-for-2026-despite-ai-adoption-bucking-industry-trends-chief-hr-officer-says-that-ai-can-do-most-entry-level-jobs-but-work-still-requires-a-human-touch", "title": "IBM triples entry-level hires", "publisher": "Tom's Hardware", "date": "2026-02-12"}],
+    "verificationStatus": "verified",
+    "status": "creation",
+    "jobRolesCreated": "Software developers, HR (AI oversight), customer-facing roles — redefined as AI-management positions",
+    "context": "Reversal from May 2023 hiring freeze. New roles fundamentally different — managing chatbots, overseeing AI outputs, intervening when AI fails."
+  }
+]

@@ -25,6 +25,11 @@ export interface DisplacementEvent {
   verifiedBy?: string;
   verifiedDate?: string;
   notes?: string;
+  status?: 'verified' | 'announced' | 'hiring-freeze' | 'creation';
+  timeline?: string;
+  jobsAlreadyCut?: number;
+  jobRolesCreated?: string;
+  context?: string;
 }
 
 export type MilestoneType =
