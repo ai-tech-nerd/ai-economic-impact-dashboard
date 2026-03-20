@@ -62,7 +62,7 @@ export function CompanyTable({ events, plannedEvents = [], creationEvents = [] }
 
   const SortIcon = ({ column }: { column: SortKey }) => {
     if (sortKey !== column) return <span className="text-surface-300 ml-1">&#8597;</span>;
-    return <span className="ml-1">{sortAsc ? '&#8593;' : '&#8595;'}</span>;
+    return <span className="ml-1">{sortAsc ? '↑' : '↓'}</span>;
   };
 
   function getStatusBadge(companyId: string) {
