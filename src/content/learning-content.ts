@@ -1,12 +1,34 @@
-export const AI_TOOLS = [
+export interface AIToolService {
+  name: string;
+  url: string;
+}
+
+export interface AITool {
+  name: string;
+  company: string;
+  description: string;
+  url: string;
+  free: true;
+  capabilities: string[];
+  services: AIToolService[];
+}
+
+export const AI_TOOLS: AITool[] = [
   {
     name: 'ChatGPT',
     company: 'OpenAI',
     description:
-      'The most widely used AI assistant. Best for general writing, brainstorming, coding, and research. Free tier includes web search, image generation, and file uploads.',
+      'The most widely used AI assistant. Excels at general-purpose tasks: writing, brainstorming, coding, and research. Free tier includes web search, image generation, and file uploads.',
     url: 'https://chat.openai.com',
     free: true,
     capabilities: ['Writing', 'Coding', 'Research', 'Image Generation', 'Data Analysis'],
+    services: [
+      { name: 'ChatGPT', url: 'https://chat.openai.com' },
+      { name: 'DALL·E (Image Gen)', url: 'https://chat.openai.com' },
+      { name: 'Custom GPTs', url: 'https://chat.openai.com/gpts' },
+      { name: 'Codex', url: 'https://openai.com/index/codex/' },
+      { name: 'Sora (Video)', url: 'https://sora.com' },
+    ],
   },
   {
     name: 'Claude',
@@ -16,39 +38,86 @@ export const AI_TOOLS = [
     url: 'https://claude.ai',
     free: true,
     capabilities: ['Long-form Analysis', 'Research Synthesis', 'Coding', 'Writing', 'Reasoning'],
+    services: [
+      { name: 'Claude.ai', url: 'https://claude.ai' },
+      { name: 'Claude Code', url: 'https://docs.anthropic.com/en/docs/claude-code/overview' },
+      { name: 'Deep Research', url: 'https://claude.ai' },
+    ],
   },
   {
     name: 'Google Gemini',
     company: 'Google',
     description:
-      'Integrates directly into Gmail, Docs, Sheets, and Slides. Strong at multimodal tasks and search-connected responses.',
+      'Integrates deeply with Google Workspace. Strong at multimodal tasks, search-connected responses, and productivity workflows across Gmail, Docs, Sheets, and Slides.',
     url: 'https://gemini.google.com',
     free: true,
-    capabilities: ['Google Workspace Integration', 'Multimodal', 'Search', 'Coding'],
+    capabilities: ['Google Workspace', 'Multimodal', 'Search', 'Coding', 'Image Generation'],
+    services: [
+      { name: 'Gemini', url: 'https://gemini.google.com' },
+      { name: 'NotebookLM', url: 'https://notebooklm.google.com' },
+      { name: 'Google AI Studio', url: 'https://aistudio.google.com' },
+      { name: 'Gemini in Workspace', url: 'https://workspace.google.com/solutions/ai/' },
+      { name: 'Google Vids', url: 'https://workspace.google.com/products/vids/' },
+    ],
   },
   {
     name: 'NotebookLM',
     company: 'Google',
     description:
-      'Upload documents, PDFs, and YouTube videos as sources, then generate summaries, study guides, timelines, and AI-generated audio discussions.',
+      'Upload documents, PDFs, and YouTube videos as sources, then generate summaries, study guides, timelines, and AI-generated audio discussions from your materials.',
     url: 'https://notebooklm.google.com',
     free: true,
     capabilities: ['Document Analysis', 'Audio Summaries', 'Study Guides', 'Research'],
+    services: [
+      { name: 'NotebookLM', url: 'https://notebooklm.google.com' },
+    ],
   },
   {
     name: 'Perplexity AI',
     company: 'Perplexity',
     description:
-      'AI-powered search that returns sourced, cited answers instead of links. Best for research, fact-checking, and staying current.',
+      'AI-powered search that returns sourced, cited answers instead of links. Best for research, fact-checking, and staying current on any topic.',
     url: 'https://perplexity.ai',
     free: true,
     capabilities: ['Research', 'Fact-checking', 'Cited Answers', 'Real-time Search'],
+    services: [
+      { name: 'Perplexity Search', url: 'https://perplexity.ai' },
+      { name: 'Spaces', url: 'https://perplexity.ai' },
+      { name: 'Comet Browser', url: 'https://perplexity.ai/comet' },
+    ],
+  },
+  {
+    name: 'Microsoft Copilot',
+    company: 'Microsoft',
+    description:
+      'AI assistant built into Microsoft products. Free version offers chat, image generation, and web search. Integrates into Word, Excel, PowerPoint, and Outlook with paid plans.',
+    url: 'https://copilot.microsoft.com',
+    free: true,
+    capabilities: ['Writing', 'Image Generation', 'Search', 'Office Integration'],
+    services: [
+      { name: 'Copilot Chat', url: 'https://copilot.microsoft.com' },
+      { name: 'Copilot in Edge', url: 'https://www.microsoft.com/en-us/edge' },
+      { name: 'GitHub Copilot', url: 'https://github.com/features/copilot' },
+    ],
+  },
+  {
+    name: 'Meta AI',
+    company: 'Meta',
+    description:
+      'Free AI assistant available across WhatsApp, Instagram, Facebook, and Messenger. Powered by Llama models with image generation built in.',
+    url: 'https://www.meta.ai',
+    free: true,
+    capabilities: ['Chat', 'Image Generation', 'Social Integration', 'Research'],
+    services: [
+      { name: 'Meta AI', url: 'https://www.meta.ai' },
+      { name: 'AI Studio', url: 'https://ai.meta.com/ai-studio/' },
+    ],
   },
 ];
 
 export const CRAFT_FRAMEWORK = {
   title: 'The CRAFT Method',
-  description: 'A structured framework for any complex AI request:',
+  description: 'A structured framework for any complex AI request. The quality of AI output depends heavily on how you communicate with it.',
   steps: [
     {
       letter: 'C',
@@ -83,15 +152,44 @@ export const CRAFT_FRAMEWORK = {
   ],
 };
 
+export const PROMPTING_TECHNIQUES = [
+  {
+    name: 'Chain-of-Thought',
+    description: 'Ask the AI to think step-by-step through a problem before giving a final answer. Dramatically improves accuracy on complex reasoning tasks.',
+    example: '"Walk me through this step by step before giving your final recommendation..."',
+  },
+  {
+    name: 'Role Prompting',
+    description: 'Assign the AI a specific persona or expertise to shape the quality and perspective of its response.',
+    example: '"You are a CFO reviewing this budget proposal. What concerns would you raise?"',
+  },
+  {
+    name: 'Few-Shot Examples',
+    description: 'Provide 2-3 examples of the input/output format you want. The AI will follow the pattern for new inputs.',
+    example: '"Here are 3 examples of the tone I want: [example 1], [example 2], [example 3]. Now write one for..."',
+  },
+  {
+    name: 'Constraint Setting',
+    description: 'Set boundaries on length, format, reading level, or style to get precisely what you need.',
+    example: '"Explain this in under 100 words, at an 8th-grade reading level, using no jargon."',
+  },
+  {
+    name: 'Iterative Refinement',
+    description: 'Treat AI conversations as collaborative drafts. Push back, ask for alternatives, and refine until the output meets your standards.',
+    example: '"Make this more concise." "Give me 3 alternative approaches." "What are the weaknesses in this plan?"',
+  },
+];
+
 export const ACTION_PLAN = {
   title: '30-Day Action Plan',
+  intro: 'Knowledge without action is useless. This plan builds on the tools and frameworks above — each week introduces more complexity as your confidence grows.',
   weeks: [
     {
       week: 1,
-      title: 'Start',
+      title: 'Get Started',
       tasks: [
         'Create free accounts on ChatGPT and Claude',
-        'Adjust privacy settings on both platforms',
+        'Review and adjust privacy settings on both platforms (see below)',
         'Use AI to help with one real task each day',
         'Note what works, what doesn\'t, and what surprised you',
       ],
@@ -102,7 +200,7 @@ export const ACTION_PLAN = {
       tasks: [
         'Apply the CRAFT framework to a real, complex work task',
         'Try Chain-of-Thought prompting on a problem you\'ve been wrestling with',
-        'Upload a document to NotebookLM and generate a summary',
+        'Upload a document to NotebookLM and generate a summary or podcast',
         'Use Perplexity for one research task instead of a regular web search',
         'Identify 3 recurring tasks where AI could save meaningful time',
       ],
@@ -133,32 +231,32 @@ export const IRREPLACEABLE_SKILLS = [
   {
     name: 'Critical Thinking',
     description:
-      'Evaluating AI output for errors, bias, and gaps. Knowing when to trust it and when to override it.',
+      'Evaluating AI output for errors, bias, and gaps. AI can generate options; humans must decide which are good.',
   },
   {
     name: 'Emotional Intelligence',
     description:
-      'Building real relationships, navigating conflict, understanding what people actually need.',
+      'Building real relationships, navigating conflict, understanding what people actually need. AI cannot genuinely connect with people.',
   },
   {
     name: 'Creative Direction',
     description:
-      'Setting vision, making taste decisions, defining what "good" looks like. AI executes; humans direct.',
+      'Setting vision, making taste decisions, defining what "good" looks like. AI can execute; humans must direct.',
   },
   {
     name: 'Complex Judgment',
     description:
-      'Handling ambiguity, integrating incomplete information, adapting to unprecedented situations.',
+      'Handling ambiguity, integrating incomplete information, adapting to unprecedented situations. AI struggles with truly novel problems.',
   },
   {
     name: 'Communication & Persuasion',
     description:
-      'Influencing people, negotiating, presenting ideas that move others to act.',
+      'Influencing people, negotiating, presenting ideas that move others to act. The ability to influence humans remains human.',
   },
   {
     name: 'Leadership',
     description:
-      'Motivating teams, making hard decisions under uncertainty, building organizational culture.',
+      'Motivating teams, making hard decisions under uncertainty, building organizational culture. Organizations still need humans to lead.',
   },
 ];
 
@@ -204,23 +302,93 @@ export const PRIVACY_TIPS = [
   {
     tool: 'ChatGPT',
     instruction: 'Settings → Data Controls → Turn off "Improve the model for everyone"',
+    note: 'OpenAI may still retain data for safety monitoring and legal compliance.',
   },
   {
     tool: 'Claude',
     instruction:
-      'Settings → Privacy → Turn off "Help improve Claude" (reduces data retention from 5 years to 30 days)',
+      'Settings → Privacy → Turn off "Help improve Claude"',
+    note: 'Training on user data is ON by default for free/Pro/Max plans. Opting out reduces retention from 5 years to 30 days.',
   },
   {
     tool: 'Google Gemini',
     instruction: 'myactivity.google.com → Gemini Apps Activity → Turn off',
+    note: 'You can also set auto-delete for 3, 18, or 36 months.',
   },
 ];
 
 export const NEVER_SHARE = [
-  'Social Security numbers',
-  'Passwords or API keys',
-  'Financial account numbers',
-  'Client data under NDA',
-  'Proprietary source code',
-  'Confidential business information',
+  'Social Security numbers, financial account numbers, passwords',
+  'Confidential business information or trade secrets',
+  'Personal health information (unless using HIPAA-compliant tools)',
+  'Client data or information covered by NDAs',
+  'Proprietary code or algorithms',
+];
+
+export interface GlossaryTerm {
+  term: string;
+  definition: string;
+}
+
+export interface GlossaryCategory {
+  name: string;
+  terms: GlossaryTerm[];
+}
+
+export const AI_GLOSSARY: GlossaryCategory[] = [
+  {
+    name: 'Foundational AI',
+    terms: [
+      { term: 'Artificial Intelligence (AI)', definition: 'The broader concept of machines being able to carry out tasks in a way we would consider "smart" or "intelligent."' },
+      { term: 'Artificial General Intelligence (AGI)', definition: 'AI that can understand, learn, and apply intelligence across a broad range of tasks, mimicking human cognitive abilities. Does not yet exist.' },
+      { term: 'Machine Learning (ML)', definition: 'AI systems that improve their performance through experience, without being explicitly programmed for each specific task.' },
+      { term: 'Deep Learning', definition: 'A subset of machine learning that uses neural networks with multiple layers to process complex patterns and make decisions.' },
+      { term: 'Large Language Models (LLMs)', definition: 'Advanced AI models trained on vast amounts of text data, capable of understanding and generating human-like text. Examples: GPT-4, Claude, Gemini.' },
+      { term: 'Generative AI', definition: 'AI systems that can create new content — text, images, audio, video — based on training data.' },
+      { term: 'AI Hallucinations', definition: 'When AI generates content that seems plausible but is factually incorrect or fabricated. A significant limitation of current AI.' },
+      { term: 'Token', definition: 'A chunk of text (like a word or part of a word) used by LLMs during prediction. Output length and cost are often measured in tokens.' },
+      { term: 'Context Window', definition: 'The maximum amount of text an AI model can process at once. Larger windows allow longer conversations and documents.' },
+    ],
+  },
+  {
+    name: 'Agents & Automation',
+    terms: [
+      { term: 'AI Agent', definition: 'An AI system that uses a language model to reason through problems, make decisions, and execute tasks by interacting with tools and APIs.' },
+      { term: 'Agentic AI', definition: 'AI systems designed to autonomously execute complex tasks with enhanced decision-making, under limited human supervision.' },
+      { term: 'AI Copilot', definition: 'An AI-driven assistant that supports users by automating tasks and offering suggestions while keeping humans in control.' },
+      { term: 'Robotic Process Automation (RPA)', definition: 'Using AI to automate routine, rule-based digital tasks like data entry and form processing.' },
+      { term: 'Digital Workers', definition: 'AI-powered software agents designed to automate specific business processes, reducing the need for human intervention.' },
+    ],
+  },
+  {
+    name: 'Content Creation',
+    terms: [
+      { term: 'Text-to-Image', definition: 'Generating images from text descriptions using AI models like DALL·E, Midjourney, or Stable Diffusion.' },
+      { term: 'Text-to-Video', definition: 'AI-generated videos created from written descriptions or prompts. Examples: Sora, Runway, Veo.' },
+      { term: 'Voice Cloning', definition: 'Replicating a person\'s voice using AI to generate new speech that sounds like the original speaker.' },
+      { term: 'Deepfake', definition: 'AI-generated videos or images that manipulate a person\'s likeness, often used to superimpose faces or mimic movements.' },
+      { term: 'Diffusion Models', definition: 'AI techniques that generate images, videos, or audio by gradually refining noise into coherent outputs.' },
+    ],
+  },
+  {
+    name: 'Prompting & Interaction',
+    terms: [
+      { term: 'Prompt Engineering', definition: 'The skill of crafting inputs that get useful results from AI — arguably the most important practical AI skill.' },
+      { term: 'Chain-of-Thought (CoT)', definition: 'A prompting technique that encourages AI to show its reasoning step-by-step, improving accuracy.' },
+      { term: 'Few-Shot Learning', definition: 'Providing a few examples in your prompt so the AI learns the pattern you want.' },
+      { term: 'Zero-Shot Learning', definition: 'An AI performing a task without any examples — relying solely on your instructions.' },
+      { term: 'RAG (Retrieval-Augmented Generation)', definition: 'A technique combining information retrieval with AI generation to produce more accurate, grounded responses.' },
+      { term: 'Temperature', definition: 'A setting that adjusts randomness in AI responses. Lower = more predictable, higher = more creative.' },
+    ],
+  },
+  {
+    name: 'Ethics & Governance',
+    terms: [
+      { term: 'AI Alignment', definition: 'The field aiming to ensure AI systems act in accordance with human values and intended goals.' },
+      { term: 'Bias in AI', definition: 'When AI makes prejudiced decisions due to flaws in training data or algorithms.' },
+      { term: 'Explainability (XAI)', definition: 'Techniques that make AI decisions interpretable to humans — understanding why it made a choice.' },
+      { term: 'AI Governance', definition: 'Frameworks of guidelines, policies, and procedures ensuring responsible AI use within organizations.' },
+      { term: 'EU AI Act', definition: 'Comprehensive EU regulation classifying AI systems by risk level and setting compliance requirements.' },
+    ],
+  },
 ];
