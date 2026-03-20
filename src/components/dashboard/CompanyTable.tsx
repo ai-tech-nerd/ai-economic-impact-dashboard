@@ -11,7 +11,7 @@ interface CompanyTableProps {
   creationEvents?: DisplacementEvent[];
 }
 
-type SortKey = 'name' | 'total' | 'events';
+type SortKey = 'name' | 'total' | 'events' | 'freeze' | 'creation';
 
 export function CompanyTable({ events, plannedEvents = [], creationEvents = [] }: CompanyTableProps) {
   const [sortKey, setSortKey] = useState<SortKey>('total');
@@ -20,21 +20,26 @@ export function CompanyTable({ events, plannedEvents = [], creationEvents = [] }
 
   const companies = useMemo(() => getCompanySummary(events), [events]);
 
-  // Build lookup sets for planned and creation companies (by slug)
+  // Build lookup maps for planned and creation companies
   const plannedCompanies = useMemo(() => {
-    const map = new Map<string, string>();
+    const map = new Map<string, { status: string; total: number }>();
     for (const evt of plannedEvents) {
-      map.set(evt.company, evt.status === 'hiring-freeze' ? 'hiring-freeze' : 'announced');
+      const existing = map.get(evt.company);
+      const status = evt.status === 'hiring-freeze' ? 'hiring-freeze' : 'announced';
+      map.set(evt.company, {
+        status,
+        total: (existing?.total || 0) + evt.jobsCut,
+      });
     }
     return map;
   }, [plannedEvents]);
 
   const creationCompanies = useMemo(() => {
-    const set = new Set<string>();
+    const map = new Map<string, number>();
     for (const evt of creationEvents) {
-      set.add(evt.company);
+      map.set(evt.company, (map.get(evt.company) || 0) + 1);
     }
-    return set;
+    return map;
   }, [creationEvents]);
 
   const filtered = useMemo(() => {
@@ -46,10 +51,20 @@ export function CompanyTable({ events, plannedEvents = [], creationEvents = [] }
     result.sort((a, b) => {
       const mul = sortAsc ? 1 : -1;
       if (sortKey === 'name') return mul * a.name.localeCompare(b.name);
+      if (sortKey === 'freeze') {
+        const aVal = plannedCompanies.get(a.id)?.total || 0;
+        const bVal = plannedCompanies.get(b.id)?.total || 0;
+        return mul * (aVal - bVal);
+      }
+      if (sortKey === 'creation') {
+        const aVal = creationCompanies.get(a.id) || 0;
+        const bVal = creationCompanies.get(b.id) || 0;
+        return mul * (aVal - bVal);
+      }
       return mul * (a[sortKey] - b[sortKey]);
     });
     return result;
-  }, [companies, search, sortKey, sortAsc]);
+  }, [companies, search, sortKey, sortAsc, plannedCompanies, creationCompanies]);
 
   const handleSort = (key: SortKey) => {
     if (sortKey === key) {
@@ -65,48 +80,9 @@ export function CompanyTable({ events, plannedEvents = [], creationEvents = [] }
     return <span className="ml-1">{sortAsc ? '↑' : '↓'}</span>;
   };
 
-  function getStatusBadge(companyId: string) {
-    const badges: React.ReactNode[] = [];
-
-    // Always show confirmed (red) since they're in the events list
-    badges.push(
-      <span
-        key="confirmed"
-        className="inline-flex items-center text-xs px-1.5 py-0.5 rounded-full bg-danger-100 text-danger-700"
-      >
-        Confirmed
-      </span>
-    );
-
-    if (plannedCompanies.has(companyId)) {
-      const status = plannedCompanies.get(companyId);
-      badges.push(
-        <span
-          key="planned"
-          className="inline-flex items-center text-xs px-1.5 py-0.5 rounded-full bg-warning-100 text-warning-700"
-        >
-          {status === 'hiring-freeze' ? 'Freeze' : 'Announced'}
-        </span>
-      );
-    }
-
-    if (creationCompanies.has(companyId)) {
-      badges.push(
-        <span
-          key="creation"
-          className="inline-flex items-center text-xs px-1.5 py-0.5 rounded-full bg-success-100 text-success-700"
-        >
-          Net Hiring
-        </span>
-      );
-    }
-
-    return <div className="flex flex-wrap gap-1">{badges}</div>;
-  }
-
   return (
     <ChartContainer title="Companies" subtitle="All companies with documented AI-driven job cuts">
-      <div className="mb-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+      <div className="mb-4">
         <input
           type="text"
           placeholder="Search companies..."
@@ -114,17 +90,6 @@ export function CompanyTable({ events, plannedEvents = [], creationEvents = [] }
           onChange={(e) => setSearch(e.target.value)}
           className="w-full md:w-64 px-3 py-2 border border-surface-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary-500"
         />
-        <div className="flex items-center gap-3 text-xs text-surface-500">
-          <span className="flex items-center gap-1">
-            <span className="w-2 h-2 rounded-full bg-danger-500" /> Confirmed
-          </span>
-          <span className="flex items-center gap-1">
-            <span className="w-2 h-2 rounded-full bg-warning-500" /> Announced
-          </span>
-          <span className="flex items-center gap-1">
-            <span className="w-2 h-2 rounded-full bg-success-500" /> Net Hiring
-          </span>
-        </div>
       </div>
       <div className="overflow-x-auto">
         <table className="w-full text-sm">
@@ -136,14 +101,23 @@ export function CompanyTable({ events, plannedEvents = [], creationEvents = [] }
               >
                 Company <SortIcon column="name" />
               </th>
-              <th className="text-left py-3 px-2 font-semibold text-surface-600">
-                Status
-              </th>
               <th
                 className="text-right py-3 px-2 font-semibold text-surface-600 cursor-pointer hover:text-surface-900"
                 onClick={() => handleSort('total')}
               >
-                Jobs Cut <SortIcon column="total" />
+                Jobs Displaced <SortIcon column="total" />
+              </th>
+              <th
+                className="text-right py-3 px-2 font-semibold text-surface-600 cursor-pointer hover:text-surface-900"
+                onClick={() => handleSort('freeze')}
+              >
+                Hiring Freeze <SortIcon column="freeze" />
+              </th>
+              <th
+                className="text-right py-3 px-2 font-semibold text-surface-600 cursor-pointer hover:text-surface-900"
+                onClick={() => handleSort('creation')}
+              >
+                Job Creation <SortIcon column="creation" />
               </th>
               <th
                 className="text-right py-3 px-2 font-semibold text-surface-600 cursor-pointer hover:text-surface-900"
@@ -154,28 +128,43 @@ export function CompanyTable({ events, plannedEvents = [], creationEvents = [] }
             </tr>
           </thead>
           <tbody>
-            {filtered.map((company) => (
-              <tr
-                key={company.id}
-                className="border-b border-surface-100 hover:bg-surface-50 transition-colors"
-              >
-                <td className="py-3 px-2">
-                  <Link
-                    to={`/companies/${company.id}`}
-                    className="text-primary-600 hover:text-primary-700 font-medium no-underline"
-                  >
-                    {company.name}
-                  </Link>
-                </td>
-                <td className="py-3 px-2">
-                  {getStatusBadge(company.id)}
-                </td>
-                <td className="py-3 px-2 text-right font-mono">
-                  {formatNumber(company.total)}
-                </td>
-                <td className="py-3 px-2 text-right">{company.events}</td>
-              </tr>
-            ))}
+            {filtered.map((company) => {
+              const planned = plannedCompanies.get(company.id);
+              const creation = creationCompanies.get(company.id);
+              return (
+                <tr
+                  key={company.id}
+                  className="border-b border-surface-100 hover:bg-surface-50 transition-colors"
+                >
+                  <td className="py-3 px-2">
+                    <Link
+                      to={`/companies/${company.id}`}
+                      className="text-primary-600 hover:text-primary-700 font-medium no-underline"
+                    >
+                      {company.name}
+                    </Link>
+                  </td>
+                  <td className="py-3 px-2 text-right font-mono text-danger-600">
+                    {formatNumber(company.total)}
+                  </td>
+                  <td className="py-3 px-2 text-right font-mono">
+                    {planned ? (
+                      <span className="text-warning-600">{formatNumber(planned.total)}</span>
+                    ) : (
+                      <span className="text-surface-300">—</span>
+                    )}
+                  </td>
+                  <td className="py-3 px-2 text-right font-mono">
+                    {creation ? (
+                      <span className="text-success-600">{creation} {creation === 1 ? 'event' : 'events'}</span>
+                    ) : (
+                      <span className="text-surface-300">—</span>
+                    )}
+                  </td>
+                  <td className="py-3 px-2 text-right">{company.events}</td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>

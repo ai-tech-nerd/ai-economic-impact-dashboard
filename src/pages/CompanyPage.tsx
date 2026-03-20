@@ -331,40 +331,30 @@ function CompanyList({
               {desc && (
                 <p className="text-xs text-surface-500 mt-1 line-clamp-2">{desc}</p>
               )}
-              <div className="mt-4 flex items-center justify-between">
+              <div className="mt-4 grid grid-cols-2 gap-x-4 gap-y-2">
                 <div>
                   <div className="text-2xl font-bold text-primary-600">{ms.length}</div>
-                  <div className="text-xs text-surface-500">milestones</div>
+                  <div className="text-xs text-surface-500">Milestones</div>
                 </div>
-                {displacement && (
-                  <div className="text-right">
-                    <div className="text-lg font-bold text-danger-600">
-                      {formatNumber(displacement.total)}
-                    </div>
-                    <div className="text-xs text-surface-500">jobs displaced</div>
+                <div className="text-right">
+                  <div className="text-lg font-bold text-danger-600">
+                    {displacement ? formatNumber(displacement.total) : <span className="text-surface-300">—</span>}
                   </div>
-                )}
-              </div>
-
-              {/* Planned / Creation badges */}
-              {(planned || creation) && (
-                <div className="mt-3 flex flex-wrap gap-1.5">
-                  {planned && (
-                    <span className={`text-xs px-2 py-0.5 rounded-full ${
-                      planned.status === 'hiring-freeze'
-                        ? 'bg-warning-100 text-warning-700'
-                        : 'bg-amber-100 text-amber-700'
-                    }`}>
-                      {planned.status === 'hiring-freeze' ? 'Hiring Freeze' : 'Announced'}: {formatNumber(planned.total)} jobs
-                    </span>
-                  )}
-                  {creation && (
-                    <span className="text-xs px-2 py-0.5 rounded-full bg-success-100 text-success-700">
-                      AI Job Creation
-                    </span>
-                  )}
+                  <div className="text-xs text-surface-500">Jobs Displaced</div>
                 </div>
-              )}
+                <div>
+                  <div className="text-lg font-bold text-warning-600">
+                    {planned ? formatNumber(planned.total) : <span className="text-surface-300">—</span>}
+                  </div>
+                  <div className="text-xs text-surface-500">Hiring Freeze</div>
+                </div>
+                <div className="text-right">
+                  <div className="text-lg font-bold text-success-600">
+                    {creation ? `${creation.length}` : <span className="text-surface-300">—</span>}
+                  </div>
+                  <div className="text-xs text-surface-500">Job Creation</div>
+                </div>
+              </div>
 
               {latest && (
                 <div className="mt-3 pt-3 border-t border-surface-100">
@@ -429,11 +419,7 @@ function CompanyDetail({
       </Link>
 
       {/* Stats row */}
-      <div className={`grid grid-cols-1 gap-4 mb-8 ${
-        totalPlanned > 0 || companyCreationEvents.length > 0
-          ? 'md:grid-cols-2 lg:grid-cols-4'
-          : 'md:grid-cols-3'
-      }`}>
+      <div className="grid grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
         <div className="bg-white rounded-xl shadow-sm border border-surface-200 p-5 text-center">
           <div className="text-3xl font-bold text-primary-600">
             {companyMilestones.length}
@@ -442,33 +428,27 @@ function CompanyDetail({
         </div>
         <div className="bg-white rounded-xl shadow-sm border border-surface-200 p-5 text-center">
           <div className="text-3xl font-bold text-danger-600">
-            {totalDisplaced > 0 ? formatNumber(totalDisplaced) : '—'}
+            {totalDisplaced > 0 ? formatNumber(totalDisplaced) : <span className="text-surface-300">—</span>}
           </div>
           <div className="text-sm text-surface-500">Jobs Displaced</div>
         </div>
-        {totalPlanned > 0 && (
-          <div className="bg-white rounded-xl shadow-sm border border-warning-200 p-5 text-center">
-            <div className="text-3xl font-bold text-warning-600">
-              {formatNumber(totalPlanned)}
-            </div>
-            <div className="text-sm text-surface-500">
-              {companyPlannedEvents[0]?.status === 'hiring-freeze' ? 'Hiring Freeze' : 'Announced'}
-            </div>
+        <div className="bg-white rounded-xl shadow-sm border border-warning-200 p-5 text-center">
+          <div className="text-3xl font-bold text-warning-600">
+            {totalPlanned > 0 ? formatNumber(totalPlanned) : <span className="text-surface-300">—</span>}
           </div>
-        )}
-        {companyCreationEvents.length > 0 && (
-          <div className="bg-white rounded-xl shadow-sm border border-success-200 p-5 text-center">
-            <div className="text-3xl font-bold text-success-600">
-              ✓
-            </div>
-            <div className="text-sm text-surface-500">AI Job Creation</div>
+          <div className="text-sm text-surface-500">Hiring Freeze</div>
+        </div>
+        <div className="bg-white rounded-xl shadow-sm border border-success-200 p-5 text-center">
+          <div className="text-3xl font-bold text-success-600">
+            {companyCreationEvents.length > 0 ? companyCreationEvents.length : <span className="text-surface-300">—</span>}
           </div>
-        )}
+          <div className="text-sm text-surface-500">Job Creation</div>
+        </div>
         <div className="bg-white rounded-xl shadow-sm border border-surface-200 p-5 text-center">
           <div className="text-3xl font-bold text-surface-800">
             {companyMilestones.length > 0
               ? `${formatDate(companyMilestones[0].date).split(',')[0]} ${formatDate(companyMilestones[0].date).split(',')[1]?.trim() || ''}`
-              : '—'}
+              : <span className="text-surface-300">—</span>}
           </div>
           <div className="text-sm text-surface-500">First Milestone</div>
         </div>
