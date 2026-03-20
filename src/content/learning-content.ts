@@ -28,6 +28,7 @@ export const AI_TOOLS: AITool[] = [
       { name: 'Custom GPTs', url: 'https://chat.openai.com/gpts' },
       { name: 'Codex', url: 'https://openai.com/index/codex/' },
       { name: 'Sora (Video)', url: 'https://sora.com' },
+      { name: 'Atlas Browser', url: 'https://chatgpt.com/atlas/' },
     ],
   },
   {
@@ -41,23 +42,54 @@ export const AI_TOOLS: AITool[] = [
     services: [
       { name: 'Claude.ai', url: 'https://claude.ai' },
       { name: 'Claude Code', url: 'https://docs.anthropic.com/en/docs/claude-code/overview' },
+      { name: 'Claude Cowork', url: 'https://support.claude.com/en/articles/13345190-get-started-with-cowork' },
       { name: 'Deep Research', url: 'https://claude.ai' },
     ],
   },
   {
-    name: 'Google Gemini',
+    name: 'Google',
     company: 'Google',
     description:
       'Integrates deeply with Google Workspace. Strong at multimodal tasks, search-connected responses, and productivity workflows across Gmail, Docs, Sheets, and Slides.',
     url: 'https://gemini.google.com',
     free: true,
-    capabilities: ['Google Workspace', 'Multimodal', 'Search', 'Coding', 'Image Generation'],
+    capabilities: ['Google Workspace', 'Multimodal', 'Search', 'Coding', 'Image Generation', 'Video Generation'],
     services: [
       { name: 'Gemini', url: 'https://gemini.google.com' },
       { name: 'NotebookLM', url: 'https://notebooklm.google.com' },
       { name: 'Google AI Studio', url: 'https://aistudio.google.com' },
       { name: 'Gemini in Workspace', url: 'https://workspace.google.com/solutions/ai/' },
       { name: 'Google Vids', url: 'https://workspace.google.com/products/vids/' },
+      { name: 'Veo 3 (Video Gen)', url: 'https://aistudio.google.com/models/veo-3' },
+      { name: 'Flow (Video Editing)', url: 'https://labs.google/fx/tools/flow' },
+      { name: 'Stitch (UI Design)', url: 'https://stitch.withgoogle.com' },
+    ],
+  },
+  {
+    name: 'Meta AI',
+    company: 'Meta',
+    description:
+      'Free AI assistant available across WhatsApp, Instagram, Facebook, and Messenger. Powered by Llama models with image generation built in.',
+    url: 'https://www.meta.ai',
+    free: true,
+    capabilities: ['Chat', 'Image Generation', 'Social Integration', 'Research'],
+    services: [
+      { name: 'Meta AI', url: 'https://www.meta.ai' },
+      { name: 'AI Studio', url: 'https://ai.meta.com/ai-studio/' },
+    ],
+  },
+  {
+    name: 'Microsoft Copilot',
+    company: 'Microsoft',
+    description:
+      'AI assistant built into Microsoft products. Free version offers chat, image generation, and web search. Integrates into Word, Excel, PowerPoint, and Outlook with paid plans.',
+    url: 'https://copilot.microsoft.com',
+    free: true,
+    capabilities: ['Writing', 'Image Generation', 'Search', 'Office Integration'],
+    services: [
+      { name: 'Copilot Chat', url: 'https://copilot.microsoft.com' },
+      { name: 'Copilot in Edge', url: 'https://www.microsoft.com/en-us/edge' },
+      { name: 'GitHub Copilot', url: 'https://github.com/features/copilot' },
     ],
   },
   {
@@ -84,33 +116,7 @@ export const AI_TOOLS: AITool[] = [
       { name: 'Perplexity Search', url: 'https://perplexity.ai' },
       { name: 'Spaces', url: 'https://perplexity.ai' },
       { name: 'Comet Browser', url: 'https://perplexity.ai/comet' },
-    ],
-  },
-  {
-    name: 'Microsoft Copilot',
-    company: 'Microsoft',
-    description:
-      'AI assistant built into Microsoft products. Free version offers chat, image generation, and web search. Integrates into Word, Excel, PowerPoint, and Outlook with paid plans.',
-    url: 'https://copilot.microsoft.com',
-    free: true,
-    capabilities: ['Writing', 'Image Generation', 'Search', 'Office Integration'],
-    services: [
-      { name: 'Copilot Chat', url: 'https://copilot.microsoft.com' },
-      { name: 'Copilot in Edge', url: 'https://www.microsoft.com/en-us/edge' },
-      { name: 'GitHub Copilot', url: 'https://github.com/features/copilot' },
-    ],
-  },
-  {
-    name: 'Meta AI',
-    company: 'Meta',
-    description:
-      'Free AI assistant available across WhatsApp, Instagram, Facebook, and Messenger. Powered by Llama models with image generation built in.',
-    url: 'https://www.meta.ai',
-    free: true,
-    capabilities: ['Chat', 'Image Generation', 'Social Integration', 'Research'],
-    services: [
-      { name: 'Meta AI', url: 'https://www.meta.ai' },
-      { name: 'AI Studio', url: 'https://ai.meta.com/ai-studio/' },
+      { name: 'Computer', url: 'https://www.perplexity.ai/products/computer' },
     ],
   },
 ];
