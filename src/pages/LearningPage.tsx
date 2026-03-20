@@ -14,17 +14,18 @@ import {
 } from '../content/learning-content';
 import type { PromptFramework } from '../content/learning-content';
 
-type Tab = 'tools' | 'prompting' | 'courses' | 'glossary';
+type Tab = 'start' | 'prompting' | 'tools' | 'courses' | 'glossary';
 
 const TABS: { id: Tab; label: string }[] = [
-  { id: 'tools', label: 'Free AI Tools' },
+  { id: 'start', label: 'Start Here' },
   { id: 'prompting', label: 'AI Prompting Guides' },
-  { id: 'courses', label: 'Free Courses' },
+  { id: 'tools', label: 'Free AI Tools' },
+  { id: 'courses', label: 'Free AI Courses' },
   { id: 'glossary', label: 'AI Glossary' },
 ];
 
 export function LearningPage() {
-  const [activeTab, setActiveTab] = useState<Tab>('tools');
+  const [activeTab, setActiveTab] = useState<Tab>('start');
 
   return (
     <PageLayout
@@ -56,14 +57,12 @@ export function LearningPage() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.2 }}
       >
-        {activeTab === 'tools' && <ToolsSection />}
+        {activeTab === 'start' && <PathForwardSection />}
         {activeTab === 'prompting' && <PromptingSection />}
+        {activeTab === 'tools' && <ToolsSection />}
         {activeTab === 'courses' && <ResourcesSection />}
         {activeTab === 'glossary' && <GlossarySection />}
       </motion.div>
-
-      {/* Path Forward — always visible below tabs */}
-      <PathForwardSection />
     </PageLayout>
   );
 }
@@ -147,28 +146,151 @@ const FRAMEWORK_COLORS: Record<string, string> = {
 
 function PromptingSection() {
   const [activeFramework, setActiveFramework] = useState<string>(PROMPT_FRAMEWORKS[0].id);
+  const [guideOpen, setGuideOpen] = useState(false);
   const current = PROMPT_FRAMEWORKS.find((f) => f.id === activeFramework) || PROMPT_FRAMEWORKS[0];
 
   return (
     <div className="space-y-8">
-      {/* Intro */}
-      <p className="text-surface-600 max-w-3xl">
-        Five frameworks that cover the full arc of working with AI: from your first prompt to a finished project.
-        Use the guide below to find the right one for where you are in the process.
-      </p>
+      {/* Which Framework accordion */}
+      <div className="bg-white rounded-xl shadow-sm border border-surface-200 overflow-hidden">
+        <button
+          onClick={() => setGuideOpen(!guideOpen)}
+          className="w-full text-left px-6 py-5 flex items-start justify-between gap-4 hover:bg-surface-50 transition-colors"
+        >
+          <div>
+            <h2 className="text-xl font-bold text-surface-900">Which AI prompting framework should I use?</h2>
+            <p className="text-sm text-surface-500 italic mt-1">Five frameworks. One system. Here's how to choose.</p>
+            <p className="text-sm text-surface-600 mt-2">
+              You don't need a different framework for every situation — you need the right one for where you are in the process.
+              These five frameworks cover the full arc of working with AI: from your first prompt to a finished project. Use this guide to find your entry point.
+            </p>
+          </div>
+          <svg
+            className={`w-5 h-5 text-surface-400 flex-shrink-0 mt-1 transition-transform ${guideOpen ? 'rotate-180' : ''}`}
+            fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
 
-      {/* Workflow overview */}
-      <div className="bg-surface-50 rounded-xl border border-surface-200 p-5">
-        <p className="text-xs font-semibold text-surface-500 uppercase tracking-wider mb-3">How they work together</p>
-        <div className="flex flex-wrap items-center gap-2 text-sm">
-          {FRAMEWORK_GUIDE.workflowSteps.map((ws, i) => (
-            <span key={ws.step} className="flex items-center gap-2">
-              {i > 0 && <span className="text-surface-300">→</span>}
-              <span className="font-semibold text-surface-800">{ws.step}</span>
-              <span className="text-surface-400">({ws.label})</span>
-            </span>
-          ))}
-        </div>
+        {guideOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.2 }}
+            className="px-6 pb-6 border-t border-surface-100"
+          >
+            {/* Frameworks at a glance */}
+            <div className="mt-5 mb-6">
+              <h3 className="font-semibold text-surface-900 mb-3">The five frameworks at a glance</h3>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b border-surface-200 text-left">
+                      <th className="pb-2 pr-4 font-semibold text-surface-700">Framework</th>
+                      <th className="pb-2 pr-4 font-semibold text-surface-700">Job</th>
+                      <th className="pb-2 pr-4 font-semibold text-surface-700">Best for</th>
+                      <th className="pb-2 font-semibold text-surface-700">Skill level</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-surface-100">
+                    <tr><td className="py-2 pr-4 font-semibold">R.T.T.O.</td><td className="py-2 pr-4 text-surface-600">Quick-start any request</td><td className="py-2 pr-4 text-surface-600">Simple tasks, first prompts</td><td className="py-2 text-surface-600">Beginner</td></tr>
+                    <tr><td className="py-2 pr-4 font-semibold">C.R.A.F.T.</td><td className="py-2 pr-4 text-surface-600">Build complex prompts</td><td className="py-2 pr-4 text-surface-600">High-stakes, multi-part work</td><td className="py-2 text-surface-600">Intermediate</td></tr>
+                    <tr><td className="py-2 pr-4 font-semibold">S.C.O.R.E.</td><td className="py-2 pr-4 text-surface-600">Audit before you send</td><td className="py-2 pr-4 text-surface-600">Any prompt, any skill level</td><td className="py-2 text-surface-600">Any</td></tr>
+                    <tr><td className="py-2 pr-4 font-semibold">S.T.A.Y.</td><td className="py-2 pr-4 text-surface-600">Sustain a long session</td><td className="py-2 pr-4 text-surface-600">Multi-step creative projects</td><td className="py-2 text-surface-600">Intermediate+</td></tr>
+                    <tr><td className="py-2 pr-4 font-semibold">T.R.A.I.N.</td><td className="py-2 pr-4 text-surface-600">Debug broken outputs</td><td className="py-2 pr-4 text-surface-600">When results aren't working</td><td className="py-2 text-surface-600">Any</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* Find your starting point */}
+            <div className="mb-6">
+              <h3 className="font-semibold text-surface-900 mb-3">Find your starting point</h3>
+              <div className="space-y-3">
+                {[
+                  { quote: "I'm new to AI prompting and just need something that works.", fw: 'R.T.T.O.', detail: 'Four components, no complexity. Gets you useful output fast.' },
+                  { quote: "I'm working on something important — a pitch, a campaign, a strategy.", fw: 'C.R.A.F.T.', detail: 'It structures everything the AI needs to produce high-quality work on complex requests.' },
+                  { quote: "I have a prompt ready but I'm not confident it's good.", fw: 'S.C.O.R.E.', detail: 'A five-question audit catches gaps before they cost you a bad output.' },
+                  { quote: "I'm deep in a project and the AI keeps drifting or losing context.", fw: 'S.T.A.Y.', detail: 'Built for long sessions — keeps context tight and gives you a clean handoff when you\'re done.' },
+                  { quote: "The output isn't working and I don't know why.", fw: 'T.R.A.I.N.', detail: 'Diagnoses what\'s broken and gives you a step-by-step fix.' },
+                ].map((item) => (
+                  <div key={item.fw} className="bg-surface-50 rounded-lg p-4">
+                    <p className="text-sm text-surface-700 italic">"{item.quote}"</p>
+                    <p className="text-sm mt-1">
+                      <span className="text-surface-500">→ Start with </span>
+                      <span className="font-semibold text-primary-600">{item.fw}</span>
+                    </p>
+                    <p className="text-xs text-surface-400 mt-0.5">{item.detail}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Quick reference by situation */}
+            <div className="mb-6">
+              <h3 className="font-semibold text-surface-900 mb-3">Quick reference by situation</h3>
+              <div className="divide-y divide-surface-100 border border-surface-200 rounded-lg overflow-hidden">
+                {FRAMEWORK_GUIDE.situations.map((s) => (
+                  <div key={s.situation} className="flex items-center justify-between px-4 py-2.5 bg-white">
+                    <span className="text-sm text-surface-600">{s.situation}</span>
+                    <span className="text-sm font-semibold text-primary-600 whitespace-nowrap ml-4">{s.framework}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* How they work together */}
+            <div className="mb-6">
+              <h3 className="font-semibold text-surface-900 mb-3">How they work together</h3>
+              <p className="text-sm text-surface-600 mb-3">
+                These frameworks are sequential. Most productive AI sessions move through this arc:
+              </p>
+              <p className="text-sm font-semibold text-surface-800 mb-3">Build → Check → Send → Sustain → Fix</p>
+              <div className="bg-surface-50 rounded-lg p-4 mb-4">
+                <div className="flex flex-wrap items-center gap-2 text-sm font-mono">
+                  {FRAMEWORK_GUIDE.workflowSteps.map((ws, i) => (
+                    <span key={ws.step} className="flex items-center gap-2">
+                      {i > 0 && <span className="text-surface-300">→</span>}
+                      <span className="font-semibold text-surface-800">{ws.step}</span>
+                    </span>
+                  ))}
+                </div>
+                <div className="flex flex-wrap items-center gap-2 text-xs text-surface-400 mt-1 font-mono">
+                  {FRAMEWORK_GUIDE.workflowSteps.map((ws, i) => (
+                    <span key={ws.label} className="flex items-center gap-2">
+                      {i > 0 && <span className="text-transparent">→</span>}
+                      <span>({ws.label})</span>
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div className="text-sm text-surface-600 space-y-2">
+                <p><strong>A typical creative workflow:</strong></p>
+                <ol className="list-decimal list-inside space-y-1 text-sm text-surface-600">
+                  <li>Starting a new campaign brief? <strong>R.T.T.O.</strong> to get moving, <strong>C.R.A.F.T.</strong> once the scope gets complex.</li>
+                  <li>Before sending any high-stakes prompt? <strong>S.C.O.R.E.</strong> takes 60 seconds and catches most problems.</li>
+                  <li>Working through a multi-day project? <strong>S.T.A.Y.</strong> keeps the AI aligned across sessions.</li>
+                  <li>Output went sideways? <strong>T.R.A.I.N.</strong> tells you exactly what to fix.</li>
+                </ol>
+              </div>
+            </div>
+
+            {/* Skill level guide */}
+            <div className="mb-4">
+              <h3 className="font-semibold text-surface-900 mb-3">Skill level guide</h3>
+              <div className="space-y-2 text-sm text-surface-600">
+                <p><strong>New to AI prompting:</strong> Start with R.T.T.O. Add S.C.O.R.E. once you're comfortable. You may not need the others yet.</p>
+                <p><strong>Intermediate:</strong> C.R.A.F.T. and S.C.O.R.E. should be your defaults. Reach for T.R.A.I.N. when outputs break down.</p>
+                <p><strong>Advanced / Daily AI user:</strong> All five. S.T.A.Y. becomes essential once you're running complex multi-session projects.</p>
+              </div>
+            </div>
+
+            <p className="text-xs text-surface-400 italic">
+              These frameworks work with any AI tool: Claude, ChatGPT, Gemini, or others. The principles don't change. The prompts do.
+            </p>
+          </motion.div>
+        )}
       </div>
 
       {/* Framework selector */}
@@ -197,25 +319,6 @@ function PromptingSection() {
       >
         <FrameworkCard framework={current} />
       </motion.div>
-
-      {/* Quick reference table */}
-      <div className="bg-white rounded-xl shadow-sm border border-surface-200 overflow-hidden">
-        <div className="px-5 py-4 border-b border-surface-100">
-          <h3 className="font-semibold text-surface-900">Which framework should I use?</h3>
-        </div>
-        <div className="divide-y divide-surface-100">
-          {FRAMEWORK_GUIDE.situations.map((s) => (
-            <div key={s.situation} className="flex items-center justify-between px-5 py-3">
-              <span className="text-sm text-surface-600">{s.situation}</span>
-              <span className="text-sm font-semibold text-primary-600 whitespace-nowrap ml-4">{s.framework}</span>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <p className="text-xs text-surface-400 text-center">
-        These frameworks work with any AI tool — Claude, ChatGPT, Gemini, or others. The principles don't change.
-      </p>
     </div>
   );
 }
