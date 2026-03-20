@@ -460,32 +460,243 @@ function GlossarySection() {
   );
 }
 
-/* ─── Your Path Forward (always visible below tabs) ─── */
+/* ─── Start Here (Path Forward) ─── */
+
+const AI_TASKS_BY_FUNCTION = [
+  {
+    category: 'Administrative & Operations',
+    tasks: [
+      'Drafting meeting agendas, summaries, and follow-up emails',
+      'Creating standard operating procedures from notes',
+      'Formatting and organizing documents',
+      'Research and comparison tasks',
+    ],
+  },
+  {
+    category: 'Sales & Business Development',
+    tasks: [
+      'Researching prospects before calls (company background, recent news)',
+      'Drafting personalized outreach messages',
+      'Creating proposals and presentations',
+      'Analyzing competitive positioning',
+    ],
+  },
+  {
+    category: 'Marketing & Communications',
+    tasks: [
+      'First drafts of blog posts, social media, newsletters',
+      'Repurposing content across formats',
+      'Competitive research and trend analysis',
+      'Creating briefs and creative direction documents',
+    ],
+  },
+  {
+    category: 'Finance & Analysis',
+    tasks: [
+      'Explaining complex reports in plain language',
+      'Creating executive summaries from detailed data',
+      'Drafting financial communications',
+      'Research on regulations, policies, market conditions',
+    ],
+  },
+  {
+    category: 'HR & People Operations',
+    tasks: [
+      'Drafting job descriptions and interview questions',
+      'Creating training materials and onboarding guides',
+      'Policy explanation and FAQ creation',
+      'Performance review templates and feedback frameworks',
+    ],
+  },
+];
 
 function PathForwardSection() {
   const [checked, setChecked] = useState<Record<string, boolean>>({});
   const toggle = (key: string) => setChecked((prev) => ({ ...prev, [key]: !prev[key] }));
 
   return (
-    <div className="mt-16 border-t border-surface-200 pt-12">
-      <div className="mb-10">
+    <div className="space-y-12">
+      {/* Intro */}
+      <div>
         <h2 className="text-2xl md:text-3xl font-bold text-surface-900 mb-3">Your path forward</h2>
         <p className="text-surface-600 max-w-3xl">
-          The people who will thrive in the AI era aren't necessarily the most technical — they're the ones who learn to work alongside AI effectively.
-          Here's a practical roadmap that ties everything together.
+          The good news: you can prepare for what's ahead. The people who will thrive in the AI era aren't necessarily the most technical,
+          they're the ones who learn to work alongside AI effectively. Here's how to start.
         </p>
       </div>
 
-      {/* 30-Day Action Plan */}
-      <div className="mb-12">
+      {/* 1 — Know Your AI Tools */}
+      <div>
         <h3 className="text-xl font-bold text-surface-900 mb-2 flex items-center gap-2">
           <span className="w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
-          30-Day action plan
+          Know your AI tools
         </h3>
-        <p className="text-sm text-surface-500 mb-6 ml-10">
-          {ACTION_PLAN.intro}
+        <p className="text-sm text-surface-600 ml-10 max-w-3xl">
+          The single most important thing you can do is <strong>start using AI tools now</strong>. But "AI" isn't one thing, it's a growing
+          ecosystem of tools with different strengths. Understanding what's available helps you find tools that match your specific needs.
+          Look in the <strong>Free AI Tools</strong> section for tools you can start using.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ml-10">
+      </div>
+
+      {/* 2 — Audit Your Current Tasks */}
+      <div>
+        <h3 className="text-xl font-bold text-surface-900 mb-2 flex items-center gap-2">
+          <span className="w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
+          Audit your current tasks
+        </h3>
+        <div className="ml-10">
+          <p className="text-sm text-surface-600 mb-4 max-w-3xl">
+            Don't wait for your employer to tell you how to use AI. Start identifying opportunities in your daily work right now.
+            Ask yourself these questions for every recurring task:
+          </p>
+          <div className="bg-white rounded-xl shadow-sm border border-surface-200 p-5 mb-6 max-w-2xl">
+            <ol className="list-decimal list-inside space-y-2 text-sm text-surface-700">
+              <li>How much of this task involves gathering or processing information?</li>
+              <li>Do I follow a similar pattern or template each time?</li>
+              <li>Could someone else do 80% of this with good instructions?</li>
+              <li>What's the most tedious part I'd love to skip?</li>
+            </ol>
+          </div>
+
+          <h4 className="text-base font-semibold text-surface-900 mb-3">Common AI-augmentable tasks by function</h4>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {AI_TASKS_BY_FUNCTION.map((group) => (
+              <div key={group.category} className="bg-white rounded-xl shadow-sm border border-surface-200 p-5">
+                <h5 className="font-semibold text-surface-900 mb-2 text-sm">{group.category}</h5>
+                <ul className="space-y-1.5">
+                  {group.tasks.map((task) => (
+                    <li key={task} className="flex items-start gap-2 text-sm text-surface-600">
+                      <span className="text-primary-500 mt-0.5 flex-shrink-0">&#8226;</span>
+                      {task}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* 3 — Master AI Communication */}
+      <div>
+        <h3 className="text-xl font-bold text-surface-900 mb-2 flex items-center gap-2">
+          <span className="w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
+          Master AI communication
+        </h3>
+        <p className="text-sm text-surface-600 ml-10 max-w-3xl">
+          The quality of AI output depends heavily on how you communicate with it.
+          "Prompt engineering" is the skill of crafting inputs that get you useful results.
+          The <strong>AI Prompting Guides</strong> section includes five prompt frameworks for beginners, intermediate, and advanced AI users.
+        </p>
+      </div>
+
+      {/* 4 — Understand AI Privacy and Ethics */}
+      <div>
+        <h3 className="text-xl font-bold text-surface-900 mb-2 flex items-center gap-2">
+          <span className="w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
+          Understand AI privacy and ethics
+        </h3>
+        <div className="ml-10">
+          <p className="text-sm text-surface-600 mb-4 max-w-3xl">
+            <strong>Before you share information with AI tools</strong>, understand how your data may be used,
+            and how to protect yourself by reviewing their Terms of Service.
+          </p>
+
+          {/* Training Data Reality */}
+          <div className="bg-surface-50 rounded-xl border border-surface-200 p-5 mb-4 max-w-3xl">
+            <h4 className="text-base font-semibold text-surface-900 mb-2">The training data reality</h4>
+            <p className="text-sm text-surface-600 mb-2">Most free AI tools use your conversations to train future versions of their models. This means:</p>
+            <ul className="space-y-1.5">
+              <li className="flex items-start gap-2 text-sm text-surface-700">
+                <span className="text-warning-500 mt-0.5 flex-shrink-0">&#9888;</span>
+                Your prompts and the AI's responses may be reviewed by humans
+              </li>
+              <li className="flex items-start gap-2 text-sm text-surface-700">
+                <span className="text-warning-500 mt-0.5 flex-shrink-0">&#9888;</span>
+                Your conversations may be retained for months or years
+              </li>
+              <li className="flex items-start gap-2 text-sm text-surface-700">
+                <span className="text-warning-500 mt-0.5 flex-shrink-0">&#9888;</span>
+                Information you share could influence how the AI responds to other users <strong>and</strong> include your information in its response
+              </li>
+            </ul>
+          </div>
+
+          {/* How to Protect Your Privacy */}
+          <div className="bg-white rounded-xl shadow-sm border border-surface-200 p-5 mb-4">
+            <h4 className="text-base font-semibold text-surface-900 mb-4">How to protect your privacy</h4>
+            <div className="space-y-4">
+              {PRIVACY_TIPS.map((tip) => (
+                <div key={tip.tool} className="border-l-4 border-primary-500 pl-4">
+                  <h5 className="font-medium text-surface-900">{tip.tool}</h5>
+                  <p className="text-sm text-surface-600">{tip.instruction}</p>
+                  {tip.note && <p className="text-xs text-surface-400 mt-0.5">{tip.note}</p>}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Never Share */}
+          <div className="bg-danger-500/5 border border-danger-500/20 rounded-xl p-5 mb-4">
+            <h4 className="text-base font-semibold text-danger-600 mb-3">What never to share with AI</h4>
+            <ul className="space-y-1.5">
+              {NEVER_SHARE.map((item) => (
+                <li key={item} className="flex items-start gap-2 text-sm text-surface-700">
+                  <span className="text-danger-500 mt-0.5">&#10005;</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Enterprise vs Consumer */}
+          <div className="bg-surface-50 rounded-xl border border-surface-200 p-4 mb-4 max-w-3xl">
+            <h4 className="text-sm font-semibold text-surface-900 mb-1">Enterprise vs. consumer privacy</h4>
+            <p className="text-sm text-surface-600">
+              Business/Enterprise plans from OpenAI, Anthropic, and Google <em>generally</em> do NOT use your data for training by default.
+              If your company has a corporate AI subscription, your data is typically better protected. <strong>Always verify with your IT department.</strong>
+            </p>
+          </div>
+
+          {/* Golden Rule highlight */}
+          <div className="bg-primary-50 border border-primary-200 rounded-xl p-5 max-w-3xl">
+            <p className="text-sm text-primary-800 font-medium">
+              Golden Rule: Treat AI conversations like you would email. Don't share anything you wouldn't want potentially read by others or used in ways you didn't intend.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* 5 — Develop High-Value AI-Resistant Human Skills */}
+      <div>
+        <h3 className="text-xl font-bold text-surface-900 mb-2 flex items-center gap-2">
+          <span className="w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-bold">5</span>
+          Develop high-value AI-resistant human skills
+        </h3>
+        <p className="text-sm text-surface-600 mb-6 ml-10 max-w-3xl">
+          While learning to use AI, also invest in skills that complement rather than compete with AI.
+          These are the capabilities that will remain valuable regardless of how AI advances.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ml-10">
+          {IRREPLACEABLE_SKILLS.map((skill) => (
+            <div
+              key={skill.name}
+              className="bg-white rounded-xl shadow-sm border border-surface-200 p-5"
+            >
+              <h4 className="font-semibold text-surface-900 mb-2">{skill.name}</h4>
+              <p className="text-sm text-surface-600">{skill.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* 30-Day Action Plan */}
+      <div className="border-t border-surface-200 pt-12">
+        <h2 className="text-2xl md:text-3xl font-bold text-surface-900 mb-3">Your 30-day action plan</h2>
+        <p className="text-surface-600 mb-6 max-w-3xl">
+          Knowledge without action is useless. Here's a concrete plan to start preparing immediately.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {ACTION_PLAN.weeks.map((week) => (
             <div key={week.week} className="bg-white rounded-xl shadow-sm border border-surface-200 p-5">
               <h4 className="text-base font-semibold text-surface-900 mb-3">
@@ -518,78 +729,21 @@ function PathForwardSection() {
         </div>
       </div>
 
-      {/* Protect Yourself */}
-      <div className="mb-12">
-        <h3 className="text-xl font-bold text-surface-900 mb-2 flex items-center gap-2">
-          <span className="w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
-          Protect yourself
-        </h3>
-        <p className="text-sm text-surface-500 mb-6 ml-10">
-          Before you share information with AI tools, understand how your data may be used.
-          Most free AI tools use your conversations to train future models — your prompts may be reviewed by humans and retained for years.
-          <strong> Treat AI conversations like email: don't share anything you wouldn't want read by others.</strong>
+      {/* Closing narrative */}
+      <div className="max-w-3xl">
+        <p className="text-surface-600 mb-4">
+          The AI transformation isn't something that might happen, <strong>it's happening now</strong>. But this doesn't have to be a story of loss.
+          For those who adapt, it's a story of opportunity.
         </p>
-
-        <div className="ml-10 space-y-4">
-          <div className="bg-white rounded-xl shadow-sm border border-surface-200 p-5">
-            <h4 className="text-base font-semibold text-surface-900 mb-4">Privacy settings by platform</h4>
-            <div className="space-y-4">
-              {PRIVACY_TIPS.map((tip) => (
-                <div key={tip.tool} className="border-l-4 border-primary-500 pl-4">
-                  <h5 className="font-medium text-surface-900">{tip.tool}</h5>
-                  <p className="text-sm text-surface-600">{tip.instruction}</p>
-                  {tip.note && <p className="text-xs text-surface-400 mt-0.5">{tip.note}</p>}
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="bg-danger-500/5 border border-danger-500/20 rounded-xl p-5">
-            <h4 className="text-base font-semibold text-danger-600 mb-3">Never share with any AI tool</h4>
-            <ul className="space-y-1.5">
-              {NEVER_SHARE.map((item) => (
-                <li key={item} className="flex items-start gap-2 text-sm text-surface-700">
-                  <span className="text-danger-500 mt-0.5">&#10005;</span>
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="bg-surface-50 rounded-xl border border-surface-200 p-4">
-            <p className="text-sm text-surface-600">
-              <strong>Enterprise plans</strong> from OpenAI, Anthropic, and Google generally do NOT use your data for training by default.
-              If your company has a corporate AI subscription, your data is typically better protected. Always verify with your IT department.
-            </p>
-          </div>
-        </div>
+        <p className="text-surface-600 mb-6">
+          The workers who will thrive aren't necessarily the youngest, the most technical, or the most experienced.
+          They're the ones who approach AI with curiosity rather than fear, who invest time in learning new tools,
+          and who focus on developing the uniquely human capabilities that AI cannot replicate.
+        </p>
       </div>
 
-      {/* Build AI-Resistant Skills */}
-      <div className="mb-12">
-        <h3 className="text-xl font-bold text-surface-900 mb-2 flex items-center gap-2">
-          <span className="w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
-          Build AI-resistant skills
-        </h3>
-        <p className="text-sm text-surface-500 mb-6 ml-10">
-          While learning to use AI, also invest in skills that complement rather than compete with it.
-          These capabilities remain valuable regardless of how AI advances.
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ml-10">
-          {IRREPLACEABLE_SKILLS.map((skill) => (
-            <div
-              key={skill.name}
-              className="bg-white rounded-xl shadow-sm border border-surface-200 p-5"
-            >
-              <h4 className="font-semibold text-surface-900 mb-2">{skill.name}</h4>
-              <p className="text-sm text-surface-600">{skill.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Closing */}
-      <div className="bg-primary-50 rounded-xl p-6 text-center max-w-2xl mx-auto">
+      {/* Final highlight */}
+      <div className="bg-primary-50 border border-primary-200 rounded-xl p-6 text-center max-w-2xl mx-auto">
         <p className="text-primary-800 font-medium mb-2">
           AI won't replace everyone. But people who know how to use AI will replace people who don't.
         </p>
