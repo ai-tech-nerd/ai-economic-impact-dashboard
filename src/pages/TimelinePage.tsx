@@ -13,12 +13,58 @@ import type { DisplacementEvent } from '../types';
 
 interface TimelinePageProps {
   events: DisplacementEvent[];
+  plannedEvents?: DisplacementEvent[];
+  creationEvents?: DisplacementEvent[];
 }
 
-export function TimelinePage({ events }: TimelinePageProps) {
+/** Visual style for each event type */
+function eventCardClasses(type: 'verified' | 'planned' | 'creation') {
+  switch (type) {
+    case 'planned':
+      return 'bg-white rounded-lg px-3 py-2 border-2 border-dashed border-warning-300 bg-warning-50/40';
+    case 'creation':
+      return 'bg-white rounded-lg px-3 py-2 border border-success-300 bg-success-50/40';
+    default:
+      return 'bg-white rounded-lg px-3 py-2 border border-surface-100';
+  }
+}
+
+function eventBorderClasses(type: 'verified' | 'planned' | 'creation') {
+  switch (type) {
+    case 'planned':
+      return 'border-l-2 border-warning-400 pl-3 py-1';
+    case 'creation':
+      return 'border-l-2 border-success-400 pl-3 py-1';
+    default:
+      return 'border-l-2 border-primary-400 pl-3 py-1';
+  }
+}
+
+function EventTypeBadge({ type }: { type: 'verified' | 'planned' | 'creation' }) {
+  switch (type) {
+    case 'planned':
+      return (
+        <span className="text-xs px-1.5 py-0.5 rounded-full bg-warning-100 text-warning-700">
+          Announced
+        </span>
+      );
+    case 'creation':
+      return (
+        <span className="text-xs px-1.5 py-0.5 rounded-full bg-success-100 text-success-700">
+          Job Creation
+        </span>
+      );
+    default:
+      return null;
+  }
+}
+
+export function TimelinePage({ events, plannedEvents = [], creationEvents = [] }: TimelinePageProps) {
   const [mode, setMode] = useState<'slider' | 'story'>('slider');
   const playback = useTimelinePlayback();
   const filteredEvents = filterEventsByDate(events, playback.currentDate);
+  const filteredPlanned = filterEventsByDate(plannedEvents, playback.currentDate);
+  const filteredCreation = filterEventsByDate(creationEvents, playback.currentDate);
 
   return (
     <PageLayout
@@ -52,10 +98,12 @@ export function TimelinePage({ events }: TimelinePageProps) {
       {mode === 'slider' ? (
         <SliderMode
           filteredEvents={filteredEvents}
+          filteredPlanned={filteredPlanned}
+          filteredCreation={filteredCreation}
           playback={playback}
         />
       ) : (
-        <StoryMode events={events} />
+        <StoryMode events={events} plannedEvents={plannedEvents} creationEvents={creationEvents} />
       )}
     </PageLayout>
   );
@@ -63,19 +111,29 @@ export function TimelinePage({ events }: TimelinePageProps) {
 
 function SliderMode({
   filteredEvents,
+  filteredPlanned,
+  filteredCreation,
   playback,
 }: {
   filteredEvents: DisplacementEvent[];
+  filteredPlanned: DisplacementEvent[];
+  filteredCreation: DisplacementEvent[];
   playback: ReturnType<typeof useTimelinePlayback>;
 }) {
   const totalSoFar = getTotalJobsCut(filteredEvents);
+  const plannedTotal = filteredPlanned.reduce((sum, e) => sum + e.jobsCut, 0);
 
-  // Get 3 most recent events for the ticker
+  // Combine all events sorted by date, tag with type, show most recent 6
   const recentEvents = useMemo(() => {
-    return [...filteredEvents]
-      .sort((a, b) => a.date.localeCompare(b.date))
-      .slice(0, 3);
-  }, [filteredEvents]);
+    const tagged: Array<{ evt: DisplacementEvent; type: 'verified' | 'planned' | 'creation' }> = [
+      ...filteredEvents.map((evt) => ({ evt, type: 'verified' as const })),
+      ...filteredPlanned.map((evt) => ({ evt, type: 'planned' as const })),
+      ...filteredCreation.map((evt) => ({ evt, type: 'creation' as const })),
+    ];
+    return tagged
+      .sort((a, b) => a.evt.date.localeCompare(b.evt.date))
+      .slice(-6);
+  }, [filteredEvents, filteredPlanned, filteredCreation]);
 
   return (
     <div className="space-y-6">
@@ -86,8 +144,20 @@ function SliderMode({
             <div className="text-2xl font-bold text-surface-900">
               {formatDate(playback.currentDate)}
             </div>
-            <div className="text-lg text-primary-600 font-semibold">
-              {formatNumber(totalSoFar)} jobs displaced
+            <div className="flex items-center gap-4">
+              <div className="text-lg text-danger-600 font-semibold">
+                {formatNumber(totalSoFar)} displaced
+              </div>
+              {plannedTotal > 0 && (
+                <div className="text-sm text-warning-600 font-medium">
+                  +{formatNumber(plannedTotal)} announced
+                </div>
+              )}
+              {filteredCreation.length > 0 && (
+                <div className="text-sm text-success-600 font-medium">
+                  {filteredCreation.length} creation {filteredCreation.length === 1 ? 'event' : 'events'}
+                </div>
+              )}
             </div>
           </div>
           <div className="flex items-center gap-3">
@@ -151,21 +221,40 @@ function SliderMode({
       {/* Events — shows most recent events at the current point in time */}
       {recentEvents.length > 0 && (
         <div className="bg-surface-50 rounded-xl border border-surface-200 p-4">
-          <div className="text-xs font-semibold text-surface-500 uppercase tracking-wider mb-3">
-            Events
+          <div className="flex items-center justify-between mb-3">
+            <div className="text-xs font-semibold text-surface-500 uppercase tracking-wider">
+              Recent Events
+            </div>
+            <div className="flex items-center gap-3 text-xs text-surface-400">
+              <span className="flex items-center gap-1">
+                <span className="w-3 h-2 rounded-sm border border-surface-300 bg-white" /> Confirmed
+              </span>
+              <span className="flex items-center gap-1">
+                <span className="w-3 h-2 rounded-sm border-2 border-dashed border-warning-300 bg-warning-50/40" /> Announced
+              </span>
+              <span className="flex items-center gap-1">
+                <span className="w-3 h-2 rounded-sm border border-success-300 bg-success-50/40" /> Creation
+              </span>
+            </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-            {recentEvents.map((evt) => (
-              <div
-                key={evt.id}
-                className="bg-white rounded-lg px-3 py-2 border border-surface-100"
-              >
-                <div className="font-medium text-sm text-surface-800">
-                  {evt.companyName}
+            {recentEvents.map(({ evt, type }) => (
+              <div key={evt.id} className={eventCardClasses(type)}>
+                <div className="flex items-center gap-2">
+                  <div className="font-medium text-sm text-surface-800">
+                    {evt.companyName}
+                  </div>
+                  <EventTypeBadge type={type} />
                 </div>
-                <div className="text-xs text-danger-600 font-semibold">
-                  {formatNumber(evt.jobsCut)} jobs cut
-                </div>
+                {type === 'creation' ? (
+                  <div className="text-xs text-success-600 font-semibold">
+                    AI job creation
+                  </div>
+                ) : (
+                  <div className={`text-xs font-semibold ${type === 'planned' ? 'text-warning-600' : 'text-danger-600'}`}>
+                    {formatNumber(evt.jobsCut)} jobs {type === 'planned' ? 'announced' : 'cut'}
+                  </div>
+                )}
                 <div className="text-xs text-surface-400">
                   {formatDate(evt.date)}
                 </div>
@@ -211,13 +300,35 @@ const STORY_CHAPTERS = [
   },
 ];
 
-function StoryMode({ events }: { events: DisplacementEvent[] }) {
+function StoryMode({
+  events,
+  plannedEvents,
+  creationEvents,
+}: {
+  events: DisplacementEvent[];
+  plannedEvents: DisplacementEvent[];
+  creationEvents: DisplacementEvent[];
+}) {
   return (
     <div className="space-y-16">
       {STORY_CHAPTERS.map((chapter) => {
-        const chapterEvents = events.filter(
+        const chapterVerified = events.filter(
           (e) => e.date >= chapter.dateRange.start && e.date <= chapter.dateRange.end,
         );
+        const chapterPlanned = plannedEvents.filter(
+          (e) => e.date >= chapter.dateRange.start && e.date <= chapter.dateRange.end,
+        );
+        const chapterCreation = creationEvents.filter(
+          (e) => e.date >= chapter.dateRange.start && e.date <= chapter.dateRange.end,
+        );
+
+        // Combine all events for this chapter, tagged with type
+        const allChapterEvents: Array<{ evt: DisplacementEvent; type: 'verified' | 'planned' | 'creation' }> = [
+          ...chapterVerified.map((evt) => ({ evt, type: 'verified' as const })),
+          ...chapterPlanned.map((evt) => ({ evt, type: 'planned' as const })),
+          ...chapterCreation.map((evt) => ({ evt, type: 'creation' as const })),
+        ].sort((a, b) => a.evt.date.localeCompare(b.evt.date));
+
         return (
           <div key={chapter.id} className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div>
@@ -226,16 +337,43 @@ function StoryMode({ events }: { events: DisplacementEvent[] }) {
                 {formatDate(chapter.dateRange.start)} — {formatDate(chapter.dateRange.end)}
               </p>
               <p className="text-surface-600 mb-6">{chapter.narrative}</p>
+
+              {/* Summary stats for the chapter */}
+              {(chapterPlanned.length > 0 || chapterCreation.length > 0) && (
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {chapterVerified.length > 0 && (
+                    <span className="text-xs px-2 py-1 rounded-full bg-danger-50 text-danger-700 font-medium">
+                      {chapterVerified.length} confirmed
+                    </span>
+                  )}
+                  {chapterPlanned.length > 0 && (
+                    <span className="text-xs px-2 py-1 rounded-full bg-warning-50 text-warning-700 font-medium">
+                      {chapterPlanned.length} announced
+                    </span>
+                  )}
+                  {chapterCreation.length > 0 && (
+                    <span className="text-xs px-2 py-1 rounded-full bg-success-50 text-success-700 font-medium">
+                      {chapterCreation.length} creation
+                    </span>
+                  )}
+                </div>
+              )}
+
               <div className="space-y-3">
-                {chapterEvents.slice(0, 5).map((evt) => (
-                  <div
-                    key={evt.id}
-                    className="border-l-2 border-primary-400 pl-3 py-1"
-                  >
-                    <div className="font-medium text-sm text-surface-800">
-                      {evt.companyName} — {evt.jobsCut.toLocaleString()} jobs
+                {allChapterEvents.slice(0, 8).map(({ evt, type }) => (
+                  <div key={evt.id} className={eventBorderClasses(type)}>
+                    <div className="flex items-center gap-2">
+                      <div className="font-medium text-sm text-surface-800">
+                        {evt.companyName} —{' '}
+                        {type === 'creation'
+                          ? 'AI job creation'
+                          : `${evt.jobsCut.toLocaleString()} jobs${type === 'planned' ? ' announced' : ''}`}
+                      </div>
+                      <EventTypeBadge type={type} />
                     </div>
-                    <p className="text-xs text-surface-500">{evt.description}</p>
+                    <p className="text-xs text-surface-500">
+                      {type === 'creation' && evt.reasonGiven ? evt.reasonGiven : evt.description}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -245,7 +383,7 @@ function StoryMode({ events }: { events: DisplacementEvent[] }) {
                 <ChatGPTGrowthChart />
               ) : (
                 <TrendLine
-                  events={chapterEvents}
+                  events={chapterVerified}
                   title={chapter.title}
                   subtitle={`${formatDate(chapter.dateRange.start)} — ${formatDate(chapter.dateRange.end)}`}
                   dateRange={chapter.dateRange}

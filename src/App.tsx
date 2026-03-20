@@ -43,7 +43,7 @@ function AppContent() {
           <Routes>
             <Route path="/embed/dashboard" element={<DashboardPage events={events} plannedEvents={plannedEvents} creationEvents={creationEvents} />} />
             <Route path="/embed/predictions" element={<PredictionsPage predictions={predictions} />} />
-            <Route path="/embed/timeline" element={<TimelinePage events={events} />} />
+            <Route path="/embed/timeline" element={<TimelinePage events={events} plannedEvents={plannedEvents} creationEvents={creationEvents} />} />
             <Route path="/embed/ai-advances" element={<AITimelinePage milestones={milestones} />} />
             <Route path="/embed/companies/:id?" element={<CompanyPage events={events} plannedEvents={plannedEvents} creationEvents={creationEvents} companies={companies} milestones={milestones} />} />
             <Route path="/embed/learn" element={<LearningPage />} />
@@ -61,7 +61,7 @@ function AppContent() {
           <Routes>
             <Route path="/" element={<DashboardPage events={events} plannedEvents={plannedEvents} creationEvents={creationEvents} />} />
             <Route path="/predictions" element={<PredictionsPage predictions={predictions} />} />
-            <Route path="/timeline" element={<TimelinePage events={events} />} />
+            <Route path="/timeline" element={<TimelinePage events={events} plannedEvents={plannedEvents} creationEvents={creationEvents} />} />
             <Route
               path="/ai-advances"
               element={<AITimelinePage milestones={milestones} />}
