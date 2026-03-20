@@ -32,6 +32,13 @@ export function DashboardPage({ events, plannedEvents, creationEvents }: Dashboa
           eventCount={events.length}
         />
 
+        <TrendLine events={events} />
+
+        <div className="grid grid-cols-1 gap-8">
+          <JobTypesChart events={events} />
+          <IndustryBreakdown events={events} />
+        </div>
+
         {/* Secondary stat cards — Planned & Creation */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="bg-white rounded-xl shadow-sm border border-warning-200 p-5">
@@ -93,14 +100,7 @@ export function DashboardPage({ events, plannedEvents, creationEvents }: Dashboa
           </div>
         </div>
 
-        <TrendLine events={events} />
-
-        <div className="grid grid-cols-1 gap-8">
-          <JobTypesChart events={events} />
-          <IndustryBreakdown events={events} />
-        </div>
-
-        <CompanyTable events={events} />
+        <CompanyTable events={events} plannedEvents={plannedEvents} creationEvents={creationEvents} />
       </div>
     </PageLayout>
   );

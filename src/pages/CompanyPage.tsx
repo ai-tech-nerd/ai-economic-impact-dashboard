@@ -8,6 +8,8 @@ import type { DisplacementEvent, CompanyProfile, AIMilestone } from '../types';
 
 interface CompanyPageProps {
   events: DisplacementEvent[];
+  plannedEvents: DisplacementEvent[];
+  creationEvents: DisplacementEvent[];
   companies: CompanyProfile[];
   milestones: AIMilestone[];
 }
@@ -191,21 +193,25 @@ const TYPE_LABELS: Record<string, string> = {
   breakthrough: 'Breakthrough',
 };
 
-export function CompanyPage({ events, companies, milestones }: CompanyPageProps) {
+export function CompanyPage({ events, plannedEvents, creationEvents, companies, milestones }: CompanyPageProps) {
   const { id } = useParams<{ id: string }>();
 
   if (id) {
-    return <CompanyDetail id={id} events={events} companies={companies} milestones={milestones} />;
+    return <CompanyDetail id={id} events={events} plannedEvents={plannedEvents} creationEvents={creationEvents} companies={companies} milestones={milestones} />;
   }
 
-  return <CompanyList events={events} milestones={milestones} />;
+  return <CompanyList events={events} plannedEvents={plannedEvents} creationEvents={creationEvents} milestones={milestones} />;
 }
 
 function CompanyList({
   events,
+  plannedEvents,
+  creationEvents,
   milestones,
 }: {
   events: DisplacementEvent[];
+  plannedEvents: DisplacementEvent[];
+  creationEvents: DisplacementEvent[];
   milestones: AIMilestone[];
 }) {
   const [search, setSearch] = useState('');
@@ -236,6 +242,26 @@ function CompanyList({
     }
     return map;
   }, [events]);
+
+  // Group planned events by company
+  const companyPlanned = useMemo(() => {
+    const map: Record<string, { total: number; status: string }> = {};
+    for (const evt of plannedEvents) {
+      if (!map[evt.company]) map[evt.company] = { total: 0, status: evt.status || 'announced' };
+      map[evt.company].total += evt.jobsCut;
+    }
+    return map;
+  }, [plannedEvents]);
+
+  // Group creation events by company
+  const companyCreation = useMemo(() => {
+    const map: Record<string, DisplacementEvent[]> = {};
+    for (const evt of creationEvents) {
+      if (!map[evt.company]) map[evt.company] = [];
+      map[evt.company].push(evt);
+    }
+    return map;
+  }, [creationEvents]);
 
   // Get all unique companies from milestones
   const companyKeys = useMemo(() => {
@@ -289,6 +315,8 @@ function CompanyList({
           const desc = display?.description || '';
           const ms = companyMilestones[key] || [];
           const displacement = companyDisplacements[key];
+          const planned = companyPlanned[key];
+          const creation = companyCreation[key];
           const latest = ms[ms.length - 1];
 
           return (
@@ -317,6 +345,27 @@ function CompanyList({
                   </div>
                 )}
               </div>
+
+              {/* Planned / Creation badges */}
+              {(planned || creation) && (
+                <div className="mt-3 flex flex-wrap gap-1.5">
+                  {planned && (
+                    <span className={`text-xs px-2 py-0.5 rounded-full ${
+                      planned.status === 'hiring-freeze'
+                        ? 'bg-warning-100 text-warning-700'
+                        : 'bg-amber-100 text-amber-700'
+                    }`}>
+                      {planned.status === 'hiring-freeze' ? 'Hiring Freeze' : 'Announced'}: {formatNumber(planned.total)} jobs
+                    </span>
+                  )}
+                  {creation && (
+                    <span className="text-xs px-2 py-0.5 rounded-full bg-success-100 text-success-700">
+                      AI Job Creation
+                    </span>
+                  )}
+                </div>
+              )}
+
               {latest && (
                 <div className="mt-3 pt-3 border-t border-surface-100">
                   <div className="text-xs text-surface-400">Latest milestone</div>
@@ -337,11 +386,15 @@ function CompanyList({
 function CompanyDetail({
   id,
   events,
+  plannedEvents,
+  creationEvents,
   companies,
   milestones,
 }: {
   id: string;
   events: DisplacementEvent[];
+  plannedEvents: DisplacementEvent[];
+  creationEvents: DisplacementEvent[];
   companies: CompanyProfile[];
   milestones: AIMilestone[];
 }) {
@@ -355,11 +408,16 @@ function CompanyDetail({
     .filter((e) => e.company === id)
     .sort((a, b) => a.date.localeCompare(b.date));
 
+  const companyPlannedEvents = plannedEvents.filter((e) => e.company === id);
+  const companyCreationEvents = creationEvents.filter((e) => e.company === id);
+
   const profile = companies.find((c) => c.id === id);
   const display = COMPANY_DISPLAY[id];
-  const name = display?.name || profile?.name || companyEvents[0]?.companyName || id;
+  const name = display?.name || profile?.name || companyEvents[0]?.companyName || companyPlannedEvents[0]?.companyName || id;
   const description = display?.description || profile?.description || '';
   const totalDisplaced = companyEvents.reduce((s, e) => s + e.jobsCut, 0);
+  const totalPlanned = companyPlannedEvents.reduce((s, e) => s + e.jobsCut, 0);
+  const hasWorkforceEvents = companyEvents.length > 0 || companyPlannedEvents.length > 0 || companyCreationEvents.length > 0;
 
   return (
     <PageLayout title={name} subtitle={description}>
@@ -371,7 +429,11 @@ function CompanyDetail({
       </Link>
 
       {/* Stats row */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+      <div className={`grid grid-cols-1 gap-4 mb-8 ${
+        totalPlanned > 0 || companyCreationEvents.length > 0
+          ? 'md:grid-cols-2 lg:grid-cols-4'
+          : 'md:grid-cols-3'
+      }`}>
         <div className="bg-white rounded-xl shadow-sm border border-surface-200 p-5 text-center">
           <div className="text-3xl font-bold text-primary-600">
             {companyMilestones.length}
@@ -384,6 +446,24 @@ function CompanyDetail({
           </div>
           <div className="text-sm text-surface-500">Jobs Displaced</div>
         </div>
+        {totalPlanned > 0 && (
+          <div className="bg-white rounded-xl shadow-sm border border-warning-200 p-5 text-center">
+            <div className="text-3xl font-bold text-warning-600">
+              {formatNumber(totalPlanned)}
+            </div>
+            <div className="text-sm text-surface-500">
+              {companyPlannedEvents[0]?.status === 'hiring-freeze' ? 'Hiring Freeze' : 'Announced'}
+            </div>
+          </div>
+        )}
+        {companyCreationEvents.length > 0 && (
+          <div className="bg-white rounded-xl shadow-sm border border-success-200 p-5 text-center">
+            <div className="text-3xl font-bold text-success-600">
+              ✓
+            </div>
+            <div className="text-sm text-surface-500">AI Job Creation</div>
+          </div>
+        )}
         <div className="bg-white rounded-xl shadow-sm border border-surface-200 p-5 text-center">
           <div className="text-3xl font-bold text-surface-800">
             {companyMilestones.length > 0
@@ -406,7 +486,7 @@ function CompanyDetail({
         >
           AI Timeline ({companyMilestones.length})
         </button>
-        {companyEvents.length > 0 && (
+        {hasWorkforceEvents && (
           <button
             onClick={() => setActiveTab('displacement')}
             className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
@@ -415,7 +495,7 @@ function CompanyDetail({
                 : 'bg-surface-100 text-surface-600 hover:bg-surface-200'
             }`}
           >
-            Displacement Events ({companyEvents.length})
+            Workforce Impact ({companyEvents.length + companyPlannedEvents.length + companyCreationEvents.length})
           </button>
         )}
       </div>
@@ -462,16 +542,18 @@ function CompanyDetail({
         </div>
       ) : (
         <div className="space-y-4">
+          {/* Confirmed displacement events */}
           {companyEvents.map((evt) => (
             <div
               key={evt.id}
-              className="bg-white rounded-xl shadow-sm border border-surface-200 p-5"
+              className="bg-white rounded-xl shadow-sm border border-danger-200 p-5"
             >
               <div className="flex items-start justify-between mb-2">
                 <div>
-                  <span className="text-sm text-surface-400">
-                    {formatDate(evt.date)}
-                  </span>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs px-2 py-0.5 rounded-full bg-danger-100 text-danger-700">Confirmed</span>
+                    <span className="text-sm text-surface-400">{formatDate(evt.date)}</span>
+                  </div>
                   <h3 className="font-semibold text-surface-900 mt-1">
                     {formatNumber(evt.jobsCut)} jobs cut
                   </h3>
@@ -491,6 +573,81 @@ function CompanyDetail({
               <SourceCitation sources={evt.sources} />
             </div>
           ))}
+
+          {/* Planned / Announced events */}
+          {companyPlannedEvents.map((evt) => (
+            <div
+              key={evt.id}
+              className="bg-white rounded-xl shadow-sm border border-warning-200 p-5"
+            >
+              <div className="flex items-start justify-between mb-2">
+                <div>
+                  <div className="flex items-center gap-2">
+                    <span className={`text-xs px-2 py-0.5 rounded-full ${
+                      evt.status === 'hiring-freeze'
+                        ? 'bg-warning-100 text-warning-700'
+                        : 'bg-amber-100 text-amber-700'
+                    }`}>
+                      {evt.status === 'hiring-freeze' ? 'Hiring Freeze' : 'Announced'}
+                    </span>
+                    <span className="text-sm text-surface-400">{formatDate(evt.date)}</span>
+                  </div>
+                  <h3 className="font-semibold text-surface-900 mt-1">
+                    {formatNumber(evt.jobsCut)} jobs {evt.status === 'hiring-freeze' ? 'frozen' : 'announced'}
+                  </h3>
+                </div>
+                <div className="flex flex-wrap gap-1">
+                  {evt.jobTypes.map((jt) => (
+                    <span
+                      key={jt}
+                      className="text-xs bg-warning-50 text-warning-700 px-2 py-0.5 rounded-full"
+                    >
+                      {jt}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <p className="text-sm text-surface-600">{evt.description}</p>
+              {evt.timeline && (
+                <p className="text-xs text-surface-400 mt-1">Timeline: {evt.timeline}</p>
+              )}
+              <SourceCitation sources={evt.sources} />
+            </div>
+          ))}
+
+          {/* Job creation events */}
+          {companyCreationEvents.map((evt) => (
+            <div
+              key={evt.id}
+              className="bg-white rounded-xl shadow-sm border border-success-200 p-5"
+            >
+              <div className="flex items-start justify-between mb-2">
+                <div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs px-2 py-0.5 rounded-full bg-success-100 text-success-700">AI Job Creation</span>
+                    <span className="text-sm text-surface-400">{formatDate(evt.date)}</span>
+                  </div>
+                  <h3 className="font-semibold text-surface-900 mt-1">
+                    {evt.reasonGiven}
+                  </h3>
+                </div>
+              </div>
+              <p className="text-sm text-surface-600">{evt.description}</p>
+              {evt.jobRolesCreated && (
+                <p className="text-sm text-surface-600 mt-2">
+                  <strong className="text-surface-700">New roles:</strong> {evt.jobRolesCreated}
+                </p>
+              )}
+              {evt.context && (
+                <p className="text-xs text-surface-400 mt-1 italic">{evt.context}</p>
+              )}
+              <SourceCitation sources={evt.sources} />
+            </div>
+          ))}
+
+          {companyEvents.length === 0 && companyPlannedEvents.length === 0 && companyCreationEvents.length === 0 && (
+            <p className="text-surface-500 text-center py-8">No workforce impact events recorded for this company yet.</p>
+          )}
         </div>
       )}
     </PageLayout>
