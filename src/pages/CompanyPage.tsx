@@ -149,6 +149,22 @@ const COMPANY_DISPLAY: Record<string, { name: string; description: string }> = {
     name: 'DeepMind',
     description: 'AI research lab behind AlphaGo, AlphaFold, and foundational reinforcement learning breakthroughs. Acquired by Google in 2014.',
   },
+  'hugging-face': {
+    name: 'Hugging Face',
+    description: 'Open-source AI platform and model hub, home to thousands of community models and datasets.',
+  },
+  databricks: {
+    name: 'Databricks',
+    description: 'Data and AI platform building the lakehouse architecture, with major acquisitions in AI-native data infrastructure.',
+  },
+  cognition: {
+    name: 'Cognition',
+    description: 'Creator of Devin, the first autonomous AI software engineer, and acquirer of Windsurf AI coding IDE.',
+  },
+  amazon: {
+    name: 'Amazon',
+    description: 'AWS cloud leader investing heavily in AI infrastructure, Alexa+, and AI-powered logistics and automation.',
+  },
 };
 
 // Country/jurisdiction slugs to exclude from company listings

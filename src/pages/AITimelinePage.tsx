@@ -62,6 +62,10 @@ const COMPANY_LABELS: Record<string, string> = {
   irobot: 'iRobot',
   deepmind: 'DeepMind',
   'japan-gov': 'Japan Government',
+  'hugging-face': 'Hugging Face',
+  databricks: 'Databricks',
+  cognition: 'Cognition',
+  amazon: 'Amazon',
 };
 
 // Country/jurisdiction slugs used for regulation entries

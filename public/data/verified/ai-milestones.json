@@ -1278,6 +1278,16 @@
     ]
   },
   {
+    "id": "ms-208",
+    "date": "2023-08-16",
+    "type": "acquisition",
+    "company": "openai",
+    "title": "OpenAI acquires Global Illumination",
+    "description": "Team acqui-hire; creative tools and infrastructure builders (ex-Instagram, Facebook, Pixar). Entire team joined OpenAI to work on ChatGPT core products.",
+    "source": "https://openai.com/index/openai-acquires-global-illumination/",
+    "amount": "Undisclosed"
+  },
+  {
     "id": "ms-045",
     "company": "meta",
     "date": "2023-08-24",
@@ -1746,6 +1756,16 @@
     ]
   },
   {
+    "id": "ms-209",
+    "date": "2024-03-14",
+    "type": "acquisition",
+    "company": "apple",
+    "title": "Apple acquires DarwinAI",
+    "description": "Canadian AI startup specializing in making AI models smaller and more efficient for on-device use. Bolstered Apple's on-device AI strategy ahead of Apple Intelligence launch.",
+    "source": "https://en.wikipedia.org/wiki/List_of_mergers_and_acquisitions_by_Apple",
+    "amount": "Undisclosed"
+  },
+  {
     "id": "ms-063",
     "company": "india",
     "date": "2024-03-15",
@@ -1769,7 +1789,7 @@
     "date": "2024-03-19",
     "type": "acquisition",
     "name": "Microsoft Hires Inflection AI Leadership",
-    "description": "Microsoft hires Inflection AI co-founder Mustafa Suleyman and most of the technical team to lead its consumer AI division, effectively ending Inflection's consumer Pi product and pivoting the company to enterprise.",
+    "description": "Microsoft hired Inflection AI co-founder Mustafa Suleyman and most of the technical team to lead its consumer AI division (Microsoft AI), effectively ending Inflection's consumer Pi product.",
     "category": "company",
     "significance": "high",
     "sources": [
@@ -1779,7 +1799,10 @@
         "publisher": "Microsoft",
         "date": "2024-03-19"
       }
-    ]
+    ],
+    "title": "Microsoft acqui-hires Inflection AI team",
+    "source": "https://www.reuters.com/technology/microsoft-hires-inflection-ai-co-founder-suleyman-2024-03-19/",
+    "amount": "~$650 million"
   },
   {
     "id": "ms-172",
@@ -2194,6 +2217,16 @@
         "date": "2024-06-21"
       }
     ]
+  },
+  {
+    "id": "ms-210",
+    "date": "2024-06-21",
+    "type": "acquisition",
+    "company": "openai",
+    "title": "OpenAI acquires Rockset",
+    "description": "Real-time analytics database for data indexing and querying. Powers retrieval infrastructure across OpenAI products.",
+    "source": "https://openai.com/index/openai-acquires-rockset/",
+    "amount": "Undisclosed"
   },
   {
     "id": "ms-175",
@@ -2916,6 +2949,16 @@
     ]
   },
   {
+    "id": "ms-211",
+    "date": "2025-02-27",
+    "type": "acquisition",
+    "company": "ibm",
+    "title": "IBM acquires HashiCorp",
+    "description": "Multi-cloud infrastructure automation (Terraform, Vault). Foundational layer for hybrid cloud and generative AI deployment at enterprise scale.",
+    "source": "https://newsroom.ibm.com/2025-02-27-ibm-completes-acquisition-of-hashicorp",
+    "amount": "$6.4 billion"
+  },
+  {
     "id": "ms-183",
     "company": "runway",
     "date": "2025-03-01",
@@ -2968,6 +3011,16 @@
         "date": "2025-03-11"
       }
     ]
+  },
+  {
+    "id": "ms-212",
+    "date": "2025-03-18",
+    "type": "acquisition",
+    "company": "google",
+    "title": "Google acquires Wiz for $32B",
+    "description": "Cloud security platform. Google's largest acquisition ever. All-cash deal to protect cloud-native applications in the AI era. Wiz crossed $1B ARR in 2025.",
+    "source": "https://cloud.google.com/blog/products/identity-security/google-announces-agreement-acquire-wiz",
+    "amount": "$32 billion"
   },
   {
     "id": "ms-109",
@@ -3114,6 +3167,16 @@
     ]
   },
   {
+    "id": "ms-213",
+    "date": "2025-04-14",
+    "type": "acquisition",
+    "company": "hugging-face",
+    "title": "Hugging Face acquires Pollen Robotics",
+    "description": "French humanoid robotics startup (Reachy 2 robot). Merging generative AI foundation models with physical robotics / embodied AI.",
+    "source": "https://techcrunch.com/2025/04/14/hugging-face-buys-a-humanoid-robotics-startup/",
+    "amount": "Undisclosed"
+  },
+  {
     "id": "ms-116",
     "company": "openai",
     "date": "2025-04-16",
@@ -3166,6 +3229,16 @@
         "date": "2025-05-01"
       }
     ]
+  },
+  {
+    "id": "ms-214",
+    "date": "2025-05-13",
+    "type": "acquisition",
+    "company": "databricks",
+    "title": "Databricks acquires Neon for $1B",
+    "description": "Serverless Postgres database. 80% of new databases on Neon were being created automatically by AI agents — signaling need for AI-native database infrastructure.",
+    "source": "https://aidatainsider.com/ai/2025s-top-16-acquisitions-in-ai-data/",
+    "amount": "$1 billion"
   },
   {
     "id": "ms-119",
@@ -3258,6 +3331,16 @@
     ]
   },
   {
+    "id": "ms-215",
+    "date": "2025-05-21",
+    "type": "acquisition",
+    "company": "openai",
+    "title": "OpenAI acquires io (Jony Ive) for $6.5B",
+    "description": "AI hardware-software integration. Jony Ive (former Apple design chief) and LoveFrom team to create consumer AI devices. OpenAI's largest acquisition; signals pivot beyond API-only to hardware.",
+    "source": "https://www.cnbc.com/2025/05/21/openai-buys-iphone-designer-jony-ive-device-startup-for-6point4-billion.html",
+    "amount": "$6.5 billion"
+  },
+  {
     "id": "ms-124",
     "company": "anthropic",
     "date": "2025-05-22",
@@ -3294,6 +3377,16 @@
     ]
   },
   {
+    "id": "ms-216",
+    "date": "2025-06-12",
+    "type": "acquisition",
+    "company": "meta",
+    "title": "Meta takes 49% stake in Scale AI for $14.3B",
+    "description": "49% non-voting stake in Scale AI; hired founder Alexandr Wang to lead Meta's new superintelligence lab. Securing high-quality training data. Meta's largest outside investment ever.",
+    "source": "https://www.cnbc.com/2025/06/12/scale-ai-founder-wang-announces-exit-for-meta-part-of-14-billion-deal.html",
+    "amount": "$14.3 billion"
+  },
+  {
     "id": "ms-203",
     "company": "anthropic",
     "date": "2025-07-14",
@@ -3310,6 +3403,26 @@
         "date": "2025-07-14"
       }
     ]
+  },
+  {
+    "id": "ms-217",
+    "date": "2025-07-14",
+    "type": "acquisition",
+    "company": "cognition",
+    "title": "Cognition acquires Windsurf",
+    "description": "AI coding IDE with $82M ARR, 350+ enterprise customers. Acquired days after Google hired Windsurf's CEO/founders in $2.4B reverse acqui-hire.",
+    "source": "https://techcrunch.com/2025/07/14/cognition-maker-of-the-ai-coding-agent-devin-acquires-windsurf/",
+    "amount": "Undisclosed"
+  },
+  {
+    "id": "ms-218",
+    "date": "2025-07-22",
+    "type": "acquisition",
+    "company": "amazon",
+    "title": "Amazon acquires Bee AI wearable",
+    "description": "AI wearable startup ($50 bracelet recording conversations in real-time). Competitive response to OpenAI's consumer AI hardware ambitions; integrated with Alexa+.",
+    "source": "https://techcrunch.com/2025/07/22/amazon-acquires-bee-the-ai-wearable-that-records-everything-you-say/",
+    "amount": "Undisclosed"
   },
   {
     "id": "ms-125",
@@ -3382,6 +3495,16 @@
         "date": "2025-08-15"
       }
     ]
+  },
+  {
+    "id": "ms-219",
+    "date": "2025-08-22",
+    "type": "acquisition",
+    "company": "databricks",
+    "title": "Databricks acquires Tecton",
+    "description": "Real-time feature store for autonomous AI agents. Sub-100ms feature data serving. Paired with Neon acquisition for complete AI data infrastructure stack.",
+    "source": "https://aidatainsider.com/ai/2025s-top-16-acquisitions-in-ai-data/",
+    "amount": "Undisclosed"
   },
   {
     "id": "ms-129",
@@ -3546,6 +3669,26 @@
     ]
   },
   {
+    "id": "ms-220",
+    "date": "2025-12-02",
+    "type": "acquisition",
+    "company": "anthropic",
+    "title": "Anthropic acquires Bun",
+    "description": "JavaScript runtime (7M+ monthly downloads, 82K+ GitHub stars). Infrastructure powering Claude Code, which hit $1B run-rate revenue in 6 months. Bun remains open source.",
+    "source": "https://www.anthropic.com/news/anthropic-acquires-bun-as-claude-code-reaches-usd1b-milestone",
+    "amount": "Undisclosed"
+  },
+  {
+    "id": "ms-221",
+    "date": "2025-12-08",
+    "type": "acquisition",
+    "company": "ibm",
+    "title": "IBM acquires Confluent for $11B",
+    "description": "Real-time data streaming for enterprise agentic AI. IBM's third major 2025 acquisition ($27.8B total). Sub-100ms data for autonomous agents.",
+    "source": "https://aidatainsider.com/ai/2025s-top-16-acquisitions-in-ai-data/",
+    "amount": "$11 billion"
+  },
+  {
     "id": "ms-137",
     "company": "openai",
     "date": "2025-12-11",
@@ -3636,6 +3779,16 @@
     ]
   },
   {
+    "id": "ms-222",
+    "date": "2025-12-29",
+    "type": "acquisition",
+    "company": "meta",
+    "title": "Meta acquires Manus for ~$2B",
+    "description": "Singapore-based autonomous AI agent startup with $100M+ ARR in 8 months. Integrating AI agent capabilities into Meta's product ecosystem.",
+    "source": "https://www.cnbc.com/2026/01/21/metas-2b-manus-deal-pushes-away-some-customers-sad-it-happened.html",
+    "amount": "~$2 billion"
+  },
+  {
     "id": "ms-140",
     "company": "south-korea",
     "date": "2026-01-01",
@@ -3706,6 +3859,16 @@
         "date": "2026-01-22"
       }
     ]
+  },
+  {
+    "id": "ms-223",
+    "date": "2026-01-29",
+    "type": "acquisition",
+    "company": "apple",
+    "title": "Apple acquires Q.ai for ~$2B",
+    "description": "Israeli AI startup analyzing facial expressions to understand silent speech. Apple's second-largest acquisition ever. Enhances Siri with non-verbal, camera-based interaction.",
+    "source": "https://www.reuters.com/business/apple-acquires-audio-ai-startup-qai-2026-01-29/",
+    "amount": "~$2 billion"
   },
   {
     "id": "ms-144",
@@ -3803,7 +3966,7 @@
     "date": "2026-02-25",
     "type": "acquisition",
     "name": "Anthropic Acquires Vercept",
-    "description": "Anthropic acquires Vercept to advance Claude's computer use capabilities, expanding its ability to interact with desktop applications.",
+    "description": "AI startup advancing computer use capabilities. Vercept built tools for complex agentic tasks including Vy, a cloud-based agent operating a remote MacBook.",
     "category": "acquisition",
     "significance": "medium",
     "sources": [
@@ -3813,7 +3976,10 @@
         "publisher": "Anthropic",
         "date": "2026-02-25"
       }
-    ]
+    ],
+    "title": "Anthropic acquires Vercept",
+    "source": "https://www.anthropic.com/news/acquires-vercept",
+    "amount": "Undisclosed"
   },
   {
     "id": "ms-150",
@@ -3976,5 +4142,15 @@
         "date": "2026-03-17"
       }
     ]
+  },
+  {
+    "id": "ms-224",
+    "date": "2026-03-19",
+    "type": "acquisition",
+    "company": "openai",
+    "title": "OpenAI acquires Astral",
+    "description": "Open-source Python tool-maker (uv, Ruff, ty). Integrating into Codex team to broaden AI capabilities throughout the software development lifecycle.",
+    "source": "https://arstechnica.com/ai/2026/03/openai-is-acquiring-open-source-python-tool-maker-astral/",
+    "amount": "Undisclosed"
   }
 ]
