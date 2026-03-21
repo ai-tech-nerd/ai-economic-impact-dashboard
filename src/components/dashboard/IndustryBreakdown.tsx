@@ -23,8 +23,8 @@ export function IndustryBreakdown({ events }: IndustryBreakdownProps) {
       widgetHeight={500}
     >
       <div className="flex flex-col md:flex-row items-center gap-4">
-        <div className="w-full md:w-1/2 flex justify-center">
-          <ResponsiveContainer width="80%" height={280}>
+        <div className="w-full md:w-[45%]">
+          <ResponsiveContainer width="100%" height={340}>
             <PieChart>
               <Pie
                 data={data}
@@ -32,8 +32,8 @@ export function IndustryBreakdown({ events }: IndustryBreakdownProps) {
                 nameKey="industry"
                 cx="50%"
                 cy="50%"
-                innerRadius={65}
-                outerRadius={110}
+                innerRadius={80}
+                outerRadius={140}
                 paddingAngle={2}
                 onMouseLeave={() => setActiveIndex(null)}
               >
@@ -54,7 +54,7 @@ export function IndustryBreakdown({ events }: IndustryBreakdownProps) {
           </ResponsiveContainer>
         </div>
 
-        <div className="w-full md:w-1/2 space-y-0.5">
+        <div className="w-full md:w-[55%] space-y-0.5">
           {data.map((item, i) => {
             const pct = ((item.count / total) * 100).toFixed(1);
             const isActive = activeIndex === i;
