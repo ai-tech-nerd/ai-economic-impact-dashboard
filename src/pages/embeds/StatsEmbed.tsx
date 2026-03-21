@@ -9,110 +9,75 @@ interface StatsEmbedProps {
 }
 
 /**
- * Standalone embeddable stats counter widget.
+ * Standalone embeddable stats widget.
  *
  * URL params:
  *   theme=dark|light|transparent (default: dark)
- *   compact=true  — single-line minimal version
- *   label=custom  — override the subtitle text
  */
 export function StatsEmbed({ events }: StatsEmbedProps) {
   const [params] = useSearchParams();
   const theme = (params.get('theme') || 'dark') as 'dark' | 'light' | 'transparent';
-  const compact = params.get('compact') === 'true';
-  const customLabel = params.get('label');
 
   const nonProjection = events.filter((e) => !e.isProjection);
   const total = getTotalJobsCut(events);
   const companies = getCompanySummary(events);
   const eventCount = nonProjection.length;
 
-  const themeClasses = {
-    dark: 'bg-gradient-to-br from-surface-900 to-surface-800 text-white',
-    light: 'bg-white text-surface-900 border border-surface-200',
-    transparent: 'bg-transparent text-surface-900',
+  const themeStyles = {
+    dark: {
+      container: 'bg-gradient-to-br from-surface-900 to-surface-800 text-white',
+      number: 'text-primary-400',
+      label: 'text-surface-400',
+      link: 'text-surface-500 hover:text-primary-400',
+    },
+    light: {
+      container: 'bg-white text-surface-900 border border-surface-200',
+      number: 'text-primary-600',
+      label: 'text-surface-500',
+      link: 'text-surface-400 hover:text-primary-600',
+    },
+    transparent: {
+      container: 'bg-transparent text-surface-900',
+      number: 'text-primary-600',
+      label: 'text-surface-500',
+      link: 'text-surface-400 hover:text-primary-600',
+    },
   };
 
-  const subtitleClasses = {
-    dark: 'text-surface-400',
-    light: 'text-surface-500',
-    transparent: 'text-surface-500',
-  };
+  const s = themeStyles[theme];
 
-  const accentClasses = {
-    dark: 'text-primary-400',
-    light: 'text-primary-600',
-    transparent: 'text-primary-600',
-  };
-
-  const statLabelClasses = {
-    dark: 'text-surface-400',
-    light: 'text-surface-500',
-    transparent: 'text-surface-500',
-  };
-
-  const linkClasses = {
-    dark: 'text-surface-500 hover:text-primary-400',
-    light: 'text-surface-400 hover:text-primary-600',
-    transparent: 'text-surface-400 hover:text-primary-600',
-  };
-
-  if (compact) {
-    return (
-      <div className={`flex items-center justify-center gap-6 rounded-xl px-6 py-4 ${themeClasses[theme]}`}>
-        <div className="text-center">
-          <span className={`text-3xl font-bold ${accentClasses[theme]}`}>
-            <AnimatedNumber value={total} />
-          </span>
-          <span className={`text-sm ml-2 ${subtitleClasses[theme]}`}>
-            {customLabel || 'jobs displaced by AI'}
-          </span>
-        </div>
-        <div className={`text-xs ${subtitleClasses[theme]} flex gap-4`}>
-          <span><strong className={theme === 'dark' ? 'text-white' : 'text-surface-800'}>{companies.length}</strong> companies</span>
-          <span><strong className={theme === 'dark' ? 'text-white' : 'text-surface-800'}>{eventCount}</strong> events</span>
-        </div>
-      </div>
-    );
-  }
+  const stats = [
+    { value: total, label: 'Jobs Displaced by AI', duration: 2000 },
+    { value: eventCount, label: 'Displacement Events', duration: 1500 },
+    { value: companies.length, label: 'AI Companies', duration: 1500 },
+  ];
 
   return (
     <motion.div
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
-      className={`rounded-2xl p-8 text-center ${themeClasses[theme]}`}
+      className={`rounded-2xl p-8 ${s.container}`}
     >
-      <p className={`text-sm uppercase tracking-wider mb-2 ${subtitleClasses[theme]}`}>
-        Total Jobs Displaced by AI
-      </p>
-      <div className={`text-5xl md:text-7xl font-bold mb-4 ${accentClasses[theme]}`}>
-        <AnimatedNumber value={total} />
-      </div>
-      <p className={`text-sm mb-6 ${subtitleClasses[theme]}`}>
-        {customLabel || 'Since November 30, 2022 (ChatGPT Launch)'}
-      </p>
-      <div className="flex justify-center gap-8">
-        <div>
-          <div className="text-2xl font-bold">
-            <AnimatedNumber value={companies.length} duration={1500} />
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-12">
+        {stats.map((stat) => (
+          <div key={stat.label} className="text-center">
+            <div className={`text-4xl md:text-5xl font-bold ${s.number}`}>
+              <AnimatedNumber value={stat.value} duration={stat.duration} />
+            </div>
+            <p className={`text-sm mt-1 ${s.label}`}>{stat.label}</p>
           </div>
-          <p className={`text-xs uppercase tracking-wider ${statLabelClasses[theme]}`}>Companies</p>
-        </div>
-        <div>
-          <div className="text-2xl font-bold">
-            <AnimatedNumber value={eventCount} duration={1500} />
-          </div>
-          <p className={`text-xs uppercase tracking-wider ${statLabelClasses[theme]}`}>Events</p>
-        </div>
+        ))}
       </div>
-      <a
-        href="https://aishift.michaelkristof.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        className={`inline-block mt-6 text-xs transition-colors ${linkClasses[theme]}`}
-      >
-        aishift.michaelkristof.com →
-      </a>
+      <div className="text-center mt-6">
+        <a
+          href="https://aishift.michaelkristof.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`text-xs transition-colors ${s.link}`}
+        >
+          aishift.michaelkristof.com →
+        </a>
+      </div>
     </motion.div>
   );
 }
