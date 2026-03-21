@@ -263,9 +263,15 @@ function CompanyList({
     return map;
   }, [creationEvents]);
 
-  // Get all unique companies from milestones
+  // Get all unique companies from milestones + displacement + planned + creation
   const companyKeys = useMemo(() => {
-    return Object.keys(companyMilestones)
+    const allKeys = new Set<string>([
+      ...Object.keys(companyMilestones),
+      ...Object.keys(companyDisplacements),
+      ...Object.keys(companyPlanned),
+      ...Object.keys(companyCreation),
+    ]);
+    return Array.from(allKeys)
       .filter((key) => {
         const display = COMPANY_DISPLAY[key];
         const name = display?.name || key;
@@ -279,7 +285,7 @@ function CompanyList({
         }
         return (companyMilestones[b]?.length || 0) - (companyMilestones[a]?.length || 0);
       });
-  }, [companyMilestones, search, sortBy]);
+  }, [companyMilestones, companyDisplacements, companyPlanned, companyCreation, search, sortBy]);
 
   return (
     <PageLayout

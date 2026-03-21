@@ -29,7 +29,7 @@ export function DashboardPage({ events, plannedEvents, creationEvents }: Dashboa
         <TotalCounter
           total={total}
           companyCount={companies.length}
-          eventCount={events.length}
+          eventCount={events.filter((e) => !e.isProjection).length}
         />
 
         <TrendLine events={events} />
