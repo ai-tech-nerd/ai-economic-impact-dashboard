@@ -81,7 +81,7 @@ export function CompanyTable({ events, plannedEvents = [], creationEvents = [] }
   };
 
   return (
-    <ChartContainer title="Companies" subtitle="All companies with documented AI-driven job cuts">
+    <ChartContainer title="Companies" subtitle="All companies with documented AI-driven job cuts" widgetPath="companies" widgetHeight={600}>
       <div className="mb-4">
         <input
           type="text"

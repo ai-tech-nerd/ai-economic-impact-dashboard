@@ -19,6 +19,8 @@ export function IndustryBreakdown({ events }: IndustryBreakdownProps) {
     <ChartContainer
       title="Displacement by Industry"
       subtitle="Which industries have seen the most AI-driven job cuts"
+      widgetPath="industry"
+      widgetHeight={500}
     >
       <div className="flex flex-col md:flex-row items-center gap-6">
         <div className="w-full md:w-1/2">

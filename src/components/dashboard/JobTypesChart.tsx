@@ -27,6 +27,8 @@ export function JobTypesChart({ events }: JobTypesChartProps) {
     <ChartContainer
       title="Top Job Categories Displaced"
       subtitle="Most affected job types by total positions cut"
+      widgetPath="job-types"
+      widgetHeight={500}
     >
       <ResponsiveContainer width="100%" height={350}>
         <BarChart data={data} layout="vertical" margin={{ top: 5, right: 20, bottom: 5, left: 120 }}>

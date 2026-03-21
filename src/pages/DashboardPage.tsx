@@ -1,9 +1,11 @@
+import { useLocation } from 'react-router-dom';
 import { PageLayout } from '../components/layout/PageLayout';
 import { TotalCounter } from '../components/dashboard/TotalCounter';
 import { TrendLine } from '../components/dashboard/TrendLine';
 import { JobTypesChart } from '../components/dashboard/JobTypesChart';
 import { IndustryBreakdown } from '../components/dashboard/IndustryBreakdown';
 import { CompanyTable } from '../components/dashboard/CompanyTable';
+import { CardEmbedButton } from '../components/ui/CardEmbedButton';
 import { getTotalJobsCut, getCompanySummary } from '../utils/dataTransformers';
 import { formatNumber } from '../utils/formatters';
 import type { DisplacementEvent } from '../types';
@@ -15,6 +17,8 @@ interface DashboardPageProps {
 }
 
 export function DashboardPage({ events, plannedEvents, creationEvents }: DashboardPageProps) {
+  const location = useLocation();
+  const isEmbedOrWidget = location.pathname.startsWith('/embed') || location.pathname.startsWith('/widget');
   const total = getTotalJobsCut(events);
   const companies = getCompanySummary(events);
   const plannedTotal = plannedEvents.reduce((sum, e) => sum + e.jobsCut, 0);
@@ -41,10 +45,13 @@ export function DashboardPage({ events, plannedEvents, creationEvents }: Dashboa
 
         {/* Secondary stat cards — Planned & Creation */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="bg-white rounded-xl shadow-sm border border-warning-200 p-5">
-            <div className="flex items-center gap-2 mb-1">
-              <span className="w-2.5 h-2.5 rounded-full bg-warning-500" />
-              <span className="text-xs font-semibold text-warning-600 uppercase tracking-wider">Planned / Announced</span>
+          <div className="bg-white rounded-xl shadow-sm border border-warning-200 p-5 relative">
+            <div className="flex items-center justify-between mb-1">
+              <div className="flex items-center gap-2">
+                <span className="w-2.5 h-2.5 rounded-full bg-warning-500" />
+                <span className="text-xs font-semibold text-warning-600 uppercase tracking-wider">Planned / Announced</span>
+              </div>
+              {!isEmbedOrWidget && <CardEmbedButton widgetPath="planned" title="Planned / Announced" height={400} />}
             </div>
             <p className="text-2xl font-bold text-surface-900">{formatNumber(plannedTotal)}</p>
             <p className="text-sm text-surface-500 mt-1">
@@ -69,10 +76,13 @@ export function DashboardPage({ events, plannedEvents, creationEvents }: Dashboa
             </div>
           </div>
 
-          <div className="bg-white rounded-xl shadow-sm border border-success-200 p-5">
-            <div className="flex items-center gap-2 mb-1">
-              <span className="w-2.5 h-2.5 rounded-full bg-success-500" />
-              <span className="text-xs font-semibold text-success-600 uppercase tracking-wider">AI Job Creation</span>
+          <div className="bg-white rounded-xl shadow-sm border border-success-200 p-5 relative">
+            <div className="flex items-center justify-between mb-1">
+              <div className="flex items-center gap-2">
+                <span className="w-2.5 h-2.5 rounded-full bg-success-500" />
+                <span className="text-xs font-semibold text-success-600 uppercase tracking-wider">AI Job Creation</span>
+              </div>
+              {!isEmbedOrWidget && <CardEmbedButton widgetPath="creation" title="AI Job Creation" height={350} />}
             </div>
             {creationEvents.length > 0 ? (
               <>

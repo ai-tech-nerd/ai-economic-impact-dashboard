@@ -1,36 +1,12 @@
-import { useState, type ReactNode } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useState } from 'react';
 
-interface ChartContainerProps {
+interface CardEmbedButtonProps {
+  widgetPath: string;
   title: string;
-  subtitle?: string;
-  children: ReactNode;
-  className?: string;
-  widgetPath?: string;
-  widgetHeight?: number;
+  height?: number;
 }
 
-export function ChartContainer({ title, subtitle, children, className = '', widgetPath, widgetHeight = 500 }: ChartContainerProps) {
-  const location = useLocation();
-  const isEmbedOrWidget = location.pathname.startsWith('/embed') || location.pathname.startsWith('/widget');
-
-  return (
-    <div className={`bg-white rounded-xl shadow-sm border border-surface-200 p-6 ${className}`}>
-      <div className="mb-4 flex items-start justify-between">
-        <div>
-          <h3 className="text-lg font-semibold text-surface-800">{title}</h3>
-          {subtitle && <p className="text-sm text-surface-500 mt-1">{subtitle}</p>}
-        </div>
-        {widgetPath && !isEmbedOrWidget && (
-          <WidgetEmbedBtn widgetPath={widgetPath} title={title} height={widgetHeight} />
-        )}
-      </div>
-      {children}
-    </div>
-  );
-}
-
-function WidgetEmbedBtn({ widgetPath, title, height }: { widgetPath: string; title: string; height: number }) {
+export function CardEmbedButton({ widgetPath, title, height = 400 }: CardEmbedButtonProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [copied, setCopied] = useState(false);
 
@@ -47,10 +23,10 @@ function WidgetEmbedBtn({ widgetPath, title, height }: { widgetPath: string; tit
     <>
       <button
         onClick={() => setIsOpen(true)}
-        className="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium text-surface-400 hover:text-surface-600 bg-surface-50 hover:bg-surface-100 rounded-lg transition-colors shrink-0"
+        className="inline-flex items-center gap-1 px-2 py-0.5 text-xs text-surface-400 hover:text-surface-600 bg-surface-50 hover:bg-surface-100 rounded transition-colors"
         title="Embed this widget"
       >
-        <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+        <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
         </svg>
         Embed

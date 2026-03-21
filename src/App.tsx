@@ -12,6 +12,14 @@ import { AITimelinePage } from './pages/AITimelinePage';
 import { CompanyPage } from './pages/CompanyPage';
 import { LearningPage } from './pages/LearningPage';
 import { StatsEmbed } from './pages/embeds/StatsEmbed';
+import {
+  TrendWidget,
+  JobTypesWidget,
+  IndustryWidget,
+  CompaniesWidget,
+  PlannedWidget,
+  CreationWidget,
+} from './pages/embeds/ChartWidgets';
 
 function AppContent() {
   const { events, plannedEvents, creationEvents, milestones, companies, predictions, loading, error } = useData();
@@ -43,6 +51,12 @@ function AppContent() {
     return loading ? loadingEl : error ? errorEl : (
       <Routes>
         <Route path="/widget/stats" element={<StatsEmbed events={events} />} />
+        <Route path="/widget/trend" element={<TrendWidget events={events} />} />
+        <Route path="/widget/job-types" element={<JobTypesWidget events={events} />} />
+        <Route path="/widget/industry" element={<IndustryWidget events={events} />} />
+        <Route path="/widget/planned" element={<PlannedWidget plannedEvents={plannedEvents} />} />
+        <Route path="/widget/creation" element={<CreationWidget creationEvents={creationEvents} />} />
+        <Route path="/widget/companies" element={<CompaniesWidget events={events} plannedEvents={plannedEvents} creationEvents={creationEvents} />} />
       </Routes>
     );
   }

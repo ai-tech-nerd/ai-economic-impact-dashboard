@@ -26,6 +26,8 @@ export function TrendLine({ events, title, subtitle, dateRange }: TrendLineProps
     <ChartContainer
       title={title ?? 'Cumulative Job Displacement'}
       subtitle={subtitle ?? 'Running total of AI-attributed job cuts over time'}
+      widgetPath="trend"
+      widgetHeight={420}
     >
       <ResponsiveContainer width="100%" height={300}>
         <AreaChart data={data} margin={{ top: 5, right: 20, bottom: 5, left: 10 }}>
