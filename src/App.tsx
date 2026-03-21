@@ -11,11 +11,13 @@ import { TimelinePage } from './pages/TimelinePage';
 import { AITimelinePage } from './pages/AITimelinePage';
 import { CompanyPage } from './pages/CompanyPage';
 import { LearningPage } from './pages/LearningPage';
+import { StatsEmbed } from './pages/embeds/StatsEmbed';
 
 function AppContent() {
   const { events, plannedEvents, creationEvents, milestones, companies, predictions, loading, error } = useData();
   const location = useLocation();
   const isEmbed = location.pathname.startsWith('/embed');
+  const isWidget = location.pathname.startsWith('/widget');
   usePageTracking();
 
   const loadingEl = (
@@ -35,6 +37,15 @@ function AppContent() {
       </div>
     </div>
   );
+
+  // Widget routes — minimal, no wrapper/chrome, for inline embedding
+  if (isWidget) {
+    return loading ? loadingEl : error ? errorEl : (
+      <Routes>
+        <Route path="/widget/stats" element={<StatsEmbed events={events} />} />
+      </Routes>
+    );
+  }
 
   if (isEmbed) {
     return (
