@@ -1,24 +1,60 @@
 [
   {
-    "id": "ms-h01",
+    "id": "ms-b001",
     "company": "academic",
-    "date": "1950-10-01",
+    "date": "1943-01-01",
     "type": "breakthrough",
-    "name": "Alan Turing Proposes the Turing Test",
-    "description": "Alan Turing publishes 'Computing Machinery and Intelligence,' proposing the Turing Test as a measure of machine intelligence — a foundational concept in AI.",
+    "name": "McCulloch-Pitts Artificial Neuron",
+    "description": "Neurophysiologist Warren McCulloch and mathematician Walter Pitts published the first mathematical model of a neuron, describing how neural networks could perform logical computations. This paper is considered the foundational work of artificial neural network theory.",
     "category": "research",
     "significance": "high",
     "sources": [
       {
-        "url": "https://en.wikipedia.org/wiki/Turing_test",
-        "title": "Turing Test",
-        "publisher": "Wikipedia",
+        "url": "https://www.historyofinformation.com/detail.php?entryid=782",
+        "title": "McCulloch-Pitts Artificial Neuron",
+        "publisher": "University of Illinois / MIT",
+        "date": "1943-01-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-b002",
+    "company": "academic",
+    "date": "1950-10-01",
+    "type": "breakthrough",
+    "name": "Alan Turing Proposes the Turing Test",
+    "description": "Alan Turing publishes 'Computing Machinery and Intelligence,' proposing the Turing Test as a measure of machine intelligence \u2014 a foundational concept in AI.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Computing_Machinery_and_Intelligence",
+        "title": "Alan Turing Proposes the Turing Test",
+        "publisher": "Academic",
         "date": "1950-10-01"
       }
     ]
   },
   {
-    "id": "ms-h02",
+    "id": "ms-b003",
+    "company": "academic",
+    "date": "1955-12-01",
+    "type": "breakthrough",
+    "name": "Logic Theorist \u2014 First AI Program",
+    "description": "Allen Newell, Herbert Simon, and Cliff Shaw at RAND Corporation created the Logic Theorist, the first program deliberately designed to mimic human problem-solving by proving mathematical theorems from Principia Mathematica. It successfully proved 38 of the first 52 theorems and is widely regarded as the first artificial intelligence program.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.historyofinformation.com/detail.php?id=742",
+        "title": "Logic Theorist \u2014 First AI Program",
+        "publisher": "RAND Corporation",
+        "date": "1955-12-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-b004",
     "company": "academic",
     "date": "1956-08-31",
     "type": "breakthrough",
@@ -29,14 +65,140 @@
     "sources": [
       {
         "url": "https://en.wikipedia.org/wiki/Dartmouth_workshop",
-        "title": "Dartmouth Workshop",
-        "publisher": "Wikipedia",
+        "title": "Artificial Intelligence Coined at Dartmouth",
+        "publisher": "Academic",
         "date": "1956-08-31"
       }
     ]
   },
   {
-    "id": "ms-h03",
+    "id": "ms-b005",
+    "company": "academic",
+    "date": "1957-01-01",
+    "type": "breakthrough",
+    "name": "General Problem Solver (GPS)",
+    "description": "Herbert Simon, Allen Newell, and Cliff Shaw developed the General Problem Solver, the first program to separate its domain knowledge from its problem-solving strategy, introducing means-ends analysis. It was an early and influential attempt at a universal AI reasoning engine.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/General_Problem_Solver",
+        "title": "General Problem Solver (GPS)",
+        "publisher": "RAND Corporation / Carnegie Mellon University",
+        "date": "1957-01-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-b006",
+    "company": "academic",
+    "date": "1958-07-01",
+    "type": "breakthrough",
+    "name": "Perceptron (Frank Rosenblatt)",
+    "description": "Frank Rosenblatt at Cornell unveiled the Perceptron, the first trainable artificial neural network capable of supervised image classification learning. Demonstrated on an IBM 704 in July 1958, it was heralded as the first machine capable of learning to distinguish patterns without explicit programming.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon",
+        "title": "Perceptron (Frank Rosenblatt)",
+        "publisher": "Cornell Aeronautical Laboratory",
+        "date": "1958-07-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-b007",
+    "company": "mit",
+    "date": "1958-10-01",
+    "type": "breakthrough",
+    "name": "LISP Programming Language",
+    "description": "John McCarthy at MIT designed LISP (List Processing), the first programming language created specifically for artificial intelligence research. LISP introduced key concepts including garbage collection, first-class functions, and recursive definitions, and remained the dominant AI language for decades.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "http://jmc.stanford.edu/articles/lisp.html",
+        "title": "LISP Programming Language",
+        "publisher": "MIT",
+        "date": "1958-10-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-b008",
+    "company": "ibm",
+    "date": "1959-01-01",
+    "type": "breakthrough",
+    "name": "Arthur Samuel's Machine Learning Checkers Program",
+    "description": "Arthur Samuel at IBM published his checkers-playing program, one of the world's first self-learning software systems, and coined the term 'machine learning.' The program improved its play through experience and demonstrated that computers could learn tasks they had not been explicitly programmed to perform.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Arthur_Samuel_(computer_scientist)",
+        "title": "Arthur Samuel's Machine Learning Checkers Program",
+        "publisher": "IBM",
+        "date": "1959-01-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-b009",
+    "company": "stanford",
+    "date": "1960-01-01",
+    "type": "breakthrough",
+    "name": "ADALINE and MADALINE Neural Networks",
+    "description": "Bernard Widrow and Marcian Hoff at Stanford developed ADALINE (Adaptive Linear Neuron) and MADALINE, among the earliest practical neural network architectures. MADALINE was the first neural network applied to a real-world problem, using an adaptive filter to eliminate telephone line echoes.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/ADALINE",
+        "title": "ADALINE and MADALINE Neural Networks",
+        "publisher": "Stanford University",
+        "date": "1960-01-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-b010",
+    "company": "stanford",
+    "date": "1964-01-01",
+    "type": "breakthrough",
+    "name": "DENDRAL \u2014 First Expert System",
+    "description": "Edward Feigenbaum, Joshua Lederberg, Bruce Buchanan, and Carl Djerassi at Stanford began DENDRAL, widely considered the first expert system, designed to identify unknown organic molecules by analyzing mass spectrometry data.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Dendral",
+        "title": "DENDRAL \u2014 First Expert System",
+        "publisher": "Stanford University",
+        "date": "1964-01-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-b011",
+    "company": "academic",
+    "date": "1965-01-01",
+    "type": "breakthrough",
+    "name": "Robinson's Resolution Principle for Automated Theorem Proving",
+    "description": "J. Alan Robinson published the resolution principle, a complete method for mechanical theorem proving using unification. It became the dominant inference mechanism in AI and directly underpinned the development of logic programming and Prolog.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Resolution_(logic)",
+        "title": "Robinson's Resolution Principle for Automated Theorem Proving",
+        "publisher": "Syracuse University",
+        "date": "1965-01-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-b012",
     "company": "mit",
     "date": "1966-01-01",
     "type": "breakthrough",
@@ -47,135 +209,783 @@
     "sources": [
       {
         "url": "https://en.wikipedia.org/wiki/ELIZA",
-        "title": "ELIZA",
-        "publisher": "Wikipedia",
+        "title": "ELIZA Chatbot Created",
+        "publisher": "MIT",
         "date": "1966-01-01"
       }
     ]
   },
   {
-    "id": "ms-h04",
+    "id": "ms-b013",
+    "company": "academic",
+    "date": "1966-11-01",
+    "type": "breakthrough",
+    "name": "ALPAC Report Halts Machine Translation Funding",
+    "description": "The ALPAC report concluded that machine translation was slower, less accurate, and twice as expensive as human translation, leading the US government to drastically cut MT research funding. This was an early trigger of the first AI winter.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/ALPAC",
+        "title": "ALPAC Report Halts Machine Translation Funding",
+        "publisher": "National Academy of Sciences",
+        "date": "1966-11-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-b014",
     "company": "stanford",
     "date": "1969-01-01",
     "type": "breakthrough",
     "name": "Shakey the Robot",
     "description": "Shakey, the first general-purpose mobile robot capable of reasoning about its actions, is developed at Stanford Research Institute (SRI International).",
-    "category": "robotics",
+    "category": "research",
     "significance": "high",
     "sources": [
       {
         "url": "https://en.wikipedia.org/wiki/Shakey_the_robot",
         "title": "Shakey the Robot",
-        "publisher": "Wikipedia",
+        "publisher": "Stanford Research Institute",
         "date": "1969-01-01"
       }
     ]
   },
   {
-    "id": "ms-h05",
+    "id": "ms-b015",
+    "company": "mit",
+    "date": "1969-01-01",
+    "type": "breakthrough",
+    "name": "Minsky & Papert's 'Perceptrons' Book",
+    "description": "Marvin Minsky and Seymour Papert at MIT published Perceptrons, which formally demonstrated mathematical limitations of single-layer neural networks including their inability to compute the XOR function. The book significantly dampened enthusiasm and funding for neural network research for over a decade.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Perceptrons_(book)",
+        "title": "Minsky & Papert's 'Perceptrons' Book",
+        "publisher": "MIT",
+        "date": "1969-01-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-b016",
+    "company": "stanford",
+    "date": "1971-09-01",
+    "type": "breakthrough",
+    "name": "STRIPS Automated Planner",
+    "description": "Richard Fikes and Nils Nilsson at SRI International developed STRIPS, the first major automated planning system that represented world states and goal conditions as logical formulae. STRIPS established the foundational action-language formalism that nearly all modern AI planning systems still build upon.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Stanford_Research_Institute_Problem_Solver",
+        "title": "STRIPS Automated Planner",
+        "publisher": "SRI International",
+        "date": "1971-09-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-b017",
+    "company": "stanford",
+    "date": "1972-01-01",
+    "type": "breakthrough",
+    "name": "MYCIN Medical Expert System",
+    "description": "Edward Shortliffe at Stanford developed MYCIN, a rule-based expert system that diagnosed bacterial blood infections and recommended antibiotic treatments using approximately 600 IF-THEN rules. MYCIN demonstrated that AI could match specialist physician performance.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Mycin",
+        "title": "MYCIN Medical Expert System",
+        "publisher": "Stanford University",
+        "date": "1972-01-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-b018",
+    "company": "academic",
+    "date": "1972-01-01",
+    "type": "breakthrough",
+    "name": "Prolog Logic Programming Language",
+    "description": "Alain Colmerauer and Philippe Roussel at the University of Aix-Marseille created Prolog, the first logic programming language, combining automated theorem proving with natural language processing goals. Prolog became the dominant logic programming language for AI research.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Prolog",
+        "title": "Prolog Logic Programming Language",
+        "publisher": "University of Aix-Marseille",
+        "date": "1972-01-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-b019",
+    "company": "academic",
+    "date": "1973-01-01",
+    "type": "breakthrough",
+    "name": "Lighthill Report Triggers First AI Winter",
+    "description": "British mathematician Sir James Lighthill delivered a report concluding that AI research had failed to deliver on its promises. The report led the British government to cut AI funding at most universities, contributing to the first global AI winter (1974-1980).",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Lighthill_report",
+        "title": "Lighthill Report Triggers First AI Winter",
+        "publisher": "British Science Research Council",
+        "date": "1973-01-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-b020",
+    "company": "academic",
+    "date": "1974-01-01",
+    "type": "breakthrough",
+    "name": "Werbos Discovers Backpropagation (PhD Thesis)",
+    "description": "Paul Werbos at Harvard first described and implemented backpropagation of errors in his 1974 PhD dissertation, showing how to efficiently compute gradients for multilayer networks. Although largely overlooked at the time, this work predated the famous 1986 rediscovery.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Paul_Werbos",
+        "title": "Werbos Discovers Backpropagation (PhD Thesis)",
+        "publisher": "Harvard University",
+        "date": "1974-01-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-b021",
+    "company": "academic",
+    "date": "1978-01-01",
+    "type": "breakthrough",
+    "name": "R1/XCON Expert System at DEC",
+    "description": "John McDermott at Carnegie Mellon developed R1 (later XCON) for Digital Equipment Corporation to automatically configure VAX computer systems. By 1986 it had processed 80,000 orders with 95-98% accuracy, saving DEC an estimated $25 million per year.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Xcon",
+        "title": "R1/XCON Expert System at DEC",
+        "publisher": "Carnegie Mellon University / DEC",
+        "date": "1978-01-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-b022",
     "company": "japan-gov",
     "date": "1981-04-01",
     "type": "breakthrough",
     "name": "Japan's Fifth Generation Computer Project",
     "description": "The Japanese government launches the Fifth Generation Computer Project, a 10-year initiative to create computers using massively parallel processing and AI. It spurred global AI investment.",
-    "category": "government",
-    "significance": "medium",
+    "category": "research",
+    "significance": "high",
     "sources": [
       {
         "url": "https://en.wikipedia.org/wiki/Fifth_Generation_Computer_Systems",
-        "title": "Fifth Generation Computer Systems",
-        "publisher": "Wikipedia",
+        "title": "Japan's Fifth Generation Computer Project",
+        "publisher": "Japan Government",
         "date": "1981-04-01"
       }
     ]
   },
   {
-    "id": "ms-h06",
+    "id": "ms-b023",
+    "company": "academic",
+    "date": "1982-04-15",
+    "type": "breakthrough",
+    "name": "Hopfield Network",
+    "description": "John Hopfield at Caltech published a landmark paper introducing Hopfield networks, a form of recurrent neural network with emergent content-addressable memory properties. The paper re-legitimized neural network research and helped spark the connectionist revival of the 1980s.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.pnas.org/doi/10.1073/pnas.79.8.2554",
+        "title": "Hopfield Network",
+        "publisher": "California Institute of Technology",
+        "date": "1982-04-15"
+      }
+    ]
+  },
+  {
+    "id": "ms-b024",
+    "company": "mit",
+    "date": "1986-01-01",
+    "type": "breakthrough",
+    "name": "Rodney Brooks' Subsumption Architecture",
+    "description": "Rodney Brooks at MIT proposed the subsumption architecture, a behavior-based approach to robot control that replaced traditional symbolic world-modeling with layered reactive behaviors. This paradigm shift led to practical mobile robots that could navigate real environments.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Subsumption_architecture",
+        "title": "Rodney Brooks' Subsumption Architecture",
+        "publisher": "MIT AI Laboratory",
+        "date": "1986-01-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-b025",
+    "company": "academic",
+    "date": "1986-10-09",
+    "type": "breakthrough",
+    "name": "Backpropagation Rediscovery (Rumelhart, Hinton & Williams)",
+    "description": "David Rumelhart, Geoffrey Hinton, and Ronald Williams published 'Learning representations by back-propagating errors' in Nature, popularizing backpropagation as a practical training algorithm for multilayer neural networks \u2014 establishing the algorithmic foundation for modern deep learning.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/323533a0",
+        "title": "Backpropagation Rediscovery (Rumelhart, Hinton & Williams)",
+        "publisher": "UC San Diego / Carnegie Mellon",
+        "date": "1986-10-09"
+      }
+    ]
+  },
+  {
+    "id": "ms-b026",
+    "company": "academic",
+    "date": "1987-01-01",
+    "type": "breakthrough",
+    "name": "NETtalk \u2014 Neural Network Learns to Pronounce English",
+    "description": "Terrence Sejnowski and Charles Rosenberg demonstrated NETtalk, a neural network trained by backpropagation that learned to convert written English text to phonetic speech. The system received widespread public attention and became a celebrated proof-of-concept for connectionist learning.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/NETtalk_(artificial_neural_network)",
+        "title": "NETtalk \u2014 Neural Network Learns to Pronounce English",
+        "publisher": "Johns Hopkins / Princeton",
+        "date": "1987-01-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-b027",
+    "company": "academic",
+    "date": "1987-01-01",
+    "type": "breakthrough",
+    "name": "Second AI Winter Begins",
+    "description": "The market for specialized Lisp Machines and AI hardware collapsed as general-purpose desktop computers surpassed them in cost-effectiveness. Combined with the failure of rule-based expert systems to scale, this triggered the second AI winter (approximately 1987-1993).",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/AI_winter",
+        "title": "Second AI Winter Begins",
+        "publisher": "Industry-wide",
+        "date": "1987-01-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-b028",
+    "company": "academic",
+    "date": "1988-01-01",
+    "type": "breakthrough",
+    "name": "CMU Sphinx \u2014 First Continuous Speech Recognizer",
+    "description": "Kai-Fu Lee at Carnegie Mellon University unveiled Sphinx, the first high-performance speaker-independent continuous-speech recognition system based on hidden Markov models. Sphinx set the direction for all subsequent large-vocabulary speech recognition research.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.cs.cmu.edu/~rsingh/homepage/sphinx_history.html",
+        "title": "CMU Sphinx \u2014 First Continuous Speech Recognizer",
+        "publisher": "Carnegie Mellon University",
+        "date": "1988-01-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-b029",
+    "company": "ibm",
+    "date": "1992-01-01",
+    "type": "breakthrough",
+    "name": "TD-Gammon \u2014 Reinforcement Learning via Self-Play",
+    "description": "Gerald Tesauro at IBM developed TD-Gammon, a neural network trained entirely through self-play using temporal-difference learning that reached near-championship level in backgammon \u2014 directly influencing later systems such as AlphaGo.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/TD-Gammon",
+        "title": "TD-Gammon \u2014 Reinforcement Learning via Self-Play",
+        "publisher": "IBM",
+        "date": "1992-01-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-b030",
     "company": "ibm",
     "date": "1997-05-11",
     "type": "breakthrough",
     "name": "IBM Deep Blue Defeats Garry Kasparov",
     "description": "IBM's Deep Blue defeats world chess champion Garry Kasparov in a six-game match, marking the first time a computer beat a reigning world champion under standard chess rules.",
-    "category": "competition",
+    "category": "research",
     "significance": "high",
     "sources": [
       {
         "url": "https://en.wikipedia.org/wiki/Deep_Blue_(chess_computer)",
-        "title": "Deep Blue",
-        "publisher": "Wikipedia",
+        "title": "IBM Deep Blue Defeats Garry Kasparov",
+        "publisher": "IBM",
         "date": "1997-05-11"
       }
     ]
   },
   {
-    "id": "ms-h07",
-    "company": "irobot",
-    "date": "2002-09-17",
-    "type": "company-launch",
-    "name": "iRobot Roomba Launches",
-    "description": "iRobot launches the Roomba, bringing AI-powered autonomous navigation into consumer homes and popularizing robotics in everyday life.",
-    "category": "consumer",
-    "significance": "medium",
+    "id": "ms-b031",
+    "company": "darpa",
+    "date": "2004-03-13",
+    "type": "breakthrough",
+    "name": "DARPA Grand Challenge 2004 \u2014 First Autonomous Vehicle Race",
+    "description": "The first DARPA Grand Challenge was held in the Mojave Desert, offering $1 million to any autonomous vehicle completing a 142-mile desert course. No vehicle finished \u2014 the furthest traveled only 11.78 km \u2014 but the event galvanized the autonomous vehicle research community.",
+    "category": "research",
+    "significance": "high",
     "sources": [
       {
-        "url": "https://en.wikipedia.org/wiki/Roomba",
-        "title": "Roomba",
-        "publisher": "Wikipedia",
-        "date": "2002-09-17"
+        "url": "https://en.wikipedia.org/wiki/DARPA_Grand_Challenge_(2004)",
+        "title": "DARPA Grand Challenge 2004 \u2014 First Autonomous Vehicle Race",
+        "publisher": "DARPA",
+        "date": "2004-03-13"
       }
     ]
   },
   {
-    "id": "ms-h08",
+    "id": "ms-b032",
+    "company": "darpa",
+    "date": "2005-01-01",
+    "type": "breakthrough",
+    "name": "Boston Dynamics BigDog \u2014 Quadruped Robot",
+    "description": "Boston Dynamics, with DARPA funding, created BigDog, a dynamically stable quadruped robot capable of traversing rough terrain, running at 10 km/h, climbing steep slopes, and carrying up to 150 kg loads \u2014 a landmark in legged robotics.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.darpa.mil/about/innovation-timeline/bigdog",
+        "title": "Boston Dynamics BigDog \u2014 Quadruped Robot",
+        "publisher": "Boston Dynamics / DARPA",
+        "date": "2005-01-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-b033",
     "company": "darpa",
     "date": "2005-10-08",
     "type": "breakthrough",
     "name": "DARPA Grand Challenge for Autonomous Vehicles",
     "description": "DARPA holds the Grand Challenge, a prize competition for autonomous vehicles that successfully navigate a 132-mile desert course. Stanford's Stanley wins, accelerating self-driving car development.",
-    "category": "robotics",
+    "category": "research",
     "significance": "high",
     "sources": [
       {
         "url": "https://en.wikipedia.org/wiki/DARPA_Grand_Challenge_(2005)",
-        "title": "DARPA Grand Challenge 2005",
-        "publisher": "Wikipedia",
+        "title": "DARPA Grand Challenge for Autonomous Vehicles",
+        "publisher": "DARPA",
         "date": "2005-10-08"
       }
     ]
   },
   {
-    "id": "ms-h09",
+    "id": "ms-b034",
+    "company": "academic",
+    "date": "2006-10-02",
+    "type": "breakthrough",
+    "name": "Netflix Prize \u2014 $1 Million Machine Learning Competition",
+    "description": "Netflix launched a public competition offering $1 million to any team that could improve its movie recommendation algorithm by at least 10%, spurring major advances in collaborative filtering and ensemble methods.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Netflix_Prize",
+        "title": "Netflix Prize \u2014 $1 Million Machine Learning Competition",
+        "publisher": "Netflix",
+        "date": "2006-10-02"
+      }
+    ]
+  },
+  {
+    "id": "ms-b035",
+    "company": "darpa",
+    "date": "2007-11-04",
+    "type": "breakthrough",
+    "name": "DARPA Urban Challenge \u2014 Autonomous Vehicles Navigate City Traffic",
+    "description": "Carnegie Mellon's 'Boss' won the DARPA Urban Challenge, becoming the first autonomous vehicle to safely navigate a 96-km urban course with intersections, traffic, and driving laws.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/DARPA_Grand_Challenge_(2007)",
+        "title": "DARPA Urban Challenge \u2014 Autonomous Vehicles Navigate City Traffic",
+        "publisher": "DARPA / Carnegie Mellon",
+        "date": "2007-11-04"
+      }
+    ]
+  },
+  {
+    "id": "ms-b036",
+    "company": "google",
+    "date": "2009-01-01",
+    "type": "breakthrough",
+    "name": "Google Self-Driving Car Project Founded (proto-Waymo)",
+    "description": "Google secretly founded the Self-Driving Car Project, led by Sebastian Thrun, tasking engineers to drive autonomously along ten 100-mile California routes without human intervention \u2014 completing the first route by December 2009.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://waymo.com/blog/2020/04/in-the-drivers-seat-1000-mile-challenge",
+        "title": "Google Self-Driving Car Project Founded (proto-Waymo)",
+        "publisher": "Google",
+        "date": "2009-01-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-b037",
+    "company": "stanford",
+    "date": "2009-06-01",
+    "type": "breakthrough",
+    "name": "ImageNet Dataset Published",
+    "description": "Fei-Fei Li and collaborators at Stanford introduced ImageNet, a large-scale hierarchical image database with over 14 million annotated images spanning 20,000+ categories \u2014 the dataset that would fuel the deep learning revolution in computer vision.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://ieeexplore.ieee.org/document/5206848",
+        "title": "ImageNet Dataset Published",
+        "publisher": "Stanford University",
+        "date": "2009-06-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-b038",
+    "company": "academic",
+    "date": "2009-06-26",
+    "type": "breakthrough",
+    "name": "Netflix Prize Won by BellKor's Pragmatic Chaos",
+    "description": "After nearly three years of competition, the BellKor's Pragmatic Chaos team won the $1 million Netflix Prize by achieving a 10.06% improvement over Netflix's Cinematch algorithm, validating ensemble and matrix-factorization techniques.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.nytimes.com/2009/09/22/technology/internet/22netflix.html",
+        "title": "Netflix Prize Won by BellKor's Pragmatic Chaos",
+        "publisher": "Netflix / BellKor",
+        "date": "2009-06-26"
+      }
+    ]
+  },
+  {
+    "id": "ms-b039",
+    "company": "deepmind",
+    "date": "2010-09-01",
+    "type": "breakthrough",
+    "name": "DeepMind Technologies Founded",
+    "description": "Demis Hassabis, Shane Legg, and Mustafa Suleyman co-founded DeepMind in London, a neuroscience-inspired AI lab focused on building general-purpose learning algorithms \u2014 the company would become one of the world's most influential AI research organizations.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Google_DeepMind",
+        "title": "DeepMind Technologies Founded",
+        "publisher": "DeepMind",
+        "date": "2010-09-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-b040",
+    "company": "stanford",
+    "date": "2010-09-16",
+    "type": "breakthrough",
+    "name": "ImageNet Large Scale Visual Recognition Challenge (ILSVRC) Launched",
+    "description": "The first ILSVRC was held, creating the benchmark that would define computer vision progress for nearly a decade. Teams competed to classify 1.2 million images across 1,000 categories.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://image-net.org/challenges/LSVRC/2010/",
+        "title": "ImageNet Large Scale Visual Recognition Challenge (ILSVRC) Launched",
+        "publisher": "Stanford University / ImageNet",
+        "date": "2010-09-16"
+      }
+    ]
+  },
+  {
+    "id": "ms-b041",
+    "company": "google",
+    "date": "2011-01-01",
+    "type": "breakthrough",
+    "name": "Google Brain Project Founded",
+    "description": "Google Fellow Jeff Dean, Greg Corrado, and Andrew Ng launched the Google Brain project, a deep learning research initiative using large-scale neural networks and distributed computing.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Google_Brain",
+        "title": "Google Brain Project Founded",
+        "publisher": "Google",
+        "date": "2011-01-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-b042",
     "company": "ibm",
     "date": "2011-02-16",
     "type": "breakthrough",
     "name": "IBM Watson Wins Jeopardy!",
     "description": "IBM Watson defeats Jeopardy! champions Ken Jennings and Brad Rutter, demonstrating advanced natural language understanding and question-answering capabilities.",
-    "category": "competition",
+    "category": "research",
     "significance": "high",
     "sources": [
       {
-        "url": "https://en.wikipedia.org/wiki/Watson_(computer)#Jeopardy!",
-        "title": "Watson Jeopardy!",
-        "publisher": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Watson_(computer)",
+        "title": "IBM Watson Wins Jeopardy!",
+        "publisher": "IBM",
         "date": "2011-02-16"
       }
     ]
   },
   {
-    "id": "ms-h10",
-    "company": "google",
-    "date": "2012-06-26",
+    "id": "ms-b043",
+    "company": "apple",
+    "date": "2011-10-04",
     "type": "breakthrough",
-    "name": "Google's Deep Learning Image Recognition Breakthrough",
-    "description": "Google's deep learning research team, led by Jeff Dean and Andrew Ng, trains a neural network on 10 million YouTube images that autonomously learns to recognize cats — demonstrating unsupervised feature learning at scale.",
+    "name": "Siri Launches on iPhone 4S",
+    "description": "Apple introduced Siri with the iPhone 4S, the first mainstream AI voice assistant integrated into a consumer smartphone, bringing natural language understanding and conversational AI to hundreds of millions of users.",
     "category": "research",
     "significance": "high",
     "sources": [
       {
-        "url": "https://arxiv.org/abs/1112.6209",
-        "title": "Building High-level Features Using Large Scale Unsupervised Learning",
-        "publisher": "arXiv",
+        "url": "https://edition.cnn.com/2011/10/04/tech/mobile/siri-iphone-4s-skynet",
+        "title": "Siri Launches on iPhone 4S",
+        "publisher": "Apple",
+        "date": "2011-10-04"
+      }
+    ]
+  },
+  {
+    "id": "ms-b044",
+    "company": "google",
+    "date": "2012-06-26",
+    "type": "breakthrough",
+    "name": "Google's Deep Learning Image Recognition Breakthrough",
+    "description": "Google's deep learning research team, led by Jeff Dean and Andrew Ng, trains a neural network on 10 million YouTube images that autonomously learns to recognize cats \u2014 demonstrating unsupervised feature learning at scale.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://blog.google/innovation-and-ai/products/using-large-scale-brain-simulations-for/",
+        "title": "Google's Deep Learning Image Recognition Breakthrough",
+        "publisher": "Google",
         "date": "2012-06-26"
+      }
+    ]
+  },
+  {
+    "id": "ms-b045",
+    "company": "academic",
+    "date": "2012-09-30",
+    "type": "breakthrough",
+    "name": "AlexNet Wins ILSVRC 2012 \u2014 Deep Learning Breakthrough",
+    "description": "Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton's AlexNet won the ImageNet 2012 challenge with a top-5 error rate of 15.3% \u2014 nearly 10 percentage points better than the runner-up \u2014 proving that deep CNNs trained on GPUs could revolutionize computer vision.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
+        "title": "AlexNet Wins ILSVRC 2012 \u2014 Deep Learning Breakthrough",
+        "publisher": "University of Toronto",
+        "date": "2012-09-30"
+      }
+    ]
+  },
+  {
+    "id": "ms-b046",
+    "company": "google",
+    "date": "2013-01-16",
+    "type": "breakthrough",
+    "name": "Word2Vec \u2014 Neural Word Embeddings",
+    "description": "Google researchers Tomas Mikolov and colleagues introduced Word2Vec, computing dense vector representations of words that captured semantic relationships (e.g., 'king' - 'man' + 'woman' = 'queen'), transforming NLP.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/1301.3781",
+        "title": "Word2Vec \u2014 Neural Word Embeddings",
+        "publisher": "Google",
+        "date": "2013-01-16"
+      }
+    ]
+  },
+  {
+    "id": "ms-b047",
+    "company": "deepmind",
+    "date": "2013-12-19",
+    "type": "breakthrough",
+    "name": "DeepMind's Deep Q-Network (DQN) Plays Atari Games",
+    "description": "DeepMind published research showing a single deep reinforcement learning agent could learn to play seven Atari 2600 games directly from raw pixels and scores, surpassing all prior methods on six games.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/1312.5602",
+        "title": "DeepMind's Deep Q-Network (DQN) Plays Atari Games",
+        "publisher": "DeepMind",
+        "date": "2013-12-19"
+      }
+    ]
+  },
+  {
+    "id": "ms-b048",
+    "company": "google",
+    "date": "2014-01-26",
+    "type": "breakthrough",
+    "name": "Google Acquires DeepMind for ~$500 Million",
+    "description": "Google acquired London-based DeepMind Technologies for a reported $400-650 million, one of the largest AI acquisitions at the time, granting Google access to world-leading reinforcement learning and deep learning research talent.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://techcrunch.com/2014/01/26/google-deepmind/",
+        "title": "Google Acquires DeepMind for ~$500 Million",
+        "publisher": "Google",
+        "date": "2014-01-26"
+      }
+    ]
+  },
+  {
+    "id": "ms-b049",
+    "company": "academic",
+    "date": "2014-06-01",
+    "type": "breakthrough",
+    "name": "Dropout Regularization Technique Published",
+    "description": "Srivastava, Hinton, and colleagues formally published the dropout technique, which randomly disables neurons during training to prevent overfitting, becoming one of the most widely used regularization methods in deep learning.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://jmlr.org/papers/v15/srivastava14a.html",
+        "title": "Dropout Regularization Technique Published",
+        "publisher": "University of Toronto",
+        "date": "2014-06-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-b050",
+    "company": "academic",
+    "date": "2014-06-10",
+    "type": "breakthrough",
+    "name": "Generative Adversarial Networks (GANs) Introduced",
+    "description": "Ian Goodfellow and colleagues introduced Generative Adversarial Networks, where two neural networks (generator and discriminator) compete to produce increasingly realistic synthetic data \u2014 opening an entirely new paradigm in generative AI.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/1406.2661",
+        "title": "Generative Adversarial Networks (GANs) Introduced",
+        "publisher": "Universit\u00e9 de Montr\u00e9al",
+        "date": "2014-06-10"
+      }
+    ]
+  },
+  {
+    "id": "ms-b051",
+    "company": "amazon",
+    "date": "2014-11-06",
+    "type": "breakthrough",
+    "name": "Amazon Echo and Alexa Launch",
+    "description": "Amazon introduced the Echo smart speaker powered by the Alexa voice assistant, the first always-on, voice-activated home AI device, pioneering the smart speaker category and bringing conversational AI into living rooms at scale.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.cnbc.com/2014/11/06/amazon-surprises-with-new-device-a-voice-assistant.html",
+        "title": "Amazon Echo and Alexa Launch",
+        "publisher": "Amazon",
+        "date": "2014-11-06"
+      }
+    ]
+  },
+  {
+    "id": "ms-b052",
+    "company": "google",
+    "date": "2015-02-11",
+    "type": "breakthrough",
+    "name": "Batch Normalization Introduced",
+    "description": "Sergey Ioffe and Christian Szegedy at Google introduced Batch Normalization, a technique that normalizes layer inputs during training to dramatically accelerate deep network training \u2014 enabling 14x faster convergence.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/1502.03167",
+        "title": "Batch Normalization Introduced",
+        "publisher": "Google",
+        "date": "2015-02-11"
+      }
+    ]
+  },
+  {
+    "id": "ms-b053",
+    "company": "deepmind",
+    "date": "2015-02-25",
+    "type": "breakthrough",
+    "name": "DeepMind DQN Paper in Nature \u2014 Human-Level Atari Play",
+    "description": "DeepMind published its landmark DQN paper in Nature, demonstrating an AI agent that achieved human-level performance across 49 Atari games learning solely from raw pixels and rewards.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/nature14236",
+        "title": "DeepMind DQN Paper in Nature \u2014 Human-Level Atari Play",
+        "publisher": "DeepMind",
+        "date": "2015-02-25"
+      }
+    ]
+  },
+  {
+    "id": "ms-b054",
+    "company": "academic",
+    "date": "2015-10-14",
+    "type": "breakthrough",
+    "name": "Tesla Autopilot Launched",
+    "description": "Tesla released Autopilot software version 7.0, the first commercial semi-autonomous highway driving system for consumer vehicles, enabling lane-keeping, adaptive cruise control, and automatic steering on public roads.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.cnbc.com/2015/10/14/tesla-rolls-out-autopilot-technology.html",
+        "title": "Tesla Autopilot Launched",
+        "publisher": "Tesla",
+        "date": "2015-10-14"
+      }
+    ]
+  },
+  {
+    "id": "ms-b055",
+    "company": "academic",
+    "date": "2015-12-10",
+    "type": "breakthrough",
+    "name": "ResNet (Residual Networks) \u2014 152-Layer Deep Learning",
+    "description": "Microsoft Research's Kaiming He and team introduced Residual Networks (ResNet), using shortcut connections to train networks up to 152 layers deep, achieving 3.57% top-5 error on ImageNet and winning all five tracks of ILSVRC 2015.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/1512.03385",
+        "title": "ResNet (Residual Networks) \u2014 152-Layer Deep Learning",
+        "publisher": "Microsoft Research",
+        "date": "2015-12-10"
       }
     ]
   },
@@ -216,38 +1026,56 @@
     ]
   },
   {
-    "id": "ms-h11",
-    "company": "deepmind",
-    "date": "2016-03-15",
-    "type": "breakthrough",
-    "name": "AlphaGo Defeats World Champion Lee Sedol",
-    "description": "DeepMind's AlphaGo defeats world Go champion Lee Sedol 4–1, mastering a game long considered too complex for AI due to its vast number of possible moves.",
-    "category": "competition",
-    "significance": "high",
-    "sources": [
-      {
-        "url": "https://deepmind.google/research/breakthroughs/alphago/",
-        "title": "AlphaGo",
-        "publisher": "DeepMind",
-        "date": "2016-03-15"
-      }
-    ]
-  },
-  {
-    "id": "ms-h12",
+    "id": "ms-b056",
     "company": "google",
-    "date": "2017-06-12",
+    "date": "2016-09-27",
     "type": "breakthrough",
-    "name": "Transformer Architecture Introduced",
-    "description": "Google researchers publish 'Attention Is All You Need,' introducing the Transformer architecture that becomes the foundation for GPT, BERT, and virtually all modern large language models.",
+    "name": "Google Neural Machine Translation (GNMT) Deployed",
+    "description": "Google launched Google Neural Machine Translation, replacing its phrase-based system with an end-to-end deep learning translation system for Google Translate, dramatically improving translation quality.",
     "category": "research",
     "significance": "high",
     "sources": [
       {
-        "url": "https://arxiv.org/abs/1706.03762",
-        "title": "Attention Is All You Need",
-        "publisher": "arXiv",
-        "date": "2017-06-12"
+        "url": "https://techcrunch.com/2016/09/27/google-unleashes-deep-learning-tech-on-language-with-neural-machine-translation/",
+        "title": "Google Neural Machine Translation (GNMT) Deployed",
+        "publisher": "Google",
+        "date": "2016-09-27"
+      }
+    ]
+  },
+  {
+    "id": "ms-b057",
+    "company": "deepmind",
+    "date": "2017-10-19",
+    "type": "breakthrough",
+    "name": "AlphaGo Zero: Mastering Go Without Human Knowledge",
+    "description": "DeepMind published AlphaGo Zero in Nature, a version that learned entirely through self-play with no human game data, surpassing all previous versions within 40 days \u2014 demonstrating superhuman performance could be achieved tabula rasa.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/nature24270",
+        "title": "AlphaGo Zero: Mastering Go Without Human Knowledge",
+        "publisher": "DeepMind",
+        "date": "2017-10-19"
+      }
+    ]
+  },
+  {
+    "id": "ms-b058",
+    "company": "deepmind",
+    "date": "2017-12-05",
+    "type": "breakthrough",
+    "name": "AlphaZero: Generalized Self-Play Across Chess, Shogi, and Go",
+    "description": "DeepMind's AlphaZero achieved superhuman performance in chess, shogi, and Go within 24 hours of training from random play with no domain knowledge beyond the rules.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/1712.01815",
+        "title": "AlphaZero: Generalized Self-Play Across Chess, Shogi, and Go",
+        "publisher": "DeepMind",
+        "date": "2017-12-05"
       }
     ]
   },
@@ -266,42 +1094,6 @@
         "title": "Improving Language Understanding by Generative Pre-Training",
         "publisher": "OpenAI",
         "date": "2018-06-01"
-      }
-    ]
-  },
-  {
-    "id": "ms-h14",
-    "company": "openai",
-    "date": "2018-06-11",
-    "type": "model-release",
-    "name": "GPT-1 Released",
-    "description": "OpenAI releases GPT-1, the first Generative Pre-trained Transformer, demonstrating that unsupervised pre-training followed by fine-tuning could achieve strong NLP performance.",
-    "category": "language-model",
-    "significance": "high",
-    "sources": [
-      {
-        "url": "https://openai.com/index/language-unsupervised/",
-        "title": "Improving Language Understanding by Generative Pre-Training",
-        "publisher": "OpenAI",
-        "date": "2018-06-11"
-      }
-    ]
-  },
-  {
-    "id": "ms-h13",
-    "company": "google",
-    "date": "2018-10-11",
-    "type": "model-release",
-    "name": "BERT Released",
-    "description": "Google releases BERT (Bidirectional Encoder Representations from Transformers), achieving state-of-the-art results on 11 NLP tasks and transforming how search engines understand language.",
-    "category": "language-model",
-    "significance": "high",
-    "sources": [
-      {
-        "url": "https://arxiv.org/abs/1810.04805",
-        "title": "BERT: Pre-training of Deep Bidirectional Transformers",
-        "publisher": "arXiv",
-        "date": "2018-10-11"
       }
     ]
   },
@@ -342,6 +1134,42 @@
     ]
   },
   {
+    "id": "ms-b059",
+    "company": "openai",
+    "date": "2019-02-14",
+    "type": "breakthrough",
+    "name": "GPT-2: Too Dangerous to Release (Initially Withheld)",
+    "description": "OpenAI announced GPT-2, a 1.5B parameter language model so capable at generating coherent text that the lab controversially withheld the full model, citing misuse concerns \u2014 sparking global debate on responsible AI disclosure.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://openai.com/index/gpt-2-1-5b-release/",
+        "title": "GPT-2: Too Dangerous to Release (Initially Withheld)",
+        "publisher": "OpenAI",
+        "date": "2019-02-14"
+      }
+    ]
+  },
+  {
+    "id": "ms-b060",
+    "company": "openai",
+    "date": "2019-04-13",
+    "type": "breakthrough",
+    "name": "OpenAI Five Defeats Dota 2 World Champions",
+    "description": "OpenAI Five became the first AI system to defeat reigning world champions in a major esports title, beating International 2018 champions OG in two back-to-back live matches of Dota 2.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://openai.com/index/openai-five-defeats-dota-2-world-champions/",
+        "title": "OpenAI Five Defeats Dota 2 World Champions",
+        "publisher": "OpenAI",
+        "date": "2019-04-13"
+      }
+    ]
+  },
+  {
     "id": "ms-006",
     "company": "oecd",
     "date": "2019-05-22",
@@ -364,7 +1192,7 @@
     "company": "openai",
     "date": "2019-07-22",
     "type": "partnership",
-    "name": "OpenAI–Microsoft Azure Exclusive Partnership",
+    "name": "OpenAI\u2013Microsoft Azure Exclusive Partnership",
     "description": "Microsoft becomes OpenAI's exclusive cloud provider with a $1B investment, establishing joint Azure AI supercomputing infrastructure.",
     "category": "cloud",
     "significance": "high",
@@ -374,6 +1202,42 @@
         "title": "OpenAI forms exclusive computing partnership with Microsoft",
         "publisher": "Microsoft",
         "date": "2019-07-22"
+      }
+    ]
+  },
+  {
+    "id": "ms-b061",
+    "company": "deepmind",
+    "date": "2019-10-30",
+    "type": "breakthrough",
+    "name": "AlphaStar Achieves StarCraft II Grandmaster Level",
+    "description": "DeepMind's AlphaStar became the first AI to reach Grandmaster level in StarCraft II, surpassing 99.8% of active human players across all three playable races using multi-agent reinforcement learning.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41586-019-1724-z",
+        "title": "AlphaStar Achieves StarCraft II Grandmaster Level",
+        "publisher": "DeepMind",
+        "date": "2019-10-30"
+      }
+    ]
+  },
+  {
+    "id": "ms-b062",
+    "company": "openai",
+    "date": "2019-11-05",
+    "type": "breakthrough",
+    "name": "GPT-2 Full Model Released (1.5B Parameters)",
+    "description": "After a staged rollout spanning nine months, OpenAI released the complete 1.5 billion parameter GPT-2 model alongside detection research, concluding the incremental risk over smaller versions was acceptable.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://openai.com/index/gpt-2-1-5b-release/",
+        "title": "GPT-2 Full Model Released (1.5B Parameters)",
+        "publisher": "OpenAI",
+        "date": "2019-11-05"
       }
     ]
   },
@@ -432,6 +1296,42 @@
     ]
   },
   {
+    "id": "ms-b063",
+    "company": "google",
+    "date": "2020-10-08",
+    "type": "breakthrough",
+    "name": "Waymo Launches First Fully Driverless Public Robotaxi Service",
+    "description": "Waymo became the first company to offer a fully driverless commercial ride-hailing service to the general public with no safety driver in the vehicle, launching Waymo One in Phoenix, Arizona.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.reuters.com/business/autos-transportation/waymo-opens-driverless-robo-taxi-service-public-phoenix-2020-10-08/",
+        "title": "Waymo Launches First Fully Driverless Public Robotaxi Service",
+        "publisher": "Waymo (Alphabet)",
+        "date": "2020-10-08"
+      }
+    ]
+  },
+  {
+    "id": "ms-b064",
+    "company": "deepmind",
+    "date": "2020-11-30",
+    "type": "breakthrough",
+    "name": "AlphaFold 2 Wins CASP14: Protein Folding Effectively Solved",
+    "description": "DeepMind's AlphaFold 2 won CASP14 with a median global distance test score of 92.4, effectively solving the 50-year-old protein structure prediction problem with accuracy comparable to experimental lab methods.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://deepmind.google/blog/alphafold-a-solution-to-a-50-year-old-grand-challenge-in-biology/",
+        "title": "AlphaFold 2 Wins CASP14: Protein Folding Effectively Solved",
+        "publisher": "DeepMind",
+        "date": "2020-11-30"
+      }
+    ]
+  },
+  {
     "id": "ms-010",
     "company": "anthropic",
     "date": "2021-01-01",
@@ -462,6 +1362,24 @@
       {
         "url": "https://openai.com/index/dall-e/",
         "title": "DALL-E",
+        "publisher": "OpenAI",
+        "date": "2021-01-05"
+      }
+    ]
+  },
+  {
+    "id": "ms-b065",
+    "company": "openai",
+    "date": "2021-01-05",
+    "type": "breakthrough",
+    "name": "CLIP: Connecting Text and Images via Contrastive Learning",
+    "description": "OpenAI released CLIP (Contrastive Language-Image Pre-Training), a neural network trained on 400 million image-text pairs that matched ResNet-50's ImageNet accuracy in a zero-shot setting, enabling flexible visual understanding without task-specific training.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://openai.com/index/clip/",
+        "title": "CLIP: Connecting Text and Images via Contrastive Learning",
         "publisher": "OpenAI",
         "date": "2021-01-05"
       }
@@ -518,6 +1436,60 @@
         "title": "LaMDA: our breakthrough conversation technology",
         "publisher": "Google",
         "date": "2021-05-18"
+      }
+    ]
+  },
+  {
+    "id": "ms-b066",
+    "company": "github",
+    "date": "2021-06-29",
+    "type": "breakthrough",
+    "name": "GitHub Copilot Technical Preview: AI Pair Programmer",
+    "description": "GitHub and OpenAI launched the technical preview of GitHub Copilot, an AI code-completion tool powered by OpenAI Codex that suggests whole lines and functions in real time \u2014 the first broadly available AI programming assistant.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://github.blog/news-insights/product-news/introducing-github-copilot-ai-pair-programmer/",
+        "title": "GitHub Copilot Technical Preview: AI Pair Programmer",
+        "publisher": "GitHub / OpenAI",
+        "date": "2021-06-29"
+      }
+    ]
+  },
+  {
+    "id": "ms-b067",
+    "company": "deepmind",
+    "date": "2021-07-15",
+    "type": "breakthrough",
+    "name": "AlphaFold 2 Paper Published in Nature",
+    "description": "DeepMind published the full AlphaFold 2 methodology in Nature, describing a novel architecture to predict protein structures with atomic accuracy, and released predictions for the human proteome.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41586-021-03819-2",
+        "title": "AlphaFold 2 Paper Published in Nature",
+        "publisher": "DeepMind",
+        "date": "2021-07-15"
+      }
+    ]
+  },
+  {
+    "id": "ms-b068",
+    "company": "openai",
+    "date": "2021-08-10",
+    "type": "breakthrough",
+    "name": "OpenAI Codex: Natural Language to Code API Released",
+    "description": "OpenAI released Codex via private API beta, a GPT-3-based model fine-tuned on billions of lines of code that could translate natural language to working programs \u2014 the engine behind GitHub Copilot.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://openai.com/index/openai-codex/",
+        "title": "OpenAI Codex: Natural Language to Code API Released",
+        "publisher": "OpenAI",
+        "date": "2021-08-10"
       }
     ]
   },
@@ -612,6 +1584,24 @@
     ]
   },
   {
+    "id": "ms-b069",
+    "company": "openai",
+    "date": "2022-04-06",
+    "type": "breakthrough",
+    "name": "DALL-E 2: Higher Resolution Text-to-Image with Diffusion",
+    "description": "OpenAI announced DALL-E 2, generating photorealistic images at 4x the resolution of its predecessor using a diffusion model approach, enabling image editing, inpainting, and outpainting from natural language.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://openai.com/index/dall-e-2/",
+        "title": "DALL-E 2: Higher Resolution Text-to-Image with Diffusion",
+        "publisher": "OpenAI",
+        "date": "2022-04-06"
+      }
+    ]
+  },
+  {
     "id": "ms-020",
     "company": "anthropic",
     "date": "2022-04-29",
@@ -648,6 +1638,24 @@
     ]
   },
   {
+    "id": "ms-b070",
+    "company": "deepmind",
+    "date": "2022-05-12",
+    "type": "breakthrough",
+    "name": "Gato: DeepMind's Generalist Multi-Task AI Agent",
+    "description": "DeepMind published Gato, a single transformer that can play Atari games, caption images, chat, navigate 3D environments, and control a robot arm \u2014 framing generalist agents as a viable path to AGI.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2205.06175",
+        "title": "Gato: DeepMind's Generalist Multi-Task AI Agent",
+        "publisher": "DeepMind",
+        "date": "2022-05-12"
+      }
+    ]
+  },
+  {
     "id": "ms-022",
     "company": "canada",
     "date": "2022-06-01",
@@ -662,6 +1670,24 @@
         "title": "LEGISinfo: Bill C-27",
         "publisher": "Parliament of Canada",
         "date": "2022-06-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-b071",
+    "company": "google",
+    "date": "2022-06-11",
+    "type": "breakthrough",
+    "name": "LaMDA Sentience Controversy",
+    "description": "Google engineer Blake Lemoine went public with claims that LaMDA had become sentient, prompting Google to place him on leave. The episode triggered worldwide debate about AI consciousness and anthropomorphism.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.washingtonpost.com/technology/2022/06/11/google-ai-lamda-blake-lemoine/",
+        "title": "LaMDA Sentience Controversy",
+        "publisher": "Google",
+        "date": "2022-06-11"
       }
     ]
   },
@@ -922,7 +1948,7 @@
     "company": "openai",
     "date": "2023-01-23",
     "type": "partnership",
-    "name": "OpenAI–Microsoft Multibillion-Dollar Partnership Extension",
+    "name": "OpenAI\u2013Microsoft Multibillion-Dollar Partnership Extension",
     "description": "Microsoft and OpenAI extend their partnership with a multiyear, multibillion-dollar investment to scale Azure infrastructure for ChatGPT-era growth and model training.",
     "category": "cloud",
     "significance": "high",
@@ -940,7 +1966,7 @@
     "company": "anthropic",
     "date": "2023-02-03",
     "type": "partnership",
-    "name": "Anthropic–Google Cloud Partnership",
+    "name": "Anthropic\u2013Google Cloud Partnership",
     "description": "Anthropic selects Google Cloud as preferred cloud provider, with Google committing TPU/GPU clusters for model training and deployment.",
     "category": "cloud",
     "significance": "high",
@@ -1138,7 +2164,7 @@
     "company": "oracle",
     "date": "2023-06-13",
     "type": "partnership",
-    "name": "Oracle–Cohere Enterprise AI Partnership",
+    "name": "Oracle\u2013Cohere Enterprise AI Partnership",
     "description": "Cohere models integrated into Oracle Cloud Infrastructure to deliver secure generative AI services for enterprise customers.",
     "category": "enterprise",
     "significance": "medium",
@@ -1346,7 +2372,7 @@
     "company": "anthropic",
     "date": "2023-09-25",
     "type": "partnership",
-    "name": "Anthropic–Amazon $4B Investment Partnership",
+    "name": "Anthropic\u2013Amazon $4B Investment Partnership",
     "description": "Amazon invests up to $4B in Anthropic, with AWS becoming Anthropic's primary cloud and training partner. Claude becomes available via Amazon Bedrock.",
     "category": "cloud",
     "significance": "high",
@@ -1355,6 +2381,24 @@
         "url": "https://techcrunch.com/2023/09/25/amazon-to-invest-up-to-4-billion-in-ai-startup-anthropic/",
         "title": "Amazon to invest up to $4 billion in Anthropic",
         "publisher": "TechCrunch",
+        "date": "2023-09-25"
+      }
+    ]
+  },
+  {
+    "id": "ms-b072",
+    "company": "openai",
+    "date": "2023-09-25",
+    "type": "breakthrough",
+    "name": "GPT-4V (Vision) and ChatGPT Voice/Image Launch",
+    "description": "OpenAI released GPT-4V, enabling GPT-4 to analyze and respond to image inputs, and simultaneously rolled out voice and image capabilities to ChatGPT Plus users \u2014 a major shift toward multimodal AI assistants.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://openai.com/index/chatgpt-can-now-see-hear-and-speak/",
+        "title": "GPT-4V (Vision) and ChatGPT Voice/Image Launch",
+        "publisher": "OpenAI",
         "date": "2023-09-25"
       }
     ]
@@ -1392,6 +2436,24 @@
         "title": "Announcing Mistral 7B",
         "publisher": "Mistral AI",
         "date": "2023-09-27"
+      }
+    ]
+  },
+  {
+    "id": "ms-b073",
+    "company": "openai",
+    "date": "2023-10-01",
+    "type": "breakthrough",
+    "name": "DALL-E 3 Released in ChatGPT",
+    "description": "OpenAI released DALL-E 3, its most capable image generation model, integrated natively into ChatGPT with significantly improved prompt adherence, typographic accuracy, and safety.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://openai.com/index/dall-e-3/",
+        "title": "DALL-E 3 Released in ChatGPT",
+        "publisher": "OpenAI",
+        "date": "2023-10-01"
       }
     ]
   },
@@ -1540,6 +2602,24 @@
     ]
   },
   {
+    "id": "ms-b074",
+    "company": "academic",
+    "date": "2023-12-12",
+    "type": "breakthrough",
+    "name": "Tesla Optimus Gen 2 Reveal",
+    "description": "Tesla unveiled Optimus Gen 2, a redesigned humanoid robot with new actuators, 10 kg weight reduction, 30% faster walking, and significantly more dexterous hands capable of handling delicate objects.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://electrek.co/2023/12/12/tesla-unveils-optimus-gen-2-next-generation-humanoid-robot/",
+        "title": "Tesla Optimus Gen 2 Reveal",
+        "publisher": "Tesla",
+        "date": "2023-12-12"
+      }
+    ]
+  },
+  {
     "id": "ms-054",
     "company": "google",
     "date": "2023-12-13",
@@ -1580,7 +2660,7 @@
     "company": "openai",
     "date": "2023-12-13",
     "type": "partnership",
-    "name": "OpenAI–Axel Springer Media Licensing Deal",
+    "name": "OpenAI\u2013Axel Springer Media Licensing Deal",
     "description": "OpenAI licenses Axel Springer publisher content for ChatGPT with attribution, setting an early precedent for AI media licensing partnerships.",
     "category": "media",
     "significance": "medium",
@@ -1626,6 +2706,24 @@
         "title": "Exclusive: Gen AI music app Suno comes out of stealth",
         "publisher": "Axios",
         "date": "2023-12-20"
+      }
+    ]
+  },
+  {
+    "id": "ms-b075",
+    "company": "google-deepmind",
+    "date": "2024-01-17",
+    "type": "breakthrough",
+    "name": "AlphaGeometry: Olympiad-Level AI Geometry Solver",
+    "description": "Google DeepMind's AlphaGeometry solved 25 out of 30 International Mathematical Olympiad geometry problems \u2014 approaching gold-medalist level \u2014 combining a neural language model with a symbolic deduction engine.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://deepmind.google/blog/alphageometry-an-olympiad-level-ai-system-for-geometry/",
+        "title": "AlphaGeometry: Olympiad-Level AI Geometry Solver",
+        "publisher": "Google DeepMind",
+        "date": "2024-01-17"
       }
     ]
   },
@@ -1688,7 +2786,7 @@
     "company": "mistral",
     "date": "2024-02-26",
     "type": "partnership",
-    "name": "Microsoft–Mistral AI Azure Partnership",
+    "name": "Microsoft\u2013Mistral AI Azure Partnership",
     "description": "Microsoft partners with Mistral AI to distribute Mistral Large and other models via Azure, taking a minority stake in the company.",
     "category": "cloud",
     "significance": "medium",
@@ -1698,6 +2796,24 @@
         "title": "Microsoft and Mistral AI announce new partnership",
         "publisher": "Microsoft Azure",
         "date": "2024-02-26"
+      }
+    ]
+  },
+  {
+    "id": "ms-b076",
+    "company": "openai",
+    "date": "2024-02-29",
+    "type": "breakthrough",
+    "name": "Figure AI-OpenAI Collaboration and $675M Funding",
+    "description": "Humanoid robotics startup Figure AI announced a $675M Series B and a collaboration with OpenAI to develop next-generation AI models for humanoid robots, signaling a convergence of frontier AI with embodied robotics.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.prnewswire.com/news-releases/figure-raises-675m-at-2-6b-valuation-and-signs-collaboration-agreement-with-openai-302074897.html",
+        "title": "Figure AI-OpenAI Collaboration and $675M Funding",
+        "publisher": "Figure AI / OpenAI",
+        "date": "2024-02-29"
       }
     ]
   },
@@ -1784,6 +2900,24 @@
     ]
   },
   {
+    "id": "ms-b077",
+    "company": "academic",
+    "date": "2024-03-18",
+    "type": "breakthrough",
+    "name": "NVIDIA Blackwell GPU Architecture Announced",
+    "description": "NVIDIA unveiled the Blackwell GPU architecture at GTC 2024, promising up to 25x lower cost and energy for running trillion-parameter AI models compared to Hopper (H100) generation.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://nvidianews.nvidia.com/news/nvidia-blackwell-platform-arrives-to-power-a-new-era-of-computing",
+        "title": "NVIDIA Blackwell GPU Architecture Announced",
+        "publisher": "NVIDIA",
+        "date": "2024-03-18"
+      }
+    ]
+  },
+  {
     "id": "ms-171",
     "company": "inflection-ai",
     "date": "2024-03-19",
@@ -1827,7 +2961,7 @@
     "company": "anthropic",
     "date": "2024-03-27",
     "type": "partnership",
-    "name": "Amazon–Anthropic $4B Investment Completed",
+    "name": "Amazon\u2013Anthropic $4B Investment Completed",
     "description": "Amazon formalizes the completion of its $4B investment in Anthropic, deepening Claude distribution across AWS services.",
     "category": "cloud",
     "significance": "high",
@@ -1899,7 +3033,7 @@
     "company": "openai",
     "date": "2024-04-29",
     "type": "partnership",
-    "name": "OpenAI–Financial Times Content Partnership",
+    "name": "OpenAI\u2013Financial Times Content Partnership",
     "description": "OpenAI licenses Financial Times journalism for ChatGPT with attribution, enabling product collaboration and improved model responses.",
     "category": "media",
     "significance": "medium",
@@ -2061,7 +3195,7 @@
     "company": "openai",
     "date": "2024-05-16",
     "type": "partnership",
-    "name": "OpenAI–Reddit Data Partnership",
+    "name": "OpenAI\u2013Reddit Data Partnership",
     "description": "OpenAI gains access to Reddit's Data API for incorporating content into products. Reddit uses OpenAI models for new AI features.",
     "category": "platform",
     "significance": "medium",
@@ -2115,7 +3249,7 @@
     "company": "openai",
     "date": "2024-05-22",
     "type": "partnership",
-    "name": "OpenAI–News Corp Multi-Year Licensing Deal",
+    "name": "OpenAI\u2013News Corp Multi-Year Licensing Deal",
     "description": "Multi-year agreement for OpenAI to use News Corp content across its mastheads to improve AI products.",
     "category": "media",
     "significance": "medium",
@@ -2133,7 +3267,7 @@
     "company": "openai",
     "date": "2024-05-29",
     "type": "partnership",
-    "name": "OpenAI–Vox Media and The Atlantic Partnerships",
+    "name": "OpenAI\u2013Vox Media and The Atlantic Partnerships",
     "description": "OpenAI signs content and product partnerships with Vox Media and The Atlantic for attributed use of publisher content.",
     "category": "media",
     "significance": "medium",
@@ -2169,7 +3303,7 @@
     "company": "apple",
     "date": "2024-06-10",
     "type": "partnership",
-    "name": "Apple–OpenAI ChatGPT Integration",
+    "name": "Apple\u2013OpenAI ChatGPT Integration",
     "description": "ChatGPT integrated into Apple Intelligence across iOS, iPadOS, and macOS, including Siri handoff with user consent.",
     "category": "platform",
     "significance": "high",
@@ -2179,6 +3313,24 @@
         "title": "Introducing Apple Intelligence",
         "publisher": "Apple",
         "date": "2024-06-10"
+      }
+    ]
+  },
+  {
+    "id": "ms-b078",
+    "company": "stability-ai",
+    "date": "2024-06-12",
+    "type": "breakthrough",
+    "name": "Stable Diffusion 3 Medium Open Release",
+    "description": "Stability AI released Stable Diffusion 3 Medium with a new Multimodal Diffusion Transformer (MMDiT) architecture that dramatically improved typography, prompt adherence, and photorealism.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://stability.ai/news/stable-diffusion-3-medium",
+        "title": "Stable Diffusion 3 Medium Open Release",
+        "publisher": "Stability AI",
+        "date": "2024-06-12"
       }
     ]
   },
@@ -2297,6 +3449,24 @@
         "title": "Introducing Llama 3.1",
         "publisher": "Meta AI",
         "date": "2024-07-23"
+      }
+    ]
+  },
+  {
+    "id": "ms-b079",
+    "company": "google-deepmind",
+    "date": "2024-07-25",
+    "type": "breakthrough",
+    "name": "AlphaProof and AlphaGeometry 2: Silver-Medal Math Olympiad Performance",
+    "description": "Google DeepMind's AlphaProof and AlphaGeometry 2 together solved 4 out of 6 problems at the 2024 International Mathematical Olympiad \u2014 the first time AI achieved silver-medal-equivalent performance.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://deepmind.google/blog/ai-solves-imo-problems-at-silver-medal-level/",
+        "title": "AlphaProof and AlphaGeometry 2: Silver-Medal Math Olympiad Performance",
+        "publisher": "Google DeepMind",
+        "date": "2024-07-25"
       }
     ]
   },
@@ -2557,7 +3727,7 @@
     "company": "anthropic",
     "date": "2024-11-07",
     "type": "partnership",
-    "name": "Anthropic–Palantir US Government Partnership",
+    "name": "Anthropic\u2013Palantir US Government Partnership",
     "description": "Anthropic and Palantir partner to bring Claude AI models to AWS for US government intelligence and defense operations.",
     "category": "government",
     "significance": "high",
@@ -2593,7 +3763,7 @@
     "company": "anthropic",
     "date": "2024-11-22",
     "type": "partnership",
-    "name": "Amazon–Anthropic Partnership Expanded to $8B",
+    "name": "Amazon\u2013Anthropic Partnership Expanded to $8B",
     "description": "Amazon invests an additional $4B in Anthropic, bringing total investment to $8B. AWS confirmed as primary cloud and training partner.",
     "category": "cloud",
     "significance": "high",
@@ -2715,6 +3885,24 @@
     ]
   },
   {
+    "id": "ms-b080",
+    "company": "google-deepmind",
+    "date": "2024-12-16",
+    "type": "breakthrough",
+    "name": "Google Veo 2 Video Generation Model",
+    "description": "Google DeepMind released Veo 2, delivering state-of-the-art video generation at up to 4K resolution with improved physics simulation and cinematographic controls, outperforming all competing models including Sora.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/video-image-generation-update-december-2024/",
+        "title": "Google Veo 2 Video Generation Model",
+        "publisher": "Google DeepMind",
+        "date": "2024-12-16"
+      }
+    ]
+  },
+  {
     "id": "ms-098",
     "company": "meta",
     "date": "2024-12-19",
@@ -2733,6 +3921,24 @@
     ]
   },
   {
+    "id": "ms-b081",
+    "company": "openai",
+    "date": "2024-12-20",
+    "type": "breakthrough",
+    "name": "OpenAI o3 Announced \u2014 Benchmark-Shattering Reasoning Model",
+    "description": "OpenAI announced o3, scoring 96.7% on AIME, 87.7% on GPQA Diamond, and 25.2% on FrontierMath \u2014 far surpassing every prior model and approaching expert human performance on the world's hardest benchmarks.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://techcrunch.com/2024/12/20/openai-announces-new-o3-model/",
+        "title": "OpenAI o3 Announced \u2014 Benchmark-Shattering Reasoning Model",
+        "publisher": "OpenAI",
+        "date": "2024-12-20"
+      }
+    ]
+  },
+  {
     "id": "ms-099",
     "company": "south-korea",
     "date": "2024-12-26",
@@ -2746,6 +3952,24 @@
         "url": "https://www.trade.gov/market-intelligence/south-korea-artificial-intelligence-ai-basic-act",
         "title": "South Korea Artificial Intelligence (AI) Basic Act",
         "publisher": "U.S. Department of Commerce",
+        "date": "2024-12-26"
+      }
+    ]
+  },
+  {
+    "id": "ms-b082",
+    "company": "deepseek",
+    "date": "2024-12-26",
+    "type": "breakthrough",
+    "name": "DeepSeek-V3 Released",
+    "description": "Chinese AI lab DeepSeek released DeepSeek-V3, a 671B parameter MoE model trained for approximately $5.58M \u2014 a fraction of US competitor costs \u2014 outperforming Claude 3.5 Sonnet on coding benchmarks.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://api-docs.deepseek.com/news/news241226",
+        "title": "DeepSeek-V3 Released",
+        "publisher": "DeepSeek",
         "date": "2024-12-26"
       }
     ]
@@ -2787,6 +4011,42 @@
     ]
   },
   {
+    "id": "ms-b083",
+    "company": "deepseek",
+    "date": "2025-01-20",
+    "type": "breakthrough",
+    "name": "DeepSeek-R1 Open-Source Reasoning Model",
+    "description": "DeepSeek released R1, an open-weight reasoning model matching OpenAI's o1 on math, code, and logic benchmarks. Its MIT-licensed release wiped $593B from NVIDIA's valuation and accelerated open-source AI adoption worldwide.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://api-docs.deepseek.com/news/news250120",
+        "title": "DeepSeek-R1 Open-Source Reasoning Model",
+        "publisher": "DeepSeek",
+        "date": "2025-01-20"
+      }
+    ]
+  },
+  {
+    "id": "ms-b084",
+    "company": "openai",
+    "date": "2025-01-21",
+    "type": "breakthrough",
+    "name": "The Stargate Project: $500B US AI Infrastructure Initiative",
+    "description": "President Trump, alongside OpenAI, SoftBank, and Oracle, announced The Stargate Project \u2014 a $500 billion commitment over four years to build AI infrastructure in the United States, the largest single AI infrastructure commitment in history.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://openai.com/index/announcing-the-stargate-project/",
+        "title": "The Stargate Project: $500B US AI Infrastructure Initiative",
+        "publisher": "OpenAI / SoftBank / Oracle",
+        "date": "2025-01-21"
+      }
+    ]
+  },
+  {
     "id": "ms-181",
     "company": "perplexity",
     "date": "2025-01-23",
@@ -2818,6 +4078,24 @@
         "url": "https://www.whitehouse.gov/presidential-actions/2025/01/removing-barriers-to-american-leadership-in-artificial-intelligence/",
         "title": "Removing Barriers to American Leadership in Artificial Intelligence",
         "publisher": "The White House",
+        "date": "2025-01-23"
+      }
+    ]
+  },
+  {
+    "id": "ms-b085",
+    "company": "openai",
+    "date": "2025-01-23",
+    "type": "breakthrough",
+    "name": "OpenAI Operator: Autonomous Web-Browsing AI Agent",
+    "description": "OpenAI launched Operator, a general-purpose AI agent capable of browsing the web and autonomously executing tasks \u2014 booking travel, making reservations, and completing shopping \u2014 the most capable publicly available AI agent at launch.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://openai.com/index/introducing-operator/",
+        "title": "OpenAI Operator: Autonomous Web-Browsing AI Agent",
+        "publisher": "OpenAI",
         "date": "2025-01-23"
       }
     ]
@@ -2909,6 +4187,24 @@
         "title": "Grok 3",
         "publisher": "xAI",
         "date": "2025-02-18"
+      }
+    ]
+  },
+  {
+    "id": "ms-b086",
+    "company": "academic",
+    "date": "2025-02-19",
+    "type": "breakthrough",
+    "name": "Figure AI Helix VLA Model for Humanoid Robots",
+    "description": "Figure AI unveiled Helix, the first Vision-Language-Action model to enable high-rate control of a humanoid robot's entire upper body through a single neural network running on embedded low-power GPUs.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.figure.ai/news/helix",
+        "title": "Figure AI Helix VLA Model for Humanoid Robots",
+        "publisher": "Figure AI",
+        "date": "2025-02-19"
       }
     ]
   },
@@ -3236,7 +4532,7 @@
     "type": "acquisition",
     "company": "databricks",
     "title": "Databricks acquires Neon for $1B",
-    "description": "Serverless Postgres database. 80% of new databases on Neon were being created automatically by AI agents — signaling need for AI-native database infrastructure.",
+    "description": "Serverless Postgres database. 80% of new databases on Neon were being created automatically by AI agents \u2014 signaling need for AI-native database infrastructure.",
     "source": "https://aidatainsider.com/ai/2025s-top-16-acquisitions-in-ai-data/",
     "amount": "$1 billion"
   },
@@ -3391,7 +4687,7 @@
     "company": "anthropic",
     "date": "2025-07-14",
     "type": "partnership",
-    "name": "Anthropic–US Department of Defense $200M Agreement",
+    "name": "Anthropic\u2013US Department of Defense $200M Agreement",
     "description": "Formal DoD contract for Anthropic to advance responsible AI in defense operations across workflows and partners.",
     "category": "government",
     "significance": "high",
@@ -3619,7 +4915,7 @@
     "company": "openai",
     "date": "2025-10-28",
     "type": "partnership",
-    "name": "Microsoft–OpenAI Next Chapter Partnership",
+    "name": "Microsoft\u2013OpenAI Next Chapter Partnership",
     "description": "Updated partnership terms broaden how OpenAI can serve US government national security customers across cloud providers.",
     "category": "government",
     "significance": "high",
@@ -3711,7 +5007,7 @@
     "company": "google-deepmind",
     "date": "2025-12-11",
     "type": "partnership",
-    "name": "Google DeepMind–UK Government AI Partnership",
+    "name": "Google DeepMind\u2013UK Government AI Partnership",
     "description": "Expanded partnership with the UK government and deeper collaboration with the UK AI Security Institute on safety and security research.",
     "category": "government",
     "significance": "high",
@@ -3803,6 +5099,24 @@
         "title": "South Korea launches landmark laws to regulate AI",
         "publisher": "Reuters",
         "date": "2026-01-22"
+      }
+    ]
+  },
+  {
+    "id": "ms-b087",
+    "company": "academic",
+    "date": "2026-01-01",
+    "type": "breakthrough",
+    "name": "Clawdbot (OpenClaw) Open-Source AI Agent Goes Viral",
+    "description": "Austrian developer Peter Steinberger released Clawdbot/OpenClaw on GitHub \u2014 an open-source AI agent that executes real-world tasks via messaging apps with persistent memory. It reached 60,000+ stars within days, was endorsed by Andrej Karpathy, and led to Steinberger joining OpenAI.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.cnbc.com/2026/02/02/openclaw-open-source-ai-agent-rise-controversy-clawdbot-moltbot-moltbook.html",
+        "title": "Clawdbot (OpenClaw) Open-Source AI Agent Goes Viral",
+        "publisher": "Peter Steinberger / OpenClaw",
+        "date": "2026-01-01"
       }
     ]
   },
@@ -4004,7 +5318,7 @@
     "company": "openai",
     "date": "2026-03-02",
     "type": "partnership",
-    "name": "OpenAI–Department of War Agreement",
+    "name": "OpenAI\u2013Department of War Agreement",
     "description": "OpenAI publishes agreement describing guardrails for how its AI systems would be deployed for defense and government use cases.",
     "category": "government",
     "significance": "high",
@@ -4130,7 +5444,7 @@
     "company": "openai",
     "date": "2026-03-17",
     "type": "partnership",
-    "name": "OpenAI–AWS US Defense AI Distribution Deal",
+    "name": "OpenAI\u2013AWS US Defense AI Distribution Deal",
     "description": "OpenAI partners with AWS to sell AI to US defense and government agencies through classified and unclassified cloud environments.",
     "category": "government",
     "significance": "high",
