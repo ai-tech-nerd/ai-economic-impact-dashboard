@@ -118,9 +118,15 @@ export function AITimelinePage({ milestones }: AITimelinePageProps) {
     };
   }, [milestones]);
 
+  const matchesType = (m: { type: string; types?: string[] }, filter: string) => {
+    if (filter === 'all') return true;
+    if (m.type === filter) return true;
+    return m.types?.includes(filter) ?? false;
+  };
+
   const sorted = useMemo(() => {
     return [...milestones]
-      .filter((m) => typeFilter === 'all' || m.type === typeFilter)
+      .filter((m) => matchesType(m, typeFilter))
       .filter((m) => {
         if (companyFilter !== 'all') return m.company === companyFilter;
         if (countryFilter !== 'all') return m.company === countryFilter;
@@ -129,7 +135,14 @@ export function AITimelinePage({ milestones }: AITimelinePageProps) {
       .sort((a, b) => a.date.localeCompare(b.date));
   }, [milestones, typeFilter, companyFilter, countryFilter]);
 
-  const types = Array.from(new Set(milestones.map((m) => m.type)));
+  const types = useMemo(() => {
+    const set = new Set<string>();
+    for (const m of milestones) {
+      set.add(m.type);
+      if (m.types) m.types.forEach((t) => set.add(t));
+    }
+    return Array.from(set);
+  }, [milestones]);
 
   return (
     <PageLayout

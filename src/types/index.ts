@@ -45,6 +45,7 @@ export interface AIMilestone {
   company: string;
   date: string;
   type: MilestoneType;
+  types?: MilestoneType[];
   name: string;
   description: string;
   category: string;

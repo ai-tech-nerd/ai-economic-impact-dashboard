@@ -1026,6 +1026,24 @@
     ]
   },
   {
+    "id": "ms-b088",
+    "company": "google-deepmind",
+    "date": "2016-03-15",
+    "type": "breakthrough",
+    "name": "AlphaGo Defeats World Champion Lee Sedol",
+    "description": "DeepMind's AlphaGo defeats world Go champion Lee Sedol 4\u20131, mastering a game long considered too complex for AI due to its vast number of possible moves.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://deepmind.google/research/highlighted-research/alphago/",
+        "title": "AlphaGo",
+        "publisher": "DeepMind",
+        "date": "2016-03-15"
+      }
+    ]
+  },
+  {
     "id": "ms-b056",
     "company": "google",
     "date": "2016-09-27",
@@ -1040,6 +1058,24 @@
         "title": "Google Neural Machine Translation (GNMT) Deployed",
         "publisher": "Google",
         "date": "2016-09-27"
+      }
+    ]
+  },
+  {
+    "id": "ms-b089",
+    "company": "google",
+    "date": "2017-06-12",
+    "type": "breakthrough",
+    "name": "Transformer Architecture Introduced",
+    "description": "Google researchers publish 'Attention Is All You Need,' introducing the Transformer architecture that becomes the foundation for GPT, BERT, and virtually all modern large language models.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/1706.03762",
+        "title": "Attention Is All You Need",
+        "publisher": "Google",
+        "date": "2017-06-12"
       }
     ]
   },
@@ -1094,6 +1130,32 @@
         "title": "Improving Language Understanding by Generative Pre-Training",
         "publisher": "OpenAI",
         "date": "2018-06-01"
+      }
+    ],
+    "types": [
+      "model-release",
+      "breakthrough"
+    ]
+  },
+  {
+    "id": "ms-b090",
+    "company": "google",
+    "date": "2018-10-11",
+    "type": "model-release",
+    "types": [
+      "model-release",
+      "breakthrough"
+    ],
+    "name": "BERT: Bidirectional Encoder Representations from Transformers",
+    "description": "Google researchers published BERT, a language model that pre-trains deep bidirectional representations by conditioning on both left and right context simultaneously. BERT achieved state-of-the-art results on eleven NLP benchmarks.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/1810.04805",
+        "title": "BERT",
+        "publisher": "Google",
+        "date": "2018-10-11"
       }
     ]
   },
@@ -1275,6 +1337,10 @@
         "publisher": "OpenAI",
         "date": "2020-05-01"
       }
+    ],
+    "types": [
+      "model-release",
+      "breakthrough"
     ]
   },
   {
@@ -1365,6 +1431,10 @@
         "publisher": "OpenAI",
         "date": "2021-01-05"
       }
+    ],
+    "types": [
+      "model-release",
+      "breakthrough"
     ]
   },
   {
@@ -1437,6 +1507,10 @@
         "publisher": "Google",
         "date": "2021-05-18"
       }
+    ],
+    "types": [
+      "model-release",
+      "breakthrough"
     ]
   },
   {
@@ -1581,6 +1655,10 @@
         "publisher": "Google Research Blog",
         "date": "2022-04-04"
       }
+    ],
+    "types": [
+      "model-release",
+      "breakthrough"
     ]
   },
   {
@@ -1707,6 +1785,10 @@
         "publisher": "GitHub Blog",
         "date": "2022-06-21"
       }
+    ],
+    "types": [
+      "company-launch",
+      "breakthrough"
     ]
   },
   {
@@ -1725,6 +1807,10 @@
         "publisher": "Wikipedia",
         "date": "2022-07-12"
       }
+    ],
+    "types": [
+      "company-launch",
+      "breakthrough"
     ]
   },
   {
@@ -1743,6 +1829,10 @@
         "publisher": "Stability AI",
         "date": "2022-08-22"
       }
+    ],
+    "types": [
+      "model-release",
+      "breakthrough"
     ]
   },
   {
@@ -1779,6 +1869,10 @@
         "publisher": "OpenAI",
         "date": "2022-09-21"
       }
+    ],
+    "types": [
+      "model-release",
+      "breakthrough"
     ]
   },
   {
@@ -1851,6 +1945,10 @@
         "publisher": "OpenAI",
         "date": "2022-11-30"
       }
+    ],
+    "types": [
+      "company-launch",
+      "breakthrough"
     ]
   },
   {
@@ -2049,6 +2147,10 @@
         "publisher": "OpenAI",
         "date": "2023-03-14"
       }
+    ],
+    "types": [
+      "model-release",
+      "breakthrough"
     ]
   },
   {
@@ -2229,6 +2331,10 @@
         "publisher": "Anthropic",
         "date": "2023-07-11"
       }
+    ],
+    "types": [
+      "model-release",
+      "breakthrough"
     ]
   },
   {
@@ -2283,6 +2389,10 @@
         "publisher": "Meta Newsroom",
         "date": "2023-07-18"
       }
+    ],
+    "types": [
+      "model-release",
+      "breakthrough"
     ]
   },
   {
@@ -2437,6 +2547,10 @@
         "publisher": "Mistral AI",
         "date": "2023-09-27"
       }
+    ],
+    "types": [
+      "model-release",
+      "breakthrough"
     ]
   },
   {
@@ -2473,6 +2587,10 @@
         "publisher": "xAI",
         "date": "2023-11-03"
       }
+    ],
+    "types": [
+      "model-release",
+      "breakthrough"
     ]
   },
   {
@@ -2581,6 +2699,10 @@
         "publisher": "Google",
         "date": "2023-12-06"
       }
+    ],
+    "types": [
+      "model-release",
+      "breakthrough"
     ]
   },
   {
@@ -2599,6 +2721,10 @@
         "publisher": "Mistral AI",
         "date": "2023-12-11"
       }
+    ],
+    "types": [
+      "model-release",
+      "breakthrough"
     ]
   },
   {
@@ -2761,6 +2887,10 @@
         "publisher": "OpenAI",
         "date": "2024-02-15"
       }
+    ],
+    "types": [
+      "model-release",
+      "breakthrough"
     ]
   },
   {
@@ -2779,6 +2909,10 @@
         "publisher": "Google",
         "date": "2024-02-15"
       }
+    ],
+    "types": [
+      "model-release",
+      "breakthrough"
     ]
   },
   {
@@ -2833,6 +2967,10 @@
         "publisher": "Anthropic",
         "date": "2024-03-04"
       }
+    ],
+    "types": [
+      "model-release",
+      "breakthrough"
     ]
   },
   {
@@ -2990,6 +3128,10 @@
         "publisher": "Meta AI",
         "date": "2024-04-18"
       }
+    ],
+    "types": [
+      "model-release",
+      "breakthrough"
     ]
   },
   {
@@ -3098,6 +3240,10 @@
         "publisher": "OpenAI",
         "date": "2024-05-13"
       }
+    ],
+    "types": [
+      "model-release",
+      "breakthrough"
     ]
   },
   {
@@ -3134,6 +3280,10 @@
         "publisher": "Google",
         "date": "2024-05-14"
       }
+    ],
+    "types": [
+      "model-release",
+      "breakthrough"
     ]
   },
   {
@@ -3296,6 +3446,10 @@
         "publisher": "Apple Newsroom",
         "date": "2024-06-10"
       }
+    ],
+    "types": [
+      "company-launch",
+      "breakthrough"
     ]
   },
   {
@@ -3368,6 +3522,10 @@
         "publisher": "Anthropic",
         "date": "2024-06-21"
       }
+    ],
+    "types": [
+      "model-release",
+      "breakthrough"
     ]
   },
   {
@@ -3522,6 +3680,10 @@
         "publisher": "Black Forest Labs",
         "date": "2024-08-01"
       }
+    ],
+    "types": [
+      "company-launch",
+      "breakthrough"
     ]
   },
   {
@@ -3540,6 +3702,10 @@
         "publisher": "European Commission",
         "date": "2024-08-01"
       }
+    ],
+    "types": [
+      "regulation",
+      "breakthrough"
     ]
   },
   {
@@ -3576,6 +3742,10 @@
         "publisher": "OpenAI",
         "date": "2024-09-12"
       }
+    ],
+    "types": [
+      "model-release",
+      "breakthrough"
     ]
   },
   {
@@ -3666,6 +3836,10 @@
         "publisher": "Anthropic",
         "date": "2024-10-22"
       }
+    ],
+    "types": [
+      "model-release",
+      "breakthrough"
     ]
   },
   {
@@ -3864,6 +4038,10 @@
         "publisher": "Google",
         "date": "2024-12-11"
       }
+    ],
+    "types": [
+      "model-release",
+      "breakthrough"
     ]
   },
   {
@@ -4188,6 +4366,10 @@
         "publisher": "xAI",
         "date": "2025-02-18"
       }
+    ],
+    "types": [
+      "model-release",
+      "breakthrough"
     ]
   },
   {
