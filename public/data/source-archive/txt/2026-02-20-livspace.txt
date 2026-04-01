@@ -1,0 +1,20 @@
+SOURCE URL: https://inc42.com/buzz/livspace-fires-1000-employees-cofounder-quits/
+TITLE: Livspace Fires 1,000 Employees, Cofounder Quits
+PUBLISHED: 2026-02-20
+================================================================================
+
+Home interior unicorn Livspace has eliminated 1,000 positions representing 12% of its workforce as part of a strategic pivot toward artificial intelligence and automation. The company stated this reflects deliberate resource reallocation rather than reactive cost-cutting.
+
+The spokesperson explained: "We are fundamentally reorganizing our internal operations to become an AI-native agentic organization." And: "We've integrated advanced AI agents and automation across our core functions -- Sales, Ops, Design, and Marketing. In many areas, tasks that were previously manual are now handled by intelligent systems."
+
+Layoffs were phased over six months as the company tested and deployed AI systems across sales, operations, design, and marketing functions.
+
+Cofounder and India CEO Saurabh Jain departed to pursue personal interests. He reportedly contributed significantly to developing Livspace's AI capabilities that enabled the workforce restructuring.
+
+Jain stated: "Sometimes you have to close a meaningful chapter -- not because the story ends, but because a bigger one is ready to begin."
+
+Founded in 2014, Livspace operates an omnichannel home interiors platform connecting homeowners with designers and contractors. It has raised over $450 million from investors including KKR, IKEA's parent company, and Goldman Sachs.
+
+The company insisted cuts were "not a reactive cost-cut" but "a strategic reallocation of resources."
+
+The layoffs reflect wider industry trends, with companies from Amazon to TCS cutting positions due to AI automation. However, OpenAI founder Sam Altman cautioned against "AI washing," where companies blame artificial intelligence for cuts they would implement regardless, while acknowledging genuine job displacement is occurring.

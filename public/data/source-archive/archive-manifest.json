@@ -1,5 +1,19 @@
 [
   {
+    "dir_name": "2026-03-31-oracle",
+    "old_slug": "",
+    "date": "2026-03-31",
+    "company": "Oracle",
+    "jobs": "20,000-30,000 (~18%)",
+    "category": "Cloud / Revenue & Health Sciences / SaaS & Virtual Operations / NetSuite India / Engineering",
+    "tab": "main",
+    "type": "layoff",
+    "reason": "Oracle began mass layoffs via 6 a.m. termination emails signed 'Oracle Leadership' with no prior notice from HR or managers. TD Cowen estimates 20,000-30,000 affected (~18% of workforce). Hardest-hit: Revenue & Health Sciences and SaaS operations (~30% each), plus NetSuite India Development Centre. Cuts expected to free up $8-10B in cash flow to fund $156B AI data center buildout. Oracle disclosed $2.1B restructuring plan in March 2026 SEC filing. Bloomberg reported March 5 that cuts would target 'roles the company expects it will need less of due to AI.'",
+    "source_url": "https://www.cnbc.com/2026/03/31/oracle-layoffs-ai-spending.html",
+    "screenshot_file": "2026-03-31-oracle-screenshot.png",
+    "article_file": "2026-03-31-oracle.txt"
+  },
+  {
     "dir_name": "2026-03-20-crypto-com",
     "old_slug": "crypto-com-20260320",
     "date": "2026-03-20",
@@ -124,6 +138,20 @@
     "source_url": "https://finance.yahoo.com/news/factbox-companies-cutting-jobs-investments-163752693.html",
     "screenshot_file": "2026-02-25-seb-french-appliances-screenshot.png",
     "article_file": "2026-02-25-seb-french-appliances.txt"
+  },
+  {
+    "dir_name": "2026-02-20-livspace",
+    "old_slug": "",
+    "date": "2026-02-20",
+    "company": "Livspace",
+    "jobs": "1,000 (~12%)",
+    "category": "Design / Sales / Operations / Marketing",
+    "tab": "main",
+    "type": "layoff",
+    "reason": "Spokesperson: 'We are fundamentally reorganizing our internal operations to become an AI-native agentic organization.' And: 'We've integrated advanced AI agents and automation across our core functions -- Sales, Ops, Design, and Marketing. In many areas, tasks that were previously manual are now handled by intelligent systems.' Layoffs phased over six months as AI agents were tested and deployed. Co-founder Saurabh Jain also departed. Company insisted cuts were 'not a reactive cost-cut' but 'a strategic reallocation of resources.'",
+    "source_url": "https://inc42.com/buzz/livspace-fires-1000-employees-cofounder-quits/",
+    "screenshot_file": "2026-02-20-livspace-screenshot.png",
+    "article_file": "2026-02-20-livspace.txt"
   },
   {
     "dir_name": "2026-02-12-ibm",
@@ -278,6 +306,20 @@
     "source_url": "https://finance.yahoo.com/news/factbox-companies-cutting-jobs-investments-163752693.html",
     "screenshot_file": "2026-01-12-mercadolibre-screenshot.png",
     "article_file": "2026-01-12-mercadolibre.txt"
+  },
+  {
+    "dir_name": "2026-01-07-angi",
+    "old_slug": "",
+    "date": "2026-01-07",
+    "company": "Angi (Angie's List)",
+    "jobs": "350 (~12.5%)",
+    "category": "Customer service / Sales / Marketing",
+    "tab": "main",
+    "type": "layoff",
+    "reason": "SEC filing stated cuts made 'to reduce operating expenses and optimize the organizational structure in support of long-term growth and in light of AI-driven efficiency improvements.' CEO Jeff Kip had indicated in August 2025 that Angi was investing in AI to facilitate quicker connections between homeowners and service providers. Angi launched AI Helper in June 2025. Expected annual savings of $70-80M.",
+    "source_url": "https://www.businessinsider.com/angi-layoffs-angies-list-cuts-350-jobs-ai-efficiency-gains-2026-1",
+    "screenshot_file": "2026-01-07-angi-screenshot.png",
+    "article_file": "2026-01-07-angi.txt"
   },
   {
     "dir_name": "2026-01-01-nike",

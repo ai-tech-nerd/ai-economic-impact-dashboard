@@ -1,0 +1,26 @@
+SOURCE URL: https://www.cnbc.com/2026/03/31/oracle-layoffs-ai-spending.html
+TITLE: Oracle cutting thousands in latest layoff round as company continues to ramp AI spending
+PUBLISHED: 2026-03-31
+================================================================================
+
+Oracle has started telling employees that it's cutting thousands of jobs, CNBC has confirmed, as the software maker deals with a plummeting stock price tied to hefty capital commitments for building out AI infrastructure.
+
+While Oracle's core business is on the receiving end of market panic about competitive risk from generative artificial intelligence models, the company is also facing pressure from investors about the amount of debt it's raising for AI investments and its dwindling cash flow.
+
+Business Insider reported on the latest cuts earlier on Tuesday. CNBC confirmed the cuts with two people familiar with the matter who asked not to be named because the announcement hasn't been made public.
+
+Oracle, which employed 162,000 people as of May 2025, declined to comment. The company's stock price is down 25% this year, dropping more than all of tech's megacaps.
+
+Oracle continues to sell its flagship database for storing and serving up corporate information. In recent years, alongside cloud rivals such as Amazon, the company has ratcheted up capital expenditures as it builds data center infrastructure that can handle AI workloads. But Oracle is smaller than its cloud peers.
+
+Oracle has been leaning on the debt market to fund its buildout. In January, Oracle announced plans to raise $50 billion in debt and equity. During earnings last month, executives said there were no more plans to raise debt in 2026.
+
+In September, Oracle disclosed that its remaining performance obligations, a measure of contracted revenue that has not yet been recognized, jumped 359% to $455 billion following an agreement with OpenAI worth over $300 billion. Weeks later, Oracle picked executives Mike Sicilia and Clay Magouyrk to replace Safra Catz as CEO.
+
+Cutting 20,000 to 30,000 employees could lead to $8 billion to $10 billion in incremental free cash flow, TD Cowen analysts wrote in a January note.
+
+Executives have said its AI investment will pay off, over time.
+
+"Demand for AI infrastructure, both GPU and CPU, continues to exceed supply," Magouyrk said on an earnings call earlier this month. "This is directly visible in our $553 billion remaining performance obligations."
+
+Oracle began mass layoffs via 6 a.m. termination emails signed 'Oracle Leadership' with no prior notice from HR or managers. TD Cowen estimates 20,000-30,000 affected (~18% of workforce). Hardest-hit: Revenue & Health Sciences and SaaS operations (~30% each), plus NetSuite India Development Centre. Cuts expected to free up $8-10B in cash flow to fund $156B AI data center buildout. Oracle disclosed $2.1B restructuring plan in March 2026 SEC filing. Bloomberg reported March 5 that cuts would target 'roles the company expects it will need less of due to AI.'

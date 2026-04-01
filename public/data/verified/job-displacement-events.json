@@ -1636,5 +1636,88 @@
       }
     ],
     "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-065",
+    "company": "angi",
+    "companyName": "Angi (Angie's List)",
+    "date": "2026-01-07",
+    "jobsCut": 350,
+    "jobTypes": [
+      "customer-support",
+      "sales",
+      "marketing"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "SEC filing stated cuts made 'to reduce operating expenses and optimize the organizational structure in support of long-term growth and in light of AI-driven efficiency improvements.' Expected annual savings of $70-80M.",
+    "description": "Angi (Angie's List) cut 350 jobs (~12.5% of workforce) across customer service, sales, and marketing. SEC filing cited 'AI-driven efficiency improvements.' Company had launched AI Helper in June 2025.",
+    "sources": [
+      {
+        "url": "https://www.businessinsider.com/angi-layoffs-angies-list-cuts-350-jobs-ai-efficiency-gains-2026-1",
+        "title": "Angi is cutting 350 jobs 'in light of AI-driven efficiency improvements'",
+        "publisher": "Business Insider",
+        "date": "2026-01-08"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-066",
+    "company": "livspace",
+    "companyName": "Livspace",
+    "date": "2026-02-20",
+    "jobsCut": 1000,
+    "jobTypes": [
+      "design",
+      "sales",
+      "operations",
+      "marketing"
+    ],
+    "industry": "Technology",
+    "region": "Asia",
+    "country": "IN",
+    "aiReplacement": true,
+    "reasonGiven": "Spokesperson: 'We are fundamentally reorganizing our internal operations to become an AI-native agentic organization.' Integrated AI agents across Sales, Ops, Design, and Marketing.",
+    "description": "Livspace cut 1,000 jobs (~12% of workforce) across design, sales, operations, and marketing. Company pivoted to 'AI-native agentic organization' with AI agents replacing manual tasks.",
+    "sources": [
+      {
+        "url": "https://inc42.com/buzz/livspace-fires-1000-employees-cofounder-quits/",
+        "title": "Livspace Fires 1,000 Employees, Cofounder Quits",
+        "publisher": "Inc42",
+        "date": "2026-02-20"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-067",
+    "company": "oracle",
+    "companyName": "Oracle",
+    "date": "2026-03-31",
+    "jobsCut": 25000,
+    "jobTypes": [
+      "cloud",
+      "engineering",
+      "operations",
+      "general"
+    ],
+    "industry": "Technology",
+    "region": "Global",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "TD Cowen estimates 20,000-30,000 affected (~18% of workforce). Cuts expected to free up $8-10B in cash flow to fund $156B AI data center buildout. Bloomberg reported cuts would target 'roles the company expects it will need less of due to AI.'",
+    "description": "Oracle cut an estimated 20,000-30,000 jobs (~18% of workforce) across cloud, engineering, and operations. Cuts fund $156B AI data center buildout.",
+    "sources": [
+      {
+        "url": "https://www.cnbc.com/2026/03/31/oracle-layoffs-ai-spending.html",
+        "title": "Oracle cutting thousands in latest layoff round as company continues to ramp AI spending",
+        "publisher": "CNBC",
+        "date": "2026-03-31"
+      }
+    ],
+    "verificationStatus": "verified"
   }
 ]
