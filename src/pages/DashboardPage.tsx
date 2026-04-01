@@ -4,7 +4,7 @@ import { TotalCounter } from '../components/dashboard/TotalCounter';
 import { TrendLine } from '../components/dashboard/TrendLine';
 import { JobTypesChart } from '../components/dashboard/JobTypesChart';
 import { IndustryBreakdown } from '../components/dashboard/IndustryBreakdown';
-import { CompanyTable } from '../components/dashboard/CompanyTable';
+import { SourceArchive } from '../components/dashboard/SourceArchive';
 import { CardEmbedButton } from '../components/ui/CardEmbedButton';
 import { getTotalJobsCut, getCompanySummary } from '../utils/dataTransformers';
 import { formatNumber } from '../utils/formatters';
@@ -110,7 +110,7 @@ export function DashboardPage({ events, plannedEvents, creationEvents }: Dashboa
           </div>
         </div>
 
-        <CompanyTable events={events} plannedEvents={plannedEvents} creationEvents={creationEvents} />
+        <SourceArchive />
       </div>
     </PageLayout>
   );

@@ -1,0 +1,22 @@
+SOURCE URL: https://en-contact.com/onclusive-formerly-known-as-kantar-is-reducing-its-teams-to-replace-them-with-ai
+TITLE: Onclusive, formerly known as Kantar, is reducing its teams to replace them with AI
+AUTHOR: Magazine En-Contact
+PUBLISHED: 2025-09-26
+PAYWALL: False
+================================================================================
+
+# Onclusive, formerly known as Kantar, is reducing its teams to replace them with AI
+
+At the end of 2023, the employees of Onclusive, a French company based in La Défense and a key player in media monitoring in France, became the actors of the first redundancy plan in France caused by the irruption of artificial intelligence (AI) in the world of work: 209 people will leave or have already left the company, which had up to 383 positions, made redundant to be replaced by AI-powered computers. Eight vacant positions will be left without replacement and 23 "new functions will be created", according to the newspaper Libération.
+
+The company, long known as Kantar and now owned by the American investment fund STG, specialises in providing summaries of press articles and audiovisual extracts, which are sent to some 9,000 customers, including major private groups (notably CAC40 companies such as Rolex, TotalEnergies and L'Oréal) and public-sector groups (FranceTélévisions and SNCF), as well as ministries, the government information service (SIG) and public services such as Pôle Emploi and the Banque de France. This is one of those activities that lends itself perfectly to the automation that artificial intelligence can provide. Particularly since AI has seen some spectacular and much-publicised advances in recent months, with generative artificial intelligence tools such as ChatGPT from OpenAI and its competitors launched by internet giants such as Google and Meta (Facebook). "We all fell out of our chairs, we didn't expect it to be this big", said one of the employees to Le Parisien, who learned the news on 5 September from an e-mail from CEO Rob Stone, sent from STG's world headquarters in London.
+
+The CEO does not talk about "job cuts" or "redundancies", and justifies the forced departures by the need "to become more agile and more competitive" by adopting "new technologies and new tools that will streamline operations [...] and improve efficiency and accuracy". In any case, this first redundancy plan triggered by the use of AI is raising questions all the way to the government, which is also Onclusive's customer." The SIG [...] will ask the company about the guarantees it intends to provide to maintain the level of skills, expertise and quality of deliverables within the framework of the contracts that bind them to the administration", the SIG told Médiapart.
+
+At the same time, the company and one of its subsidiaries, Digimind, are the subject of legal proceedings brought by major French media groups. They accuse the company of producing press reviews incorporating their articles and content without paying them legally or in the right proportions. The damage is said to exceed €5 million.
+
+En-Contact discovered that its content, normally available only to subscribers, was appearing in press summaries the day after publication. Reputation on line or Onclusive, the third parties concerned, were not subscribers to our magazine.
+
+Sources: La Dépêche, Libération + interview we conducted with Onclusive.
+
+To wit: Cision, formerly Argus de la presse, is one of Onclusive's competitors.

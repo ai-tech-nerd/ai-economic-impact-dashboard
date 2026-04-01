@@ -1,0 +1,76 @@
+SOURCE URL: https://www.businessinsider.com/list-companies-replacing-human-employees-with-ai-layoffs-workforce-reductions
+TITLE: Companies That Signal They Are Replacing Workers With AI
+PUBLISHED: 2026-03-19
+================================================================================
+
+Updated
+
+- Companies like Crypto.com and IBM have signaled they're replacing jobs with AI.
+- In February, CEO Jack Dorsey announced that Block was eliminating approximately 40% of staff.
+- Klarna's workforce has halved in the last four years, and its CEO says it will shrink more.
+
+Worries about AI one day replacing human workers have intensified in recent years — and as it turns out, that future has already arrived.
+
+MIT released a study last year that found that AI can already replace 11.7% of the US labor market. The study utilized a labor simulation tool called the Iceberg Index, which models 151 million US workers and measures how AI overlaps with skills in each occupation.
+
+As AI starts to replace human workers and companies invest heavily in the tech, companies have been increasingly open about the role AI adoption is playing in recent layoffs.
+
+A World Economic Forum survey found that 41% of companies globally are expected to reduce their workforces over the next five years because of AI. Meanwhile, tech jobs in big data, fintech, and AI are expected to double by 2030.
+
+## Amazon
+
+Amazon CEO Andy Jassy has said that AI-driven efficiency gains would shrink the retail giant's workforce in the coming years — but in the company's two recent mass layoffs, Jassy said the cuts were about culture, not AI.
+
+"Our ambition is to be the world's largest startup," Amazon executives wrote in two memos viewed by Business Insider in January. "That means doubling down on a culture of ownership, speed, and experimentation — which requires us to continue evolving how we're structured."
+
+## Atlassian
+
+Atlassian announced cuts of 1,600 jobs in March, totaling about 10% of its global workforce. The move comes as the Australian-American software company says it is restructuring to focus on AI and enterprise growth.
+
+In a filing with the US Securities and Exchange Commission, the company said the reduction was part of a broader effort to reposition the business for what CEO Mike Cannon-Brookes described as the "AI era."
+
+"It would be disingenuous to pretend AI doesn't change the mix of skills we need or the number of roles required in certain areas. It does," Cannon-Brookes wrote in a message to employees.
+
+## Block
+
+In a post on X last month, billionaire and Block CEO Jack Dorsey said he was slashing nearly half of Block's workforce, cutting its over 10,000-person staff to under 6,000.
+
+"We're already seeing that the intelligence tools we're creating and using, paired with smaller and flatter teams, are enabling a new way of working which fundamentally changes what it means to build and run a company," Dorsey said in his memo on X.
+
+## Crypto.com
+
+Crypto.com announced on March 19 that it would cut 12% of its staff. The CEO, Kris Marszalek, wrote in a post on X that those impacted were in "roles that do not adapt in our new world."
+
+"We are joining the list of companies integrating enterprise-wide AI," Marszalek wrote on X. "Companies that move immediately and pair the best AI tools with top-performers will achieve a level of scale and precision that was previously impossible."
+
+## Fiverr
+
+Micha Kaufman, the CEO and founder of Fiverr, said last September that the company was slashing roughly 30% of its workforce. The CEO said that the cuts were needed to help turn Fiverr into a leaner and faster "AI-first company."
+
+## HP
+
+HP said it's reducing the size of its corporate workforce as a result of AI initiatives. In an earnings report last November, the company said it plans to cut between 4,000 and 6,000 jobs by the end of 2028, estimating the changes would save around $1 billion.
+
+## IBM
+
+Arvind Krishna, CEO of IBM, told The Wall Street Journal last year that it had replaced hundreds of human resources employees with AI. More recently, the company announced last November that it would cut thousands of workers in the fourth quarter of 2025. 
+
+In 2023, Krishna told Bloomberg that IBM had halted or slowed hiring for back-office roles, like in human resources, that could be replaced by AI. "I could easily see 30% of that getting replaced by AI and automation over a five-year period," he told the outlet at the time.
+
+## Klarna
+
+Klarna's CEO says its workforce has halved over the last four years and will shrink further in the coming years. In an interview on the "20 VC" podcast, Sebastian Siemiatkowski said there are about 3,000 employees at Klarna, and he expects the company's workforce to drop below 2,000 by 2030. The company had 7,000 employees in 2022.
+
+A spokesperson said that Klarna's AI assistant handles the equivalent workload of 853 full-time agents, up from 700 at launch, saving the company an estimated $58 million annually.
+
+## Salesforce
+
+Salesforce cut fewer than 1,000 workers in February, including employees from marketing, product management, data analytics, and its Agentforce AI product.
+
+In an episode of "The Logan Bartlett Show" released last August, Salesforce CEO Marc Benioff said the company was using AI agents in its customer support division to replace humans. "I've reduced it from 9,000 heads to about 5,000 because I need less heads."
+
+## Wisetech
+
+Zubin Appoo, the CEO of Wisetech, said the logistics software maker is cutting 2,000 jobs, or 30% of its staff, because of AI-led efficiency. "I am prepared to say this clearly: the era of manually writing code as the core act of engineering is over."
+
+Correction: December 1, 2025 — The bullet points of this article have been updated to clarify Amazon's statements about how AI may affect its workforce.

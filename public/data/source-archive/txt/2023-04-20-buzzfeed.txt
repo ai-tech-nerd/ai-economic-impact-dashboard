@@ -1,0 +1,13 @@
+SOURCE URL: https://www.cnbc.com/2023/04/20/buzzfeed-will-lay-off-15percent-of-staff-shutter-its-news-unit.html
+TITLE: Access Denied - BuzzFeed layoff article (CNBC)
+PUBLISHED: 2023-04-20
+FETCH_ERROR: Access denied by CDN (Akamai block)
+================================================================================
+
+[FETCH FAILED - Access Denied]
+
+This URL returned an access denial error (Akamai CDN block). No article content was retrievable.
+
+URL: https://www.cnbc.com/2023/04/20/buzzfeed-will-lay-off-15percent-of-staff-shutter-its-news-unit.html
+
+Error: Reference #18.a924c317.1729022261.7bd87549

@@ -1,7 +1,7 @@
 import { TrendLine } from '../../components/dashboard/TrendLine';
 import { JobTypesChart } from '../../components/dashboard/JobTypesChart';
 import { IndustryBreakdown } from '../../components/dashboard/IndustryBreakdown';
-import { CompanyTable } from '../../components/dashboard/CompanyTable';
+import { SourceArchive } from '../../components/dashboard/SourceArchive';
 import { formatNumber } from '../../utils/formatters';
 import type { DisplacementEvent } from '../../types';
 
@@ -57,10 +57,10 @@ export function IndustryWidget({ events }: EventsProps) {
   );
 }
 
-export function CompaniesWidget({ events, plannedEvents, creationEvents }: AllEventsProps) {
+export function CompaniesWidget(_props: AllEventsProps) {
   return (
     <WidgetWrapper>
-      <CompanyTable events={events} plannedEvents={plannedEvents} creationEvents={creationEvents} />
+      <SourceArchive />
     </WidgetWrapper>
   );
 }

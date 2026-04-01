@@ -1,0 +1,14 @@
+SOURCE URL: https://www.theverge.com/news/657594/duolingo-ai-first-replace-contract-workers
+TITLE: Duolingo will replace contract workers with AI
+PUBLISHED: 2025-04-28
+================================================================================
+
+Duolingo plans to "slowly discontinue the use of contractors for tasks that AI can perform," as outlined in a company-wide email from co-founder and CEO Luis von Ahn, who declared that the organization will adopt an "AI-first" approach. This communication was also shared on Duolingo's LinkedIn page.
+
+As von Ahn explained, embracing an "AI-first" philosophy necessitates a re-evaluation of many operational practices, emphasizing that "simply making small adjustments to human-centered systems will not suffice." In line with this transition, the company intends to implement "some constructive limitations," which will include alterations in its contractor relationships and an increased focus on AI applications in recruitment and performance assessments. Additionally, he noted that "new hires will only be authorized if a team is unable to automate a greater portion of their responsibilities."
+
+Von Ahn reassured that "Duolingo will continue to be a company that values its workforce" and clarified that "this initiative is not about substituting human roles with AI." Rather, he indicated that the focus of these changes is to "eliminate obstacles," enabling employees to "concentrate on innovative work and genuine challenges, rather than monotonous tasks."
+
+"AI is not merely a tool for enhancing productivity," von Ahn asserted. "It brings us closer to our objective. To teach effectively, we must generate a vast amount of content, and accomplishing that manually lacks scalability. One of our most significant recent choices was to replace a sluggish, manual content generation method with an AI-driven one. Without AI, it would take us many years to expand our content for a larger audience. We have a responsibility to deliver this content to our learners as quickly as possible."
+
+This email from von Ahn comes in the wake of a similar message from Shopify CEO Tobi Lütke, which he recently shared publicly. In that communication, Lütke stated that teams should demonstrate "why they cannot achieve their goals using AI" before seeking additional personnel or resources.

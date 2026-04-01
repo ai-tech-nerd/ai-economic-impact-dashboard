@@ -1,0 +1,20 @@
+SOURCE URL: https://www.nytimes.com/2024/01/08/technology/unity-software-job-cuts.html
+TITLE: Unity Software to Cut 25% of Its Work Force
+PUBLISHED: 2024-01-08
+================================================================================
+
+Unity Software, a provider of video game development tools, announced on Monday its intention to reduce its workforce by 25 percent, translating to approximately 1,800 positions. This marks one of the earliest significant layoffs in the tech sector this year.
+
+In a filing with securities regulators, Unity explained that this reduction would facilitate a restructuring aimed at refocusing on its primary business and positioning the company for sustainable, profitable growth in the future. The organization noted that various teams throughout the company would be impacted by these layoffs.
+
+In a related development, Xerox revealed last week its plan to terminate 15 percent of its global workforce, which consists of 23,000 employees, in the first quarter of 2024. This move is part of its strategy to shift its emphasis from photocopiers to services.
+
+These layoffs may indicate the beginning of another challenging year for the technology sector, which experienced significant job cuts last year due to difficult economic circumstances and overly optimistic growth forecasts. While several tech firms have claimed that the most challenging times are behind them, few have managed to regain the pre-pandemic sales momentum that led to their initial overstaffing.
+
+Unity has previously implemented job reductions, including a cut of 265 positions last November, following a 'reset' announced by interim CEO James Whitehurst during an earnings call.
+
+The company expressed in its announcement that the decision was made with careful consideration and reaffirmed its commitment to assist the employees who will be affected.
+
+Based in San Francisco, Unity's software serves as the foundational technology for video games created by over two million developers worldwide.
+
+Last fall, Unity encountered significant backlash from numerous game developers globally due to a modification in its pricing model. This new fee structure would have imposed higher charges on developers as their games increased in popularity. In October, John Ricciello, a key advocate for the pricing changes, resigned as CEO after nine years with Unity.

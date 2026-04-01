@@ -1,0 +1,212 @@
+SOURCE URL: https://programs.com/resources/ai-layoffs/
+TITLE: List of Companies Announcing AI-Driven Layoffs - Programs.com
+PUBLISHED: 2025-12-19
+================================================================================
+
+A growing number of companies have cited artificial intelligence and automation as reasons for cutting staff in recent months.
+
+In many cases, executives said AI systems were already replacing key roles and allowing teams to operate with far fewer people.
+
+We reviewed hundreds of company disclosures, earnings calls, and major media reporting to identify layoffs where AI or automation was directly named as a driver.
+
+Key Findings:
+- Over 100,000 employees were impacted by AI-driven layoffs in 2025.
+- Over 30,000 employees have already been impacted by AI-driven layoffs in 2026.
+- 45+ CEOs have announced layoffs due to efficiencies made by AI.
+- AI layoff announcements came from non-tech industries like finance, logistics, consulting, media, retail, and manufacturing.
+- At least 8 companies announced AI-related layoffs affecting 10,000+ employees each (including Accenture, Amazon, Citigroup, Dell, Intel, Microsoft, TCS, and UPS).
+- More than 60% of announced layoffs occurred at companies with over 100,000 employees.
+
+## Major AI-Related Layoffs and Hiring Freezes in 2025/2026
+
+### Accenture
+No. of Employees Impacted: ~11,000 | Industry: IT Consulting | Date: December 2025
+Accenture said it would cut roughly 11,000 roles as part of a restructuring tied to how work is changing inside the firm. CEO Julie Sweet made clear that "those we cannot reskill will be exited", instead focusing on automation and AI tools for internal tasks.
+
+### Amazon
+No. of Employees Impacted: ~30,000 | Industry: Technology / E-commerce | Date: October 2025, January 2026
+In late 2025, Amazon eliminated about 14,000 corporate jobs as it flattened management layers. Beth Galetti, Amazon's Senior Vice President, pointed to advances in AI as one reason the company could operate more efficiently with fewer people. This was followed by a further 16,000 at the start of 2026.
+
+### ASML
+No. of Employees Impacted: ~1,700 | Industry: Technology | Date: January 2026
+The world's leading supplier for the semiconductor industry announced initial cuts of 1,700 jobs, making up 3.8% of the total staff.
+
+### Autodesk
+No. of Employees Impacted: ~1,000 | Industry: Technology | Date: January 2026
+Around 7% of Autodesk's workforce was laid off as part of "strategic shifts", pivoting focus towards AI.
+
+### Baker McKenzie
+No. of Employees Impacted: 600-1,000 | Industry: Law | Date: February 2026
+Law firm Baker McKenzie is laying off between 600 and 1,000 employees (up to 10% of its global workforce) as part of a shift towards AI.
+
+### BlackRock
+No. of Employees Impacted: ~300 | Industry: Financial Services | Date: June 2025
+BlackRock reduced its workforce by roughly 300 employees while shifting more resources toward technology and data-driven systems.
+
+### Block
+No. of Employees Impacted: 4,000 | Industry: Fintech | Date: February 2026
+Block CEO Jack Dorsey announced a layoff that cut the company's headcount nearly in half (from 10,000 to fewer than 6,000). The move was directly attributed to AI.
+
+### C.H. Robinson Worldwide
+No. of Employees Impacted: ~1,400 | Industry: Logistics | Date: October 2025
+C.H. Robinson cut about 1,400 jobs after rolling out AI-driven tools for pricing, scheduling, and shipment tracking.
+
+### Chegg
+No. of Employees Impacted: ~388 | Industry: Education Technology | Date: October 2025
+Chegg laid off nearly half (45%) of its workforce as students increasingly turned to generative AI tools instead of traditional homework-help platforms.
+
+### Cisco
+No. of Employees Impacted: ~221 | Industry: Technology | Date: August 2025
+Cisco announced plans to cut over 200 jobs following lay-offs for over 6,000 people (around 7% of the workforce) in 2024, shifting its focus toward AI-driven networking and security products.
+
+### Citigroup
+No. of Employees Impacted: ~20,000 (target) | Industry: Financial Services | Date: Planned for 2026
+CFO Mark Mason expects Citigroup's headcount to be down by roughly 20,000 as part of a broad overhaul of its operations.
+
+### Crowdstrike
+No. of Employees Impacted: ~500 | Industry: Cybersecurity | Date: May 2025
+The cybersecurity firm revealed plans to lay off 5% of its staff, citing "AI efficiency" as one of the reasons.
+
+### Dell Technologies
+No. of Employees Impacted: ~12,500 | Industry: Technology / Hardware | Date: August 2024
+Dell cut roughly 12,500 jobs as it reorganized around demand for AI servers and infrastructure.
+
+### Dropbox
+No. of Employees Impacted: 528 | Industry: Software | Date: October 2024
+Dropbox laid off 528 employees as it refocused the business around AI-powered search and productivity tools. CEO Drew Houston cited the desire to build a flatter and more efficient team structure.
+
+### Dow
+No. of Employees Impacted: ~4,500 | Industry: Manufacturing | Date: January 2026
+American materials science & chemical manufacturing giant Dow announced 4,500 job cuts as focus shifts to AI.
+
+### Fiverr
+No. of Employees Impacted: ~250 | Industry: Online Marketplace | Date: September 2025
+Fiverr reduced its workforce by about 30% as it repositioned itself as an "AI-first" company.
+
+### Five9
+No. of Employees Impacted: ~4% of workforce | Industry: Software | Date: April 2025
+Five9 cut staff as automation expanded across its contact-center platform.
+
+### Goldman Sachs
+No. of Employees Impacted: Not disclosed | Industry: Financial Services | Date: November 2025
+Goldman Sachs told employees to expect job cuts as the firm pushed to benefit more fully from AI-driven productivity.
+
+### Google Cloud
+No. of Employees Impacted: 100+ | Industry: Technology | Date: October 2025
+Google Cloud eliminated more than 100 design and user-experience roles as it redirected resources toward AI engineering.
+
+### Grammarly
+No. of Employees Impacted: ~230 | Industry: Software | Date: February 2024
+Grammarly laid off approximately 230 employees as part of a business restructuring focused on AI-enabled writing and productivity tools.
+
+### HP Inc.
+No. of Employees Impacted: ~6,000 | Industry: Technology | Date: November 2025
+HP announced workforce reductions tied to automation and AI-driven productivity efforts.
+
+### IBM
+No. of Employees Impacted: ~2,000-3,000 | Industry: Technology | Date: November 2025
+IBM said AI agents had already replaced hundreds of back-office roles and confirmed additional cuts as it shifted talent toward AI and quantum computing.
+
+### ING Group
+No. of Employees Impacted: ~1,000 at risk | Industry: Banking | Date: October 2025
+ING has said that up to 1,000 further roles could be eliminated as digital banking tools and AI systems reduced staffing needs.
+
+### Intel
+No. of Employees Impacted: ~24,000 | Industry: Semiconductors | Date: July 2025
+Intel announced large-scale layoffs as it redirected capital toward AI chips and advanced manufacturing.
+
+### Intuit
+No. of Employees Impacted: ~1,800 | Industry: Software | Date: July 2025
+Intuit reduced headcount as AI-assisted workflows became more common across finance, tax, and customer support teams.
+
+### Just Eat Takeaway
+No. of Employees Impacted: ~450 | Industry: Food Delivery | Date: September 2025
+Just Eat Takeaway cut about 450 jobs after reviewing its cost base and operations.
+
+### Klarna
+No. of Employees Impacted: ~700 | Industry: Fintech | Date: May 2025
+Klarna continued trimming staff as AI replaced customer support and operational roles.
+
+### Lufthansa
+No. of Employees Impacted: ~4,000 (planned) | Industry: Aviation | Date: By 2030
+Lufthansa said it would eliminate thousands of administrative roles as automation and AI were rolled out.
+
+### Meta
+No. of Employees Impacted: ~1,500 | Industry: Media & Technology | Date: February 2026
+Approximately 1,500 jobs, affecting 10% of Meta's Reality Labs division, are set to be cut.
+
+### McKinsey & Company
+No. of Employees Impacted: ~200 | Industry: Consulting | Date: November 2025
+McKinsey laid off around 200 internal technology and support employees after automating non-client-facing work with AI systems.
+
+### Microsoft
+No. of Employees Impacted: ~15,000 | Industry: Technology | Date: July 2025
+Microsoft reduced headcount as it shifted resources toward AI products and infrastructure.
+
+### Nike
+No. of Employees Impacted: ~1,600 | Industry: Retail | Date: February 2025
+Nike cut roles as it automated parts of its supply chain and digital operations.
+
+### Omnicom Group
+No. of Employees Impacted: ~4,000 | Industry: Media & Advertising | Date: December 2025
+Omnicom announced major layoffs following its acquisition of Interpublic Group, citing generative AI.
+
+### Ocado
+No. of Employees Impacted: ~1,000 | Industry: E-commerce | Date: March 2026
+Online grocery company Ocado revealed that it intends to cut 1,000 roles.
+
+### Paycom
+No. of Employees Impacted: 500+ | Industry: HR Software | Date: October 2025
+Paycom laid off more than 500 employees after automating payroll and back-office functions.
+
+### PayPal
+No. of Employees Impacted: ~2,500 | Industry: Fintech | Date: January 2024
+PayPal reduced staff as automation expanded across fraud detection, risk management, and customer support.
+
+### Pinterest
+No. of Employees Impacted: ~700 | Industry: Media & Social | Date: January 2026
+Pinterest announced cuts to 15% of its workforce in an effort to move towards AI.
+
+### Recruit Holdings
+No. of Employees Impacted: ~1,300 | Industry: Recruitment | Date: July 2025
+Recruit Holdings CEO stated that "AI is changing the world", forcing the company to slash 1,300 jobs.
+
+### SAP
+No. of Employees Impacted: ~3,000 | Industry: Enterprise Software | Date: April 2025
+SAP announced large layoffs as part of a shift toward "Business AI."
+
+### Salesforce
+No. of Employees Impacted: ~5,000 | Industry: Enterprise Software | Date: August 2025, February 2026
+Salesforce cut around 4,000 customer support roles after deploying AI systems that handle a growing share of service requests.
+
+### Tata Consultancy Services (TCS)
+No. of Employees Impacted: 12,000 | Industry: IT Services | Date: July 2025
+TCS cut about 2% of its workforce as it responded to shifting global demand and growing influence of automation.
+
+### TikTok
+No. of Employees Impacted: Hundreds | Industry: Media / Social | Date: August 2025
+TikTok reduced trust and safety staffing as automated moderation systems replaced parts of the review process.
+
+### UPS
+No. of Employees Impacted: ~48,000 | Industry: Logistics | Date: November 2025
+UPS announced major job cuts under its "Network of the Future" initiative, saying automation and AI-enabled logistics allowed it to move more volume with fewer workers.
+
+### Unity
+No. of Employees Impacted: ~1,800 | Industry: Software | Date: January 2024
+Unity cut around 25% of its workforce roles as it focused more heavily on AI-assisted creation tools for developers.
+
+### Workday
+No. of Employees Impacted: ~1,750 | Industry: Enterprise Software | Date: February 2025
+Workday reduced headcount as efficiency gains and AI investments lowered staffing needs in some teams.
+
+### Xerox
+No. of Employees Impacted: ~3,000 | Industry: Technology | Date: January 2024
+Xerox laid off 15% of its employees as automation reshaped its print and services businesses.
+
+### YouTube (Alphabet)
+No. of Employees Impacted: Voluntary exits | Industry: Online Media | Date: October 2025
+YouTube offered buyouts as part of a reorganization focused on expanding AI across the platform.
+
+## Conclusion
+
+This list likely understates the full impact of AI on employment. Many companies bundle AI-driven reductions into broader restructuring announcements, while others avoid attributing layoffs directly to automation.

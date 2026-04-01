@@ -1,0 +1,24 @@
+SOURCE URL: https://www.cnn.com/2024/01/09/tech/duolingo-layoffs-due-to-ai
+TITLE: Duolingo lays off staff as language learning app shifts toward AI
+PUBLISHED: 2024-01-09
+================================================================================
+
+Duolingo has announced that it has reduced its contract workforce by roughly 10%, as stated in a report to CNN on Tuesday. This decision aligns with the company's strategy to increasingly integrate artificial intelligence into its operations.
+
+Although not all of the job cuts were directly linked to technological advancements, Duolingo terminated some contractor positions at the end of 2023 to facilitate AI-driven modifications in content creation and distribution. The firm clarified that no full-time employees were impacted by these layoffs and that efforts were made to find alternative positions for those affected before resorting to 'off-boarding' as a final measure.
+
+As a virtual language tutor, Duolingo boasts 24.2 million daily users, 5.8 million paid subscribers, and offers over 100 different courses.
+
+In its commitment to incorporating AI into its services, Duolingo introduced a new subscription level called 'Duolingo Max' in March. This tier utilizes OpenAI's sophisticated language model GPT-4, enabling features such as engaging in full conversations with a chatbot for skill practice and receiving AI-generated clarifications regarding the correctness of answers.
+
+"Generative AI is speeding up our processes by allowing us to produce new content significantly faster," stated CEO Luis von Ahn in a letter to shareholders in November.
+
+In light of the contractor layoffs, Duolingo indicated that AI will play a larger role in tasks like generating sentences for courses, compiling lists of valid translations, and analyzing user error reports to rectify mistakes more efficiently.
+
+Despite reducing its workforce to leverage AI for content creation and verification, Duolingo emphasized that human oversight is still essential for reviewing AI-generated work. "We are not replacing the knowledge of human specialists with AI," the company explained to CNN. "AI serves as a tool to enhance productivity and efficiency."
+
+Duolingo is not the only organization making workforce reductions in favor of AI. A report from ResumeBuilder in November revealed that 37% of surveyed companies indicated they had replaced employees with AI in 2023. Furthermore, 44% anticipated that this technology could lead to additional layoffs in 2024.
+
+Additionally, in late April, Dropbox announced it would be reducing its workforce by about 16%, equating to around 500 positions, also citing AI as a factor in its decision-making process.
+
+This report was contributed by CNN's Catherine Thorbecke.
