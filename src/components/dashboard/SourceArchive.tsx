@@ -164,15 +164,6 @@ export function SourceArchive() {
         <p className="text-center text-surface-400 py-8">No matching entries found.</p>
       )}
 
-      {/* Footer link to full archive */}
-      <div className="mt-4 pt-4 border-t border-surface-100 text-center">
-        <a
-          href={`${BASE}data/source-archive/`}
-          className="text-sm text-primary-600 hover:text-primary-700 font-medium no-underline"
-        >
-          View full Source Archive →
-        </a>
-      </div>
     </ChartContainer>
   );
 }
