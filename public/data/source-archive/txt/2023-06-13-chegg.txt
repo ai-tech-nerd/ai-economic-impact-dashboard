@@ -1,0 +1,30 @@
+SOURCE URL: https://nypost.com/2023/06/13/chegg-cuts-4-of-staff-over-chatgpt-crushing-business/
+TITLE: Homework helper Chegg cutting 4% of staff as ChatGPT threatens business
+PUBLISHED: 2025-06-13
+================================================================================
+
+Struggling online learning platform Chegg disclosed plans to cut about 4% of its workforce — weeks after the company's CEO admitted that OpenAI's ChatGPT was crushing its business as more students use artificial intelligence for homework help.
+
+Chegg said the cuts would amount to "about 80 employees" and would "better position the company to execute against its AI strategy and to create long-term sustainable value for its students and investors."
+
+The company expects to "incur charges of approximately $5 million to $6 million in connection with these actions, primarily consisting of cash expenditures for severance payments, employee benefits and related costs," according to a regulatory filing on Monday.
+
+OpenAI's chatbot popularity has spurred concerns among a growing number of critics who have warned about its potential to fuel student cheating on school assignments, cause massive job losses, spread online misinformation or even cause the downfall of humanity.
+
+ChatGPT represents a significant threat to Chegg's business model, which includes a heavy focus on subscription-based homework help, textbook rentals, test prep and other education-related resources for students.
+
+OpenAI's chatbot offers access to much of the same information for free, with just a few keystrokes.
+
+As The Post reported in May, Chegg CEO Dan Rosensweig told analysts that ChatGPT was hurting the firm's ability to lure new customers.
+
+"In the first part of the year, we saw no noticeable impact from ChatGPT on our new account growth, and we were meeting expectations on new sign ups," Rosensweig said at the time.
+
+"However, since March, we saw a significant spike in student interest in ChatGPT. We now believe it's having an impact on our new customer growth," he added.
+
+The regulatory filing referenced Chegg's own AI-related plans.
+
+The company has developed its own AI chatbot, dubbed CheggMate, in collaboration with OpenAI.
+
+Rosensweig previously said CheggMate will "harness the power of ChatGPT paired with our proprietary data and subject matter experts to make learning more personalized, adaptive, accurate, fast and effective."
+
+Chegg's stock fell by 48% in one trading session following Rosensweig's words. Shares are down whopping 57% since the start of the year — a decline that coincided with the wider adoption of ChatGPT.

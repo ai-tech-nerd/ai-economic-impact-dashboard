@@ -15,12 +15,10 @@ Oracle continues to sell its flagship database for storing and serving up corpor
 
 Oracle has been leaning on the debt market to fund its buildout. In January, Oracle announced plans to raise $50 billion in debt and equity. During earnings last month, executives said there were no more plans to raise debt in 2026.
 
-In September, Oracle disclosed that its remaining performance obligations, a measure of contracted revenue that has not yet been recognized, jumped 359% to $455 billion following an agreement with OpenAI worth over $300 billion. Weeks later, Oracle picked executives Mike Sicilia and Clay Magouyrk to replace Safra Catz as CEO.
+In September, Oracle disclosed that its remaining performance obligations, a measure of contracted revenue that has not yet been recognized, jumped 359% to $455 billion following an agreement with OpenAI worth over $300 billion.
 
 Cutting 20,000 to 30,000 employees could lead to $8 billion to $10 billion in incremental free cash flow, TD Cowen analysts wrote in a January note.
 
 Executives have said its AI investment will pay off, over time.
 
-"Demand for AI infrastructure, both GPU and CPU, continues to exceed supply," Magouyrk said on an earnings call earlier this month. "This is directly visible in our $553 billion remaining performance obligations."
-
-Oracle began mass layoffs via 6 a.m. termination emails signed 'Oracle Leadership' with no prior notice from HR or managers. TD Cowen estimates 20,000-30,000 affected (~18% of workforce). Hardest-hit: Revenue & Health Sciences and SaaS operations (~30% each), plus NetSuite India Development Centre. Cuts expected to free up $8-10B in cash flow to fund $156B AI data center buildout. Oracle disclosed $2.1B restructuring plan in March 2026 SEC filing. Bloomberg reported March 5 that cuts would target 'roles the company expects it will need less of due to AI.'
+"Demand for AI infrastructure, both GPU and CPU, continues to exceed supply," co-CEO Clay Magouyrk said on an earnings call earlier this month. "This is directly visible in our $553 billion remaining performance obligations."

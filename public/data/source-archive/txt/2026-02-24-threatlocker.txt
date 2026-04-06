@@ -1,0 +1,12 @@
+SOURCE URL: https://www.businessinsider.com/companies-boosting-hiring-entry-level-engineers-2026-2
+TITLE: These 7 companies are increasing hiring of entry-level engineers
+PUBLISHED: 2026-02-24
+================================================================================
+
+The CEO and cofounder of cybersecurity firm ThreatLocker said that it plans to nearly double its headcount in the next 18 months.
+
+Cybersecurity firm ThreatLocker said it plans to nearly double its headcount to 1,200 employees over the next 18 months. The company said a significant number of those hires will be entry-level, expanding its talent pool of junior developers.
+
+The CEO and cofounder, Danny Jenkins, said in a statement to Business Insider that it maintains a highly demanding training standard for engineers at every level to "reflect the real pressure of defending critical systems." The company has experienced a spike in growth as it responds to a new age of threats in the AI era, the CEO previously told Business Insider.
+
+The company also offers a free, in-person, 60-hour cybersecurity bootcamp to immerse college students and recent grads in "live fire" training scenarios.

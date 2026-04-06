@@ -1,0 +1,28 @@
+SOURCE URL: https://economictimes.indiatimes.com/tech/technology/meta-layoffs-2026-cto-andrew-bosworth-confirms-job-cuts-for-roughly-10-of-employees-within-the-reality-labs-unit/articleshow/126511680.cms?from=mdr
+TITLE: Meta layoffs 2026: CTO Andrew Bosworth confirms job cuts for roughly 10% of employees within the Reality Labs unit
+PUBLISHED: 2026-01-13
+================================================================================
+
+Meta Platforms is beginning to cut more than 1,000 jobs from the company's Reality Labs division, part of a plan to redirect resources from virtual reality and metaverse products toward AI wearables and phone features.
+
+Affected employees will be notified of the layoffs starting Tuesday morning, according to an internal post from chief technology officer Andrew Bosworth that was reviewed by Bloomberg News. The cuts are expected to hit roughly 10% of employees within the Reality Labs group, which has about 15,000 workers, Bloomberg reported earlier this week.
+
+As part of the reduction, Meta is pivoting its metaverse efforts to focus on mobile devices, according to Bosworth's memo. The company is also planning to cut back on its virtual reality investments to make the business "more sustainable," Bosworth wrote.
+
+"We said last month that we were shifting some of our investment from metaverse toward wearables," a company spokesperson said. "This is part of that effort, and we plan to reinvest the savings to support the growth of wearables this year."
+
+Reality Labs houses Meta's hardware and other futuristic product efforts, including VR headsets, AI glasses and virtual world products. But Reality Labs has lost more than $70 billion since the start of 2021 because many of the investments aren't yet generating meaningful revenue.
+
+Underscoring Meta's increasing focus on AI, the tech company and EssilorLuxottica SA are discussing potentially doubling production capacity for AI-powered smart glasses by the end of this year, people familiar with the matter said. Meta has suggested increasing annual capacity to 20 million units or more by the end of 2026, said the people, asking not to be named because the deliberations are private.
+
+The metaverse — a virtual world where people can work, play and exercise — has been a particularly costly endeavor. Meta spent heavily to develop high-end VR headsets and digital features, like avatars, in preparation for heated competition with other tech firms. That rivalry never materialized, and the metaverse hasn't taken off in the way that Chief Executive Officer Mark Zuckerberg envisioned when he renamed the company Meta from Facebook in 2021.
+
+Meta shares were down 1.9% at about 10 a.m. New York time on Tuesday.
+
+In December, top executives discussed budget cuts as deep as 30% for the metaverse group, aiming to adjust budgets and funnel more money toward other projects, like AI glasses. Meta has partnered with EssilorLuxottica SA to develop a number of AI-powered spectacles with brands like Ray-Ban and Oakley. Zuckerberg has said those glasses are performing better than expected, and they remain a key part of his plans to increase adoption of Meta's AI assistant.
+
+vMeta will continue to develop the metaverse, but with a focus on mobile phones instead of the fully immersive VR headsets that the company initially imagined. The team building metaverse software experiences, now called Horizon, will "double down on bringing the best Horizon experiences and AI creator tools to mobile," Bosworth wrote. "With the larger potential user base and the fastest growth rate today, we are shifting teams and resources almost exclusively to mobile to continue to accelerate adoption there."
+
+Meta will also keep investing in VR headsets and features, but less aggressively.
+
+"Starting today, VR will operate as a leaner, flatter organization with a more focused road map to maximize long-term sustainability," Bosworth wrote.

@@ -1,0 +1,26 @@
+SOURCE URL: https://www.cnbc.com/2025/09/02/salesforce-ceo-confirms-4000-layoffs-because-i-need-less-heads-with-ai.html
+TITLE: Salesforce CEO confirms 4,000 layoffs ‘because I need less heads’ with AI
+PUBLISHED: 2025-09-02
+================================================================================
+
+Salesforce has cut 4,000 of its customer support roles, CEO Marc Benioff recently said while discussing how artificial intelligence has helped reduce the company headcount.
+
+Benioff revealed the layoffs during an interview published Friday on The Logan Bartlett Show podcast.
+
+"I’ve reduced it from 9,000 heads to about 5,000, because I need less heads," Benioff said while discussing the impact of AI on Salesforce operations.
+
+Salesforce has been on the front lines of the AI revolution and has built what it calls an "Agentforce" of customer service bots.
+
+"Because of the benefits and efficiencies of Agentforce, we’ve seen the number of support cases we handle decline and we no longer need to actively backfill support engineer roles," Salesforce said in a statement Tuesday to NBC Bay Area.
+
+The layoffs come after Benioff over the summer announced AI is doing up to 50% of the work at Salesforce, which is based in San Francisco.
+
+Laurie Ruettimann, a human resources consultant, said AI is affecting jobs in several industries.
+
+"There have been layoffs all over America directly attributed to AI," Ruettimann said, adding anyone who wants to stay employed or looking for work needs to learn new skills.
+
+"If your network could get you a job, it would have done it already. It would have done it yesterday," Ruettimann said. "It’s on you to expand your vision, to expand your horizons and to meet new people."
+
+Analyst Ed Zitron said AI is being blamed by tech companies that over hired during the pandemic. The companies are now looking to lure investors by claiming to be more efficient, Zitron said.
+
+"It’s just a growth at all costs mindset," Zitron said. "The only thing that’s important is growth, even if it ruins people’s lives. Even if it makes the company worse and provides an inferior product."

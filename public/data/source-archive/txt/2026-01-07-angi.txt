@@ -1,13 +1,11 @@
 SOURCE URL: https://www.businessinsider.com/angi-layoffs-angies-list-cuts-350-jobs-ai-efficiency-gains-2026-1
 TITLE: Angi is cutting 350 jobs 'in light of AI-driven efficiency improvements'
-PUBLISHED: 2026-01-08
+PUBLISHED: 2026-01-07
 ================================================================================
 
 Angi, the company formerly known as Angie's List, is cutting 350 jobs, it said on Wednesday.
 
 Angi cited AI efficiency among its reasons for the layoffs.
-
-Economists and tech experts have predicted that more companies will replace humans with AI in 2026.
 
 The popular contractor listing site once known as Angie's List is the latest company to cite AI in a layoffs announcement.
 

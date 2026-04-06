@@ -1,54 +1,25 @@
-SOURCE URL: https://finance.yahoo.com/news/factbox-companies-cutting-jobs-investments-163752693.html
-TITLE: Factbox-Companies cutting jobs as investments shift toward AI
-AUTHOR: Reuters
-PUBLISHED: 2026-02-25
-PAYWALL: False
+SOURCE URL: https://www.reuters.com/business/world-at-work/autodesk-lay-off-about-7-workforce-2026-01-22/
+TITLE: Autodesk cuts 7% of workforce to redirect investments to AI, cloud
+PUBLISHED: 2026-01-22
 ================================================================================
 
-February 25 (Reuters) - Concerns among investors and economists are intensifying regarding the potential disruption of established industries by artificial intelligence. Goldman Sachs cautioned on Tuesday that a swift increase in AI adoption could elevate unemployment rates in the U.S. this year, with job losses already surfacing in sectors highly vulnerable to automation.
+Jan 22 (Reuters) - Design software maker Autodesk (ADSK.O) said on Thursday it would shed about 7% of its global workforce, or roughly 1,000 jobs, as ‌it aims to redirect spending to its cloud platform and artificial intelligence efforts.
+The company, which offers tools used in movies and games to create 3D animation, visual effects and manage production, said the reductions would mostly impact ‌its customer-facing sales teams.
 
-Goldman economists projected that last year, AI was responsible for net job losses ranging from 5,000 to 10,000 each month in the most affected U.S. industries, contributing to 7% of the total layoffs announced in January.
+The Reuters Iran Briefing newsletter keeps you informed with the latest developments and analysis of the Iran war. Sign up here.
 
-Below is an alphabetical compilation of global layoffs associated with AI that have been announced since last October:
+The announcement pushed shares up more than 3%, buoying a stock that was little changed last year and has made a weak start to 2026 with a drop of 13% so far.
 
-AGORA
-In December, the Polish media organization indicated plans to dismiss up to 166 employees, translating to 6.56% of its total workforce, as part of a restructuring aimed at enhancing its digital operations.
+Autodesk had about 15,300 employees as of January 31, 2025. It said the restructuring is the "final phase of its sales and marketing optimization," an effort to ⁠streamline customer engagement and enhance sales channels to drive sustainable growth and ‍operating margin expansion.
 
-ALLIANZ
-The German insurance company intends to eliminate as many as 1,800 positions in its travel insurance sector as AI increasingly supplants manual tasks, according to a source familiar with the situation who spoke to Reuters last November.
+The company has been shifting to a subscription and usage-based transaction model ‌from ‌a traditional channel-centric sales model, aiming to strengthen customer relationships and boost pricing control and sales.
 
-AMAZON
-The technology giant confirmed on January 28 that it would cut 16,000 corporate jobs, leaving open the possibility of additional reductions as it undertakes an overhaul driven by AI and efficiency.
+Autodesk now expects billings, revenue, adjusted operating margin, adjusted earnings per share and free cash flow for the fourth quarter ⁠of fiscal 2026 and ⁠full year to exceed the top end of its previously issued forecasts.
 
-AUTODESK
-The American design software developer announced on January 22 that it would reduce its global workforce by approximately 7%, equating to around 1,000 jobs, while redirecting its investments toward its cloud platform and AI projects.
+It estimates total pre-tax restructuring charges of about $135 million to $160 million, primarily due to employee termination benefits, according ‍to a regulatory filing.
 
-BRITISH AMERICAN TOBACCO
-On February 12, the seller of cigarettes, tobacco, and nicotine products declared a new AI-driven productivity initiative anticipated to result in job cuts, although it did not specify how many employees would be affected.
+The company, which provides software such as AutoCAD and competes with Adobe (ADBE.O) and PTC (PTC.O), expects to complete the restructuring plan by the end of its fourth quarter of fiscal 2027.
 
-DOW
-The U.S. chemical manufacturer stated on January 29 that it plans to reduce its workforce by about 4,500 jobs, or 13% of its total, as it optimizes its end-to-end processes through automation and AI.
+Layoffs.fyi, a website ‍tracking tech job cuts, estimated that more than 123,000 employees were laid off from 269 companies in 2025.
 
-HP INC
-The American computer and printer manufacturer projected last November that it would eliminate between 4,000 and 6,000 jobs globally as it streamlines its operations and incorporates AI.
-
-MERCADOLIBRE
-The Brazilian e-commerce firm laid off 119 employees in a move to expand its AI capabilities, according to a report from Folha de S. Paulo on January 12.
-
-META
-The parent company of Facebook is cutting 1,000 positions at its Reality Labs division as it shifts focus from the Metaverse to AI devices, as reported by Bloomberg on January 13. Additionally, Meta is reducing approximately 600 roles within its Superintelligence Labs, as mentioned in an October announcement.
-
-NIKE
-The sports apparel giant is set to lay off 775 employees, according to a source who informed Reuters in January, as the company aims to enhance profitability and accelerate the implementation of automation.
-
-PINTEREST
-The social media platform announced in January its intention to reduce its workforce by up to 15% to reallocate resources towards AI-centric roles and strategies.
-
-SEB
-The French manufacturer of small appliances and cookware revealed on February 25 that it would initiate a restructuring plan that aims to fully leverage the opportunities presented by AI, potentially impacting up to 2,100 jobs globally by 2027.
-
-TELSTRA
-Australia's leading telecommunications company plans to reduce its workforce by 650 positions in an AI-focused restructuring in collaboration with India's Infosys, as reported by The Australian on February 11.
-
-WISETECH
-The Australian software firm announced on February 25 that it would cut about 2,000 jobs, nearly one-third of its global workforce, as it integrates AI into its customer software and internal processes.
+Reporting by Jaspreet Singh in Bengaluru; Editing by Shilpi Majumdar

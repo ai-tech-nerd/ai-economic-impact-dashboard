@@ -1,0 +1,20 @@
+SOURCE URL: https://www.reuters.com/technology/sap-announces-company-wide-restructuring-updates-2025-outlook-2024-01-23/
+TITLE: SAP to restructure 8,000 jobs in push towards AI, shares hit record
+PUBLISHED: 2024-01-24
+================================================================================
+
+Jan 23 (Reuters) - Shares of SAP SE surged by 7% to reach a record high after the German software company projected an increase in cloud revenue and announced a restructuring initiative affecting 8,000 positions to emphasize growth in artificial intelligence (AI) sectors.
+
+The firm revealed plans to allocate 2 billion euros ($2.2 billion) to the initiative, which will either involve retraining staff in AI competencies or offering voluntary redundancy options. SAP anticipates maintaining a workforce comparable to current levels by the end of 2024. The company began exploring OpenAI's ChatGPT shortly after the generative AI technology gained popularity and disclosed plans to integrate it into its offerings early last year.
+
+The German enterprise now believes that generative AI will significantly transform its operations and has committed over $1 billion to support AI-driven technology startups through its investment division, Sapphire Ventures.
+
+Jürgen Molnar, an investment strategist at brokerage RoboMarkets, commented, "The necessary modifications are being implemented, and the organization is being restructured to ready itself for the era of artificial intelligence. While some employees may inevitably be let go, the human resources strategy is more about long-term positioning than merely cutting costs, leading to numerous new opportunities."
+
+Major technology firms, including industry leaders like Google and Microsoft, have recently initiated layoffs as they pivot towards AI software and automation to streamline operations.
+
+Most of the expenses associated with the restructuring are expected to occur in the first half of the year and are projected to add 500 million euros to operating profit in 2025 due to enhanced efficiencies.
+
+SAP projected double-digit percentage growth in revenue from its essential cloud segment and overall operating profit for the current year, following 2023 results that met or surpassed analyst expectations. The cloud revenue is anticipated to rise between 24% and 27% in 2024.
+
+($1 = 0.9211 euros)

@@ -1,0 +1,70 @@
+SOURCE URL: https://blog.dropbox.com/topics/company/an-update-from-drew
+TITLE: An update from Drew
+PUBLISHED: 2024-10-30
+================================================================================
+
+Today, our cofounder and CEO Drew Houston shared the difficult news that we'll be making reductions to our global workforce. He sent the following email to all employees:
+
+Hi everyone,
+
+I'm writing to let you all know that after careful consideration, we've decided to reduce our global workforce by approximately 20% or 528 Dropboxers.
+
+As CEO, I take full responsibility for this decision and the circumstances that led to it, and I'm truly sorry to those impacted by this change.
+
+Why we're making this decision
+
+As we've shared over the last year, we're in a transitional period as a company. Our FSS business has matured, and we've been working to build our next phase of growth with products like Dash. However, navigating this transition while maintaining our current structure and investment levels is no longer sustainable.
+
+We continue to see softening demand and macro headwinds in our core business. But external factors are only part of the story. We've heard from many of you that our organizational structure has become overly complex, with excess layers of management slowing us down.
+
+And while I'm proud of the progress we've made in the last couple years, in some parts of the business, we're still not delivering at the level our customers deserve or performing in line with industry peers. So we're making more significant cuts in areas where we're over-invested or underperforming while designing a flatter, more efficient team structure overall.
+
+The opportunity ahead
+
+The changes we're making today, while difficult, come at a pivotal moment when the market is accelerating precisely where we've placed our biggest bets. It's been tremendously rewarding over the last few weeks to see customers and prospects light up when using Dash for Business for the first time, much like people did when we first launched Dropbox.
+
+And this time we're starting from a position of strength. Millions of customers trust us as the home for their most important files, making the leap to organizing all their cloud content a natural evolution.
+
+But we're not operating on our own schedule. This market is moving fast and investors are pouring hundreds of millions of dollars into this space. This both validates the opportunity we've been pursuing and underscores the need for even more urgency, even more aggressive investment, and decisive action.
+
+The steps we're taking today are necessary to both strengthen our core product and accelerate the growth of our new products. We'll share more about our 2025 strategy in the days ahead.
+
+Taking care of impacted employees
+
+To those leaving Dropbox, we're committed to supporting you through this transition. You'll be eligible to receive the following benefits and support:
+
+Severance, equity, and transition payment
+
+All impacted employees will be eligible for sixteen weeks of pay, starting today, with one additional week of pay for each completed year of tenure at Dropbox. Internationally, severance packages will vary depending on regional practices and statutory requirements.
+
+All impacted employees will receive their Q4 equity vest.
+
+Those on the Corporate Bonus plan will be eligible to receive a pro-rated lump sum transition payment equivalent to their 2024 bonus target based on company performance forecasts and aligned with their level.
+
+We will pay out eligible remaining current and approved upcoming paid leaves, including medical or family leaves.
+
+We will support impacted visa holders by providing additional time to transition and access to 1:1 immigration consultation.
+
+Healthcare and benefits
+
+US employees will be eligible for up to six months of COBRA.
+
+Canada-based employees will be eligible for a one-month healthcare extension.
+
+All employees will continue to have access to Modern Health to support their mental well-being.
+
+Devices
+
+Impacted employees will be eligible to keep company devices (phones, tablets, laptops, and peripherals) for personal use.
+
+Job placement
+
+Job placement services and career coaching will be available at no cost.
+
+Next steps
+
+We'll be sharing more details on high-level changes later today and will host company-wide Town Halls later this week to answer questions and discuss our plans in more detail.
+
+I know this is incredibly difficult and unwelcome news. To everyone leaving Dropbox, I'm deeply grateful for everything you've done for our company and our customers.
+
+Drew

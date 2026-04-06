@@ -1,0 +1,22 @@
+SOURCE URL: https://www.reuters.com/technology/online-marketplace-fiverr-lay-off-30-workforce-ai-push-2025-09-15/
+TITLE: Online marketplace Fiverr to lay off 30% of workforce in AI push
+PUBLISHED: 2025-09-15
+================================================================================
+
+Sept 15 (Reuters) - Israel-based Fiverr International (11V.F) is laying off 30% of its workforce, a company spokesperson said on Monday, as the online services marketplace doubles down on artificial intelligence to automate systems and streamline operations.
+	
+The cuts, which will affect 250 employees, are a part of a restructuring plan announced by Fiverr's CEO Micha Kaufman geared towards investing heavily in AI and incorporating the technology into the company's platform.
+
+The company had 762 employees as of December last year.
+
+"We are launching a transformation for Fiverr, to turn Fiverr into an AI-first company that's leaner, faster, with a modern AI-focused tech infrastructure, a smaller team, each with substantially greater productivity, and far fewer management layers," Kaufman said in a letter to employees.
+
+The layoffs mirror similar moves by larger tech firms, such as Salesforce (CRM.N), that have spent a significant amount of resources on AI agents and machine learning to automate customer care and logistical work.
+
+While it isn't clear what kinds of jobs will be impacted, Fiverr operates a self-service digital marketplace where freelancers can connect with businesses or individuals requiring digital services like graphic design, editing or programming.
+
+Most processes on the platform take place with minimal employee intervention as ordering, delivery and payments are automated.
+
+The company's name comes from most gigs starting at $5 initially, but as the business grew, the firm has introduced subscription services and raised the bar for service prices.
+
+Fiverr said it does not expect the job cuts to materially impact business activities across the marketplace in the near term and plans to reinvest part of the savings in the business.

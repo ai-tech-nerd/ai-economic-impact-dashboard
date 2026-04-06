@@ -1,0 +1,14 @@
+SOURCE URL: https://www.theverge.com/news/713388/intel-q2-2025-leave-germany-poland-costa-rica
+TITLE: Intel is laying off 24,000 employees and retreating from some countries
+PUBLISHED: 2025-07-24
+================================================================================
+
+In April, Intel attempted to announce layoffs without announcing layoffs. “We have not set any headcount reduction target," Intel spokesperson Sophie Metzger told The Verge. But the company has laid off thousands of employees since — and today, in the company's Q2 2025 earnings, it has revealed that Intel will dramatically shrink as a result of those layoffs. Intel says it will retreat from planned projects in Germany and Poland, end its assembly and test operations in Costa Rica, and finish 2025 with just around 75,000 “core employees" in total.
+
+Intel employed 109,800 people at the end of 2024, of which 99,500 were “core employees," so the company is pushing out around 24,000 people this year — shrinking Intel by roughly one-quarter. (It has also divested other businesses, shrinking the larger organization as well.)
+
+It's just the latest revelation about how deep Intel's new CEO Lip-Bu Tan is willing to cut as he attempts to flatten the organization after years of troubles and a lackluster response to the AI boom. In late June, Intel shut down its automotive chipmaking business and revealed it'd lay off up to 20 percent of silicon factory workers; in July, it spun out its RealSense computer vision business.
+
+Today, on the company's earnings call, Intel's CEO says that Intel had overinvested in new factories before it had secured enough demand, that its factories had become “needlessly fragmented," and that it needs to grow its capacity “in lock step" with achieving actual milestones.
+
+“I do not subscribe to the belief that if you build it, they will come.

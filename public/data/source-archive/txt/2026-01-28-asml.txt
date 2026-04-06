@@ -1,0 +1,64 @@
+SOURCE URL: https://www.reuters.com/business/asml-q4-bookings-beat-expectations-chipmakers-order-more-satisfy-ai-demand-2026-01-28/
+TITLE: ASML lifts outlook on record AI chip orders but analysts query capacity
+PUBLISHED: 2026-01-28
+================================================================================
+
+EINDHOVEN, Netherlands, Jan 28 (Reuters) - ASML (ASML.AS) reported record fourth-quarter orders and raised its 2026 outlook on Wednesday, although the giant chip equipment maker faced questions from analysts about whether it had the capacity to meet surging demand from AI chipmakers.
+
+The Dutch company also announced ‌1,700 job cuts, some 3.8% of its staff, as part of a broader plan to shed 3,000 management posts and hire engineers to focus on innovation.
+
+ASML's orders exceeded expectations as the global chip market ramps up production capacity for the rollout of artificial intelligence and data centers, with demand rising for its machines, which dominate the process for printing AI chips.
+
+Orders leapt to a record 13.2 billion euros ($15.8 billion), from 7.1 billion euros a year ago, beating Visible Alpha analyst forecasts of 6.32 billion euros.
+
+OUTPUT CAPACITY HIKES AT BIG CLIENTS BOOST ORDERS
+
+ASML CEO Christophe Fouquet said production-capacity hikes at clients from Taiwan's TSMC (2330.TW), which makes ‌chips for Nvidia (NVDA.O), to Samsung (005930.KS) and Micron (MU.O) were feeding through to orders.
+
+"Micron has been announcing a groundbreaking almost every week for the last few weeks. There, you have a direct translation basically into shipments for us," he said.
+
+Europe's largest company by market capitalisation is looking to reduce complexity and focus on innovation.
+
+"We want to really boost, again, our engineering capability, our innovation engine," Fouquet said, adding: "Our engineers told us that a lot of the time they spend is no longer on innovation, because the organisation has become so complex".
+
+After spiking more than 6%, ASML shares fell shortly before U.S. trading and were down 1.9% to 1,194 euros at 1700 GMT. The stock has risen some 30% in 2026 and trades at 46 times forecast 2026 earnings of 10.5 billion euros, LSEG data shows.
+
+ASML also said it would buy back 12 billion euros ($14.32 billion) worth of shares through 2028.
+
+ASML dominates Europe's most valuable companies
+
+Analysts said that the longer-term outlook remained steady, while ASML flagged a near $39 billion backlog at ⁠end-2025, raising questions about capacity as it looks to expand.
+
+"We think the investment thesis remains unchanged," said Nick Rossolillo of Chip Stock Investor.
+
+"TSMC and the DRAM memory cabal are finally comfortable expanding ‍their capacity, which is great for ASML this year and possibly into 2027, but we're not touching any guidance here yet," Rossolillo added.
+
+'GOING OUT WITH A BANG'
+
+Despite being the most-watched industry metric, ASML plans to ‌stop publishing quarterly ‌orders data, arguing it causes unnecessary volatility in shares.
+
+"It will be the last time that ASML reports quarterly order intake and the company is going out with a bang," ING analyst Marc Hesselink said.
+
+Citing AI-related demand, ASML raised its 2026 sales guidance to 34 billion to 39 billion euros, above analyst estimates of 35 billion euros, LSEG data showed. It previously forecast flat-to-higher sales versus 2025's 32.7 billion euros.
+
+Net profit at the sole maker of the Extreme Ultraviolet (EUV) lithography machines used to print the world's most advanced chips, jumped 26.3% to 9.6 billion euros in 2025, from 7.6 billion euros a ⁠year earlier, on annual sales of 32.7 billion ⁠euros, up 15.5% from a year earlier.
+
+ASML CEO MOVES TO EASE 'BOTTLENECK' CONCERNS
+
+ASML customers TSMC, Samsung, SK Hynix (000660.KS) and Micron are boosting investment plans amid demand for AI logic and memory chips needed by tech giants such as Microsoft (MSFT.O), Amazon (AMZN.O) and Alphabet's Google (GOOGL.O).
+
+"Overall there is good fourth-quarter orders and 2026 outlook, driven by AI demand for EUV in both logic and DRAM," or memory chips, Mizuho analyst Kevin Wang said in an email.
+
+Fouquet sought to ease concerns over whether further upside for ‍ASML was limited due to supply chain and logistical constraints. "I sense a bit of concern that we may be the bottleneck for our customers, but this is not the case, certainly not this year," he told analysts on a call.
+
+MAINTAINS LONGER-TERM REVENUE GUIDANCE TO 2030
+
+ASML kept longer-term guidance to 2030 untouched, CEO Fouquet said, anticipating revenue of between 44 and 60 billion euros and a gross margin of 56% to 60% in 2030.
+
+China, the world's largest buyer of chipmaking equipment, remained ASML's single-largest market in 2025, representing 33% of sales, although that figure has dropped from ‍41% in 2024. ASML CFO Roger Dassen forecast it would fall further to 20% in 2026.
+
+U.S.-led export restrictions prevent Chinese chipmakers from buying ASML's most advanced EUV tools and Nvidia's best chips.
+
+ASML share price gets AI boost($1 = 0.8381 euros)
+
+Reporting by Toby Sterling in Amsterdam and Nathan Vifflin in Gdansk; editing by Matt Scuffham, Bernadette Baum and Alexander Smith

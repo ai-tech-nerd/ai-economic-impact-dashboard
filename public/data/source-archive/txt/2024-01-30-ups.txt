@@ -1,22 +1,30 @@
-SOURCE URL: https://www.cnbc.com/2024/01/30/ups-reports-drop-in-package-volume-stock-tumbles.html
+SOURCE URL: 
 TITLE: UPS announces 12,000 job cuts, says package volume slipped last quarter
 PUBLISHED: 2024-01-30
 ================================================================================
 
-On Tuesday, UPS announced that it did not meet Wall Street's revenue expectations, revealing a decline in shipping volume both internationally and domestically in its fourth-quarter earnings report. The firm also disclosed plans to cut 12,000 jobs as part of its strategy to optimize resources for 2024.
+UPS fell short of Wall Street revenue estimates Tuesday, reporting drops in shipping volume, both internationally and domestically, in its fourth-quarter earnings report. The company also announced 12,000 layoffs as part of an effort to align resources in 2024.
 
-According to CEO Carol Tomé during a conference call regarding the earnings, these workforce reductions are anticipated to generate approximately $1 billion in savings.
+The workforce reductions will save the company about $1 billion in costs, CEO Carol Tomé said on a company earnings call.
 
-"2023 was an unusual year, and honestly, it was challenging and disappointing. We faced reductions in volume, revenue, and operating profits across all three segments of our business," Tomé stated.
+"2023 was a unique, and quite candidly, difficult and disappointing year. We experienced declines in volume, revenue and operating profits and all three of our business segments," Tomé said.
 
-As a result, shares of the logistics giant fell by over 8%.
+Shares of the package giant dipped more than 8%.
 
-In terms of performance against Wall Street forecasts, UPS reported net income of $1.4 billion, $1.87 per share, for the final quarter of 2023, down from $3.0 billion, $3.96 per share, the previous year. When adjusting for one-off expenses linked to pensions and intangible assets, UPS's earnings were $2.47 per share.
+Here's how the company performed compared to Wall Street estimates:
 
-The company experienced a revenue decline of 7.8%, dropping to $24.9 billion from $27 billion last year. It also saw a 7.4% reduction in average daily volume domestically and an 8.3% decrease internationally. Tomé pointed out that the international downturn was "heavily weighted in Europe along with freight challenges in the Red Sea area and the Panama and Suez canals."
+	- Adjusted earnings: $2.47 vs. $2.46 per share expected, according to LSEG, formerly known as Refinitiv
 
-Although the earnings report did not explicitly address any financial repercussions from the August negotiations with the Teamsters regarding labor contracts, Tomé mentioned that these discussions, along with the broader macroeconomic climate, contributed to the "disappointing" results for the year.
+	- Revenue: $24.92 billion vs. $25.43 billion expected
 
-Additionally, the company is contemplating the sale of its Coyote truck brokerage division, which Tomé described as a "highly cyclical" operation with "significant earnings volatility." She also indicated that the company intends to require employees return to office five days a week in 2024.
+For the last three months of 2023, UPS reported net income of $1.61 billion, or $1.87 per share, compared with $3.45 billion, or $3.96 per share, a year earlier. Adjusting for one-time items related to pensions and intangible assets, UPS earned $2.47 per share.
 
-Looking ahead, UPS's forecast for 2024 anticipates revenue between $92 billion and $94.5 billion, with an adjusted operating margin projected to be around 10% to 10.6%.
+Revenue declined 7.8% to $24.9 billion from $27 billion last year.
+
+The company reported a 7.4% drop in average daily volume domestically and an 8.3% decrease internationally. Tomé said the international softness was "heavily weighted" in Europe, coupled with freight complications in the Red Sea region, as well as the Panama and Suez canals.
+
+Though the earnings report did not directly mention any financial impacts from negotiations with the Teamsters in August over labor contracts, Tomé cited the talks and the macroeconomic environment more broadly as contributing to the "disappointing" year.
+
+The company also said it's considering selling its Coyote truck brokerage business, which Tomé called a "highly cyclical" business with "considerable earnings volatility." The CEO also added that the company is planning to ask workers to return to the office five days a week in 2024.
+
+UPS' 2024 outlook expects revenue to range from $92 billion to $94.5 billion, with an adjusted operating margin of about 10% to 10.6%.

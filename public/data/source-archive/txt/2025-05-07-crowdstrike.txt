@@ -1,0 +1,22 @@
+SOURCE URL: https://www.cnbc.com/2025/05/07/crowdstrike-announces-5percent-job-cuts-says-ai-reshaping-every-industry.html
+TITLE: CrowdStrike announces 5% job cuts, says AI is 'reshaping every industry'
+PUBLISHED: 2025-05-07
+================================================================================
+
+Cybersecurity software maker CrowdStrike said Wednesday it plans to lay off 500 employees, representing about 5% of its workforce, a move CEO George Kurtz said reflects advances in artificial intelligence.
+
+"AI has always been foundational to how we operate," Kurtz wrote in a memo included in a securities filing. "AI flattens our hiring curve, and helps us innovate from idea to product faster. It streamlines go-to-market, improves customer outcomes, and drives efficiencies across both the front and back office. AI is a force multiplier throughout the business."
+
+In the past month, leaders of Box, Duolingo and Shopify have all directed employees to adopt AI tools across departments.
+
+CrowdStrike also reaffirmed its forecast for its current fiscal year, which ends in January, and said it expects to continue hiring in "key strategic areas" for the rest of the year. The stock fell about 5% on Wednesday to close at $421.52.
+
+The company is working to expand its go-to-market and customer-success organizations as it aims to generate $10 billion in annualized revenue, Kurtz said. In February, CrowdStrike reported a 25% increase in revenue to $1.06 billion, but it was the second quarter in a row with a net loss.
+
+"We are realigning parts of our business to continue scaling with focus and discipline," Kurtz wrote in Wednesday's letter.
+
+While CrowdStrike attributed the layoffs largely to AI, economic and market uncertainty is leading to job cuts elsewhere. Autodesk said in February it would reduce its workforce by 9%, and server maker Hewlett Packard Enterprise said in March that it was laying off of 5% of its staff. That was all before President Donald Trump's announcement of new tariffs on goods imported into the U.S. last month roiled U.S. markets.
+
+CrowdStrike said its layoffs should be done by the end of the fiscal second quarter and lead to between $36 million and $53 million in charges.
+
+Even after Wednesday's slide, the stock is up 23% this year, outperforming the Nasdaq, which is down about 8%.

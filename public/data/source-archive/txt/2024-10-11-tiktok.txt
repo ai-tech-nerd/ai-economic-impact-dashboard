@@ -1,0 +1,30 @@
+SOURCE URL: https://www.reuters.com/technology/bytedance-cuts-over-700-jobs-malaysia-shift-towards-ai-moderation-sources-say-2024-10-11/
+TITLE: ByteDance's TikTok cuts hundreds of jobs in shift towards AI content moderation
+PUBLISHED: 2024-10-11
+================================================================================
+
+KUALA LUMPUR, Oct 11 (Reuters) - Social media platform TikTok is laying off hundreds of employees from its global workforce, including a large number of staff in Malaysia, the company said on Friday, as it shifts focus towards a greater use of AI in content moderation.
+
+Two sources familiar with the matter earlier told Reuters that more than 700 jobs were slashed in Malaysia. TikTok, owned by China's ByteDance, later clarified that less than 500 employees in the country were affected.
+
+Learn about the latest breakthroughs in AI and tech with the Reuters Artificial Intelligencer newsletter. Sign up here.
+
+The employees, most of whom were involved in the firm's content moderation operations, were informed of their dismissal by email late Wednesday, the sources said, requesting anonymity as they were not authorized to speak to media.
+
+In response to Reuters' queries, TikTok confirmed the layoffs and said that several hundred employees were expected to be impacted globally as part of a wider plan to improve its moderation operations.
+
+TikTok employs a mix of automated detection and human moderators to review content posted on the site.
+
+ByteDance has over 110,000 employees in more than 200 cities globally, according to the company website.
+
+The technology firm is also planning more retrenchments next month as it looks to consolidate some of its regional operations, one of the sources said.
+
+"We're making these changes as part of our ongoing efforts to further strengthen our global operating model for content moderation," a TikTok spokesperson said in a statement.
+
+The company expects to invest $2 billion globally in trust and safety this year and will continue to improve efficiency, with 80% of guidelines-violating content now removed by automated technologies, the spokesperson said.
+
+The layoffs were first reported by business portal The Malaysian Reserve on Thursday.
+
+The job cuts occur as global technology firms face greater regulatory pressure in Malaysia, where the government has asked social media operators to apply for an operating licence by January as part of an effort to combat cyber offences.
+
+Malaysia reported a sharp increase in harmful social media content earlier this year and urged firms, including TikTok, to step up monitoring on their platforms.

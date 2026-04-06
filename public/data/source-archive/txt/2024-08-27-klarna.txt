@@ -1,0 +1,28 @@
+SOURCE URL: https://www.reuters.com/technology/artificial-intelligence/swedens-klarna-says-ai-chatbots-help-shrink-headcount-2024-08-27/
+TITLE: Sweden's Klarna says AI chatbots help shrink headcount
+PUBLISHED: 2024-08-27
+================================================================================
+
+STOCKHOLM, Aug 27 (Reuters) - Swedish payments group Klarna said it had reduced hundreds of jobs and sees more reductions to come as it implements AI to handle customer queries, saying on Tuesday chatbots can sharply reduce the time taken to resolve issues.
+
+The "buy now pay later" company, widely expected to seek a stock market listing next year, has been one of the early adopters of GenAI to cut costs and boost productivity.
+	
+The company, which said it had swung to a first-half adjusted profit of 673 million Swedish crowns ($66 million), said its AI assistant was performing the work of 700 employees, reducing the average resolution time from 11 minutes to just two.
+
+"About 12 months ago, we would have been about 5,000 active positions within the company, and we are now down to about 3,800," CEO Sebastian Siemiatkowski said in an interview, adding that almost all of the reduction had been achieved through attrition, not layoffs.
+
+"By simply not hiring, which we haven't done since September ... the company is kind of becoming smaller and smaller," he added.
+
+Average revenue per employee over the past 12 months had increased by 73%, rising from 4 million crowns to 7 million.
+
+"We will continue to not recruit anything other than engineers for a significant time," he said, adding that the headcount could eventually fall to 2,000, without giving a timeframe.
+
+At the time of a peak valuation of $46 billion in 2021 - on the basis of a fundraising carried out at the time - Klarna was unprofitable with much less revenue and had about 7,000 employees.
+
+While total labour costs will come down, Klarna expects to pay significantly more per individual, the company said.
+
+Klarna also reported first-half revenue of 13.3 billion crowns, up 27% from a year before and boosted by revenue growth of 38% in the U.S. Its adjusted profit compares with a loss of 456 mln crowns last year.
+
+Siemiatkowski said an initial public stock offering next year "sounds reasonable," but there was no definite commitment by the company to launch an IPO. He said Klarna might lean towards a U.S. listing but had also seriously evaluated some European options as well.
+
+($1 = 10.2004 Swedish crowns)

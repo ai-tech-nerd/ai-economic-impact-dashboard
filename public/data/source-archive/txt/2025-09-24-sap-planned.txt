@@ -1,0 +1,52 @@
+SOURCE URL: https://fortune.com/2025/09/24/sap-cfo-dominik-asam-320-billion-software-firm-ai-allow-workforce-reduction-but-if-done-wrong-could-be-business-catastrophe/
+TITLE: CFO of $320 billion software firm: AI will help us ‘afford to have less people’ but if we do it wrong, it will be a ‘catastrophe’
+PUBLISHED: 2025-09-24
+================================================================================
+
+The pressure is mounting on business leaders to harness AI to make work faster, cheaper, and more efficient. That may thrill investors, but for employees, it could mean fewer jobs around the world.
+
+At the $320 billion software giant SAP, there will likely be a need for fewer engineers to deliver the same—or even greater—output, according to the company's CFO Dominik Asam.
+
+"There's more automation, simply," Asam told Business Insider. "There are certain tasks which are automated and for the same volume of output we can afford to have less people."
+
+As a C-suite exec at Europe's most valuable software company, Asam cautioned that this reality will only come true if the corporate world implements the technology properly. After all, a recent MIT study found that 95% of generative AI pilots have not met the mark.
+
+"I will be brutal. And I also say this internally. For SAP and any other software company, AI is a great catalyst. It can be either great or catastrophe," Asam warned.
+
+"It will be great if you do it well, if you are able to implement it and do it faster than others. If you are left behind, you will have a problem for sure. We work day and night to not fall behind."
+
+SAP's workforce won't look the same
+
+With 110,000 employees worldwide, AI has been top of mind for SAP for years (the term is now even part of its business description). But similar to its CFO, the company's chief executive Christian Klein has been weighing how the technology will allow him to reshape his workforce.
+
+"It would be an illusion to believe AI will help and drive more productivity, but the workforce will still look the same," Klein told Time last month. "That will be absolutely not the case. But I also can't imagine a workforce only with digital workers."
+
+He estimated that some 60 to 70% of jobs could go digital.
+
+"Do I expect to need the same amount of developers, salespeople, and consultants in the future? Definitely not with the job profiles that they have today," he added.
+
+At the same time, Klein noted that other professions, such as data scientists, will be more in demand. But like Asam, he admitted that completely reshaping his workforce overnight could be a recipe for disaster.
+
+"Becoming a CEO and believing that now you're making a decision, and you have the power, so everyone will just follow, is probably the biggest mistake you can make," Klein said.
+
+"You can put a lot of policies in place, you can put more pressure, but people will not just automatically follow. You need to over-communicate in times of change to convince people."
+
+The company announced in July that it was investing in training programs and new hires in critical growth areas while as the same time planning targeted measures that are expected to affect approximately 1–2% of SAP's global workforce in 2025.
+
+"As our industry undergoes a profound transformation driven by AI and cloud technologies, we are focusing on continuously optimizing our processes and structures, as well as making strategic investments in future capabilities," a company spokesperson told Fortune.
+
+The reshaping of corporate workforces
+
+SAP isn't alone in realizing that AI's capabilities means they have to rethink the size and shape of their workforce to stay ahead.
+
+Amazon CEO Andy Jassy told his employees that while recent tech innovation meant fewer people would be in certain jobs and more would shift into others, in the end, the number of Amazon employees would shrink.
+
+"It's hard to know exactly where this nets out over time, but in the next few years, we expect that this will reduce our total corporate workforce as we get efficiency gains from using AI extensively across the company," Jassy wrote in a June memo.
+
+At Salesforce, this AI-powered reality has already taken shape, with CEO Marc Benioff admitting he was able to reorganize his customer support workforce—and reduce the headcount from 9,000 to 5,000.
+
+As executives seem to be in agreement that the workforces of tomorrow will be leaner than today, leaders like Goodwill CEO Steve Preston worry that the changes will hurt those at the bottom of the ladder the most.
+
+"I don't know that it'll be catastrophic, but I do think we're going to see a significant reduction in a number of jobs," Preston told Fortune. "I think it's going to hit low-wage workers especially hard."
+
+Note: A previous edition of this article inaccurately reported that Salesforce had slashed its workforce in half thanks to AI. A spokesperson for the company clarified the changes were exclusive to customer support, and many workers were either moved to new departments or the roles were not backfilled.

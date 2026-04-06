@@ -1,0 +1,24 @@
+SOURCE URL: https://futurism.com/artificial-intelligence/law-firm-sacks-hundreds-ai
+TITLE: Law Firm Sacks Hundreds of Employees Amid Pivot to AI
+PUBLISHED: 2026-02-11
+================================================================================
+
+The Chicago based multinational law firm Baker McKenzie is laying off up to a thousand employees as part of its pivot to embracing AI, the legal hub RollOnFriday reports.
+
+In what might be an augury of how further AI related cuts could sweep other industries, it's not the lawyers getting the axe, but instead hundreds of their support staff. These include "dozens of roles in London and Belfast," and hundreds across functions including know-how, research, marketing, and secretarial, according to the reporting.
+
+The cuts, which could affect up to ten percent of its global workforce, or between 600 to 1,000 people, were conducted after the company "undertook a careful review" of its "business professionals functions," a spokesperson told ROF, with AI explicitly mentioned as a factor in the decision.
+
+"This review was aimed at rethinking the ways in which we work, including through our use of AI, introducing efficiencies, and investing in those roles that best serve our clients' needs," the spokesperson added.
+
+The law firm's reported layoffs come after Anthropic's new Claude Cowork AI agent sparked a panicked sell off that sent the stock market plunging last week. Investors feared that Claude's plugin for automating some legal tasks and paperwork could lead to layoffs and outmode the expensive software that legal firms and other white collar organizations use.
+
+Perhaps the fate of Baker McKenzie's support staff confirms all those worst fears. Or it could be a sign of something else that's been dominating the discourse in tech and finance circles recently: so-called "AI washing."
+
+More and more companies are justifying headcount reductions by invoking the tech's dubious promises, with one report finding that AI was cited in the announcements of more than 54,000 layoffs last year. But critics say that business leaders are simply using AI to justify cuts that were driven by other financial reasons, and point to the fact that many firms don't have serious AI replacements lined up to make up for the shortfall.
+
+"Companies are saying that ‘we're anticipating that we're going to introduce A.I. that will take over these jobs.' But it hasn't happened yet. So that's one reason to be skeptical," Wharton School professor Peter Cappelli told the New York Times.
+
+Moreover, plenty of research and real-world cases has shown that AI tools and agents can't reliably do a human's job, or at least not yet. The tech's introduction into legal settings has been particularly comical, with numerous lawyers being chewed out and punished by judges after the AI they used included botched citations and fabricated case law. Hallucinating AIs have been such a thorn in law firms' sides that one firm adopted the desperate measure of employing its own AI to catch LLM usage.
+
+Time will tell if the layoffs, whether "AI-washed" or actually inteded to replace human grunts, will come back to haunt them. At Baker MacKenzie, one employee on the chopping block called his bosses' decision "short sighted," per ROF, in an expletive-filled rant.

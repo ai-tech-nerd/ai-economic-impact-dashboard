@@ -1,23 +1,22 @@
 SOURCE URL: https://finance.yahoo.com/news/popular-crypto-firm-quietly-fires-184121372.html
 TITLE: Popular crypto firm quietly fires staff, replaces CEO
-AUTHOR: Anand Sinha
 PUBLISHED: 2026-03-17
-PAYWALL: False
 ================================================================================
 
-# Popular crypto firm quietly fires staff, replaces CEO
+Popular crypto firm quietly fires staff, replaces CEO
 
-Messari, a popular crypto market data firm, has laid off some of its staff members as CEO Eric Turner stepped down to make way for Diran Li.
+      Messari, a popular crypto market data firm, has laid off some of its staff members as CEO Eric Turner stepped down to make way for Diran Li.
 
 Turner updated on March 16 that he had stepped down from the CEO role and will continue to serve Messari as an advisor. He also shared that the company has laid off many staff members who helped build it over the last eight years.
 
 CTO Diran Li has stepped into the role of CEO who said that Messari is doubling down as an AI-first company to serve institutions through research and AI products.
 
 Notably, Turner had assumed the CEO role in 2024 after founder Ryan Selkis stepped down amid backlash over controversial remarks targeting critics of Donald Trump following an assassination attempt during the election campaign.
+      
 
-## Layoffs haunt crypto industry
+Layoffs haunt crypto industry
 
-Founded in 2018, Messari is a research firm that has gained popularity for its sharp, data-driven analysis of the crypto industry. This isn't the first instance of the company laying off staff. It fired approximately 15% of its staff in January last year.
+      Founded in 2018, Messari is a research firm that has gained popularity for its sharp, data-driven analysis of the crypto industry. This isn't the first instance of the company laying off staff. It fired approximately 15% of its staff in January last year.
 
 The same month, the OKX crypto trading exchange, the MANTRA blockchain firm, and Polygon Labs also announced layoffs.
 

@@ -1,0 +1,28 @@
+SOURCE URL: https://www.latimes.com/business/story/2025-11-20/ai-cited-in-close-to-50-000-job-cuts-as-tech-giants-accelerate-automation
+TITLE: AI cited in close to 50,000 job cuts this year as tech giants accelerate automation
+PUBLISHED: 2025-11-20
+================================================================================
+
+In late September, the German aviation group Deutsche Lufthansa AG told analysts and investors that it planned to eliminate 4,000 administrative positions by the end of the decade. Among the reasons it cited was 'the increased use of artificial intelligence.'
+
+Weeks later, Dutch lender ING Group NV said nearly 1,000 positions were at risk from 'digitalization, AI, and evolving customer needs.' And earlier this month, Krafton Inc., a South Korean video game company, said it intended to freeze hiring to focus on an 'AI-first' approach to development.
+
+For much of the AI boom, many companies shied away from attributing job cuts to artificial intelligence for fear of attracting negative headlines. But in recent months, large firms across industries and geographic regions have become more vocal with claims that AI is allowing them to eliminate staff and reduce hiring.
+
+AI has been cited for 48,414 job cuts announced in the U.S. so far this year, according to a recent estimate from outplacement firm Challenger, Gray & Christmas. Of those, 31,039 AI-related job cuts were announced in October alone.
+
+The sudden uptick mirrors a sharp rise in planned layoffs generally, with AI referenced as a factor in roughly a fifth of the total in the U.S. last month. The flurry of AI-specific announcements has caught the attention of policymakers, including Federal Reserve Chair Jerome Powell.
+
+The muddled motivations can be seen at large tech firms like Amazon. In June, Amazon's CEO Andy Jassy signaled that the company's workforce would decline in the coming years as AI handles more tasks. Four months later, Amazon announced it would cut 14,000 jobs, a move that Jassy said is 'not even really AI-driven, not right now.'
+
+'AI is starting to eat repetitive, high-volume work,' said Mike Doonan of SPMB. One large client laid off its U.S.-based customer service staff and moved many customer interactions to AI tools, cutting costs.
+
+On an earnings call in late October, executives at C.H. Robinson Worldwide Inc. talked up 'growing automation' for order entry, appointment scheduling and other manual tasks that have allowed the logistics firm to 'decouple headcount growth from volume growth.' As a result, the company said its average headcount was down 10.8% year-over-year.
+
+IBM CEO Arvind Krishna said AI could streamline the process of handling contracts with clients, cutting the need for hundreds of staffers to be involved. Separately, Krishna said his firm has used AI agents to replace the work of hundreds of HR staff. In August, IBM said it's on pace to reach $4.5 billion in savings from AI and automation by the end of this year.
+
+Already, Goldman Sachs projects that AI will lead clients to cut headcount by 4% in the next year, with that figure expected to rise to 11% in the next three years.
+
+Ghosh writes for Bloomberg.
+
+[Note: Article has paywall but full content was cached and accessible.]

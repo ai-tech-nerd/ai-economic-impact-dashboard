@@ -1,0 +1,34 @@
+SOURCE URL: https://www.reuters.com/business/hp-cut-about-6000-jobs-by-2028-ramps-up-ai-efforts-2025-11-25/
+TITLE: HP to cut about 6,000 jobs by 2028, ramps up AI efforts
+PUBLISHED: 2025-11-25
+================================================================================
+
+HP to cut up to 6,000 jobs by fiscal 2028 in AI-driven restructuring
+
+Nov 25 (Reuters) - HP Inc (HPQ.N) said on Tuesday it expects to cut between 4,000 and 6,000 jobs globally by fiscal 2028 as part of a plan to streamline operations and adopt artificial intelligence to speed up product development, improve customer satisfaction and boost productivity.
+
+Shares of the Palo Alto, California-based company fell 5.5% in extended trading.
+
+HP's teams focused on product development, internal operations and customer support will be impacted by the job cuts, CEO Enrique Lores said during a media briefing call.
+
+"We expect this initiative will create $1 billion in gross run rate savings over three years," Lores added.
+
+The company laid off an additional 1,000 to 2,000 employees in February, as part of a previously announced restructuring plan.
+
+Demand for AI-enabled PCs has continued to ramp externally, reaching over 30% of HP's shipments in the fourth quarter ended October 31.
+
+A global memory chip price surge brought on by rising demand from data centers could push up costs and pressure profits at consumer electronics makers such as HP, Dell (DELL.N) and Acer (2353.TW), Morgan Stanley analysts have warned.
+
+Big Tech's push to build out AI infrastructure has triggered price increases for dynamic random access memory and NAND — two commonly used types of memory chips — amid high competition in the server market.
+
+Lores said that HP expects to feel the impact in the second half of fiscal 2026, with higher price increases. HP has enough inventory in hand for the first half.
+
+"We are taking a prudent approach to our guide for the second half, while at the same time implementing aggressive actions like qualifying lower cost suppliers, reducing memory configurations and taking price actions," Lores said.
+
+The company expects fiscal 2026 adjusted profit per share between $2.90 to $3.20, below analysts' average estimate of $3.33, according to data compiled by LSEG.
+
+HP expects adjusted first-quarter profit per share between 73 cents and 81 cents, with the midpoint coming below estimates of 79 cents apiece.
+
+Revenue for the fourth quarter was $14.64 billion, beating estimates of $14.48 billion.
+
+Reporting by Juby Babu in Mexico City; Editing by Alan Barona

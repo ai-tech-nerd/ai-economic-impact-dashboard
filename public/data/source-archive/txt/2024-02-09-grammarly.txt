@@ -1,0 +1,20 @@
+SOURCE URL: https://techcrunch.com/2024/02/09/grammarly-lays-off-230-employees-as-part-of-a-business-restructuring/
+TITLE: Grammarly lays off 230 employees as part of a 'business restructuring'
+PUBLISHED: 2024-02-09
+================================================================================
+
+Grammarly is laying off 230 employees worldwide as part of a "business restructuring," the company announced this week. The layoffs are part of Grammarly's efforts to advance its focus on "the AI-enabled workplace of the future," the company says.
+
+"To arrive at today's decision, we took a look at our organizational design and the current skillsets of our teams through the lens of our company strategy," Grammarly CEO Rahul Roy-Chowdhury said in a memo to employees. "As we strengthen our focus toward driving the AI-enabled workplace and deepen our technical investments in AI, we will need a different mix of capabilities and skillsets. We also need to redesign our organization to improve the quality and speed of collaboration — and that means, among other things, restructuring roles and co-locating certain teams."v
+	
+Roy-Chowdhury went on to say that the layoffs are not a cost-cutting measure, noting that Grammarly's financial position is "strong." He says the layoffs affect most Grammarly functions and geographies.
+
+Impacted employees will receive a minimum of three months' base pay, along with health insurance benefits as applicable to their locations.
+
+The memo says Grammarly grew its team from 200 to 1,000 employees over the past five years, and that in that time, the company has seen changes in the industry and global environment, including the war in Ukraine and a "new age of AI." Roy-Chowdhury says these changes have challenged the company to be more "strategic."
+
+"As for Grammarly's future: We see massive opportunity as every individual and business begins to harness the power of AI," Roy-Chowdhury said. "We'll build on this foundation to bring even more value to our customers. AI will fundamentally change the workplace for the better—and Grammarly will play a leading role in driving that change."
+
+Grammarly is one of many tech companies to conduct layoffs in the past month. Numerous tech companies, including Google, Microsoft, Snapchat, eBay, PayPal, DocuSign, Okta, Block, Discord, Twitch and Duolingo have all conducted sizable layoffs in just the past two weeks.
+
+Back in November 2021, Grammarly raised $200 million in funding at a $13 billion valuation. At the time, Roy-Chowdhury told TechCrunch that the company planned to use the funding to continue making investments in its AI technology.
