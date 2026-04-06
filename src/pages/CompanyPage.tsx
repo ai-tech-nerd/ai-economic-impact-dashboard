@@ -263,6 +263,21 @@ function CompanyList({
     return map;
   }, [creationEvents]);
 
+  // Build company name lookup from events data (companyName field has formal names)
+  const companyNames = useMemo(() => {
+    const names: Record<string, string> = {};
+    for (const evt of [...events, ...plannedEvents, ...creationEvents]) {
+      if (evt.companyName && !names[evt.company]) {
+        names[evt.company] = evt.companyName;
+      }
+    }
+    return names;
+  }, [events, plannedEvents, creationEvents]);
+
+  // Helper to get formal display name for a company slug
+  const getCompanyName = (key: string) =>
+    COMPANY_DISPLAY[key]?.name || companyNames[key] || key;
+
   // Get all unique companies from milestones + displacement + planned + creation
   const companyKeys = useMemo(() => {
     const allKeys = new Set<string>([
@@ -273,19 +288,18 @@ function CompanyList({
     ]);
     return Array.from(allKeys)
       .filter((key) => {
-        const display = COMPANY_DISPLAY[key];
-        const name = display?.name || key;
+        const name = COMPANY_DISPLAY[key]?.name || companyNames[key] || key;
         return !search || name.toLowerCase().includes(search.toLowerCase());
       })
       .sort((a, b) => {
         if (sortBy === 'alpha') {
-          const nameA = COMPANY_DISPLAY[a]?.name || a;
-          const nameB = COMPANY_DISPLAY[b]?.name || b;
+          const nameA = COMPANY_DISPLAY[a]?.name || companyNames[a] || a;
+          const nameB = COMPANY_DISPLAY[b]?.name || companyNames[b] || b;
           return nameA.localeCompare(nameB);
         }
         return (companyMilestones[b]?.length || 0) - (companyMilestones[a]?.length || 0);
       });
-  }, [companyMilestones, companyDisplacements, companyPlanned, companyCreation, search, sortBy]);
+  }, [companyMilestones, companyDisplacements, companyPlanned, companyCreation, companyNames, search, sortBy]);
 
   return (
     <PageLayout
@@ -317,7 +331,7 @@ function CompanyList({
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {companyKeys.map((key) => {
           const display = COMPANY_DISPLAY[key];
-          const name = display?.name || key;
+          const name = getCompanyName(key);
           const desc = display?.description || '';
           const ms = companyMilestones[key] || [];
           const displacement = companyDisplacements[key];
