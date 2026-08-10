@@ -5,14 +5,24 @@
     "companyName": "IBM",
     "date": "2023-05-01",
     "jobsCut": 7800,
-    "jobTypes": ["Back-office", "Human Resources"],
+    "jobTypes": [
+      "Back-office",
+      "Human Resources"
+    ],
     "industry": "Technology",
     "region": "Global",
     "country": "US",
     "aiReplacement": true,
     "description": "CEO Arvind Krishna: 'I could easily see 30% of that getting replaced by AI and automation over a five-year period.' Paused hiring for ~26,000 non-customer-facing roles. ~7,800 roles expected to not be filled.",
     "reasonGiven": "CEO stated 30% of non-customer-facing roles could be replaced by AI over 5 years. AskHR chatbot handles 94% of routine HR queries.",
-    "sources": [{"url": "https://www.reuters.com/technology/ibm-pause-hiring-plans-replace-7800-jobs-with-ai-bloomberg-news-2023-05-01/", "title": "IBM to pause hiring", "publisher": "Reuters", "date": "2023-05-01"}],
+    "sources": [
+      {
+        "url": "https://www.reuters.com/technology/ibm-pause-hiring-plans-replace-7800-jobs-with-ai-bloomberg-news-2023-05-01/",
+        "title": "IBM to pause hiring",
+        "publisher": "Reuters",
+        "date": "2023-05-01"
+      }
+    ],
     "verificationStatus": "verified",
     "status": "hiring-freeze",
     "timeline": "Ongoing (5-year period)"
@@ -23,14 +33,24 @@
     "companyName": "Vodafone",
     "date": "2023-05-16",
     "jobsCut": 11000,
-    "jobTypes": ["Corporate", "Operations"],
+    "jobTypes": [
+      "Corporate",
+      "Operations"
+    ],
     "industry": "Telecommunications",
     "region": "Global",
     "country": "UK",
     "aiReplacement": true,
     "description": "New CEO Margherita Della Valle announced 11,000 cuts over three years to 'regain competitiveness.' Part of broader efficiency and technology modernization.",
     "reasonGiven": "CEO announced cuts to regain competitiveness through efficiency and technology modernization.",
-    "sources": [{"url": "https://www.reuters.com/business/media-telecom/vodafone-cut-11000-jobs-forecasts-flat-earnings-2023-05-16/", "title": "Vodafone to cut 11,000 jobs", "publisher": "Reuters", "date": "2023-05-16"}],
+    "sources": [
+      {
+        "url": "https://www.reuters.com/business/media-telecom/vodafone-cut-11000-jobs-forecasts-flat-earnings-2023-05-16/",
+        "title": "Vodafone to cut 11,000 jobs",
+        "publisher": "Reuters",
+        "date": "2023-05-16"
+      }
+    ],
     "verificationStatus": "verified",
     "status": "announced",
     "timeline": "Over 3 years (by ~2026)"
@@ -41,7 +61,11 @@
     "companyName": "BT Group",
     "date": "2023-05-18",
     "jobsCut": 55000,
-    "jobTypes": ["Network engineers", "Maintenance", "Customer service"],
+    "jobTypes": [
+      "Network engineers",
+      "Maintenance",
+      "Customer service"
+    ],
     "industry": "Telecommunications",
     "region": "Global",
     "country": "UK",
@@ -49,10 +73,71 @@
     "jobsAlreadyCut": 10000,
     "description": "CEO Philip Jansen: ~10,000 roles to be replaced by AI; rest from fibre rollout completion. Called generative AI 'a significant leap forward.' BT will be 'a leaner business with a brighter future.'",
     "reasonGiven": "~10,000 roles to be replaced by AI; remaining cuts from fibre rollout completion.",
-    "sources": [{"url": "https://www.reuters.com/business/media-telecom/bt-meets-expectations-with-5-rise-full-year-earnings-2023-05-18/", "title": "BT to cut 55,000 jobs by 2030", "publisher": "Reuters", "date": "2023-05-18"}],
+    "sources": [
+      {
+        "url": "https://www.reuters.com/business/media-telecom/bt-meets-expectations-with-5-rise-full-year-earnings-2023-05-18/",
+        "title": "BT to cut 55,000 jobs by 2030",
+        "publisher": "Reuters",
+        "date": "2023-05-18"
+      }
+    ],
     "verificationStatus": "verified",
     "status": "announced",
     "timeline": "By 2030"
+  },
+  {
+    "id": "plan-008",
+    "company": "klarna",
+    "companyName": "Klarna",
+    "date": "2024-09-05",
+    "jobsCut": 2000,
+    "jobTypes": [
+      "Mixed"
+    ],
+    "industry": "Financial Technology",
+    "region": "Europe",
+    "country": "SE",
+    "aiReplacement": true,
+    "reasonGiven": "CEO Siemiatkowski: workforce dropped from 5,000 to 3,800 (24% in one year) through hiring freeze and natural attrition enabled by AI. AI chatbot doing work of 700 agents. Plans to reach 2,000 employees.",
+    "description": "Klarna plans to cut 2,000 jobs across mixed — via hiring freeze and attrition. CEO Siemiatkowski: workforce dropped from 5,000 to 3,800 (24% in one year) through hiring freeze and natural attrition enabled by AI. AI chatbot doing work of 700 agents. Plans to reach 2,000 employees.",
+    "sources": [
+      {
+        "url": "https://www.fxcintel.com/research/reports/ct-klarna-ai-job-cuts",
+        "title": "Klarna planned layoffs — FXC Intelligence",
+        "publisher": "FXC Intelligence",
+        "date": "2024-09-05"
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "announced",
+    "timeline": "Not specified"
+  },
+  {
+    "id": "plan-009",
+    "company": "sap",
+    "companyName": "SAP",
+    "date": "2025-09-24",
+    "jobsCut": 1100,
+    "jobTypes": [
+      "Internal operations"
+    ],
+    "industry": "Technology",
+    "region": "Europe",
+    "country": "DE",
+    "aiReplacement": true,
+    "reasonGiven": "Shift toward 'Business AI'; automation reducing internal staffing needs. Originally announced up to 10,000 could be affected.",
+    "description": "SAP plans to cut 1,100–2,200 jobs across internal operations. Shift toward 'Business AI'; automation reducing internal staffing needs. Originally announced up to 10,000 could be affected.",
+    "sources": [
+      {
+        "url": "https://fortune.com/2025/09/24/sap-cfo-dominik-asam-320-billion-software-firm-ai-allow-workforce-reduction-but-if-done-wrong-could-be-business-catastrophe/",
+        "title": "SAP planned layoffs — Fortune",
+        "publisher": "Fortune",
+        "date": "2025-09-24"
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "announced",
+    "timeline": "2025"
   },
   {
     "id": "plan-004",
@@ -60,14 +145,25 @@
     "companyName": "HP Inc.",
     "date": "2025-11-01",
     "jobsCut": 6000,
-    "jobTypes": ["Product development", "Operations", "Customer support"],
+    "jobTypes": [
+      "Product development",
+      "Operations",
+      "Customer support"
+    ],
     "industry": "Technology",
     "region": "Global",
     "country": "US",
     "aiReplacement": true,
     "description": "AI-driven productivity and automation. Earnings presentation cited 'workforce reductions, platform simplification' and 'adoption and facilitation of artificial intelligence.'",
     "reasonGiven": "AI-driven productivity and automation; workforce reductions and platform simplification.",
-    "sources": [{"url": "https://programs.com/resources/ai-layoffs/", "title": "HP AI layoffs", "publisher": "Programs.com", "date": "2025-11-01"}],
+    "sources": [
+      {
+        "url": "https://programs.com/resources/ai-layoffs/",
+        "title": "HP AI layoffs",
+        "publisher": "Programs.com",
+        "date": "2025-11-01"
+      }
+    ],
     "verificationStatus": "verified",
     "status": "announced",
     "timeline": "By 2028"
@@ -76,19 +172,165 @@
     "id": "plan-005",
     "company": "lufthansa",
     "companyName": "Lufthansa",
-    "date": "2025-12-01",
+    "date": "2025-11-20",
     "jobsCut": 4000,
-    "jobTypes": ["Administrative"],
+    "jobTypes": [
+      "Administrative"
+    ],
     "industry": "Aviation",
     "region": "Europe",
     "country": "DE",
     "aiReplacement": true,
     "description": "Eliminate administrative positions as automation and AI rolled out. 'Profound changes by digitalisation and AI will lead to greater efficiency.'",
     "reasonGiven": "Profound changes by digitalisation and AI will lead to greater efficiency.",
-    "sources": [{"url": "https://www.latimes.com/business/story/2025-11-20/ai-cited-in-close-to-50-000-job-cuts-as-tech-giants-accelerate-automation", "title": "AI-cited job cuts", "publisher": "LA Times", "date": "2025-11-20"}],
+    "sources": [
+      {
+        "url": "https://www.latimes.com/business/story/2025-11-20/ai-cited-in-close-to-50-000-job-cuts-as-tech-giants-accelerate-automation",
+        "title": "AI-cited job cuts",
+        "publisher": "LA Times",
+        "date": "2025-11-20"
+      }
+    ],
     "verificationStatus": "verified",
     "status": "announced",
     "timeline": "By 2030"
+  },
+  {
+    "id": "plan-007",
+    "company": "meta",
+    "companyName": "Meta",
+    "date": "2026-01-13",
+    "jobsCut": 15800,
+    "jobTypes": [
+      "Mixed",
+      "Company-wide"
+    ],
+    "industry": "Technology",
+    "region": "Global",
+    "country": "US",
+    "aiReplacement": true,
+    "description": "To offset AI infrastructure spending (up to $135B capex in 2026). Reuters reported executives told senior leaders to begin preparing for cuts. Zuckerberg (Jan earnings call): 'We're starting to see projects that used to require big teams now be accomplished by a single very talented person.' Meta spokesperson: 'This is speculative reporting about theoretical approaches.'",
+    "reasonGiven": "To offset AI infrastructure spending. Zuckerberg: 'Projects that used to require big teams now accomplished by a single very talented person.'",
+    "sources": [
+      {
+        "url": "https://www.reuters.com/business/world-at-work/meta-planning-sweeping-layoffs-ai-costs-mount-2026-03-14/",
+        "title": "Meta planning sweeping layoffs",
+        "publisher": "Reuters",
+        "date": "2026-03-14"
+      }
+    ],
+    "verificationStatus": "pending",
+    "status": "announced",
+    "timeline": "Not specified",
+    "notes": "Reported but unconfirmed. Meta spokesperson called it 'speculative reporting about theoretical approaches.'"
+  },
+  {
+    "id": "plan-010",
+    "company": "pinterest",
+    "companyName": "Pinterest",
+    "date": "2026-01-27",
+    "jobsCut": 700,
+    "jobTypes": [
+      "Mixed"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "Spokesperson: 'making organizational changes to further deliver on our AI-forward strategy, which includes hiring AI-proficient talent.'",
+    "description": "Pinterest plans to cut 700 jobs across mixed (~15% of workforce). Spokesperson: 'making organizational changes to further deliver on our AI-forward strategy, which includes hiring AI-proficient talent.'",
+    "sources": [
+      {
+        "url": "https://www.cbsnews.com/news/pinterest-layoffs-workforce-artificial-intelligence/",
+        "title": "Pinterest planned layoffs — CBS News",
+        "publisher": "CBS News",
+        "date": "2026-01-27"
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "announced",
+    "timeline": "Through 2026"
+  },
+  {
+    "id": "plan-011",
+    "company": "ups",
+    "companyName": "UPS",
+    "date": "2026-01-27",
+    "jobsCut": 30000,
+    "jobTypes": [
+      "Operational & facility staff"
+    ],
+    "industry": "Logistics",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "Strategic shift toward a \"technology-driven operation\" and automation to handle higher volumes with fewer facilities and human hours.",
+    "description": "UPS plans to cut 30,000 jobs across operational & facility staff. Strategic shift toward a \"technology-driven operation\" and automation to handle higher volumes with fewer facilities and human hours.",
+    "sources": [
+      {
+        "url": "https://www.5newsonline.com/article/news/nation-world/ups-cuts-thirty-thoudand-jobs-close-facilities-2026/507-03e10786-3dd2-4968-a536-e250a8dea134",
+        "title": "UPS planned layoffs — 5NEWS",
+        "publisher": "5NEWS",
+        "date": "2026-01-27"
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "announced",
+    "timeline": "Through 2026"
+  },
+  {
+    "id": "plan-012",
+    "company": "asml",
+    "companyName": "ASML",
+    "date": "2026-01-28",
+    "jobsCut": 1700,
+    "jobTypes": [
+      "Mixed"
+    ],
+    "industry": "Semiconductors",
+    "region": "Europe",
+    "country": "NL",
+    "aiReplacement": true,
+    "reasonGiven": "Efficiency-driven cuts; 'choosing to make these changes at a moment of strength.' Further 1,300 planned.",
+    "description": "ASML plans to cut 1,700 jobs across mixed (~3.8% of workforce). Efficiency-driven cuts; 'choosing to make these changes at a moment of strength.' Further 1,300 planned.",
+    "sources": [
+      {
+        "url": "https://www.reuters.com/business/asml-q4-bookings-beat-expectations-chipmakers-order-more-satisfy-ai-demand-2026-01-28/",
+        "title": "ASML planned layoffs — Reuters",
+        "publisher": "Reuters",
+        "date": "2026-01-28"
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "announced",
+    "timeline": "Not specified"
+  },
+  {
+    "id": "plan-013",
+    "company": "british-american-tobacco",
+    "companyName": "British American Tobacco",
+    "date": "2026-02-12",
+    "jobsCut": 0,
+    "jobTypes": [
+      "Operations"
+    ],
+    "industry": "Consumer Goods",
+    "region": "Europe",
+    "country": "UK",
+    "aiReplacement": true,
+    "reasonGiven": "New AI-driven productivity programme expected to lead to job cuts. Number not specified.",
+    "description": "British American Tobacco announced AI-driven job cuts (number not specified) affecting an unspecified part of the workforce. New AI-driven productivity programme expected to lead to job cuts. Number not specified.",
+    "sources": [
+      {
+        "url": "https://www.reuters.com/business/british-american-tobacco-annual-profit-rises-23-2026-02-12/",
+        "title": "British American Tobacco planned layoffs — Reuters",
+        "publisher": "Reuters",
+        "date": "2026-02-12"
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "announced",
+    "timeline": "Operations"
   },
   {
     "id": "plan-006",
@@ -96,35 +338,83 @@
     "companyName": "SEB (French appliances)",
     "date": "2026-02-25",
     "jobsCut": 2100,
-    "jobTypes": ["Manufacturing", "Operations"],
+    "jobTypes": [
+      "Manufacturing",
+      "Operations"
+    ],
     "industry": "Manufacturing",
     "region": "Europe",
     "country": "FR",
     "aiReplacement": true,
     "description": "Restructuring plan to 'take full advantage of the possibilities offered by AI.' Up to 2,100 jobs impacted by 2027.",
     "reasonGiven": "Restructuring to take full advantage of AI possibilities.",
-    "sources": [{"url": "https://finance.yahoo.com/news/factbox-companies-cutting-jobs-investments-163752693.html", "title": "Companies cutting jobs", "publisher": "Yahoo Finance", "date": "2026-02-25"}],
+    "sources": [
+      {
+        "url": "https://finance.yahoo.com/news/factbox-companies-cutting-jobs-investments-163752693.html",
+        "title": "Companies cutting jobs",
+        "publisher": "Yahoo Finance",
+        "date": "2026-02-25"
+      }
+    ],
     "verificationStatus": "verified",
     "status": "announced",
     "timeline": "By 2027"
   },
   {
-    "id": "plan-007",
-    "company": "meta",
-    "companyName": "Meta",
-    "date": "2026-03-14",
-    "jobsCut": 15800,
-    "jobTypes": ["Mixed", "Company-wide"],
-    "industry": "Technology",
+    "id": "plan-014",
+    "company": "hsbc",
+    "companyName": "HSBC",
+    "date": "2026-03-19",
+    "jobsCut": 20000,
+    "jobTypes": [
+      "Back office",
+      "Global service centers",
+      "Non-client-facing"
+    ],
+    "industry": "Financial Services",
     "region": "Global",
+    "country": "UK",
+    "aiReplacement": true,
+    "reasonGiven": "CEO Georges Elhedery betting on AI to shrink middle and back office footprint. CFO Pam Kaur cited AI cost efficiencies: 'The real shift is really trying to drive operating leverage...focusing on the benefits we can get through AI, whether it's on better productivity around the revenue line or just the cost benefit.'",
+    "description": "HSBC plans to cut up to 20,000 (~10% of 208,720) jobs across non-client-facing / global service centers / back office. CEO Georges Elhedery betting on AI to shrink middle and back office footprint. CFO Pam Kaur cited AI cost efficiencies: 'The real shift is really trying to drive operating leverage...focusing on the benefits we can get through AI, whether it's on better productivity around the revenue line or just the cost benefit.'",
+    "sources": [
+      {
+        "url": "https://www.reuters.com/business/world-at-work/hsbc-mulls-job-cuts-that-could-impact-around-20000-roles-bloomberg-news-reports-2026-03-19/",
+        "title": "HSBC planned layoffs — Reuters",
+        "publisher": "Reuters",
+        "date": "2026-03-19"
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "announced",
+    "timeline": "3-5 years (medium-term)"
+  },
+  {
+    "id": "plan-015",
+    "company": "paypal",
+    "companyName": "PayPal",
+    "date": "2026-05-05",
+    "jobsCut": 4500,
+    "jobTypes": [
+      "Mixed",
+      "Company-wide"
+    ],
+    "industry": "Financial Technology",
+    "region": "North America",
     "country": "US",
     "aiReplacement": true,
-    "description": "To offset AI infrastructure spending (up to $135B capex in 2026). Reuters reported executives told senior leaders to begin preparing for cuts. Zuckerberg (Jan earnings call): 'We're starting to see projects that used to require big teams now be accomplished by a single very talented person.' Meta spokesperson: 'This is speculative reporting about theoretical approaches.'",
-    "reasonGiven": "To offset AI infrastructure spending. Zuckerberg: 'Projects that used to require big teams now accomplished by a single very talented person.'",
-    "sources": [{"url": "https://www.reuters.com/business/world-at-work/meta-planning-sweeping-layoffs-ai-costs-mount-2026-03-14/", "title": "Meta planning sweeping layoffs", "publisher": "Reuters", "date": "2026-03-14"}],
-    "verificationStatus": "pending",
+    "reasonGiven": "New CEO Enrique Lores in investor communication: 'we remove duplication and layers from our structure, we accelerate our adoption of AI and automation across our operations.' Part of plan to realize at least $1.5B in savings over 2-3 years. Announced May 5, 2026 alongside Q1 2026 earnings/strategic plan. Lores joined PayPal from HP Inc.",
+    "description": "PayPal plans to cut ~4,500-4,760 (~20% of 23,800) jobs across mixed / company-wide. New CEO Enrique Lores in investor communication: 'we remove duplication and layers from our structure, we accelerate our adoption of AI and automation across our operations.' Part of plan to realize at least $1.5B in savings over 2-3 years. Announced May 5, 2026 alongside Q1 2026 earnings/strategic plan. Lores joined PayPal from HP Inc.",
+    "sources": [
+      {
+        "url": "https://www.bloomberg.com/news/articles/2026-05-05/paypal-plans-job-cuts-as-fintech-s-new-ceo-pursues-turnaround-strategy",
+        "title": "PayPal planned layoffs — Bloomberg",
+        "publisher": "Bloomberg",
+        "date": "2026-05-05"
+      }
+    ],
+    "verificationStatus": "verified",
     "status": "announced",
-    "timeline": "Not specified",
-    "notes": "Reported but unconfirmed. Meta spokesperson called it 'speculative reporting about theoretical approaches.'"
+    "timeline": "Over 2-3 years"
   }
 ]

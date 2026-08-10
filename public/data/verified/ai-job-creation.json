@@ -1,21 +1,175 @@
 [
   {
+    "id": "create-002",
+    "company": "cloudflare",
+    "companyName": "Cloudflare",
+    "date": "2025-09-22",
+    "jobsCut": 0,
+    "jobTypes": [
+      "Engineering",
+      "AI infrastructure"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": false,
+    "description": "Cloudflare announced 1,111 intern roles (up from ~60 previously) in Engineering / AI infrastructure. Cloudflare announced plans to hire 1,111 interns in 2026, a massive increase from its former 60-person internship program. The expansion is part of the company's push to build AI infrastructure and develop AI-native talent pipelines.",
+    "reasonGiven": "Cloudflare announced plans to hire 1,111 interns in 2026, a massive increase from its former 60-person internship program. The expansion is part of the company's push to build AI infrastructure and develop AI-native talent pipelines.",
+    "sources": [
+      {
+        "url": "https://blog.cloudflare.com/cloudflare-1111-intern-program/",
+        "title": "Cloudflare AI hiring announcement — Cloudflare",
+        "publisher": "Cloudflare",
+        "date": "2025-09-22"
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "creation",
+    "jobRolesCreated": "Engineering / AI infrastructure",
+    "context": "Cloudflare announced plans to hire 1,111 interns in 2026, a massive increase from its former 60-person internship program. The expansion is part of the company's push to build AI infrastructure and develop AI-native talent pipelines."
+  },
+  {
+    "id": "create-003",
+    "company": "accenture",
+    "companyName": "Accenture",
+    "date": "2025-09-26",
+    "jobsCut": 0,
+    "jobTypes": [
+      "AI and data professionals"
+    ],
+    "industry": "Professional Services",
+    "region": "Global",
+    "country": "IE",
+    "aiReplacement": false,
+    "description": "Accenture announced 37,000 new roles (AI and Data Professionals). Growing client demand for AI deployment; reaching a total of 77,000 experts",
+    "reasonGiven": "Growing client demand for AI deployment; reaching a total of 77,000 experts",
+    "sources": [
+      {
+        "url": "https://www.cnbc.com/2025/09/26/accenture-plans-on-exiting-staff-who-cant-be-reskilled-on-ai.html",
+        "title": "Accenture AI hiring announcement — CNBC",
+        "publisher": "CNBC",
+        "date": "2025-09-26"
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "creation",
+    "jobRolesCreated": "AI and Data Professionals",
+    "context": "Growing client demand for AI deployment; reaching a total of 77,000 experts"
+  },
+  {
+    "id": "create-004",
+    "company": "cognizant",
+    "companyName": "Cognizant",
+    "date": "2025-10-25",
+    "jobsCut": 0,
+    "jobTypes": [
+      "Early-career talent"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": false,
+    "description": "Cognizant announced 2,000 new roles (Early-career talent). Quadrupling its pipeline of entry-level talent in the US with a plan to hire up to 2,000 early-career talent by the end of the year.",
+    "reasonGiven": "Quadrupling its pipeline of entry-level talent in the US with a plan to hire up to 2,000 early-career talent by the end of the year.",
+    "sources": [
+      {
+        "url": "https://economictimes.indiatimes.com/tech/information-tech/cognizant-to-hire-entry-level-talent-expanding-beyond-tech-to-non-stem-majors/articleshow/124809039.cms?from=mdr",
+        "title": "Cognizant AI hiring announcement — The Economic Times",
+        "publisher": "The Economic Times",
+        "date": "2025-10-25"
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "creation",
+    "jobRolesCreated": "Early-career talent",
+    "context": "Quadrupling its pipeline of entry-level talent in the US with a plan to hire up to 2,000 early-career talent by the end of the year."
+  },
+  {
     "id": "create-001",
     "company": "ibm",
     "companyName": "IBM",
     "date": "2026-02-12",
     "jobsCut": 0,
-    "jobTypes": ["Software developers", "HR (AI oversight)", "Customer-facing"],
+    "jobTypes": [
+      "Software developers",
+      "HR (AI oversight)",
+      "Customer-facing"
+    ],
     "industry": "Technology",
     "region": "US",
     "country": "US",
     "aiReplacement": false,
     "description": "Previously froze ~7,800 back-office roles due to AI (May 2023). Now tripling U.S. entry-level hiring for 2026, but for fundamentally different roles. New hires manage chatbots, oversee AI outputs, and intervene when AI fails. CHRO Nickle LaMoreaux: 'The entry-level jobs from two to three years ago? AI can do most of them.' CEO Krishna (Oct 2025): 'We are probably going to hire more people out of college over the next 12 months than we have in the past few years.'",
     "reasonGiven": "Tripling entry-level hiring — but for AI-management roles, not traditional back-office work.",
-    "sources": [{"url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ibm-triples-entry-level-hires-for-2026-despite-ai-adoption-bucking-industry-trends-chief-hr-officer-says-that-ai-can-do-most-entry-level-jobs-but-work-still-requires-a-human-touch", "title": "IBM triples entry-level hires", "publisher": "Tom's Hardware", "date": "2026-02-12"}],
+    "sources": [
+      {
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ibm-triples-entry-level-hires-for-2026-despite-ai-adoption-bucking-industry-trends-chief-hr-officer-says-that-ai-can-do-most-entry-level-jobs-but-work-still-requires-a-human-touch",
+        "title": "IBM triples entry-level hires",
+        "publisher": "Tom's Hardware",
+        "date": "2026-02-12"
+      }
+    ],
     "verificationStatus": "verified",
     "status": "creation",
     "jobRolesCreated": "Software developers, HR (AI oversight), customer-facing roles — redefined as AI-management positions",
     "context": "Reversal from May 2023 hiring freeze. New roles fundamentally different — managing chatbots, overseeing AI outputs, intervening when AI fails."
+  },
+  {
+    "id": "create-005",
+    "company": "threatlocker",
+    "companyName": "ThreatLocker",
+    "date": "2026-02-24",
+    "jobsCut": 0,
+    "jobTypes": [
+      "Entry-level junior developers"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": false,
+    "description": "ThreatLocker announced 1,200 new roles (Entry-level junior developers). CEO and cofounder, Danny Jenkins, said company has experienced a spike in growth as it responds to a new age of threats in the AI era. Plans to nearly double its headcount in the next 18 months",
+    "reasonGiven": "CEO and cofounder, Danny Jenkins, said company has experienced a spike in growth as it responds to a new age of threats in the AI era. Plans to nearly double its headcount in the next 18 months",
+    "sources": [
+      {
+        "url": "https://www.businessinsider.com/companies-boosting-hiring-entry-level-engineers-2026-2",
+        "title": "ThreatLocker AI hiring announcement — Business Insider",
+        "publisher": "Business Insider",
+        "date": "2026-02-24"
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "creation",
+    "jobRolesCreated": "Entry-level junior developers",
+    "context": "CEO and cofounder, Danny Jenkins, said company has experienced a spike in growth as it responds to a new age of threats in the AI era. Plans to nearly double its headcount in the next 18 months"
+  },
+  {
+    "id": "create-006",
+    "company": "salesforce",
+    "companyName": "Salesforce",
+    "date": "2026-04-26",
+    "jobsCut": 0,
+    "jobTypes": [
+      "Engineering",
+      "Product",
+      "Sales"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": false,
+    "description": "Salesforce announced hiring of 1,000 new graduates and interns for Engineering / Product / Sales roles focused on Agentforce and Headless 360. CEO Marc Benioff on X: 'I'm locked on, @DavidSacks! We're hiring 1,000 new grads & interns right now to ride the AI exponential. You are right they said AI would kill entry-level jobs. Meanwhile these grads & interns are building it -- powering Agentforce & Headless 360 at Salesforce.' Salesforce launched a new Builder Program within its university recruitment initiative (Futureforce) to fast-track recent graduates into engineering, product, and sales roles focused on its AI agent platform Agentforce. Company says it has hired over 10,000 professionals through Futureforce to date. Comes despite Salesforce's own February 2026 cuts of nearly 1,000 roles (already in tracker). Benioff also said he is hiring more salespeople because 'demand than ever' even while not hiring more software developers or service agents in FY26 due to AI agent capabilities.",
+    "reasonGiven": "CEO Marc Benioff on X: 'I'm locked on, @DavidSacks! We're hiring 1,000 new grads & interns right now to ride the AI exponential. You are right they said AI would kill entry-level jobs. Meanwhile these grads & interns are building it -- powering Agentforce & Headless 360 at Salesforce.' Salesforce launched a new Builder Program within its university recruitment initiative (Futureforce) to fast-track recent graduates into engineering, product, and sales roles focused on its AI agent platform Agentforce. Company says it has hired over 10,000 professionals through Futureforce to date. Comes despite Salesforce's own February 2026 cuts of nearly 1,000 roles (already in tracker). Benioff also said he is hiring more salespeople because 'demand than ever' even while not hiring more software developers or service agents in FY26 due to AI agent capabilities.",
+    "sources": [
+      {
+        "url": "https://www.fastcompany.com/91537976/salesforce-says-it-will-hire-1000-ai-native-new-grads",
+        "title": "Salesforce AI hiring announcement — Fast Company",
+        "publisher": "Fast Company",
+        "date": "2026-04-26"
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "creation",
+    "jobRolesCreated": "Engineering / Product / Sales (AI-focused on Agentforce + Headless360)",
+    "context": "CEO Marc Benioff on X: 'I'm locked on, @DavidSacks! We're hiring 1,000 new grads & interns right now to ride the AI exponential. You are right they said AI would kill entry-level jobs. Meanwhile these grads & interns are building it -- powering Agentforce & Headless 360 at Salesforce.' Salesforce launched a new Builder Program within its university recruitment initiative (Futureforce) to fast-track recent graduates into engineering, product, and sales roles focused on its AI agent platform Agentforce. Company says it has hired over 10,000 professionals through Futureforce to date. Comes despite Salesforce's own February 2026 cuts of nearly 1,000 roles (already in tracker). Benioff also said he is hiring more salespeople because 'demand than ever' even while not hiring more software developers or service agents in FY26 due to AI agent capabilities."
   }
 ]

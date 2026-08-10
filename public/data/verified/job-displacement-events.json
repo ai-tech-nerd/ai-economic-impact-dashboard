@@ -40,7 +40,7 @@
     "country": "US",
     "aiReplacement": true,
     "reasonGiven": "CEO Sundar Pichai memo: company facing 'a different economic reality,' doubling down on AI while cutting staff in experimental projects. Redirected resources toward AI launch.",
-    "description": "Google (Alphabet) cut 12,000 jobs across mixed \u2014 recruiting, corporate, engineering, experimental projects (~6%). CEO Sundar Pichai memo: company facing 'a different economic reality,' doubling down on AI while cutting staff in experimental projects.",
+    "description": "Google (Alphabet) cut 12,000 jobs across mixed — recruiting, corporate, engineering, experimental projects (~6%). CEO Sundar Pichai memo: company facing 'a different economic reality,' doubling down on AI while cutting staff in experimental projects.",
     "sources": [
       {
         "url": "https://www.reuters.com/business/google-parent-lay-off-12000-workers-memo-2023-01-20/",
@@ -165,8 +165,8 @@
     "region": "North America",
     "country": "US",
     "aiReplacement": true,
-    "reasonGiven": "*HIRING FREEZE \u2014 Economic impact, not direct layoffs. CEO Arvind Krishna: 'I could easily see 30% of that getting replaced by AI and automation over a five-year period.' Paused hiring for ~26,000 non-customer-facing roles. AskHR chatbot now handles 94% of routine HR queries without human handoff. Freeze active since May 2023.",
-    "description": "IBM cut 7,800 (estimated, ongoing) jobs across back-office / human resources (hiring freeze)*. *HIRING FREEZE \u2014 Economic impact, not direct layoffs.",
+    "reasonGiven": "*HIRING FREEZE — Economic impact, not direct layoffs. CEO Arvind Krishna: 'I could easily see 30% of that getting replaced by AI and automation over a five-year period.' Paused hiring for ~26,000 non-customer-facing roles. AskHR chatbot now handles 94% of routine HR queries without human handoff. Freeze active since May 2023.",
+    "description": "IBM cut 7,800 (estimated, ongoing) jobs across back-office / human resources (hiring freeze)*. *HIRING FREEZE — Economic impact, not direct layoffs.",
     "sources": [
       {
         "url": "https://www.reuters.com/technology/ibm-pause-hiring-plans-replace-7800-jobs-with-ai-bloomberg-news-2023-05-01/",
@@ -359,7 +359,7 @@
   {
     "id": "evt-015",
     "company": "google-alphabet-ad-sales",
-    "companyName": "Google (Alphabet) \u2014 Ad Sales",
+    "companyName": "Google (Alphabet) — Ad Sales",
     "date": "2024-01-16",
     "jobsCut": 300,
     "jobTypes": [
@@ -371,11 +371,11 @@
     "country": "US",
     "aiReplacement": true,
     "reasonGiven": "SVP Philipp Schindler memo: restructuring ad sales amid AI integration. 'We map customers to the right specialist teams.' Coincided with broader AI restructuring of Google Assistant.",
-    "description": "Google (Alphabet) \u2014 Ad Sales cut 300 jobs across advertising sales / large customer sales. SVP Philipp Schindler memo: restructuring ad sales amid AI integration.",
+    "description": "Google (Alphabet) — Ad Sales cut 300 jobs across advertising sales / large customer sales. SVP Philipp Schindler memo: restructuring ad sales amid AI integration.",
     "sources": [
       {
         "url": "https://www.reuters.com/technology/google-lays-off-hundreds-employees-advertising-team-business-insider-2024-01-16/",
-        "title": "Google (Alphabet) \u2014 Ad Sales layoffs",
+        "title": "Google (Alphabet) — Ad Sales layoffs",
         "publisher": "Reuters",
         "date": "2024-01-16"
       }
@@ -421,8 +421,8 @@
     "region": "Europe",
     "country": "DE",
     "aiReplacement": true,
-    "reasonGiven": "SAP announced \u20ac2B restructuring: 'In 2024, SAP will further increase its focus on key strategic growth areas, in particular Business AI.' Most positions covered by voluntary leave and reskilling.",
-    "description": "SAP cut 8,000 jobs across mixed / restructuring (7% of workforce). SAP announced \u20ac2B restructuring: 'In 2024, SAP will further increase its focus on key strategic growth areas, in particular Business AI.",
+    "reasonGiven": "SAP announced €2B restructuring: 'In 2024, SAP will further increase its focus on key strategic growth areas, in particular Business AI.' Most positions covered by voluntary leave and reskilling.",
+    "description": "SAP cut 8,000 jobs across mixed / restructuring (7% of workforce). SAP announced €2B restructuring: 'In 2024, SAP will further increase its focus on key strategic growth areas, in particular Business AI.",
     "sources": [
       {
         "url": "https://www.reuters.com/technology/sap-announces-company-wide-restructuring-updates-2025-outlook-2024-01-23/",
@@ -575,13 +575,40 @@
     "country": "SE",
     "aiReplacement": true,
     "reasonGiven": "CEO Siemiatkowski: workforce dropped from 5,000 to 3,800 (24% in one year) through hiring freeze and natural attrition enabled by AI. AI chatbot doing work of 700 agents. Plans to reach 2,000 employees.",
-    "description": "Klarna cut 1,200 jobs across mixed \u2014 via hiring freeze and attrition. CEO Siemiatkowski: workforce dropped from 5,000 to 3,800 (24% in one year) through hiring freeze and natural attrition enabled by AI.",
+    "description": "Klarna cut 1,200 jobs across mixed — via hiring freeze and attrition. CEO Siemiatkowski: workforce dropped from 5,000 to 3,800 (24% in one year) through hiring freeze and natural attrition enabled by AI.",
     "sources": [
       {
         "url": "https://www.reuters.com/technology/artificial-intelligence/swedens-klarna-says-ai-chatbots-help-shrink-headcount-2024-08-27/",
         "title": "Klarna layoffs",
         "publisher": "FXC Intelligence",
         "date": "2024-08-27"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-071",
+    "company": "dropbox",
+    "companyName": "Dropbox",
+    "date": "2024-10-30",
+    "jobsCut": 528,
+    "jobTypes": [
+      "Managers",
+      "Product design",
+      "Engineering"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "CEO Drew Houston: trimming bloated areas, building leaner team with bigger focus on AI. Refocused around AI-powered search/productivity tools.",
+    "description": "Dropbox cut 528 jobs across managers, product design, engineering (~20%). CEO Drew Houston: trimming bloated areas, building leaner team with bigger focus on AI. Refocused around AI-powered search/productivity tools.",
+    "sources": [
+      {
+        "url": "https://blog.dropbox.com/topics/company/an-update-from-drew",
+        "title": "Dropbox layoffs — Dropbox",
+        "publisher": "Dropbox",
+        "date": "2024-10-30"
       }
     ],
     "verificationStatus": "verified"
@@ -632,6 +659,33 @@
         "title": "UPS layoffs",
         "publisher": "News Source",
         "date": "2025-04-29"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-072",
+    "company": "pwc",
+    "companyName": "PwC",
+    "date": "2025-05-05",
+    "jobsCut": 1500,
+    "jobTypes": [
+      "Assurance",
+      "Tax",
+      "Products & Technology"
+    ],
+    "industry": "Professional Services",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "Deanna Byrne (Assurance lead at PwC) internal communication: 'We are proceeding with a reduction in workforce across various sections of our US operations -- this includes Assurance, Tax, and parts of our legacy Products & Technology sector.' Senior partner Paul Griggs (US North America operations): 'We are in an era of reinvention, with many companies aiming to transform their businesses through data, AI, and other emerging technologies while also fostering greater trust with stakeholders and maintaining the integrity of the capital markets.' Context: PwC made a $1 billion investment in OpenAI/ChatGPT and rolled out the platform to 100,000+ employees in 2024. Three-year ChatGPT partnership announced in 2023. PwC also cut campus recruiting in light of the workforce reduction. Forbes noted: 'AI is transforming the service workforce.' Separate from the February 2026 cuts of ~600 EAs/recruiters.",
+    "description": "PwC cut ~1,500 (~2% of US workforce) jobs across assurance / tax / products & technology. Deanna Byrne (Assurance lead at PwC) internal communication: 'We are proceeding with a reduction in workforce across various sections of our US operations -- this includes Assurance, Tax, and parts of our legacy Products & Technology sector.' Senior partner Paul Griggs (US North America operations): 'We are in an era of reinvention, with many companies aiming to transform their businesses through data, AI, and other emerging technologies while also fostering greater trust with stakeholders and maintaining the integrity of the capital markets.' Context: PwC made a $1 billion investment in OpenAI/ChatGPT and rolled out the platform to 100,000+ employees in 2024. Three-year ChatGPT partnership announced in 2023. PwC also cut campus recruiting in light of the workforce reduction. Forbes noted: 'AI is transforming the service workforce.' Separate from the February 2026 cuts of ~600 EAs/recruiters.",
+    "sources": [
+      {
+        "url": "https://www.forbes.com/sites/chriswestfall/2025/05/07/chatgpts-largest-enterprise-user-pwc-cuts-workforce-by-1500-jobs/",
+        "title": "PwC layoffs — Forbes",
+        "publisher": "Forbes",
+        "date": "2025-05-05"
       }
     ],
     "verificationStatus": "verified"
@@ -918,6 +972,32 @@
     "verificationStatus": "verified"
   },
   {
+    "id": "evt-073",
+    "company": "xai",
+    "companyName": "xAI",
+    "date": "2025-09-13",
+    "jobsCut": 500,
+    "jobTypes": [
+      "Data annotation",
+      "AI tutors"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "xAI laid off at least 500 workers from its data annotation team -- about one-third of its 1,500-person annotation division. Internal email: 'After a thorough review of our Human Data efforts, we've decided to accelerate the expansion and prioritization of our specialist AI tutors, while scaling back our focus on general AI tutor roles. This strategic pivot will take effect immediately.' Workers lost system access same day. xAI said it plans to 'surge our Specialist AI tutor team by 10x.' The data annotation team was xAI's largest division, responsible for training Grok chatbot.",
+    "description": "xAI cut 500 jobs across data annotation / generalist ai tutors. xAI laid off at least 500 workers from its data annotation team -- about one-third of its 1,500-person annotation division. Internal email: 'After a thorough review of our Human Data efforts, we've decided to accelerate the expansion and prioritization of our specialist AI tutors, while scaling back our focus on general AI tutor roles. This strategic pivot will take effect immediately.' Workers lost system access same day. xAI said it plans to 'surge our Specialist AI tutor team by 10x.' The data annotation team was xAI's largest division, responsible for training Grok chatbot.",
+    "sources": [
+      {
+        "url": "https://www.businessinsider.com/elon-musk-xai-layoffs-data-annotators-2025-9",
+        "title": "xAI layoffs — Business Insider",
+        "publisher": "Business Insider",
+        "date": "2025-09-13"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
     "id": "evt-037",
     "company": "accenture",
     "companyName": "Accenture",
@@ -1014,6 +1094,31 @@
         "title": "Paycom layoffs",
         "publisher": "Programs.com",
         "date": "2025-10-03"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-074",
+    "company": "bill-holdings",
+    "companyName": "BILL Holdings",
+    "date": "2025-10-15",
+    "jobsCut": 140,
+    "jobTypes": [
+      "general"
+    ],
+    "industry": "Financial Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "CEO Rene Lacerte: 'We've modernized our payments infrastructure and made strategic investments in predictive and agentic AI to support long-term growth. Reducing our workforce improves organizational agility and efficiency, while also freeing up capital resources to fuel investments that strengthen our market leadership.' Cuts tied to AI investment reallocation. Closure of Sydney office. Activist pressure from Starboard Value preceded the move.",
+    "description": "BILL Holdings cut ~140 (6%) jobs across various / restructuring. CEO Rene Lacerte: 'We've modernized our payments infrastructure and made strategic investments in predictive and agentic AI to support long-term growth. Reducing our workforce improves organizational agility and efficiency, while also freeing up capital resources to fuel investments that strengthen our market leadership.' Cuts tied to AI investment reallocation. Closure of Sydney office. Activist pressure from Starboard Value preceded the move.",
+    "sources": [
+      {
+        "url": "https://www.bill.com/blog/a-message-to-bill-employees",
+        "title": "BILL Holdings layoffs — BILL",
+        "publisher": "BILL",
+        "date": "2025-10-15"
       }
     ],
     "verificationStatus": "verified"
@@ -1551,6 +1656,34 @@
     "verificationStatus": "verified"
   },
   {
+    "id": "evt-075",
+    "company": "c3-ai",
+    "companyName": "C3.ai",
+    "date": "2026-02-25",
+    "jobsCut": 312,
+    "jobTypes": [
+      "Sales",
+      "Revenue",
+      "R&D",
+      "Admin"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "C3.ai board approved restructuring plan cutting 26% of global workforce under new CEO Stephen Ehikian. SEC filing: 'intended to materially improve its operating efficiency and position the company for success.' Sales and marketing hardest hit at 36%. Expected to save ~$60M/year with $10-12M in restructuring charges. Also cutting ~30% of non-employee costs. Revenue had declined sharply from $98.8M to $53.3M quarter-over-quarter.",
+    "description": "C3.ai cut ~312 (26% of ~1,181) jobs across sales (36%) / revenue (25%) / r&d (25%) / admin (13%). C3.ai board approved restructuring plan cutting 26% of global workforce under new CEO Stephen Ehikian. SEC filing: 'intended to materially improve its operating efficiency and position the company for success.' Sales and marketing hardest hit at 36%. Expected to save ~$60M/year with $10-12M in restructuring charges. Also cutting ~30% of non-employee costs. Revenue had declined sharply from $98.8M to $53.3M quarter-over-quarter.",
+    "sources": [
+      {
+        "url": "https://www.reuters.com/business/c3ai-cuts-26-global-staff-under-new-ceos-restructuring-push-2026-02-26/",
+        "title": "C3.ai layoffs — Reuters",
+        "publisher": "Reuters",
+        "date": "2026-02-25"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
     "id": "evt-062",
     "company": "ocado",
     "companyName": "Ocado",
@@ -1570,6 +1703,34 @@
         "url": "https://www.msn.com/en-us/money/companies/ocado-shares-tumble-as-boss-warns-of-job-cuts/ar-AA1X71Cc?ocid=finance-verthp-feeds",
         "title": "Ocado layoffs",
         "publisher": "Business Insider",
+        "date": "2026-02-26"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-076",
+    "company": "pwc",
+    "companyName": "PwC",
+    "date": "2026-02-26",
+    "jobsCut": 600,
+    "jobTypes": [
+      "Executive assistants",
+      "Recruiters",
+      "Talent acquisition",
+      "Support staff"
+    ],
+    "industry": "Professional Services",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "PwC US spokesperson to Bloomberg: 'modernising and simplifying how we work. Just as we help our clients do every day, we're becoming more digital, more efficient and better able to reinvest in growth and align more closely with firm and market needs.' Bloomberg reporting (sourced from people familiar): 'PwC's February cuts were influenced by the firm's push to adopt AI, both in terms of gearing up for automation and cutting costs.' Cuts wiped out the entire TID (Talent Acquisition) department from the top down per Going Concern. PwC has invested $1B in OpenAI/ChatGPT and rolled out AI tools across 100,000+ employees. Firmwide Talent Acquisition Leader Margaret Burke had warned in November 2025 of 'transformation' coming. The February cut included EAs whose work (scheduling, expenses, travel booking, inbox triage) is being absorbed by AI tools.",
+    "description": "PwC cut ~600 jobs across executive assistants / recruiters / talent acquisition / support staff (incl. ~170 in buenos aires, plus tampa). PwC US spokesperson to Bloomberg: 'modernising and simplifying how we work. Just as we help our clients do every day, we're becoming more digital, more efficient and better able to reinvest in growth and align more closely with firm and market needs.' Bloomberg reporting (sourced from people familiar): 'PwC's February cuts were influenced by the firm's push to adopt AI, both in terms of gearing up for automation and cutting costs.' Cuts wiped out the entire TID (Talent Acquisition) department from the top down per Going Concern. PwC has invested $1B in OpenAI/ChatGPT and rolled out AI tools across 100,000+ employees. Firmwide Talent Acquisition Leader Margaret Burke had warned in November 2025 of 'transformation' coming. The February cut included EAs whose work (scheduling, expenses, travel booking, inbox triage) is being absorbed by AI tools.",
+    "sources": [
+      {
+        "url": "https://www.bloomberg.com/news/features/2026-05-21/mckinsey-pwc-and-ey-lay-off-executive-assistants-as-ai-accelerates",
+        "title": "PwC layoffs — Bloomberg",
+        "publisher": "Bloomberg",
         "date": "2026-02-26"
       }
     ],
@@ -1776,6 +1937,296 @@
         "title": "Meta layoffs",
         "publisher": "News Source",
         "date": "2026-04-04"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-077",
+    "company": "pendo",
+    "companyName": "Pendo",
+    "date": "2026-04-07",
+    "jobsCut": 90,
+    "jobTypes": [
+      "Engineering",
+      "Sales",
+      "Customer success"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "Pendo laid off 90 positions as part of company-wide restructuring. InformationWeek reported the layoffs were 'part of a restructuring and operational changes in light of Pendo's investment in AI.' 30 of the 90 affected were based in Raleigh, NC headquarters. The product analytics company faces competition from emerging AI-powered analytics platforms. CEO Todd Olson acknowledged over-hiring during rapid growth phase.",
+    "description": "Pendo cut 90 (~10% of ~900) jobs across engineering / sales / customer success. Pendo laid off 90 positions as part of company-wide restructuring. InformationWeek reported the layoffs were 'part of a restructuring and operational changes in light of Pendo's investment in AI.' 30 of the 90 affected were based in Raleigh, NC headquarters. The product analytics company faces competition from emerging AI-powered analytics platforms. CEO Todd Olson acknowledged over-hiring during rapid growth phase.",
+    "sources": [
+      {
+        "url": "https://www.axios.com/local/raleigh/2026/04/07/raleigh-software-unicorn-pendo-layoffs-jobs",
+        "title": "Pendo layoffs — Axios",
+        "publisher": "Axios",
+        "date": "2026-04-07"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-078",
+    "company": "disney",
+    "companyName": "Disney",
+    "date": "2026-04-14",
+    "jobsCut": 1000,
+    "jobTypes": [
+      "Mixed",
+      "Company-wide"
+    ],
+    "industry": "Media/Entertainment",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "CEO Josh D'Amaro email seen by Reuters: 'Given the fast-moving pace of our industries, this requires us to constantly assess how to foster a more agile and technologically-enabled workforce to meet tomorrow's needs. As a result, we will be eliminating roles in some parts of the company.' Layoffs span multiple divisions including Marvel production pullbacks and corporate functions. Announced April 14, 2026.",
+    "description": "Disney cut 1,000 jobs across mixed / company-wide (marvel / corporate / operations). CEO Josh D'Amaro email seen by Reuters: 'Given the fast-moving pace of our industries, this requires us to constantly assess how to foster a more agile and technologically-enabled workforce to meet tomorrow's needs. As a result, we will be eliminating roles in some parts of the company.' Layoffs span multiple divisions including Marvel production pullbacks and corporate functions. Announced April 14, 2026.",
+    "sources": [
+      {
+        "url": "https://www.reuters.com/legal/litigation/disney-eliminate-1000-positions-2026-04-14/",
+        "title": "Disney layoffs — Reuters",
+        "publisher": "Reuters",
+        "date": "2026-04-14"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-079",
+    "company": "snap",
+    "companyName": "Snap Inc.",
+    "date": "2026-04-15",
+    "jobsCut": 1000,
+    "jobTypes": [
+      "Mixed",
+      "Company-wide"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "CEO Evan Spiegel memo via SEC filing: 'While these changes are necessary to realize Snap's long-term potential, we believe that rapid advancements in artificial intelligence enable our teams to reduce repetitive work, increase velocity, and better support our community, partners, and advertisers.' Described it as a 'crucible moment' demanding 'a new way of working that is faster and more efficient.' Said small squads using AI tools drove 'meaningful progress' on Snapchat+, ad platform, and Snap Lite. Also closing 300+ open roles. Expects $500M+ annualized savings by H2 2026. Activist investor Irenic Capital had recommended cutting ~1,000 roles citing AI. US employees receive 4 months severance.",
+    "description": "Snap Inc. cut ~1,000 (~16% of ~5,261) jobs across mixed / company-wide. CEO Evan Spiegel memo via SEC filing: 'While these changes are necessary to realize Snap's long-term potential, we believe that rapid advancements in artificial intelligence enable our teams to reduce repetitive work, increase velocity, and better support our community, partners, and advertisers.' Described it as a 'crucible moment' demanding 'a new way of working that is faster and more efficient.' Said small squads using AI tools drove 'meaningful progress' on Snapchat+, ad platform, and Snap Lite. Also closing 300+ open roles. Expects $500M+ annualized savings by H2 2026. Activist investor Irenic Capital had recommended cutting ~1,000 roles citing AI. US employees receive 4 months severance.",
+    "sources": [
+      {
+        "url": "https://techcrunch.com/2026/04/15/snap-is-cutting-1000-jobs-16-of-its-workforce/",
+        "title": "Snap Inc. layoffs — TechCrunch",
+        "publisher": "TechCrunch",
+        "date": "2026-04-15"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-080",
+    "company": "ukg",
+    "companyName": "UKG (Ultimate Kronos Group)",
+    "date": "2026-04-15",
+    "jobsCut": 950,
+    "jobTypes": [
+      "Customer experience",
+      "Implementation",
+      "Operations"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "UKG official statement: 'As part of UKG's ongoing transformation, we are restructuring parts of our workforce, impacting approximately 950 employees worldwide, or 6% of our workforce. These actions span multiple functions and regions and reflect rapidly evolving market shifts -- including changes in technology driven by AI, customer expectations, and how software companies compete -- and will better align our structure, skills, and investments for the future.' CEO Jennifer Morgan (former SAP co-CEO, joined 2024) is openly transforming UKG into an 'AI-first company.' ~600 employees exited immediately; ~350 on transition through August 31. Notification by email April 15, 2026. Heavy hits to Sunrise and Weston, Florida offices. Second major cut in 18 months (2,200 cut in late 2024).",
+    "description": "UKG (Ultimate Kronos Group) cut ~950 (6% of ~16,000) jobs across multiple functions and regions / cx / implementation / operations. UKG official statement: 'As part of UKG's ongoing transformation, we are restructuring parts of our workforce, impacting approximately 950 employees worldwide, or 6% of our workforce. These actions span multiple functions and regions and reflect rapidly evolving market shifts -- including changes in technology driven by AI, customer expectations, and how software companies compete -- and will better align our structure, skills, and investments for the future.' CEO Jennifer Morgan (former SAP co-CEO, joined 2024) is openly transforming UKG into an 'AI-first company.' ~600 employees exited immediately; ~350 on transition through August 31. Notification by email April 15, 2026. Heavy hits to Sunrise and Weston, Florida offices. Second major cut in 18 months (2,200 cut in late 2024).",
+    "sources": [
+      {
+        "url": "https://cbs12.com/news/florida/ukg-announces-950-layoffs-affecting-a-large-number-of-workers-in-south-florida-offices-ultimate-kronos-group-jobs-reductions-restructuring-",
+        "title": "UKG (Ultimate Kronos Group) layoffs — CBS12 West Palm Beach",
+        "publisher": "CBS12 West Palm Beach",
+        "date": "2026-04-15"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-081",
+    "company": "nike",
+    "companyName": "Nike",
+    "date": "2026-04-23",
+    "jobsCut": 1400,
+    "jobTypes": [
+      "Global operations",
+      "Technology"
+    ],
+    "industry": "Retail/Consumer Goods",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "COO Venkatesh Alagirisamy memo: 'These changes are meant to make the company less complex and more responsive. As we look ahead, that means simplifying parts of how we operate, using more advanced automation where it helps us work better, and building an even stronger end-to-end foundation for future growth.' Cuts span Technology Modernization (consolidating to two hubs: Beaverton, OR and Nike India Technology Center), Air Manufacturing Modernization, and Materials Supply Chain Integration. Part of Nike's 'Win Now' turnaround strategy. Second round of 2026 cuts (775 cut in January). Separate event from Feb 2025 layoffs.",
+    "description": "Nike cut 1,400 jobs across global operations / technology (majority). COO Venkatesh Alagirisamy memo: 'These changes are meant to make the company less complex and more responsive. As we look ahead, that means simplifying parts of how we operate, using more advanced automation where it helps us work better, and building an even stronger end-to-end foundation for future growth.' Cuts span Technology Modernization (consolidating to two hubs: Beaverton, OR and Nike India Technology Center), Air Manufacturing Modernization, and Materials Supply Chain Integration. Part of Nike's 'Win Now' turnaround strategy. Second round of 2026 cuts (775 cut in January). Separate event from Feb 2025 layoffs.",
+    "sources": [
+      {
+        "url": "https://www.cnbc.com/2026/04/23/nike-job-cuts-layoffs.html",
+        "title": "Nike layoffs — CNBC",
+        "publisher": "CNBC",
+        "date": "2026-04-23"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-082",
+    "company": "meta",
+    "companyName": "Meta",
+    "date": "2026-04-23",
+    "jobsCut": 8000,
+    "jobTypes": [
+      "Mixed",
+      "Company-wide"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "CHRO Janelle Gale memo to staff: 'We're doing this as part of our continued effort to run the company more efficiently and to allow us to offset the other investments we're making.' Other investments = $115B+ AI spending in 2026, up from $72.2B in 2025. CEO Zuckerberg in January earnings call called 2026 'the year that AI begins to significantly alter the way we operate' and said 'projects that previously required large teams can now be completed by a single exceptionally skilled individual.' Layoffs effective May 20. Severance: 16 weeks base pay plus 2 weeks per year of service, 18 months COBRA. Separate from Jan 2026 Reality Labs cut (1,500), March 25 cut (~700), and the planned ~15,800 announced March 14.",
+    "description": "Meta cut ~8,000 jobs (10%) plus 6,000 unfilled roles across mixed / company-wide functions. CHRO Janelle Gale memo to staff: 'We're doing this as part of our continued effort to run the company more efficiently and to allow us to offset the other investments we're making.' Other investments = $115B+ AI spending in 2026, up from $72.2B in 2025. CEO Zuckerberg in January earnings call called 2026 'the year that AI begins to significantly alter the way we operate' and said 'projects that previously required large teams can now be completed by a single exceptionally skilled individual.' Layoffs effective May 20. Severance: 16 weeks base pay plus 2 weeks per year of service, 18 months COBRA. Separate from Jan 2026 Reality Labs cut (1,500), March 25 cut (~700), and the planned ~15,800 announced March 14.",
+    "sources": [
+      {
+        "url": "https://www.cnn.com/2026/04/23/tech/meta-layoffs-10-percent-staff-ai",
+        "title": "Meta layoffs — CNN",
+        "publisher": "CNN",
+        "date": "2026-04-23"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-083",
+    "company": "coinbase",
+    "companyName": "Coinbase",
+    "date": "2026-05-05",
+    "jobsCut": 700,
+    "jobTypes": [
+      "Mixed",
+      "Company-wide"
+    ],
+    "industry": "Financial Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "CEO Brian Armstrong letter to staff: 'AI is changing how we work. Over the past year, I've watched engineers use AI to ship in days what used to take a team weeks.' Armstrong described decision as move toward smaller, AI-enhanced teams. Restructuring expected to cost $50-60M in severance/termination benefits. Affects approximately 700 of ~5,000 employees. Partly attributed to crypto market fluctuations alongside AI transformation.",
+    "description": "Coinbase cut ~700 (14%) jobs across mixed / company-wide. CEO Brian Armstrong letter to staff: 'AI is changing how we work. Over the past year, I've watched engineers use AI to ship in days what used to take a team weeks.' Armstrong described decision as move toward smaller, AI-enhanced teams. Restructuring expected to cost $50-60M in severance/termination benefits. Affects approximately 700 of ~5,000 employees. Partly attributed to crypto market fluctuations alongside AI transformation.",
+    "sources": [
+      {
+        "url": "https://www.nytimes.com/2026/05/05/technology/coinbase-layoffs-ai.html",
+        "title": "Coinbase layoffs — The New York Times",
+        "publisher": "The New York Times",
+        "date": "2026-05-05"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-084",
+    "company": "cloudflare",
+    "companyName": "Cloudflare",
+    "date": "2026-05-07",
+    "jobsCut": 1100,
+    "jobTypes": [
+      "Mixed",
+      "Company-wide"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "Internal memo from founders: company reorganizing for 'the agentic AI era.' Internal AI usage climbed more than 600% over the past three months. TechCrunch headline: 'Cloudflare says AI made 1,100 jobs obsolete, even as revenue hit a record high.' Memo also said: 'We are making these changes now because making smaller, repeated cuts or dragging a reorganization out over multiple quarters creates prolonged emotional uncertainty for employees and stalls our ability to build.' Departing employees receive base pay through end of 2026. Restructuring cost $140-150M. Headcount was 5,483 as of March.",
+    "description": "Cloudflare cut ~1,100 (20%) jobs across mixed / company-wide. Internal memo from founders: company reorganizing for 'the agentic AI era.' Internal AI usage climbed more than 600% over the past three months. TechCrunch headline: 'Cloudflare says AI made 1,100 jobs obsolete, even as revenue hit a record high.' Memo also said: 'We are making these changes now because making smaller, repeated cuts or dragging a reorganization out over multiple quarters creates prolonged emotional uncertainty for employees and stalls our ability to build.' Departing employees receive base pay through end of 2026. Restructuring cost $140-150M. Headcount was 5,483 as of March.",
+    "sources": [
+      {
+        "url": "https://techcrunch.com/2026/05/08/cloudflare-says-ai-made-1100-jobs-obsolete-even-as-revenue-hit-a-record-high/",
+        "title": "Cloudflare layoffs — TechCrunch",
+        "publisher": "TechCrunch",
+        "date": "2026-05-07"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-085",
+    "company": "upwork",
+    "companyName": "Upwork",
+    "date": "2026-05-07",
+    "jobsCut": 151,
+    "jobTypes": [
+      "Product",
+      "Engineering",
+      "Cross-functional"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "CEO Hayden Brown memo: 'Two pizza teams are dead. AI means smaller, differently resourced teams in product and engineering can make a bigger impact than ever.' On LinkedIn: 'AI is fundamentally reinventing work and we are building Upwork to be at the center of that -- the platform that powers the AI-enabled, human+agent labor market of the future.' Upwork rethought every function 'from scratch -- scrutinising what it takes to run each part of the business using both people and technology.' One-time expenses $16-23M for severance. Affects ~151 of ~630 employees.",
+    "description": "Upwork cut ~151 (24-25%) jobs across product / engineering / cross-functional. CEO Hayden Brown memo: 'Two pizza teams are dead. AI means smaller, differently resourced teams in product and engineering can make a bigger impact than ever.' On LinkedIn: 'AI is fundamentally reinventing work and we are building Upwork to be at the center of that -- the platform that powers the AI-enabled, human+agent labor market of the future.' Upwork rethought every function 'from scratch -- scrutinising what it takes to run each part of the business using both people and technology.' One-time expenses $16-23M for severance. Affects ~151 of ~630 employees.",
+    "sources": [
+      {
+        "url": "https://officechai.com/ai/upwork-lays-off-25-of-its-workforce-says-ai-will-lead-to-smaller-teams/",
+        "title": "Upwork layoffs — OfficeChai",
+        "publisher": "OfficeChai",
+        "date": "2026-05-07"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-086",
+    "company": "cisco",
+    "companyName": "Cisco",
+    "date": "2026-05-13",
+    "jobsCut": 4000,
+    "jobTypes": [
+      "Mixed",
+      "Company-wide"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "CEO Chuck Robbins blog post: 'We are making strategic investments in our employees' use of AI across the company.' Restructuring to redirect investments toward AI chips, fiber optics, and security. SEC filing: up to $1 billion in restructuring costs (mostly severance), $450M this quarter, remainder in FY27. Notifications began May 14. TechCrunch headline: 'Cisco cuts nearly 4,000 jobs to spend more on AI, reports record quarterly revenue.' Cisco offering one year of access to Cisco U courses including AI certifications. Robbins separately said he 'did not want AI to become the excuse' but company's own communications tie the cuts to funding AI investments. Separate event from Aug 2025 (~221) and 2024 (~6,000) cuts.",
+    "description": "Cisco cut ~4,000 (<5%) jobs across mixed / company-wide. CEO Chuck Robbins blog post: 'We are making strategic investments in our employees' use of AI across the company.' Restructuring to redirect investments toward AI chips, fiber optics, and security. SEC filing: up to $1 billion in restructuring costs (mostly severance), $450M this quarter, remainder in FY27. Notifications began May 14. TechCrunch headline: 'Cisco cuts nearly 4,000 jobs to spend more on AI, reports record quarterly revenue.' Cisco offering one year of access to Cisco U courses including AI certifications. Robbins separately said he 'did not want AI to become the excuse' but company's own communications tie the cuts to funding AI investments. Separate event from Aug 2025 (~221) and 2024 (~6,000) cuts.",
+    "sources": [
+      {
+        "url": "https://techcrunch.com/2026/05/14/cisco-cuts-nearly-4000-jobs-to-spend-more-on-ai-reports-record-quarterly-revenue/",
+        "title": "Cisco layoffs — TechCrunch",
+        "publisher": "TechCrunch",
+        "date": "2026-05-13"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-087",
+    "company": "clickup",
+    "companyName": "ClickUp",
+    "date": "2026-05-21",
+    "jobsCut": 220,
+    "jobTypes": [
+      "Engineering",
+      "Product management",
+      "Design"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "Founder/CEO Zeb Evans on X: 'Today we reduced headcount by 22%. The business is the strongest it's ever been... the way to operate at the highest level of productivity is changing, and to win the future, ClickUp needs to change with it.' Restructuring around what Evans calls 'the 100x org' -- 100x output through AI. Key quotes: 'the great engineers, the ones who can orchestrate, architect, and review, are becoming 100x engineers. They're not writing code. They're directing agents that write code'; 'the bottlenecks are (1) orchestration -- telling AI what to do, and (2) reviewing -- what AI did. Everything is leapfrogged and no longer needed'; 'You must create enough disruption so that old systems are deprecated entirely. If there's any definition for AI native that's what it is.' Company now runs ~3,000 internal AI agents (3:1 agent-to-employee ratio per Fortune). Introducing $1 million cash/year salary bands. Severance packages provided. ClickUp valued at $4B in 2021.",
+    "description": "ClickUp cut ~220 (22% of ~1,000) jobs across mixed / company-wide (engineering, pm, design). Founder/CEO Zeb Evans on X: 'Today we reduced headcount by 22%. The business is the strongest it's ever been... the way to operate at the highest level of productivity is changing, and to win the future, ClickUp needs to change with it.' Restructuring around what Evans calls 'the 100x org' -- 100x output through AI. Key quotes: 'the great engineers, the ones who can orchestrate, architect, and review, are becoming 100x engineers. They're not writing code. They're directing agents that write code'; 'the bottlenecks are (1) orchestration -- telling AI what to do, and (2) reviewing -- what AI did. Everything is leapfrogged and no longer needed'; 'You must create enough disruption so that old systems are deprecated entirely. If there's any definition for AI native that's what it is.' Company now runs ~3,000 internal AI agents (3:1 agent-to-employee ratio per Fortune). Introducing $1 million cash/year salary bands. Severance packages provided. ClickUp valued at $4B in 2021.",
+    "sources": [
+      {
+        "url": "https://thenextweb.com/news/clickup-layoffs-22-percent-ai-100x-org-million-salary",
+        "title": "ClickUp layoffs — The Next Web",
+        "publisher": "The Next Web",
+        "date": "2026-05-21"
       }
     ],
     "verificationStatus": "verified"
