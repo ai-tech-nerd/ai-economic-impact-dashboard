@@ -4,4 +4,5 @@ Task-by-task documentation. Check here before starting work — past attempts an
 
 | Task | Folder | Status |
 |------|--------|--------|
+| Jun–Aug 2026 research backfill + AI Advances catch-up | [research-backfill-2026-08/](research-backfill-2026-08/README.md) | Done, pending commit + sheet paste |
 | Catch-up data sync (Apr–May 2026 backlog) + excerpt-format archive pages | [catch-up-sync-2026-08/](catch-up-sync-2026-08/README.md) | Done, pending commit; 5 manual captures outstanding |

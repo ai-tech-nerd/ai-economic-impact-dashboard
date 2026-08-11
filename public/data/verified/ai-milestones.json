@@ -23,7 +23,7 @@
     "date": "1950-10-01",
     "type": "breakthrough",
     "name": "Alan Turing Proposes the Turing Test",
-    "description": "Alan Turing publishes 'Computing Machinery and Intelligence,' proposing the Turing Test as a measure of machine intelligence \u2014 a foundational concept in AI.",
+    "description": "Alan Turing publishes 'Computing Machinery and Intelligence,' proposing the Turing Test as a measure of machine intelligence — a foundational concept in AI.",
     "category": "research",
     "significance": "high",
     "sources": [
@@ -40,14 +40,14 @@
     "company": "academic",
     "date": "1955-12-01",
     "type": "breakthrough",
-    "name": "Logic Theorist \u2014 First AI Program",
+    "name": "Logic Theorist — First AI Program",
     "description": "Allen Newell, Herbert Simon, and Cliff Shaw at RAND Corporation created the Logic Theorist, the first program deliberately designed to mimic human problem-solving by proving mathematical theorems from Principia Mathematica. It successfully proved 38 of the first 52 theorems and is widely regarded as the first artificial intelligence program.",
     "category": "research",
     "significance": "high",
     "sources": [
       {
         "url": "https://www.historyofinformation.com/detail.php?id=742",
-        "title": "Logic Theorist \u2014 First AI Program",
+        "title": "Logic Theorist — First AI Program",
         "publisher": "RAND Corporation",
         "date": "1955-12-01"
       }
@@ -166,14 +166,14 @@
     "company": "stanford",
     "date": "1964-01-01",
     "type": "breakthrough",
-    "name": "DENDRAL \u2014 First Expert System",
+    "name": "DENDRAL — First Expert System",
     "description": "Edward Feigenbaum, Joshua Lederberg, Bruce Buchanan, and Carl Djerassi at Stanford began DENDRAL, widely considered the first expert system, designed to identify unknown organic molecules by analyzing mass spectrometry data.",
     "category": "research",
     "significance": "high",
     "sources": [
       {
         "url": "https://en.wikipedia.org/wiki/Dendral",
-        "title": "DENDRAL \u2014 First Expert System",
+        "title": "DENDRAL — First Expert System",
         "publisher": "Stanford University",
         "date": "1964-01-01"
       }
@@ -437,7 +437,7 @@
     "date": "1986-10-09",
     "type": "breakthrough",
     "name": "Backpropagation Rediscovery (Rumelhart, Hinton & Williams)",
-    "description": "David Rumelhart, Geoffrey Hinton, and Ronald Williams published 'Learning representations by back-propagating errors' in Nature, popularizing backpropagation as a practical training algorithm for multilayer neural networks \u2014 establishing the algorithmic foundation for modern deep learning.",
+    "description": "David Rumelhart, Geoffrey Hinton, and Ronald Williams published 'Learning representations by back-propagating errors' in Nature, popularizing backpropagation as a practical training algorithm for multilayer neural networks — establishing the algorithmic foundation for modern deep learning.",
     "category": "research",
     "significance": "high",
     "sources": [
@@ -454,14 +454,14 @@
     "company": "academic",
     "date": "1987-01-01",
     "type": "breakthrough",
-    "name": "NETtalk \u2014 Neural Network Learns to Pronounce English",
+    "name": "NETtalk — Neural Network Learns to Pronounce English",
     "description": "Terrence Sejnowski and Charles Rosenberg demonstrated NETtalk, a neural network trained by backpropagation that learned to convert written English text to phonetic speech. The system received widespread public attention and became a celebrated proof-of-concept for connectionist learning.",
     "category": "research",
     "significance": "high",
     "sources": [
       {
         "url": "https://en.wikipedia.org/wiki/NETtalk_(artificial_neural_network)",
-        "title": "NETtalk \u2014 Neural Network Learns to Pronounce English",
+        "title": "NETtalk — Neural Network Learns to Pronounce English",
         "publisher": "Johns Hopkins / Princeton",
         "date": "1987-01-01"
       }
@@ -490,14 +490,14 @@
     "company": "academic",
     "date": "1988-01-01",
     "type": "breakthrough",
-    "name": "CMU Sphinx \u2014 First Continuous Speech Recognizer",
+    "name": "CMU Sphinx — First Continuous Speech Recognizer",
     "description": "Kai-Fu Lee at Carnegie Mellon University unveiled Sphinx, the first high-performance speaker-independent continuous-speech recognition system based on hidden Markov models. Sphinx set the direction for all subsequent large-vocabulary speech recognition research.",
     "category": "research",
     "significance": "high",
     "sources": [
       {
         "url": "https://www.cs.cmu.edu/~rsingh/homepage/sphinx_history.html",
-        "title": "CMU Sphinx \u2014 First Continuous Speech Recognizer",
+        "title": "CMU Sphinx — First Continuous Speech Recognizer",
         "publisher": "Carnegie Mellon University",
         "date": "1988-01-01"
       }
@@ -508,14 +508,14 @@
     "company": "ibm",
     "date": "1992-01-01",
     "type": "breakthrough",
-    "name": "TD-Gammon \u2014 Reinforcement Learning via Self-Play",
-    "description": "Gerald Tesauro at IBM developed TD-Gammon, a neural network trained entirely through self-play using temporal-difference learning that reached near-championship level in backgammon \u2014 directly influencing later systems such as AlphaGo.",
+    "name": "TD-Gammon — Reinforcement Learning via Self-Play",
+    "description": "Gerald Tesauro at IBM developed TD-Gammon, a neural network trained entirely through self-play using temporal-difference learning that reached near-championship level in backgammon — directly influencing later systems such as AlphaGo.",
     "category": "research",
     "significance": "high",
     "sources": [
       {
         "url": "https://en.wikipedia.org/wiki/TD-Gammon",
-        "title": "TD-Gammon \u2014 Reinforcement Learning via Self-Play",
+        "title": "TD-Gammon — Reinforcement Learning via Self-Play",
         "publisher": "IBM",
         "date": "1992-01-01"
       }
@@ -544,14 +544,14 @@
     "company": "darpa",
     "date": "2004-03-13",
     "type": "breakthrough",
-    "name": "DARPA Grand Challenge 2004 \u2014 First Autonomous Vehicle Race",
-    "description": "The first DARPA Grand Challenge was held in the Mojave Desert, offering $1 million to any autonomous vehicle completing a 142-mile desert course. No vehicle finished \u2014 the furthest traveled only 11.78 km \u2014 but the event galvanized the autonomous vehicle research community.",
+    "name": "DARPA Grand Challenge 2004 — First Autonomous Vehicle Race",
+    "description": "The first DARPA Grand Challenge was held in the Mojave Desert, offering $1 million to any autonomous vehicle completing a 142-mile desert course. No vehicle finished — the furthest traveled only 11.78 km — but the event galvanized the autonomous vehicle research community.",
     "category": "research",
     "significance": "high",
     "sources": [
       {
         "url": "https://en.wikipedia.org/wiki/DARPA_Grand_Challenge_(2004)",
-        "title": "DARPA Grand Challenge 2004 \u2014 First Autonomous Vehicle Race",
+        "title": "DARPA Grand Challenge 2004 — First Autonomous Vehicle Race",
         "publisher": "DARPA",
         "date": "2004-03-13"
       }
@@ -562,14 +562,14 @@
     "company": "darpa",
     "date": "2005-01-01",
     "type": "breakthrough",
-    "name": "Boston Dynamics BigDog \u2014 Quadruped Robot",
-    "description": "Boston Dynamics, with DARPA funding, created BigDog, a dynamically stable quadruped robot capable of traversing rough terrain, running at 10 km/h, climbing steep slopes, and carrying up to 150 kg loads \u2014 a landmark in legged robotics.",
+    "name": "Boston Dynamics BigDog — Quadruped Robot",
+    "description": "Boston Dynamics, with DARPA funding, created BigDog, a dynamically stable quadruped robot capable of traversing rough terrain, running at 10 km/h, climbing steep slopes, and carrying up to 150 kg loads — a landmark in legged robotics.",
     "category": "research",
     "significance": "high",
     "sources": [
       {
         "url": "https://www.darpa.mil/about/innovation-timeline/bigdog",
-        "title": "Boston Dynamics BigDog \u2014 Quadruped Robot",
+        "title": "Boston Dynamics BigDog — Quadruped Robot",
         "publisher": "Boston Dynamics / DARPA",
         "date": "2005-01-01"
       }
@@ -598,14 +598,14 @@
     "company": "academic",
     "date": "2006-10-02",
     "type": "breakthrough",
-    "name": "Netflix Prize \u2014 $1 Million Machine Learning Competition",
+    "name": "Netflix Prize — $1 Million Machine Learning Competition",
     "description": "Netflix launched a public competition offering $1 million to any team that could improve its movie recommendation algorithm by at least 10%, spurring major advances in collaborative filtering and ensemble methods.",
     "category": "research",
     "significance": "high",
     "sources": [
       {
         "url": "https://en.wikipedia.org/wiki/Netflix_Prize",
-        "title": "Netflix Prize \u2014 $1 Million Machine Learning Competition",
+        "title": "Netflix Prize — $1 Million Machine Learning Competition",
         "publisher": "Netflix",
         "date": "2006-10-02"
       }
@@ -616,14 +616,14 @@
     "company": "darpa",
     "date": "2007-11-04",
     "type": "breakthrough",
-    "name": "DARPA Urban Challenge \u2014 Autonomous Vehicles Navigate City Traffic",
+    "name": "DARPA Urban Challenge — Autonomous Vehicles Navigate City Traffic",
     "description": "Carnegie Mellon's 'Boss' won the DARPA Urban Challenge, becoming the first autonomous vehicle to safely navigate a 96-km urban course with intersections, traffic, and driving laws.",
     "category": "research",
     "significance": "high",
     "sources": [
       {
         "url": "https://en.wikipedia.org/wiki/DARPA_Grand_Challenge_(2007)",
-        "title": "DARPA Urban Challenge \u2014 Autonomous Vehicles Navigate City Traffic",
+        "title": "DARPA Urban Challenge — Autonomous Vehicles Navigate City Traffic",
         "publisher": "DARPA / Carnegie Mellon",
         "date": "2007-11-04"
       }
@@ -635,7 +635,7 @@
     "date": "2009-01-01",
     "type": "breakthrough",
     "name": "Google Self-Driving Car Project Founded (proto-Waymo)",
-    "description": "Google secretly founded the Self-Driving Car Project, led by Sebastian Thrun, tasking engineers to drive autonomously along ten 100-mile California routes without human intervention \u2014 completing the first route by December 2009.",
+    "description": "Google secretly founded the Self-Driving Car Project, led by Sebastian Thrun, tasking engineers to drive autonomously along ten 100-mile California routes without human intervention — completing the first route by December 2009.",
     "category": "research",
     "significance": "high",
     "sources": [
@@ -653,7 +653,7 @@
     "date": "2009-06-01",
     "type": "breakthrough",
     "name": "ImageNet Dataset Published",
-    "description": "Fei-Fei Li and collaborators at Stanford introduced ImageNet, a large-scale hierarchical image database with over 14 million annotated images spanning 20,000+ categories \u2014 the dataset that would fuel the deep learning revolution in computer vision.",
+    "description": "Fei-Fei Li and collaborators at Stanford introduced ImageNet, a large-scale hierarchical image database with over 14 million annotated images spanning 20,000+ categories — the dataset that would fuel the deep learning revolution in computer vision.",
     "category": "research",
     "significance": "high",
     "sources": [
@@ -689,7 +689,7 @@
     "date": "2010-09-01",
     "type": "breakthrough",
     "name": "DeepMind Technologies Founded",
-    "description": "Demis Hassabis, Shane Legg, and Mustafa Suleyman co-founded DeepMind in London, a neuroscience-inspired AI lab focused on building general-purpose learning algorithms \u2014 the company would become one of the world's most influential AI research organizations.",
+    "description": "Demis Hassabis, Shane Legg, and Mustafa Suleyman co-founded DeepMind in London, a neuroscience-inspired AI lab focused on building general-purpose learning algorithms — the company would become one of the world's most influential AI research organizations.",
     "category": "research",
     "significance": "high",
     "sources": [
@@ -779,7 +779,7 @@
     "date": "2012-06-26",
     "type": "breakthrough",
     "name": "Google's Deep Learning Image Recognition Breakthrough",
-    "description": "Google's deep learning research team, led by Jeff Dean and Andrew Ng, trains a neural network on 10 million YouTube images that autonomously learns to recognize cats \u2014 demonstrating unsupervised feature learning at scale.",
+    "description": "Google's deep learning research team, led by Jeff Dean and Andrew Ng, trains a neural network on 10 million YouTube images that autonomously learns to recognize cats — demonstrating unsupervised feature learning at scale.",
     "category": "research",
     "significance": "high",
     "sources": [
@@ -796,14 +796,14 @@
     "company": "academic",
     "date": "2012-09-30",
     "type": "breakthrough",
-    "name": "AlexNet Wins ILSVRC 2012 \u2014 Deep Learning Breakthrough",
-    "description": "Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton's AlexNet won the ImageNet 2012 challenge with a top-5 error rate of 15.3% \u2014 nearly 10 percentage points better than the runner-up \u2014 proving that deep CNNs trained on GPUs could revolutionize computer vision.",
+    "name": "AlexNet Wins ILSVRC 2012 — Deep Learning Breakthrough",
+    "description": "Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton's AlexNet won the ImageNet 2012 challenge with a top-5 error rate of 15.3% — nearly 10 percentage points better than the runner-up — proving that deep CNNs trained on GPUs could revolutionize computer vision.",
     "category": "research",
     "significance": "high",
     "sources": [
       {
         "url": "https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
-        "title": "AlexNet Wins ILSVRC 2012 \u2014 Deep Learning Breakthrough",
+        "title": "AlexNet Wins ILSVRC 2012 — Deep Learning Breakthrough",
         "publisher": "University of Toronto",
         "date": "2012-09-30"
       }
@@ -814,14 +814,14 @@
     "company": "google",
     "date": "2013-01-16",
     "type": "breakthrough",
-    "name": "Word2Vec \u2014 Neural Word Embeddings",
+    "name": "Word2Vec — Neural Word Embeddings",
     "description": "Google researchers Tomas Mikolov and colleagues introduced Word2Vec, computing dense vector representations of words that captured semantic relationships (e.g., 'king' - 'man' + 'woman' = 'queen'), transforming NLP.",
     "category": "research",
     "significance": "high",
     "sources": [
       {
         "url": "https://arxiv.org/abs/1301.3781",
-        "title": "Word2Vec \u2014 Neural Word Embeddings",
+        "title": "Word2Vec — Neural Word Embeddings",
         "publisher": "Google",
         "date": "2013-01-16"
       }
@@ -887,14 +887,14 @@
     "date": "2014-06-10",
     "type": "breakthrough",
     "name": "Generative Adversarial Networks (GANs) Introduced",
-    "description": "Ian Goodfellow and colleagues introduced Generative Adversarial Networks, where two neural networks (generator and discriminator) compete to produce increasingly realistic synthetic data \u2014 opening an entirely new paradigm in generative AI.",
+    "description": "Ian Goodfellow and colleagues introduced Generative Adversarial Networks, where two neural networks (generator and discriminator) compete to produce increasingly realistic synthetic data — opening an entirely new paradigm in generative AI.",
     "category": "research",
     "significance": "high",
     "sources": [
       {
         "url": "https://arxiv.org/abs/1406.2661",
         "title": "Generative Adversarial Networks (GANs) Introduced",
-        "publisher": "Universit\u00e9 de Montr\u00e9al",
+        "publisher": "Université de Montréal",
         "date": "2014-06-10"
       }
     ]
@@ -923,7 +923,7 @@
     "date": "2015-02-11",
     "type": "breakthrough",
     "name": "Batch Normalization Introduced",
-    "description": "Sergey Ioffe and Christian Szegedy at Google introduced Batch Normalization, a technique that normalizes layer inputs during training to dramatically accelerate deep network training \u2014 enabling 14x faster convergence.",
+    "description": "Sergey Ioffe and Christian Szegedy at Google introduced Batch Normalization, a technique that normalizes layer inputs during training to dramatically accelerate deep network training — enabling 14x faster convergence.",
     "category": "research",
     "significance": "high",
     "sources": [
@@ -940,14 +940,14 @@
     "company": "deepmind",
     "date": "2015-02-25",
     "type": "breakthrough",
-    "name": "DeepMind DQN Paper in Nature \u2014 Human-Level Atari Play",
+    "name": "DeepMind DQN Paper in Nature — Human-Level Atari Play",
     "description": "DeepMind published its landmark DQN paper in Nature, demonstrating an AI agent that achieved human-level performance across 49 Atari games learning solely from raw pixels and rewards.",
     "category": "research",
     "significance": "high",
     "sources": [
       {
         "url": "https://www.nature.com/articles/nature14236",
-        "title": "DeepMind DQN Paper in Nature \u2014 Human-Level Atari Play",
+        "title": "DeepMind DQN Paper in Nature — Human-Level Atari Play",
         "publisher": "DeepMind",
         "date": "2015-02-25"
       }
@@ -976,14 +976,14 @@
     "company": "academic",
     "date": "2015-12-10",
     "type": "breakthrough",
-    "name": "ResNet (Residual Networks) \u2014 152-Layer Deep Learning",
+    "name": "ResNet (Residual Networks) — 152-Layer Deep Learning",
     "description": "Microsoft Research's Kaiming He and team introduced Residual Networks (ResNet), using shortcut connections to train networks up to 152 layers deep, achieving 3.57% top-5 error on ImageNet and winning all five tracks of ILSVRC 2015.",
     "category": "research",
     "significance": "high",
     "sources": [
       {
         "url": "https://arxiv.org/abs/1512.03385",
-        "title": "ResNet (Residual Networks) \u2014 152-Layer Deep Learning",
+        "title": "ResNet (Residual Networks) — 152-Layer Deep Learning",
         "publisher": "Microsoft Research",
         "date": "2015-12-10"
       }
@@ -1031,7 +1031,7 @@
     "date": "2016-03-15",
     "type": "breakthrough",
     "name": "AlphaGo Defeats World Champion Lee Sedol",
-    "description": "DeepMind's AlphaGo defeats world Go champion Lee Sedol 4\u20131, mastering a game long considered too complex for AI due to its vast number of possible moves.",
+    "description": "DeepMind's AlphaGo defeats world Go champion Lee Sedol 4–1, mastering a game long considered too complex for AI due to its vast number of possible moves.",
     "category": "research",
     "significance": "high",
     "sources": [
@@ -1085,7 +1085,7 @@
     "date": "2017-10-19",
     "type": "breakthrough",
     "name": "AlphaGo Zero: Mastering Go Without Human Knowledge",
-    "description": "DeepMind published AlphaGo Zero in Nature, a version that learned entirely through self-play with no human game data, surpassing all previous versions within 40 days \u2014 demonstrating superhuman performance could be achieved tabula rasa.",
+    "description": "DeepMind published AlphaGo Zero in Nature, a version that learned entirely through self-play with no human game data, surpassing all previous versions within 40 days — demonstrating superhuman performance could be achieved tabula rasa.",
     "category": "research",
     "significance": "high",
     "sources": [
@@ -1201,7 +1201,7 @@
     "date": "2019-02-14",
     "type": "breakthrough",
     "name": "GPT-2: Too Dangerous to Release (Initially Withheld)",
-    "description": "OpenAI announced GPT-2, a 1.5B parameter language model so capable at generating coherent text that the lab controversially withheld the full model, citing misuse concerns \u2014 sparking global debate on responsible AI disclosure.",
+    "description": "OpenAI announced GPT-2, a 1.5B parameter language model so capable at generating coherent text that the lab controversially withheld the full model, citing misuse concerns — sparking global debate on responsible AI disclosure.",
     "category": "research",
     "significance": "high",
     "sources": [
@@ -1254,7 +1254,7 @@
     "company": "openai",
     "date": "2019-07-22",
     "type": "partnership",
-    "name": "OpenAI\u2013Microsoft Azure Exclusive Partnership",
+    "name": "OpenAI–Microsoft Azure Exclusive Partnership",
     "description": "Microsoft becomes OpenAI's exclusive cloud provider with a $1B investment, establishing joint Azure AI supercomputing infrastructure.",
     "category": "cloud",
     "significance": "high",
@@ -1519,7 +1519,7 @@
     "date": "2021-06-29",
     "type": "breakthrough",
     "name": "GitHub Copilot Technical Preview: AI Pair Programmer",
-    "description": "GitHub and OpenAI launched the technical preview of GitHub Copilot, an AI code-completion tool powered by OpenAI Codex that suggests whole lines and functions in real time \u2014 the first broadly available AI programming assistant.",
+    "description": "GitHub and OpenAI launched the technical preview of GitHub Copilot, an AI code-completion tool powered by OpenAI Codex that suggests whole lines and functions in real time — the first broadly available AI programming assistant.",
     "category": "research",
     "significance": "high",
     "sources": [
@@ -1555,7 +1555,7 @@
     "date": "2021-08-10",
     "type": "breakthrough",
     "name": "OpenAI Codex: Natural Language to Code API Released",
-    "description": "OpenAI released Codex via private API beta, a GPT-3-based model fine-tuned on billions of lines of code that could translate natural language to working programs \u2014 the engine behind GitHub Copilot.",
+    "description": "OpenAI released Codex via private API beta, a GPT-3-based model fine-tuned on billions of lines of code that could translate natural language to working programs — the engine behind GitHub Copilot.",
     "category": "research",
     "significance": "high",
     "sources": [
@@ -1721,7 +1721,7 @@
     "date": "2022-05-12",
     "type": "breakthrough",
     "name": "Gato: DeepMind's Generalist Multi-Task AI Agent",
-    "description": "DeepMind published Gato, a single transformer that can play Atari games, caption images, chat, navigate 3D environments, and control a robot arm \u2014 framing generalist agents as a viable path to AGI.",
+    "description": "DeepMind published Gato, a single transformer that can play Atari games, caption images, chat, navigate 3D environments, and control a robot arm — framing generalist agents as a viable path to AGI.",
     "category": "research",
     "significance": "high",
     "sources": [
@@ -2046,7 +2046,7 @@
     "company": "openai",
     "date": "2023-01-23",
     "type": "partnership",
-    "name": "OpenAI\u2013Microsoft Multibillion-Dollar Partnership Extension",
+    "name": "OpenAI–Microsoft Multibillion-Dollar Partnership Extension",
     "description": "Microsoft and OpenAI extend their partnership with a multiyear, multibillion-dollar investment to scale Azure infrastructure for ChatGPT-era growth and model training.",
     "category": "cloud",
     "significance": "high",
@@ -2064,7 +2064,7 @@
     "company": "anthropic",
     "date": "2023-02-03",
     "type": "partnership",
-    "name": "Anthropic\u2013Google Cloud Partnership",
+    "name": "Anthropic–Google Cloud Partnership",
     "description": "Anthropic selects Google Cloud as preferred cloud provider, with Google committing TPU/GPU clusters for model training and deployment.",
     "category": "cloud",
     "significance": "high",
@@ -2266,7 +2266,7 @@
     "company": "oracle",
     "date": "2023-06-13",
     "type": "partnership",
-    "name": "Oracle\u2013Cohere Enterprise AI Partnership",
+    "name": "Oracle–Cohere Enterprise AI Partnership",
     "description": "Cohere models integrated into Oracle Cloud Infrastructure to deliver secure generative AI services for enterprise customers.",
     "category": "enterprise",
     "significance": "medium",
@@ -2482,7 +2482,7 @@
     "company": "anthropic",
     "date": "2023-09-25",
     "type": "partnership",
-    "name": "Anthropic\u2013Amazon $4B Investment Partnership",
+    "name": "Anthropic–Amazon $4B Investment Partnership",
     "description": "Amazon invests up to $4B in Anthropic, with AWS becoming Anthropic's primary cloud and training partner. Claude becomes available via Amazon Bedrock.",
     "category": "cloud",
     "significance": "high",
@@ -2501,7 +2501,7 @@
     "date": "2023-09-25",
     "type": "breakthrough",
     "name": "GPT-4V (Vision) and ChatGPT Voice/Image Launch",
-    "description": "OpenAI released GPT-4V, enabling GPT-4 to analyze and respond to image inputs, and simultaneously rolled out voice and image capabilities to ChatGPT Plus users \u2014 a major shift toward multimodal AI assistants.",
+    "description": "OpenAI released GPT-4V, enabling GPT-4 to analyze and respond to image inputs, and simultaneously rolled out voice and image capabilities to ChatGPT Plus users — a major shift toward multimodal AI assistants.",
     "category": "research",
     "significance": "high",
     "sources": [
@@ -2786,7 +2786,7 @@
     "company": "openai",
     "date": "2023-12-13",
     "type": "partnership",
-    "name": "OpenAI\u2013Axel Springer Media Licensing Deal",
+    "name": "OpenAI–Axel Springer Media Licensing Deal",
     "description": "OpenAI licenses Axel Springer publisher content for ChatGPT with attribution, setting an early precedent for AI media licensing partnerships.",
     "category": "media",
     "significance": "medium",
@@ -2841,7 +2841,7 @@
     "date": "2024-01-17",
     "type": "breakthrough",
     "name": "AlphaGeometry: Olympiad-Level AI Geometry Solver",
-    "description": "Google DeepMind's AlphaGeometry solved 25 out of 30 International Mathematical Olympiad geometry problems \u2014 approaching gold-medalist level \u2014 combining a neural language model with a symbolic deduction engine.",
+    "description": "Google DeepMind's AlphaGeometry solved 25 out of 30 International Mathematical Olympiad geometry problems — approaching gold-medalist level — combining a neural language model with a symbolic deduction engine.",
     "category": "research",
     "significance": "high",
     "sources": [
@@ -2920,7 +2920,7 @@
     "company": "mistral",
     "date": "2024-02-26",
     "type": "partnership",
-    "name": "Microsoft\u2013Mistral AI Azure Partnership",
+    "name": "Microsoft–Mistral AI Azure Partnership",
     "description": "Microsoft partners with Mistral AI to distribute Mistral Large and other models via Azure, taking a minority stake in the company.",
     "category": "cloud",
     "significance": "medium",
@@ -3099,7 +3099,7 @@
     "company": "anthropic",
     "date": "2024-03-27",
     "type": "partnership",
-    "name": "Amazon\u2013Anthropic $4B Investment Completed",
+    "name": "Amazon–Anthropic $4B Investment Completed",
     "description": "Amazon formalizes the completion of its $4B investment in Anthropic, deepening Claude distribution across AWS services.",
     "category": "cloud",
     "significance": "high",
@@ -3175,7 +3175,7 @@
     "company": "openai",
     "date": "2024-04-29",
     "type": "partnership",
-    "name": "OpenAI\u2013Financial Times Content Partnership",
+    "name": "OpenAI–Financial Times Content Partnership",
     "description": "OpenAI licenses Financial Times journalism for ChatGPT with attribution, enabling product collaboration and improved model responses.",
     "category": "media",
     "significance": "medium",
@@ -3345,7 +3345,7 @@
     "company": "openai",
     "date": "2024-05-16",
     "type": "partnership",
-    "name": "OpenAI\u2013Reddit Data Partnership",
+    "name": "OpenAI–Reddit Data Partnership",
     "description": "OpenAI gains access to Reddit's Data API for incorporating content into products. Reddit uses OpenAI models for new AI features.",
     "category": "platform",
     "significance": "medium",
@@ -3399,7 +3399,7 @@
     "company": "openai",
     "date": "2024-05-22",
     "type": "partnership",
-    "name": "OpenAI\u2013News Corp Multi-Year Licensing Deal",
+    "name": "OpenAI–News Corp Multi-Year Licensing Deal",
     "description": "Multi-year agreement for OpenAI to use News Corp content across its mastheads to improve AI products.",
     "category": "media",
     "significance": "medium",
@@ -3417,7 +3417,7 @@
     "company": "openai",
     "date": "2024-05-29",
     "type": "partnership",
-    "name": "OpenAI\u2013Vox Media and The Atlantic Partnerships",
+    "name": "OpenAI–Vox Media and The Atlantic Partnerships",
     "description": "OpenAI signs content and product partnerships with Vox Media and The Atlantic for attributed use of publisher content.",
     "category": "media",
     "significance": "medium",
@@ -3457,7 +3457,7 @@
     "company": "apple",
     "date": "2024-06-10",
     "type": "partnership",
-    "name": "Apple\u2013OpenAI ChatGPT Integration",
+    "name": "Apple–OpenAI ChatGPT Integration",
     "description": "ChatGPT integrated into Apple Intelligence across iOS, iPadOS, and macOS, including Siri handoff with user consent.",
     "category": "platform",
     "significance": "high",
@@ -3616,7 +3616,7 @@
     "date": "2024-07-25",
     "type": "breakthrough",
     "name": "AlphaProof and AlphaGeometry 2: Silver-Medal Math Olympiad Performance",
-    "description": "Google DeepMind's AlphaProof and AlphaGeometry 2 together solved 4 out of 6 problems at the 2024 International Mathematical Olympiad \u2014 the first time AI achieved silver-medal-equivalent performance.",
+    "description": "Google DeepMind's AlphaProof and AlphaGeometry 2 together solved 4 out of 6 problems at the 2024 International Mathematical Olympiad — the first time AI achieved silver-medal-equivalent performance.",
     "category": "research",
     "significance": "high",
     "sources": [
@@ -3901,7 +3901,7 @@
     "company": "anthropic",
     "date": "2024-11-07",
     "type": "partnership",
-    "name": "Anthropic\u2013Palantir US Government Partnership",
+    "name": "Anthropic–Palantir US Government Partnership",
     "description": "Anthropic and Palantir partner to bring Claude AI models to AWS for US government intelligence and defense operations.",
     "category": "government",
     "significance": "high",
@@ -3937,7 +3937,7 @@
     "company": "anthropic",
     "date": "2024-11-22",
     "type": "partnership",
-    "name": "Amazon\u2013Anthropic Partnership Expanded to $8B",
+    "name": "Amazon–Anthropic Partnership Expanded to $8B",
     "description": "Amazon invests an additional $4B in Anthropic, bringing total investment to $8B. AWS confirmed as primary cloud and training partner.",
     "category": "cloud",
     "significance": "high",
@@ -4103,14 +4103,14 @@
     "company": "openai",
     "date": "2024-12-20",
     "type": "breakthrough",
-    "name": "OpenAI o3 Announced \u2014 Benchmark-Shattering Reasoning Model",
-    "description": "OpenAI announced o3, scoring 96.7% on AIME, 87.7% on GPQA Diamond, and 25.2% on FrontierMath \u2014 far surpassing every prior model and approaching expert human performance on the world's hardest benchmarks.",
+    "name": "OpenAI o3 Announced — Benchmark-Shattering Reasoning Model",
+    "description": "OpenAI announced o3, scoring 96.7% on AIME, 87.7% on GPQA Diamond, and 25.2% on FrontierMath — far surpassing every prior model and approaching expert human performance on the world's hardest benchmarks.",
     "category": "research",
     "significance": "high",
     "sources": [
       {
         "url": "https://techcrunch.com/2024/12/20/openai-announces-new-o3-model/",
-        "title": "OpenAI o3 Announced \u2014 Benchmark-Shattering Reasoning Model",
+        "title": "OpenAI o3 Announced — Benchmark-Shattering Reasoning Model",
         "publisher": "OpenAI",
         "date": "2024-12-20"
       }
@@ -4140,7 +4140,7 @@
     "date": "2024-12-26",
     "type": "breakthrough",
     "name": "DeepSeek-V3 Released",
-    "description": "Chinese AI lab DeepSeek released DeepSeek-V3, a 671B parameter MoE model trained for approximately $5.58M \u2014 a fraction of US competitor costs \u2014 outperforming Claude 3.5 Sonnet on coding benchmarks.",
+    "description": "Chinese AI lab DeepSeek released DeepSeek-V3, a 671B parameter MoE model trained for approximately $5.58M — a fraction of US competitor costs — outperforming Claude 3.5 Sonnet on coding benchmarks.",
     "category": "research",
     "significance": "high",
     "sources": [
@@ -4212,7 +4212,7 @@
     "date": "2025-01-21",
     "type": "breakthrough",
     "name": "The Stargate Project: $500B US AI Infrastructure Initiative",
-    "description": "President Trump, alongside OpenAI, SoftBank, and Oracle, announced The Stargate Project \u2014 a $500 billion commitment over four years to build AI infrastructure in the United States, the largest single AI infrastructure commitment in history.",
+    "description": "President Trump, alongside OpenAI, SoftBank, and Oracle, announced The Stargate Project — a $500 billion commitment over four years to build AI infrastructure in the United States, the largest single AI infrastructure commitment in history.",
     "category": "research",
     "significance": "high",
     "sources": [
@@ -4266,7 +4266,7 @@
     "date": "2025-01-23",
     "type": "breakthrough",
     "name": "OpenAI Operator: Autonomous Web-Browsing AI Agent",
-    "description": "OpenAI launched Operator, a general-purpose AI agent capable of browsing the web and autonomously executing tasks \u2014 booking travel, making reservations, and completing shopping \u2014 the most capable publicly available AI agent at launch.",
+    "description": "OpenAI launched Operator, a general-purpose AI agent capable of browsing the web and autonomously executing tasks — booking travel, making reservations, and completing shopping — the most capable publicly available AI agent at launch.",
     "category": "research",
     "significance": "high",
     "sources": [
@@ -4714,7 +4714,7 @@
     "type": "acquisition",
     "company": "databricks",
     "title": "Databricks acquires Neon for $1B",
-    "description": "Serverless Postgres database. 80% of new databases on Neon were being created automatically by AI agents \u2014 signaling need for AI-native database infrastructure.",
+    "description": "Serverless Postgres database. 80% of new databases on Neon were being created automatically by AI agents — signaling need for AI-native database infrastructure.",
     "source": "https://aidatainsider.com/ai/2025s-top-16-acquisitions-in-ai-data/",
     "amount": "$1 billion"
   },
@@ -4869,7 +4869,7 @@
     "company": "anthropic",
     "date": "2025-07-14",
     "type": "partnership",
-    "name": "Anthropic\u2013US Department of Defense $200M Agreement",
+    "name": "Anthropic–US Department of Defense $200M Agreement",
     "description": "Formal DoD contract for Anthropic to advance responsible AI in defense operations across workflows and partners.",
     "category": "government",
     "significance": "high",
@@ -5097,7 +5097,7 @@
     "company": "openai",
     "date": "2025-10-28",
     "type": "partnership",
-    "name": "Microsoft\u2013OpenAI Next Chapter Partnership",
+    "name": "Microsoft–OpenAI Next Chapter Partnership",
     "description": "Updated partnership terms broaden how OpenAI can serve US government national security customers across cloud providers.",
     "category": "government",
     "significance": "high",
@@ -5189,7 +5189,7 @@
     "company": "google-deepmind",
     "date": "2025-12-11",
     "type": "partnership",
-    "name": "Google DeepMind\u2013UK Government AI Partnership",
+    "name": "Google DeepMind–UK Government AI Partnership",
     "description": "Expanded partnership with the UK government and deeper collaboration with the UK AI Security Institute on safety and security research.",
     "category": "government",
     "significance": "high",
@@ -5290,7 +5290,7 @@
     "date": "2026-01-01",
     "type": "breakthrough",
     "name": "Clawdbot (OpenClaw) Open-Source AI Agent Goes Viral",
-    "description": "Austrian developer Peter Steinberger released Clawdbot/OpenClaw on GitHub \u2014 an open-source AI agent that executes real-world tasks via messaging apps with persistent memory. It reached 60,000+ stars within days, was endorsed by Andrej Karpathy, and led to Steinberger joining OpenAI.",
+    "description": "Austrian developer Peter Steinberger released Clawdbot/OpenClaw on GitHub — an open-source AI agent that executes real-world tasks via messaging apps with persistent memory. It reached 60,000+ stars within days, was endorsed by Andrej Karpathy, and led to Steinberger joining OpenAI.",
     "category": "research",
     "significance": "high",
     "sources": [
@@ -5500,7 +5500,7 @@
     "company": "openai",
     "date": "2026-03-02",
     "type": "partnership",
-    "name": "OpenAI\u2013Department of War Agreement",
+    "name": "OpenAI–Department of War Agreement",
     "description": "OpenAI publishes agreement describing guardrails for how its AI systems would be deployed for defense and government use cases.",
     "category": "government",
     "significance": "high",
@@ -5626,7 +5626,7 @@
     "company": "openai",
     "date": "2026-03-17",
     "type": "partnership",
-    "name": "OpenAI\u2013AWS US Defense AI Distribution Deal",
+    "name": "OpenAI–AWS US Defense AI Distribution Deal",
     "description": "OpenAI partners with AWS to sell AI to US defense and government agencies through classified and unclassified cloud environments.",
     "category": "government",
     "significance": "high",
@@ -5648,5 +5648,1151 @@
     "description": "Open-source Python tool-maker (uv, Ruff, ty). Integrating into Codex team to broaden AI capabilities throughout the software development lifecycle.",
     "source": "https://arstechnica.com/ai/2026/03/openai-is-acquiring-open-source-python-tool-maker-astral/",
     "amount": "Undisclosed"
+  },
+  {
+    "id": "ms-225",
+    "company": "us",
+    "date": "2026-03-20",
+    "type": "regulation",
+    "name": "White House National AI Policy Framework",
+    "description": "The White House releases a National Policy Framework for Artificial Intelligence urging Congress to preempt state AI laws deemed an 'undue burden' and adopt a light-touch federal regime. The framework rejects creating a new federal AI regulator while preserving state police powers over fraud, child protection, and consumer protection.",
+    "category": "government",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://rollcall.com/2026/03/20/white-house-ai-framework-calls-for-preemption-of-state-laws/",
+        "title": "White House AI framework calls for preemption of state laws",
+        "publisher": "Roll Call",
+        "date": "2026-03-20"
+      }
+    ]
+  },
+  {
+    "id": "ms-226",
+    "company": "mistral",
+    "date": "2026-03-30",
+    "type": "partnership",
+    "name": "Mistral Secures $830M Debt Financing for AI Data Center",
+    "description": "Mistral AI raises $830 million in debt financing from a consortium of seven banks to fund a Paris-area data center cluster powered by 13,800 Nvidia chips, an unusual debt-based financing structure for a frontier AI lab.",
+    "category": "funding",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://www.cnbc.com/2026/03/30/mistral-ai-paris-data-center-cluster-debt-financing.html",
+        "title": "Mistral secures $830 million in debt financing to fund AI data center",
+        "publisher": "CNBC",
+        "date": "2026-03-30"
+      }
+    ]
+  },
+  {
+    "id": "ms-227",
+    "company": "openai",
+    "date": "2026-03-31",
+    "type": "partnership",
+    "name": "OpenAI Closes Record $122B Round at $852B Valuation",
+    "description": "OpenAI closes the largest private financing in history, raising $122 billion at an $852 billion post-money valuation. Amazon invested $50 billion, with Nvidia and SoftBank contributing $30 billion each, and about $3 billion came from retail investors ahead of a potential IPO in late 2026.",
+    "category": "funding",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html",
+        "title": "OpenAI closes funding round at an $852 billion valuation",
+        "publisher": "CNBC",
+        "date": "2026-03-31"
+      },
+      {
+        "url": "https://www.bloomberg.com/news/articles/2026-03-31/openai-valued-at-852-billion-after-completing-122-billion-round",
+        "title": "OpenAI Valued at $852 Billion After Completing $122 Billion Round",
+        "publisher": "Bloomberg",
+        "date": "2026-03-31"
+      }
+    ]
+  },
+  {
+    "id": "ms-228",
+    "company": "google",
+    "date": "2026-04-02",
+    "type": "model-release",
+    "name": "Gemma 4 Released Under Apache 2.0",
+    "description": "Google DeepMind releases the Gemma 4 open-model family (E2B, E4B, 26B MoE, and 31B dense) under the Apache 2.0 license, with multimodal inputs across all sizes and context windows up to 256K tokens. The move to a fully open license marks Google's most permissive open-model release to date.",
+    "category": "llm",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://opensource.googleblog.com/2026/03/gemma-4-expanding-the-gemmaverse-with-apache-20.html",
+        "title": "Gemma 4: Expanding the Gemmaverse with Apache 2.0",
+        "publisher": "Google Open Source Blog",
+        "date": "2026-04-02"
+      }
+    ]
+  },
+  {
+    "id": "ms-229",
+    "company": "anthropic",
+    "date": "2026-04-06",
+    "type": "partnership",
+    "name": "Anthropic–Google–Broadcom 3.5GW TPU Compute Deal",
+    "description": "Anthropic signs a three-way agreement with Google and Broadcom for approximately 3.5 gigawatts of next-generation TPU capacity coming online from 2027, on top of 1 GW already deploying in 2026. Anthropic also disclosed run-rate revenue surpassing $30 billion, up from about $9 billion at the end of 2025.",
+    "category": "compute",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
+        "title": "Anthropic expands partnership with Google and Broadcom for multiple gigawatts of next-generation compute",
+        "publisher": "Anthropic",
+        "date": "2026-04-06"
+      },
+      {
+        "url": "https://www.googlecloudpresscorner.com/2026-04-06-Anthropic-Expands-Use-of-Google-Cloud-and-TPUs",
+        "title": "Anthropic Expands Use of Google Cloud and TPUs",
+        "publisher": "Google Cloud Press Corner",
+        "date": "2026-04-06"
+      }
+    ]
+  },
+  {
+    "id": "ms-230",
+    "company": "anthropic",
+    "date": "2026-04-07",
+    "type": "breakthrough",
+    "name": "Project Glasswing and Claude Mythos Preview",
+    "description": "Anthropic unveils Project Glasswing, giving roughly 50 partner organizations access to Claude Mythos Preview, an unreleased frontier model that surpasses all but the most skilled humans at finding software vulnerabilities. Early partners identified more than 10,000 high- or critical-severity security flaws, including in every major operating system and browser.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.hpcwire.com/aiwire/2026/04/09/anthropic-unveils-project-glasswing-as-claude-mythos-targets-software-vulnerabilities/",
+        "title": "Anthropic Unveils 'Project Glasswing' as Claude Mythos Targets Software Vulnerabilities",
+        "publisher": "HPCwire",
+        "date": "2026-04-09"
+      },
+      {
+        "url": "https://www.anthropic.com/glasswing",
+        "title": "Project Glasswing: Securing critical software for the AI era",
+        "publisher": "Anthropic",
+        "date": "2026-04-07"
+      }
+    ]
+  },
+  {
+    "id": "ms-231",
+    "company": "meta",
+    "date": "2026-04-08",
+    "type": "model-release",
+    "name": "Meta Muse Spark Released",
+    "description": "Meta debuts Muse Spark (formerly code-named Avocado), the first model from Meta Superintelligence Labs and its first major release since the $14 billion Alexandr Wang deal. The natively multimodal reasoning model marks a break from the open-source Llama line, with paid API access limited to select partners.",
+    "category": "llm",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.cnbc.com/2026/04/08/meta-debuts-first-major-ai-model-since-14-billion-deal-to-bring-in-alexandr-wang.html",
+        "title": "Meta debuts new AI model, attempting to catch Google, OpenAI after spending billions",
+        "publisher": "CNBC",
+        "date": "2026-04-08"
+      }
+    ]
+  },
+  {
+    "id": "ms-232",
+    "company": "anthropic",
+    "date": "2026-04-16",
+    "type": "model-release",
+    "name": "Claude Opus 4.7 Released",
+    "description": "Anthropic releases Claude Opus 4.7, its most capable public model, scoring 64.3% on SWE-bench Pro (up from 53.4% for Opus 4.6) with higher-resolution vision, file-system-level memory, and a new xhigh reasoning tier at unchanged $5/$25 per million token pricing. Anthropic acknowledged the model trails its unreleased Mythos model.",
+    "category": "llm",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.anthropic.com/news/claude-opus-4-7",
+        "title": "Introducing Claude Opus 4.7",
+        "publisher": "Anthropic",
+        "date": "2026-04-16"
+      },
+      {
+        "url": "https://www.cnbc.com/2026/04/16/anthropic-claude-opus-4-7-model-mythos.html",
+        "title": "Anthropic releases Claude Opus 4.7, a less risky model than Mythos",
+        "publisher": "CNBC",
+        "date": "2026-04-16"
+      }
+    ]
+  },
+  {
+    "id": "ms-233",
+    "company": "anthropic",
+    "date": "2026-04-17",
+    "type": "company-launch",
+    "name": "Claude Design by Anthropic Labs",
+    "description": "Anthropic launches Claude Design, an Anthropic Labs research preview that turns prompts, documents, and codebases into interactive prototypes, slides, mockups, and landing pages while applying a user's own design system. Powered by Claude Opus 4.7, it positions Anthropic against Figma and Canva in the design software market.",
+    "category": "product",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://techcrunch.com/2026/04/17/anthropic-launches-claude-design-a-new-product-for-creating-quick-visuals/",
+        "title": "Anthropic launches Claude Design, a new product for creating quick visuals",
+        "publisher": "TechCrunch",
+        "date": "2026-04-17"
+      }
+    ]
+  },
+  {
+    "id": "ms-234",
+    "company": "anthropic",
+    "date": "2026-04-20",
+    "type": "partnership",
+    "name": "Amazon to Invest Up to $25B More in Anthropic",
+    "description": "Amazon agrees to invest up to an additional $25 billion in Anthropic ($5 billion immediately, up to $20 billion more) as Anthropic commits to spending over $100 billion on AWS technologies over 10 years, including future Trainium generations, and secures up to 5 gigawatts of capacity. Amazon's total commitment reaches up to $33 billion.",
+    "category": "funding",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.cnbc.com/2026/04/20/amazon-invest-up-to-25-billion-in-anthropic-part-of-ai-infrastructure.html",
+        "title": "Amazon to invest up to another $25 billion in Anthropic as part of AI infrastructure deal",
+        "publisher": "CNBC",
+        "date": "2026-04-20"
+      }
+    ]
+  },
+  {
+    "id": "ms-235",
+    "company": "spacex",
+    "date": "2026-04-21",
+    "type": "acquisition",
+    "name": "SpaceX Secures Option to Acquire Cursor Maker Anysphere for $60B",
+    "description": "SpaceX signs an option agreement giving it the right to acquire Anysphere, maker of the AI coding tool Cursor, for $60 billion, or walk away for roughly $10 billion in combined breakup and deferred-services fees. SpaceX exercised the option in June 2026, making it the largest venture-backed startup acquisition ever.",
+    "category": "company",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html",
+        "title": "SpaceX to acquire the AI coding startup Cursor for $60 billion",
+        "publisher": "CNBC",
+        "date": "2026-06-16"
+      }
+    ]
+  },
+  {
+    "id": "ms-236",
+    "company": "openai",
+    "date": "2026-04-21",
+    "type": "model-release",
+    "name": "GPT Image 2 and ChatGPT Images 2.0",
+    "description": "OpenAI releases GPT Image 2 in the API and Codex on April 21, followed by ChatGPT Images 2.0 on April 22. The model reasons before generating, outputs up to 2K resolution with up to eight coherent images per prompt, and delivers reliable text rendering including non-Latin scripts.",
+    "category": "image-generation",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://openai.com/index/introducing-chatgpt-images-2-0/",
+        "title": "Introducing ChatGPT Images 2.0",
+        "publisher": "OpenAI",
+        "date": "2026-04-22"
+      }
+    ]
+  },
+  {
+    "id": "ms-237",
+    "company": "google",
+    "date": "2026-04-22",
+    "type": "company-launch",
+    "name": "Gemini Enterprise Agent Platform at Google Cloud Next '26",
+    "description": "At Google Cloud Next '26 in Las Vegas, Google launches the Gemini Enterprise Agent Platform, a unified environment to build, scale, govern, and optimize AI agents, alongside eighth-generation TPUs (TPU 8t for training, TPU 8i for inference) and an Agentic Data Cloud. The event featured over 260 announcements centered on agentic AI.",
+    "category": "platform",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/google-cloud-next-26-recap/",
+        "title": "7 highlights and announcements from Google Cloud Next '26",
+        "publisher": "Google Blog",
+        "date": "2026-04-24"
+      }
+    ]
+  },
+  {
+    "id": "ms-238",
+    "company": "openai",
+    "date": "2026-04-23",
+    "type": "model-release",
+    "name": "GPT-5.5 Released",
+    "description": "OpenAI releases GPT-5.5, positioned primarily as an agent runtime that can operate software and move across tools until a task is finished, just six weeks after GPT-5.4. It scores 82.7% on Terminal-Bench 2.0 with a 1M-token context at $5/$30 per million tokens, rolling out to paid ChatGPT tiers with API access on April 24.",
+    "category": "llm",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/",
+        "title": "OpenAI releases GPT-5.5, bringing company one step closer to an AI 'super app'",
+        "publisher": "TechCrunch",
+        "date": "2026-04-23"
+      },
+      {
+        "url": "https://fortune.com/2026/04/23/openai-releases-gpt-5-5/",
+        "title": "OpenAI launches GPT-5.5 just weeks after GPT-5.4 as AI race accelerates",
+        "publisher": "Fortune",
+        "date": "2026-04-23"
+      }
+    ]
+  },
+  {
+    "id": "ms-239",
+    "company": "project-prometheus",
+    "date": "2026-04-23",
+    "type": "partnership",
+    "name": "Bezos's Project Prometheus Closes $10B Round at $38B Valuation",
+    "description": "Project Prometheus, the physical-AI lab co-led by Jeff Bezos and Vik Bajaj focused on AI for engineering and manufacturing, closes a $10 billion funding round at a roughly $38 billion valuation with backers including JPMorgan and BlackRock. Total funding tops $16 billion just five months after the company's founding.",
+    "category": "funding",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.bloomberg.com/news/articles/2026-04-23/bezos-s-physical-ai-lab-has-closed-round-at-38-billion-value",
+        "title": "Bezos's Project Prometheus AI Lab Hits $38 Billion Valuation After Funding Round",
+        "publisher": "Bloomberg",
+        "date": "2026-04-23"
+      }
+    ]
+  },
+  {
+    "id": "ms-240",
+    "company": "deepseek",
+    "date": "2026-04-24",
+    "type": "model-release",
+    "name": "DeepSeek V4 Preview Released",
+    "description": "DeepSeek releases V4 in preview with two MIT-licensed models: V4-Pro (1.6T parameters) and V4-Flash (284B), both offering 1M-token context via the API. The release arrived months past the originally rumored mid-February window and continues DeepSeek's open-weight challenge to US frontier labs.",
+    "category": "llm",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://api-docs.deepseek.com/news/news260424/",
+        "title": "DeepSeek V4 Preview Release",
+        "publisher": "DeepSeek",
+        "date": "2026-04-24"
+      }
+    ]
+  },
+  {
+    "id": "ms-241",
+    "company": "microsoft",
+    "date": "2026-04-27",
+    "type": "partnership",
+    "name": "Microsoft and OpenAI End Cloud Exclusivity",
+    "description": "Microsoft and OpenAI restructure their partnership, ending Azure exclusivity so other clouds can license OpenAI models, while Microsoft retains a four-month first-mover window on new frontier releases and remains OpenAI's primary cloud partner. OpenAI's IP license to Microsoft through 2032 becomes non-exclusive.",
+    "category": "platform",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://redmondmag.com/articles/2026/04/28/microsoft-openai-restructure-partnership.aspx",
+        "title": "Microsoft, OpenAI Restructure Partnership in Shift Away from Exclusivity",
+        "publisher": "Redmond Magazine",
+        "date": "2026-04-28"
+      }
+    ]
+  },
+  {
+    "id": "ms-242",
+    "company": "xai",
+    "date": "2026-04-30",
+    "type": "model-release",
+    "name": "Grok 4.3 Released",
+    "description": "xAI releases Grok 4.3 to its API following an April 17 beta, featuring a 1M-token context window, native video input, and native PDF/PPTX/XLSX file generation at aggressive $1.25/$2.50 per million token pricing. It scores 53 on the Artificial Analysis Intelligence Index, behind GPT-5.5 (60) and Claude Opus 4.7 (57).",
+    "category": "llm",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://artificialanalysis.ai/articles/xai-launches-grok-4-3-with-improved-agentic-performance-and-lower-pricing",
+        "title": "xAI launches Grok 4.3 with improved agentic performance and lower pricing",
+        "publisher": "Artificial Analysis",
+        "date": "2026-04-30"
+      }
+    ]
+  },
+  {
+    "id": "ms-243",
+    "company": "google",
+    "date": "2026-04-30",
+    "type": "company-launch",
+    "name": "Gemini Rolls Out to 4 Million GM Vehicles",
+    "description": "Google begins rolling out Gemini to cars with Google built-in, starting with roughly 4 million model-year 2022 and newer GM vehicles across Cadillac, Chevrolet, Buick, and GMC via free over-the-air updates. Gemini replaces Google Assistant with conversational, context-aware interaction in the dashboard.",
+    "category": "product",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://techcrunch.com/2026/04/30/googles-gemini-ai-assistant-is-hitting-the-road-in-millions-of-vehicles/",
+        "title": "Google's Gemini AI assistant is hitting the road in millions of vehicles",
+        "publisher": "TechCrunch",
+        "date": "2026-04-30"
+      }
+    ]
+  },
+  {
+    "id": "ms-244",
+    "company": "anthropic",
+    "date": "2026-05-04",
+    "type": "partnership",
+    "name": "Ode with Anthropic: $1.5B Enterprise AI Joint Venture",
+    "description": "Anthropic teams with Blackstone, Goldman Sachs, Hellman & Friedman, and General Atlantic on Ode, a roughly $1.5 billion joint venture that embeds forward-deployed engineers inside enterprise and private-equity portfolio companies to implement AI systems. OpenAI announced a parallel enterprise-services joint venture the same day.",
+    "category": "enterprise",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.cnbc.com/2026/05/04/anthropic-goldman-blackstone-ai-venture.html",
+        "title": "Anthropic teams with Goldman, Blackstone and others on $1.5 billion AI venture targeting PE-owned firms",
+        "publisher": "CNBC",
+        "date": "2026-05-04"
+      },
+      {
+        "url": "https://techcrunch.com/2026/05/04/anthropic-and-openai-are-both-launching-joint-ventures-for-enterprise-ai-services/",
+        "title": "Anthropic and OpenAI are both launching joint ventures for enterprise AI services",
+        "publisher": "TechCrunch",
+        "date": "2026-05-04"
+      }
+    ]
+  },
+  {
+    "id": "ms-245",
+    "company": "subquadratic",
+    "date": "2026-05-05",
+    "type": "company-launch",
+    "name": "SubQ Launches First Commercial Subquadratic LLM",
+    "description": "Startup Subquadratic launches SubQ with $29 million in seed funding, shipping the first commercial non-transformer subquadratic LLM with a claimed 12M-token context window. The launch highlighted a May shift in the AI industry toward architectural alternatives to the transformer.",
+    "category": "research",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://whatllm.org/blog/new-ai-models-may-2026",
+        "title": "New AI Models May 2026: The Frontier Took a Breath, Architecture Took the Stage",
+        "publisher": "WhatLLM",
+        "date": "2026-05-14"
+      }
+    ]
+  },
+  {
+    "id": "ms-246",
+    "company": "eu",
+    "date": "2026-05-06",
+    "type": "regulation",
+    "name": "EU Provisional Deal to Delay AI Act High-Risk Rules",
+    "description": "EU institutions reach a provisional political agreement on the Digital Omnibus on AI, deferring full compliance for standalone Annex III high-risk AI systems from August 2, 2026 to December 2, 2027, after an April 28 trilogue collapsed without a deal. The package also explicitly bans AI nudification tools and was later confirmed by the Council and Parliament.",
+    "category": "government",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.dastra.eu/en/blog/digital-omnibus-on-ai-parliament-votes-deadlines-redrawn/60108",
+        "title": "Digital Omnibus on AI: Parliament Votes, Deadlines Redrawn",
+        "publisher": "Dastra",
+        "date": "2026-06-17"
+      },
+      {
+        "url": "https://thenextweb.com/news/eu-ai-act-omnibus-deal-fails-april-2026-talks",
+        "title": "EU and Parliament fail to agree on AI Act changes after 12 hours of talks, pushing deal to next month",
+        "publisher": "The Next Web",
+        "date": "2026-04-29"
+      }
+    ]
+  },
+  {
+    "id": "ms-247",
+    "company": "openai",
+    "date": "2026-05-18",
+    "type": "regulation",
+    "name": "Jury Rules for OpenAI in Musk Lawsuit",
+    "description": "An Oakland jury unanimously dismissed all claims in Elon Musk's $150B lawsuit against OpenAI, Sam Altman, and Greg Brockman, finding the statute of limitations had expired. The verdict removed a major legal cloud ahead of OpenAI's IPO process; Musk vowed to appeal.",
+    "category": "legal",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.npr.org/2026/05/18/nx-s1-5822366/musk-altman-openai-jury-verdict-claims-dismissed",
+        "title": "Jury dismisses all claims in Elon Musk's lawsuit against OpenAI CEO Sam Altman",
+        "publisher": "NPR",
+        "date": "2026-05-18"
+      }
+    ]
+  },
+  {
+    "id": "ms-248",
+    "company": "google",
+    "date": "2026-05-19",
+    "type": "model-release",
+    "name": "Gemini 3.5 and Gemini Omni Unveiled at I/O 2026",
+    "description": "At Google I/O 2026 (May 19-20), Google launched Gemini 3.5 and Gemini 3.5 Flash, frontier models built for agentic workflows and coding, plus Gemini Omni, a natively multimodal model that can create video from any combination of inputs. Google also introduced the Gemini Spark autonomous personal agent and cut Google AI Ultra pricing from $250 to $100/month.",
+    "category": "llm",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/",
+        "title": "100 things we announced at Google I/O 2026",
+        "publisher": "Google Blog",
+        "date": "2026-05-20"
+      },
+      {
+        "url": "https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/",
+        "title": "All the news from the Google I/O 2026 Developer keynote",
+        "publisher": "Google Developers Blog",
+        "date": "2026-05-19"
+      }
+    ]
+  },
+  {
+    "id": "ms-249",
+    "company": "cognition",
+    "date": "2026-05-27",
+    "type": "partnership",
+    "name": "Cognition Raises $1B at $26B Valuation",
+    "description": "AI coding startup Cognition (maker of Devin) raised more than $1 billion at a $26 billion valuation, in a round co-led by Lux Capital, General Catalyst, and 8VC, underscoring investor demand for AI software-development companies.",
+    "category": "funding",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://www.bloomberg.com/news/articles/2026-05-27/ai-coding-startup-cognition-raises-1-billion-at-26-billion-value",
+        "title": "AI Coding Startup Cognition Raises $1 Billion at $26 Billion Value",
+        "publisher": "Bloomberg",
+        "date": "2026-05-27"
+      }
+    ]
+  },
+  {
+    "id": "ms-250",
+    "company": "anthropic",
+    "date": "2026-05-28",
+    "type": "partnership",
+    "name": "Anthropic Raises $65B Series H at $965B Valuation",
+    "description": "Anthropic closed a $65 billion Series H round at a $965 billion post-money valuation, the largest private equity round ever, expected to be its final private raise before an IPO. Annualized revenue run-rate had recently crossed $47 billion.",
+    "category": "funding",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://techcrunch.com/2026/05/28/anthropic-raises-65-billion-nears-1t-valuation-ahead-of-ipo/",
+        "title": "Anthropic raises $65 billion, nears $1T valuation ahead of IPO",
+        "publisher": "TechCrunch",
+        "date": "2026-05-28"
+      },
+      {
+        "url": "https://www.anthropic.com/news/series-h",
+        "title": "Anthropic raises $65B in Series H funding at $965B post-money valuation",
+        "publisher": "Anthropic",
+        "date": "2026-05-28"
+      }
+    ]
+  },
+  {
+    "id": "ms-251",
+    "company": "anthropic",
+    "date": "2026-06-01",
+    "type": "company-launch",
+    "name": "Anthropic Confidentially Files S-1 for IPO",
+    "description": "Anthropic confidentially submitted a draft S-1 registration statement to the SEC for a proposed initial public offering, becoming the first major AI lab to formally enter the public-markets process, less than a week after its $65B Series H.",
+    "category": "funding",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.cnbc.com/2026/06/01/anthropic-ipo-s1-prospectus.html",
+        "title": "Anthropic confidentially files IPO prospectus with SEC, prepping Wall Street for landmark AI deal",
+        "publisher": "CNBC",
+        "date": "2026-06-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-252",
+    "company": "nvidia",
+    "date": "2026-06-01",
+    "type": "company-launch",
+    "name": "Nvidia Unveils AI PC Chips at Computex 2026",
+    "description": "At his Computex 2026 keynote, Jensen Huang unveiled a powerful Nvidia laptop chip for Windows AI PCs, saying Nvidia and Microsoft will 'reinvent the PC,' and announced that the Vera CPU (88 Olympus cores) has entered full production.",
+    "category": "product",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://www.cnbc.com/2026/06/02/nvidias-new-pc-chips-are-ceos-bid-to-own-every-part-of-ai-stack.html",
+        "title": "Nvidia's new PC chips represent CEO Huang's bid to win at every layer of AI stack",
+        "publisher": "CNBC",
+        "date": "2026-06-02"
+      }
+    ]
+  },
+  {
+    "id": "ms-253",
+    "company": "microsoft",
+    "date": "2026-06-02",
+    "type": "company-launch",
+    "name": "Microsoft Build 2026: Autopilots Autonomous Agents",
+    "description": "At Build 2026 (June 2-3), Microsoft introduced Autopilots, a new category of always-on autonomous agents that operate with their own identity and act without prompting, alongside Microsoft IQ, Work IQ, and Web IQ context layers for grounding agents in enterprise knowledge.",
+    "category": "platform",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/",
+        "title": "Microsoft Build 2026: Be yourself at work",
+        "publisher": "Microsoft Blog",
+        "date": "2026-06-02"
+      }
+    ]
+  },
+  {
+    "id": "ms-254",
+    "company": "apple",
+    "date": "2026-06-08",
+    "type": "company-launch",
+    "name": "Apple Unveils Siri AI at WWDC 2026",
+    "description": "At WWDC26, Apple introduced Siri AI, a rebuilt, far more capable assistant that can access and act across apps and data on-device with privacy controls, alongside next-generation Apple Intelligence features across iOS 27, macOS 27, and other platforms.",
+    "category": "product",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/",
+        "title": "Apple unveils next generation of Apple Intelligence, Siri AI, and more",
+        "publisher": "Apple Newsroom",
+        "date": "2026-06-08"
+      },
+      {
+        "url": "https://techcrunch.com/2026/06/09/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/",
+        "title": "WWDC 2026: Everything announced on Siri AI, iOS 27, Apple Intelligence, and more",
+        "publisher": "TechCrunch",
+        "date": "2026-06-09"
+      }
+    ]
+  },
+  {
+    "id": "ms-255",
+    "company": "anthropic",
+    "date": "2026-06-09",
+    "type": "model-release",
+    "name": "Claude Fable 5 and Mythos 5 Launch",
+    "description": "Anthropic released Claude Fable 5 and Claude Mythos 5, its first Mythos-class models, a capability tier above the Opus line. The launch marked a new frontier tier for Anthropic, though access was suspended three days later under a US export-control directive.",
+    "category": "llm",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.forbes.com/sites/anishasircar/2026/06/16/anthropic-disabled-fable-5-and-mythos-5-after-a-us-export-control-order-heres-what-happened/",
+        "title": "Anthropic Disabled Fable 5 And Mythos 5 After A U.S. Export-Control Order. Here's What Happened",
+        "publisher": "Forbes",
+        "date": "2026-06-16"
+      }
+    ]
+  },
+  {
+    "id": "ms-256",
+    "company": "openai",
+    "date": "2026-06-09",
+    "type": "company-launch",
+    "name": "OpenAI Confidentially Files S-1 for IPO",
+    "description": "OpenAI confidentially filed preliminary S-1 paperwork with the SEC, becoming the third AI giant to enter the IPO process after SpaceX and Anthropic. The company, valued at $852 billion, reported roughly $2 billion in monthly revenue but no committed listing timeline.",
+    "category": "funding",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://fortune.com/2026/06/09/openai-files-confidential-s-1-sec-ipo/",
+        "title": "OpenAI files confidential SEC S-1 paperwork for IPO",
+        "publisher": "Fortune",
+        "date": "2026-06-09"
+      }
+    ]
+  },
+  {
+    "id": "ms-257",
+    "company": "openai",
+    "date": "2026-06-11",
+    "type": "acquisition",
+    "name": "OpenAI to Acquire Ona",
+    "description": "OpenAI announced it will acquire Ona (formerly Gitpod), a cloud platform that runs AI coding agents in sandboxed environments, in a deal reported at roughly $2.5 billion, to let Codex agents take on longer-running tasks inside enterprise clouds.",
+    "category": "developer-tools",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://www.cnbc.com/2026/06/11/open-ai-ona-acquisition-codex.html",
+        "title": "OpenAI to acquire Ona to support its AI coding assistant, Codex",
+        "publisher": "CNBC",
+        "date": "2026-06-11"
+      }
+    ]
+  },
+  {
+    "id": "ms-258",
+    "company": "spacex",
+    "date": "2026-06-12",
+    "type": "company-launch",
+    "name": "SpaceX Completes Largest IPO in History",
+    "description": "SpaceX, which absorbed xAI in February 2026, began trading on Nasdaq as SPCX after pricing 555.56 million shares at $135, raising about $75 billion at a roughly $1.75 trillion valuation - the largest IPO ever, with AI as a core business segment.",
+    "category": "funding",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.npr.org/2026/06/11/nx-s1-5853199/spacex-ipo-price-elon-musk",
+        "title": "SpaceX blasts off with a record-breaking $75 billion IPO",
+        "publisher": "NPR",
+        "date": "2026-06-11"
+      },
+      {
+        "url": "https://www.cnn.com/2026/06/12/business/live-news/spacex-goes-public-ipo",
+        "title": "SpaceX shares debut after biggest IPO in history",
+        "publisher": "CNN Business",
+        "date": "2026-06-12"
+      }
+    ]
+  },
+  {
+    "id": "ms-259",
+    "company": "anthropic",
+    "date": "2026-06-12",
+    "type": "regulation",
+    "name": "US Directive Suspends Fable 5 and Mythos 5 Access",
+    "description": "Anthropic disabled access to Claude Fable 5 and Mythos 5 for all customers after the US government directed it to block access by foreign nationals, citing a possible jailbreak of cybersecurity safeguards - an unprecedented export-control action against a deployed frontier model.",
+    "category": "government",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.cnbc.com/2026/06/12/anthropic-disables-access-to-fable-5-and-mythos-5-to-comply-with-government-directive.html",
+        "title": "Anthropic disables access to Fable 5 and Mythos 5 to comply with government directive",
+        "publisher": "CNBC",
+        "date": "2026-06-12"
+      },
+      {
+        "url": "https://www.anthropic.com/news/fable-mythos-access",
+        "title": "Statement on the US government directive to suspend access to Fable 5 and Mythos 5",
+        "publisher": "Anthropic",
+        "date": "2026-06-12"
+      }
+    ]
+  },
+  {
+    "id": "ms-260",
+    "company": "spacex",
+    "date": "2026-06-16",
+    "type": "acquisition",
+    "name": "SpaceX to Acquire Cursor Maker Anysphere for $60B",
+    "description": "Days after its record IPO, SpaceX agreed to buy Anysphere, maker of the AI coding tool Cursor, in a $60 billion all-stock deal - the largest acquisition of a venture-backed startup ever. Cursor's annualized revenue had reached about $4 billion.",
+    "category": "developer-tools",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://techcrunch.com/2026/06/16/spacex-to-acquire-cursor-for-60b-in-stock-days-after-blockbuster-ipo/",
+        "title": "SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO",
+        "publisher": "TechCrunch",
+        "date": "2026-06-16"
+      },
+      {
+        "url": "https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html",
+        "title": "SpaceX to acquire the AI coding startup Cursor for $60 billion",
+        "publisher": "CNBC",
+        "date": "2026-06-16"
+      }
+    ]
+  },
+  {
+    "id": "ms-261",
+    "company": "openai",
+    "date": "2026-06-26",
+    "type": "model-release",
+    "name": "GPT-5.6 Series Preview (Sol, Terra, Luna)",
+    "description": "OpenAI began a limited preview of the GPT-5.6 series - flagship Sol, mid-tier Terra, and low-cost Luna - initially restricted to a small group of trusted partners at the request of the US government, which sought pre-deployment security assessments.",
+    "category": "llm",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.cnbc.com/2026/06/26/openai-limits-new-ai-models-to-trusted-partners-request-us-government.html",
+        "title": "OpenAI limits new AI models to 'trusted partners' at request of U.S. government",
+        "publisher": "CNBC",
+        "date": "2026-06-26"
+      },
+      {
+        "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+        "title": "Previewing GPT-5.6 Sol: a next-generation model",
+        "publisher": "OpenAI",
+        "date": "2026-06-26"
+      }
+    ]
+  },
+  {
+    "id": "ms-262",
+    "company": "anthropic",
+    "date": "2026-06-30",
+    "type": "model-release",
+    "name": "Claude Sonnet 5",
+    "description": "Anthropic launched Claude Sonnet 5, its most agentic mid-tier model, performing close to Opus 4.8 at roughly 40-60% of the cost. It replaced Sonnet 4.6 as the default across Claude.ai, with launch API pricing of $2/$10 per million tokens through August 31.",
+    "category": "llm",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.anthropic.com/news/claude-sonnet-5",
+        "title": "Introducing Claude Sonnet 5",
+        "publisher": "Anthropic",
+        "date": "2026-06-30"
+      },
+      {
+        "url": "https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/",
+        "title": "Anthropic launches Claude Sonnet 5 as a cheaper way to run agents",
+        "publisher": "TechCrunch",
+        "date": "2026-06-30"
+      }
+    ]
+  },
+  {
+    "id": "ms-263",
+    "company": "anthropic",
+    "date": "2026-06-30",
+    "type": "regulation",
+    "name": "US Lifts Export Controls on Fable 5 and Mythos 5",
+    "description": "Anthropic said the US administration lifted the export-control directive on Claude Fable 5 and Mythos 5, restoring global access to the suspended Mythos-class models on the Claude platform, Claude.ai, and Claude Code after an 18-day suspension. Access was restored to customers on July 1, 2026, when Anthropic redeployed both models worldwide with a new safety classifier that blocks the flagged jailbreak in over 99% of cases.",
+    "category": "government",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.cnbc.com/2026/06/30/anthropic-says-trump-admin-has-lifted-export-controls-on-claude-fable-5-and-mythos-5.html",
+        "title": "Anthropic says Trump admin has lifted export controls on Claude Fable 5 and Mythos 5",
+        "publisher": "CNBC",
+        "date": "2026-06-30"
+      },
+      {
+        "url": "https://www.anthropic.com/news/redeploying-fable-5",
+        "title": "Redeploying Claude Fable 5",
+        "publisher": "Anthropic",
+        "date": "2026-07-01"
+      },
+      {
+        "url": "https://venturebeat.com/technology/anthropic-is-bringing-back-claude-fable-5-globally-after-us-lifts-export-control-order-where-can-enterprises-access-it",
+        "title": "Anthropic is bringing back Claude Fable 5 globally after US lifts export control order",
+        "publisher": "VentureBeat",
+        "date": "2026-07-01"
+      }
+    ]
+  },
+  {
+    "id": "ms-264",
+    "company": "microsoft",
+    "date": "2026-07-02",
+    "type": "company-launch",
+    "name": "Microsoft Commits $2.5B to New AI Implementation Unit",
+    "description": "Microsoft announced a $2.5 billion commitment and a 6,000-employee AI implementation division, led by Rodrigo Kede Lima, staffed with forward-deployed engineers, technical consultants, and industry-specialist sales staff to drive enterprise AI adoption.",
+    "category": "enterprise",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://www.cnbc.com/2026/07/02/microsoft-commits-2point5-billion-6000-employees-ai-implementation-unit.html",
+        "title": "Microsoft commits $2.5 billion and 6,000 employees to new AI implementation unit",
+        "publisher": "CNBC",
+        "date": "2026-07-02"
+      }
+    ]
+  },
+  {
+    "id": "ms-265",
+    "company": "kling-ai",
+    "date": "2026-07-02",
+    "type": "partnership",
+    "name": "Kling AI Raises $2.8B at $18B Valuation",
+    "description": "Kuaishou's AI video unit Kling AI closed a $2.8 billion round at an $18 billion post-money valuation, backed by Alibaba, Tencent, and Baidu. The company is targeting a Hong Kong Stock Exchange listing within 12 months.",
+    "category": "funding",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://www.bloomberg.com/news/articles/2026-07-02/china-s-kling-ai-raises-2-billion-to-expand-ai-video-operations",
+        "title": "Alibaba, Tencent Join $2.8 Billion Funding for Kling AI",
+        "publisher": "Bloomberg",
+        "date": "2026-07-02"
+      }
+    ]
+  },
+  {
+    "id": "ms-266",
+    "company": "sap",
+    "date": "2026-07-06",
+    "type": "acquisition",
+    "name": "SAP Completes Dremio Acquisition",
+    "description": "SAP completed its acquisition of data lakehouse platform Dremio, announced in May 2026, enabling customers to run analytical and agentic AI workloads across SAP and non-SAP data without data movement.",
+    "category": "enterprise",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://news.sap.com/2026/07/sap-completes-dremio-acquisition/",
+        "title": "SAP Completes Dremio Acquisition",
+        "publisher": "SAP News Center",
+        "date": "2026-07-06"
+      }
+    ]
+  },
+  {
+    "id": "ms-267",
+    "company": "xai",
+    "date": "2026-07-08",
+    "type": "model-release",
+    "name": "xAI Releases Grok 4.5",
+    "description": "xAI released Grok 4.5, its frontier model tuned for coding, agentic workflows, and knowledge work, undercutting competitor pricing. It launched as the first jointly trained xAI + Cursor model available inside the Cursor editor.",
+    "category": "llm",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://x.ai/news/grok-4-5",
+        "title": "Introducing Grok 4.5",
+        "publisher": "xAI",
+        "date": "2026-07-08"
+      }
+    ]
+  },
+  {
+    "id": "ms-268",
+    "company": "openai",
+    "date": "2026-07-09",
+    "type": "model-release",
+    "name": "OpenAI Launches GPT-5.6 Family (Sol, Terra, Luna)",
+    "description": "OpenAI released the GPT-5.6 model family: Sol (flagship, tuned for biology, chemistry, cybersecurity, and high-end reasoning at $5/$30 per million tokens), Terra (intermediate), and Luna (budget). Sam Altman said Sol is 54% more token efficient on AI coding tasks.",
+    "category": "llm",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://techcrunch.com/2026/07/09/openai-launches-its-new-family-of-models-with-gpt-5-6/",
+        "title": "OpenAI launches its new family of models with GPT-5.6",
+        "publisher": "TechCrunch",
+        "date": "2026-07-09"
+      },
+      {
+        "url": "https://www.nextgov.com/artificial-intelligence/2026/07/openais-advanced-gpt-56-models-be-available-public/414651/",
+        "title": "OpenAI's advanced GPT-5.6 models to be publicly released",
+        "publisher": "Nextgov/FCW",
+        "date": "2026-07-08"
+      }
+    ]
+  },
+  {
+    "id": "ms-269",
+    "company": "helsing",
+    "date": "2026-07-13",
+    "type": "partnership",
+    "name": "Helsing Raises $1.8B Series E at $18B Valuation",
+    "description": "Munich-based defense AI firm Helsing closed a $1.8 billion Series E at an $18 billion valuation, Europe's largest defense-startup round in history, and announced its first US manufacturing base in West Virginia for the HX-2 AI-enabled strike drone.",
+    "category": "funding",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://www.defensenews.com/global/europe/2026/07/13/helsing-raises-18-billion-in-europes-biggest-defense-startup-round/",
+        "title": "Helsing raises $1.8 billion in Europe's biggest defense-startup round",
+        "publisher": "Defense News",
+        "date": "2026-07-13"
+      }
+    ]
+  },
+  {
+    "id": "ms-270",
+    "company": "nvidia",
+    "date": "2026-07-14",
+    "type": "regulation",
+    "name": "US Approves Limited Nvidia H200 Shipments to China",
+    "description": "The US approved limited exports of Nvidia H200 AI chips to China under a new licensing regime, with initial shipments confirmed by the Commerce Department. Around 10 Chinese firms including Alibaba, Tencent, ByteDance, and a ZTE unit were cleared, and AMD said it would resume compliant MI308 sales.",
+    "category": "government",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.bloomberg.com/news/articles/2026-07-14/small-amount-of-nvidia-ai-chips-shipped-to-china-with-us-license",
+        "title": "Small Amount of Nvidia AI Chips Sold to China Via US License",
+        "publisher": "Bloomberg",
+        "date": "2026-07-14"
+      },
+      {
+        "url": "https://www.benzinga.com/markets/equities/26/07/60462326/nvidia-starts-h200-ai-chip-shipments-to-china-as-us-approves-limited-exports",
+        "title": "Nvidia Starts H200 AI Chip Shipments to China as US Approves Limited Exports",
+        "publisher": "Benzinga",
+        "date": "2026-07-15"
+      }
+    ]
+  },
+  {
+    "id": "ms-271",
+    "company": "moonshot-ai",
+    "date": "2026-07-16",
+    "type": "model-release",
+    "name": "Moonshot AI Releases Kimi K3",
+    "description": "China's Moonshot AI released Kimi K3, a 2.8-trillion-parameter Mixture-of-Experts model (104B active parameters) with a 1M-token context window and native multimodal input. Full weights were published July 27 under a Modified MIT license, making it the largest open-weight model ever released; Artificial Analysis ranked it fourth among 189 tested models.",
+    "category": "llm",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://pureai.com/articles/2026/07/17/china-moonshot-ai-releases-kimi-k3.aspx",
+        "title": "China's Moonshot AI Releases Kimi K3, Its Largest Open-Weight Model",
+        "publisher": "Pure AI",
+        "date": "2026-07-17"
+      },
+      {
+        "url": "https://www.interconnects.ai/p/kimi-k3-the-open-weights-escalation",
+        "title": "Kimi K3: The open-weights escalation",
+        "publisher": "Interconnects",
+        "date": "2026-07-27"
+      }
+    ]
+  },
+  {
+    "id": "ms-272",
+    "company": "google-deepmind",
+    "date": "2026-07-21",
+    "type": "model-release",
+    "name": "Google Releases Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber",
+    "description": "Google DeepMind released three Gemini models — workhorse Gemini 3.6 Flash (up to 17% lower token usage), cost-focused 3.5 Flash-Lite, and 3.5 Flash Cyber, fine-tuned for finding and fixing cybersecurity vulnerabilities — while the delayed Gemini 3.5 Pro, undergoing a ground-up architectural rebuild, did not ship.",
+    "category": "llm",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro/",
+        "title": "Google releases three new Gemini models — but no 3.5 Pro",
+        "publisher": "TechCrunch",
+        "date": "2026-07-21"
+      }
+    ]
+  },
+  {
+    "id": "ms-273",
+    "company": "anthropic",
+    "date": "2026-07-24",
+    "type": "model-release",
+    "name": "Anthropic Launches Claude Opus 5",
+    "description": "Anthropic released Claude Opus 5, approaching Claude Fable 5 capability on many tasks at half the price ($5/$25 per million tokens), with a 1M-token context window, selectable effort levels, and a fast mode running 2.5x faster at 2x base cost. It set new state-of-the-art results on coding and knowledge-work evaluations.",
+    "category": "llm",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.anthropic.com/news/claude-opus-5",
+        "title": "Introducing Claude Opus 5",
+        "publisher": "Anthropic",
+        "date": "2026-07-24"
+      },
+      {
+        "url": "https://techcrunch.com/2026/07/24/anthropic-launches-opus-5/",
+        "title": "Anthropic launches Opus 5",
+        "publisher": "TechCrunch",
+        "date": "2026-07-24"
+      }
+    ]
+  },
+  {
+    "id": "ms-274",
+    "company": "nvidia",
+    "date": "2026-07-27",
+    "type": "partnership",
+    "name": "Nvidia Invests $5B in Safe Superintelligence",
+    "description": "Nvidia announced a $5 billion milestone-based investment in Ilya Sutskever's Safe Superintelligence, one of its largest funding deals of the AI boom. SSI will deploy Nvidia's Vera Rubin CPU-GPU systems, increasing its compute by an order of magnitude over 12 months.",
+    "category": "funding",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.bloomberg.com/news/articles/2026-07-27/nvidia-makes-substantial-investment-in-sutskever-s-ai-startup",
+        "title": "Nvidia to Invest $5B in Ilya Sutskever's AI Startup Safe Superintelligence",
+        "publisher": "Bloomberg",
+        "date": "2026-07-27"
+      },
+      {
+        "url": "https://techcrunch.com/2026/07/27/ilya-sutskevers-safe-superintelligence-partners-with-nvidia-to-scale-its-ai-research/",
+        "title": "Ilya Sutskever's Safe Superintelligence partners with Nvidia to scale its AI research",
+        "publisher": "TechCrunch",
+        "date": "2026-07-27"
+      }
+    ]
+  },
+  {
+    "id": "ms-275",
+    "company": "eu",
+    "date": "2026-08-02",
+    "type": "regulation",
+    "name": "EU AI Act Article 50 Transparency Obligations Take Effect",
+    "description": "Transparency obligations under Article 50 of the EU AI Act became enforceable, including chatbot disclosure, synthetic content marking, and deepfake labelling, and the European Commission's enforcement authority over general-purpose AI models officially began. High-risk system deadlines were earlier extended to 2027-2028 under the June AI Omnibus amendment.",
+    "category": "government",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.technology.org/2026/07/17/eu-ai-act-what-actually-applies-on-2-august-2026/",
+        "title": "EU AI Act: What Actually Applies on 2 August 2026",
+        "publisher": "Technology.org",
+        "date": "2026-07-17"
+      },
+      {
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+        "title": "AI Act | Shaping Europe's digital future",
+        "publisher": "European Commission",
+        "date": "2026-08-02"
+      }
+    ]
+  },
+  {
+    "id": "ms-276",
+    "company": "us",
+    "date": "2026-08-03",
+    "type": "regulation",
+    "name": "White House Convenes Top AI Companies in Regulation Push",
+    "description": "The White House met with OpenAI, Anthropic, and other leading AI companies in its first major push toward a federal AI regulatory framework, amid ongoing debate over federal preemption of state AI laws.",
+    "category": "government",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://edition.cnn.com/2026/08/03/tech/white-house-meet-with-top-ai-companies-big-regulation-push",
+        "title": "White House to meet with OpenAI, Anthropic and other top AI companies in first big regulation push",
+        "publisher": "CNN Business",
+        "date": "2026-08-03"
+      }
+    ]
+  },
+  {
+    "id": "ms-277",
+    "company": "anthropic",
+    "date": "2026-08-05",
+    "type": "company-launch",
+    "name": "Anthropic Builds In-House AI Chip Design Team",
+    "description": "Anthropic confirmed it is building an in-house silicon team to co-design custom ASIC inference chips alongside its Claude models, aiming to reduce reliance on Nvidia GPUs. Samsung has been reported as a potential manufacturing partner.",
+    "category": "hardware",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://techcrunch.com/2026/08/05/anthropic-is-hiring-an-ai-chip-design-team/",
+        "title": "Anthropic is hiring an AI chip design team",
+        "publisher": "TechCrunch",
+        "date": "2026-08-05"
+      }
+    ]
+  },
+  {
+    "id": "ms-278",
+    "company": "google",
+    "date": "2026-08-06",
+    "type": "company-launch",
+    "name": "Google Reorganizes AI Leadership Under Kavukcuoglu",
+    "description": "Google concentrated its AI leadership at its Mountain View headquarters, appointing Koray Kavukcuoglu to run AI research and operations while Demis Hassabis stepped back from day-to-day operations to become chairman of Google DeepMind and Alphabet's Chief Scientist.",
+    "category": "company",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.bloomberg.com/news/articles/2026-08-06/google-shifts-ai-power-to-california-in-race-against-anthropic-openai",
+        "title": "Google Shifts AI Leadership to California in Race Against Anthropic, OpenAI",
+        "publisher": "Bloomberg",
+        "date": "2026-08-06"
+      }
+    ]
+  },
+  {
+    "id": "ms-279",
+    "company": "amd",
+    "date": "2026-08-06",
+    "type": "acquisition",
+    "name": "AMD Acquires AI Inference Chip Startup Taalas",
+    "description": "AMD agreed to acquire Toronto-based Taalas, whose chips hardwire a single AI model into silicon for inference speeds it claims are thousands of times faster than conventional GPUs. Terms were undisclosed; it is AMD's third AI acquisition in nine months.",
+    "category": "hardware",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://www.cnbc.com/2026/08/06/amd-buys-taalas-startup-that-hardwires-ai-models-into-its-silicon.html",
+        "title": "AMD buys Taalas, startup that hardwires AI models into its silicon",
+        "publisher": "CNBC",
+        "date": "2026-08-06"
+      }
+    ]
+  },
+  {
+    "id": "ms-280",
+    "company": "openai",
+    "date": "2026-08-08",
+    "type": "acquisition",
+    "name": "OpenAI Acquires Presentation Startup NextSlide",
+    "description": "OpenAI acquired NextSlide, whose product turns prompts, notes, documents, or research into polished editable presentations. The startup's team joined ChatGPT; terms were not disclosed.",
+    "category": "platform",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://techcrunch.com/2026/08/08/openai-acquires-presentation-startup-nextslide/",
+        "title": "OpenAI acquires presentation startup NextSlide",
+        "publisher": "TechCrunch",
+        "date": "2026-08-08"
+      }
+    ]
   }
 ]

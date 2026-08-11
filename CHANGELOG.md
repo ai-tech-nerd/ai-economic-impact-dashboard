@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## [Unreleased] - 2026-08-11 — June–August research backfill + AI Advances catch-up
+
+### Added
+- **9 displacement events** (evt-088–096, Jun–Aug 2026): GitLab, Mews, Darrow, Thomson Reuters, Sprout Social, Uber, Monday.com, Visa (~2,600), Latch/DOOR — total now 328,995 jobs / 95 events / 80 companies
+- **2 planned** (plan-016 SAP hiring freeze, plan-017 Wells Fargo "tens of thousands")
+- **8 job-creation entries** (create-007–014) with new `creationCategory` field: "ai-adoption-roles" (Box, Thomson Reuters) vs "support" (infrastructure: Meta AWA, Reflection, n8n, Meta Alberta, OpenAI Camellia, SpaceX/Tesla Terafab) per owner's tech-transition framework; field backfilled on the 6 existing entries
+- **56 AI milestones** (ms-225–280): AI Advances now covers 2026-03-20 → 2026-08-08 (was stale since 03-19); 370 total
+- **19 archive pages** (excerpt format, all with verified screenshots — zero manual captures needed); manifest 107 → 126
+- Oracle evt-069 updated with its FY2026 10-K AI attribution (verified on SEC EDGAR) — first formal SEC-filing attribution in the dataset
+
+### Process
+- Every event passed a two-stage gate: research agents with AI-attribution requirement (confidence ≥70), then adversarial verification enforcing the owner's rule that journalist framing cannot override company statements. 9 researched events were struck (incl. Verizon and Zillow-class denials); GitLab, Darrow, Thomson Reuters reinstated by owner ruling with transparency notes.
+- Google Sheet sync rows generated (owner pastes; no Sheets write access in this session).
+
 ## [Unreleased] - 2026-08-10 (round 2: full-archive excerpt migration)
 
 ### Changed — Copyright remediation across the entire source archive

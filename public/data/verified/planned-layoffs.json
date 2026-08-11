@@ -99,11 +99,11 @@
     "country": "SE",
     "aiReplacement": true,
     "reasonGiven": "CEO Siemiatkowski: workforce dropped from 5,000 to 3,800 (24% in one year) through hiring freeze and natural attrition enabled by AI. AI chatbot doing work of 700 agents. Plans to reach 2,000 employees.",
-    "description": "Klarna plans to cut 2,000 jobs across mixed — via hiring freeze and attrition. CEO Siemiatkowski: workforce dropped from 5,000 to 3,800 (24% in one year) through hiring freeze and natural attrition enabled by AI. AI chatbot doing work of 700 agents. Plans to reach 2,000 employees.",
+    "description": "Klarna plans to cut 2,000 jobs across mixed \u2014 via hiring freeze and attrition. CEO Siemiatkowski: workforce dropped from 5,000 to 3,800 (24% in one year) through hiring freeze and natural attrition enabled by AI. AI chatbot doing work of 700 agents. Plans to reach 2,000 employees.",
     "sources": [
       {
         "url": "https://www.fxcintel.com/research/reports/ct-klarna-ai-job-cuts",
-        "title": "Klarna planned layoffs — FXC Intelligence",
+        "title": "Klarna planned layoffs \u2014 FXC Intelligence",
         "publisher": "FXC Intelligence",
         "date": "2024-09-05"
       }
@@ -126,11 +126,11 @@
     "country": "DE",
     "aiReplacement": true,
     "reasonGiven": "Shift toward 'Business AI'; automation reducing internal staffing needs. Originally announced up to 10,000 could be affected.",
-    "description": "SAP plans to cut 1,100–2,200 jobs across internal operations. Shift toward 'Business AI'; automation reducing internal staffing needs. Originally announced up to 10,000 could be affected.",
+    "description": "SAP plans to cut 1,100\u20132,200 jobs across internal operations. Shift toward 'Business AI'; automation reducing internal staffing needs. Originally announced up to 10,000 could be affected.",
     "sources": [
       {
         "url": "https://fortune.com/2025/09/24/sap-cfo-dominik-asam-320-billion-software-firm-ai-allow-workforce-reduction-but-if-done-wrong-could-be-business-catastrophe/",
-        "title": "SAP planned layoffs — Fortune",
+        "title": "SAP planned layoffs \u2014 Fortune",
         "publisher": "Fortune",
         "date": "2025-09-24"
       }
@@ -242,7 +242,7 @@
     "sources": [
       {
         "url": "https://www.cbsnews.com/news/pinterest-layoffs-workforce-artificial-intelligence/",
-        "title": "Pinterest planned layoffs — CBS News",
+        "title": "Pinterest planned layoffs \u2014 CBS News",
         "publisher": "CBS News",
         "date": "2026-01-27"
       }
@@ -269,7 +269,7 @@
     "sources": [
       {
         "url": "https://www.5newsonline.com/article/news/nation-world/ups-cuts-thirty-thoudand-jobs-close-facilities-2026/507-03e10786-3dd2-4968-a536-e250a8dea134",
-        "title": "UPS planned layoffs — 5NEWS",
+        "title": "UPS planned layoffs \u2014 5NEWS",
         "publisher": "5NEWS",
         "date": "2026-01-27"
       }
@@ -296,7 +296,7 @@
     "sources": [
       {
         "url": "https://www.reuters.com/business/asml-q4-bookings-beat-expectations-chipmakers-order-more-satisfy-ai-demand-2026-01-28/",
-        "title": "ASML planned layoffs — Reuters",
+        "title": "ASML planned layoffs \u2014 Reuters",
         "publisher": "Reuters",
         "date": "2026-01-28"
       }
@@ -323,7 +323,7 @@
     "sources": [
       {
         "url": "https://www.reuters.com/business/british-american-tobacco-annual-profit-rises-23-2026-02-12/",
-        "title": "British American Tobacco planned layoffs — Reuters",
+        "title": "British American Tobacco planned layoffs \u2014 Reuters",
         "publisher": "Reuters",
         "date": "2026-02-12"
       }
@@ -380,7 +380,7 @@
     "sources": [
       {
         "url": "https://www.reuters.com/business/world-at-work/hsbc-mulls-job-cuts-that-could-impact-around-20000-roles-bloomberg-news-reports-2026-03-19/",
-        "title": "HSBC planned layoffs — Reuters",
+        "title": "HSBC planned layoffs \u2014 Reuters",
         "publisher": "Reuters",
         "date": "2026-03-19"
       }
@@ -408,7 +408,7 @@
     "sources": [
       {
         "url": "https://www.bloomberg.com/news/articles/2026-05-05/paypal-plans-job-cuts-as-fintech-s-new-ceo-pursues-turnaround-strategy",
-        "title": "PayPal planned layoffs — Bloomberg",
+        "title": "PayPal planned layoffs \u2014 Bloomberg",
         "publisher": "Bloomberg",
         "date": "2026-05-05"
       }
@@ -416,5 +416,73 @@
     "verificationStatus": "verified",
     "status": "announced",
     "timeline": "Over 2-3 years"
+  },
+  {
+    "id": "plan-016",
+    "company": "sap",
+    "companyName": "SAP",
+    "date": "2026-07-03",
+    "jobsCut": 0,
+    "jobTypes": [
+      "Company-wide hiring freeze"
+    ],
+    "industry": "Technology",
+    "region": "Europe",
+    "country": "DE",
+    "aiReplacement": true,
+    "reasonGiven": "Executive board memo freezing most hiring plus halting non-essential travel and cutting supplier spend to free up cash for AI investment; new hiring 'exclusively focused on selected profiles only, mainly core AI roles.' Memo: 'As AI reshapes the future of our industry, we are making significant investments... By balancing where we invest and where we save, we ensure that SAP remains strong, competitive, and well-positioned for the long term.'",
+    "description": "SAP froze most hiring company-wide (no layoff count \u2014 a hiring freeze, not layoffs), restricting new hires to 'core AI roles,' alongside a non-essential travel halt and supplier-spend cuts. Executive board memo (obtained by Bloomberg; SAP confirmed the move): 'As AI reshapes the future of our industry, we are making significant investments... By balancing where we invest and where we save, we ensure that SAP remains strong, competitive, and well-positioned for the long term.' Distinct from the September 2025 SAP entry (plan-009). Stock down ~33% YTD on fears AI erodes demand for traditional enterprise software.",
+    "sources": [
+      {
+        "url": "https://thenextweb.com/news/sap-hiring-travel-freeze-ai-push",
+        "title": "SAP freezes hiring and travel in AI push \u2014 The Next Web",
+        "publisher": "The Next Web",
+        "date": "2026-07-03"
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "hiring-freeze",
+    "timeline": "Not specified"
+  },
+  {
+    "id": "plan-017",
+    "company": "wells-fargo",
+    "companyName": "Wells Fargo",
+    "date": "2026-08-04",
+    "jobsCut": 0,
+    "jobTypes": [
+      "Back-office",
+      "Operations",
+      "Roles subject to automation"
+    ],
+    "industry": "Financial Services",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "CEO Charlie Scharf said on CNBC that AI-driven automation of roles will result in a large future headcount reduction: 'When we think about the ability to automate roles... it's going to result in tens of thousands of fewer positions.' Scharf explicitly distinguished this from the bank's prior 79,000-person reduction since 2019, which he said was unrelated to AI. Engineering cited as already 30-35% more efficient with genAI.",
+    "description": "Wells Fargo CEO Charlie Scharf said AI-driven automation will result in 'tens of thousands of fewer positions' at the bank (no timeline or precise count given): 'When we think about the ability to automate roles... it's going to result in tens of thousands of fewer positions' (CNBC Squawk on the Street). Forward-looking; no execution yet. Scharf distinguished this from the 79,000-person reduction since 2019, which he said had nothing to do with AI.",
+    "sources": [
+      {
+        "url": "https://247wallst.com/investing/2026/08/05/wells-fargos-ceo-says-ai-will-erase-tens-of-thousands-of-jobs-heres-why-hes-still-not-worried-about-your-wallet/",
+        "title": "Wells Fargo's CEO says AI will erase tens of thousands of jobs \u2014 24/7 Wall St.",
+        "publisher": "24/7 Wall St.",
+        "date": "2026-08-05"
+      },
+      {
+        "url": "https://www.peoplematters.in/news/strategic-hr/wells-fargo-signals-more-job-cuts-as-ai-rollout-begins-in-2026-47615",
+        "title": "Wells Fargo signals more job cuts as AI rollout begins \u2014 People Matters",
+        "publisher": "People Matters",
+        "date": "2026-08-05"
+      },
+      {
+        "url": "https://finance.yahoo.com/news/wfc-reshape-workforce-ai-era-175500203.html",
+        "title": "WFC to reshape workforce in AI era \u2014 Yahoo Finance",
+        "publisher": "Yahoo Finance",
+        "date": "2026-08-05"
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "announced",
+    "timeline": "Not specified (forward-looking)"
   }
 ]

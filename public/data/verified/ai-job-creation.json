@@ -27,6 +27,7 @@
     "status": "creation",
     "jobRolesCreated": "Engineering / AI infrastructure",
     "jobsCreated": 1111,
+    "creationCategory": "ai-adoption-roles",
     "context": "Cloudflare announced plans to hire 1,111 interns in 2026, a massive increase from its former 60-person internship program. The expansion is part of the company's push to build AI infrastructure and develop AI-native talent pipelines."
   },
   {
@@ -56,6 +57,7 @@
     "status": "creation",
     "jobRolesCreated": "AI and Data Professionals",
     "jobsCreated": 37000,
+    "creationCategory": "ai-adoption-roles",
     "context": "Growing client demand for AI deployment; reaching a total of 77,000 experts"
   },
   {
@@ -85,6 +87,7 @@
     "status": "creation",
     "jobRolesCreated": "Early-career talent",
     "jobsCreated": 2000,
+    "creationCategory": "ai-adoption-roles",
     "context": "Quadrupling its pipeline of entry-level talent in the US with a plan to hire up to 2,000 early-career talent by the end of the year."
   },
   {
@@ -116,6 +119,7 @@
     "status": "creation",
     "jobRolesCreated": "Software developers, HR (AI oversight), customer-facing roles \u2014 redefined as AI-management positions",
     "jobsCreated": 0,
+    "creationCategory": "ai-adoption-roles",
     "context": "Reversal from May 2023 hiring freeze. New roles fundamentally different \u2014 managing chatbots, overseeing AI outputs, intervening when AI fails."
   },
   {
@@ -145,6 +149,7 @@
     "status": "creation",
     "jobRolesCreated": "Entry-level junior developers",
     "jobsCreated": 1200,
+    "creationCategory": "ai-adoption-roles",
     "context": "CEO and cofounder, Danny Jenkins, said company has experienced a spike in growth as it responds to a new age of threats in the AI era. Plans to nearly double its headcount in the next 18 months"
   },
   {
@@ -176,6 +181,344 @@
     "status": "creation",
     "jobRolesCreated": "Engineering / Product / Sales (AI-focused on Agentforce + Headless360)",
     "jobsCreated": 1000,
+    "creationCategory": "ai-adoption-roles",
     "context": "CEO Marc Benioff on X: 'I'm locked on, @DavidSacks! We're hiring 1,000 new grads & interns right now to ride the AI exponential. You are right they said AI would kill entry-level jobs. Meanwhile these grads & interns are building it -- powering Agentforce & Headless 360 at Salesforce.' Salesforce launched a new Builder Program within its university recruitment initiative (Futureforce) to fast-track recent graduates into engineering, product, and sales roles focused on its AI agent platform Agentforce. Company says it has hired over 10,000 professionals through Futureforce to date. Comes despite Salesforce's own February 2026 cuts of nearly 1,000 roles (already in tracker). Benioff also said he is hiring more salespeople because 'demand than ever' even while not hiring more software developers or service agents in FY26 due to AI agent capabilities."
+  },
+  {
+    "id": "create-007",
+    "company": "box",
+    "companyName": "Box",
+    "date": "2026-06-01",
+    "jobsCut": 0,
+    "jobTypes": [
+      "AI architects",
+      "AI solutions managers",
+      "Forward deployed engineers",
+      "AI business automation engineers",
+      "Model evaluators"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": false,
+    "description": "Box CEO Aaron Levie told The New York Times that AI created 13 new job categories at Box that did not exist two years ago \u2014 including AI architect, AI solutions manager, senior director of AI/data/integration, forward deployed engineers, AI business automation engineers, and model evaluators \u2014 driven by selling AI to customers and internal AI productivity. Levie: 'We ourselves are selling AI to our customers, so that's actually causing us to need to hire more people.' Headcount to grow from ~2,900 to 3,000+ by early 2027. jobsCreated recorded as 0 because the company committed to new role types, not a specific jobs number.",
+    "reasonGiven": "CEO Aaron Levie: AI created 13 job categories at Box that did not exist two years ago, driven by selling AI to customers and internal AI productivity.",
+    "sources": [
+      {
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/meet-the-jobs-that-didnt-exist-before-ai",
+        "title": "Meet the Jobs That Didn't Exist Before AI",
+        "publisher": "www.pymnts.com",
+        "date": "2026-06-03"
+      },
+      {
+        "url": "https://www.nytimes.com/2026/06/01/technology/box-ai-jobs.html",
+        "title": "Box AI jobs \u2014 The New York Times",
+        "publisher": "The New York Times",
+        "date": "2026-06-01"
+      },
+      {
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/meet-the-jobs-that-didnt-exist-before-ai",
+        "title": "Meet the jobs that didn't exist before AI \u2014 PYMNTS",
+        "publisher": "PYMNTS",
+        "date": "2026-06-03"
+      },
+      {
+        "url": "https://finance.yahoo.com/technology/ai/articles/box-ceo-aaron-levie-says-173049822.html",
+        "title": "Box CEO Aaron Levie on AI hiring \u2014 Yahoo Finance",
+        "publisher": "Yahoo Finance",
+        "date": "2026-06-01"
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "creation",
+    "creationCategory": "ai-adoption-roles",
+    "jobRolesCreated": "13 new AI job categories: AI architect, AI solutions manager, senior director of AI/data/integration, forward deployed engineers, AI business automation engineers, model evaluators",
+    "jobsCreated": 0,
+    "context": "Net new headcount is modest (~100+, from ~2,900 to 3,000+ by early 2027); the story is the new AI-native role types. No company-committed jobs number, so jobsCreated is 0."
+  },
+  {
+    "id": "create-008",
+    "company": "meta",
+    "companyName": "Meta (America's Workforce Academy)",
+    "date": "2026-06-10",
+    "jobsCut": 0,
+    "jobTypes": [
+      "Electricians",
+      "Fiber technicians",
+      "Welders",
+      "Plumbers",
+      "Mechanics",
+      "Data center technicians"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": false,
+    "description": "Meta launched America's Workforce Academy, a $115M first-year, free 5-week skilled-trades training program with guaranteed job offers for all graduates at Meta AI data center construction sites, supporting its ~$600B US data center buildout through 2028. Pilots in Louisiana, Ohio, Indiana and Texas. VP of Data Centers Rachel Peterson: 'America needs hundreds of thousands of skilled tradespeople\u2014electricians, mechanics, fiber technicians, and more\u2014and this program creates clear, accessible pathways into those careers.' jobsCreated recorded as 0 because Meta declined to say how many trainees/jobs; guaranteed jobs are with contractors building Meta's data network, not Meta employment.",
+    "reasonGiven": "Meta committed $115M in year one to free trades training with a guaranteed job upon completion at its AI data center construction sites, tied to its AI infrastructure buildout.",
+    "sources": [
+      {
+        "url": "https://fortune.com/2026/06/10/meta-data-center-free-training-employment-blue-collar-trade-jobs/",
+        "title": "Meta's free data center training and employment program \u2014 Fortune",
+        "publisher": "Fortune",
+        "date": "2026-06-10"
+      },
+      {
+        "url": "https://www.axios.com/2026/06/08/meta-data-center-workforce-academy-job-guarantee",
+        "title": "Meta data center workforce academy job guarantee \u2014 Axios",
+        "publisher": "Axios",
+        "date": "2026-06-08"
+      },
+      {
+        "url": "https://www.cbsnews.com/news/meta-data-center-workforce-academy-training/",
+        "title": "Meta data center workforce academy training \u2014 CBS News",
+        "publisher": "CBS News",
+        "date": "2026-06-10"
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "creation",
+    "creationCategory": "support",
+    "jobRolesCreated": "Skilled trades: electricians, fiber technicians, welders, plumbers, mechanics, data center construction/operations technicians",
+    "jobsCreated": 0,
+    "context": "Job creation via guaranteed employment tied to the AI data center buildout ('support industries' wave of the tech transition). Related LevelUp fiber-tech program drew 35,000 applications for 1,000 openings in week one. No jobs count given, so jobsCreated is 0."
+  },
+  {
+    "id": "create-009",
+    "company": "reflection-ai",
+    "companyName": "Reflection AI",
+    "date": "2026-06-12",
+    "jobsCut": 0,
+    "jobTypes": [
+      "AI research",
+      "Engineering"
+    ],
+    "industry": "Technology",
+    "region": "Europe",
+    "country": "UK",
+    "aiReplacement": false,
+    "description": "AI lab Reflection announced UK expansion hiring plans at London Tech Week 2026: more than 100 highly skilled employees within 12 months, growing to over 1,000 roles within three years (per GOV.UK press release, 12 June 2026). jobsCreated records the first-year company-committed floor of 100.",
+    "reasonGiven": "AI lab expanding its UK footprint with plans to hire 100+ in year one and 1,000+ over three years, announced at London Tech Week 2026.",
+    "sources": [
+      {
+        "url": "https://www.gov.uk/government/news/britain-powers-ahead-on-ai-with-billions-of-pounds-of-new-investment-and-thousands-of-jobs-secured-as-london-tech-week-wraps-up",
+        "title": "Britain powers ahead on AI as London Tech Week wraps up \u2014 GOV.UK",
+        "publisher": "GOV.UK",
+        "date": "2026-06-12"
+      },
+      {
+        "url": "https://newanalytica.com/london-tech-week-closes-with-6bn-in-ai-pledges-and-a-national-compute-push/",
+        "title": "London Tech Week closes with \u00a36bn in AI pledges \u2014 New Analytica",
+        "publisher": "New Analytica",
+        "date": "2026-06-12"
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "creation",
+    "creationCategory": "support",
+    "jobRolesCreated": "AI lab research and engineering roles (UK footprint)",
+    "jobsCreated": 100,
+    "context": "Pledge at announcement stage, stated via GOV.UK press release; no direct company quote located, but Reflection is a pure-play AI lab with dozens of live London job postings. Floor of 100 (year one) counted; 1,000+ three-year target noted."
+  },
+  {
+    "id": "create-010",
+    "company": "n8n",
+    "companyName": "n8n",
+    "date": "2026-06-12",
+    "jobsCut": 0,
+    "jobTypes": [
+      "Engineering",
+      "Commercial"
+    ],
+    "industry": "Technology",
+    "region": "Europe",
+    "country": "UK",
+    "aiReplacement": false,
+    "description": "AI workflow automation firm n8n announced at London Tech Week 2026 a target of a 200-person UK team by 2029. Note: this is the total UK team size by 2029, including existing staff (the existing UK team had already tripled), so net-new jobs are fewer than 200. Announced via n8n's own blog and the GOV.UK press release ('up to 200 high-skilled jobs over the next three years'), framed as a strong endorsement of the UK's AI talent ecosystem.",
+    "reasonGiven": "AI workflow automation company targeting a 200-person UK team by 2029 as part of its UK expansion, announced at London Tech Week 2026.",
+    "sources": [
+      {
+        "url": "https://www.gov.uk/government/news/britain-powers-ahead-on-ai-with-billions-of-pounds-of-new-investment-and-thousands-of-jobs-secured-as-london-tech-week-wraps-up",
+        "title": "Britain powers ahead on AI as London Tech Week wraps up \u2014 GOV.UK",
+        "publisher": "GOV.UK",
+        "date": "2026-06-12"
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "creation",
+    "creationCategory": "support",
+    "jobRolesCreated": "Engineering/commercial roles at an AI workflow automation company (UK)",
+    "jobsCreated": 200,
+    "context": "Pledge at announcement stage; n8n's business is AI agent/workflow automation, so hiring is AI-driven by definition. The 200 figure is a TOTAL UK team-size target by 2029 including existing staff \u2014 net-new hires are fewer than 200."
+  },
+  {
+    "id": "create-011",
+    "company": "meta",
+    "companyName": "Meta (Alberta data centre)",
+    "date": "2026-07-08",
+    "jobsCut": 0,
+    "jobTypes": [
+      "Data centre operations"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "CA",
+    "aiReplacement": false,
+    "description": "Meta announced a CAD $13B+ investment in a 1GW AI-optimized data centre in Sturgeon County, Alberta \u2014 its first Canadian data centre \u2014 supporting more than 300 permanent operational jobs (excluding ~3,000 peak construction jobs, which are not counted here). Meta's own announcement describes the facility as an 'AI-optimized data center... optimized for our AI workloads' that will 'help power our AI innovations.'",
+    "reasonGiven": "CAD $13B+ investment in a facility Meta explicitly frames as AI infrastructure, supporting 300+ permanent operational jobs.",
+    "sources": [
+      {
+        "url": "https://about.fb.com/news/2026/07/breaking-ground-on-metas-first-data-center-in-canada/",
+        "title": "Breaking ground on Meta's first data center in Canada \u2014 Meta Newsroom",
+        "publisher": "Meta",
+        "date": "2026-07-08"
+      },
+      {
+        "url": "https://www.cbc.ca/news/canada/edmonton/meta-data-centre-sturgeon-county-alberta-9.7263271",
+        "title": "Meta data centre in Sturgeon County, Alberta \u2014 CBC News",
+        "publisher": "CBC News",
+        "date": "2026-07-08"
+      },
+      {
+        "url": "https://boereport.com/2026/07/08/meta-makes-historic-investment-in-alberta/",
+        "title": "Meta makes historic investment in Alberta \u2014 BOE Report",
+        "publisher": "BOE Report",
+        "date": "2026-07-08"
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "creation",
+    "creationCategory": "support",
+    "jobRolesCreated": "Permanent data-centre operations roles at a 1GW AI-optimized facility",
+    "jobsCreated": 300,
+    "context": "Infrastructure jobs \u2014 the 'support industries' wave of the tech transition. Construction jobs (~3,000 peak) excluded; only the 300+ permanent ops roles are counted, qualifying because Meta explicitly frames the facility as AI infrastructure."
+  },
+  {
+    "id": "create-012",
+    "company": "thomson-reuters",
+    "companyName": "Thomson Reuters",
+    "date": "2026-07-13",
+    "jobsCut": 0,
+    "jobTypes": [
+      "Senior AI-native engineering"
+    ],
+    "industry": "Information Services",
+    "region": "North America",
+    "country": "CA",
+    "aiReplacement": false,
+    "description": "Announced alongside the up-to-500 engineering cuts (see evt-091): Thomson Reuters committed to hiring more than 250 net-new engineering roles over two years, mostly senior and 'AI-native,' supporting AI deployment across its legal, tax and regulatory products. Company spokesperson to Reuters: 'We expect to hire more than 250 net-new engineering roles globally over the next two years, the large majority senior and AI-native.'",
+    "reasonGiven": "Company reshaping its engineering workforce around AI deployment and committing to 250+ net-new AI-native hires over two years.",
+    "sources": [
+      {
+        "url": "https://finance.yahoo.com/technology/ai/articles/thomson-reuters-cut-small-number-201046701.html",
+        "title": "Thomson Reuters to cut 'small number' of engineering jobs",
+        "publisher": "finance.yahoo.com",
+        "date": "2026-07-13"
+      },
+      {
+        "url": "https://seekingalpha.com/news/4613381-thomson-reuters-to-cut-up-to-500-engineering-roles",
+        "title": "Thomson Reuters to cut up to 500 engineering roles, hire 250+ AI-native \u2014 Seeking Alpha (Reuters wire)",
+        "publisher": "Seeking Alpha",
+        "date": "2026-07-13"
+      },
+      {
+        "url": "https://www.siliconrepublic.com/business/reuters-ai-job-cuts-thomson-engineering-technology",
+        "title": "Thomson Reuters engineering cuts and AI hiring \u2014 Silicon Republic",
+        "publisher": "Silicon Republic",
+        "date": "2026-07-13"
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "creation",
+    "creationCategory": "ai-adoption-roles",
+    "jobRolesCreated": "Senior 'AI-native' engineering roles supporting legal, tax and regulatory AI products",
+    "jobsCreated": 250,
+    "context": "Same announcement as the July 13 displacement event (evt-091) \u2014 paired creation/displacement. The 250+ commitment is a verbatim company-spokesperson quote from the Reuters wire story."
+  },
+  {
+    "id": "create-013",
+    "company": "openai",
+    "companyName": "OpenAI (Project Camellia)",
+    "date": "2026-07-22",
+    "jobsCut": 0,
+    "jobTypes": [
+      "Data center operations"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": false,
+    "description": "OpenAI announced Project Camellia, its largest-ever data center \u2014 a 1,400-acre / 3.2GW, $20B+ (Bloomberg: $30B+) campus in Effingham County, Georgia (near Savannah) \u2014 with 400 opening-day permanent jobs scaling to as many as ~1,000 permanent positions as additional phases complete (power phased 2028-2032). Thousands of construction jobs are excluded from the count. OpenAI also pledged $80M to local community priorities and $71M for coding classes for Georgia students.",
+    "reasonGiven": "OpenAI officials: permanent employment would begin at about 400 workers and grow to as many as 1,000 as additional phases of the campus are completed.",
+    "sources": [
+      {
+        "url": "https://thecurrentga.org/2026/07/22/20-billion-openai-data-center-to-open-in-effingham-county/",
+        "title": "$20 billion OpenAI data center to open in Effingham County \u2014 The Current GA",
+        "publisher": "The Current GA",
+        "date": "2026-07-22"
+      },
+      {
+        "url": "https://www.cbsnews.com/atlanta/news/openai-is-bringing-a-massive-ai-data-center-to-georgia-heres-what-residents-should-know/",
+        "title": "OpenAI is bringing a massive AI data center to Georgia \u2014 CBS News Atlanta",
+        "publisher": "CBS News",
+        "date": "2026-07-22"
+      },
+      {
+        "url": "https://gasiantimes.com/business/2026/07/23/openais-20-billion-ai-data-center-puts-georgia-in-ai-race/",
+        "title": "OpenAI's $20 billion AI data center puts Georgia in AI race \u2014 GA Asian Times",
+        "publisher": "GA Asian Times",
+        "date": "2026-07-23"
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "creation",
+    "creationCategory": "support",
+    "jobRolesCreated": "Permanent positions at OpenAI's Georgia data center campus",
+    "jobsCreated": 400,
+    "context": "Infrastructure jobs \u2014 'support industries' wave. Floor of 400 opening-day jobs counted; company projects ramp to ~1,000 permanent positions. Skeptical display note warranted: Bloomberg estimated only ~57 ongoing workers at the comparable Abilene Stargate site."
+  },
+  {
+    "id": "create-014",
+    "company": "spacex-tesla",
+    "companyName": "SpaceX / Tesla (Terafab Texas)",
+    "date": "2026-08-07",
+    "jobsCut": 0,
+    "jobTypes": [
+      "Engineers",
+      "Technicians",
+      "Plant operators"
+    ],
+    "industry": "Semiconductors",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": false,
+    "description": "SpaceX and Tesla announced 'Terafab Texas,' a $16.8B first-phase AI semiconductor complex in Grimes County, Texas, employing more than 3,000 people (engineers, technicians, plant operators) in its first phase. The facility will produce 'chips optimized for edge computing and inference for use in hardware like Tesla's Optimus robots and self-driving Cybercabs, along with high-power chips designed for operating SpaceX's space-based data centers'; SpaceX said 'the looming gulf between supply and demand is at the core of Terafab's necessity.' Musk: 'Terafab Texas will be the largest and most valuable building on Earth by far.' Investment could scale from a proposed initial $55B to $119B.",
+    "reasonGiven": "Companies cite the AI chip supply-demand gap; first-phase fab jobs explicitly for AI chip production driven by AI demand.",
+    "sources": [
+      {
+        "url": "https://www.foxbusiness.com/technology/spacex-tesla-choose-texas-ai-chip-manufacturing-plant-worlds-largest-building",
+        "title": "SpaceX, Tesla choose Texas for AI chip manufacturing plant \u2014 Fox Business",
+        "publisher": "Fox Business",
+        "date": "2026-08-07"
+      },
+      {
+        "url": "https://www.business-standard.com/amp/world-news/spacex-to-build-16-8-billion-chip-plant-in-texas-create-over-3-000-jobs-126080700414_1.html",
+        "title": "SpaceX to build $16.8 billion chip plant in Texas, create over 3,000 jobs \u2014 Business Standard",
+        "publisher": "Business Standard",
+        "date": "2026-08-07"
+      },
+      {
+        "url": "https://www.deccanherald.com/amp/story/business/spacex-to-build-168-billion-chip-plant-in-texas-create-over-3000-jobs-4102553",
+        "title": "SpaceX to build $16.8 billion chip plant in Texas \u2014 Deccan Herald",
+        "publisher": "Deccan Herald",
+        "date": "2026-08-07"
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "creation",
+    "creationCategory": "support",
+    "jobRolesCreated": "Semiconductor fab jobs: engineers, technicians, plant operators at an AI chip manufacturing complex",
+    "jobsCreated": 3000,
+    "context": "Infrastructure/manufacturing jobs \u2014 'support industries' wave. The 3,000+ figure is the company's own first-phase pledge (announced week of Aug 7, 2026 via X); no hires yet."
   }
 ]

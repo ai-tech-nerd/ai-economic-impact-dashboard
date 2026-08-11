@@ -40,7 +40,7 @@
     "country": "US",
     "aiReplacement": true,
     "reasonGiven": "CEO Sundar Pichai memo: company facing 'a different economic reality,' doubling down on AI while cutting staff in experimental projects. Redirected resources toward AI launch.",
-    "description": "Google (Alphabet) cut 12,000 jobs across mixed — recruiting, corporate, engineering, experimental projects (~6%). CEO Sundar Pichai memo: company facing 'a different economic reality,' doubling down on AI while cutting staff in experimental projects.",
+    "description": "Google (Alphabet) cut 12,000 jobs across mixed \u2014 recruiting, corporate, engineering, experimental projects (~6%). CEO Sundar Pichai memo: company facing 'a different economic reality,' doubling down on AI while cutting staff in experimental projects.",
     "sources": [
       {
         "url": "https://www.reuters.com/business/google-parent-lay-off-12000-workers-memo-2023-01-20/",
@@ -165,8 +165,8 @@
     "region": "North America",
     "country": "US",
     "aiReplacement": true,
-    "reasonGiven": "*HIRING FREEZE — Economic impact, not direct layoffs. CEO Arvind Krishna: 'I could easily see 30% of that getting replaced by AI and automation over a five-year period.' Paused hiring for ~26,000 non-customer-facing roles. AskHR chatbot now handles 94% of routine HR queries without human handoff. Freeze active since May 2023.",
-    "description": "IBM cut 7,800 (estimated, ongoing) jobs across back-office / human resources (hiring freeze)*. *HIRING FREEZE — Economic impact, not direct layoffs.",
+    "reasonGiven": "*HIRING FREEZE \u2014 Economic impact, not direct layoffs. CEO Arvind Krishna: 'I could easily see 30% of that getting replaced by AI and automation over a five-year period.' Paused hiring for ~26,000 non-customer-facing roles. AskHR chatbot now handles 94% of routine HR queries without human handoff. Freeze active since May 2023.",
+    "description": "IBM cut 7,800 (estimated, ongoing) jobs across back-office / human resources (hiring freeze)*. *HIRING FREEZE \u2014 Economic impact, not direct layoffs.",
     "sources": [
       {
         "url": "https://www.reuters.com/technology/ibm-pause-hiring-plans-replace-7800-jobs-with-ai-bloomberg-news-2023-05-01/",
@@ -359,7 +359,7 @@
   {
     "id": "evt-015",
     "company": "google-alphabet-ad-sales",
-    "companyName": "Google (Alphabet) — Ad Sales",
+    "companyName": "Google (Alphabet) \u2014 Ad Sales",
     "date": "2024-01-16",
     "jobsCut": 300,
     "jobTypes": [
@@ -371,11 +371,11 @@
     "country": "US",
     "aiReplacement": true,
     "reasonGiven": "SVP Philipp Schindler memo: restructuring ad sales amid AI integration. 'We map customers to the right specialist teams.' Coincided with broader AI restructuring of Google Assistant.",
-    "description": "Google (Alphabet) — Ad Sales cut 300 jobs across advertising sales / large customer sales. SVP Philipp Schindler memo: restructuring ad sales amid AI integration.",
+    "description": "Google (Alphabet) \u2014 Ad Sales cut 300 jobs across advertising sales / large customer sales. SVP Philipp Schindler memo: restructuring ad sales amid AI integration.",
     "sources": [
       {
         "url": "https://www.reuters.com/technology/google-lays-off-hundreds-employees-advertising-team-business-insider-2024-01-16/",
-        "title": "Google (Alphabet) — Ad Sales layoffs",
+        "title": "Google (Alphabet) \u2014 Ad Sales layoffs",
         "publisher": "Reuters",
         "date": "2024-01-16"
       }
@@ -421,8 +421,8 @@
     "region": "Europe",
     "country": "DE",
     "aiReplacement": true,
-    "reasonGiven": "SAP announced €2B restructuring: 'In 2024, SAP will further increase its focus on key strategic growth areas, in particular Business AI.' Most positions covered by voluntary leave and reskilling.",
-    "description": "SAP cut 8,000 jobs across mixed / restructuring (7% of workforce). SAP announced €2B restructuring: 'In 2024, SAP will further increase its focus on key strategic growth areas, in particular Business AI.",
+    "reasonGiven": "SAP announced \u20ac2B restructuring: 'In 2024, SAP will further increase its focus on key strategic growth areas, in particular Business AI.' Most positions covered by voluntary leave and reskilling.",
+    "description": "SAP cut 8,000 jobs across mixed / restructuring (7% of workforce). SAP announced \u20ac2B restructuring: 'In 2024, SAP will further increase its focus on key strategic growth areas, in particular Business AI.",
     "sources": [
       {
         "url": "https://www.reuters.com/technology/sap-announces-company-wide-restructuring-updates-2025-outlook-2024-01-23/",
@@ -575,7 +575,7 @@
     "country": "SE",
     "aiReplacement": true,
     "reasonGiven": "CEO Siemiatkowski: workforce dropped from 5,000 to 3,800 (24% in one year) through hiring freeze and natural attrition enabled by AI. AI chatbot doing work of 700 agents. Plans to reach 2,000 employees.",
-    "description": "Klarna cut 1,200 jobs across mixed — via hiring freeze and attrition. CEO Siemiatkowski: workforce dropped from 5,000 to 3,800 (24% in one year) through hiring freeze and natural attrition enabled by AI.",
+    "description": "Klarna cut 1,200 jobs across mixed \u2014 via hiring freeze and attrition. CEO Siemiatkowski: workforce dropped from 5,000 to 3,800 (24% in one year) through hiring freeze and natural attrition enabled by AI.",
     "sources": [
       {
         "url": "https://www.reuters.com/technology/artificial-intelligence/swedens-klarna-says-ai-chatbots-help-shrink-headcount-2024-08-27/",
@@ -606,7 +606,7 @@
     "sources": [
       {
         "url": "https://blog.dropbox.com/topics/company/an-update-from-drew",
-        "title": "Dropbox layoffs — Dropbox",
+        "title": "Dropbox layoffs \u2014 Dropbox",
         "publisher": "Dropbox",
         "date": "2024-10-30"
       }
@@ -683,7 +683,7 @@
     "sources": [
       {
         "url": "https://www.forbes.com/sites/chriswestfall/2025/05/07/chatgpts-largest-enterprise-user-pwc-cuts-workforce-by-1500-jobs/",
-        "title": "PwC layoffs — Forbes",
+        "title": "PwC layoffs \u2014 Forbes",
         "publisher": "Forbes",
         "date": "2025-05-05"
       }
@@ -990,7 +990,7 @@
     "sources": [
       {
         "url": "https://www.businessinsider.com/elon-musk-xai-layoffs-data-annotators-2025-9",
-        "title": "xAI layoffs — Business Insider",
+        "title": "xAI layoffs \u2014 Business Insider",
         "publisher": "Business Insider",
         "date": "2025-09-13"
       }
@@ -1116,7 +1116,7 @@
     "sources": [
       {
         "url": "https://www.bill.com/blog/a-message-to-bill-employees",
-        "title": "BILL Holdings layoffs — BILL",
+        "title": "BILL Holdings layoffs \u2014 BILL",
         "publisher": "BILL",
         "date": "2025-10-15"
       }
@@ -1676,7 +1676,7 @@
     "sources": [
       {
         "url": "https://www.reuters.com/business/c3ai-cuts-26-global-staff-under-new-ceos-restructuring-push-2026-02-26/",
-        "title": "C3.ai layoffs — Reuters",
+        "title": "C3.ai layoffs \u2014 Reuters",
         "publisher": "Reuters",
         "date": "2026-02-25"
       }
@@ -1729,7 +1729,7 @@
     "sources": [
       {
         "url": "https://www.bloomberg.com/news/features/2026-05-21/mckinsey-pwc-and-ey-lay-off-executive-assistants-as-ai-accelerates",
-        "title": "PwC layoffs — Bloomberg",
+        "title": "PwC layoffs \u2014 Bloomberg",
         "publisher": "Bloomberg",
         "date": "2026-02-26"
       }
@@ -1905,16 +1905,23 @@
     "country": "US",
     "aiReplacement": true,
     "reasonGiven": "Oracle began mass layoffs via 6 a.m. termination emails signed 'Oracle Leadership' with no prior notice from HR or managers. TD Cowen estimates 20,000-30,000 affected (~18% of workforce). Hardest-hit: Revenue & Health Sciences and SaaS operations (~30% each), plus NetSuite India Development Centre. Cuts expected to free up $8-10B in cash flow to fund $156B AI data center buildout. Oracle disclosed $2.1B restructuring plan in March 2026 SEC filing. Bloomberg reported March 5 that cuts would target 'roles the company expects it will need less of due to AI.' Oracle declined to comment.",
-    "description": "Oracle cut 20,000-30,000 (est. ~18% of 162,000) jobs across cloud / revenue & health sciences / saas & virtual operations / netsuite india / engineering. Oracle began mass layoffs via 6 a.",
+    "description": "Oracle cut 20,000-30,000 (est. ~18% of 162,000) jobs across cloud / revenue & health sciences / saas & virtual operations / netsuite india / engineering. Oracle began mass layoffs via 6 a. Update (2026-06-22): Oracle's FY2026 Form 10-K, filed with the SEC on June 22, 2026 (verified on SEC EDGAR, accession 0001193125-26-277521), formally attributed workforce reductions to AI: 'The adoption and deployment of AI technologies across our operations have resulted, and may continue to result, in reductions to our workforce.' The 10-K disclosed a cumulative FY2026 workforce reduction of 21,000 (headcount 162,000 -> 141,000, ~13%) over the 12 months to May 31, 2026 \u2014 Oracle's first formal AI attribution in an SEC filing.",
     "sources": [
       {
         "url": "https://www.cnbc.com/2026/03/31/oracle-layoffs-ai-spending.html",
         "title": "Oracle layoffs",
         "publisher": "CNBC",
         "date": "2026-03-31"
+      },
+      {
+        "url": "https://www.forbes.com/sites/maryroeloffs/2026/06/23/ai-cost-21000-jobs-at-oracle-this-year-and-more-layoffs-could-be-coming/",
+        "title": "AI Cost 21,000 Jobs At Oracle This Year \u2014 And More Layoffs Could Be Coming \u2014 Forbes",
+        "publisher": "Forbes",
+        "date": "2026-06-23"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "notes": "The 21,000 figure in the FY2026 10-K is cumulative for the fiscal year ended May 31, 2026 and includes the rounds already tracked here; jobsCut is intentionally left unchanged because using the cumulative figure would double-count. The 10-K also carries a forward-looking warning that AI 'may continue to result' in workforce reductions."
   },
   {
     "id": "evt-070",
@@ -1961,7 +1968,7 @@
     "sources": [
       {
         "url": "https://www.axios.com/local/raleigh/2026/04/07/raleigh-software-unicorn-pendo-layoffs-jobs",
-        "title": "Pendo layoffs — Axios",
+        "title": "Pendo layoffs \u2014 Axios",
         "publisher": "Axios",
         "date": "2026-04-07"
       }
@@ -1987,7 +1994,7 @@
     "sources": [
       {
         "url": "https://www.reuters.com/legal/litigation/disney-eliminate-1000-positions-2026-04-14/",
-        "title": "Disney layoffs — Reuters",
+        "title": "Disney layoffs \u2014 Reuters",
         "publisher": "Reuters",
         "date": "2026-04-14"
       }
@@ -2013,7 +2020,7 @@
     "sources": [
       {
         "url": "https://techcrunch.com/2026/04/15/snap-is-cutting-1000-jobs-16-of-its-workforce/",
-        "title": "Snap Inc. layoffs — TechCrunch",
+        "title": "Snap Inc. layoffs \u2014 TechCrunch",
         "publisher": "TechCrunch",
         "date": "2026-04-15"
       }
@@ -2040,7 +2047,7 @@
     "sources": [
       {
         "url": "https://cbs12.com/news/florida/ukg-announces-950-layoffs-affecting-a-large-number-of-workers-in-south-florida-offices-ultimate-kronos-group-jobs-reductions-restructuring-",
-        "title": "UKG (Ultimate Kronos Group) layoffs — CBS12 West Palm Beach",
+        "title": "UKG (Ultimate Kronos Group) layoffs \u2014 CBS12 West Palm Beach",
         "publisher": "CBS12 West Palm Beach",
         "date": "2026-04-15"
       }
@@ -2066,7 +2073,7 @@
     "sources": [
       {
         "url": "https://www.cnbc.com/2026/04/23/nike-job-cuts-layoffs.html",
-        "title": "Nike layoffs — CNBC",
+        "title": "Nike layoffs \u2014 CNBC",
         "publisher": "CNBC",
         "date": "2026-04-23"
       }
@@ -2092,7 +2099,7 @@
     "sources": [
       {
         "url": "https://www.cnn.com/2026/04/23/tech/meta-layoffs-10-percent-staff-ai",
-        "title": "Meta layoffs — CNN",
+        "title": "Meta layoffs \u2014 CNN",
         "publisher": "CNN",
         "date": "2026-04-23"
       }
@@ -2118,7 +2125,7 @@
     "sources": [
       {
         "url": "https://www.nytimes.com/2026/05/05/technology/coinbase-layoffs-ai.html",
-        "title": "Coinbase layoffs — The New York Times",
+        "title": "Coinbase layoffs \u2014 The New York Times",
         "publisher": "The New York Times",
         "date": "2026-05-05"
       }
@@ -2144,7 +2151,7 @@
     "sources": [
       {
         "url": "https://techcrunch.com/2026/05/08/cloudflare-says-ai-made-1100-jobs-obsolete-even-as-revenue-hit-a-record-high/",
-        "title": "Cloudflare layoffs — TechCrunch",
+        "title": "Cloudflare layoffs \u2014 TechCrunch",
         "publisher": "TechCrunch",
         "date": "2026-05-07"
       }
@@ -2171,7 +2178,7 @@
     "sources": [
       {
         "url": "https://officechai.com/ai/upwork-lays-off-25-of-its-workforce-says-ai-will-lead-to-smaller-teams/",
-        "title": "Upwork layoffs — OfficeChai",
+        "title": "Upwork layoffs \u2014 OfficeChai",
         "publisher": "OfficeChai",
         "date": "2026-05-07"
       }
@@ -2197,7 +2204,7 @@
     "sources": [
       {
         "url": "https://techcrunch.com/2026/05/14/cisco-cuts-nearly-4000-jobs-to-spend-more-on-ai-reports-record-quarterly-revenue/",
-        "title": "Cisco layoffs — TechCrunch",
+        "title": "Cisco layoffs \u2014 TechCrunch",
         "publisher": "TechCrunch",
         "date": "2026-05-13"
       }
@@ -2224,9 +2231,374 @@
     "sources": [
       {
         "url": "https://thenextweb.com/news/clickup-layoffs-22-percent-ai-100x-org-million-salary",
-        "title": "ClickUp layoffs — The Next Web",
+        "title": "ClickUp layoffs \u2014 The Next Web",
         "publisher": "The Next Web",
         "date": "2026-05-21"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-088",
+    "company": "gitlab",
+    "companyName": "GitLab",
+    "date": "2026-06-03",
+    "jobsCut": 350,
+    "jobTypes": [
+      "Mixed",
+      "Company-wide"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "CEO Bill Staples framed the cuts on the June earnings call around agentic-AI workloads: agents 'work at machine scale, and they're pushing competitors to the brink... This is a scale requirement that didn't exist before and has become a real pain point.' The restructuring funds what Staples called a 'generational rebuild' of GitLab's core infrastructure for agentic workloads, redirecting spend to AI infrastructure as agentic traffic surges. GitLab is exiting 22 countries and flattening management layers. Announced alongside Q1 revenue up 23% ($264M); $30-35M restructuring cost.",
+    "description": "GitLab cut ~350 (reported as 14% of workforce) jobs company-wide, exiting 22 countries and flattening management layers. CEO Bill Staples framed the cuts on the June earnings call around agentic-AI workloads: agents 'work at machine scale, and they're pushing competitors to the brink,' calling it 'a scale requirement that didn't exist before.' The restructuring funds a 'generational rebuild' of core infrastructure for agent-scale AI workloads. Announced alongside Q1 revenue up 23% ($264M); $30-35M restructuring cost.",
+    "notes": "For transparency: the company's May 11 restructuring memo, filed with the SEC, separately stated 'This is not an AI optimization or cost cutting exercise.' Owner ruling: the CEO's earnings-call framing around agentic-AI workloads counts as company AI attribution. Also note the May memo described the reduction as ~7% of workforce, while reports of the June announcement said 14%.",
+    "sources": [
+      {
+        "url": "https://techcrunch.com/2026/06/03/gitlab-cuts-14-of-staff-as-it-scales-its-platform-to-serve-ai-workloads/",
+        "title": "GitLab cuts 14% of staff as it scales its platform to serve AI workloads \u2014 TechCrunch",
+        "publisher": "TechCrunch",
+        "date": "2026-06-03"
+      },
+      {
+        "url": "https://www.techtimes.com/articles/317868/20260605/gitlab-trades-350-jobs-ai-spending-revenue-climbs-23-same-quarter.htm",
+        "title": "GitLab trades 350 jobs for AI spending \u2014 Tech Times",
+        "publisher": "Tech Times",
+        "date": "2026-06-05"
+      },
+      {
+        "url": "https://mlq.ai/news/gitlab-cuts-14-of-staff-exits-22-countries-to-fund-ai-platform-overhaul/",
+        "title": "GitLab cuts 14% of staff, exits 22 countries to fund AI platform overhaul \u2014 MLQ.ai",
+        "publisher": "MLQ.ai",
+        "date": "2026-06-03"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-089",
+    "company": "mews",
+    "companyName": "Mews",
+    "date": "2026-07-07",
+    "jobsCut": 170,
+    "jobTypes": [
+      "Design",
+      "Product",
+      "Engineering",
+      "Cross-company"
+    ],
+    "industry": "Technology",
+    "region": "Europe",
+    "country": "NL",
+    "aiReplacement": true,
+    "reasonGiven": "Proactive restructuring to become an 'AI-native' company. Founder Richard Valtr (in a LinkedIn post shared by CEO Matthijs Welle): 'AI is now capable of handling much of the execution layer of many roles quickly, accurately and at scale.' Leadership said AI now lets one person or team own work end-to-end, eliminating handoffs and automating tasks like bug fixes, as part of a pivot from software vendor to AI service provider for hotels.",
+    "description": "Mews cut ~170 jobs (15% of ~1,350; some reports say up to 200) across design / product / engineering and other handoff roles being consolidated. The Amsterdam-based hotel operating system (PMS) unicorn explicitly framed the cuts as an AI-native pivot: founder Richard Valtr said 'AI is now capable of handling much of the execution layer of many roles quickly, accurately and at scale,' despite a recent $300M Series D raised partly for agentic AI.",
+    "sources": [
+      {
+        "url": "https://www.hoteldive.com/news/mews-cuts-staff-ai-native-future/824687/",
+        "title": "Mews lays off 15% of staff in pivot to 'AI-native' future",
+        "publisher": "www.hoteldive.com",
+        "date": "2026-07-08"
+      },
+      {
+        "url": "https://skift.com/2026/07/07/mews-layoffs-restructuring-ai/",
+        "title": "Mews layoffs and AI restructuring \u2014 Skift",
+        "publisher": "Skift",
+        "date": "2026-07-07"
+      },
+      {
+        "url": "https://www.phocuswire.com/news/technology/mews-job-cuts-15-per-cent",
+        "title": "Mews cuts 15% of jobs \u2014 PhocusWire",
+        "publisher": "PhocusWire",
+        "date": "2026-07-07"
+      },
+      {
+        "url": "https://nltimes.nl/2026/07/08/amsterdam-tech-company-mews-cuts-15-percent-jobs-drive-ai",
+        "title": "Amsterdam tech company Mews cuts 15 percent of jobs in AI drive \u2014 NL Times",
+        "publisher": "NL Times",
+        "date": "2026-07-08"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-090",
+    "company": "darrow",
+    "companyName": "Darrow",
+    "date": "2026-07-09",
+    "jobsCut": 60,
+    "jobTypes": [
+      "Legal analysts"
+    ],
+    "industry": "Legal Technology",
+    "region": "Middle East",
+    "country": "IL",
+    "aiReplacement": true,
+    "reasonGiven": "The company attributed the reorganization to 'the rapid evolution of the market and advances in technology,' saying it is becoming a 'smarter, more agile and multidisciplinary organization' (company statement). The company did not say 'AI' explicitly; Calcalist/CTech reported that the cuts prominently affect legal analysts whose expertise trained the AI platform that now powers the business.",
+    "description": "Darrow cut ~60 jobs (about one-third of its ~180-person workforce; ~40 in Israel, final count pending Israeli labor-law hearings), with legal analysts prominently affected. The Israeli litigation-intelligence company, profitable for three straight years, attributed the reorganization to 'the rapid evolution of the market and advances in technology.' The company did not name AI explicitly; credible reporting (Calcalist/CTech) framed the cuts as the in-house AI now doing work the analysts' expertise trained it to do.",
+    "notes": "Company statement cited 'advances in technology' rather than 'AI' verbatim; the AI-displacement framing comes from Calcalist/CTech reporting. Included per owner ruling.",
+    "sources": [
+      {
+        "url": "https://www.calcalistech.com/ctechnews/article/hy7svt97ge",
+        "title": "Darrow layoffs \u2014 Calcalist/CTech",
+        "publisher": "Calcalist/CTech",
+        "date": "2026-07-09"
+      },
+      {
+        "url": "https://www.artificiallawyer.com/2026/07/09/darrow-cuts-roles-as-part-of-strategic-restructure/",
+        "title": "Darrow cuts roles as part of strategic restructure \u2014 Artificial Lawyer",
+        "publisher": "Artificial Lawyer",
+        "date": "2026-07-09"
+      },
+      {
+        "url": "https://www.law.com/legaltechnews/2026/07/09/reports-emerge-of-layoffs-at-litigation-technology-company-darrow/",
+        "title": "Reports emerge of layoffs at litigation technology company Darrow \u2014 Law.com",
+        "publisher": "Law.com Legaltech News",
+        "date": "2026-07-09"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-091",
+    "company": "thomson-reuters",
+    "companyName": "Thomson Reuters",
+    "date": "2026-07-13",
+    "jobsCut": 500,
+    "jobTypes": [
+      "Engineering"
+    ],
+    "industry": "Information Services",
+    "region": "North America",
+    "country": "CA",
+    "aiReplacement": true,
+    "reasonGiven": "The company described cutting a 'small number' of engineering roles in its operations and technology unit as it deploys AI across its legal, tax and regulatory businesses. A spokesperson declined to attribute the cuts directly to AI, but the same statement simultaneously announced more than 250 net-new, mostly senior 'AI-native' engineering roles over two years. The 'up to 500' figure comes from employees at a staff meeting and is not company-confirmed.",
+    "description": "Thomson Reuters cut up to 500 engineering jobs (~5.2% of the ~9,400-person operations & technology unit; <2% of ~27,100 total), announced as the company deploys AI across its legal, tax and regulatory businesses. The company declined to attribute the cuts directly to AI but simultaneously announced 250+ net-new, mostly senior 'AI-native' engineering hires over two years (tracked separately as a creation event). The 'up to 500' figure is staff-meeting-sourced, not company-confirmed. Cuts came despite 10% revenue growth.",
+    "notes": "Paired hiring commitment captured separately in ai-job-creation (create-012). NEEDS-REVIEW resolved YES by owner.",
+    "sources": [
+      {
+        "url": "https://www.siliconrepublic.com/business/reuters-ai-job-cuts-thomson-engineering-technology",
+        "title": "Thomson Reuters to cut engineering roles amid AI deployment \u2014 Silicon Republic",
+        "publisher": "Silicon Republic",
+        "date": "2026-07-13"
+      },
+      {
+        "url": "https://seekingalpha.com/news/4613381-thomson-reuters-to-cut-up-to-500-engineering-roles",
+        "title": "Thomson Reuters to cut up to 500 engineering roles \u2014 Seeking Alpha",
+        "publisher": "Seeking Alpha",
+        "date": "2026-07-13"
+      },
+      {
+        "url": "https://www.gurufocus.com/news/8956161/thomson-reuters-tri-to-cut-500-engineering-jobs-amid-ai-expansion",
+        "title": "Thomson Reuters to cut 500 engineering jobs amid AI expansion \u2014 GuruFocus",
+        "publisher": "GuruFocus",
+        "date": "2026-07-13"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-092",
+    "company": "sprout-social",
+    "companyName": "Sprout Social",
+    "date": "2026-07-15",
+    "jobsCut": 260,
+    "jobTypes": [
+      "Mixed",
+      "Company-wide"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "Board-approved 8-K restructuring plan (approved Jul 8, announced Jul 15) 'designed to streamline the Company's organizational structure and align its cost base with its strategic priorities, including its ongoing investments in AI-powered social intelligence' (company 8-K). CEO Ryan Barretto said software companies now need to operate and invest differently. $18-20M pre-tax restructuring charges.",
+    "description": "Sprout Social cut ~260 jobs (20% of workforce) across the company under a board-approved 8-K restructuring plan to streamline its structure and align costs with strategic priorities 'including ongoing investments in AI-powered social intelligence.' AI is cited in the SEC filing as the investment priority driving the restructure rather than as directly replacing the roles. $18-20M pre-tax restructuring charges.",
+    "sources": [
+      {
+        "url": "https://www.investing.com/news/stock-market-news/sprout-social-cuts-20-of-workforce-in-restructuring-plan-93CH-4793486",
+        "title": "Sprout Social cuts 20% of workforce in restructuring plan",
+        "publisher": "www.investing.com",
+        "date": "2026-07-15"
+      },
+      {
+        "url": "https://www.chicagobusiness.com/technology/ccb-sprout-social-layoffs-ai-20260715/",
+        "title": "Sprout Social layoffs \u2014 Crain's Chicago Business",
+        "publisher": "Crain's Chicago Business",
+        "date": "2026-07-15"
+      },
+      {
+        "url": "https://www.stocktitan.net/sec-filings/SPT/8-k-sprout-social-inc-reports-material-event-9b53701928d6.html",
+        "title": "Sprout Social 8-K filing \u2014 StockTitan/SEC",
+        "publisher": "StockTitan (SEC 8-K)",
+        "date": "2026-07-15"
+      },
+      {
+        "url": "https://www.investing.com/news/stock-market-news/sprout-social-cuts-20-of-workforce-in-restructuring-plan-93CH-4793486",
+        "title": "Sprout Social cuts 20% of workforce in restructuring plan \u2014 Investing.com",
+        "publisher": "Investing.com",
+        "date": "2026-07-15"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-093",
+    "company": "uber",
+    "companyName": "Uber",
+    "date": "2026-07-22",
+    "jobsCut": 0,
+    "jobTypes": [
+      "Customer support",
+      "Community Operations"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "Uber spokesperson: cuts were made 'to simplify operations, strengthen in-person collaboration and continue to embrace AI.' VP of Global Community Operations Megha Yethadka told staff the org 'has become too complex and siloed' and needs an 'effective organization to layer AI on.' Paired with return-to-office relocations; first gig-economy giant to explicitly cite AI in layoffs.",
+    "description": "Uber cut ~10% of Community Operations (count undisclosed) \u2014 customer support staff serving riders, drivers and delivery partners. An Uber spokesperson said the cuts were made 'to simplify operations, strengthen in-person collaboration and continue to embrace AI'; VP Megha Yethadka told staff the org needs an 'effective organization to layer AI on.' Second Uber reduction in under two months; Uber has 40,000+ employees globally. jobsCut recorded as 0 because the company did not disclose a count (mirrors British American Tobacco precedent).",
+    "sources": [
+      {
+        "url": "https://www.engadget.com/2221547/uber-lays-off-10-percent-customer-service-team-ai/",
+        "title": "Uber lays off 10 percent of its customer service team in favor of using AI",
+        "publisher": "www.engadget.com",
+        "date": "2026-07-23"
+      },
+      {
+        "url": "https://www.bloomberg.com/news/articles/2026-07-22/uber-cuts-10-of-customer-service-jobs-citing-embrace-of-ai",
+        "title": "Uber cuts 10% of customer service jobs, citing embrace of AI \u2014 Bloomberg",
+        "publisher": "Bloomberg",
+        "date": "2026-07-22"
+      },
+      {
+        "url": "https://www.engadget.com/2221547/uber-lays-off-10-percent-customer-service-team-ai/",
+        "title": "Uber lays off 10 percent of customer service team \u2014 Engadget",
+        "publisher": "Engadget",
+        "date": "2026-07-22"
+      },
+      {
+        "url": "https://www.cmswire.com/customer-experience/uber-joins-growing-list-of-companies-blaming-ai-for-customer-service-cuts/",
+        "title": "Uber joins growing list of companies blaming AI for customer service cuts \u2014 CMSWire",
+        "publisher": "CMSWire",
+        "date": "2026-07-22"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-094",
+    "company": "monday-com",
+    "companyName": "Monday.com",
+    "date": "2026-07-22",
+    "jobsCut": 620,
+    "jobTypes": [
+      "Mixed",
+      "Company-wide"
+    ],
+    "industry": "Technology",
+    "region": "Middle East",
+    "country": "IL",
+    "aiReplacement": true,
+    "reasonGiven": "Restructuring around the vision of an AI-based work platform. Co-CEO Eran Zinman said the cuts are based on 'redesigning the platform around the vision of an AI-based work platform,' called it the most painful decision since founding, and said it was not made to reduce costs or replace people with AI. Co-CEOs: 'we have changed the company's core vision, from managing work to doing the work for our customers, with people and AI agents working together in one workspace.' $45-55M restructuring charges.",
+    "description": "Monday.com cut ~620 jobs (20% of global workforce) as it reorganizes around an AI Work Platform. Co-CEO Eran Zinman said the move was a redesign of the company for the AI era \u2014 'redesigning the platform around the vision of an AI-based work platform' \u2014 not cost-cutting, and the company explicitly says the goal is refocusing resources rather than replacing people with AI. Stock down >50% in 2026 amid AI-disruption fears. $45-55M restructuring charges.",
+    "sources": [
+      {
+        "url": "https://techcrunch.com/2026/07/22/monday-com-lays-off-hundreds-to-focuses-on-ai/",
+        "title": "Monday.com lays off hundreds to focus on AI \u2014 TechCrunch",
+        "publisher": "TechCrunch",
+        "date": "2026-07-22"
+      },
+      {
+        "url": "https://en.globes.co.il/en/article-mondaycom-to-lay-off-620-as-it-adapts-to-ai-1001550113",
+        "title": "Monday.com to lay off 620 as it adapts to AI \u2014 Globes",
+        "publisher": "Globes",
+        "date": "2026-07-22"
+      },
+      {
+        "url": "https://www.calcalistech.com/ctechnews/article/udx1nmbdq",
+        "title": "Monday.com layoffs \u2014 Calcalist/CTech",
+        "publisher": "Calcalist/CTech",
+        "date": "2026-07-22"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-095",
+    "company": "visa",
+    "companyName": "Visa",
+    "date": "2026-07-28",
+    "jobsCut": 2600,
+    "jobTypes": [
+      "Product",
+      "Technology",
+      "Engineering"
+    ],
+    "industry": "Financial Services",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "Efficiency restructuring with AI named by the CEO as a key factor in how work gets done. CEO Ryan McInerney (internal memo / fiscal Q3 2026 earnings call): 'AI is also helping to accelerate this evolution and shape the way work gets done at Visa.' AI a key factor but not the only cause: $563M severance charge, reinvesting in stablecoin/blockchain, digital wallets and payment orchestration.",
+    "description": "Visa cut ~2,600 jobs (7% of workforce), largely in product and technology/development teams, in an efficiency restructuring in which CEO Ryan McInerney said 'AI is also helping to accelerate this evolution and shape the way work gets done at Visa' (AI a key factor but not the only cause). $563M severance charge; reinvesting in stablecoin/blockchain, digital wallets and payment orchestration. Also named in Challenger's July report as an AI-citing cut; largest single AI-attributed July event by headcount.",
+    "sources": [
+      {
+        "url": "https://www.cnbc.com/2026/07/28/visa-is-cutting-7percent-of-employees-in-efficiency-push-as-ai-reshapes-work.html",
+        "title": "Visa is cutting 7% of employees in efficiency push as AI reshapes work \u2014 CNBC",
+        "publisher": "CNBC",
+        "date": "2026-07-28"
+      },
+      {
+        "url": "https://www.bloomberg.com/news/articles/2026-07-28/visa-to-cut-7-of-workforce-as-ceo-seeks-to-revamp-payments-firm",
+        "title": "Visa to cut 7% of workforce as CEO seeks to revamp payments firm \u2014 Bloomberg",
+        "publisher": "Bloomberg",
+        "date": "2026-07-28"
+      },
+      {
+        "url": "https://www.americanbanker.com/payments/news/visa-layoffs-will-cut-7-of-its-workforce",
+        "title": "Visa layoffs will cut 7% of its workforce \u2014 American Banker",
+        "publisher": "American Banker",
+        "date": "2026-07-28"
+      }
+    ],
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-096",
+    "company": "latch-door",
+    "companyName": "Latch, Inc. (DOOR)",
+    "date": "2026-08-05",
+    "jobsCut": 65,
+    "jobTypes": [
+      "Engineering",
+      "Customer support",
+      "Property-management operations"
+    ],
+    "industry": "Technology",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "Restructuring to accelerate path to profitability; company press release states its AI investments enable a smaller engineering organization: 'The Company's investments in AI-assisted software and internal tool development are expected to enable a smaller, more efficient engineering organization.' CEO Dave Lillis: 'We've embedded AI across software development, customer support, and our internal systems, and the result is a company that can design, build, and ship with a substantially leaner organization.' Primary stated drivers are cost reduction ($10-12M annualized savings) and exiting the property-management business line.",
+    "description": "Latch, Inc. (rebranded DOOR, NASDAQ: DOOR) cut ~65 roles globally (~32% of global workforce; ~10% of active U.S. employee base, concentrated in European contract labor support) across engineering/software support, customer support and property-management operations. The company's own press release states its AI investments 'are expected to enable a smaller, more efficient engineering organization,' though primary stated drivers are cost reduction ($10-12M annualized savings) and exiting the property-management line.",
+    "sources": [
+      {
+        "url": "https://www.prnewswire.com/news-releases/door-announces-strategic-actions-to-accelerate-path-to-profitability-and-advance-its-building-intelligence-strategy-302844151.html",
+        "title": "DOOR announces strategic actions to accelerate path to profitability \u2014 PR Newswire (company release)",
+        "publisher": "PR Newswire",
+        "date": "2026-08-05"
+      },
+      {
+        "url": "https://www.securitysystemsnews.com/article/latch-layoffs-a-symptom-of-slowing-tech-sector-despite-strong-jobs-report",
+        "title": "Latch layoffs a symptom of slowing tech sector \u2014 Security Systems News",
+        "publisher": "Security Systems News",
+        "date": "2026-08-05"
+      },
+      {
+        "url": "https://sbj.net/stories/stl-based-latch-cuts-workforce,105265",
+        "title": "STL-based Latch cuts workforce \u2014 Springfield Business Journal",
+        "publisher": "Springfield Business Journal",
+        "date": "2026-08-05"
       }
     ],
     "verificationStatus": "verified"
