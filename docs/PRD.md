@@ -3,12 +3,14 @@
 
 | | |
 |---|---|
-| **Version** | 1.0 |
+| **Version** | 1.1 |
 | **Date** | 2026-08-11 |
 | **Owner** | Michael Kristof |
 | **Status** | Official |
 | **Live Site** | https://aishift.michaelkristof.com (custom domain via public/CNAME; also reachable at https://ai-tech-nerd.github.io/ai-economic-impact-dashboard/) |
 | **Source** | https://github.com/ai-tech-nerd/ai-economic-impact-dashboard |
+
+> **v1.1 (2026-08-11):** search-facing positioning ("Jobs Lost to AI") and per-route SEO principle added; feature inventory updated (Data updated indicator, AI Advances order toggle and Public Release badge, predictions "as of" convention, Needs Manual Capture flow); data counts refreshed (9 predictions, publicRelease flags); pipeline build status added (Workflow A built, sheet prep scripted, weekly Monday cadence, cost-control principle).
 
 > **Maintenance note:** This document is the product source of truth. Update it whenever a product decision changes (verification rules, scope, feature set, data model, pipeline design), and bump the version number. Technical internals live in docs/PROJECT_ARCHITECTURE.md; this PRD covers the product.
 
@@ -26,6 +28,8 @@ The AI Economic Impact Dashboard is a free, open-source, interactive data tool t
 - **Numbers without context do not drive action.** The dashboard pairs displacement data with AI advancement milestones and with learning resources.
 - **Transparency builds trust.** Every event is verified against direct company statements, earnings calls, filings, or credible reporting, and every data point links to its original source.
 - **Free means accessible.** Static site on GitHub Pages: no accounts, no paywalls, no ads, no tracking, zero infrastructure cost. Data and code are open source so anyone can verify, contribute, or build on them.
+
+**Positioning (2026-08-11).** The search-facing product name and home-page H1 is **"Jobs Lost to AI"**; "AI Economic Impact Dashboard" remains the umbrella brand (it appears as the site's alternate name in structured data). This reflects a deliberate SEO principle: every route's title and H1 lead with the search phrase its audience actually types ("Will AI Take My Job? AI Job Loss Predictions", "Companies Replacing Workers With AI", "AI Layoffs Timeline") rather than brand-led wording.
 
 ---
 
@@ -102,16 +106,16 @@ Nothing reaches the public dashboard without explicit owner approval. Automation
 ### 4.1 The Six Pages
 
 **Dashboard** (`/`)
-A real-time summary of total verified jobs displaced by AI, broken down by company, industry, job type, and trend over time. Animated counters, a cumulative trend line, top job-category and industry charts, a sortable company table, plus compact Planned/Announced and AI Job Creation sections with headline totals.
+A real-time summary of total verified jobs displaced by AI, broken down by company, industry, job type, and trend over time. Animated counters, a cumulative trend line, top job-category and industry charts, a sortable company table, plus compact Planned/Announced and AI Job Creation sections with headline totals. A **"Data updated: <date>" indicator** reads `public/data/verified/meta.json` (`dataLastUpdated`); the contract is that every data commit bumps this date, and the publish automation will maintain it.
 
 **Predictions** (`/predictions`)
-Forward-looking estimates of which job categories face the highest displacement risk over 3-month, 6-month, 12-month, and 3-to-5-year timeframes, with risk levels, confidence ranges, and methodology transparency.
+Forward-looking estimates of which job categories face the highest displacement risk over 3-month, 6-month, 12-month, and 3-to-5-year timeframes, with risk levels, confidence ranges, and methodology transparency. Convention: every prediction's basis opens with its grounding date ("As of Aug 2026: ..."), the set is re-grounded against current data on a roughly quarterly cadence, and every figure is labeled as a projection, never a verified event.
 
 **Timeline** (`/timeline`)
 Two ways to experience the data over time: a slider mode with play/pause/speed controls to scrub through the timeline and watch events accumulate, and a story mode that walks through narrative chapters from ChatGPT's growth to 100 million users through the first AI-driven layoffs to the current acceleration.
 
 **AI Advances** (`/ai-advances`)
-A visual timeline of major AI milestones: model releases, company launches, acquisitions, partnerships and funding deals, regulatory actions, and technical breakthroughs, filterable by type, company, and country.
+A visual timeline of major AI milestones: model releases, company launches, acquisitions, partnerships and funding deals, regulatory actions, and technical breakthroughs, filterable by type, company, and country. Newest-first by default with an order toggle, and a **"Public release" badge** driven by the optional `publicRelease` field (8 milestones flagged as of 2026-08-11).
 
 **Companies** (`/companies/:id?`)
 Searchable profiles of AI companies (OpenAI, Anthropic, Google, Meta, xAI, and more) with drill-down detail pages showing per-company milestone timelines, displacement events with sources, and key stats. Formal company names are used throughout.
@@ -130,6 +134,8 @@ The product is embeddable so its data can travel:
 
 Every displacement event links to an excerpt-format archive page (see 3.2), chained with prev/next navigation and indexed in a manifest. The archive is the product's proof layer: it lets any user verify that a claimed event was really reported, as reported, even if the original article moves or disappears.
 
+**Needs Manual Capture flow:** when a source cannot be captured automatically (paywall or bot wall that survives the fallback chain), the event is stamped "Needs Manual Capture" and skipped rather than half-published. The owner captures the screenshot in a logged-in browser, drops it into the page folder, and the next pass completes the page. A broken or block-page capture is never published.
+
 ---
 
 ## 5. Data Products
@@ -140,10 +146,10 @@ Four datasets, published as static JSON in the repo and fetched at runtime. Coun
 |---|---|---|
 | Displacement events | **96** (95 displayed; 1 IBM projection excluded from totals) | Verified AI-attributed job cuts: 328,995 jobs across 80 companies, each with source link and archive page |
 | Planned / announced | **17** | Announced-but-not-executed reductions, freezes, and restructurings attributed to AI, with status (Hiring Freeze, In Progress, Announced, Announced (early stage)) |
-| Job creation | **14** | AI-driven hiring, each tagged `creationCategory` (ai-adoption-roles or support), with a numeric `jobsCreated` field (undisclosed counts excluded from totals) |
-| AI milestones | **370** | Model releases, company launches, acquisitions, partnerships, funding, regulations, and breakthroughs, November 2022 through 2026-08-08 |
+| Job creation | **14** | AI-driven hiring, each tagged `creationCategory` (8 ai-adoption-roles, 6 support), with a numeric `jobsCreated` field (undisclosed counts excluded from totals) |
+| AI milestones | **370** | Model releases, company launches, acquisitions, partnerships, funding, regulations, and breakthroughs through 2026-08-08 (pre-2022 historical backfill included); 8 entries carry the `publicRelease` badge flag, and the ChatGPT launch milestone (ms-029, 2022-11-30) was enriched 2026-08-11 |
 
-Supporting data: company profiles and predictions (8 predictions across four timeframes), plus the archive manifest (126 pages).
+Supporting data: company profiles and predictions (**9** predictions across four timeframes, re-grounded "As of Aug 2026"), the archive manifest (126 pages), and `meta.json` (`dataLastUpdated`, the "Data updated" indicator contract).
 
 The owner's tracker spreadsheet is the curation source of truth; the dashboard JSON is the published form and the two are kept in sync at publish time.
 
@@ -167,7 +173,15 @@ A lighter weekly workflow follows the same pattern for AI Advances milestones (s
 
 Per the approved implementation plan (2026-08-11), the automation runs on **GitHub Actions** in the dashboard repo: scheduled workflows, no always-on hardware, every run auditable in the Actions log. Estimated operating cost is roughly $5 to $10 per month (API usage; hosting, archiving, and scheduling are free). The earlier n8n/local-machine design is superseded for the runner while its schemas, attribution gate, and acceptance criteria carry forward. Details, schemas, and credentials setup live in the local automation brief and implementation plan; they are intentionally not reproduced here.
 
-### 6.3 Validation Before Automation
+### 6.3 Build Status (as of 2026-08-11)
+
+- **Workflow A (Research) is built.** `automation/research.py` plus `.github/workflows/research.yml`, manual dispatch only; the weekly cron (Mondays 6:00 AM CT) is written but commented out pending 2 to 3 audited manual runs. 29 offline unit tests pass; live API/Sheets/SMTP paths remain UNTESTED until credentials exist (see automation/README.md).
+- **Sheet prep is scripted and validated as idempotent** (`automation/sheet_prep.py` plus the manual-dispatch `sheet-prep.yml` workflow, dry-run by default): control columns, Approval dropdowns, and the AI Advances tab.
+- **Cadence decision:** research runs weekly, Mondays 6:00 AM CT (owner decision 2026-08-11), not every 2 days as first drafted.
+- **Cost control is a product principle: pipelines never default to premium models.** The research model defaults to `claude-sonnet-5` with hard spend caps (max 10 web searches and 10,000 output tokens per category, env-overridable) and per-category usage logging on every run. Context: 2026-08-11 dry runs on the premium tier burned roughly $36; Sonnet with caps bounds a full run to roughly $1 to $3.
+- **Workflows B (Publish) and C (Advances) are not yet built.** Workflow B must bump `public/data/verified/meta.json` (`dataLastUpdated`) on every data commit; that contract also binds any manual data commit in the meantime.
+
+### 6.4 Validation Before Automation
 
 The August 2026 backfill ran this exact pipeline manually (parallel research agents, owner review, adversarial verification that struck 9 of 26 researched events, owner rulings, then conversion and browser-verified builds) and serves as the template and acceptance benchmark for the automated build.
 
@@ -207,7 +221,7 @@ Pipeline acceptance criteria (from the automation brief) additionally require: c
 
 ## 10. Technology Summary
 
-React 19, TypeScript, Vite, Tailwind CSS 4, Recharts, Framer Motion, React Router (HashRouter, required for GitHub Pages), react-helmet-async. Static JSON data, no backend or database. Deployed to GitHub Pages via GitHub Actions. Created by Michael Kristof (michaelkristof.com).
+React 19, TypeScript, Vite, Tailwind CSS 4, Recharts, Framer Motion, React Router (BrowserRouter with the 404.html fallback for GitHub Pages; real crawlable URLs), react-helmet-async, plus build-time per-route static HTML generation for SEO (`scripts/prerender-seo.mjs`). Static JSON data, no backend or database. Deployed to GitHub Pages via GitHub Actions. Created by Michael Kristof (michaelkristof.com).
 
 ---
 
@@ -216,3 +230,4 @@ React 19, TypeScript, Vite, Tailwind CSS 4, Recharts, Framer Motion, React Route
 | Version | Date | Change |
 |---|---|---|
 | 1.0 | 2026-08-11 | Initial official PRD |
+| 1.1 | 2026-08-11 | "Jobs Lost to AI" positioning and per-route SEO principle; Data updated indicator, AI Advances toggle/badge, predictions "as of" convention, Needs Manual Capture flow; counts refreshed (9 predictions, publicRelease flags); pipeline build status (Workflow A built, weekly Monday cadence, sonnet-default cost-control principle, meta.json contract) |

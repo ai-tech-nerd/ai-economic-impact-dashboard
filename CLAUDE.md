@@ -237,19 +237,22 @@ Only read session logs when:
 | `src/App.tsx` | Main app with routing |
 | `src/pages/*.tsx` | Page components |
 | `src/hooks/useData.ts` | Data fetching hook |
-| `data/verified/*.json` | Verified event data |
+| `public/data/verified/*.json` | Verified event data (CANONICAL — the root `data/verified/` is a stale legacy copy) |
+| `docs/PRD.md` + `docs/PROJECT_ARCHITECTURE.md` | Official product and technical docs |
 | `docs/about-the-dashboard.md` | Full project description |
 
 ---
 
 ## Data Architecture
 
-- All data in `data/verified/` as JSON files
+- All data in `public/data/verified/` as JSON files (root `data/verified/` is stale — do not use)
 - `job-displacement-events.json` - Displacement events with sources
-- `ai-milestones.json` - 207 AI milestones
-- `predictions.json` - Future predictions by timeframe
-- `company-profiles.json` - Company data
-- Fetched at runtime via `useData` hook
+- `planned-layoffs.json` / `ai-job-creation.json` - Planned cuts and AI-driven job creation (creationCategory: adoption vs support)
+- `ai-milestones.json` - AI milestones (370 as of 2026-08-11)
+- `predictions.json` - Projections by timeframe, re-grounded "as of" dates
+- `meta.json` - dataLastUpdated (MUST be bumped on every data commit; drives the "Data updated" indicator)
+- `company-profiles.json` - Optional company blurbs (pages degrade gracefully without entries)
+- Fetched at runtime via `useData` hook; full schemas in docs/PROJECT_ARCHITECTURE.md
 
 ---
 
