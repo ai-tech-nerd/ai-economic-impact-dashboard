@@ -2,113 +2,158 @@
   {
     "id": "pred-001",
     "timeframe": "3-months",
-    "targetDate": "2026-06-17",
-    "createdDate": "2026-03-17",
+    "targetDate": "2026-11-11",
+    "createdDate": "2026-08-11",
     "jobType": "Customer Support",
     "industry": "All",
-    "estimatedJobsAtRisk": { "low": 75000, "mid": 150000, "high": 250000 },
+    "estimatedJobsAtRisk": { "low": 5000, "mid": 15000, "high": 30000 },
     "riskLevel": "high",
-    "basis": "Based on accelerating AI chatbot deployments by major companies (Klarna, Salesforce, Block) and declining customer support job postings.",
-    "methodology": "Extrapolation from 2024-2025 displacement rate in customer support roles + announced AI chatbot deployments",
-    "sources": [],
-    "confidence": 0.7
+    "basis": "As of Aug 2026: companies continue announcing support cuts tied to AI agents (e.g., Salesforce says AI now handles roughly half of support interactions). But a Gartner survey (Oct 2025) found only 20% of service leaders had actually cut agent staffing due to AI, most reductions come via attrition and hiring freezes, and Gartner projects half of AI-attributed cutters will rehire by 2027. Range covers announced US reductions, not verified AI replacement.",
+    "methodology": "Projection from Challenger-tracked AI-attributed cut run-rate (~11,000/month across all categories, Jul 2026) apportioned to support roles, cross-checked against Gartner service-leader survey data. Labeled projection, not measurement.",
+    "sources": [
+      "https://www.gartner.com/en/newsroom/press-releases/2026-02-03-gartner-predicts-half-of-companies-that-cut-customer-service-staff-due-to-ai-will-rehire-by-2027",
+      "https://www.challengergray.com/blog/challenger-report-layoffs-fall-hiring-picks-up-ai-leads-for-fifth-straight-month/"
+    ],
+    "confidence": 0.6
   },
   {
     "id": "pred-002",
     "timeframe": "6-months",
-    "targetDate": "2026-09-17",
-    "createdDate": "2026-03-17",
-    "jobType": "Data Entry & Processing",
+    "targetDate": "2027-02-11",
+    "createdDate": "2026-08-11",
+    "jobType": "Data Entry & Clerical Processing",
     "industry": "All",
-    "estimatedJobsAtRisk": { "low": 50000, "mid": 120000, "high": 200000 },
+    "estimatedJobsAtRisk": { "low": 10000, "mid": 30000, "high": 60000 },
     "riskLevel": "high",
-    "basis": "AI automation of data entry and processing tasks is among the most mature applications. RPA + AI combinations are replacing manual data handling across industries.",
-    "methodology": "Based on RPA adoption rates and AI-augmented processing capabilities",
-    "sources": [],
-    "confidence": 0.75
+    "basis": "As of Aug 2026: AI has been the #1 stated reason in Challenger layoff announcements for 5 straight months (112,713 US cuts citing AI Jan-Jul 2026), and WEF ranks clerical/administrative roles among the fastest-declining through 2030. Counterweight: Yale Budget Lab finds no discernible economy-wide labor disruption yet, so announced cuts may front-run actual automation.",
+    "methodology": "Projection combining Challenger AI-attribution run-rate with WEF Future of Jobs occupational decline rankings; hedged against Yale Budget Lab null findings at the macro level.",
+    "sources": [
+      "https://www.challengergray.com/wp-content/uploads/2026/08/Challenger-Report-July-2026.pdf",
+      "https://www.weforum.org/publications/the-future-of-jobs-report-2025/",
+      "https://budgetlab.yale.edu/research/evaluating-impact-ai-labor-market-current-state-affairs"
+    ],
+    "confidence": 0.55
   },
   {
     "id": "pred-003",
     "timeframe": "12-months",
-    "targetDate": "2027-03-17",
-    "createdDate": "2026-03-17",
+    "targetDate": "2027-08-11",
+    "createdDate": "2026-08-11",
     "jobType": "Content Writing & Marketing",
     "industry": "Media & Marketing",
-    "estimatedJobsAtRisk": { "low": 100000, "mid": 200000, "high": 350000 },
+    "estimatedJobsAtRisk": { "low": 20000, "mid": 50000, "high": 100000 },
     "riskLevel": "high",
-    "basis": "Generative AI producing marketing copy, social content, and basic journalism at scale. Multiple media companies have already made cuts.",
-    "methodology": "Based on media industry layoff trends and generative AI content adoption rates",
-    "sources": [],
-    "confidence": 0.65
+    "basis": "As of Aug 2026: Stanford/ADP payroll analysis shows employment for 22-25-year-olds in AI-exposed occupations (including content roles) down ~13% since 2022 while older workers in the same fields held steady. Media and marketing cuts citing AI continue in our tracked events. Entry-level content production is the most exposed tier; senior editorial/strategy roles show little verified displacement.",
+    "methodology": "Projection from Stanford Digital Economy Lab ADP payroll findings plus the dashboard's verified media-sector displacement events (96 events / 328,995 jobs tracked through Aug 2026).",
+    "sources": [
+      "https://www.cnbc.com/2025/08/28/generative-ai-reshapes-us-job-market-stanford-study-shows-entry-level-young-workers.html",
+      "https://www.challengergray.com/blog/challenger-report-layoffs-fall-hiring-picks-up-ai-leads-for-fifth-straight-month/"
+    ],
+    "confidence": 0.55
   },
   {
     "id": "pred-004",
     "timeframe": "12-months",
-    "targetDate": "2027-03-17",
-    "createdDate": "2026-03-17",
-    "jobType": "Software Development",
+    "targetDate": "2027-08-11",
+    "createdDate": "2026-08-11",
+    "jobType": "Software Development (entry-level most exposed)",
     "industry": "Technology",
-    "estimatedJobsAtRisk": { "low": 50000, "mid": 100000, "high": 175000 },
-    "riskLevel": "medium",
-    "basis": "AI coding assistants (Copilot, Cursor, Claude) increasing developer productivity 30-50%, reducing headcount needs. Junior developer roles most affected.",
-    "methodology": "Based on developer productivity studies and tech hiring trend data",
-    "sources": [],
-    "confidence": 0.6
+    "estimatedJobsAtRisk": { "low": 40000, "mid": 80000, "high": 150000 },
+    "riskLevel": "high",
+    "basis": "As of Aug 2026: tech layoffs hit 125,759 by Aug 6, already exceeding all of 2025 (122,606) per Layoffs.fyi, on pace for ~210,000. Oracle's 10-K (Jun 2026) became the first Big Tech SEC filing to attribute workforce reductions (~21,000 net) partly to AI deployment. Stanford AI Index 2026: employment for developers under 25 down nearly 20% since 2024. Not all tech cuts are AI-driven; range reflects the AI-attributed and entry-level share.",
+    "methodology": "Projection from Layoffs.fyi 2026 run-rate, Oracle's SEC-filed AI attribution, and Stanford AI Index youth-developer employment data. Company-attributed AI causes distinguished from general tech restructuring.",
+    "sources": [
+      "https://www.cnbc.com/2026/06/23/oracle-ai-job-cuts-layoffs-21000.html",
+      "https://hai.stanford.edu/news/inside-the-ai-index-12-takeaways-from-the-2026-report",
+      "https://www.fastcompany.com/91586807/tech-layoffs-august-2026-update-tiktok-etsy-zillow-slash-jobs"
+    ],
+    "confidence": 0.65
   },
   {
     "id": "pred-005",
     "timeframe": "3-5-years",
-    "targetDate": "2029-03-17",
-    "createdDate": "2026-03-17",
-    "jobType": "Finance & Accounting",
+    "targetDate": "2029-08-11",
+    "createdDate": "2026-08-11",
+    "jobType": "Banking & Financial Operations",
     "industry": "Finance",
-    "estimatedJobsAtRisk": { "low": 150000, "mid": 300000, "high": 500000 },
+    "estimatedJobsAtRisk": { "low": 100000, "mid": 200000, "high": 300000 },
     "riskLevel": "high",
-    "basis": "Wall Street banks projecting 200,000 job cuts. AI handling financial analysis, reporting, compliance checks, and trading operations.",
-    "methodology": "Based on industry analyst reports and bank AI adoption announcements",
-    "sources": [],
-    "confidence": 0.6
+    "basis": "As of Aug 2026: Bloomberg Intelligence projects global banks will cut ~200,000 roles (about 3% of headcount) to AI within 3-5 years, concentrated in back/middle-office and KYC-compliance work. Bank leadership is now saying it on the record: Wells Fargo's CEO said AI will eliminate 'tens of thousands' of positions (Aug 2026), HSBC told staff AI will destroy jobs while creating new ones, and Standard Chartered announced ~8,000 AI-linked cuts. Figures are global banking; BI expects transformation, not full elimination.",
+    "methodology": "Anchored to Bloomberg Intelligence CIO/CTO survey projection, corroborated by on-record CEO statements at Wells Fargo, HSBC, and Standard Chartered tracked in this dashboard's planned-cuts data.",
+    "sources": [
+      "https://www.bloomberg.com/news/videos/2025-01-09/banking-job-losses-may-top-200-000-as-ai-replaces-roles-video",
+      "https://247wallst.com/investing/2026/08/05/wells-fargos-ceo-says-ai-will-erase-tens-of-thousands-of-jobs-heres-why-hes-still-not-worried-about-your-wallet/",
+      "https://www.aol.com/articles/dont-fight-ai-hsbc-ceo-104455000.html"
+    ],
+    "confidence": 0.7
   },
   {
     "id": "pred-006",
     "timeframe": "3-5-years",
-    "targetDate": "2029-03-17",
-    "createdDate": "2026-03-17",
-    "jobType": "Legal Services",
+    "targetDate": "2029-08-11",
+    "createdDate": "2026-08-11",
+    "jobType": "Legal Services (paralegal & junior associate)",
     "industry": "Legal",
-    "estimatedJobsAtRisk": { "low": 50000, "mid": 100000, "high": 200000 },
+    "estimatedJobsAtRisk": { "low": 30000, "mid": 75000, "high": 150000 },
     "riskLevel": "medium",
-    "basis": "AI conducting legal research, contract review, and document drafting. Paralegals and junior associates most exposed.",
-    "methodology": "Based on legal AI adoption studies and Anthropic Economic Index occupation exposure data",
-    "sources": [],
-    "confidence": 0.55
+    "basis": "As of Aug 2026: AI handles legal research, contract review, and drafting at scale, and legal tasks rank among the highest-exposure occupations in the Anthropic Economic Index. But verified AI-attributed layoffs in legal remain rare in our tracked data; the effect so far shows up mostly as reduced entry-level hiring rather than announced cuts. This is an exposure-based projection, not an extrapolation of observed layoffs.",
+    "methodology": "Projection from occupation-level AI exposure data (Anthropic Economic Index, WEF Future of Jobs) applied to US paralegal/junior-associate headcount; low confidence reflects scarce verified displacement to date.",
+    "sources": [
+      "https://www.anthropic.com/economic-index",
+      "https://www.weforum.org/publications/the-future-of-jobs-report-2025/"
+    ],
+    "confidence": 0.5
   },
   {
     "id": "pred-007",
     "timeframe": "3-months",
-    "targetDate": "2026-06-17",
-    "createdDate": "2026-03-17",
+    "targetDate": "2026-11-11",
+    "createdDate": "2026-08-11",
     "jobType": "Sales Development (SDR)",
     "industry": "Technology",
-    "estimatedJobsAtRisk": { "low": 15000, "mid": 40000, "high": 75000 },
-    "riskLevel": "high",
-    "basis": "Monday.com's full SDR team replacement with AI agents is being replicated across SaaS companies. AI outbound is becoming standard.",
-    "methodology": "Based on Monday.com case study and SaaS industry SDR team size data",
-    "sources": [],
-    "confidence": 0.7
+    "estimatedJobsAtRisk": { "low": 3000, "mid": 8000, "high": 15000 },
+    "riskLevel": "medium",
+    "basis": "As of Aug 2026: the early-2026 'AI replaces the whole SDR team' pattern has NOT generalized — industry surveys (SaaStr) find ~83% of teams have not gotten autonomous AI SDRs working, and most headcount reduction comes from not backfilling open roles rather than layoffs. AI is absorbing templated outbound work first. Downgraded from high risk (Mar 2026 estimate) based on observed adoption reality.",
+    "methodology": "Projection from B2B survey data on SDR team reductions and non-backfilling; revised downward after the predicted Q2 2026 wave of full-team replacements did not materialize in verified events.",
+    "sources": [
+      "https://www.saastr.com/83-percent-of-you-havent-gotten-ai-sdrs-to-work-yet",
+      "https://www.landbase.com/blog/death-of-bdr-role-ai-agents-sdr-hiring-2026"
+    ],
+    "confidence": 0.5
   },
   {
     "id": "pred-008",
     "timeframe": "6-months",
-    "targetDate": "2026-09-17",
-    "createdDate": "2026-03-17",
+    "targetDate": "2027-02-11",
+    "createdDate": "2026-08-11",
     "jobType": "HR & Recruiting",
     "industry": "All",
-    "estimatedJobsAtRisk": { "low": 30000, "mid": 60000, "high": 100000 },
+    "estimatedJobsAtRisk": { "low": 8000, "mid": 20000, "high": 40000 },
     "riskLevel": "medium",
-    "basis": "AI screening, scheduling, and initial interviewing reducing HR headcount needs. Resume screening fully automated at many large companies.",
-    "methodology": "Based on HR technology adoption rates and recruiter productivity data",
-    "sources": [],
-    "confidence": 0.6
+    "basis": "As of Aug 2026: AI screening, scheduling, and first-round assessment are standard at large employers, and HR/recruiting falls in the clerical-adjacent band WEF projects to decline through 2030. Verified AI-attributed HR layoffs remain a small share of tracked events; slowed hiring volume across tech (fewer requisitions to fill) compounds the pressure on recruiter headcount.",
+    "methodology": "Projection from WEF occupational decline rankings and Challenger AI-attribution trend, apportioned to HR functions; hedged for limited company-attributed evidence in this category.",
+    "sources": [
+      "https://www.weforum.org/publications/the-future-of-jobs-report-2025/",
+      "https://www.challengergray.com/wp-content/uploads/2026/08/Challenger-Report-July-2026.pdf"
+    ],
+    "confidence": 0.5
+  },
+  {
+    "id": "pred-009",
+    "timeframe": "3-5-years",
+    "targetDate": "2029-08-11",
+    "createdDate": "2026-08-11",
+    "jobType": "Entry-Level White-Collar (all fields, US)",
+    "industry": "All",
+    "estimatedJobsAtRisk": { "low": 1500000, "mid": 4000000, "high": 7000000 },
+    "riskLevel": "high",
+    "basis": "As of Aug 2026: Goldman Sachs raised its estimate to ~15 million US workers (over 9% of the workforce) displaced by AI over roughly a decade, calling AI 'the big story in 2026 in labor'; Gen Z unemployment hit 8.3% in June 2026, double the 4.2% national rate. Range shows the 3-5-year slice of Goldman's decade-long base case — a projection of their model, not this dashboard's data. Important caveat: an HBR-published executive survey (Jan 2026) found 60% cut headcount in ANTICIPATION of AI while only 2% tied large layoffs to actual AI implementation, so announced 'AI layoffs' may front-run real automation.",
+    "methodology": "Direct restatement of Goldman Sachs Research's displacement scenario (6-9% of US workforce over ~10 years) pro-rated to a 3-5-year window; explicitly labeled a third-party model projection with the HBR anticipatory-vs-actual caveat attached.",
+    "sources": [
+      "https://www.goldmansachs.com/insights/articles/how-will-ai-affect-the-us-labor-market",
+      "https://allwork.space/2026/07/goldman-sachs-says-ai-could-displace-9-of-the-u-s-workforce/",
+      "https://fortune.com/2026/05/11/ai-automation-layoffs-gartner-study-roi/"
+    ],
+    "confidence": 0.5
   }
 ]

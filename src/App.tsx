@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { Header } from './components/layout/Header';
 import { Footer } from './components/layout/Footer';
@@ -107,9 +107,16 @@ function AppContent() {
 export default function App() {
   return (
     <HelmetProvider>
-      <HashRouter>
+      {/*
+        BrowserRouter (real URLs) replaced HashRouter for SEO: fragment URLs
+        (#/predictions) are invisible to crawlers. Deep links on GitHub Pages
+        are handled by public/404.html + the decoder snippet in index.html
+        (rafgraph/spa-github-pages pattern). Legacy #/ URLs are rewritten to
+        real paths by the shim in index.html before React mounts.
+      */}
+      <BrowserRouter>
         <AppContent />
-      </HashRouter>
+      </BrowserRouter>
     </HelmetProvider>
   );
 }

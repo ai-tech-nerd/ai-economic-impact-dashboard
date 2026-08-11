@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { PageLayout } from '../components/layout/PageLayout';
+import { Seo } from '../components/shared/Seo';
 import { formatNumber, formatDate } from '../utils/formatters';
 import { SourceCitation } from '../components/shared/SourceCitation';
 import type { DisplacementEvent, CompanyProfile, AIMilestone } from '../types';
@@ -307,6 +308,11 @@ function CompanyList({
       subtitle="How major AI companies are evolving and their impact on the workforce"
       embedPath="/companies"
     >
+      <Seo
+        title="Companies Replacing Workers With AI — AI Layoffs by Company"
+        description="Which companies are replacing workers with AI? Browse AI layoffs by company: verified job cuts, planned AI-driven layoffs, hiring freezes, and new AI roles — each backed by company statements and primary sources."
+        path="/companies"
+      />
       <div className="flex flex-wrap items-center gap-3 mb-6">
         <input
           type="text"
@@ -431,6 +437,11 @@ function CompanyDetail({
 
   return (
     <PageLayout title={name} subtitle={description}>
+      <Seo
+        title={`${name} AI Layoffs & Job Cuts — Jobs Lost to AI`}
+        description={`${name}: verified AI-driven layoffs, planned job cuts, and AI milestones. ${description || 'Tracked from company statements and primary sources.'}`}
+        path={`/companies/${id}`}
+      />
       <Link
         to="/companies"
         className="text-primary-600 hover:text-primary-700 text-sm mb-6 inline-block"

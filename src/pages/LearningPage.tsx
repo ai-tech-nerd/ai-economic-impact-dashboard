@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { PageLayout } from '../components/layout/PageLayout';
+import { Seo } from '../components/shared/Seo';
 import {
   AI_TOOLS,
   PROMPT_FRAMEWORKS,
@@ -33,6 +34,11 @@ export function LearningPage() {
       subtitle="Practical resources for understanding AI and positioning yourself for success"
       embedPath="/learn"
     >
+      <Seo
+        title="How to Prepare for AI Job Displacement — Learn & Prepare"
+        description="How to prepare for AI job displacement: free AI courses, prompting guides, AI tools, and an action plan to future-proof your career as AI reshapes the job market. No sign-up required."
+        path="/learn"
+      />
       {/* Tabs */}
       <div className="flex flex-wrap gap-2 mb-8 border-b border-surface-200 pb-4">
         {TABS.map((tab) => (

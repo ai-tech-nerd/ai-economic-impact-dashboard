@@ -28,7 +28,7 @@ The dashboard is a fully static React single-page application. There is no backe
                 │
                 ▼
 ┌──────────────────── GitHub Pages (aishift.michaelkristof.com) ──────────┐
-│  index.html → React SPA (HashRouter)                                    │
+│  index.html → React SPA (BrowserRouter + 404.html fallback)                                    │
 │      │ runtime fetch                                                    │
 │      ├── /data/verified/*.json          (6 datasets, useData hook)      │
 │      ├── /data/source-archive/archive-manifest.json  (archive list)     │
@@ -37,7 +37,7 @@ The dashboard is a fully static React single-page application. There is no backe
 └─────────────────────────────────────────────────────────────────────────┘
 ```
 
-**Why HashRouter:** GitHub Pages serves static files only and cannot rewrite arbitrary paths to `index.html`. A `BrowserRouter` deep link such as `/predictions` would 404 on refresh. `HashRouter` keeps all routing after the `#` (`/#/predictions`), so every deep link resolves to the root `index.html`. This is a hard requirement of the hosting, recorded in `CLAUDE.md` under Lessons Learned.
+**Routing (changed 2026-08-11):** the app uses `BrowserRouter` with the spa-github-pages pattern — `public/404.html` redirects unknown paths to `/?p=...` and a decoder in `index.html` restores the path before React mounts. This gives real, Google-indexable URLs (`/predictions`), which HashRouter's fragment URLs (`/#/predictions`) could never be. A shim in `index.html` rewrites legacy `#/` links (including old embeds) to path URLs. Do NOT revert to HashRouter — it made every page invisible to crawlers.
 
 Two content systems coexist:
 
@@ -58,7 +58,7 @@ Versions are the semver ranges in `package.json` (v1.0.0).
 | Styling | Tailwind CSS (PostCSS pipeline, `@tailwindcss/postcss`) | ^4.2.1 |
 | Charts | Recharts | ^3.8.0 |
 | Animation | Framer Motion | ^12.38.0 |
-| Routing | react-router-dom (HashRouter) | ^7.13.1 |
+| Routing | react-router-dom (BrowserRouter + 404 fallback) | ^7.13.1 |
 | SEO / head tags | react-helmet-async | ^3.0.0 |
 | Tables | @tanstack/react-table | ^8.21.3 |
 | Dates | date-fns | ^4.1.0 |
@@ -118,7 +118,7 @@ ai-economic-impact-dashboard/
 
 ### 4.1 Routing map (`src/App.tsx`)
 
-All routes live under `HashRouter`. `AppContent` branches on `location.pathname` prefix into three render modes.
+All routes live under `BrowserRouter` (real path URLs; legacy `#/` links redirected by the index.html shim). `AppContent` branches on `location.pathname` prefix into three render modes.
 
 **Main site (Header + Footer chrome):**
 
@@ -464,7 +464,7 @@ Global field rules carried from the brief: ISO dates; hedged number phrasing pre
 ## 10. Known Gotchas and Lessons Learned
 
 1. **Dual data directories.** Repo-root `data/verified/` is a stale legacy copy (64 events / 238 milestones; missing `planned-layoffs.json` and `ai-job-creation.json`) while `public/data/verified/` is canonical (96 / 370). `CLAUDE.md`'s Data Architecture section still points at `data/verified/` and cites "207 milestones" (stale). The deploy workflow still runs `cp -r data/verified dist/data/verified`; because Vite has already created `dist/data/verified` from `public/`, that copy lands nested (`dist/data/verified/verified/`) and the site serves the canonical `public/` files. **VERIFY:** confirm on a live deploy, then remove the workflow step and the stale `data/verified/` copy (with owner approval; file-deletion rules apply).
-2. **HashRouter is mandatory** on GitHub Pages; never switch to BrowserRouter (deep links would 404).
+2. **BrowserRouter + 404.html fallback is the routing setup** (since 2026-08-11) — deep links work via the spa-github-pages redirect; do not revert to HashRouter (kills SEO).
 3. **`isProjection` events are excluded from every total** - evt-007 (IBM) is the current example. Adding a projection without the flag inflates the headline number; forgetting the flag exists makes displayed totals look "one event short" of the file count.
 4. **Counter animations freeze in hidden panes** (requestAnimationFrame throttling). Not a data bug; verify against the JSON.
 5. **Bot-wall fallback chain:** direct Playwright (`--channel chrome`) → consent-banner dismissal → Firecrawl. Firecrawl handled Reuters/CNN/Fast Company/Axios but NOT NYT or Bloomberg; those need manual logged-in capture.

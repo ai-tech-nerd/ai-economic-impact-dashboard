@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react';
 import { PageLayout } from '../components/layout/PageLayout';
+import { Seo } from '../components/shared/Seo';
 import { TrendLine } from '../components/dashboard/TrendLine';
 import { ChatGPTGrowthChart } from '../components/dashboard/ChatGPTGrowthChart';
 import { JobTypesChart } from '../components/dashboard/JobTypesChart';
@@ -72,6 +73,11 @@ export function TimelinePage({ events, plannedEvents = [], creationEvents = [] }
       subtitle="Watch AI workforce displacement unfold over time"
       embedPath="/timeline"
     >
+      <Seo
+        title="AI Layoffs Timeline — Jobs Lost to AI Since ChatGPT (2022–Now)"
+        description="Interactive AI layoffs timeline: watch AI job losses unfold month by month since ChatGPT launched in November 2022. Every event verified against company statements, with planned layoffs and AI job creation alongside."
+        path="/timeline"
+      />
       <div className="flex gap-2 mb-6">
         <button
           onClick={() => setMode('slider')}

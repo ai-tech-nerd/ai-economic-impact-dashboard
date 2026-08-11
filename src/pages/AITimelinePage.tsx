@@ -94,6 +94,7 @@ export function AITimelinePage({ milestones }: AITimelinePageProps) {
   const [typeFilter, setTypeFilter] = useState<string>('all');
   const [companyFilter, setCompanyFilter] = useState<string>('all');
   const [countryFilter, setCountryFilter] = useState<string>('all');
+  const [sortOrder, setSortOrder] = useState<'newest' | 'oldest'>('newest');
 
   // Separate companies from countries/jurisdictions
   const { companyKeys, companyCounts, countryKeys, countryCounts } = useMemo(() => {
@@ -132,8 +133,12 @@ export function AITimelinePage({ milestones }: AITimelinePageProps) {
         if (countryFilter !== 'all') return m.company === countryFilter;
         return true;
       })
-      .sort((a, b) => a.date.localeCompare(b.date));
-  }, [milestones, typeFilter, companyFilter, countryFilter]);
+      .sort((a, b) =>
+        sortOrder === 'newest'
+          ? b.date.localeCompare(a.date)
+          : a.date.localeCompare(b.date),
+      );
+  }, [milestones, typeFilter, companyFilter, countryFilter, sortOrder]);
 
   const types = useMemo(() => {
     const set = new Set<string>();
@@ -178,6 +183,13 @@ export function AITimelinePage({ milestones }: AITimelinePageProps) {
             {TYPE_LABELS[type] || type}
           </button>
         ))}
+        <button
+          onClick={() => setSortOrder(sortOrder === 'newest' ? 'oldest' : 'newest')}
+          className="px-3 py-1.5 rounded-full text-sm font-medium transition-colors bg-surface-100 text-surface-600 hover:bg-surface-200 ml-auto"
+          title="Reverse timeline order"
+        >
+          {sortOrder === 'newest' ? 'Newest first' : 'Oldest first'} ↕
+        </button>
       </div>
 
       {/* Company + Country dropdowns */}
@@ -269,6 +281,11 @@ export function AITimelinePage({ milestones }: AITimelinePageProps) {
                 >
                   {TYPE_LABELS[milestone.type] || milestone.type}
                 </span>
+                {(milestone as AIMilestone & { publicRelease?: boolean }).publicRelease && (
+                  <span className="text-xs px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-700 font-medium">
+                    Public release
+                  </span>
+                )}
                 <span className="text-xs text-surface-400">{formatDate(milestone.date)}</span>
               </div>
               <h3 className="font-semibold text-surface-900">

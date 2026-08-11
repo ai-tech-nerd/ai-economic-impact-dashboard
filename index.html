@@ -4,12 +4,91 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI Economic Impact Dashboard — Tracking AI Workforce Displacement</title>
-    <meta name="description" content="Interactive dashboard tracking jobs displaced by artificial intelligence. Verified data from company statements. Timeline from ChatGPT launch (Nov 2022) to present." />
-    <meta property="og:title" content="AI Economic Impact Dashboard" />
-    <meta property="og:description" content="Tracking the workforce transformation driven by AI. Verified data, interactive timeline, and resources to prepare." />
+    <title>Jobs Lost to AI — Live AI Layoffs &amp; Job Losses Tracker</title>
+    <meta name="description" content="Live tracker of jobs lost to AI: verified AI layoffs, AI job losses, and companies replacing workers with AI. Real numbers from company statements, earnings calls, and SEC filings — from ChatGPT's launch (Nov 2022) to today. Free, no sign-up." />
+    <link rel="canonical" href="https://aishift.michaelkristof.com/" />
+    <meta property="og:title" content="Jobs Lost to AI — Live AI Layoffs &amp; Job Losses Tracker" />
+    <meta property="og:description" content="Verified AI layoffs and job losses, tracked from company statements. See which companies are replacing workers with AI — updated regularly, free, no sign-up." />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://aishift.michaelkristof.com/" />
+    <meta property="og:site_name" content="AI Shift — AI Job Loss Tracker" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jobs Lost to AI — Live AI Layoffs &amp; Job Losses Tracker" />
+    <meta name="twitter:description" content="Verified AI layoffs and job losses, tracked from company statements. Free, no sign-up." />
+    <script>
+      // --- SPA routing bootstrap (must run before React mounts) ---
+      (function (l) {
+        // 1) GitHub Pages SPA fallback decoder (rafgraph/spa-github-pages,
+        //    pathSegmentsToKeep = 0 for the custom domain). public/404.html
+        //    encodes a deep-link path as /?/predictions&q=... ; restore it here.
+        if (l.search[1] === '/') {
+          var decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(function (s) {
+              return s.replace(/~and~/g, '&');
+            })
+            .join('?');
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+        }
+        // 2) Legacy hash-URL shim: old links/embeds use HashRouter URLs
+        //    (/#/predictions, /#/embed/dashboard, /#/widget/stats). Rewrite
+        //    them to real paths so BrowserRouter picks them up.
+        if (l.hash && l.hash.indexOf('#/') === 0) {
+          window.history.replaceState(null, null, l.hash.slice(1));
+        }
+      })(window.location);
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://aishift.michaelkristof.com/#website",
+          "url": "https://aishift.michaelkristof.com/",
+          "name": "AI Job Loss Tracker — Jobs Lost to AI",
+          "alternateName": "AI Economic Impact Dashboard",
+          "description": "Live tracker of jobs lost to AI: verified AI layoffs, AI job losses, and companies replacing workers with AI, from ChatGPT's launch in November 2022 to today.",
+          "publisher": {
+            "@type": "Person",
+            "name": "Michael Kristof",
+            "url": "https://www.michaelkristof.com/"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "@id": "https://aishift.michaelkristof.com/#dataset",
+          "name": "Verified AI Job Displacement Events",
+          "description": "Verified AI-driven workforce displacement events: layoffs and job losses that companies have directly attributed to artificial intelligence, with primary sources (company statements, earnings calls, press releases, SEC filings). Includes planned AI layoffs and AI-driven job creation.",
+          "url": "https://aishift.michaelkristof.com/",
+          "keywords": [
+            "jobs lost to AI",
+            "AI layoffs",
+            "AI job losses",
+            "AI job displacement",
+            "companies replacing workers with AI",
+            "AI taking jobs statistics"
+          ],
+          "isAccessibleForFree": true,
+          "creator": {
+            "@type": "Person",
+            "name": "Michael Kristof",
+            "url": "https://www.michaelkristof.com/"
+          },
+          "license": "https://github.com/ai-tech-nerd/ai-economic-impact-dashboard",
+          "temporalCoverage": "2022-11-30/..",
+          "distribution": [
+            {
+              "@type": "DataDownload",
+              "encodingFormat": "application/json",
+              "contentUrl": "https://aishift.michaelkristof.com/data/verified/job-displacement-events.json"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZL9D4E6PYB"></script>
     <script>

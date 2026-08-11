@@ -255,8 +255,8 @@ Only read session logs when:
 
 ## Lessons Learned
 
-### HashRouter Required
-GitHub Pages doesn't support server-side routing. Must use HashRouter for navigation to work.
+### Routing: BrowserRouter + 404.html fallback (changed 2026-08-11)
+The app now uses BrowserRouter with the spa-github-pages 404.html redirect so routes are real, Google-indexable URLs. Do NOT switch back to HashRouter — it made every page invisible to crawlers. A shim in index.html redirects legacy #/ links and embeds.
 
 ### Data Verification Standards
 Every displacement event must link to primary sources. Cross-reference with research to distinguish AI-driven displacement from other factors.

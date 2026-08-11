@@ -1,4 +1,5 @@
 import { PageLayout } from '../components/layout/PageLayout';
+import { Seo } from '../components/shared/Seo';
 import type { Prediction } from '../types';
 import { formatNumber } from '../utils/formatters';
 
@@ -32,6 +33,11 @@ export function PredictionsPage({ predictions }: PredictionsPageProps) {
       subtitle="Estimated jobs at risk based on current trends and announced plans"
       embedPath="/predictions"
     >
+      <Seo
+        title="Will AI Take My Job? AI Job Loss Predictions & Jobs at Risk"
+        description="AI job loss predictions: which jobs are most at risk from AI over the next 3 months to 5 years. Estimated jobs at risk by role and industry, based on verified AI layoff trends and announced company plans."
+        path="/predictions"
+      />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
         {grouped.map(({ timeframe, label, items }) => (
           <div

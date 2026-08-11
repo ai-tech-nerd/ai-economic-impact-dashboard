@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file.
 
+## [Unreleased] - 2026-08-11 — SEO/indexing overhaul, predictions refresh, AI Advances improvements
+
+### Changed — Google indexing (BREAKING-ish: router change)
+- **HashRouter → BrowserRouter** with the spa-github-pages 404.html fallback: routes are now real, crawlable URLs (/predictions, /companies, ...). Legacy #/ links and embeds redirect via an index.html shim (verified). CLAUDE.md + PROJECT_ARCHITECTURE.md updated — do NOT revert to HashRouter.
+- SEO-focused language sitewide: home h1 now "Jobs Lost to AI"; new titles/meta per route ("Will AI Take My Job?...", "Companies Replacing Workers With AI...", etc.); JSON-LD (WebSite + Dataset); sitemap.xml + robots.txt; canonical URLs; embed-snippet buttons emit path URLs
+- "Data updated: <date>" indicator on the dashboard, driven by public/data/verified/meta.json (bump on every data commit; publish automation will maintain it)
+
+### Changed — Predictions rewritten as of Aug 2026
+- All timeframes re-grounded in current data (Challenger 112,713 AI-cited US cuts YTD; Stanford entry-level findings; Oracle 10-K; Gartner rehire prediction; Goldman/WEF/Bloomberg Intelligence forecasts); short-horizon ranges revised DOWN to match observed run-rates; new entry-level white-collar 3-5yr prediction added (9 total); every entry sourced and labeled as projection
+
+### Changed — AI Advances
+- Newest-first by default with an order toggle
+- "Public release" badge (new optional publicRelease field; 8 entries flagged)
+- ChatGPT milestone (ms-029, 2022-11-30) enriched — it already existed as a "Launch"-type entry (why it was missed under the Model Releases filter); 4 release dates corrected (GPT-3, Claude 3.5 Sonnet, Runway Gen-4, GPT-5.4), 15 prominent dates spot-check-confirmed
+
+### Changed — Automation cadence
+- Research schedule set to weekly (Mondays 6:00 AM CT), still disabled pending validation
+
 ## [Unreleased] - 2026-08-11 — Official docs + automation build (steps 1–2)
 
 ### Added

@@ -7,7 +7,7 @@
 ## 1. Architecture at a glance
 
 ```
-┌─ Workflow A: RESEARCH (every 2 days, 6:00 AM CT) ──────────────┐
+┌─ Workflow A: RESEARCH (weekly, Mondays 6:00 AM CT (owner decision 2026-08-11; adjustable later)) ──────────────┐
 │ query bank sweep → structure → attribution gate → dedup        │
 │ → append candidates to STAGING sheet → email digest            │
 └────────────────────────────────────────────────────────────────┘
@@ -61,7 +61,7 @@ Rules: you may edit any cell before approving — the row's content at publish t
 
 ## 4. Workflow A — Research (Stage 1)
 
-**Schedule:** every 2 days, 6:00 AM America/Chicago (`cron: 0 11 */2 * *`), plus `workflow_dispatch` for manual runs.
+**Schedule:** weekly, Mondays 6:00 AM America/Chicago (`cron: 0 11 * * 1`), plus `workflow_dispatch` for manual runs.
 
 ### 4.1 Query bank (from `docs/ai-economic-impact-search-terms.md`, expanded)
 

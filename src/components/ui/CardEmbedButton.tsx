@@ -10,7 +10,7 @@ export function CardEmbedButton({ widgetPath, title, height = 400 }: CardEmbedBu
   const [isOpen, setIsOpen] = useState(false);
   const [copied, setCopied] = useState(false);
 
-  const embedUrl = `https://aishift.michaelkristof.com/#/widget/${widgetPath}`;
+  const embedUrl = `https://aishift.michaelkristof.com/widget/${widgetPath}`;
   const iframeCode = `<iframe src="${embedUrl}" width="100%" height="${height}" frameborder="0" title="${title}" style="border: none;"></iframe>`;
 
   const handleCopy = async () => {

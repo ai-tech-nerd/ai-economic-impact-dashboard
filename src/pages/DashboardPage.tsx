@@ -1,5 +1,7 @@
+import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { PageLayout } from '../components/layout/PageLayout';
+import { Seo } from '../components/shared/Seo';
 import { TotalCounter } from '../components/dashboard/TotalCounter';
 import { TrendLine } from '../components/dashboard/TrendLine';
 import { JobTypesChart } from '../components/dashboard/JobTypesChart';
@@ -23,13 +25,44 @@ export function DashboardPage({ events, plannedEvents, creationEvents }: Dashboa
   const companies = getCompanySummary(events);
   const plannedTotal = plannedEvents.reduce((sum, e) => sum + e.jobsCut, 0);
 
+  // "Data updated" indicator. Reads public/data/verified/meta.json —
+  // dataLastUpdated must be bumped by the publish automation and by any
+  // manual data commit. Fails silently (line simply not shown) if missing.
+  const [dataUpdated, setDataUpdated] = useState<string | null>(null);
+  useEffect(() => {
+    fetch(`${import.meta.env.BASE_URL}data/verified/meta.json`)
+      .then((res) => (res.ok ? res.json() : null))
+      .then((meta: { dataLastUpdated?: string } | null) => {
+        if (meta?.dataLastUpdated) {
+          const d = new Date(`${meta.dataLastUpdated}T00:00:00`);
+          if (!Number.isNaN(d.getTime())) {
+            setDataUpdated(
+              d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
+            );
+          }
+        }
+      })
+      .catch(() => {});
+  }, []);
+
   return (
     <PageLayout
-      title="AI Economic Impact Dashboard"
-      subtitle="Tracking workforce displacement driven by artificial intelligence adoption"
+      title="Jobs Lost to AI"
+      subtitle="A live tracker of AI-driven layoffs and job losses — verified workforce displacement that companies have directly attributed to artificial intelligence, from ChatGPT's launch to today"
       embedPath="/dashboard"
     >
+      <Seo
+        title="Jobs Lost to AI — Live AI Layoffs & Job Losses Tracker"
+        description="Live tracker of jobs lost to AI: verified AI layoffs, AI job losses, and companies replacing workers with AI. Real numbers from company statements, earnings calls, and SEC filings — updated regularly, free, no sign-up."
+        path="/"
+      />
       <div className="space-y-8">
+        {dataUpdated && (
+          <p className="-mt-4 flex items-center gap-1.5 text-sm text-surface-500">
+            <span className="w-1.5 h-1.5 rounded-full bg-success-500" aria-hidden="true" />
+            Data updated: <span className="font-medium text-surface-700">{dataUpdated}</span>
+          </p>
+        )}
         <TotalCounter
           total={total}
           companyCount={companies.length}
