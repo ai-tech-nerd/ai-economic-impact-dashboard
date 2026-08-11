@@ -71,8 +71,13 @@ STAGING_TABS = {
 
 # Control columns appended to every tab (plan §3).
 CONTROL_COLUMNS = [
-    "Confidence", "Attribution", "Quote", "Approval", "Status", "Archive Link",
+    "Confidence", "Attribution", "Quote", "Approval",
+    "Archive Status", "Archive Link",
 ]
+# Earlier revisions appended a control column named plain "Status", which
+# collides with the Planned/Announced tab's business Status column. The
+# migration below renames that appended header (recognized by the exact
+# Approval / Status / Archive Link sequence) to "Archive Status".
 
 # Approval dropdown values. Blank is allowed because validation is
 # non-strict for empty cells (Sheets treats empty as valid).
@@ -229,6 +234,24 @@ def print_dry_run_plan():
 # LIVE RUN
 # ============================================================
 
+def migrate_status_header(service, spreadsheet_id, title, header):
+    """Rename an appended control 'Status' header to 'Archive Status'.
+
+    Matches ONLY the exact Approval / Status / Archive Link sequence so a
+    tab's business Status column (Planned/Announced) is never touched.
+    """
+    for index in range(len(header) - 2):
+        if header[index:index + 3] == ["Approval", "Status", "Archive Link"]:
+            write_header_cells(service, spreadsheet_id, title,
+                               index + 1, ["Archive Status"])
+            header = list(header)
+            header[index + 1] = "Archive Status"
+            print(f"  ('{title}'): renamed control column "
+                  "'Status' -> 'Archive Status'")
+            break
+    return header
+
+
 def prepare_existing_tab(service, spreadsheet_id, gid, tab_config, batch_requests):
     """Ensure control columns + Approval validation on one existing tab.
 
@@ -251,6 +274,7 @@ def prepare_existing_tab(service, spreadsheet_id, gid, tab_config, batch_request
         return
 
     header = read_header(service, spreadsheet_id, title)
+    header = migrate_status_header(service, spreadsheet_id, title, header)
     missing = [c for c in CONTROL_COLUMNS if c not in header]
     if missing:
         write_header_cells(service, spreadsheet_id, title, len(header), missing)
@@ -283,6 +307,8 @@ def ensure_advances_tab(service, spreadsheet_id, batch_requests):
     else:
         gid = by_title[ADVANCES_TAB_TITLE]
         header = read_header(service, spreadsheet_id, ADVANCES_TAB_TITLE)
+        header = migrate_status_header(service, spreadsheet_id,
+                                       ADVANCES_TAB_TITLE, header)
         missing = [c for c in full_header if c not in header]
         if missing:
             write_header_cells(service, spreadsheet_id, ADVANCES_TAB_TITLE,

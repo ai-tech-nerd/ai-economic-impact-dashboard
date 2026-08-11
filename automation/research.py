@@ -64,7 +64,7 @@ WEB_SEARCH_TOOL_TYPE = os.environ.get("WEB_SEARCH_TOOL_TYPE",
 # Staging tabs by gid (brief §5) inside SHEET_STAGING_ID. The AI Advances
 # tab is created by sheet_prep.py and referenced by title.
 CONTROL_COLUMNS = ["Confidence", "Attribution", "Quote",
-                   "Approval", "Status", "Archive Link"]
+                   "Approval", "Archive Status", "Archive Link"]
 
 CATEGORIES = {
     "losses": {
