@@ -24,7 +24,14 @@ Dashboard JSON (`public/data/verified/`) stopped at 2026-04-04 while the tracker
 - `pip3 install --user` blocked by PEP 668 on this Mac — use a venv.
 - Google Drive MCP `read_file_content` on a spreadsheet returns lossy markdown; use `download_file_content` with xlsx exportMimeType + openpyxl.
 
-## Outstanding — Needs Manual Capture (5)
+## Round 2 (same day): Full-archive excerpt migration — DONE
+- User completed the 5 manual captures; pages finished with accordions + headlines/excerpts read from the capture PNGs (Coinbase NYT headline recovered from screenshot; PwC headline corrected to Bloomberg's on-page title).
+- 4 subagents migrated all 89 old pages to excerpt format. Independent validation script: 88 ok + BuzzFeed special case (was an Access-Denied placeholder; rebuilt from its own screenshot). Zero problems after fixes.
+- Subagent lesson: parallel agents sharing a scratchpad MUST use uniquely named work files — two agents collided on `excerpts.json`/`extract.py`; no damage (validated), but future orchestrations should mandate per-agent filenames up front.
+- Pre-existing quirk fixed: 2022-11-09-meta had an empty Details/reason-text (filled from event JSON).
+- DECIDED (2026-08-10): keep `public/data/source-archive/txt/` as a local archive per owner; manifest `article_file` fields left in place.
+
+## Outstanding — Needs Manual Capture (5) — RESOLVED (round 2)
 | Page | Missing | Source |
 |---|---|---|
 | 2026-02-25-c3-ai | screenshot (headline+excerpt present) | Reuters |

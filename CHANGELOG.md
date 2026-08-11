@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [Unreleased] - 2026-08-10 (round 2: full-archive excerpt migration)
+
+### Changed — Copyright remediation across the entire source archive
+- **Migrated all 89 pre-existing archive pages** from full-article-text to excerpt-only format: verbatim ≤75-word opening excerpt + provenance note; headline, publish date, meta grid, details, screenshot, archived stamp, and navigation untouched
+- **Completed the 5 Needs-Manual-Capture pages** with user-supplied screenshots (C3.ai, PwC, Pendo, PayPal, Coinbase); filled in real headlines/excerpts read from the captures (Coinbase NYT headline: "Coinbase Lays Off 14% of Employees as A.I. Changes Work"; corrected PwC to Bloomberg's on-page headline "Executive Assistants Making $100,000 a Year Are Losing Jobs to AI")
+- Fixed 2023-04-20-buzzfeed page (was an "Access Denied" placeholder — now proper headline + excerpt from the archived screenshot) and filled the empty Details field on 2022-11-09-meta
+- All 107 archive pages now excerpt-only; validated by script (structure, word counts, accordions, nav) + build
+
+### Decision
+- `public/data/source-archive/txt/` (89 full-text article .txt files) kept intentionally as a local archive (owner decision, 2026-08-10). Not linked from any page.
+
 ## [Unreleased] - 2026-08-10
 
 ### Added — Catch-up data sync from "AI Attributed Job Losses" Google Sheet (Apr–May 2026 backlog)
