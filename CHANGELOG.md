@@ -13,6 +13,10 @@ All notable changes to this project will be documented in this file.
 ### Decision
 - `public/data/source-archive/txt/` (89 full-text article .txt files) kept intentionally as a local archive (owner decision, 2026-08-10). Not linked from any page.
 
+### Changed — AI Job Creation section layout
+- Dashboard card + /widget/creation embed converted from verbose per-company cards to the compact row list matching Planned/Announced (company | jobs | Hiring badge), with a 42,311 headline total
+- Added `jobsCreated` numeric field to ai-job-creation.json entries (IBM undisclosed → 0, shown as "Undisclosed", excluded from total)
+
 ## [Unreleased] - 2026-08-10
 
 ### Added — Catch-up data sync from "AI Attributed Job Losses" Google Sheet (Apr–May 2026 backlog)

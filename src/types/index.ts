@@ -29,6 +29,7 @@ export interface DisplacementEvent {
   timeline?: string;
   jobsAlreadyCut?: number;
   jobRolesCreated?: string;
+  jobsCreated?: number;
   context?: string;
 }
 

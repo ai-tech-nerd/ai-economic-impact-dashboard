@@ -111,20 +111,27 @@ export function CreationWidget({ creationEvents }: { creationEvents: Displacemen
         </div>
         {creationEvents.length > 0 ? (
           <>
-            {creationEvents.map((evt) => (
-              <div key={evt.id} className="mt-2">
-                <p className="text-lg font-bold text-surface-900">{evt.companyName}</p>
-                <p className="text-sm text-surface-600 mt-1">{evt.reasonGiven}</p>
-                {evt.jobRolesCreated && (
-                  <p className="text-xs text-surface-500 mt-2">
-                    <strong>New roles:</strong> {evt.jobRolesCreated}
-                  </p>
-                )}
-                {evt.context && (
-                  <p className="text-xs text-surface-400 mt-1 italic">{evt.context}</p>
-                )}
-              </div>
-            ))}
+            <p className="text-2xl font-bold text-surface-900">
+              {formatNumber(creationEvents.reduce((sum, e) => sum + (e.jobsCreated ?? 0), 0))}
+            </p>
+            <p className="text-sm text-surface-500 mt-1">
+              new AI-driven roles announced across {creationEvents.length} companies
+            </p>
+            <div className="mt-3 space-y-1.5">
+              {creationEvents.map((evt) => (
+                <div key={evt.id} className="flex items-center justify-between text-sm">
+                  <span className="text-surface-700">{evt.companyName}</span>
+                  <div className="flex items-center gap-2">
+                    <span className="text-surface-500">
+                      {evt.jobsCreated ? formatNumber(evt.jobsCreated) : 'Undisclosed'}
+                    </span>
+                    <span className="text-xs px-1.5 py-0.5 rounded-full bg-success-100 text-success-700">
+                      Hiring
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
           </>
         ) : (
           <p className="text-sm text-surface-400 mt-2">No AI job creation events tracked yet.</p>
