@@ -60,6 +60,11 @@ VERIFIED_JSON_DIR = os.path.join(REPO_ROOT, "public", "data", "verified")
 ANTHROPIC_MODEL = os.environ.get("RESEARCH_MODEL", "claude-fable-5")
 WEB_SEARCH_TOOL_TYPE = os.environ.get("WEB_SEARCH_TOOL_TYPE",
                                       "web_search_20260209")
+# Per-category spend caps, tunable via env without code changes. The
+# defaults bound a 4-category run to <=48 web searches and <=40k output
+# tokens total; every run logs actual usage per category.
+WEB_SEARCH_MAX_USES = int(os.environ.get("WEB_SEARCH_MAX_USES", "12"))
+MAX_OUTPUT_TOKENS = int(os.environ.get("MAX_OUTPUT_TOKENS", "10000"))
 
 # Staging tabs by gid (brief §5) inside SHEET_STAGING_ID. The AI Advances
 # tab is created by sheet_prep.py and referenced by title.
@@ -476,15 +481,25 @@ the block."""
     print(f"  [{category}] starting research sweep...", flush=True)
     with client.messages.stream(
         model=ANTHROPIC_MODEL,
-        max_tokens=16000,
+        max_tokens=MAX_OUTPUT_TOKENS,
         tools=[{"type": WEB_SEARCH_TOOL_TYPE, "name": "web_search",
-                "max_uses": 25}],
+                "max_uses": WEB_SEARCH_MAX_USES}],
         messages=[{"role": "user", "content": prompt}],
     ) as stream:
         response = stream.get_final_message()
     elapsed = (datetime.datetime.now() - start_time).total_seconds()
-    print(f"  [{category}] sweep finished in {elapsed:.0f}s "
-          f"(stop_reason={response.stop_reason})", flush=True)
+    usage = getattr(response, "usage", None)
+    if usage is not None:
+        searches = getattr(
+            getattr(usage, "server_tool_use", None), "web_search_requests", "?")
+        print(f"  [{category}] sweep finished in {elapsed:.0f}s "
+              f"(stop_reason={response.stop_reason}, "
+              f"input_tokens={usage.input_tokens}, "
+              f"output_tokens={usage.output_tokens}, "
+              f"web_searches={searches})", flush=True)
+    else:
+        print(f"  [{category}] sweep finished in {elapsed:.0f}s "
+              f"(stop_reason={response.stop_reason})", flush=True)
 
     # Claude Fable 5's safety classifiers can decline a request with a
     # normal HTTP 200 - check stop_reason before reading content.
