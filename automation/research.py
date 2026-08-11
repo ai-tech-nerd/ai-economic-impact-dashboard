@@ -69,6 +69,7 @@ CONTROL_COLUMNS = ["Confidence", "Attribution", "Quote",
 CATEGORIES = {
     "losses": {
         "gid": 1938860059,
+        "tab_aliases": ["AI Job Losses Tracker", "AI Job Losses"],
         "tab_label": "AI Job Losses Tracker",
         # `Article` stays blank (legacy manual column, brief §6).
         "base_columns": ["Date", "Company", "Number of Jobs",
@@ -78,6 +79,7 @@ CATEGORIES = {
     },
     "planned": {
         "gid": 451583307,
+        "tab_aliases": ["Planned/Announced", "Planned_Announced"],
         "tab_label": "Planned/Announced",
         "base_columns": ["Date Announced", "Company",
                          "Jobs Announced/Planned", "Jobs Already Cut",
@@ -87,6 +89,7 @@ CATEGORIES = {
     },
     "created": {
         "gid": 1283716345,
+        "tab_aliases": ["AI Job Creation"],
         "tab_label": "AI Job Creation",
         "base_columns": ["Date", "Company", "Number of Jobs",
                          "Job Roles Created", "Context", "Source Link"],
@@ -711,14 +714,15 @@ def main():
         if service is not None:
             staging_id = os.environ["SHEET_STAGING_ID"]
             tracker_id = os.environ["SHEET_TRACKER_ID"]
-            # Resolve by title first (gids change when tabs are
+            # Resolve by title/alias first (gids change when tabs are
             # recreated); fall back to the brief's historical gid.
-            if config["tab_label"] in staging_tabs.values():
-                title = config["tab_label"]
-            elif config["gid"] is not None:
+            title = None
+            for alias in config.get("tab_aliases", [config["tab_label"]]):
+                if alias in staging_tabs.values():
+                    title = alias
+                    break
+            if title is None and config["gid"] is not None:
                 title = staging_tabs.get(config["gid"])
-            else:
-                title = None
             if title:
                 existing_keys |= keys_from_rows(
                     read_tab_rows(service, staging_id, title))
@@ -745,10 +749,14 @@ def main():
                 "gate_failed": stats["gate_failed"],
             }
         elif rows:
-            append_title = (config["tab_label"]
-                            if config["tab_label"] in staging_tabs.values()
-                            else staging_tabs.get(config["gid"],
-                                                  config["tab_label"]))
+            append_title = None
+            for alias in config.get("tab_aliases", [config["tab_label"]]):
+                if alias in staging_tabs.values():
+                    append_title = alias
+                    break
+            if append_title is None:
+                append_title = staging_tabs.get(config["gid"],
+                                                config["tab_label"])
             append_rows(service, os.environ["SHEET_STAGING_ID"],
                         append_title, rows)
 

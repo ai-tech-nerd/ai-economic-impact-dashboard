@@ -44,6 +44,7 @@ import sys
 STAGING_TABS = {
     1938860059: {
         "label": "AI Job Losses Tracker",
+        "aliases": ["AI Job Losses Tracker", "AI Job Losses"],
         "base_columns": [
             "Date", "Company", "Number of Jobs", "Job Position/Category",
             "Reason Given", "Source Link", "Article",
@@ -51,6 +52,7 @@ STAGING_TABS = {
     },
     451583307: {
         "label": "Planned/Announced",
+        "aliases": ["Planned/Announced", "Planned_Announced"],
         "base_columns": [
             "Date Announced", "Company", "Jobs Announced/Planned",
             "Jobs Already Cut", "Status", "Job Position/Category",
@@ -59,6 +61,7 @@ STAGING_TABS = {
     },
     1283716345: {
         "label": "AI Job Creation",
+        "aliases": ["AI Job Creation"],
         "base_columns": [
             "Date", "Company", "Number of Jobs", "Job Roles Created",
             "Context", "Source Link",
@@ -234,10 +237,13 @@ def prepare_existing_tab(service, spreadsheet_id, gid, tab_config, batch_request
     historical gid kept as a fallback.
     """
     by_gid, by_title = fetch_spreadsheet_meta(service, spreadsheet_id)
-    if tab_config["label"] in by_title:
-        title = tab_config["label"]
-        gid = by_title[title]
-    else:
+    title = None
+    for alias in tab_config.get("aliases", [tab_config["label"]]):
+        if alias in by_title:
+            title = alias
+            gid = by_title[alias]
+            break
+    if title is None:
         title = by_gid.get(gid)
     if title is None:
         print(f"  WARNING: no tab titled '{tab_config['label']}' "
