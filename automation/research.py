@@ -711,11 +711,14 @@ def main():
         if service is not None:
             staging_id = os.environ["SHEET_STAGING_ID"]
             tracker_id = os.environ["SHEET_TRACKER_ID"]
-            if config["gid"] is not None:
+            # Resolve by title first (gids change when tabs are
+            # recreated); fall back to the brief's historical gid.
+            if config["tab_label"] in staging_tabs.values():
+                title = config["tab_label"]
+            elif config["gid"] is not None:
                 title = staging_tabs.get(config["gid"])
             else:
-                title = config["tab_label"] \
-                    if config["tab_label"] in staging_tabs.values() else None
+                title = None
             if title:
                 existing_keys |= keys_from_rows(
                     read_tab_rows(service, staging_id, title))
@@ -742,10 +745,12 @@ def main():
                 "gate_failed": stats["gate_failed"],
             }
         elif rows:
+            append_title = (config["tab_label"]
+                            if config["tab_label"] in staging_tabs.values()
+                            else staging_tabs.get(config["gid"],
+                                                  config["tab_label"]))
             append_rows(service, os.environ["SHEET_STAGING_ID"],
-                        staging_tabs.get(config["gid"], config["tab_label"])
-                        if config["gid"] is not None else config["tab_label"],
-                        rows)
+                        append_title, rows)
 
     # --- Digest -------------------------------------------------------
     staging_link = None

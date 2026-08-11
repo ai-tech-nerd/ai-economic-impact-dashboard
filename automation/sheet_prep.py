@@ -227,12 +227,21 @@ def print_dry_run_plan():
 # ============================================================
 
 def prepare_existing_tab(service, spreadsheet_id, gid, tab_config, batch_requests):
-    """Ensure control columns + Approval validation on one existing tab."""
-    by_gid, _ = fetch_spreadsheet_meta(service, spreadsheet_id)
-    title = by_gid.get(gid)
+    """Ensure control columns + Approval validation on one existing tab.
+
+    Tabs are resolved by TITLE first (gids change if a tab is ever
+    recreated, which happened to the staging sheet), with the brief's
+    historical gid kept as a fallback.
+    """
+    by_gid, by_title = fetch_spreadsheet_meta(service, spreadsheet_id)
+    if tab_config["label"] in by_title:
+        title = tab_config["label"]
+        gid = by_title[title]
+    else:
+        title = by_gid.get(gid)
     if title is None:
-        print(f"  WARNING: no tab with gid={gid} "
-              f"({tab_config['label']}) - skipped.")
+        print(f"  WARNING: no tab titled '{tab_config['label']}' "
+              f"and no tab with gid={gid} - skipped.")
         return
 
     header = read_header(service, spreadsheet_id, title)
