@@ -1,0 +1,85 @@
+# ============================================================
+# AI Shift Dashboard - Research Query Bank
+# ============================================================
+#
+# Seed set: docs/ai-economic-impact-search-terms.md (the owner's terms),
+# plus additions that proved out during the August 2026 backfill
+# (see automation-implementation-plan §4.1).
+#
+# TOKEN CONVENTION:
+#   {Y}     -> replaced at runtime with the current year (e.g. "2026")
+#   {month} -> replaced at runtime with the current month name (e.g. "August")
+#
+# Every query runs with a recency window (default 7 days; 30 on
+# catch-up runs) enforced by the research prompt, so undated queries
+# still only surface recent events.
+#
+# Edit freely - no code changes needed. research.py loads this file
+# and logs which query surfaced each candidate so dead phrases can
+# be pruned over time.
+# ============================================================
+
+# Job losses already executed (staging tab: AI Job Losses Tracker)
+losses:
+  # Owner's seed terms
+  - '"laid off" AI OR "artificial intelligence"'
+  - '"layoffs" AI OR "artificial intelligence"'
+  - '"jobs cut" AI OR "artificial intelligence"'
+  - '"AI-driven layoffs"'
+  - '"restructuring workforce" AI OR "artificial intelligence"'
+  - '"replacing roles" AI OR "artificial intelligence"'
+  - '"AI replacing workers" {Y}'
+  - '"replacing workers" AI {Y}'
+  - '"company eliminated jobs" AI {Y}'
+  - '"eliminating positions" AI {Y}'
+  - 'AI job loss'
+  # Learned additions (surfaced events the generic terms missed)
+  - 'layoffs "cites AI"'
+  - 'earnings call layoffs "artificial intelligence"'
+  - 'restructuring 8-K "artificial intelligence"'   # SEC filings - strongest attribution class
+  - 'CEO memo layoffs AI'
+  - '"AI-native" restructuring layoffs'
+  - 'Challenger Gray Christmas monthly report AI job cuts'  # discovery index - follow up each named company
+
+# Planned / announced reductions and hiring freezes (staging tab: Planned/Announced)
+planned:
+  # Owner's seed terms
+  - '"hiring freeze" AI OR "artificial intelligence"'
+  - '"paused hiring" AI OR "artificial intelligence"'
+  # Learned additions
+  - '"will result in" jobs AI automation'           # forward-looking exec statements (Wells Fargo pattern)
+  - 'announced layoffs AI "over the next"'
+  - 'hiring "only AI roles"'
+
+# AI-driven job creation (staging tab: AI Job Creation)
+created:
+  # Owner's seed terms
+  - '"job creation" AI OR "artificial intelligence"'
+  - '"AI Hiring"'
+  - '"companies hiring AI" {Y}'
+  - '"AI jobs created" {Y}'
+  - '"AI job creation" {Y}'
+  - '"AI hiring" {Y}'
+  # Learned additions
+  - 'AI data center jobs announced'                 # support category
+  - '"new roles" "AI-native" hiring'
+  - 'chip fab AI jobs {Y}'
+
+# AI advances / milestones (staging tab: AI Advances) - owner's 2 terms
+# split per tracked type, plus per-lab sweeps
+advances:
+  - 'AI breakthrough announced'
+  - 'AI model release {Y}'
+  - 'AI product launch'
+  - 'AI regulation {month} {Y}'
+  - 'AI acquisition announced'
+  - 'AI funding round billion'
+  # Per-lab sweeps
+  - 'OpenAI announcement'
+  - 'Anthropic announcement'
+  - 'Google DeepMind announcement'
+  - 'Meta AI announcement'
+  - 'xAI announcement'
+  - 'Mistral AI announcement'
+  - 'DeepSeek announcement'
+  - 'Nvidia AI announcement'

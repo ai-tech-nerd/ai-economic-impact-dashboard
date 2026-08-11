@@ -1,0 +1,6 @@
+# Pinned dependencies for the AI Shift automation scripts (Python 3.11+)
+google-api-python-client==2.198.0
+google-auth==2.56.3
+anthropic==0.121.0
+pyyaml==6.0.3
+requests==2.34.2

@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [Unreleased] - 2026-08-11 — Official docs + automation build (steps 1–2)
+
+### Added
+- **docs/PRD.md** (v1.0) — official product requirements: mission, audience, the five editorial principles (attribution rule, excerpt-only provenance, hedged numbers, adoption-vs-support creation categories, human approval gate), feature/data inventory, pipeline-as-product
+- **docs/PROJECT_ARCHITECTURE.md** (v1.0) — combined architecture + technical reference: stack, routing map, all dataset schemas, source-archive spec, deploy, automation design, 14 documented gotchas, VERIFY appendix
+- **docs/automation-implementation-plan.md** (v1.0) — approved GitHub Actions automation plan (3 workflows, staging approval dropdowns, query bank from docs/ai-economic-impact-search-terms.md)
+- **automation/** — Workflow A build (schedule OFF): queries.yml query bank, sheet_prep.py (control columns + dropdowns + AI Advances tab, idempotent), research.py (research → structuring → attribution gate → dedup → staging → digest; --dry-run needs only ANTHROPIC_API_KEY), 29 offline unit tests (all passing), .github/workflows/research.yml (workflow_dispatch only; cron commented out pending validation)
+- automation/README.md carries the owner setup checklist and an explicit verified-vs-UNTESTED status section (live API/Sheets/SMTP paths untested until credentials exist)
+
 ## [Unreleased] - 2026-08-11 — June–August research backfill + AI Advances catch-up
 
 ### Added
