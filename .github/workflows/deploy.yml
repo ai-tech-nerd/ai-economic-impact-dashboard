@@ -27,7 +27,15 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - run: npm run build
-      - run: cp -r data/verified dist/data/verified
+      # Per-route HTML copies so each main route serves HTTP 200 directly
+      # (GitHub Pages resolves /predictions from predictions.html). Without
+      # these, routes are served via 404.html with a 404 status, which
+      # Google will not index. The 404.html fallback still covers deep
+      # links like /companies/:id.
+      - run: |
+          for r in predictions timeline ai-advances companies learn; do
+            cp dist/index.html "dist/$r.html"
+          done
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
