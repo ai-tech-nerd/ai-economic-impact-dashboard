@@ -468,13 +468,23 @@ Output: a single JSON array of candidate objects (an empty array [] if
 nothing qualifies), inside a ```json fenced block, and nothing else after
 the block."""
 
-    response = client.messages.create(
+    # Streaming is required in practice: a non-streaming request with a
+    # large max_tokens plus up to 25 web searches routinely exceeds the
+    # SDK's HTTP timeout, which then retries silently - the 2026-08-11
+    # dry run burned the workflow's whole 45-minute budget that way.
+    start_time = datetime.datetime.now()
+    print(f"  [{category}] starting research sweep...", flush=True)
+    with client.messages.stream(
         model=ANTHROPIC_MODEL,
         max_tokens=16000,
         tools=[{"type": WEB_SEARCH_TOOL_TYPE, "name": "web_search",
                 "max_uses": 25}],
         messages=[{"role": "user", "content": prompt}],
-    )
+    ) as stream:
+        response = stream.get_final_message()
+    elapsed = (datetime.datetime.now() - start_time).total_seconds()
+    print(f"  [{category}] sweep finished in {elapsed:.0f}s "
+          f"(stop_reason={response.stop_reason})", flush=True)
 
     # Claude Fable 5's safety classifiers can decline a request with a
     # normal HTTP 200 - check stop_reason before reading content.
