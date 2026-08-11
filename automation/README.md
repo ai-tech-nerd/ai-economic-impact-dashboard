@@ -9,7 +9,6 @@ live dashboard data.
 tracker spreadsheet IDs are referenced exclusively through the
 `SHEET_STAGING_ID` / `SHEET_TRACKER_ID` env vars / GitHub Secrets.
 
-> **Note (2026-08-11):** `workflows/research.yml` lives here temporarily because the repo's git credential lacks the `workflow` OAuth scope. After running `gh auth refresh -h github.com -s workflow`, move it: `git mv automation/workflows/research.yml .github/workflows/research.yml`.
 
 ## Contents
 
