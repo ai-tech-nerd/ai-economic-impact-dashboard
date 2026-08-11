@@ -1,0 +1,44 @@
+# One-shot (idempotent) staging-sheet preparation: control columns,
+# Approval dropdowns, and the AI Advances tab. Manual dispatch only.
+name: Staging Sheet Prep
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run (print planned changes, no Sheets writes)"
+        type: boolean
+        required: false
+        default: true
+
+permissions:
+  contents: read
+
+jobs:
+  sheet-prep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: automation/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r automation/requirements.txt
+
+      - name: Run sheet prep
+        env:
+          GOOGLE_SA_KEY: ${{ secrets.GOOGLE_SA_KEY }}
+          SHEET_STAGING_ID: ${{ secrets.SHEET_STAGING_ID }}
+        run: |
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            python3 automation/sheet_prep.py --dry-run
+          else
+            python3 automation/sheet_prep.py
+          fi
