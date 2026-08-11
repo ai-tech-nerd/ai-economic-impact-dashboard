@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { PageLayout } from '../components/layout/PageLayout';
+import { Seo } from '../components/shared/Seo';
 import { formatDate } from '../utils/formatters';
 import type { AIMilestone } from '../types';
 
@@ -155,6 +156,11 @@ export function AITimelinePage({ milestones }: AITimelinePageProps) {
       subtitle="Major AI milestones over time"
       embedPath="/ai-advances"
     >
+      <Seo
+        title="AI Advances Timeline — AI Breakthroughs, Model Releases & News"
+        description="Timeline of major AI advances: model releases, breakthroughs, product launches, regulation, partnerships, and acquisitions — from ChatGPT's launch to the latest frontier models, newest first."
+        path="/ai-advances"
+      />
       {/* Type filter — pill buttons */}
       <div className="flex flex-wrap gap-2 mb-4">
         <button

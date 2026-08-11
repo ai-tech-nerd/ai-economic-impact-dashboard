@@ -27,15 +27,11 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - run: npm run build
-      # Per-route HTML copies so each main route serves HTTP 200 directly
-      # (GitHub Pages resolves /predictions from predictions.html). Without
-      # these, routes are served via 404.html with a 404 status, which
-      # Google will not index. The 404.html fallback still covers deep
-      # links like /companies/:id.
-      - run: |
-          for r in predictions timeline ai-advances companies learn; do
-            cp dist/index.html "dist/$r.html"
-          done
+      # Per-route HTML with static SEO content injected from the verified
+      # JSON (real content in the raw source for crawlers; React replaces
+      # it on mount). Also gives each main route an HTTP 200 via GitHub
+      # Pages' extensionless resolution. 404.html covers deep links.
+      - run: node scripts/prerender-seo.mjs
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
