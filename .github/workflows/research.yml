@@ -17,6 +17,10 @@ on:
         type: boolean
         required: false
         default: false
+      categories:
+        description: "Categories to sweep (comma-separated)"
+        required: false
+        default: "losses,planned,created"
   # Enable at build-order step 3 (every 2 days, 06:00 America/Chicago = 11:00 UTC):
   # schedule:
   #   - cron: "0 11 */2 * *"
@@ -56,10 +60,11 @@ jobs:
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
         run: |
           WINDOW="${{ github.event.inputs.window || '7' }}"
+          CATS="${{ github.event.inputs.categories || 'losses,planned,created' }}"
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
-            python3 automation/research.py --dry-run --window "$WINDOW"
+            python3 automation/research.py --dry-run --window "$WINDOW" --categories "$CATS"
           else
-            python3 automation/research.py --window "$WINDOW"
+            python3 automation/research.py --window "$WINDOW" --categories "$CATS"
           fi
 
       - name: Upload dry-run output (if any)

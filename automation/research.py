@@ -5,7 +5,8 @@ research.py - Workflow A: Research to Staging (plan §4).
 Pipeline per category (losses, planned, created, advances):
 
   1. Load the query bank from automation/queries.yml.
-  2. Run research via the Anthropic API (Claude Fable 5 + web search).
+  2. Run research via the Anthropic API (Sonnet 5 + web search;
+     RESEARCH_MODEL env-overridable).
   3. Structure candidates to the staging tab schemas (brief §6 rules:
      ISO dates, hedged numbers preserved verbatim, 1-3 sentence reason
      with a direct quote, primary source URL).
@@ -57,13 +58,17 @@ VERIFIED_JSON_DIR = os.path.join(REPO_ROOT, "public", "data", "verified")
 
 # Model per the approved plan. Web search tool type is overridable via
 # env in case the account's tool availability differs (UNTESTED live).
-ANTHROPIC_MODEL = os.environ.get("RESEARCH_MODEL", "claude-fable-5")
+# Sonnet 5 by default: research sweeps don't need the premium tier, and the
+# cost difference is large (Sonnet $3/$15 per MTok vs Fable $10/$50). The
+# 2026-08-11 dry runs on Fable burned ~$36 across two runs; Sonnet with the
+# caps below bounds a full run to roughly $1-3. Override via RESEARCH_MODEL.
+ANTHROPIC_MODEL = os.environ.get("RESEARCH_MODEL", "claude-sonnet-5")
 WEB_SEARCH_TOOL_TYPE = os.environ.get("WEB_SEARCH_TOOL_TYPE",
                                       "web_search_20260209")
 # Per-category spend caps, tunable via env without code changes. The
 # defaults bound a 4-category run to <=48 web searches and <=40k output
 # tokens total; every run logs actual usage per category.
-WEB_SEARCH_MAX_USES = int(os.environ.get("WEB_SEARCH_MAX_USES", "12"))
+WEB_SEARCH_MAX_USES = int(os.environ.get("WEB_SEARCH_MAX_USES", "10"))
 MAX_OUTPUT_TOKENS = int(os.environ.get("MAX_OUTPUT_TOKENS", "10000"))
 
 # Staging tabs by gid (brief §5) inside SHEET_STAGING_ID. The AI Advances
@@ -693,6 +698,11 @@ def main():
     parser = argparse.ArgumentParser(
         description="Workflow A: research AI workforce events into the "
                     "staging sheet.")
+    parser.add_argument("--categories", default="losses,planned,created",
+                        help="Comma-separated categories to sweep this run "
+                             "(default: the three job categories; the "
+                             "'advances' sweep runs on its own weekly "
+                             "schedule - plan Workflow C)")
     parser.add_argument("--window", type=int, default=7,
                         help="Recency window in days (default 7; use 30 "
                              "for catch-up runs).")
@@ -726,7 +736,15 @@ def main():
     per_category_stats = {}
     all_dry_run_candidates = {}
 
+    selected = [c.strip() for c in args.categories.split(",") if c.strip()]
+    unknown = [c for c in selected if c not in CATEGORIES]
+    if unknown:
+        sys.exit(f"ERROR: unknown categories {unknown}; "
+                 f"valid: {sorted(CATEGORIES)}")
+
     for category, config in CATEGORIES.items():
+        if category not in selected:
+            continue
         print(f"Category '{category}': researching "
               f"(window {args.window} days)...")
         stats = {"new": [], "skipped": 0, "gate_failed": 0,
