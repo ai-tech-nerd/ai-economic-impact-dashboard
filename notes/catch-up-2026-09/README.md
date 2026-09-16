@@ -46,6 +46,12 @@ Owner's GitHub account was flagged; project offline ~1 month (2026-08-11 → 202
 - Sheet sync: pushed via the new `tracker_append.py` utility + Tracker Append workflow (service account), replacing manual pasting. Payload: `automation/payloads/tracker-2026-09-15.json`.
 - Query bank broadened (10-Q/10-K, expanded-layoff-plan, WARN, "AI efficiencies", "AI-native" phrasings) after owner flagged coverage breadth; gap-sweep run over the same window.
 
+## Sheet sync executed (2026-09-16)
+Live tracker updated via Tracker Append workflow (runs 35108015349 dry → 35108122732 live): losses 95 → 98 rows, creation 14 → 16 rows, Oracle E70 + PayPal H16 edits applied. The tracker has NO "AI Advances" tab (milestones live only in the dashboard JSON + staging sheet) — the utility skipped those 18 rows by design. CAUTION: tracker_append.py has no dedup; re-running a payload live duplicates its rows.
+
+## Gap-sweep (2026-09-16, owner coverage-breadth request)
+33 broader searches over the same window: ZERO new qualifying candidates — the catch-up was complete (owner's Oracle example = evt-069 update, already recorded). Documented near-misses: Wonder/Grubhub (tracker "Explicit AI" label with no AI language in source — jobloss.ai mislabel trap), IBM Rocket Center (contract non-renewal), Samsung NJ WARN (relocation, disputed framing), Zalando (logistics consolidation), Verizon Sep WARN (explicit AI denial again), C3.ai (pre-window cumulative), Acrisure/Sprout Social/HP (pre-window announcements). Systematic trap confirmed: 2026 aggregator listicles recirculate 2023-24 AI-layoff figures (IBM 7,800, SAP 8,000, BT 10,000) as if new — always trace to the original dated announcement.
+
 ## Next Steps
 1. Owner audits dry-run artifact (`dry-run-candidates`) vs this session's verified entries → then live run → enable weekly cron (T-202)
 2. Standing owner items: sitemap submission (T-205), embed check (T-206), stale root data/verified cleanup (T-207)

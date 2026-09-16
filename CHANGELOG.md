@@ -20,6 +20,11 @@ All notable changes to this project will be documented in this file.
 - **Workflow A dry run (T-201) executed via GitHub Actions** (run 35053235405, dry_run, window=35, Sonnet 5): completed successfully in ~23 min; caps held (10 searches/category; ~2.50M input / 64K output tokens across 3 sweeps); gate failed 3 candidates, staged 1 (Micron Research Labs $10B, no headcount — ⚠ flagged, awaiting owner audit in the dry-run-candidates artifact).
 - Sheet paste rows for all 4 tabs: notes/catch-up-2026-09/sheet-paste-rows.md.
 
+### Added — 2026-09-16 follow-up
+- **automation/tracker_append.py + Tracker Append workflow**: reviewed, committed payloads pushed to the live tracker via the service account (no more manual pasting). Sep rows + Oracle/PayPal edits applied and verified (losses 95→98, creation 14→16). No dedup — never re-run a payload live.
+- **queries.yml broadened** (10-Q/10-K, expanded-layoff-plan, WARN, "AI efficiencies", "AI-native") after owner coverage request; a 33-search gap-sweep over the window found zero missed events (owner's Oracle example was already recorded as the evt-069 update).
+- Owner ruling: Micron Research Labs waits for a company-stated headcount.
+
 ## [Unreleased] - 2026-08-11 — SEO/indexing overhaul, predictions refresh, AI Advances improvements
 
 ### Changed — Google indexing (BREAKING-ish: router change)
