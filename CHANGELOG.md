@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file.
 
+## [Unreleased] - 2026-09-15 — September catch-up (post GitHub account flag) + Workflow A dry run
+
+### Added
+- **3 displacement events** (evt-097–099): Anaconda (2026-08-14, ~14% of roles, number undisclosed — counted as 0; CEO David DeSanto: "the efficiencies AI provides us are real"), Pentera (2026-08-17, 60; company statement on AI-native transformation), PayPal (2026-08-31, 251 San Jose WARN; AI attribution via 10-Q — public statement omits AI). Total now 329,306 jobs / 98 events / 82 companies.
+- **2 job-creation entries** (create-015–016, both "support"): SB Energy/OpenAI/NVIDIA PORTS-Pike Ohio (35,000 construction + 2,500 ops; figures originate in the March DOE/SB Energy release — single entry to avoid double counting) and Google Finland €13B (37,000+ construction-phase). Creation total 118,561.
+- **18 AI milestones** (ms-281–298): AI Advances now through 2026-09-15 (GPT-6 Astra, Claude Fable/Mythos 5.1, Gemini 3.8 Flash/Cyber + Live, Grok 4.6, DeepSeek V4-Pro GA + V4.1 Flash, Qwen3.8-Flash, Muse Spark 1.3, Sakana Fugu Max/Ultra v2, Stripe–OpenRouter, Nvidia–Hugging Face, Nvidia $500B financing platforms, Mistral €3B, NARA records guidance, California child AI-safety package, Amodei "Pace the Frontier"). 388 total.
+- **5 archive pages** (excerpt format, screenshots via system-Chrome playwright, zero manual captures); manifest 126 → 131.
+
+### Changed
+- evt-069 Oracle: description update for the 2026-09-14 second wave — $700M restructuring expansion to ~$2.8B per Q1 FY27 10-Q; press-estimated 7,000–10,000 roles NOT company-confirmed, jobsCut unchanged.
+- plan-015 PayPal: execution update (251 WARN recorded as evt-099).
+- meta.json dataLastUpdated → 2026-09-15.
+
+### Process
+- Same two-stage gate as August: 3 research agents → 2 adversarial verification agents. Struck: Hitachi Energy Mississippi (multi-driver grid investment, not AI-attributed) and 7 milestone candidates (incl. a premature/fabricated AlphaFold Phase-I claim and three out-of-window items). Oracle March-wave exec quotes were correctly NOT re-attributed to the September wave.
+- **Workflow A dry run (T-201) executed via GitHub Actions** (run 35053235405, dry_run, window=35, Sonnet 5): completed successfully in ~23 min; caps held (10 searches/category; ~2.50M input / 64K output tokens across 3 sweeps); gate failed 3 candidates, staged 1 (Micron Research Labs $10B, no headcount — ⚠ flagged, awaiting owner audit in the dry-run-candidates artifact).
+- Sheet paste rows for all 4 tabs: notes/catch-up-2026-09/sheet-paste-rows.md.
+
 ## [Unreleased] - 2026-08-11 — SEO/indexing overhaul, predictions refresh, AI Advances improvements
 
 ### Changed — Google indexing (BREAKING-ish: router change)

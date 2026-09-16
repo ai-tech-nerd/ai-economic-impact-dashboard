@@ -6802,5 +6802,381 @@
         "date": "2026-08-08"
       }
     ]
+  },
+  {
+    "id": "ms-281",
+    "company": "nvidia",
+    "date": "2026-08-10",
+    "type": "partnership",
+    "name": "NVIDIA and Wall Street Giants Form $500B AI Compute Financing Platforms",
+    "description": "NVIDIA partnered with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs, and KKR through memoranda of understanding to establish AI compute infrastructure financing platforms aimed at mobilizing over $500 billion in third-party capital.",
+    "category": "funding",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital",
+        "title": "NVIDIA Partners with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to Establish AI Compute Infrastructure Financing Platforms to Mobilize Over $500 Billion of Third-Party Capital",
+        "publisher": "NVIDIA Newsroom",
+        "date": "2026-08-10"
+      }
+    ]
+  },
+  {
+    "id": "ms-282",
+    "company": "xai",
+    "date": "2026-08-12",
+    "type": "model-release",
+    "name": "xAI Releases Grok 4.6",
+    "description": "xAI released Grok 4.6 with a 500K-token context window. API pricing is $2/$6 per million input/output tokens, doubling for content above 200K tokens.",
+    "category": "llm",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://llm-stats.com/blog/research/grok-4.6-launch",
+        "title": "Grok 4.6 Launch",
+        "publisher": "LLM Stats",
+        "date": "2026-08-12"
+      }
+    ],
+    "publicRelease": true
+  },
+  {
+    "id": "ms-283",
+    "company": "deepseek",
+    "date": "2026-08-13",
+    "type": "model-release",
+    "name": "DeepSeek V4-Pro Reaches General Availability",
+    "description": "DeepSeek's V4-Pro-0813 exited roughly four months of preview to reach general availability, with a focus on agentic tool use and code execution. It supports a 1M-token context window and up to 384K max output tokens.",
+    "category": "llm",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://api-docs.deepseek.com/news/news260813/",
+        "title": "DeepSeek V4-Pro-0813 Release",
+        "publisher": "DeepSeek API Docs",
+        "date": "2026-08-13"
+      }
+    ],
+    "publicRelease": true
+  },
+  {
+    "id": "ms-284",
+    "company": "stripe",
+    "date": "2026-08-16",
+    "type": "acquisition",
+    "name": "Stripe Acquires AI Gateway OpenRouter for Over $7B",
+    "description": "Stripe agreed to acquire OpenRouter, an AI model routing and API gateway startup, in a deal valued at more than $7 billion.",
+    "category": "developer-tools",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.bloomberg.com/news/articles/2026-08-16/stripe-nears-deal-to-buy-ai-firm-openrouter-for-over-7-billion",
+        "title": "Stripe Nears Deal to Buy AI Firm OpenRouter for Over $7 Billion",
+        "publisher": "Bloomberg",
+        "date": "2026-08-16"
+      },
+      {
+        "url": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/",
+        "title": "Stripe Will Reportedly Acquire AI Gateway Startup OpenRouter for $7B",
+        "publisher": "TechCrunch",
+        "date": "2026-08-16"
+      }
+    ]
+  },
+  {
+    "id": "ms-285",
+    "company": "us",
+    "date": "2026-08-21",
+    "type": "regulation",
+    "name": "US National Archives Issues Guidance on AI and Federal Records",
+    "description": "NARA memo AC 11.2026 clarified that AI use alone does not create a federal record, but that AI inputs, outputs, and audit trails can be records subject to disposal only under approved schedules when used in agency decision-making.",
+    "category": "government",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://www.archives.gov/records-mgmt/memos/ac-11-2026",
+        "title": "AC 11.2026: Guidance on AI and Federal Records",
+        "publisher": "National Archives",
+        "date": "2026-08-21"
+      },
+      {
+        "url": "https://www.govexec.com/technology/2026/08/national-archives-says-agencies-ai-use-does-not-automatically-create-federal-records/415714/",
+        "title": "National Archives Says Agencies' AI Use Does Not Automatically Create Federal Records",
+        "publisher": "Government Executive",
+        "date": "2026-08-21"
+      }
+    ]
+  },
+  {
+    "id": "ms-286",
+    "company": "alibaba",
+    "date": "2026-08-26",
+    "type": "model-release",
+    "name": "Alibaba Releases Qwen3.8-Flash",
+    "description": "Alibaba released Qwen3.8-Flash, a smaller, cost-effective model in the Qwen3.8 generation, following the flagship Qwen3.8-Max released August 3.",
+    "category": "llm",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://www.bloomberg.com/news/articles/2026-08-26/alibaba-releases-smaller-cost-effective-qwen-ai-model",
+        "title": "Alibaba Releases Smaller, Cost-Effective Qwen AI Model",
+        "publisher": "Bloomberg",
+        "date": "2026-08-26"
+      }
+    ],
+    "publicRelease": true
+  },
+  {
+    "id": "ms-287",
+    "company": "anthropic",
+    "date": "2026-09-01",
+    "type": "model-release",
+    "name": "Anthropic Releases Claude Fable 5.1 and Claude Mythos 5.1",
+    "description": "Anthropic released flagship coding and knowledge-work models Claude Fable 5.1 and Claude Mythos 5.1, with Mythos 5.1 offered as a trusted-access variant for approved cybersecurity and life-sciences programs. The release included a 75% price cut on cache reads and roughly a 60% reduction in cybersecurity-filter false positives.",
+    "category": "llm",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+        "title": "Claude Fable and Mythos 5.1",
+        "publisher": "Anthropic",
+        "date": "2026-09-01"
+      }
+    ],
+    "publicRelease": true
+  },
+  {
+    "id": "ms-288",
+    "company": "google",
+    "date": "2026-09-02",
+    "type": "model-release",
+    "name": "Google Releases Gemini 3.8 Flash and Flash Cyber",
+    "description": "Google released Gemini 3.8 Flash, a 1M-token-context, 64K-output multimodal model tuned for long-horizon coding and agent workloads, alongside Flash Cyber, a restricted variant limited to trusted defenders in the 'Fairwind Program.'",
+    "category": "llm",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+        "title": "Gemini 3.8 Flash and 3.8 Flash Cyber",
+        "publisher": "Google",
+        "date": "2026-09-02"
+      }
+    ],
+    "publicRelease": true
+  },
+  {
+    "id": "ms-289",
+    "company": "meta",
+    "date": "2026-09-02",
+    "type": "model-release",
+    "name": "Meta Releases Muse Spark 1.3",
+    "description": "Meta released Muse Spark 1.3, an updated version of its Meta Superintelligence Labs model line, edging the company closer to rival frontier models.",
+    "category": "llm",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://research.meta.ai/blog/introducing-muse-spark-1-3",
+        "title": "Introducing Muse Spark 1.3",
+        "publisher": "Meta AI Research",
+        "date": "2026-09-02"
+      },
+      {
+        "url": "https://www.bloomberg.com/news/articles/2026-09-02/meta-releases-more-powerful-ai-model-edging-closer-to-rivals",
+        "title": "Meta Releases More Powerful AI Model, Edging Closer to Rivals",
+        "publisher": "Bloomberg",
+        "date": "2026-09-02"
+      }
+    ],
+    "publicRelease": true
+  },
+  {
+    "id": "ms-290",
+    "company": "openai",
+    "date": "2026-09-03",
+    "type": "model-release",
+    "name": "OpenAI Releases GPT-6 Astra",
+    "description": "OpenAI released GPT-6 Astra to approved users on September 3 ahead of general availability on September 4 across ChatGPT Plus, Pro, Business, and Enterprise, the API, and AWS. The release ships with a restricted tier that rejects certain cybersecurity prompts.",
+    "category": "llm",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html",
+        "title": "OpenAI's GPT-6 Astra Ships with Cybersecurity Restrictions",
+        "publisher": "CNBC",
+        "date": "2026-09-03"
+      },
+      {
+        "url": "https://fortune.com/2026/09/03/openai-debuts-gpt-6-astra-computer-use-greg-brockman-says-start-of-agi/",
+        "title": "OpenAI Debuts GPT-6 Astra; Greg Brockman Says 'Start of AGI'",
+        "publisher": "Fortune",
+        "date": "2026-09-03"
+      }
+    ],
+    "publicRelease": true
+  },
+  {
+    "id": "ms-291",
+    "company": "nvidia",
+    "date": "2026-09-03",
+    "type": "acquisition",
+    "name": "NVIDIA Agrees to Acquire Hugging Face for ~$13B",
+    "description": "NVIDIA signed a definitive agreement to acquire Hugging Face for approximately $13 billion, confirming reports from late August that a deal was nearing.",
+    "category": "platform",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/",
+        "title": "NVIDIA to Acquire Hugging Face",
+        "publisher": "NVIDIA Blog",
+        "date": "2026-09-03"
+      },
+      {
+        "url": "https://www.cnbc.com/2026/09/03/nvidia-agrees-to-buy-hugging-face-for-almost-13-billion-ai-expansion.html",
+        "title": "NVIDIA Agrees to Buy Hugging Face for Almost $13 Billion in AI Expansion",
+        "publisher": "CNBC",
+        "date": "2026-09-03"
+      }
+    ]
+  },
+  {
+    "id": "ms-292",
+    "company": "nvidia",
+    "date": "2026-09-03",
+    "type": "company-launch",
+    "name": "NVIDIA and Microsoft Announce Local AI Agent Tooling at IFA 2026",
+    "description": "NVIDIA introduced the PAIR tool and faster local inference for running AI agents on-device, alongside Microsoft, with RTX Spark PCs supporting the tooling set to ship in October.",
+    "category": "developer-tools",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://blogs.nvidia.com/blog/local-ai-ifa-next-gen-agents-nv-pair-rtx-spark/",
+        "title": "Local AI at IFA: Next-Gen Agents, NVIDIA PAIR, and RTX Spark",
+        "publisher": "NVIDIA Blog",
+        "date": "2026-09-03"
+      }
+    ]
+  },
+  {
+    "id": "ms-293",
+    "company": "mistral",
+    "date": "2026-09-08",
+    "type": "partnership",
+    "name": "Mistral AI Raises €3B Series D Led by Samsung at >€21B Valuation",
+    "description": "Mistral AI raised a €3 billion Series D led by Samsung, the largest-ever equity round by a European tech company, with Scaleup Europe Fund/EQT and PSG Equity co-leading. The funds will support Mistral's compute buildout.",
+    "category": "funding",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://techcrunch.com/2026/09/08/mistral-raises-e3b-as-sovereign-ai-becomes-big-business/",
+        "title": "Mistral Raises €3B as Sovereign AI Becomes Big Business",
+        "publisher": "TechCrunch",
+        "date": "2026-09-08"
+      },
+      {
+        "url": "https://www.cnbc.com/2026/09/08/mistral-ai-funding-valuation-samsung.html",
+        "title": "Mistral AI Funding, Valuation, Samsung",
+        "publisher": "CNBC",
+        "date": "2026-09-08"
+      }
+    ]
+  },
+  {
+    "id": "ms-294",
+    "company": "deepseek",
+    "date": "2026-09-10",
+    "type": "model-release",
+    "name": "DeepSeek Releases V4.1 Flash",
+    "description": "DeepSeek released V4.1 Flash, a 552B-parameter mixture-of-experts causal encoder-decoder model with native multimodal support. V4 Flash was retired from the API on September 14; peak Flash pricing was cut to $0.30/$1.20 per million tokens, with cache-read costs down 57%.",
+    "category": "llm",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://deepseek.com/en/news/deepseek-v4-1-flash/",
+        "title": "DeepSeek V4.1 Flash",
+        "publisher": "DeepSeek",
+        "date": "2026-09-10"
+      }
+    ],
+    "publicRelease": true
+  },
+  {
+    "id": "ms-295",
+    "company": "us",
+    "date": "2026-09-10",
+    "type": "regulation",
+    "name": "California Enacts 13-Bill Child AI-Safety Package",
+    "description": "Governor Newsom signed a 13-bill package of child AI-safety laws, including 'Adam's Law,' which requires chatbot risk assessments before rollout, sets penalties up to $1 million per child harmed, mandates companion-chatbot safeguards, bans addictive features for users under 16, and expands the state's CSAM statute to cover AI-generated content.",
+    "category": "government",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.gov.ca.gov/2026/09/10/governor-newsom-signs-the-strongest-child-safety-chatbot-and-social-media-laws-in-the-nation/",
+        "title": "Governor Newsom Signs the Strongest Child Safety Chatbot and Social Media Laws in the Nation",
+        "publisher": "Office of the Governor of California",
+        "date": "2026-09-10"
+      },
+      {
+        "url": "https://www.washingtontimes.com/news/2026/sep/10/california-governor-signs-laws-aimed-protecting-kids-risks-social/",
+        "title": "California Governor Signs Laws Aimed at Protecting Kids from Social Media and AI Risks",
+        "publisher": "Washington Times",
+        "date": "2026-09-10"
+      }
+    ]
+  },
+  {
+    "id": "ms-296",
+    "company": "sakana-ai",
+    "date": "2026-09-11",
+    "type": "model-release",
+    "name": "Sakana AI Releases Fugu Max and Fugu Ultra v2",
+    "description": "Sakana AI released Fugu Max and Fugu Ultra v2, cheaper and stronger models aimed at multi-agent orchestration.",
+    "category": "llm",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://www.marktechpost.com/2026/09/10/sakana-ai-launches-fugu-max-and-fugu-ultra-v2-for-cheaper-stronger-multi-agent-orchestration/",
+        "title": "Sakana AI Launches Fugu Max and Fugu Ultra v2 for Cheaper, Stronger Multi-Agent Orchestration",
+        "publisher": "MarkTechPost",
+        "date": "2026-09-11"
+      }
+    ],
+    "publicRelease": true
+  },
+  {
+    "id": "ms-297",
+    "company": "anthropic",
+    "date": "2026-09-12",
+    "type": "breakthrough",
+    "name": "Dario Amodei Publishes 'We Must Pace the Frontier'; Anthropic Grants Evaluators Employee-Level Access",
+    "description": "Anthropic CEO Dario Amodei published a roughly 3,800-word essay arguing that frontier AI labs should deliberately pace capability gains, and Anthropic committed to permanent employee-level system access for third-party evaluators including METR. The essay was publicly endorsed within hours by OpenAI's Sam Altman and Elon Musk.",
+    "category": "safety",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://x.com/DarioAmodei/status/2098773920774074715",
+        "title": "We Must Pace the Frontier",
+        "publisher": "Dario Amodei on X",
+        "date": "2026-09-12"
+      }
+    ]
+  },
+  {
+    "id": "ms-298",
+    "company": "google",
+    "date": "2026-09-15",
+    "type": "model-release",
+    "name": "Google Releases Gemini 3.8 Live and Live Extended Thinking",
+    "description": "Google released Gemini 3.8 Live and Gemini 3.8 Live Extended Thinking voice models, with Extended Thinking topping the Artificial Analysis Speech-to-Speech Quality Index at 82.6%.",
+    "category": "audio",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+        "title": "Gemini 3.8 Live and Gemini 3.8 Live Extended Thinking",
+        "publisher": "Google",
+        "date": "2026-09-15"
+      }
+    ],
+    "publicRelease": true
   }
 ]

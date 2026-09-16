@@ -520,5 +520,86 @@
     "jobRolesCreated": "Semiconductor fab jobs: engineers, technicians, plant operators at an AI chip manufacturing complex",
     "jobsCreated": 3000,
     "context": "Infrastructure/manufacturing jobs \u2014 'support industries' wave. The 3,000+ figure is the company's own first-phase pledge (announced week of Aug 7, 2026 via X); no hires yet."
+  },
+  {
+    "id": "create-015",
+    "company": "sb-energy-openai-nvidia",
+    "companyName": "SB Energy / OpenAI / NVIDIA (PORTS-Pike, Ohio)",
+    "date": "2026-08-17",
+    "jobsCut": 0,
+    "jobTypes": [
+      "Construction",
+      "Data center operations"
+    ],
+    "industry": "Data Centers / Energy",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": false,
+    "description": "On 2026-08-17 NVIDIA announced it will guarantee SB Energy's PORTS-Pike Technology Campus (former Portsmouth uranium-enrichment site, Pike County, Ohio) to exclusively host NVIDIA AI compute, with OpenAI signing a 20-year lease. The 35,000-construction-jobs-through-2032 and 2,500-operating-jobs figures originate in the March 20, 2026 DOE/SB Energy announcement for the same site (upside case, from an initial 4,000 construction / 300-400 operations); the August NVIDIA/OpenAI commitment is what moves the project to its full scale. NVIDIA's own release says \"tens of thousands of Ohio jobs.\" Recorded as a single entry to avoid double counting (no earlier PORTS-Pike entry exists in this dataset).",
+    "reasonGiven": "AI compute campus explicitly for NVIDIA/OpenAI AI workloads (8 GW).",
+    "sources": [
+      {
+        "url": "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute",
+        "title": "NVIDIA Guarantees SB Energy's PORTS-Pike Technology Campus in Ohio to Exclusively Host NVIDIA AI Compute",
+        "publisher": "NVIDIA Newsroom",
+        "date": "2026-08-17"
+      },
+      {
+        "url": "https://www.axios.com/2026/08/17/openai-nvidia-ohio-data-center-sb-energy",
+        "title": "OpenAI announces massive Ohio data center with Nvidia guarantee",
+        "publisher": "Axios",
+        "date": "2026-08-17"
+      },
+      {
+        "url": "https://nam.org/nvidia-backed-project-to-create-35000-construction-jobs/",
+        "title": "NVIDIA-Backed Project to Create 35,000 Construction Jobs",
+        "publisher": "National Association of Manufacturers",
+        "date": "2026-08-26"
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "creation",
+    "creationCategory": "support",
+    "jobRolesCreated": "Data center construction jobs through 2032, plus ~2,500 long-term operating jobs at an 8 GW AI compute campus",
+    "jobsCreated": 35000,
+    "context": "Infrastructure jobs \u2014 support category. 35,000 = construction (temporary, through 2032) per DOE/SB Energy; 2,500 permanent operating jobs."
+  },
+  {
+    "id": "create-016",
+    "company": "google",
+    "companyName": "Google (Finland AI infrastructure)",
+    "date": "2026-09-09",
+    "jobsCut": 0,
+    "jobTypes": [
+      "Construction",
+      "Data center operations",
+      "Engineering"
+    ],
+    "industry": "Data Centers",
+    "region": "Europe",
+    "country": "FI",
+    "aiReplacement": false,
+    "description": "Google announced a \u20ac13 billion investment in AI infrastructure in Finland (its largest single European investment), stating verbatim: \"During the initial construction phase in 2027 and 2028, over 37,000 jobs nationwide will be supported.\" Investment explicitly tied to AI demand (Search, Maps, Gemini) plus clean energy and AI upskilling.",
+    "reasonGiven": "Company-stated AI infrastructure buildout.",
+    "sources": [
+      {
+        "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/google-ai-commitment-to-finland/",
+        "title": "Google deepens its commitment to Finland with a \u20ac13 billion investment in AI infrastructure",
+        "publisher": "Google (official blog)",
+        "date": "2026-09-09"
+      },
+      {
+        "url": "https://www.euronews.com/business/2026/09/09/google-to-invest-13bn-in-finnish-ai-data-centres-its-biggest-european-push-yet",
+        "title": "Google to invest \u20ac13bn in Finnish AI data centres, its biggest European push yet",
+        "publisher": "Euronews",
+        "date": "2026-09-09"
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "creation",
+    "creationCategory": "support",
+    "jobRolesCreated": "Construction-phase jobs in 2027-2028 across Hamina, Kajaani, Muhos and Vaala, plus 'thousands of permanent jobs, ranging from engineers to security and catering staff'",
+    "jobsCreated": 37000,
+    "context": "Infrastructure jobs \u2014 support category. 37,000 = construction-phase (temporary, 2027-28); permanent jobs 'thousands' (unquantified)."
   }
 ]

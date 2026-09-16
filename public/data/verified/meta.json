@@ -1,4 +1,4 @@
 {
   "_comment": "dataLastUpdated must be bumped by the publish automation (Workflow B) and by any manual data commit that changes files in public/data/verified/. The Dashboard page displays this date as 'Data updated'.",
-  "dataLastUpdated": "2026-08-11"
+  "dataLastUpdated": "2026-09-15"
 }
