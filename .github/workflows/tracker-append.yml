@@ -1,0 +1,51 @@
+# Utility: append a reviewed, committed payload of rows/edits to the
+# LIVE tracker sheet via the automation service account
+# (automation/tracker_append.py). Manual dispatch only - the payload
+# file is versioned in automation/payloads/ so every sheet write is
+# reviewed before it runs.
+name: Tracker Append
+
+on:
+  workflow_dispatch:
+    inputs:
+      payload:
+        description: "Path to payload JSON (in automation/payloads/)"
+        required: true
+      dry_run:
+        description: "Dry run (read-only; print planned actions)"
+        type: boolean
+        required: false
+        default: true
+
+permissions:
+  contents: read
+
+jobs:
+  append:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: automation/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r automation/requirements.txt
+
+      - name: Append to tracker
+        env:
+          PYTHONUNBUFFERED: "1"
+          GOOGLE_SA_KEY: ${{ secrets.GOOGLE_SA_KEY }}
+          SHEET_TRACKER_ID: ${{ secrets.SHEET_TRACKER_ID }}
+        run: |
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            python3 automation/tracker_append.py --payload "${{ github.event.inputs.payload }}" --dry-run
+          else
+            python3 automation/tracker_append.py --payload "${{ github.event.inputs.payload }}"
+          fi

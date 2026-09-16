@@ -1,0 +1,270 @@
+{
+ "appends": [
+  {
+   "tab_aliases": [
+    "AI Job Losses Tracker",
+    "AI Job Losses"
+   ],
+   "rows": [
+    {
+     "Date": "2026-08-14",
+     "Company": "Anaconda",
+     "Number of Jobs": "~14% of roles (number undisclosed)",
+     "Job Position/Category": "Mixed, Engineering",
+     "Reason Given": "CEO David DeSanto's blog \"Open Letter to Our Community, Customers, And Partners\" (2026-08-14) states \"Anaconda eliminated approximately 14% of roles across all functions of the company\" and attributes it partly to AI: \"the efficiencies AI provides us are real, and not just in Engineering.\" Restructuring shifts focus to AI software supply chain security and AI agents; company also cited organizational overlap (mixed rationale).",
+     "Source Link": "https://www.anaconda.com/blog/open-letter-to-our-community-customers-and-partners"
+    },
+    {
+     "Date": "2026-08-17",
+     "Company": "Pentera",
+     "Number of Jobs": "60",
+     "Job Position/Category": "Mixed",
+     "Reason Given": "Official company statement to Calcalist: \"Pentera is preparing for the rapid changes taking place in the market against the backdrop of the dramatic increase in artificial intelligence capabilities and the adoption of AI-based solutions\" and \"we are completing the transformation of the company's platform and making it AI-native in order to provide our customers with solutions adapted to the challenges of AI.\" Unattributed corporate statement to press (no named executive).",
+     "Source Link": "https://www.calcalistech.com/ctechnews/article/cri3dnoqo"
+    },
+    {
+     "Date": "2026-08-31",
+     "Company": "PayPal",
+     "Number of Jobs": "251",
+     "Job Position/Category": "Corporate",
+     "Reason Given": "PayPal's 10-Q filed 2026-08-31 describes the reorganization as \"realigning our operating structure and accelerating the adoption of Artificial Intelligence and automation across the company... expected to deliver at least $1.5 billion in gross annualized run-rate savings over the next two to three years.\" Public statement omitted AI, citing only \"simplify our global operations, strengthen execution, and position the company for long-term growth\" \u2014 attribution rests on the SEC filing.",
+     "Source Link": "https://www.staradvertiser.com/2026/09/05/breaking-news/paypal-adds-another-round-of-layoffs-as-part-of-multiyear-restructuring-plan/"
+    }
+   ]
+  },
+  {
+   "tab_aliases": [
+    "AI Job Creation"
+   ],
+   "rows": [
+    {
+     "Date": "2026-08-17",
+     "Company": "SB Energy / OpenAI / NVIDIA (PORTS-Pike, Ohio)",
+     "Number of Jobs": "35,000",
+     "Job Roles Created": "Data center construction jobs through 2032, plus ~2,500 long-term operating jobs at an 8 GW AI compute campus",
+     "Context": "Infrastructure jobs \u2014 support category. 35,000 = construction (temporary, through 2032) per DOE/SB Energy; 2,500 permanent operating jobs.",
+     "Source Link": "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute"
+    },
+    {
+     "Date": "2026-09-09",
+     "Company": "Google (Finland AI infrastructure)",
+     "Number of Jobs": "37,000",
+     "Job Roles Created": "Construction-phase jobs in 2027-2028 across Hamina, Kajaani, Muhos and Vaala, plus 'thousands of permanent jobs, ranging from engineers to security and catering staff'",
+     "Context": "Infrastructure jobs \u2014 support category. 37,000 = construction-phase (temporary, 2027-28); permanent jobs 'thousands' (unquantified).",
+     "Source Link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/google-ai-commitment-to-finland/"
+    }
+   ]
+  },
+  {
+   "tab_aliases": [
+    "AI Advances"
+   ],
+   "rows": [
+    {
+     "Date": "2026-08-10",
+     "Company": "nvidia",
+     "Type": "partnership",
+     "Name": "NVIDIA and Wall Street Giants Form $500B AI Compute Financing Platforms",
+     "Description": "NVIDIA partnered with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs, and KKR through memoranda of understanding to establish AI compute infrastructure financing platforms aimed at mobilizing over $500 billion in third-party capital.",
+     "Category": "funding",
+     "Significance": "high",
+     "Source Link": "https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital"
+    },
+    {
+     "Date": "2026-08-12",
+     "Company": "xai",
+     "Type": "model-release",
+     "Name": "xAI Releases Grok 4.6",
+     "Description": "xAI released Grok 4.6 with a 500K-token context window. API pricing is $2/$6 per million input/output tokens, doubling for content above 200K tokens.",
+     "Category": "llm",
+     "Significance": "high",
+     "Source Link": "https://llm-stats.com/blog/research/grok-4.6-launch"
+    },
+    {
+     "Date": "2026-08-13",
+     "Company": "deepseek",
+     "Type": "model-release",
+     "Name": "DeepSeek V4-Pro Reaches General Availability",
+     "Description": "DeepSeek's V4-Pro-0813 exited roughly four months of preview to reach general availability, with a focus on agentic tool use and code execution. It supports a 1M-token context window and up to 384K max output tokens.",
+     "Category": "llm",
+     "Significance": "high",
+     "Source Link": "https://api-docs.deepseek.com/news/news260813/"
+    },
+    {
+     "Date": "2026-08-16",
+     "Company": "stripe",
+     "Type": "acquisition",
+     "Name": "Stripe Acquires AI Gateway OpenRouter for Over $7B",
+     "Description": "Stripe agreed to acquire OpenRouter, an AI model routing and API gateway startup, in a deal valued at more than $7 billion.",
+     "Category": "developer-tools",
+     "Significance": "high",
+     "Source Link": "https://www.bloomberg.com/news/articles/2026-08-16/stripe-nears-deal-to-buy-ai-firm-openrouter-for-over-7-billion"
+    },
+    {
+     "Date": "2026-08-21",
+     "Company": "us",
+     "Type": "regulation",
+     "Name": "US National Archives Issues Guidance on AI and Federal Records",
+     "Description": "NARA memo AC 11.2026 clarified that AI use alone does not create a federal record, but that AI inputs, outputs, and audit trails can be records subject to disposal only under approved schedules when used in agency decision-making.",
+     "Category": "government",
+     "Significance": "medium",
+     "Source Link": "https://www.archives.gov/records-mgmt/memos/ac-11-2026"
+    },
+    {
+     "Date": "2026-08-26",
+     "Company": "alibaba",
+     "Type": "model-release",
+     "Name": "Alibaba Releases Qwen3.8-Flash",
+     "Description": "Alibaba released Qwen3.8-Flash, a smaller, cost-effective model in the Qwen3.8 generation, following the flagship Qwen3.8-Max released August 3.",
+     "Category": "llm",
+     "Significance": "medium",
+     "Source Link": "https://www.bloomberg.com/news/articles/2026-08-26/alibaba-releases-smaller-cost-effective-qwen-ai-model"
+    },
+    {
+     "Date": "2026-09-01",
+     "Company": "anthropic",
+     "Type": "model-release",
+     "Name": "Anthropic Releases Claude Fable 5.1 and Claude Mythos 5.1",
+     "Description": "Anthropic released flagship coding and knowledge-work models Claude Fable 5.1 and Claude Mythos 5.1, with Mythos 5.1 offered as a trusted-access variant for approved cybersecurity and life-sciences programs. The release included a 75% price cut on cache reads and roughly a 60% reduction in cybersecurity-filter false positives.",
+     "Category": "llm",
+     "Significance": "high",
+     "Source Link": "https://www.anthropic.com/claude-fable-and-mythos-5-1"
+    },
+    {
+     "Date": "2026-09-02",
+     "Company": "google",
+     "Type": "model-release",
+     "Name": "Google Releases Gemini 3.8 Flash and Flash Cyber",
+     "Description": "Google released Gemini 3.8 Flash, a 1M-token-context, 64K-output multimodal model tuned for long-horizon coding and agent workloads, alongside Flash Cyber, a restricted variant limited to trusted defenders in the 'Fairwind Program.'",
+     "Category": "llm",
+     "Significance": "high",
+     "Source Link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/"
+    },
+    {
+     "Date": "2026-09-02",
+     "Company": "meta",
+     "Type": "model-release",
+     "Name": "Meta Releases Muse Spark 1.3",
+     "Description": "Meta released Muse Spark 1.3, an updated version of its Meta Superintelligence Labs model line, edging the company closer to rival frontier models.",
+     "Category": "llm",
+     "Significance": "medium",
+     "Source Link": "https://research.meta.ai/blog/introducing-muse-spark-1-3"
+    },
+    {
+     "Date": "2026-09-03",
+     "Company": "openai",
+     "Type": "model-release",
+     "Name": "OpenAI Releases GPT-6 Astra",
+     "Description": "OpenAI released GPT-6 Astra to approved users on September 3 ahead of general availability on September 4 across ChatGPT Plus, Pro, Business, and Enterprise, the API, and AWS. The release ships with a restricted tier that rejects certain cybersecurity prompts.",
+     "Category": "llm",
+     "Significance": "high",
+     "Source Link": "https://www.cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html"
+    },
+    {
+     "Date": "2026-09-03",
+     "Company": "nvidia",
+     "Type": "acquisition",
+     "Name": "NVIDIA Agrees to Acquire Hugging Face for ~$13B",
+     "Description": "NVIDIA signed a definitive agreement to acquire Hugging Face for approximately $13 billion, confirming reports from late August that a deal was nearing.",
+     "Category": "platform",
+     "Significance": "high",
+     "Source Link": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/"
+    },
+    {
+     "Date": "2026-09-03",
+     "Company": "nvidia",
+     "Type": "company-launch",
+     "Name": "NVIDIA and Microsoft Announce Local AI Agent Tooling at IFA 2026",
+     "Description": "NVIDIA introduced the PAIR tool and faster local inference for running AI agents on-device, alongside Microsoft, with RTX Spark PCs supporting the tooling set to ship in October.",
+     "Category": "developer-tools",
+     "Significance": "medium",
+     "Source Link": "https://blogs.nvidia.com/blog/local-ai-ifa-next-gen-agents-nv-pair-rtx-spark/"
+    },
+    {
+     "Date": "2026-09-08",
+     "Company": "mistral",
+     "Type": "partnership",
+     "Name": "Mistral AI Raises \u20ac3B Series D Led by Samsung at >\u20ac21B Valuation",
+     "Description": "Mistral AI raised a \u20ac3 billion Series D led by Samsung, the largest-ever equity round by a European tech company, with Scaleup Europe Fund/EQT and PSG Equity co-leading. The funds will support Mistral's compute buildout.",
+     "Category": "funding",
+     "Significance": "high",
+     "Source Link": "https://techcrunch.com/2026/09/08/mistral-raises-e3b-as-sovereign-ai-becomes-big-business/"
+    },
+    {
+     "Date": "2026-09-10",
+     "Company": "deepseek",
+     "Type": "model-release",
+     "Name": "DeepSeek Releases V4.1 Flash",
+     "Description": "DeepSeek released V4.1 Flash, a 552B-parameter mixture-of-experts causal encoder-decoder model with native multimodal support. V4 Flash was retired from the API on September 14; peak Flash pricing was cut to $0.30/$1.20 per million tokens, with cache-read costs down 57%.",
+     "Category": "llm",
+     "Significance": "high",
+     "Source Link": "https://deepseek.com/en/news/deepseek-v4-1-flash/"
+    },
+    {
+     "Date": "2026-09-10",
+     "Company": "us",
+     "Type": "regulation",
+     "Name": "California Enacts 13-Bill Child AI-Safety Package",
+     "Description": "Governor Newsom signed a 13-bill package of child AI-safety laws, including 'Adam's Law,' which requires chatbot risk assessments before rollout, sets penalties up to $1 million per child harmed, mandates companion-chatbot safeguards, bans addictive features for users under 16, and expands the state's CSAM statute to cover AI-generated content.",
+     "Category": "government",
+     "Significance": "high",
+     "Source Link": "https://www.gov.ca.gov/2026/09/10/governor-newsom-signs-the-strongest-child-safety-chatbot-and-social-media-laws-in-the-nation/"
+    },
+    {
+     "Date": "2026-09-11",
+     "Company": "sakana-ai",
+     "Type": "model-release",
+     "Name": "Sakana AI Releases Fugu Max and Fugu Ultra v2",
+     "Description": "Sakana AI released Fugu Max and Fugu Ultra v2, cheaper and stronger models aimed at multi-agent orchestration.",
+     "Category": "llm",
+     "Significance": "medium",
+     "Source Link": "https://www.marktechpost.com/2026/09/10/sakana-ai-launches-fugu-max-and-fugu-ultra-v2-for-cheaper-stronger-multi-agent-orchestration/"
+    },
+    {
+     "Date": "2026-09-12",
+     "Company": "anthropic",
+     "Type": "breakthrough",
+     "Name": "Dario Amodei Publishes 'We Must Pace the Frontier'; Anthropic Grants Evaluators Employee-Level Access",
+     "Description": "Anthropic CEO Dario Amodei published a roughly 3,800-word essay arguing that frontier AI labs should deliberately pace capability gains, and Anthropic committed to permanent employee-level system access for third-party evaluators including METR. The essay was publicly endorsed within hours by OpenAI's Sam Altman and Elon Musk.",
+     "Category": "safety",
+     "Significance": "high",
+     "Source Link": "https://x.com/DarioAmodei/status/2098773920774074715"
+    },
+    {
+     "Date": "2026-09-15",
+     "Company": "google",
+     "Type": "model-release",
+     "Name": "Google Releases Gemini 3.8 Live and Live Extended Thinking",
+     "Description": "Google released Gemini 3.8 Live and Gemini 3.8 Live Extended Thinking voice models, with Extended Thinking topping the Artificial Analysis Speech-to-Speech Quality Index at 82.6%.",
+     "Category": "audio",
+     "Significance": "high",
+     "Source Link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/"
+    }
+   ]
+  }
+ ],
+ "edits": [
+  {
+   "tab_aliases": [
+    "AI Job Losses Tracker",
+    "AI Job Losses"
+   ],
+   "match": {
+    "Company": "Oracle"
+   },
+   "append_to_column": "Reason Given",
+   "text": " Update (2026-09-14): second wave of 6 a.m. termination emails began Sep 14, 2026; Q1 FY27 10-Q (filed ~2026-09-11) expanded the restructuring plan by $700M to ~$2.8B amid AI data-center capex. Press estimates of 7,000-10,000 additional roles are NOT confirmed by Oracle; jobs number unchanged."
+  },
+  {
+   "tab_aliases": [
+    "Planned/Announced",
+    "Planned_Announced"
+   ],
+   "match": {
+    "Company": "PayPal"
+   },
+   "append_to_column": "Reason Given",
+   "text": " Update (2026-08-31): execution under way - 10-Q (filed 2026-08-31) reaffirms the reorganization is accelerating the adoption of Artificial Intelligence and automation (~$1.5B savings over 2-3 years); CA WARN confirms 251 San Jose roles effective 2026-10-30, recorded on the Losses tab as an executed event."
+  }
+ ]
+}

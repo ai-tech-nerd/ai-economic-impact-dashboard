@@ -37,6 +37,11 @@ losses:
   - 'layoffs "cites AI"'
   - 'earnings call layoffs "artificial intelligence"'
   - 'restructuring 8-K "artificial intelligence"'   # SEC filings - strongest attribution class
+  - 'restructuring 10-Q OR 10-K "artificial intelligence"'  # quarterly/annual filings carry AI attribution PR omits (Oracle, PayPal pattern, Sep 2026)
+  - '"expands layoff plan" OR "expanded layoff plan" AI'    # follow-on waves of existing plans (Oracle second wave)
+  - 'WARN notice layoffs AI'                        # state WARN filings put hard numbers on executed cuts (PayPal 251)
+  - '"AI efficiencies" layoffs'                     # CEO-letter phrasing (Anaconda)
+  - '"AI-native" transformation layoffs'            # platform-pivot phrasing (Pentera)
   - 'CEO memo layoffs AI'
   - '"AI-native" restructuring layoffs'
   - 'Challenger Gray Christmas monthly report AI job cuts'  # discovery index - follow up each named company

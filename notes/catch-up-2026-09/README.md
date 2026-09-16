@@ -41,10 +41,14 @@ Owner's GitHub account was flagged; project offline ~1 month (2026-08-11 → 202
 - One researched claim (AlphaFold Phase I) was outright premature/fabricated — verification against official sources is non-optional.
 - Local API-key lookup for the dry run is blocked by the permission classifier; use GitHub Actions workflow_dispatch with repo secrets instead.
 
+## Owner rulings (2026-09-16)
+- **Micron Research Labs** ($10B, no headcount; dry-run staged candidate): WAITS for a company-stated jobs number before entering the dataset. Re-check on future sweeps.
+- Sheet sync: pushed via the new `tracker_append.py` utility + Tracker Append workflow (service account), replacing manual pasting. Payload: `automation/payloads/tracker-2026-09-15.json`.
+- Query bank broadened (10-Q/10-K, expanded-layoff-plan, WARN, "AI efficiencies", "AI-native" phrasings) after owner flagged coverage breadth; gap-sweep run over the same window.
+
 ## Next Steps
 1. Owner audits dry-run artifact (`dry-run-candidates`) vs this session's verified entries → then live run → enable weekly cron (T-202)
-2. Owner pastes sheet rows (sheet-paste-rows.md)
-3. Standing owner items: sitemap submission (T-205), embed check (T-206), stale root data/verified cleanup (T-207)
+2. Standing owner items: sitemap submission (T-205), embed check (T-206), stale root data/verified cleanup (T-207)
 
 ## Test Files
 - None kept; dry-run output lives as the GitHub Actions artifact.
