@@ -52,8 +52,11 @@ Live tracker updated via Tracker Append workflow (runs 35108015349 dry → 35108
 ## Gap-sweep (2026-09-16, owner coverage-breadth request)
 33 broader searches over the same window: ZERO new qualifying candidates — the catch-up was complete (owner's Oracle example = evt-069 update, already recorded). Documented near-misses: Wonder/Grubhub (tracker "Explicit AI" label with no AI language in source — jobloss.ai mislabel trap), IBM Rocket Center (contract non-renewal), Samsung NJ WARN (relocation, disputed framing), Zalando (logistics consolidation), Verizon Sep WARN (explicit AI denial again), C3.ai (pre-window cumulative), Acrisure/Sprout Social/HP (pre-window announcements). Systematic trap confirmed: 2026 aggregator listicles recirculate 2023-24 AI-layoff figures (IBM 7,800, SAP 8,000, BT 10,000) as if new — always trace to the original dated announcement.
 
+## Live run + cron enabled (2026-09-19, owner approval)
+Live run 35468244974: all sweeps clean, staging-sheet writes + digest email verified live, 0 staged (3 gate-failed; quiet week 3 days after catch-up). First attempt 35467651099 failed on a transient `ssl.SSLEOFError` during a staging-sheet read (GitHub runner network flake) — plain re-run fixed it; if this recurs often, consider wrapping Sheets calls in retry (NOT done; needs approval). Weekly cron (Mon 06:00 CT) now LIVE in research.yml.
+
 ## Next Steps
-1. Owner audits dry-run artifact (`dry-run-candidates`) vs this session's verified entries → then live run → enable weekly cron (T-202)
+1. Monday runs: owner reviews digest + approves staged rows in the staging sheet; Workflow B (publish) still to be built (T-203)
 2. Standing owner items: sitemap submission (T-205), embed check (T-206), stale root data/verified cleanup (T-207)
 
 ## Test Files
