@@ -4,8 +4,11 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased] - 2026-09-19 — Weekly research cron ENABLED (T-201/T-202 complete)
 
+### Fixed (2026-09-20)
+- **DIGEST_TO secret was set to the service-account address** — the live run's digest bounced (NXDOMAIN on @...iam.gserviceaccount.com; owner received the bounce). Reset to the owner's mailbox. Status corrections: digest SMTP send path works (login+send OK, recipient was wrong); staging APPEND path remains UNTESTED until a run actually stages rows (reads verified). The empty staging sheet after the live run was correct behavior (0 staged, 3 gate-failed).
+
 ### Changed
-- **research.yml weekly schedule enabled** (Mondays 06:00 CT / 11:00 UTC) after validation: dry run 35053235405 (caps held, gate correct, usage logged) + live run 35468244974 (full Sheets + digest path clean; 3 raw candidates, all gate-failed, 0 staged on a quiet week). First failed live attempt (35467651099) was a transient runner-side ssl.SSLEOFError during a Sheets read — retry succeeded; noted as a known flake class.
+- **research.yml weekly schedule enabled** (Mondays 06:00 CT / 11:00 UTC) after validation: dry run 35053235405 (caps held, gate correct, usage logged) + live run 35468244974 (sweeps + Sheets reads clean; 3 raw candidates, all gate-failed, 0 staged on a quiet week). First failed live attempt (35467651099) was a transient runner-side ssl.SSLEOFError during a Sheets read — retry succeeded; noted as a known flake class.
 
 ## [Unreleased] - 2026-09-15 — September catch-up (post GitHub account flag) + Workflow A dry run
 
