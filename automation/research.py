@@ -553,21 +553,57 @@ def a1_tab(title):
     return "'" + title.replace("'", "''") + "'"
 
 
+def retry_transport(service, make_request, attempts=3):
+    """
+    Run a Sheets request with retries on transport-level errors.
+
+    The TLS connection inside a service object goes stale during the
+    long (~10 min) research sweeps, and the first Sheets call after a
+    sweep can die with ssl.SSLEOFError (seen on 2 of the first 3 live
+    runs; googleapiclient does not retry SSL errors). Each retry
+    builds a FRESH service so it gets a new connection. Transport
+    errors only - API errors (quota, permissions) still raise
+    immediately.
+    """
+    import time
+
+    last_error = None
+    for attempt in range(attempts):
+        try:
+            if service is None:
+                service = get_sheets_service()
+            return make_request(service)
+        except (OSError, ConnectionError) as error:  # incl. ssl.SSLError
+            last_error = error
+            service = None  # force a fresh connection next attempt
+            if attempt < attempts - 1:
+                wait = 2 * (attempt + 1)
+                print(f"  WARNING: Sheets transport error "
+                      f"({type(error).__name__}: {error}); "
+                      f"retrying in {wait}s "
+                      f"({attempt + 1}/{attempts - 1}).")
+                time.sleep(wait)
+    raise last_error
+
+
 def list_tabs(service, spreadsheet_id):
     """Return {gid: title} for a spreadsheet."""
-    meta = service.spreadsheets().get(
-        spreadsheetId=spreadsheet_id,
-        fields="sheets(properties(sheetId,title))").execute()
+    def call(svc):
+        return svc.spreadsheets().get(
+            spreadsheetId=spreadsheet_id,
+            fields="sheets(properties(sheetId,title))").execute()
+    meta = retry_transport(service, call)
     return {s["properties"]["sheetId"]: s["properties"]["title"]
             for s in meta.get("sheets", [])}
 
 
 def read_tab_rows(service, spreadsheet_id, title):
     """Read all rows of a tab as lists of strings."""
-    result = service.spreadsheets().values().get(
-        spreadsheetId=spreadsheet_id,
-        range=f"{a1_tab(title)}!A1:Z").execute()
-    return result.get("values", [])
+    def call(svc):
+        return svc.spreadsheets().values().get(
+            spreadsheetId=spreadsheet_id,
+            range=f"{a1_tab(title)}!A1:Z").execute()
+    return retry_transport(service, call).get("values", [])
 
 
 def keys_from_rows(rows):
@@ -624,12 +660,14 @@ def append_rows(service, spreadsheet_id, title, rows):
     """Append rows to the bottom of a tab."""
     if not rows:
         return
-    service.spreadsheets().values().append(
-        spreadsheetId=spreadsheet_id,
-        range=f"{a1_tab(title)}!A1",
-        valueInputOption="USER_ENTERED",
-        insertDataOption="INSERT_ROWS",
-        body={"values": rows}).execute()
+    def call(svc):
+        return svc.spreadsheets().values().append(
+            spreadsheetId=spreadsheet_id,
+            range=f"{a1_tab(title)}!A1",
+            valueInputOption="USER_ENTERED",
+            insertDataOption="INSERT_ROWS",
+            body={"values": rows}).execute()
+    retry_transport(service, call)
 
 
 # ============================================================
