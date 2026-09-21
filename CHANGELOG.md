@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [Unreleased] - 2026-09-21 — Sheets transport retry fix
+
+### Fixed
+- First scheduled Monday run (35628847733) failed on the same stale-TLS ssl.SSLEOFError as Friday's first attempt (2 of 3 live runs). Added retry_transport (3 attempts, fresh connection per retry) to all Sheets calls in research.py; 32/32 offline tests. Rerun 35646051383 clean: 0 staged across all categories, digest delivered.
+
 ## [Unreleased] - 2026-09-19 — Weekly research cron ENABLED (T-201/T-202 complete)
 
 ### Fixed (2026-09-20)
