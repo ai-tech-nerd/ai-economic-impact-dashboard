@@ -5,6 +5,7 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
+  Legend,
   ResponsiveContainer,
 } from 'recharts';
 import { ChartContainer } from '../shared/ChartContainer';
@@ -25,7 +26,7 @@ export function TrendLine({ events, title, subtitle, dateRange }: TrendLineProps
   return (
     <ChartContainer
       title={title ?? 'Cumulative Job Displacement'}
-      subtitle={subtitle ?? 'Running total of AI-attributed job cuts over time'}
+      subtitle={subtitle ?? 'Running total of AI-attributed job cuts over time, split by software AI and robotics'}
       widgetPath="trend"
       widgetHeight={420}
     >
@@ -35,6 +36,10 @@ export function TrendLine({ events, title, subtitle, dateRange }: TrendLineProps
             <linearGradient id="colorCumulative" x1="0" y1="0" x2="0" y2="1">
               <stop offset="5%" stopColor="#3b82f6" stopOpacity={0.3} />
               <stop offset="95%" stopColor="#3b82f6" stopOpacity={0} />
+            </linearGradient>
+            <linearGradient id="colorRobotics" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="5%" stopColor="#8b5cf6" stopOpacity={0.6} />
+              <stop offset="95%" stopColor="#8b5cf6" stopOpacity={0.25} />
             </linearGradient>
           </defs>
           <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -52,16 +57,30 @@ export function TrendLine({ events, title, subtitle, dateRange }: TrendLineProps
             tickFormatter={(v) => formatNumber(v)}
           />
           <Tooltip
-            formatter={(value) => [formatNumber(Number(value)), 'Total Jobs']}
+            formatter={(value, name) => [formatNumber(Number(value)), name]}
             labelFormatter={(label) => {
               const [y, m] = label.split('-');
               const months = ['', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
               return `${months[+m]} ${y}`;
             }}
           />
+          <Legend verticalAlign="top" height={28} iconType="circle" wrapperStyle={{ fontSize: 12 }} />
+          {/* Stacked so the top edge is the overall total; robotics sits at the base. */}
           <Area
             type="monotone"
-            dataKey="cumulative"
+            dataKey="cumulativeRobotics"
+            name="Robotics"
+            stackId="mode"
+            stroke="#8b5cf6"
+            strokeWidth={2}
+            fill="url(#colorRobotics)"
+            isAnimationActive={false}
+          />
+          <Area
+            type="monotone"
+            dataKey="cumulativeSoftware"
+            name="Software AI"
+            stackId="mode"
             stroke="#3b82f6"
             strokeWidth={2}
             fill="url(#colorCumulative)"

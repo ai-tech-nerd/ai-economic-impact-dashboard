@@ -4,6 +4,7 @@ import { getCompanySummary } from '../../utils/dataTransformers';
 import { formatNumber } from '../../utils/formatters';
 import { ChartContainer } from '../shared/ChartContainer';
 import type { DisplacementEvent } from '../../types';
+import { RoboticsBadge, isRobotics } from '../shared/RoboticsBadge';
 
 interface CompanyTableProps {
   events: DisplacementEvent[];
@@ -19,6 +20,11 @@ export function CompanyTable({ events, plannedEvents = [], creationEvents = [] }
   const [search, setSearch] = useState('');
 
   const companies = useMemo(() => getCompanySummary(events), [events]);
+
+  const roboticsCompanies = useMemo(
+    () => new Set([...events, ...plannedEvents].filter(isRobotics).map((e) => e.company)),
+    [events, plannedEvents],
+  );
 
   // Build lookup maps for planned and creation companies
   const plannedCompanies = useMemo(() => {
@@ -143,6 +149,9 @@ export function CompanyTable({ events, plannedEvents = [], creationEvents = [] }
                     >
                       {company.name}
                     </Link>
+                    {roboticsCompanies.has(company.id) && (
+                      <span className="ml-2 align-middle"><RoboticsBadge /></span>
+                    )}
                   </td>
                   <td className="py-3 px-2 text-right font-mono text-danger-600">
                     {formatNumber(company.total)}

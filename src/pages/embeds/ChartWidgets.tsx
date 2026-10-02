@@ -4,6 +4,7 @@ import { IndustryBreakdown } from '../../components/dashboard/IndustryBreakdown'
 import { SourceArchive } from '../../components/dashboard/SourceArchive';
 import { formatNumber } from '../../utils/formatters';
 import type { DisplacementEvent } from '../../types';
+import { RoboticsBadge, isRobotics } from '../../components/shared/RoboticsBadge';
 
 interface EventsProps {
   events: DisplacementEvent[];
@@ -82,7 +83,7 @@ export function PlannedWidget({ plannedEvents }: { plannedEvents: DisplacementEv
         <div className="mt-3 space-y-1.5">
           {plannedEvents.map((evt) => (
             <div key={evt.id} className="flex items-center justify-between text-sm">
-              <span className="text-surface-700">{evt.companyName}</span>
+              <span className="text-surface-700 flex items-center gap-2">{evt.companyName}{isRobotics(evt) && <RoboticsBadge />}</span>
               <div className="flex items-center gap-2">
                 <span className="text-surface-500">{formatNumber(evt.jobsCut)}</span>
                 <span className={`text-xs px-1.5 py-0.5 rounded-full ${
@@ -120,7 +121,7 @@ export function CreationWidget({ creationEvents }: { creationEvents: Displacemen
             <div className="mt-3 space-y-1.5">
               {creationEvents.map((evt) => (
                 <div key={evt.id} className="flex items-center justify-between text-sm">
-                  <span className="text-surface-700">{evt.companyName}</span>
+                  <span className="text-surface-700 flex items-center gap-2">{evt.companyName}{isRobotics(evt) && <RoboticsBadge />}</span>
                   <div className="flex items-center gap-2">
                     <span className="text-surface-500">
                       {evt.jobsCreated ? formatNumber(evt.jobsCreated) : 'Undisclosed'}

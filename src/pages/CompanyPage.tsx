@@ -5,6 +5,7 @@ import { PageLayout } from '../components/layout/PageLayout';
 import { Seo } from '../components/shared/Seo';
 import { formatNumber, formatDate } from '../utils/formatters';
 import { SourceCitation } from '../components/shared/SourceCitation';
+import { RoboticsBadge, isRobotics } from '../components/shared/RoboticsBadge';
 import type { DisplacementEvent, CompanyProfile, AIMilestone } from '../types';
 
 interface CompanyPageProps {
@@ -244,6 +245,11 @@ function CompanyList({
     return map;
   }, [events]);
 
+  const roboticsCompanies = useMemo(
+    () => new Set([...events, ...plannedEvents].filter(isRobotics).map((e) => e.company)),
+    [events, plannedEvents],
+  );
+
   // Group planned events by company
   const companyPlanned = useMemo(() => {
     const map: Record<string, { total: number; status: string }> = {};
@@ -351,8 +357,9 @@ function CompanyList({
               to={`/companies/${key}`}
               className="bg-white rounded-xl shadow-sm border border-surface-200 p-5 hover:shadow-md transition-shadow no-underline group"
             >
-              <h3 className="font-semibold text-surface-900 text-lg group-hover:text-primary-600 transition-colors">
+              <h3 className="font-semibold text-surface-900 text-lg group-hover:text-primary-600 transition-colors flex items-center gap-2">
                 {name}
+                {roboticsCompanies.has(key) && <RoboticsBadge />}
               </h3>
               {desc && (
                 <p className="text-xs text-surface-500 mt-1 line-clamp-2">{desc}</p>

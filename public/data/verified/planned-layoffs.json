@@ -276,7 +276,8 @@
     ],
     "verificationStatus": "verified",
     "status": "announced",
-    "timeline": "Through 2026"
+    "timeline": "Through 2026",
+    "displacementMode": "robotics"
   },
   {
     "id": "plan-012",

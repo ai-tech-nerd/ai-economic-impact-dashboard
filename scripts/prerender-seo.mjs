@@ -88,6 +88,9 @@ const updatedLine = dataUpdated
 
 // ---- per-route static content generators
 function dashboardHtml() {
+  const roboticsJobs = realEvents
+    .filter((e) => e.displacementMode === "robotics")
+    .reduce((sum, e) => sum + e.jobsCut, 0);
   const rows = companyList
     .slice(0, 25)
     .map(
@@ -100,6 +103,7 @@ function dashboardHtml() {
   return `<h1>Jobs Lost to AI</h1>
 <p>A live tracker of AI-driven layoffs and job losses: <strong>${fmt(totalJobs)} jobs</strong> lost to AI across <strong>${companies.size} companies</strong> in <strong>${realEvents.length} verified events</strong> since ChatGPT launched on November 30, 2022. Every event is verified against company statements, earnings calls, internal memos, or SEC filings — journalist speculation alone never qualifies.</p>
 ${updatedLine}
+<p>Of these, ${fmt(roboticsJobs)} jobs were replaced by AI-powered robots or automation (robotics); the rest by software AI.</p>
 <p>A further ${fmt(plannedTotal)} job cuts have been announced or planned across ${planned.length} companies, while ${created.length} companies have announced new AI-driven roles.</p>
 <h2>Companies with the most jobs lost to AI</h2>
 <table><thead><tr><th>Company</th><th>Jobs cut (AI-attributed)</th><th>Latest event</th></tr></thead><tbody>

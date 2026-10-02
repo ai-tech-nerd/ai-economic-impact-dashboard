@@ -11,6 +11,7 @@ import { CardEmbedButton } from '../components/ui/CardEmbedButton';
 import { getTotalJobsCut, getCompanySummary } from '../utils/dataTransformers';
 import { formatNumber } from '../utils/formatters';
 import type { DisplacementEvent } from '../types';
+import { RoboticsBadge, isRobotics } from '../components/shared/RoboticsBadge';
 
 interface DashboardPageProps {
   events: DisplacementEvent[];
@@ -67,6 +68,7 @@ export function DashboardPage({ events, plannedEvents, creationEvents }: Dashboa
           total={total}
           companyCount={companies.length}
           eventCount={events.filter((e) => !e.isProjection).length}
+          roboticsJobs={getTotalJobsCut(events.filter((e) => e.displacementMode === 'robotics'))}
         />
 
         <TrendLine events={events} />
@@ -93,7 +95,7 @@ export function DashboardPage({ events, plannedEvents, creationEvents }: Dashboa
             <div className="mt-3 space-y-1.5">
               {plannedEvents.map((evt) => (
                 <div key={evt.id} className="flex items-center justify-between text-sm">
-                  <span className="text-surface-700">{evt.companyName}</span>
+                  <span className="text-surface-700 flex items-center gap-2">{evt.companyName}{isRobotics(evt) && <RoboticsBadge />}</span>
                   <div className="flex items-center gap-2">
                     <span className="text-surface-500">{formatNumber(evt.jobsCut)}</span>
                     <span className={`text-xs px-1.5 py-0.5 rounded-full ${
@@ -128,7 +130,7 @@ export function DashboardPage({ events, plannedEvents, creationEvents }: Dashboa
                 <div className="mt-3 space-y-1.5">
                   {creationEvents.map((evt) => (
                     <div key={evt.id} className="flex items-center justify-between text-sm">
-                      <span className="text-surface-700">{evt.companyName}</span>
+                      <span className="text-surface-700 flex items-center gap-2">{evt.companyName}{isRobotics(evt) && <RoboticsBadge />}</span>
                       <div className="flex items-center gap-2">
                         <span className="text-surface-500">
                           {evt.jobsCreated ? formatNumber(evt.jobsCreated) : 'Undisclosed'}

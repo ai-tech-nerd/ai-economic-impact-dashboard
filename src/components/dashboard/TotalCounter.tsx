@@ -7,9 +7,10 @@ interface TotalCounterProps {
   total: number;
   companyCount: number;
   eventCount: number;
+  roboticsJobs?: number;
 }
 
-export function TotalCounter({ total, companyCount, eventCount }: TotalCounterProps) {
+export function TotalCounter({ total, companyCount, eventCount, roboticsJobs }: TotalCounterProps) {
   const location = useLocation();
   const isEmbed = location.pathname.startsWith('/embed') || location.pathname.startsWith('/widget');
 
@@ -42,6 +43,14 @@ export function TotalCounter({ total, companyCount, eventCount }: TotalCounterPr
           </div>
           <p className="text-surface-400 text-xs uppercase tracking-wider">Events</p>
         </div>
+        {roboticsJobs !== undefined && (
+          <div>
+            <div className="text-2xl font-bold text-robotics-500">
+              <AnimatedNumber value={roboticsJobs} duration={1500} />
+            </div>
+            <p className="text-surface-400 text-xs uppercase tracking-wider">Robotics Jobs</p>
+          </div>
+        )}
       </div>
     </motion.div>
   );

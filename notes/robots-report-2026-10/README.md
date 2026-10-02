@@ -25,5 +25,10 @@ Owner asked how the report affects dashboard figures and predictions (initial th
 - WebFetch's summarizer FABRICATED half of the Figure 4 table (wrong occupations, out-of-order scores). The table was an image; only reading the image itself gave correct rows. Never trust summarized tables from WebFetch; verify against raw text or images.
 - json.dump without indent=2 rewrote all of ai-milestones.json; always match the original formatting (indent=2, ensure_ascii=False, trailing newline) and check `git diff --stat`.
 
+## Robot backfill + robotics visual (2026-10-02, owner approved)
+- Backfill: 0 qualifying events (see CHANGELOG for strikes). Existing UPS evt-025/plan-011 + Ocado evt-062 tagged robotics per owner.
+- Visual shipped: displacementMode field, stacked trend chart, Robotics Jobs stat, Robotics badges, SEO line. Verified locally (DOM: two stacked areas; badges on UPS/Ocado company cards and the UPS planned row; no console errors).
+- Not split out: the industry and job-type charts (owner approved this deferral).
+
 ## Next Steps
 - Optional (needs approval): historical backfill sweep for robot-driven layoffs before 2026-10-02 (e.g., autonomous trucking, warehouse robotics), since the old scope excluded them.

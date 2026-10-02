@@ -11,6 +11,7 @@ import {
 } from '../utils/dataTransformers';
 import { formatDate, formatNumber } from '../utils/formatters';
 import type { DisplacementEvent } from '../types';
+import { RoboticsBadge, isRobotics } from '../components/shared/RoboticsBadge';
 
 interface TimelinePageProps {
   events: DisplacementEvent[];
@@ -251,6 +252,7 @@ function SliderMode({
                     {evt.companyName}
                   </div>
                   <EventTypeBadge type={type} />
+                  {isRobotics(evt) && <RoboticsBadge />}
                 </div>
                 {type === 'creation' ? (
                   <div className="text-xs text-success-600 font-semibold">
@@ -376,6 +378,7 @@ function StoryMode({
                           : `${evt.jobsCut.toLocaleString()} jobs${type === 'planned' ? ' announced' : ''}`}
                       </div>
                       <EventTypeBadge type={type} />
+                  {isRobotics(evt) && <RoboticsBadge />}
                     </div>
                     <p className="text-xs text-surface-500">
                       {type === 'creation' && evt.reasonGiven ? evt.reasonGiven : evt.description}

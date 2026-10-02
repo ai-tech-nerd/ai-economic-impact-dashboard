@@ -16,6 +16,8 @@ export interface DisplacementEvent {
   region: string;
   country: string;
   aiReplacement: boolean;
+  /** Absent = software AI. 'robotics' = jobs replaced by AI-powered robots or autonomous systems. */
+  displacementMode?: 'software' | 'robotics';
   aiToolsMentioned?: string[];
   isProjection?: boolean;
   reasonGiven?: string;

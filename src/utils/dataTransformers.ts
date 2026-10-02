@@ -67,6 +67,12 @@ export function getCumulativeTrend(
   for (const { month, count } of monthly) {
     monthlyMap[month] = count;
   }
+  const roboticsMap: Record<string, number> = {};
+  for (const { month, count } of getMonthlyTrend(
+    events.filter((e) => e.displacementMode === 'robotics'),
+  )) {
+    roboticsMap[month] = count;
+  }
 
   // Build full month range if start/end provided
   let months: string[];
@@ -89,10 +95,18 @@ export function getCumulativeTrend(
   }
 
   let cumulative = 0;
+  let cumulativeRobotics = 0;
   return months.map((month) => {
     const count = monthlyMap[month] || 0;
     cumulative += count;
-    return { month, count, cumulative };
+    cumulativeRobotics += roboticsMap[month] || 0;
+    return {
+      month,
+      count,
+      cumulative,
+      cumulativeRobotics,
+      cumulativeSoftware: cumulative - cumulativeRobotics,
+    };
   });
 }
 

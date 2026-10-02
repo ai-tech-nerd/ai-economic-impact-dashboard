@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [Unreleased] - 2026-10-02 — Robotics split (visual) + robot backfill
+
+### Added
+- `displacementMode` field ('robotics' | absent = software AI). Tagged robotics (owner ruling): UPS evt-025 (20,000), UPS plan-011 (30,000 planned), Ocado evt-062 (1,000).
+- Cumulative trend chart (dashboard, timeline, widget) is now stacked: Robotics (violet) vs Software AI (blue), with a legend.
+- Headline counter: "Robotics Jobs" stat (21,000).
+- "Robotics" badge on company cards, dashboard and widget Planned lists, and Timeline rows.
+- Static SEO copy states the robotics share.
+
+### Process
+- Robot backfill (2 Sonnet agents, ~85 searches, 2022-11-30 → 2026-10-02): ZERO new events cleared the gate. Struck: Amazon 600K "avoided hires" (company disputes the leaked docs), GXO, Hyundai Atlas, GM, Tesla, Waymo, ports, autonomous trucking, Foxconn 60K (2016 recirculated). Closest miss: Asda/DHL "up to 1,000" (union attribution only).
+
 ## [Unreleased] - 2026-10-02 — Anthropic robots report + robot-displacement scope
 
 ### Added

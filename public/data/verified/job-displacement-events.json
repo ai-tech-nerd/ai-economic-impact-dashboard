@@ -661,7 +661,8 @@
         "date": "2025-04-29"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "displacementMode": "robotics"
   },
   {
     "id": "evt-072",
@@ -1706,7 +1707,8 @@
         "date": "2026-02-26"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "displacementMode": "robotics"
   },
   {
     "id": "evt-076",
