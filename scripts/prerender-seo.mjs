@@ -125,6 +125,7 @@ ${updatedLine}
 <ul>
 ${items}
 </ul>
+<p>Exposure is not job loss: Anthropic research (Sept 2026) estimates about 80% of US work tasks are exposed to LLMs or robots, but robots are cost-competitive with people for only 0.3% of tasks today. The most robot-exposed jobs are physical, mainly driving and warehouse work.</p>
 ${NAV}`;
 }
 

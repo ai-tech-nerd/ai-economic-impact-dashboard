@@ -45,6 +45,14 @@ losses:
   - 'CEO memo layoffs AI'
   - '"AI-native" restructuring layoffs'
   - 'Challenger Gray Christmas monthly report AI job cuts'  # discovery index - follow up each named company
+  # Robots / autonomous systems (owner scope ruling 2026-10-02: AI-powered
+  # robot displacement counts as AI displacement; same attribution gate)
+  - 'robots replace workers layoffs {Y}'
+  - 'warehouse automation robots job cuts'
+  - 'autonomous trucks drivers laid off'
+  - 'robotaxi drivers jobs eliminated'
+  - 'humanoid robots replace workers factory'
+  - 'automated sorting robots layoffs recycling OR logistics'
 
 # Planned / announced reductions and hiring freezes (staging tab: Planned/Announced)
 planned:
@@ -55,6 +63,8 @@ planned:
   - '"will result in" jobs AI automation'           # forward-looking exec statements (Wells Fargo pattern)
   - 'announced layoffs AI "over the next"'
   - 'hiring "only AI roles"'
+  - 'plans to replace workers with robots'
+  - 'autonomous fleet rollout driver jobs'
 
 # AI-driven job creation (staging tab: AI Job Creation)
 created:

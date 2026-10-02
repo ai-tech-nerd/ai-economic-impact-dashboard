@@ -7178,5 +7178,23 @@
       }
     ],
     "publicRelease": true
+  },
+  {
+    "id": "ms-299",
+    "company": "anthropic",
+    "date": "2026-09-30",
+    "type": "breakthrough",
+    "name": "Anthropic Research: \"What Work Can Robots Do?\"",
+    "description": "Anthropic economists found robots can perform 74% of physical tasks in the US (34% of working hours), and that LLMs and robots together expose about 80% of job tasks. But robots are cost-competitive with people for only 0.3% of tasks today; at historical ~3%/yr price declines it would take ~40 years to reach 10%. The most robot-exposed jobs are vehicle operators (taxi drivers lead at 2.2 on the exposure index) plus recycling and warehouse work; packers and packagers (560,000 US jobs) are the largest occupation already exposed to cost-competitive robots.",
+    "category": "research",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://www.anthropic.com/research/what-work-can-robots-do",
+        "title": "What work can robots do?",
+        "publisher": "Anthropic",
+        "date": "2026-09-30"
+      }
+    ]
   }
 ]

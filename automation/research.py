@@ -381,10 +381,13 @@ CATEGORY_TASK = {
     "losses": ("companies that EXECUTED layoffs/job cuts within the window "
                "that the company itself (or credible reporting of a company "
                "statement/filing) attributes to AI, automation, or AI-driven "
-               "restructuring"),
+               "restructuring - INCLUDING jobs replaced by AI-powered robots "
+               "or autonomous systems (robotaxis, autonomous trucks, "
+               "warehouse/sorting robots, humanoids)"),
     "planned": ("announced-but-not-yet-executed workforce reductions, hiring "
                 "freezes, or restructurings attributed to AI within the "
-                "window"),
+                "window, including planned replacement of workers by "
+                "AI-powered robots or autonomous systems"),
     "created": ("new hiring or roles specifically driven by AI initiatives "
                 "announced within the window (including AI data center and "
                 "chip fab support jobs)"),

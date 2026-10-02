@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [Unreleased] - 2026-10-02 — Anthropic robots report + robot-displacement scope
+
+### Added
+- Predictions methodology: "Exposure is not job loss" context (80% of tasks exposed to LLMs or robots; robots cost-competitive for 0.3% today), linking Anthropic's "What Work Can Robots Do?" (2026-09-30). Mirrored in the prerender static SEO copy.
+- AI Advances ms-299: the report (389 milestones). meta.json → 2026-10-02.
+
+### Changed — scope (owner ruling)
+- Layoffs from AI-powered robots/autonomous systems now count as AI displacement (same attribution gate). research.py losses/planned task text and 8 new robotics queries in queries.yml. Pre-2026-10-02 robot-driven layoffs were never swept.
+
 ## [Unreleased] - 2026-09-21 — Sheets transport retry fix
 
 ### Fixed

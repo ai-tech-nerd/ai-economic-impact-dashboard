@@ -84,6 +84,21 @@ export function PredictionsPage({ predictions }: PredictionsPageProps) {
           — actual outcomes may fall outside these estimates. Predictions are updated monthly
           as new data becomes available.
         </p>
+        <p className="text-sm text-surface-600 mt-3">
+          <strong>Exposure is not job loss.</strong> Anthropic research (Sept 2026) estimates
+          about 80% of US work tasks are exposed to LLMs or robots, but robots are
+          cost-competitive with people for only 0.3% of tasks today. The most robot-exposed
+          jobs are physical, mainly driving and warehouse work. Exposure measures what AI and
+          robots can do, not how fast jobs will disappear.{' '}
+          <a
+            href="https://www.anthropic.com/research/what-work-can-robots-do"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary-600 hover:text-primary-700"
+          >
+            Read the report
+          </a>
+        </p>
       </div>
     </PageLayout>
   );
