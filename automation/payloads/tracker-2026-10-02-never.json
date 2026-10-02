@@ -1,0 +1,99 @@
+{
+ "create_tabs": [
+  {
+   "title": "Jobs Never Created",
+   "header": [
+    "Date",
+    "Company",
+    "Jobs Never Created",
+    "Estimate Basis",
+    "Context",
+    "Mode",
+    "Source Link"
+   ]
+  }
+ ],
+ "appends": [
+  {
+   "tab_aliases": [
+    "Jobs Never Created"
+   ],
+   "header_if_new": [
+    "Date",
+    "Company",
+    "Jobs Never Created",
+    "Estimate Basis",
+    "Context",
+    "Mode",
+    "Source Link"
+   ],
+   "rows": [
+    {
+     "Date": "2023-05-01",
+     "Company": "IBM",
+     "Jobs Never Created": "7,800",
+     "Estimate Basis": "CEO-stated 30% of ~26,000 back-office roles = 7,800 over five years",
+     "Context": "Back-office roles (HR and other non-customer-facing functions) under a hiring pause",
+     "Mode": "software",
+     "Source Link": "https://www.reuters.com/technology/ibm-pause-hiring-plans-replace-7800-jobs-with-ai-bloomberg-news-2023-05-01/"
+    },
+    {
+     "Date": "2024-08-27",
+     "Company": "Klarna",
+     "Jobs Never Created": "1,200",
+     "Estimate Basis": "Company-stated headcount drop from ~5,000 to ~3,800 via hiring freeze and attrition",
+     "Context": "Company-wide headcount reduced through a hiring freeze and natural attrition, enabled by AI",
+     "Mode": "software",
+     "Source Link": "https://www.reuters.com/technology/artificial-intelligence/swedens-klarna-says-ai-chatbots-help-shrink-headcount-2024-08-27/"
+    },
+    {
+     "Date": "2025-02-25",
+     "Company": "DBS Group",
+     "Jobs Never Created": "4,000",
+     "Estimate Basis": "Company-stated ~4,000 of ~8,000-9,000 contract/temp roles not renewed over three years",
+     "Context": "Contract and temporary roles not renewed as AI takes on the work, across 19 markets",
+     "Mode": "software",
+     "Source Link": "https://www.taipeitimes.com/News/biz/archives/2025/02/25/2003832442"
+    }
+   ]
+  }
+ ],
+ "deletes": [
+  {
+   "tab_aliases": [
+    "AI Job Losses Tracker",
+    "AI Job Losses"
+   ],
+   "match": {
+    "Company": "IBM"
+   }
+  },
+  {
+   "tab_aliases": [
+    "AI Job Losses Tracker",
+    "AI Job Losses"
+   ],
+   "match": {
+    "Company": "Klarna"
+   }
+  },
+  {
+   "tab_aliases": [
+    "Planned/Announced",
+    "Planned_Announced"
+   ],
+   "match": {
+    "Company": "IBM"
+   }
+  },
+  {
+   "tab_aliases": [
+    "Planned/Announced",
+    "Planned_Announced"
+   ],
+   "match": {
+    "Company": "Klarna"
+   }
+  }
+ ]
+}
