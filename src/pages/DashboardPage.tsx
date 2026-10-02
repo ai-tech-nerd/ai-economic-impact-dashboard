@@ -10,16 +10,18 @@ import { SourceArchive } from '../components/dashboard/SourceArchive';
 import { CardEmbedButton } from '../components/ui/CardEmbedButton';
 import { getTotalJobsCut, getCompanySummary } from '../utils/dataTransformers';
 import { formatNumber } from '../utils/formatters';
-import type { DisplacementEvent } from '../types';
+import type { DisplacementEvent, NeverCreatedEntry } from '../types';
+import { JobsNeverCreatedCard } from '../components/dashboard/JobsNeverCreatedCard';
 import { RoboticsBadge, isRobotics } from '../components/shared/RoboticsBadge';
 
 interface DashboardPageProps {
   events: DisplacementEvent[];
   plannedEvents: DisplacementEvent[];
   creationEvents: DisplacementEvent[];
+  neverCreated?: NeverCreatedEntry[];
 }
 
-export function DashboardPage({ events, plannedEvents, creationEvents }: DashboardPageProps) {
+export function DashboardPage({ events, plannedEvents, creationEvents, neverCreated = [] }: DashboardPageProps) {
   const location = useLocation();
   const isEmbedOrWidget = location.pathname.startsWith('/embed') || location.pathname.startsWith('/widget');
   const total = getTotalJobsCut(events);
@@ -78,8 +80,8 @@ export function DashboardPage({ events, plannedEvents, creationEvents }: Dashboa
           <IndustryBreakdown events={events} />
         </div>
 
-        {/* Secondary stat cards — Planned & Creation */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {/* Secondary stat cards — Planned, Creation, Never Created */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="bg-white rounded-xl shadow-sm border border-warning-200 p-5 relative">
             <div className="flex items-center justify-between mb-1">
               <div className="flex items-center gap-2">
@@ -150,6 +152,8 @@ export function DashboardPage({ events, plannedEvents, creationEvents }: Dashboa
               Tracking new roles that emerge specifically because of AI adoption
             </p>
           </div>
+
+          <JobsNeverCreatedCard entries={neverCreated} />
         </div>
 
         <SourceArchive />

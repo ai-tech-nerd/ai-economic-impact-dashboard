@@ -22,7 +22,7 @@ import {
 } from './pages/embeds/ChartWidgets';
 
 function AppContent() {
-  const { events, plannedEvents, creationEvents, milestones, companies, predictions, loading, error } = useData();
+  const { events, plannedEvents, creationEvents, neverCreated, milestones, companies, predictions, loading, error } = useData();
   const location = useLocation();
   const isEmbed = location.pathname.startsWith('/embed');
   const isWidget = location.pathname.startsWith('/widget');
@@ -66,9 +66,9 @@ function AppContent() {
       <EmbedLayout>
         {loading ? loadingEl : error ? errorEl : (
           <Routes>
-            <Route path="/embed/dashboard" element={<DashboardPage events={events} plannedEvents={plannedEvents} creationEvents={creationEvents} />} />
+            <Route path="/embed/dashboard" element={<DashboardPage events={events} plannedEvents={plannedEvents} creationEvents={creationEvents} neverCreated={neverCreated} />} />
             <Route path="/embed/predictions" element={<PredictionsPage predictions={predictions} />} />
-            <Route path="/embed/timeline" element={<TimelinePage events={events} plannedEvents={plannedEvents} creationEvents={creationEvents} />} />
+            <Route path="/embed/timeline" element={<TimelinePage events={events} plannedEvents={plannedEvents} creationEvents={creationEvents} neverCreated={neverCreated} />} />
             <Route path="/embed/ai-advances" element={<AITimelinePage milestones={milestones} />} />
             <Route path="/embed/companies/:id?" element={<CompanyPage events={events} plannedEvents={plannedEvents} creationEvents={creationEvents} companies={companies} milestones={milestones} />} />
             <Route path="/embed/learn" element={<LearningPage />} />
@@ -84,9 +84,9 @@ function AppContent() {
       <main className="flex-1">
         {loading ? loadingEl : error ? errorEl : (
           <Routes>
-            <Route path="/" element={<DashboardPage events={events} plannedEvents={plannedEvents} creationEvents={creationEvents} />} />
+            <Route path="/" element={<DashboardPage events={events} plannedEvents={plannedEvents} creationEvents={creationEvents} neverCreated={neverCreated} />} />
             <Route path="/predictions" element={<PredictionsPage predictions={predictions} />} />
-            <Route path="/timeline" element={<TimelinePage events={events} plannedEvents={plannedEvents} creationEvents={creationEvents} />} />
+            <Route path="/timeline" element={<TimelinePage events={events} plannedEvents={plannedEvents} creationEvents={creationEvents} neverCreated={neverCreated} />} />
             <Route
               path="/ai-advances"
               element={<AITimelinePage milestones={milestones} />}

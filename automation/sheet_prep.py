@@ -95,6 +95,15 @@ ADVANCES_TYPE_VALUES = [
     "regulation", "partnership", "acquisition",
 ]
 
+# Jobs Never Created tab (owner-approved 2026-10-02): work given to AI or
+# robots instead of hiring people. Tracked separately from layoffs.
+NEVER_TAB_TITLE = "Jobs Never Created"
+NEVER_BASE_COLUMNS = [
+    "Date", "Company", "Jobs Never Created", "Estimate Basis", "Context",
+    "Mode", "Source Link",
+]
+NEVER_MODE_VALUES = ["software", "robotics"]
+
 # Validation is applied from row 2 down to this row (headers excluded).
 VALIDATION_MAX_ROWS = 5000
 
@@ -227,6 +236,11 @@ def print_dry_run_plan():
     print(f"  - Type dropdown (rows 2+): {' / '.join(ADVANCES_TYPE_VALUES)}")
     print("  - Approval dropdown (rows 2+): blank / "
           + " / ".join(APPROVAL_VALUES))
+    print(f"New tab '{NEVER_TAB_TITLE}' (created only if missing):")
+    print(f"  - Header: {NEVER_BASE_COLUMNS + CONTROL_COLUMNS}")
+    print(f"  - Mode dropdown (rows 2+): {' / '.join(NEVER_MODE_VALUES)}")
+    print("  - Approval dropdown (rows 2+): blank / "
+          + " / ".join(APPROVAL_VALUES))
     print("\nIdempotent: re-running makes no changes once everything exists.")
 
 
@@ -324,6 +338,41 @@ def ensure_advances_tab(service, spreadsheet_id, batch_requests):
         validation_request(gid, header.index("Approval"), APPROVAL_VALUES))
 
 
+def ensure_never_tab(service, spreadsheet_id, batch_requests):
+    """Create the Jobs Never Created tab (schema + dropdowns) if missing."""
+    _, by_title = fetch_spreadsheet_meta(service, spreadsheet_id)
+    full_header = NEVER_BASE_COLUMNS + CONTROL_COLUMNS
+
+    if NEVER_TAB_TITLE not in by_title:
+        response = service.spreadsheets().batchUpdate(
+            spreadsheetId=spreadsheet_id,
+            body={"requests": [{"addSheet": {"properties": {
+                "title": NEVER_TAB_TITLE,
+                "gridProperties": {"rowCount": VALIDATION_MAX_ROWS,
+                                   "columnCount": len(full_header) + 2},
+            }}}]},
+        ).execute()
+        gid = response["replies"][0]["addSheet"]["properties"]["sheetId"]
+        write_header_cells(service, spreadsheet_id, NEVER_TAB_TITLE, 0, full_header)
+        print(f"  Created tab '{NEVER_TAB_TITLE}' (gid={gid}) with header")
+    else:
+        gid = by_title[NEVER_TAB_TITLE]
+        header = read_header(service, spreadsheet_id, NEVER_TAB_TITLE)
+        missing = [c for c in full_header if c not in header]
+        if missing:
+            write_header_cells(service, spreadsheet_id, NEVER_TAB_TITLE,
+                               len(header), missing)
+            print(f"  Tab '{NEVER_TAB_TITLE}' exists: appended {missing}")
+        else:
+            print(f"  Tab '{NEVER_TAB_TITLE}' already complete")
+
+    header = read_header(service, spreadsheet_id, NEVER_TAB_TITLE)
+    batch_requests.append(
+        validation_request(gid, header.index("Mode"), NEVER_MODE_VALUES))
+    batch_requests.append(
+        validation_request(gid, header.index("Approval"), APPROVAL_VALUES))
+
+
 def run_live():
     """Apply all sheet preparation changes."""
     spreadsheet_id = os.environ.get("SHEET_STAGING_ID")
@@ -340,6 +389,7 @@ def run_live():
 
     print("Preparing AI Advances tab:")
     ensure_advances_tab(service, spreadsheet_id, batch_requests)
+    ensure_never_tab(service, spreadsheet_id, batch_requests)
 
     if batch_requests:
         service.spreadsheets().batchUpdate(

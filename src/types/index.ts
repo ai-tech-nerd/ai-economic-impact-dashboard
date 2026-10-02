@@ -35,6 +35,28 @@ export interface DisplacementEvent {
   context?: string;
 }
 
+/**
+ * Jobs Never Created: work a company says it gave to AI or robots instead of
+ * hiring people. Tracked separately; never added to the displacement total.
+ */
+export interface NeverCreatedEntry {
+  id: string;
+  company: string;
+  companyName: string;
+  date: string;
+  context: string;
+  /** Company-stated number, or company-stated ratio x stated/official baseline. */
+  jobsNeverCreated: number;
+  /** Plain-language math behind jobsNeverCreated. */
+  estimateBasis: string;
+  displacementMode: 'software' | 'robotics';
+  /** 'disputed' = company disputes the figure; shown flagged, excluded from the total. */
+  status: 'verified' | 'disputed';
+  quote: string;
+  description: string;
+  sources: Source[];
+}
+
 export type MilestoneType =
   | 'model-release'
   | 'company-launch'

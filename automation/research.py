@@ -105,6 +105,14 @@ CATEGORIES = {
                          "Job Roles Created", "Context", "Source Link"],
         "json_files": ["ai-job-creation.json"],
     },
+    "never": {
+        "gid": None,  # created by sheet_prep.py; resolved by title
+        "tab_label": "Jobs Never Created",
+        "base_columns": ["Date", "Company", "Jobs Never Created",
+                         "Estimate Basis", "Context", "Mode",
+                         "Source Link"],
+        "json_files": ["jobs-never-created.json"],
+    },
     "advances": {
         "gid": None,  # created by sheet_prep.py; resolved by title
         "tab_label": "AI Advances",
@@ -306,6 +314,10 @@ def build_row(candidate, category, gate_result):
     elif category == "created":
         base = [get("date"), get("company"), count_verbatim, get("roles"),
                 get("reason"), get("source_url")]
+    elif category == "never":
+        base = [get("date"), get("company"), count_verbatim,
+                get("estimate_basis"), get("reason"), get("mode"),
+                get("source_url")]
     elif category == "advances":
         base = [get("date"), get("company"), get("type"), get("name"),
                 get("description"), get("category"), get("significance"),
@@ -391,6 +403,16 @@ CATEGORY_TASK = {
     "created": ("new hiring or roles specifically driven by AI initiatives "
                 "announced within the window (including AI data center and "
                 "chip fab support jobs)"),
+    "never": ("jobs NEVER CREATED within the window: work a company says it "
+              "gave to AI or AI-powered robots INSTEAD of hiring people - "
+              "e.g. a new facility automated from the start, a new site "
+              "staffed at a company-stated fraction of a comparable site, "
+              "roles not refilled or contracts not renewed because AI does "
+              "the work. The company itself must state the number, or a "
+              "ratio plus a company-stated/official baseline. Leaked "
+              "documents, union, analyst and journalist estimates do not "
+              "qualify. Exclude layoffs of existing staff and plain hiring "
+              "freezes with no number"),
     "advances": ("notable AI milestones within the window: breakthroughs, "
                  "company launches, model releases, regulation, "
                  "partnerships, acquisitions (majors always in; aim for "
@@ -430,6 +452,12 @@ Additionally for this category:
             "Announced (early stage)"
   "jobs_already_cut": verbatim count already executed, "" if none
   "timeline": stated execution timeline, "" if none
+""",
+    "never": """
+Additionally for this category:
+  "estimate_basis": the exact math behind "count" in plain words, e.g.
+                    "CEO-stated 30% of ~26,000 roles = 7,800"
+  "mode": exactly "software" or "robotics"
 """,
     "advances": """
 Additionally for this category:
@@ -654,7 +682,8 @@ def keys_from_local_json(json_files):
                 continue
         for entry in entries if isinstance(entries, list) else []:
             company = entry.get("companyName") or entry.get("company") or ""
-            count = entry.get("jobsCut") or entry.get("jobsCreated") or ""
+            count = (entry.get("jobsCut") or entry.get("jobsCreated")
+                     or entry.get("jobsNeverCreated") or "")
             keys.add(dedup_key(company, entry.get("date", ""), str(count)))
     return keys
 
@@ -739,7 +768,7 @@ def main():
     parser = argparse.ArgumentParser(
         description="Workflow A: research AI workforce events into the "
                     "staging sheet.")
-    parser.add_argument("--categories", default="losses,planned,created",
+    parser.add_argument("--categories", default="losses,planned,created,never",
                         help="Comma-separated categories to sweep this run "
                              "(default: the three job categories; the "
                              "'advances' sweep runs on its own weekly "

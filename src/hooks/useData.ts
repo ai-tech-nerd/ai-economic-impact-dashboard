@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import type { DisplacementEvent, AIMilestone, CompanyProfile, Prediction } from '../types';
+import type { DisplacementEvent, AIMilestone, CompanyProfile, Prediction, NeverCreatedEntry } from '../types';
 
 const BASE = import.meta.env.BASE_URL;
 
@@ -13,6 +13,7 @@ export function useData() {
   const [events, setEvents] = useState<DisplacementEvent[]>([]);
   const [plannedEvents, setPlannedEvents] = useState<DisplacementEvent[]>([]);
   const [creationEvents, setCreationEvents] = useState<DisplacementEvent[]>([]);
+  const [neverCreated, setNeverCreated] = useState<NeverCreatedEntry[]>([]);
   const [milestones, setMilestones] = useState<AIMilestone[]>([]);
   const [companies, setCompanies] = useState<CompanyProfile[]>([]);
   const [predictions, setPredictions] = useState<Prediction[]>([]);
@@ -27,12 +28,14 @@ export function useData() {
       fetchJson<Prediction[]>('predictions.json').catch(() => []),
       fetchJson<DisplacementEvent[]>('planned-layoffs.json').catch(() => []),
       fetchJson<DisplacementEvent[]>('ai-job-creation.json').catch(() => []),
+      fetchJson<NeverCreatedEntry[]>('jobs-never-created.json').catch(() => []),
     ])
-      .then(([evts, ms, cos, preds, planned, creation]) => {
+      .then(([evts, ms, cos, preds, planned, creation, never]) => {
         // Tag verified events
         setEvents(evts.map((e) => ({ ...e, status: e.status || 'verified' as const })));
         setPlannedEvents(planned);
         setCreationEvents(creation);
+        setNeverCreated(never);
         setMilestones(ms);
         setCompanies(cos);
         setPredictions(preds);
@@ -44,5 +47,5 @@ export function useData() {
       });
   }, []);
 
-  return { events, plannedEvents, creationEvents, milestones, companies, predictions, loading, error };
+  return { events, plannedEvents, creationEvents, neverCreated, milestones, companies, predictions, loading, error };
 }

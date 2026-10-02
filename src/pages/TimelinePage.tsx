@@ -10,13 +10,15 @@ import {
   getTotalJobsCut,
 } from '../utils/dataTransformers';
 import { formatDate, formatNumber } from '../utils/formatters';
-import type { DisplacementEvent } from '../types';
+import type { DisplacementEvent, NeverCreatedEntry } from '../types';
 import { RoboticsBadge, isRobotics } from '../components/shared/RoboticsBadge';
+import { getNeverCreatedTotal } from '../components/dashboard/JobsNeverCreatedCard';
 
 interface TimelinePageProps {
   events: DisplacementEvent[];
   plannedEvents?: DisplacementEvent[];
   creationEvents?: DisplacementEvent[];
+  neverCreated?: NeverCreatedEntry[];
 }
 
 /** Visual style for each event type */
@@ -61,12 +63,15 @@ function EventTypeBadge({ type }: { type: 'verified' | 'planned' | 'creation' })
   }
 }
 
-export function TimelinePage({ events, plannedEvents = [], creationEvents = [] }: TimelinePageProps) {
+export function TimelinePage({ events, plannedEvents = [], creationEvents = [], neverCreated = [] }: TimelinePageProps) {
   const [mode, setMode] = useState<'slider' | 'story'>('slider');
   const playback = useTimelinePlayback();
   const filteredEvents = filterEventsByDate(events, playback.currentDate);
   const filteredPlanned = filterEventsByDate(plannedEvents, playback.currentDate);
   const filteredCreation = filterEventsByDate(creationEvents, playback.currentDate);
+  const neverCreatedToDate = getNeverCreatedTotal(
+    neverCreated.filter((e) => e.date <= playback.currentDate),
+  );
 
   return (
     <PageLayout
@@ -107,6 +112,8 @@ export function TimelinePage({ events, plannedEvents = [], creationEvents = [] }
           filteredEvents={filteredEvents}
           filteredPlanned={filteredPlanned}
           filteredCreation={filteredCreation}
+          hasNeverCreated={neverCreated.length > 0}
+          neverCreatedToDate={neverCreatedToDate}
           playback={playback}
         />
       ) : (
@@ -120,11 +127,15 @@ function SliderMode({
   filteredEvents,
   filteredPlanned,
   filteredCreation,
+  hasNeverCreated,
+  neverCreatedToDate,
   playback,
 }: {
   filteredEvents: DisplacementEvent[];
   filteredPlanned: DisplacementEvent[];
   filteredCreation: DisplacementEvent[];
+  hasNeverCreated: boolean;
+  neverCreatedToDate: number;
   playback: ReturnType<typeof useTimelinePlayback>;
 }) {
   const totalSoFar = getTotalJobsCut(filteredEvents);
@@ -224,6 +235,13 @@ function SliderMode({
 
       {/* Charts — use filteredEvents directly for live updates */}
       <TrendLine events={filteredEvents} />
+      {hasNeverCreated && (
+        <p className="text-sm text-surface-600 -mt-4">
+          <span className="font-semibold text-robotics-600">Jobs Never Created</span> to this date:{' '}
+          <span className="font-semibold">{formatNumber(neverCreatedToDate)}</span>
+          <span className="text-surface-400"> (work given to AI and robots instead of people; not included in jobs lost)</span>
+        </p>
+      )}
 
       {/* Events — shows most recent events at the current point in time */}
       {recentEvents.length > 0 && (

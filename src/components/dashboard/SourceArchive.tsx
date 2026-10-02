@@ -7,7 +7,7 @@ interface ArchiveEntry {
   company: string;
   jobs: string;
   category: string;
-  tab: 'main' | 'planned' | 'created';
+  tab: 'main' | 'planned' | 'created' | 'never';
   type: string;
   reason: string;
   source_url: string;
@@ -15,13 +15,14 @@ interface ArchiveEntry {
   article_file: string;
 }
 
-type TabKey = 'all' | 'main' | 'planned' | 'created';
+type TabKey = 'all' | 'main' | 'planned' | 'created' | 'never';
 
 const TABS: { key: TabKey; label: string }[] = [
   { key: 'all', label: 'All' },
   { key: 'main', label: 'Jobs Displaced' },
   { key: 'planned', label: 'Planned / Announced' },
   { key: 'created', label: 'Jobs Created' },
+  { key: 'never', label: 'Jobs Never Created' },
 ];
 
 const BASE = import.meta.env.BASE_URL;
@@ -60,7 +61,8 @@ export function SourceArchive() {
     const main = entries.filter((e) => e.tab === 'main').length;
     const planned = entries.filter((e) => e.tab === 'planned').length;
     const created = entries.filter((e) => e.tab === 'created').length;
-    return { all, main, planned, created };
+    const never = entries.filter((e) => e.tab === 'never').length;
+    return { all, main, planned, created, never };
   }, [entries]);
 
   if (loading) {
@@ -141,6 +143,11 @@ export function SourceArchive() {
                 {entry.tab === 'planned' && (
                   <span className="text-[10px] font-semibold uppercase tracking-wider px-1.5 py-0.5 rounded bg-warning-100 text-warning-700">
                     Planned
+                  </span>
+                )}
+                {entry.tab === 'never' && (
+                  <span className="text-[10px] font-semibold uppercase tracking-wider px-1.5 py-0.5 rounded bg-robotics-100 text-robotics-700">
+                    Never Created
                   </span>
                 )}
                 {entry.tab === 'created' && (

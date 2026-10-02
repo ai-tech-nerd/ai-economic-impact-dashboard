@@ -1,0 +1,77 @@
+[
+  {
+    "id": "never-001",
+    "company": "ibm",
+    "companyName": "IBM",
+    "date": "2023-05-01",
+    "context": "Back-office roles (HR and other non-customer-facing functions) under a hiring pause",
+    "jobsNeverCreated": 7800,
+    "estimateBasis": "CEO-stated 30% of ~26,000 back-office roles = 7,800 over five years",
+    "displacementMode": "software",
+    "status": "verified",
+    "quote": "I could easily see 30% of that getting replaced by AI and automation over a five-year period.",
+    "description": "CEO Arvind Krishna told Bloomberg IBM would pause hiring for roles AI could do, citing roughly 26,000 non-customer-facing back-office roles, and said 30% could be replaced by AI and automation over five years. IBM later said there was no blanket hiring 'pause', describing selective backfilling instead. AskHR handles 94% of routine HR queries. Moved from the layoffs and planned datasets on 2026-10-02 (owner ruling): positions not refilled, not layoffs.",
+    "sources": [
+      {
+        "url": "https://www.reuters.com/technology/ibm-pause-hiring-plans-replace-7800-jobs-with-ai-bloomberg-news-2023-05-01/",
+        "title": "IBM to pause hiring in plan to replace 7,800 jobs with AI",
+        "publisher": "Reuters",
+        "date": "2023-05-01"
+      },
+      {
+        "url": "https://fortune.com/2023/05/01/ibm-ceo-ai-artificial-intelligence-back-office-jobs-pause-hiring",
+        "title": "IBM CEO says AI could replace back-office jobs; hiring paused",
+        "publisher": "Fortune",
+        "date": "2023-05-01"
+      }
+    ]
+  },
+  {
+    "id": "never-002",
+    "company": "klarna",
+    "companyName": "Klarna",
+    "date": "2024-08-27",
+    "context": "Company-wide headcount reduced through a hiring freeze and natural attrition, enabled by AI",
+    "jobsNeverCreated": 1200,
+    "estimateBasis": "Company-stated headcount drop from ~5,000 to ~3,800 via hiring freeze and attrition",
+    "displacementMode": "software",
+    "status": "verified",
+    "quote": "[The AI assistant is] doing the equivalent work of 700 full-time agents.",
+    "description": "CEO Sebastian Siemiatkowski said Klarna's workforce fell from about 5,000 to 3,800 in a year by not replacing departing staff, with its AI assistant doing the work of about 700 customer-service agents. He set a target of about 2,000 employees (a further ~1,800, not counted here as it is a target). Klarna later said it 'went too far' and resumed some human hiring in 2025. Moved from the layoffs and planned datasets on 2026-10-02 (owner ruling); the planned entry's '2,000' was the target headcount, not a cut count.",
+    "sources": [
+      {
+        "url": "https://www.reuters.com/technology/artificial-intelligence/swedens-klarna-says-ai-chatbots-help-shrink-headcount-2024-08-27/",
+        "title": "Sweden's Klarna says AI chatbots help shrink headcount",
+        "publisher": "Reuters",
+        "date": "2024-08-27"
+      },
+      {
+        "url": "https://www.klarna.com/international/press/klarna-ai-assistant-handles-two-thirds-of-customer-service-chats-in-its-first-month/",
+        "title": "Klarna AI assistant handles two-thirds of customer service chats in its first month",
+        "publisher": "Klarna (press release)",
+        "date": "2024-02-27"
+      }
+    ]
+  },
+  {
+    "id": "never-003",
+    "company": "dbs",
+    "companyName": "DBS Group",
+    "date": "2025-02-25",
+    "context": "Contract and temporary roles not renewed as AI takes on the work, across 19 markets",
+    "jobsNeverCreated": 4000,
+    "estimateBasis": "Company-stated ~4,000 of ~8,000-9,000 contract/temp roles not renewed over three years",
+    "displacementMode": "software",
+    "status": "verified",
+    "quote": "The reduction in workforce will come from 'natural attrition' as temporary and contract roles roll off over the next few years.",
+    "description": "CEO Piyush Gupta, replying to Bloomberg News, said DBS plans to reduce around 4,000 of its roughly 8,000-9,000 contract and temporary staff over three years as AI takes on their roles, through non-renewal rather than layoffs. Permanent staff are not affected; DBS also expects to create about 1,000 AI-related roles.",
+    "sources": [
+      {
+        "url": "https://www.taipeitimes.com/News/biz/archives/2025/02/25/2003832442",
+        "title": "DBS CEO sees job cuts of 4,000 temp staff as AI replaces roles",
+        "publisher": "Taipei Times (Bloomberg)",
+        "date": "2025-02-25"
+      }
+    ]
+  }
+]

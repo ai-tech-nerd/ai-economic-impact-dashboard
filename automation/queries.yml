@@ -80,6 +80,19 @@ created:
   - '"new roles" "AI-native" hiring'
   - 'chip fab AI jobs {Y}'
 
+# Jobs Never Created (staging tab: Jobs Never Created) - owner-approved
+# 2026-10-02. Work given to AI/robots INSTEAD of hiring people; company
+# must state the number or a ratio plus baseline.
+never:
+  - 'AI "instead of hiring"'
+  - '"not backfill" OR "won''t backfill" roles AI'
+  - '"stop hiring" AI CEO {Y}'
+  - 'contract staff "not renewed" AI'
+  - 'fully automated warehouse opens fewer workers'
+  - 'new automated facility "fraction of the" workers'
+  - '"the work of" agents AI headcount'
+  - 'robotic plant "half the" staff'
+
 # AI advances / milestones (staging tab: AI Advances) - owner's 2 terms
 # split per tracked type, plus per-lab sweeps
 advances:

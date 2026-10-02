@@ -20,7 +20,7 @@ on:
       categories:
         description: "Categories to sweep (comma-separated)"
         required: false
-        default: "losses,planned,created"
+        default: "losses,planned,created,never"
   # Weekly, Mondays 06:00 America/Chicago (= 11:00 UTC during CDT):
   schedule:
     - cron: "0 11 * * 1"
@@ -60,7 +60,7 @@ jobs:
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
         run: |
           WINDOW="${{ github.event.inputs.window || '7' }}"
-          CATS="${{ github.event.inputs.categories || 'losses,planned,created' }}"
+          CATS="${{ github.event.inputs.categories || 'losses,planned,created,never' }}"
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
             python3 automation/research.py --dry-run --window "$WINDOW" --categories "$CATS"
           else

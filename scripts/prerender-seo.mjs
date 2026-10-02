@@ -32,6 +32,7 @@ const loadJson = (name) =>
 const events = loadJson("job-displacement-events.json");
 const planned = loadJson("planned-layoffs.json");
 const created = loadJson("ai-job-creation.json");
+const neverCreated = loadJson("jobs-never-created.json");
 const milestones = loadJson("ai-milestones.json");
 const predictions = loadJson("predictions.json");
 let dataUpdated = "";
@@ -88,6 +89,11 @@ const updatedLine = dataUpdated
 
 // ---- per-route static content generators
 function dashboardHtml() {
+  const neverVerified = neverCreated.filter((e) => e.status === "verified");
+  const neverTotal = neverVerified.reduce((sum, e) => sum + e.jobsNeverCreated, 0);
+  const neverCreatedLine = neverVerified.length
+    ? `<p>Jobs Never Created: a further ${fmt(neverTotal)} jobs went to AI and robots instead of people at ${neverVerified.length} companies (company-stated numbers or ratios; tracked separately, not included in jobs lost).</p>`
+    : "";
   const roboticsJobs = realEvents
     .filter((e) => e.displacementMode === "robotics")
     .reduce((sum, e) => sum + e.jobsCut, 0);
@@ -104,6 +110,7 @@ function dashboardHtml() {
 <p>A live tracker of AI-driven layoffs and job losses: <strong>${fmt(totalJobs)} jobs</strong> lost to AI across <strong>${companies.size} companies</strong> in <strong>${realEvents.length} verified events</strong> since ChatGPT launched on November 30, 2022. Every event is verified against company statements, earnings calls, internal memos, or SEC filings — journalist speculation alone never qualifies.</p>
 ${updatedLine}
 <p>Of these, ${fmt(roboticsJobs)} jobs were replaced by AI-powered robots or automation (robotics); the rest by software AI.</p>
+${neverCreatedLine}
 <p>A further ${fmt(plannedTotal)} job cuts have been announced or planned across ${planned.length} companies, while ${created.length} companies have announced new AI-driven roles.</p>
 <h2>Companies with the most jobs lost to AI</h2>
 <table><thead><tr><th>Company</th><th>Jobs cut (AI-attributed)</th><th>Latest event</th></tr></thead><tbody>
