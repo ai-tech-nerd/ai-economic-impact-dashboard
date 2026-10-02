@@ -65,7 +65,8 @@
     "AI Job Losses"
    ],
    "match": {
-    "Company": "IBM"
+    "Company": "IBM",
+    "Date": "2023-05-01"
    }
   },
   {
@@ -74,7 +75,8 @@
     "AI Job Losses"
    ],
    "match": {
-    "Company": "Klarna"
+    "Company": "Klarna",
+    "Date": "2024-08-27"
    }
   },
   {
@@ -83,7 +85,8 @@
     "Planned_Announced"
    ],
    "match": {
-    "Company": "IBM"
+    "Company": "IBM",
+    "Date": "2023-05-01"
    }
   },
   {
@@ -92,7 +95,8 @@
     "Planned_Announced"
    ],
    "match": {
-    "Company": "Klarna"
+    "Company": "Klarna",
+    "Date": "2024-09-01"
    }
   }
  ]
