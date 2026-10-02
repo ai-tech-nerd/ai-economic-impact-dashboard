@@ -27,4 +27,5 @@ Owner: fully automated facilities and AI-enabled non-hiring displace people even
 
 ## Next Steps
 - Watch Monday runs' "never" category; Amazon stays disputed unless Amazon states figures.
-- Tracker sheet: IBM/Klarna rows still sit on Losses/Planned tabs; tracker has no Jobs Never Created tab (owner decision needed).
+- Tracker sheet DONE 2026-10-02 (owner approved): tab "Jobs Never Created" created with IBM/Klarna/DBS; old rows deleted (Losses: IBM 2023-05-01, Klarna 2024-08-27; Planned: IBM 2023-05-01, Klarna 2024-09-01). The IBM 2025-11-04 layoff row was kept. Verified by re-run: tab has 3 rows, all 4 deletes now match 0.
+- tracker_append.py now supports create_tabs and guarded deletes (exactly-one-match rule; ambiguity is refused and lists candidate rows). Always dry-run first. Payloads are still NOT idempotent for appends.

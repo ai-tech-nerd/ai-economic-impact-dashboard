@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 - **Jobs Never Created** (owner-approved name): work given to AI/robots instead of new hires or replacements. New dataset jobs-never-created.json (company-stated number, or company-stated ratio x stated baseline; math shown per entry; disputed figures flagged and excluded). Separate dashboard card (13,000 across 3 companies), Timeline line, SEO copy line, Source Archive tab. Never added to the jobs-lost headline.
 - Entries: IBM 7,800 (CEO 30% of ~26,000 back-office roles), Klarna 1,200 (5,000 → 3,800 via freeze + attrition), DBS 4,000 (contract/temp roles not renewed; new archive page with screenshot).
+- Tracker sheet: new "Jobs Never Created" tab (IBM, Klarna, DBS); IBM/Klarna rows removed from Losses/Planned via tracker_append.py (new create_tabs + guarded deletes), dry-run verified before and after.
 - Workflow A: 4th category "never" (research.py, queries.yml 8 queries, research.yml default), staging tab "Jobs Never Created" via sheet_prep.py.
 
 ### Changed (owner ruling)
