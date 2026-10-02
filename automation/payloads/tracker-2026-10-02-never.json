@@ -86,7 +86,7 @@
    ],
    "match": {
     "Company": "IBM",
-    "Date": "2023-05-01"
+    "Date Announced": "2023-05-01"
    }
   },
   {
@@ -96,7 +96,7 @@
    ],
    "match": {
     "Company": "Klarna",
-    "Date": "2024-09-01"
+    "Date Announced": "2024-09-01"
    }
   }
  ]
