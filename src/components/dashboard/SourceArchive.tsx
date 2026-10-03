@@ -146,7 +146,7 @@ export function SourceArchive() {
                   </span>
                 )}
                 {entry.tab === 'never' && (
-                  <span className="text-[10px] font-semibold uppercase tracking-wider px-1.5 py-0.5 rounded bg-robotics-100 text-robotics-700">
+                  <span className="text-[10px] font-semibold uppercase tracking-wider px-1.5 py-0.5 rounded bg-never-100 text-never-700">
                     Never Created
                   </span>
                 )}

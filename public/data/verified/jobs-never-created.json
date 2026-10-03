@@ -24,7 +24,8 @@
         "publisher": "Fortune",
         "date": "2023-05-01"
       }
-    ]
+    ],
+    "isProjection": true
   },
   {
     "id": "never-002",
@@ -72,6 +73,7 @@
         "publisher": "Taipei Times (Bloomberg)",
         "date": "2025-02-25"
       }
-    ]
+    ],
+    "isProjection": true
   }
 ]

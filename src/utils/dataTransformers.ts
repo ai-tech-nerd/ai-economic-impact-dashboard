@@ -1,4 +1,4 @@
-import type { DisplacementEvent, AIMilestone } from '../types';
+import type { DisplacementEvent, AIMilestone, NeverCreatedEntry } from '../types';
 
 export function getTopJobTypes(events: DisplacementEvent[], limit = 10) {
   const counts: Record<string, number> = {};
@@ -61,7 +61,13 @@ export function getCumulativeTrend(
   events: DisplacementEvent[],
   startDate?: string,
   endDate?: string,
+  neverCreated: NeverCreatedEntry[] = [],
 ) {
+  const neverMap: Record<string, number> = {};
+  for (const e of getCountedNeverCreated(neverCreated)) {
+    const key = e.date.slice(0, 7);
+    neverMap[key] = (neverMap[key] || 0) + e.jobsNeverCreated;
+  }
   const monthly = getMonthlyTrend(events);
   const monthlyMap: Record<string, number> = {};
   for (const { month, count } of monthly) {
@@ -91,21 +97,24 @@ export function getCumulativeTrend(
       }
     }
   } else {
-    months = monthly.map((d) => d.month);
+    months = [...new Set([...monthly.map((d) => d.month), ...Object.keys(neverMap)])].sort();
   }
 
   let cumulative = 0;
   let cumulativeRobotics = 0;
+  let cumulativeNever = 0;
   return months.map((month) => {
     const count = monthlyMap[month] || 0;
     cumulative += count;
     cumulativeRobotics += roboticsMap[month] || 0;
+    cumulativeNever += neverMap[month] || 0;
     return {
       month,
       count,
-      cumulative,
+      cumulative: cumulative + cumulativeNever,
       cumulativeRobotics,
       cumulativeSoftware: cumulative - cumulativeRobotics,
+      cumulativeNever,
     };
   });
 }
@@ -136,4 +145,18 @@ export function filterEventsByDate(events: DisplacementEvent[], maxDate: string)
 
 export function filterMilestonesByDate(milestones: AIMilestone[], maxDate: string) {
   return milestones.filter((ms) => ms.date <= maxDate);
+}
+
+/** Jobs Never Created that count toward the total: verified and already realized. */
+export function getCountedNeverCreated(entries: NeverCreatedEntry[]) {
+  return entries.filter((e) => e.status === 'verified' && !e.isProjection);
+}
+
+/** Verified future estimates: shown, never counted. */
+export function getFutureNeverCreated(entries: NeverCreatedEntry[]) {
+  return entries.filter((e) => e.status === 'verified' && e.isProjection);
+}
+
+export function sumNeverCreated(entries: NeverCreatedEntry[]) {
+  return entries.reduce((sum, e) => sum + e.jobsNeverCreated, 0);
 }

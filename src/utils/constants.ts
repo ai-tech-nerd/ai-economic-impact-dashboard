@@ -11,6 +11,7 @@ export const JOB_TYPE_LABELS: Record<string, string> = {
   'design': 'Design',
   'administrative': 'Administrative',
   'general': 'General / Multiple',
+  'operations': 'Operations',
 };
 
 export const INDUSTRY_COLORS: Record<string, string> = {

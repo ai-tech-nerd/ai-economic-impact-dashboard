@@ -3,54 +3,116 @@ import { useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { AnimatedNumber } from '../shared/AnimatedNumber';
 
+export interface HeroBreakdown {
+  layoffs: number;
+  eventCount: number;
+  neverCreated: number;
+  robotics: number;
+  jobsCreated: number;
+  topIndustry?: { name: string; count: number };
+  topJobType?: { name: string; count: number };
+  plannedCuts: number;
+  futureNeverCreated: number;
+}
+
 interface TotalCounterProps {
   total: number;
   companyCount: number;
-  eventCount: number;
-  roboticsJobs?: number;
+  breakdown: HeroBreakdown;
 }
 
-export function TotalCounter({ total, companyCount, eventCount, roboticsJobs }: TotalCounterProps) {
+/** Small stat tile for the hero's right-hand grid. */
+function StatTile({
+  label,
+  value,
+  text,
+  note,
+  accent,
+}: {
+  label: string;
+  value?: number;
+  text?: string;
+  note: string;
+  accent: string;
+}) {
+  return (
+    <div className="rounded-xl bg-white/5 border border-white/10 p-4 min-w-0">
+      <p className="text-surface-400 text-[11px] uppercase tracking-wider">{label}</p>
+      {value !== undefined ? (
+        <div className={`text-2xl font-bold mt-1 ${accent}`}>
+          <AnimatedNumber value={value} duration={1500} />
+        </div>
+      ) : (
+        <div className={`text-lg font-bold mt-1 leading-tight truncate ${accent}`} title={text}>
+          {text}
+        </div>
+      )}
+      <p className="text-surface-500 text-xs mt-1">{note}</p>
+    </div>
+  );
+}
+
+export function TotalCounter({ total, companyCount, breakdown: b }: TotalCounterProps) {
   const location = useLocation();
   const isEmbed = location.pathname.startsWith('/embed') || location.pathname.startsWith('/widget');
+  const fmt = (n: number) => n.toLocaleString('en-US');
 
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="bg-gradient-to-br from-surface-900 to-surface-800 rounded-2xl p-8 text-white text-center relative"
+      className="bg-gradient-to-br from-surface-900 to-surface-800 rounded-2xl p-6 md:p-8 text-white relative"
     >
       {!isEmbed && <WidgetEmbedButton />}
-      <p className="text-surface-400 text-sm uppercase tracking-wider mb-2">
-        Total Jobs Displaced by AI
-      </p>
-      <div className="text-5xl md:text-7xl font-bold mb-4">
-        <AnimatedNumber value={total} className="text-primary-400" />
+      <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.6fr)] gap-6 lg:gap-8 items-center">
+        {/* Primary number */}
+        <div className="text-center lg:text-left">
+          <p className="text-surface-400 text-sm uppercase tracking-wider mb-2">
+            Total Jobs Displaced by AI
+          </p>
+          <div className="text-5xl md:text-7xl font-bold">
+            <AnimatedNumber value={total} className="text-primary-400" />
+          </div>
+          <p className="text-surface-400 text-sm mt-3">
+            Layoffs + jobs never created, since November 30, 2022 (ChatGPT launch)
+          </p>
+          <p className="text-surface-500 text-xs mt-1">
+            {fmt(companyCount)} companies · {fmt(b.eventCount)} verified layoff events
+          </p>
+        </div>
+
+        {/* Breakdown */}
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+          <StatTile label="Layoffs" value={b.layoffs} note="part of total" accent="text-white" />
+          <StatTile label="Jobs Never Created" value={b.neverCreated} note="part of total" accent="text-never-500" />
+          <StatTile label="Robotics" value={b.robotics} note="of layoffs" accent="text-robotics-500" />
+          <StatTile label="AI Jobs Created" value={b.jobsCreated} note="new roles, not in total" accent="text-success-500" />
+          <StatTile
+            label="Most Impacted Industry"
+            text={b.topIndustry?.name ?? '—'}
+            note={b.topIndustry ? `${fmt(b.topIndustry.count)} jobs` : ''}
+            accent="text-white"
+          />
+          <StatTile
+            label="Top Job Category"
+            text={b.topJobType?.name ?? '—'}
+            note={b.topJobType ? `${fmt(b.topJobType.count)} jobs` : ''}
+            accent="text-white"
+          />
+        </div>
       </div>
-      <p className="text-surface-400 text-sm mb-6">
-        Since November 30, 2022 (ChatGPT Launch)
-      </p>
-      <div className="flex justify-center gap-8">
-        <div>
-          <div className="text-2xl font-bold">
-            <AnimatedNumber value={companyCount} duration={1500} />
-          </div>
-          <p className="text-surface-400 text-xs uppercase tracking-wider">Companies</p>
-        </div>
-        <div>
-          <div className="text-2xl font-bold">
-            <AnimatedNumber value={eventCount} duration={1500} />
-          </div>
-          <p className="text-surface-400 text-xs uppercase tracking-wider">Events</p>
-        </div>
-        {roboticsJobs !== undefined && (
-          <div>
-            <div className="text-2xl font-bold text-robotics-500">
-              <AnimatedNumber value={roboticsJobs} duration={1500} />
-            </div>
-            <p className="text-surface-400 text-xs uppercase tracking-wider">Robotics Jobs</p>
-          </div>
-        )}
+
+      {/* Future numbers, never counted */}
+      <div className="mt-6 pt-4 border-t border-white/10 flex flex-wrap gap-x-6 gap-y-1 text-sm text-surface-400 justify-center lg:justify-start">
+        <span className="uppercase tracking-wider text-xs text-surface-500 self-center">
+          Not included in total:
+        </span>
+        <span>
+          Planned / announced cuts <span className="font-semibold text-warning-400">{fmt(b.plannedCuts)}</span>
+        </span>
+        <span>
+          Future jobs never created <span className="font-semibold text-never-500">{fmt(b.futureNeverCreated)}</span>
+        </span>
       </div>
     </motion.div>
   );

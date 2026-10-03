@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [Unreleased] - 2026-10-03 — Dashboard hero redesign; Jobs Never Created counted in total
+
+### Changed (owner ruling)
+- Headline is now **Total Jobs Displaced by AI = layoffs + realized Jobs Never Created**: 328,106 + 1,200 = **329,306**. Future estimates (IBM 7,800 over 5 yrs, DBS 4,000 over 3 yrs; new `isProjection` flag) and planned cuts are shown but never counted.
+- Hero redesigned as a dashboard: big total left; tiles right (Layoffs, Jobs Never Created, Robotics "of layoffs", AI Jobs Created "not in total", Most Impacted Industry, Top Job Category); bottom strip "Not included in total" (planned 151,900; future never-created 11,800). Stacks on mobile (verified at 375px, no overflow).
+- Page description clarifies the SEO H1 "Jobs Lost to AI" (layoffs + jobs companies stopped filling; planned/future shown separately).
+- Trend chart adds a Jobs Never Created layer (top edge = headline); Timeline counter and chart, /widget/stats, and SEO copy all use the same total.
+- Jobs Never Created recolored teal (distinct from Robotics violet / Planned amber); card marks "Future estimate" entries.
+- JOB_TYPE_LABELS: added Operations.
+
+### Known issue (not fixed)
+- Job-type values are inconsistent across events (e.g. "Sales" vs "sales-marketing", "Admin" vs "administrative"); affects the Job Types chart and the Top Job Category tile.
+
 ## [Unreleased] - 2026-10-02 — Jobs Never Created
 
 ### Added

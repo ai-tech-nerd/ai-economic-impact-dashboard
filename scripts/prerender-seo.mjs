@@ -59,7 +59,15 @@ const fmtDate = (iso) =>
 
 // ---- derived stats (mirror src/utils/dataTransformers.ts conventions)
 const realEvents = events.filter((e) => !e.isProjection);
-const totalJobs = realEvents.reduce((s, e) => s + e.jobsCut, 0);
+const layoffJobs = realEvents.reduce((s, e) => s + e.jobsCut, 0);
+// Headline = layoffs + Jobs Never Created already lost (future estimates and
+// disputed figures excluded). Must match DashboardPage's total.
+const neverCounted = neverCreated.filter((e) => e.status === "verified" && !e.isProjection);
+const neverCountedJobs = neverCounted.reduce((s, e) => s + e.jobsNeverCreated, 0);
+const neverFutureJobs = neverCreated
+  .filter((e) => e.status === "verified" && e.isProjection)
+  .reduce((s, e) => s + e.jobsNeverCreated, 0);
+const totalJobs = layoffJobs + neverCountedJobs;
 const companies = new Map();
 for (const e of realEvents) {
   const c = companies.get(e.company) || {
@@ -89,10 +97,8 @@ const updatedLine = dataUpdated
 
 // ---- per-route static content generators
 function dashboardHtml() {
-  const neverVerified = neverCreated.filter((e) => e.status === "verified");
-  const neverTotal = neverVerified.reduce((sum, e) => sum + e.jobsNeverCreated, 0);
-  const neverCreatedLine = neverVerified.length
-    ? `<p>Jobs Never Created: a further ${fmt(neverTotal)} jobs went to AI and robots instead of people at ${neverVerified.length} companies (company-stated numbers or ratios; tracked separately, not included in jobs lost).</p>`
+  const neverCreatedLine = neverCreated.length
+    ? `<p>The total combines ${fmt(layoffJobs)} jobs lost to layoffs and ${fmt(neverCountedJobs)} jobs never created: work companies gave to AI or robots instead of filling the role. A further ${fmt(neverFutureJobs)} jobs never created are company-stated future estimates and are not included in the total.</p>`
     : "";
   const roboticsJobs = realEvents
     .filter((e) => e.displacementMode === "robotics")
@@ -107,7 +113,7 @@ function dashboardHtml() {
     )
     .join("\n");
   return `<h1>Jobs Lost to AI</h1>
-<p>A live tracker of AI-driven layoffs and job losses: <strong>${fmt(totalJobs)} jobs</strong> lost to AI across <strong>${companies.size} companies</strong> in <strong>${realEvents.length} verified events</strong> since ChatGPT launched on November 30, 2022. Every event is verified against company statements, earnings calls, internal memos, or SEC filings — journalist speculation alone never qualifies.</p>
+<p>A live tracker of AI-driven layoffs and job losses: <strong>${fmt(totalJobs)} jobs</strong> displaced by AI across <strong>${companies.size} companies</strong>, including <strong>${realEvents.length} verified layoff events</strong> since ChatGPT launched on November 30, 2022. Every event is verified against company statements, earnings calls, internal memos, or SEC filings — journalist speculation alone never qualifies.</p>
 ${updatedLine}
 <p>Of these, ${fmt(roboticsJobs)} jobs were replaced by AI-powered robots or automation (robotics); the rest by software AI.</p>
 ${neverCreatedLine}

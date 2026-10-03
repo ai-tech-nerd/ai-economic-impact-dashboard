@@ -52,6 +52,8 @@ export interface NeverCreatedEntry {
   displacementMode: 'software' | 'robotics';
   /** 'disputed' = company disputes the figure; shown flagged, excluded from the total. */
   status: 'verified' | 'disputed';
+  /** Future estimate (multi-year plan); shown but not counted in totals. */
+  isProjection?: boolean;
   quote: string;
   description: string;
   sources: Source[];

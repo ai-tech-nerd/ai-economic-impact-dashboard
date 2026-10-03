@@ -11,22 +11,25 @@ import {
 import { ChartContainer } from '../shared/ChartContainer';
 import { getCumulativeTrend } from '../../utils/dataTransformers';
 import { formatNumber } from '../../utils/formatters';
-import type { DisplacementEvent } from '../../types';
+import type { DisplacementEvent, NeverCreatedEntry } from '../../types';
 
 interface TrendLineProps {
   events: DisplacementEvent[];
   title?: string;
   subtitle?: string;
   dateRange?: { start: string; end: string };
+  /** Counted (realized) Jobs Never Created are stacked on top so the top edge matches the headline total. */
+  neverCreated?: NeverCreatedEntry[];
 }
 
-export function TrendLine({ events, title, subtitle, dateRange }: TrendLineProps) {
-  const data = getCumulativeTrend(events, dateRange?.start, dateRange?.end);
+export function TrendLine({ events, title, subtitle, dateRange, neverCreated = [] }: TrendLineProps) {
+  const data = getCumulativeTrend(events, dateRange?.start, dateRange?.end, neverCreated);
+  const hasNever = data.some((d) => d.cumulativeNever > 0);
 
   return (
     <ChartContainer
       title={title ?? 'Cumulative Job Displacement'}
-      subtitle={subtitle ?? 'Running total of AI-attributed job cuts over time, split by software AI and robotics'}
+      subtitle={subtitle ?? 'Running total of jobs displaced by AI: layoffs (software AI and robotics) plus jobs never created'}
       widgetPath="trend"
       widgetHeight={420}
     >
@@ -36,6 +39,10 @@ export function TrendLine({ events, title, subtitle, dateRange }: TrendLineProps
             <linearGradient id="colorCumulative" x1="0" y1="0" x2="0" y2="1">
               <stop offset="5%" stopColor="#3b82f6" stopOpacity={0.3} />
               <stop offset="95%" stopColor="#3b82f6" stopOpacity={0} />
+            </linearGradient>
+            <linearGradient id="colorNever" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="5%" stopColor="#14b8a6" stopOpacity={0.5} />
+              <stop offset="95%" stopColor="#14b8a6" stopOpacity={0.15} />
             </linearGradient>
             <linearGradient id="colorRobotics" x1="0" y1="0" x2="0" y2="1">
               <stop offset="5%" stopColor="#8b5cf6" stopOpacity={0.6} />
@@ -86,6 +93,18 @@ export function TrendLine({ events, title, subtitle, dateRange }: TrendLineProps
             fill="url(#colorCumulative)"
             isAnimationActive={false}
           />
+          {hasNever && (
+            <Area
+              type="monotone"
+              dataKey="cumulativeNever"
+              name="Jobs Never Created"
+              stackId="mode"
+              stroke="#14b8a6"
+              strokeWidth={2}
+              fill="url(#colorNever)"
+              isAnimationActive={false}
+            />
+          )}
         </AreaChart>
       </ResponsiveContainer>
     </ChartContainer>

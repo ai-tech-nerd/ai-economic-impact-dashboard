@@ -69,9 +69,8 @@ export function TimelinePage({ events, plannedEvents = [], creationEvents = [], 
   const filteredEvents = filterEventsByDate(events, playback.currentDate);
   const filteredPlanned = filterEventsByDate(plannedEvents, playback.currentDate);
   const filteredCreation = filterEventsByDate(creationEvents, playback.currentDate);
-  const neverCreatedToDate = getNeverCreatedTotal(
-    neverCreated.filter((e) => e.date <= playback.currentDate),
-  );
+  const filteredNever = neverCreated.filter((e) => e.date <= playback.currentDate);
+  const neverCreatedToDate = getNeverCreatedTotal(filteredNever);
 
   return (
     <PageLayout
@@ -113,6 +112,7 @@ export function TimelinePage({ events, plannedEvents = [], creationEvents = [], 
           filteredPlanned={filteredPlanned}
           filteredCreation={filteredCreation}
           hasNeverCreated={neverCreated.length > 0}
+          filteredNever={filteredNever}
           neverCreatedToDate={neverCreatedToDate}
           playback={playback}
         />
@@ -128,6 +128,7 @@ function SliderMode({
   filteredPlanned,
   filteredCreation,
   hasNeverCreated,
+  filteredNever,
   neverCreatedToDate,
   playback,
 }: {
@@ -135,10 +136,11 @@ function SliderMode({
   filteredPlanned: DisplacementEvent[];
   filteredCreation: DisplacementEvent[];
   hasNeverCreated: boolean;
+  filteredNever: NeverCreatedEntry[];
   neverCreatedToDate: number;
   playback: ReturnType<typeof useTimelinePlayback>;
 }) {
-  const totalSoFar = getTotalJobsCut(filteredEvents);
+  const totalSoFar = getTotalJobsCut(filteredEvents) + neverCreatedToDate;
   const plannedTotal = filteredPlanned.reduce((sum, e) => sum + e.jobsCut, 0);
 
   // Combine all events sorted by date, tag with type, show most recent 6
@@ -234,12 +236,12 @@ function SliderMode({
       </div>
 
       {/* Charts — use filteredEvents directly for live updates */}
-      <TrendLine events={filteredEvents} />
+      <TrendLine events={filteredEvents} neverCreated={filteredNever} />
       {hasNeverCreated && (
         <p className="text-sm text-surface-600 -mt-4">
-          <span className="font-semibold text-robotics-600">Jobs Never Created</span> to this date:{' '}
+          <span className="font-semibold text-never-600">Jobs Never Created</span> to this date:{' '}
           <span className="font-semibold">{formatNumber(neverCreatedToDate)}</span>
-          <span className="text-surface-400"> (work given to AI and robots instead of people; not included in jobs lost)</span>
+          <span className="text-surface-400"> (already lost, included in the total; future estimates excluded)</span>
         </p>
       )}
 

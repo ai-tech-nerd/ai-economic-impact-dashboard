@@ -1,11 +1,17 @@
 import { useSearchParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { AnimatedNumber } from '../../components/shared/AnimatedNumber';
-import { getTotalJobsCut, getCompanySummary } from '../../utils/dataTransformers';
-import type { DisplacementEvent } from '../../types';
+import {
+  getTotalJobsCut,
+  getCompanySummary,
+  getCountedNeverCreated,
+  sumNeverCreated,
+} from '../../utils/dataTransformers';
+import type { DisplacementEvent, NeverCreatedEntry } from '../../types';
 
 interface StatsEmbedProps {
   events: DisplacementEvent[];
+  neverCreated?: NeverCreatedEntry[];
 }
 
 /**
@@ -14,12 +20,12 @@ interface StatsEmbedProps {
  * URL params:
  *   theme=dark|light|transparent (default: dark)
  */
-export function StatsEmbed({ events }: StatsEmbedProps) {
+export function StatsEmbed({ events, neverCreated = [] }: StatsEmbedProps) {
   const [params] = useSearchParams();
   const theme = (params.get('theme') || 'dark') as 'dark' | 'light' | 'transparent';
 
   const nonProjection = events.filter((e) => !e.isProjection);
-  const total = getTotalJobsCut(events);
+  const total = getTotalJobsCut(events) + sumNeverCreated(getCountedNeverCreated(neverCreated));
   const companies = getCompanySummary(events);
   const eventCount = nonProjection.length;
 
