@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [Unreleased] - 2026-10-03 — Tracker sheet Category column
+
+### Added
+- Tracker sheet: new "Category" column (canonical category labels) next to "Job Position/Category" on Losses (96 rows) and Planned/Announced (15 rows); original descriptions untouched. Dry-run, live, re-verified. tracker_append.py gained `set_columns` (insert column + match-and-fill, skips ambiguous rows). Future publish automation (Workflow B) must fill Category on new rows.
+
+### Found, not yet fixed (owner decision)
+- Duplicate event: evt-013 and evt-014 (Duolingo, 2024-01-09, same CNN source; 83 and 0 jobs).
+- SAP plan-009 date: dashboard 2025-09-24 (matches its Fortune source) vs tracker sheet 2025-04-24.
+
 ## [Unreleased] - 2026-10-03 — AI Advances catch-up (Sep 15 → Oct 2)
 
 ### Added
