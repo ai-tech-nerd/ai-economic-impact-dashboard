@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [Unreleased] - 2026-10-03 — Model releases sweep (image, video, audio, robotics, open-weight)
+
+### Added
+- 9 verified model releases (418 milestones): ChatGPT Images 2.5 / GPT-Image-2.5 (09-08, missed earlier), Qwen3.8-Omni-Flash, Qwen-Image-2.1, Xiaomi MiMo-V2.6-Pro/Flash, Gemini 3.8 Flash TTS, FLUX 3 Action, Eleven v4, Runway Praxis-1, Tavus Griffin (video Turing test labeled as the company's own claim: 48% of 54 in a Tavus-run study).
+- OpenAI Dots also listed under Model releases (types: company-launch + model-release).
+- Deleted misdated duplicate archive page 2025-04-28-duolingo (owner approved); nav chain DBS ↔ UPS; legacy archive index row removed.
+- Held (weak sourcing): Ideogram 4.5, HeyGen Video 1.0. Rejected: Kling 4.0 (limited access), GPT-Synopsys (no model yet), unverified Nvidia/Mistral claims, pre-window items.
+
 ## [Unreleased] - 2026-10-03 — Tracker sheet Category column
 
 ### Added

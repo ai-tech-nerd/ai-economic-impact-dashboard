@@ -178,6 +178,14 @@ const COMPANY_DISPLAY: Record<string, { name: string; description: string }> = {
     name: 'TypeSafe AI',
     description: 'AI lab building "System One" models that return typed, probability-calibrated decisions as a fast alternative to LLMs.',
   },
+  xiaomi: {
+    name: 'Xiaomi',
+    description: 'Consumer electronics maker whose MiMo models became a leading open-weight LLM family in 2026.',
+  },
+  tavus: {
+    name: 'Tavus',
+    description: 'AI research lab building real-time conversational video models; claims Griffin passed a video Turing test.',
+  },
   instinct: {
     name: 'Instinct',
     description: 'Personal AI agent startup that books and buys on users\' behalf; raised $1B at a $10B valuation in 2026.',
