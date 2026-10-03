@@ -325,41 +325,13 @@
     "region": "North America",
     "country": "US",
     "aiReplacement": true,
-    "reasonGiven": "Spokesperson stated cuts could be 'attributed to AI.' Company shifted to AI-driven content creation. CEO Luis von Ahn later confirmed replacing contractors with AI wherever feasible.",
+    "reasonGiven": "Spokesperson stated cuts could be 'attributed to AI.' Company shifted to AI-driven content creation. CEO Luis von Ahn later confirmed replacing contractors with AI wherever feasible. (Separately, in an April 2025 'AI-first' memo, von Ahn said Duolingo would 'gradually stop using contractors to do work that AI can handle'; no job number given.)",
     "description": "Duolingo cut 83 (10% contractors) jobs across content creation / translation contractors. Spokesperson stated cuts could be 'attributed to AI.",
     "sources": [
       {
         "url": "https://www.cnn.com/2024/01/09/tech/duolingo-layoffs-due-to-ai",
         "title": "Duolingo layoffs",
         "publisher": "CNN",
-        "date": "2024-01-09"
-      }
-    ],
-    "verificationStatus": "verified",
-    "jobTypesDetail": [
-      "content-writing"
-    ]
-  },
-  {
-    "id": "evt-014",
-    "company": "duolingo",
-    "companyName": "Duolingo",
-    "date": "2024-01-09",
-    "jobsCut": 0,
-    "jobTypes": [
-      "content-data"
-    ],
-    "industry": "Education Technology",
-    "region": "North America",
-    "country": "US",
-    "aiReplacement": true,
-    "reasonGiven": "CEO Luis von Ahn company-wide email: 'gradually stop using contractors to do work that AI can handle.' Declared 'AI-first' company. 'New hires will only be authorized if a team is unable to automate.'",
-    "description": "Duolingo cut Unknown (contractors) jobs across content creation / translation contractors. CEO Luis von Ahn company-wide email: 'gradually stop using contractors to do work that AI can handle.",
-    "sources": [
-      {
-        "url": "https://www.cnn.com/2024/01/09/tech/duolingo-layoffs-due-to-ai",
-        "title": "Duolingo layoffs",
-        "publisher": "News Source",
         "date": "2024-01-09"
       }
     ],

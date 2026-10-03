@@ -7,9 +7,12 @@ All notable changes to this project will be documented in this file.
 ### Added
 - Tracker sheet: new "Category" column (canonical category labels) next to "Job Position/Category" on Losses (96 rows) and Planned/Announced (15 rows); original descriptions untouched. Dry-run, live, re-verified. tracker_append.py gained `set_columns` (insert column + match-and-fill, skips ambiguous rows). Future publish automation (Workflow B) must fill Category on new rows.
 
-### Found, not yet fixed (owner decision)
-- Duplicate event: evt-013 and evt-014 (Duolingo, 2024-01-09, same CNN source; 83 and 0 jobs).
-- SAP plan-009 date: dashboard 2025-09-24 (matches its Fortune source) vs tracker sheet 2025-04-24.
+### Fixed (owner approved)
+- Removed duplicate evt-014 (Duolingo, 2024-01-09, 0 jobs, same CNN source as evt-013; its text was actually from the April 2025 "AI-first" memo, now noted on evt-013). Events 97 -> 96; jobs total unchanged.
+- Tracker sheet SAP planned row date corrected 2025-04-24 -> 2025-09-24 (matches the Fortune source).
+
+### Found, not fixed
+- Archive page 2025-04-28-duolingo is a misdated copy of the 2024-01-09 CNN page (same article). Deleting it needs owner approval.
 
 ## [Unreleased] - 2026-10-03 — AI Advances catch-up (Sep 15 → Oct 2)
 
