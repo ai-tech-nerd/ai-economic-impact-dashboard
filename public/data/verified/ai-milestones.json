@@ -7754,6 +7754,56 @@
     ]
   },
   {
+    "id": "ms-329",
+    "company": "ideogram",
+    "date": "2026-09-30",
+    "type": "model-release",
+    "name": "Ideogram Releases Ideogram 4.5 Multi-Turn Image Editing Model",
+    "description": "Image editing model built to avoid artifact buildup, pixel shifts and color drift across repeated edits; native 2K output, four quality tiers from $0.008 to $0.22 per image, open weights promised. Comparisons against GPT Image 2.5 and Nano Banana are company-produced. Lower-confidence sourcing (minor outlet plus Ideogram's own post).",
+    "category": "image",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://runtimewire.com/article/ideogram-45-multi-turn-image-editing",
+        "title": "Ideogram 4.5 targets image drift with multi-turn editing",
+        "publisher": "RuntimeWire",
+        "date": "2026-09-30"
+      },
+      {
+        "url": "https://x.com/ideogram_ai/status/2105327223431737780",
+        "title": "Ideogram 4.5 announcement",
+        "publisher": "Ideogram (X)",
+        "date": "2026-09-30"
+      }
+    ],
+    "publicRelease": true
+  },
+  {
+    "id": "ms-330",
+    "company": "heygen",
+    "date": "2026-09-30",
+    "type": "model-release",
+    "name": "HeyGen Releases HeyGen Video 1.0",
+    "description": "General video generation model post-trained by HeyGen on MiniMax's open-weight H3: text-, image- and reference-to-video with sound in one call, 5-15 second clips at up to 768p, $0.01/second at launch. HeyGen reports 55.8% preference over H3 Max in blind votes. Launch date sourced from a developer blog only; model specs from HeyGen's docs.",
+    "category": "video",
+    "significance": "medium",
+    "sources": [
+      {
+        "url": "https://developers.heygen.com/docs/models/heygen-video",
+        "title": "HeyGen Video",
+        "publisher": "HeyGen (developer docs)",
+        "date": "2026-09-30"
+      },
+      {
+        "url": "https://www.orcarouter.ai/blog/heygen-video-1-launch",
+        "title": "HeyGen Video 1.0 launch",
+        "publisher": "OrcaRouter",
+        "date": "2026-09-30"
+      }
+    ],
+    "publicRelease": true
+  },
+  {
     "id": "ms-328",
     "company": "tavus",
     "date": "2026-10-01",
