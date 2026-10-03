@@ -33,6 +33,7 @@ jobs:
       # it on mount). Also gives each main route an HTTP 200 via GitHub
       # Pages' extensionless resolution. 404.html covers deep links.
       - run: node scripts/prerender-seo.mjs
+      - run: node scripts/og/generate.mjs
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

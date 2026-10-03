@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [Unreleased] - 2026-10-03 — Social share images + page metadata
+
+### Added
+- **Share images** (1200×630) generated at deploy from live data (scripts/og/: satori + resvg, Inter font; no browser): 6 section pages, 147 company pages, 131 Source Archive pages (284 images, ~50s, ~31 MB). Dark hero style; type-colored badges; archive summary shown without quotation marks (our wording, not a quote).
+- Every page now has og:image / twitter:image; X/Twitter title and description are per page (were site-wide dashboard text).
+- **Static company pages** (dist/companies/<id>.html) with their own title, description, canonical, share image and static content, so shared company links preview correctly and are crawlable. companies/index.html mirrors /companies in case GitHub Pages resolves the folder.
+- Sitemap generated at deploy: 6 routes + 147 company pages, lastmod = dataLastUpdated.
+- Deploy order: validate categories → build → prerender-seo → og/generate.
+- Note: LinkedIn/Facebook cache previews ~7 days; re-scrape old links via LinkedIn Post Inspector / Facebook Sharing Debugger.
+
 ## [Unreleased] - 2026-10-03 — Model releases sweep (image, video, audio, robotics, open-weight)
 
 ### Added

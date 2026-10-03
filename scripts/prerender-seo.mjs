@@ -17,9 +17,10 @@
  * GitHub Pages serves /predictions from predictions.html, so each route
  * returns HTTP 200 with content (the 404.html fallback covers deep links).
  */
-import { readFileSync, writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { companyRecords } from "./og/site-data.mjs";
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const DIST = resolve(ROOT, "dist");
@@ -277,36 +278,86 @@ if (!shell.includes('<div id="root">')) {
   throw new Error('dist/index.html has no <div id="root"> mount point');
 }
 
+/** Point every head tag at this page: title, description, canonical, OG, Twitter, image. */
+function applyHead(html, { title, description, path, image }) {
+  const url = `${SITE}${path === "/" ? "/" : path}`;
+  const set = (re, value) => {
+    if (!re.test(html)) throw new Error(`prerender-seo: head tag missing for ${re}`);
+    html = html.replace(re, `$1${value}$2`);
+  };
+  html = html.replace(/<title>[^<]*<\/title>/, `<title>${esc(title)}</title>`);
+  set(/(<meta name="description" content=")[^"]*(")/, esc(description));
+  set(/(<link rel="canonical" href=")[^"]*(")/, url);
+  set(/(<meta property="og:title" content=")[^"]*(")/, esc(title));
+  set(/(<meta property="og:description" content=")[^"]*(")/, esc(description));
+  set(/(<meta property="og:url" content=")[^"]*(")/, url);
+  set(/(<meta property="og:image" content=")[^"]*(")/, image);
+  set(/(<meta property="og:image:alt" content=")[^"]*(")/, esc(title));
+  set(/(<meta name="twitter:title" content=")[^"]*(")/, esc(title));
+  set(/(<meta name="twitter:description" content=")[^"]*(")/, esc(description));
+  set(/(<meta name="twitter:image" content=")[^"]*(")/, image);
+  return html;
+}
+
+const routeImage = (file) => `${SITE}/og/${file.replace(/\.html$/, "")}.png`;
+
 for (const route of ROUTES) {
-  let html = shell;
-  // Per-route title / description / canonical / og tags in the raw HTML.
-  html = html.replace(/<title>[^<]*<\/title>/, `<title>${esc(route.title)}</title>`);
-  html = html.replace(
-    /(<meta name="description" content=")[^"]*(")/,
-    `$1${esc(route.description)}$2`,
-  );
-  html = html.replace(
-    /(<link rel="canonical" href=")[^"]*(")/,
-    `$1${SITE}${route.path === "/" ? "/" : route.path}$2`,
-  );
-  html = html.replace(
-    /(<meta property="og:title" content=")[^"]*(")/,
-    `$1${esc(route.title)}$2`,
-  );
-  html = html.replace(
-    /(<meta property="og:description" content=")[^"]*(")/,
-    `$1${esc(route.description)}$2`,
-  );
-  html = html.replace(
-    /(<meta property="og:url" content=")[^"]*(")/,
-    `$1${SITE}${route.path === "/" ? "/" : route.path}$2`,
-  );
+  let html = applyHead(shell, { ...route, image: routeImage(route.file) });
   // Static content inside #root — replaced by React on mount.
-  html = html.replace(
-    '<div id="root">',
-    `<div id="root">${route.html()}`,
-  );
+  html = html.replace('<div id="root">', `<div id="root">${route.html()}`);
   writeFileSync(resolve(DIST, route.file), html);
   console.log(`prerendered ${route.file} (${route.path})`);
 }
+
+// ---- company pages: GitHub Pages serves /companies/<id> from companies/<id>.html
+mkdirSync(resolve(DIST, "companies"), { recursive: true });
+const companyPages = companyRecords();
+for (const c of companyPages) {
+  const path = `/companies/${c.id}`;
+  const title =
+    c.jobs > 0
+      ? `${c.name} AI Layoffs: ${fmt(c.jobs)} Jobs Cut — Jobs Lost to AI`
+      : `${c.name} AI Milestones & Workforce Impact — Jobs Lost to AI`;
+  const parts = [];
+  if (c.jobs > 0) parts.push(`${fmt(c.jobs)} jobs cut across ${c.events.length} verified AI-attributed event${c.events.length === 1 ? "" : "s"}`);
+  if (c.plannedJobs > 0) parts.push(`${fmt(c.plannedJobs)} jobs in planned cuts`);
+  if (c.createdJobs > 0) parts.push(`${fmt(c.createdJobs)} new AI-driven roles`);
+  if (c.milestones.length) parts.push(`${c.milestones.length} AI milestone${c.milestones.length === 1 ? "" : "s"}`);
+  const description = `${c.name}: ${parts.join(", ") || "AI workforce impact"}. Verified from company statements and primary sources.`;
+  const list = (items, render) => (items.length ? `<ul>\n${items.map(render).join("\n")}\n</ul>` : "");
+  const body = `<h1>${esc(c.name)}: AI Layoffs and Workforce Impact</h1>
+<p>${esc(description)}</p>
+${c.events.length ? `<h2>AI-attributed job cuts</h2>` : ""}
+${list(c.events, (e) => `<li>${esc(fmtDate(e.date))}: ${fmt(e.jobsCut)} jobs. ${esc(e.reasonGiven || "")}</li>`)}
+${c.planned.length ? `<h2>Planned cuts and hiring freezes</h2>` : ""}
+${list(c.planned, (e) => `<li>${esc(fmtDate(e.date))}: ${fmt(e.jobsCut)} jobs. ${esc(e.reasonGiven || "")}</li>`)}
+${c.milestones.length ? `<h2>AI milestones</h2>` : ""}
+${list(c.milestones.slice(-15).reverse(), (m) => `<li>${esc(fmtDate(m.date))}: ${esc(m.name || m.title)}</li>`)}
+${NAV}`;
+  let html = applyHead(shell, { title, description, path, image: `${SITE}/og/company/${c.id}.png` });
+  html = html.replace('<div id="root">', `<div id="root">${body}`);
+  writeFileSync(resolve(DIST, "companies", `${c.id}.html`), html);
+}
+// /companies.html and the companies/ folder now coexist; GitHub Pages may
+// resolve /companies to the folder, so give it the same listing page.
+writeFileSync(resolve(DIST, "companies", "index.html"), readFileSync(resolve(DIST, "companies.html"), "utf8"));
+console.log(`prerendered ${companyPages.length} company pages`);
+
+// ---- sitemap: main routes + company pages
+const lastmod = dataUpdated || new Date().toISOString().slice(0, 10);
+const sitemapUrls = [
+  ...ROUTES.map((r) => ({ loc: `${SITE}${r.path === "/" ? "/" : r.path}`, freq: r.path === "/" ? "daily" : "weekly", pri: r.path === "/" ? "1.0" : "0.8" })),
+  ...companyPages.map((c) => ({ loc: `${SITE}/companies/${c.id}`, freq: "weekly", pri: "0.6" })),
+];
+writeFileSync(
+  resolve(DIST, "sitemap.xml"),
+  `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${sitemapUrls
+  .map((u) => `  <url>\n    <loc>${u.loc}</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>${u.freq}</changefreq>\n    <priority>${u.pri}</priority>\n  </url>`)
+  .join("\n")}
+</urlset>
+`,
+);
+console.log(`sitemap: ${sitemapUrls.length} urls`);
 console.log("prerender-seo: done");
