@@ -1,0 +1,808 @@
+{
+ "set_columns": [
+  {
+   "tab_aliases": [
+    "AI Job Losses Tracker",
+    "AI Job Losses"
+   ],
+   "column": "Category",
+   "insert_after": "Job Position/Category",
+   "rows": [
+    {
+     "match": {
+      "Company": "Meta",
+      "Date": "2022-11-09"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "Google",
+      "Date": "2023-01-20"
+     },
+     "value": "Engineering & Technology, HR & Recruiting, Administrative & Back Office"
+    },
+    {
+     "match": {
+      "Company": "Ericsson",
+      "Date": "2023-02-24"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "Meta",
+      "Date": "2023-04-19"
+     },
+     "value": "Engineering & Technology"
+    },
+    {
+     "match": {
+      "Company": "BuzzFeed",
+      "Date": "2023-04-20"
+     },
+     "value": "Content & Data Work"
+    },
+    {
+     "match": {
+      "Company": "Dropbox",
+      "Date": "2023-04-27"
+     },
+     "value": "Engineering & Technology"
+    },
+    {
+     "match": {
+      "Company": "Meta",
+      "Date": "2023-05-24"
+     },
+     "value": "Engineering & Technology, HR & Recruiting"
+    },
+    {
+     "match": {
+      "Company": "Chegg",
+      "Date": "2023-06-13"
+     },
+     "value": "Engineering & Technology, Operations"
+    },
+    {
+     "match": {
+      "Company": "Onclusive",
+      "Date": "2023-12-01"
+     },
+     "value": "Operations"
+    },
+    {
+     "match": {
+      "Company": "Xerox",
+      "Date": "2024-01-03"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "Unity Software",
+      "Date": "2024-01-08"
+     },
+     "value": "Engineering & Technology"
+    },
+    {
+     "match": {
+      "Company": "Duolingo",
+      "Date": "2024-01-09"
+     },
+     "value": "Content & Data Work"
+    },
+    {
+     "match": {
+      "Company": "Duolingo",
+      "Date": "2024-01-09"
+     },
+     "value": "Content & Data Work"
+    },
+    {
+     "match": {
+      "Company": "Google",
+      "Date": "2024-01-16"
+     },
+     "value": "Customer Support, Sales & Marketing"
+    },
+    {
+     "match": {
+      "Company": "Sports Illustrated",
+      "Date": "2024-01-19"
+     },
+     "value": "Content & Data Work"
+    },
+    {
+     "match": {
+      "Company": "SAP",
+      "Date": "2024-01-24"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "PayPal",
+      "Date": "2024-01-30"
+     },
+     "value": "Customer Support, Administrative & Back Office"
+    },
+    {
+     "match": {
+      "Company": "UPS",
+      "Date": "2024-01-30"
+     },
+     "value": "Administrative & Back Office"
+    },
+    {
+     "match": {
+      "Company": "Grammarly",
+      "Date": "2024-02-01"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "Intuit",
+      "Date": "2024-07-10"
+     },
+     "value": "Customer Support, Finance & Accounting"
+    },
+    {
+     "match": {
+      "Company": "Dell Technologies",
+      "Date": "2024-08-01"
+     },
+     "value": "Sales & Marketing, Operations"
+    },
+    {
+     "match": {
+      "Company": "Dropbox",
+      "Date": "2024-10-30"
+     },
+     "value": "Management, Product & Design, Engineering & Technology"
+    },
+    {
+     "match": {
+      "Company": "Workday",
+      "Date": "2025-02-01"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "UPS",
+      "Date": "2025-04-29"
+     },
+     "value": "Operations"
+    },
+    {
+     "match": {
+      "Company": "PwC",
+      "Date": "2025-05-05"
+     },
+     "value": "Finance & Accounting, Engineering & Technology"
+    },
+    {
+     "match": {
+      "Company": "CrowdStrike",
+      "Date": "2025-05-07"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "Chegg",
+      "Date": "2025-05-12"
+     },
+     "value": "Operations"
+    },
+    {
+     "match": {
+      "Company": "Microsoft",
+      "Date": "2025-07-01"
+     },
+     "value": "Engineering & Technology, Administrative & Back Office"
+    },
+    {
+     "match": {
+      "Company": "Recruit Holdings",
+      "Date": "2025-07-01"
+     },
+     "value": "HR & Recruiting, Operations"
+    },
+    {
+     "match": {
+      "Company": "Intel",
+      "Date": "2025-07-24"
+     },
+     "value": "Administrative & Back Office, Operations"
+    },
+    {
+     "match": {
+      "Company": "TCS",
+      "Date": "2025-07-28"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "TikTok",
+      "Date": "2025-08-01"
+     },
+     "value": "Content & Data Work"
+    },
+    {
+     "match": {
+      "Company": "Cisco",
+      "Date": "2025-08-14"
+     },
+     "value": "Engineering & Technology"
+    },
+    {
+     "match": {
+      "Company": "Fiverr",
+      "Date": "2025-09-01"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "Just Eat Takeaway",
+      "Date": "2025-09-01"
+     },
+     "value": "Customer Support, Operations"
+    },
+    {
+     "match": {
+      "Company": "Salesforce",
+      "Date": "2025-09-01"
+     },
+     "value": "Customer Support"
+    },
+    {
+     "match": {
+      "Company": "xAI",
+      "Date": "2025-09-13"
+     },
+     "value": "Content & Data Work"
+    },
+    {
+     "match": {
+      "Company": "Accenture",
+      "Date": "2025-09-25"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "Chegg",
+      "Date": "2025-10-01"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "Google Cloud",
+      "Date": "2025-10-01"
+     },
+     "value": "Product & Design"
+    },
+    {
+     "match": {
+      "Company": "Paycom",
+      "Date": "2025-10-03"
+     },
+     "value": "Administrative & Back Office, Finance & Accounting"
+    },
+    {
+     "match": {
+      "Company": "BILL Holdings",
+      "Date": "2025-10-15"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "Amazon",
+      "Date": "2025-10-28"
+     },
+     "value": "Administrative & Back Office"
+    },
+    {
+     "match": {
+      "Company": "C.H. Robinson",
+      "Date": "2025-10-30"
+     },
+     "value": "Operations"
+    },
+    {
+     "match": {
+      "Company": "McKinsey",
+      "Date": "2025-11-01"
+     },
+     "value": "Customer Support"
+    },
+    {
+     "match": {
+      "Company": "IBM",
+      "Date": "2025-11-04"
+     },
+     "value": "Administrative & Back Office"
+    },
+    {
+     "match": {
+      "Company": "Allianz",
+      "Date": "2025-11-26"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "Omnicom Group",
+      "Date": "2025-12-01"
+     },
+     "value": "Sales & Marketing"
+    },
+    {
+     "match": {
+      "Company": "Agora",
+      "Date": "2025-12-30"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "Angi",
+      "Date": "2026-01-07"
+     },
+     "value": "Customer Support, Sales & Marketing"
+    },
+    {
+     "match": {
+      "Company": "MercadoLibre",
+      "Date": "2026-01-12"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "BlackRock",
+      "Date": "2026-01-13"
+     },
+     "value": "Customer Support, Operations"
+    },
+    {
+     "match": {
+      "Company": "Autodesk",
+      "Date": "2026-01-22"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "Nike",
+      "Date": "2026-01-26"
+     },
+     "value": "Operations"
+    },
+    {
+     "match": {
+      "Company": "Meta",
+      "Date": "2026-01-27"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "Amazon",
+      "Date": "2026-01-28"
+     },
+     "value": "Administrative & Back Office"
+    },
+    {
+     "match": {
+      "Company": "ASML",
+      "Date": "2026-01-28"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "Dow",
+      "Date": "2026-01-29"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "Gemini",
+      "Date": "2026-02-05"
+     },
+     "value": "Operations"
+    },
+    {
+     "match": {
+      "Company": "Telstra",
+      "Date": "2026-02-10"
+     },
+     "value": "Operations"
+    },
+    {
+     "match": {
+      "Company": "Baker McKenzie",
+      "Date": "2026-02-11"
+     },
+     "value": "Customer Support, Content & Data Work, Sales & Marketing"
+    },
+    {
+     "match": {
+      "Company": "Livspace",
+      "Date": "2026-02-20"
+     },
+     "value": "Sales & Marketing, Operations, Product & Design"
+    },
+    {
+     "match": {
+      "Company": "Wisetech",
+      "Date": "2026-02-24"
+     },
+     "value": "Engineering & Technology, Operations"
+    },
+    {
+     "match": {
+      "Company": "C3.ai",
+      "Date": "2026-02-25"
+     },
+     "value": "Sales & Marketing, Engineering & Technology, Administrative & Back Office"
+    },
+    {
+     "match": {
+      "Company": "Ocado",
+      "Date": "2026-02-26"
+     },
+     "value": "Operations"
+    },
+    {
+     "match": {
+      "Company": "PwC",
+      "Date": "2026-02-26"
+     },
+     "value": "Administrative & Back Office, HR & Recruiting, Customer Support"
+    },
+    {
+     "match": {
+      "Company": "Block",
+      "Date": "2026-03-02"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "Atlassian",
+      "Date": "2026-03-11"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "Meta",
+      "Date": "2026-03-13"
+     },
+     "value": "HR & Recruiting, Sales & Marketing, Operations"
+    },
+    {
+     "match": {
+      "Company": "Messari",
+      "Date": "2026-03-17"
+     },
+     "value": "Content & Data Work, Engineering & Technology"
+    },
+    {
+     "match": {
+      "Company": "ING Group",
+      "Date": "2026-03-18"
+     },
+     "value": "Customer Support, Finance & Accounting"
+    },
+    {
+     "match": {
+      "Company": "Crypto.com",
+      "Date": "2026-03-19"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "Oracle",
+      "Date": "2026-03-31"
+     },
+     "value": "Engineering & Technology, Operations"
+    },
+    {
+     "match": {
+      "Company": "Meta",
+      "Date": "2026-04-04"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "Pendo",
+      "Date": "2026-04-07"
+     },
+     "value": "Engineering & Technology, Sales & Marketing, Customer Support"
+    },
+    {
+     "match": {
+      "Company": "Disney",
+      "Date": "2026-04-14"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "Snap Inc.",
+      "Date": "2026-04-15"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "UKG",
+      "Date": "2026-04-15"
+     },
+     "value": "Customer Support, Operations"
+    },
+    {
+     "match": {
+      "Company": "Nike",
+      "Date": "2026-04-23"
+     },
+     "value": "Operations, Engineering & Technology"
+    },
+    {
+     "match": {
+      "Company": "Meta",
+      "Date": "2026-04-23"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "Coinbase",
+      "Date": "2026-05-05"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "Cloudflare",
+      "Date": "2026-05-07"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "Upwork",
+      "Date": "2026-05-07"
+     },
+     "value": "Product & Design, Engineering & Technology, Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "Cisco",
+      "Date": "2026-05-13"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "ClickUp",
+      "Date": "2026-05-21"
+     },
+     "value": "Engineering & Technology, Product & Design"
+    },
+    {
+     "match": {
+      "Company": "GitLab",
+      "Date": "2026-06-03"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "Mews",
+      "Date": "2026-07-07"
+     },
+     "value": "Product & Design, Engineering & Technology, Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "Darrow",
+      "Date": "2026-07-09"
+     },
+     "value": "Legal"
+    },
+    {
+     "match": {
+      "Company": "Thomson Reuters",
+      "Date": "2026-07-13"
+     },
+     "value": "Engineering & Technology"
+    },
+    {
+     "match": {
+      "Company": "Sprout Social",
+      "Date": "2026-07-15"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "Uber",
+      "Date": "2026-07-22"
+     },
+     "value": "Customer Support, Operations"
+    },
+    {
+     "match": {
+      "Company": "Monday.com",
+      "Date": "2026-07-22"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "Visa",
+      "Date": "2026-07-28"
+     },
+     "value": "Product & Design, Engineering & Technology"
+    },
+    {
+     "match": {
+      "Company": "Latch",
+      "Date": "2026-08-05"
+     },
+     "value": "Engineering & Technology, Customer Support, Operations"
+    },
+    {
+     "match": {
+      "Company": "Anaconda",
+      "Date": "2026-08-14"
+     },
+     "value": "Company-wide / Mixed, Engineering & Technology"
+    },
+    {
+     "match": {
+      "Company": "Pentera",
+      "Date": "2026-08-17"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "PayPal",
+      "Date": "2026-08-31"
+     },
+     "value": "Administrative & Back Office"
+    }
+   ]
+  },
+  {
+   "tab_aliases": [
+    "Planned/Announced",
+    "Planned_Announced"
+   ],
+   "column": "Category",
+   "insert_after": "Job Position/Category",
+   "rows": [
+    {
+     "match": {
+      "Company": "Vodafone",
+      "Date Announced": "2023-05-16"
+     },
+     "value": "Administrative & Back Office, Operations"
+    },
+    {
+     "match": {
+      "Company": "BT Group",
+      "Date Announced": "2023-05-18"
+     },
+     "value": "Engineering & Technology, Manufacturing & Field Work, Customer Support"
+    },
+    {
+     "match": {
+      "Company": "SAP",
+      "Date Announced": "2025-09-24"
+     },
+     "value": "Operations"
+    },
+    {
+     "match": {
+      "Company": "HP Inc.",
+      "Date Announced": "2025-11-01"
+     },
+     "value": "Product & Design, Operations, Customer Support"
+    },
+    {
+     "match": {
+      "Company": "Lufthansa",
+      "Date Announced": "2025-11-20"
+     },
+     "value": "Administrative & Back Office"
+    },
+    {
+     "match": {
+      "Company": "Meta",
+      "Date Announced": "2026-01-13"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "Pinterest",
+      "Date Announced": "2026-01-27"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "UPS",
+      "Date Announced": "2026-01-27"
+     },
+     "value": "Operations"
+    },
+    {
+     "match": {
+      "Company": "ASML",
+      "Date Announced": "2026-01-28"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "British American Tobacco",
+      "Date Announced": "2026-02-12"
+     },
+     "value": "Operations"
+    },
+    {
+     "match": {
+      "Company": "SEB",
+      "Date Announced": "2026-02-25"
+     },
+     "value": "Manufacturing & Field Work, Operations"
+    },
+    {
+     "match": {
+      "Company": "HSBC",
+      "Date Announced": "2026-03-19"
+     },
+     "value": "Administrative & Back Office, Operations"
+    },
+    {
+     "match": {
+      "Company": "PayPal",
+      "Date Announced": "2026-05-05"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "SAP",
+      "Date Announced": "2026-07-03"
+     },
+     "value": "Company-wide / Mixed"
+    },
+    {
+     "match": {
+      "Company": "Wells Fargo",
+      "Date Announced": "2026-08-04"
+     },
+     "value": "Administrative & Back Office, Operations, Company-wide / Mixed"
+    }
+   ]
+  }
+ ]
+}

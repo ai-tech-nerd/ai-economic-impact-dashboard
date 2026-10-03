@@ -41,13 +41,20 @@ recreated). A tab that cannot be resolved is skipped with a warning,
 not an error, so the same payload works whether or not the tracker has
 an AI Advances tab.
 
+  "set_columns": [
+    {"tab_aliases": [...], "column": "Category",
+     "insert_after": "Job Position/Category",   # added only if missing
+     "rows": [{"match": {"Company": "Oracle", "Date": "2026-03-31"},
+               "value": "Operations"}]}
+  ],
   "deletes": [
     {"tab_aliases": [...],
      "match": {"Company": "Klarna", "Date": "2024-08-27"}}  # must match 1 row
   ]
 }
 
-Order: create_tabs, appends, edits, deletes. A delete whose match finds
+Order: create_tabs, appends, edits, set_columns, deletes. A set_columns
+row that matches zero or several sheet rows is skipped and reported. A delete whose match finds
 zero or several rows is skipped (several = refused) and the candidate
 rows for that company are printed, so the payload can be corrected.
 
@@ -79,6 +86,16 @@ def dict_to_row(row_dict, header):
     """Order a {header: value} dict to the tab's actual header order."""
     lowered = {k.lower(): v for k, v in row_dict.items()}
     return [str(lowered.get(col.lower(), "")) for col in header]
+
+
+def column_letter(index):
+    """0-based column index -> A1 letters (0 -> A, 26 -> AA)."""
+    letters = ""
+    index += 1
+    while index:
+        index, rem = divmod(index - 1, 26)
+        letters = chr(65 + rem) + letters
+    return letters
 
 
 def matching_rows(rows, header, match):
@@ -213,6 +230,58 @@ def main():
                 spreadsheetId=tracker_id, range=cell,
                 valueInputOption="USER_ENTERED",
                 body={"values": [[new_value]]}).execute()
+
+    for spec in payload.get("set_columns", []):
+        title = resolve_tab(tabs, spec["tab_aliases"])
+        if title is None:
+            print(f"WARNING: no tab matching {spec['tab_aliases']} - skipping column.")
+            continue
+        rows = read_tab_rows(service, tracker_id, title)
+        header = rows[0] if rows else []
+        lower = [h.lower() for h in header]
+        column = spec["column"]
+        if column.lower() in lower:
+            col_idx = lower.index(column.lower())
+            print(f"[{title}] column '{column}' exists at index {col_idx}")
+        else:
+            after = spec.get("insert_after", "").lower()
+            col_idx = lower.index(after) + 1 if after in lower else len(header)
+            print(f"[{title}] insert column '{column}' at index {col_idx}")
+            if not args.dry_run:
+                gid = next(g for g, t in tabs.items() if t == title)
+                service.spreadsheets().batchUpdate(
+                    spreadsheetId=tracker_id,
+                    body={"requests": [{"insertDimension": {
+                        "range": {"sheetId": gid, "dimension": "COLUMNS",
+                                  "startIndex": col_idx, "endIndex": col_idx + 1},
+                        "inheritFromBefore": col_idx > 0}}]},
+                ).execute()
+            header = header[:col_idx] + [column] + header[col_idx:]
+            rows = [header] + [r[:col_idx] + [""] + r[col_idx:] for r in rows[1:]]
+
+        letter = column_letter(col_idx)
+        updates, matched, missed = [], 0, []
+        for item in spec["rows"]:
+            hits = matching_rows(rows, header, item["match"])
+            if len(hits) != 1:
+                missed.append((item["match"], len(hits)))
+                continue
+            matched += 1
+            updates.append({"range": f"{a1_tab(title)}!{letter}{hits[0]}",
+                            "values": [[item["value"]]]})
+        updates.insert(0, {"range": f"{a1_tab(title)}!{letter}1", "values": [[column]]})
+        print(f"[{title}] '{column}': {matched} rows matched, {len(missed)} skipped")
+        for match, n in missed:
+            print(f"    SKIP ({n} matches): {match}")
+        unfilled = [r for r in range(2, len(rows) + 1)
+                    if f"{a1_tab(title)}!{letter}{r}" not in {u["range"] for u in updates}]
+        if unfilled:
+            print(f"    sheet rows left blank: {unfilled}")
+        if not args.dry_run:
+            service.spreadsheets().values().batchUpdate(
+                spreadsheetId=tracker_id,
+                body={"valueInputOption": "USER_ENTERED", "data": updates},
+            ).execute()
 
     for spec in payload.get("deletes", []):
         title = resolve_tab(tabs, spec["tab_aliases"])
