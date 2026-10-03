@@ -11,7 +11,10 @@ export interface DisplacementEvent {
   companyName: string;
   date: string;
   jobsCut: number;
+  /** Canonical category slugs (see JOB_TYPE_LABELS). */
   jobTypes: string[];
+  /** Original source wording of the job types, kept when normalized. */
+  jobTypesDetail?: string[];
   industry: string;
   region: string;
   country: string;

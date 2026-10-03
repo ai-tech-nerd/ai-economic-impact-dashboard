@@ -160,3 +160,33 @@ export function getFutureNeverCreated(entries: NeverCreatedEntry[]) {
 export function sumNeverCreated(entries: NeverCreatedEntry[]) {
   return entries.reduce((sum, e) => sum + e.jobsNeverCreated, 0);
 }
+
+/**
+ * Everything the hero (dashboard and /widget/stats) shows. Headline total =
+ * layoffs + realized Jobs Never Created; planned cuts and future estimates
+ * are reported separately and never counted.
+ */
+export function getHeroBreakdown(
+  events: DisplacementEvent[],
+  plannedEvents: DisplacementEvent[],
+  creationEvents: DisplacementEvent[],
+  neverCreated: NeverCreatedEntry[],
+) {
+  const layoffs = getTotalJobsCut(events);
+  const neverCounted = sumNeverCreated(getCountedNeverCreated(neverCreated));
+  const topIndustry = getIndustryBreakdown(events)[0];
+  const topJobType = getTopJobTypes(events, 1)[0];
+  return {
+    total: layoffs + neverCounted,
+    companyCount: getCompanySummary(events).length,
+    layoffs,
+    eventCount: events.filter((e) => !e.isProjection).length,
+    neverCreated: neverCounted,
+    robotics: getTotalJobsCut(events.filter((e) => e.displacementMode === 'robotics')),
+    jobsCreated: creationEvents.reduce((sum, e) => sum + (e.jobsCreated ?? 0), 0),
+    topIndustry: topIndustry && { name: topIndustry.industry, count: topIndustry.count },
+    topJobType: topJobType && { slug: topJobType.type, count: topJobType.count },
+    plannedCuts: plannedEvents.reduce((sum, e) => sum + e.jobsCut, 0),
+    futureNeverCreated: sumNeverCreated(getFutureNeverCreated(neverCreated)),
+  };
+}

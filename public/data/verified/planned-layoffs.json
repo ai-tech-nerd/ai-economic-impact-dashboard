@@ -6,8 +6,8 @@
     "date": "2023-05-16",
     "jobsCut": 11000,
     "jobTypes": [
-      "Corporate",
-      "Operations"
+      "administrative",
+      "operations"
     ],
     "industry": "Telecommunications",
     "region": "Global",
@@ -25,7 +25,11 @@
     ],
     "verificationStatus": "verified",
     "status": "announced",
-    "timeline": "Over 3 years (by ~2026)"
+    "timeline": "Over 3 years (by ~2026)",
+    "jobTypesDetail": [
+      "Corporate",
+      "Operations"
+    ]
   },
   {
     "id": "plan-003",
@@ -34,9 +38,9 @@
     "date": "2023-05-18",
     "jobsCut": 55000,
     "jobTypes": [
-      "Network engineers",
-      "Maintenance",
-      "Customer service"
+      "engineering-technology",
+      "manufacturing-field",
+      "customer-support"
     ],
     "industry": "Telecommunications",
     "region": "Global",
@@ -55,7 +59,12 @@
     ],
     "verificationStatus": "verified",
     "status": "announced",
-    "timeline": "By 2030"
+    "timeline": "By 2030",
+    "jobTypesDetail": [
+      "Network engineers",
+      "Maintenance",
+      "Customer service"
+    ]
   },
   {
     "id": "plan-009",
@@ -64,7 +73,7 @@
     "date": "2025-09-24",
     "jobsCut": 1100,
     "jobTypes": [
-      "Internal operations"
+      "operations"
     ],
     "industry": "Technology",
     "region": "Europe",
@@ -82,7 +91,10 @@
     ],
     "verificationStatus": "verified",
     "status": "announced",
-    "timeline": "2025"
+    "timeline": "2025",
+    "jobTypesDetail": [
+      "Internal operations"
+    ]
   },
   {
     "id": "plan-004",
@@ -91,9 +103,9 @@
     "date": "2025-11-01",
     "jobsCut": 6000,
     "jobTypes": [
-      "Product development",
-      "Operations",
-      "Customer support"
+      "product-design",
+      "operations",
+      "customer-support"
     ],
     "industry": "Technology",
     "region": "Global",
@@ -111,7 +123,12 @@
     ],
     "verificationStatus": "verified",
     "status": "announced",
-    "timeline": "By 2028"
+    "timeline": "By 2028",
+    "jobTypesDetail": [
+      "Product development",
+      "Operations",
+      "Customer support"
+    ]
   },
   {
     "id": "plan-005",
@@ -120,7 +137,7 @@
     "date": "2025-11-20",
     "jobsCut": 4000,
     "jobTypes": [
-      "Administrative"
+      "administrative"
     ],
     "industry": "Aviation",
     "region": "Europe",
@@ -138,7 +155,10 @@
     ],
     "verificationStatus": "verified",
     "status": "announced",
-    "timeline": "By 2030"
+    "timeline": "By 2030",
+    "jobTypesDetail": [
+      "Administrative"
+    ]
   },
   {
     "id": "plan-007",
@@ -147,8 +167,7 @@
     "date": "2026-01-13",
     "jobsCut": 15800,
     "jobTypes": [
-      "Mixed",
-      "Company-wide"
+      "company-wide"
     ],
     "industry": "Technology",
     "region": "Global",
@@ -167,7 +186,11 @@
     "verificationStatus": "pending",
     "status": "announced",
     "timeline": "Not specified",
-    "notes": "Reported but unconfirmed. Meta spokesperson called it 'speculative reporting about theoretical approaches.'"
+    "notes": "Reported but unconfirmed. Meta spokesperson called it 'speculative reporting about theoretical approaches.'",
+    "jobTypesDetail": [
+      "Mixed",
+      "Company-wide"
+    ]
   },
   {
     "id": "plan-010",
@@ -176,7 +199,7 @@
     "date": "2026-01-27",
     "jobsCut": 700,
     "jobTypes": [
-      "Mixed"
+      "company-wide"
     ],
     "industry": "Technology",
     "region": "North America",
@@ -194,7 +217,10 @@
     ],
     "verificationStatus": "verified",
     "status": "announced",
-    "timeline": "Through 2026"
+    "timeline": "Through 2026",
+    "jobTypesDetail": [
+      "Mixed"
+    ]
   },
   {
     "id": "plan-011",
@@ -203,7 +229,7 @@
     "date": "2026-01-27",
     "jobsCut": 30000,
     "jobTypes": [
-      "Operational & facility staff"
+      "operations"
     ],
     "industry": "Logistics",
     "region": "North America",
@@ -222,7 +248,10 @@
     "verificationStatus": "verified",
     "status": "announced",
     "timeline": "Through 2026",
-    "displacementMode": "robotics"
+    "displacementMode": "robotics",
+    "jobTypesDetail": [
+      "Operational & facility staff"
+    ]
   },
   {
     "id": "plan-012",
@@ -231,7 +260,7 @@
     "date": "2026-01-28",
     "jobsCut": 1700,
     "jobTypes": [
-      "Mixed"
+      "company-wide"
     ],
     "industry": "Semiconductors",
     "region": "Europe",
@@ -249,7 +278,10 @@
     ],
     "verificationStatus": "verified",
     "status": "announced",
-    "timeline": "Not specified"
+    "timeline": "Not specified",
+    "jobTypesDetail": [
+      "Mixed"
+    ]
   },
   {
     "id": "plan-013",
@@ -258,7 +290,7 @@
     "date": "2026-02-12",
     "jobsCut": 0,
     "jobTypes": [
-      "Operations"
+      "operations"
     ],
     "industry": "Consumer Goods",
     "region": "Europe",
@@ -276,7 +308,10 @@
     ],
     "verificationStatus": "verified",
     "status": "announced",
-    "timeline": "Operations"
+    "timeline": "Operations",
+    "jobTypesDetail": [
+      "Operations"
+    ]
   },
   {
     "id": "plan-006",
@@ -285,8 +320,8 @@
     "date": "2026-02-25",
     "jobsCut": 2100,
     "jobTypes": [
-      "Manufacturing",
-      "Operations"
+      "manufacturing-field",
+      "operations"
     ],
     "industry": "Manufacturing",
     "region": "Europe",
@@ -304,7 +339,11 @@
     ],
     "verificationStatus": "verified",
     "status": "announced",
-    "timeline": "By 2027"
+    "timeline": "By 2027",
+    "jobTypesDetail": [
+      "Manufacturing",
+      "Operations"
+    ]
   },
   {
     "id": "plan-014",
@@ -313,9 +352,8 @@
     "date": "2026-03-19",
     "jobsCut": 20000,
     "jobTypes": [
-      "Back office",
-      "Global service centers",
-      "Non-client-facing"
+      "administrative",
+      "operations"
     ],
     "industry": "Financial Services",
     "region": "Global",
@@ -333,7 +371,12 @@
     ],
     "verificationStatus": "verified",
     "status": "announced",
-    "timeline": "3-5 years (medium-term)"
+    "timeline": "3-5 years (medium-term)",
+    "jobTypesDetail": [
+      "Back office",
+      "Global service centers",
+      "Non-client-facing"
+    ]
   },
   {
     "id": "plan-015",
@@ -342,8 +385,7 @@
     "date": "2026-05-05",
     "jobsCut": 4500,
     "jobTypes": [
-      "Mixed",
-      "Company-wide"
+      "company-wide"
     ],
     "industry": "Financial Technology",
     "region": "North America",
@@ -361,7 +403,11 @@
     ],
     "verificationStatus": "verified",
     "status": "announced",
-    "timeline": "Over 2-3 years"
+    "timeline": "Over 2-3 years",
+    "jobTypesDetail": [
+      "Mixed",
+      "Company-wide"
+    ]
   },
   {
     "id": "plan-016",
@@ -370,7 +416,7 @@
     "date": "2026-07-03",
     "jobsCut": 0,
     "jobTypes": [
-      "Company-wide hiring freeze"
+      "company-wide"
     ],
     "industry": "Technology",
     "region": "Europe",
@@ -388,7 +434,10 @@
     ],
     "verificationStatus": "verified",
     "status": "hiring-freeze",
-    "timeline": "Not specified"
+    "timeline": "Not specified",
+    "jobTypesDetail": [
+      "Company-wide hiring freeze"
+    ]
   },
   {
     "id": "plan-017",
@@ -397,9 +446,9 @@
     "date": "2026-08-04",
     "jobsCut": 0,
     "jobTypes": [
-      "Back-office",
-      "Operations",
-      "Roles subject to automation"
+      "administrative",
+      "operations",
+      "company-wide"
     ],
     "industry": "Financial Services",
     "region": "North America",
@@ -429,6 +478,11 @@
     ],
     "verificationStatus": "verified",
     "status": "announced",
-    "timeline": "Not specified (forward-looking)"
+    "timeline": "Not specified (forward-looking)",
+    "jobTypesDetail": [
+      "Back-office",
+      "Operations",
+      "Roles subject to automation"
+    ]
   }
 ]

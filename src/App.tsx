@@ -50,7 +50,7 @@ function AppContent() {
   if (isWidget) {
     return loading ? loadingEl : error ? errorEl : (
       <Routes>
-        <Route path="/widget/stats" element={<StatsEmbed events={events} neverCreated={neverCreated} />} />
+        <Route path="/widget/stats" element={<StatsEmbed events={events} plannedEvents={plannedEvents} creationEvents={creationEvents} neverCreated={neverCreated} />} />
         <Route path="/widget/trend" element={<TrendWidget events={events} />} />
         <Route path="/widget/job-types" element={<JobTypesWidget events={events} />} />
         <Route path="/widget/industry" element={<IndustryWidget events={events} />} />

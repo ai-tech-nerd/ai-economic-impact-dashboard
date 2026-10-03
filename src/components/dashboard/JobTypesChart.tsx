@@ -26,7 +26,7 @@ export function JobTypesChart({ events }: JobTypesChartProps) {
   return (
     <ChartContainer
       title="Top Job Categories Displaced"
-      subtitle="Most affected job types by total positions cut"
+      subtitle="Most affected job categories by positions cut. An event can count in more than one category, so categories add up to more than the total."
       widgetPath="job-types"
       widgetHeight={500}
     >

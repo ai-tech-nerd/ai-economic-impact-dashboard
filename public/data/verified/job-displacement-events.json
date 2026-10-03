@@ -6,7 +6,7 @@
     "date": "2022-11-09",
     "jobsCut": 11000,
     "jobTypes": [
-      "general"
+      "company-wide"
     ],
     "industry": "Technology",
     "region": "North America",
@@ -22,7 +22,10 @@
         "date": "2022-11-09"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "general"
+    ]
   },
   {
     "id": "evt-002",
@@ -31,7 +34,7 @@
     "date": "2023-01-20",
     "jobsCut": 12000,
     "jobTypes": [
-      "software-engineering",
+      "engineering-technology",
       "hr-recruiting",
       "administrative"
     ],
@@ -49,7 +52,12 @@
         "date": "2023-01-20"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "software-engineering",
+      "hr-recruiting",
+      "administrative"
+    ]
   },
   {
     "id": "evt-003",
@@ -58,7 +66,7 @@
     "date": "2023-02-24",
     "jobsCut": 8500,
     "jobTypes": [
-      "general"
+      "company-wide"
     ],
     "industry": "Telecommunications",
     "region": "Europe",
@@ -74,7 +82,10 @@
         "date": "2023-02-24"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "general"
+    ]
   },
   {
     "id": "evt-004",
@@ -83,7 +94,7 @@
     "date": "2023-04-19",
     "jobsCut": 4000,
     "jobTypes": [
-      "software-engineering"
+      "engineering-technology"
     ],
     "industry": "Technology",
     "region": "North America",
@@ -99,7 +110,10 @@
         "date": "2023-04-19"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "software-engineering"
+    ]
   },
   {
     "id": "evt-005",
@@ -108,7 +122,7 @@
     "date": "2023-04-20",
     "jobsCut": 180,
     "jobTypes": [
-      "content-writing"
+      "content-data"
     ],
     "industry": "Media & Entertainment",
     "region": "North America",
@@ -124,7 +138,10 @@
         "date": "2023-04-20"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "content-writing"
+    ]
   },
   {
     "id": "evt-006",
@@ -133,7 +150,7 @@
     "date": "2023-04-27",
     "jobsCut": 500,
     "jobTypes": [
-      "software-engineering"
+      "engineering-technology"
     ],
     "industry": "Technology",
     "region": "North America",
@@ -149,7 +166,10 @@
         "date": "2023-04-27"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "software-engineering"
+    ]
   },
   {
     "id": "evt-008",
@@ -158,7 +178,7 @@
     "date": "2023-05-24",
     "jobsCut": 10000,
     "jobTypes": [
-      "software-engineering",
+      "engineering-technology",
       "hr-recruiting"
     ],
     "industry": "Technology",
@@ -175,7 +195,11 @@
         "date": "2023-05-24"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "software-engineering",
+      "hr-recruiting"
+    ]
   },
   {
     "id": "evt-009",
@@ -184,7 +208,7 @@
     "date": "2023-06-13",
     "jobsCut": 80,
     "jobTypes": [
-      "software-engineering",
+      "engineering-technology",
       "operations"
     ],
     "industry": "Education Technology",
@@ -201,7 +225,11 @@
         "date": "2023-06-13"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "software-engineering",
+      "operations"
+    ]
   },
   {
     "id": "evt-010",
@@ -235,7 +263,7 @@
     "date": "2024-01-03",
     "jobsCut": 3000,
     "jobTypes": [
-      "general"
+      "company-wide"
     ],
     "industry": "Technology",
     "region": "North America",
@@ -251,7 +279,10 @@
         "date": "2024-01-03"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "general"
+    ]
   },
   {
     "id": "evt-012",
@@ -260,7 +291,7 @@
     "date": "2024-01-08",
     "jobsCut": 1800,
     "jobTypes": [
-      "software-engineering"
+      "engineering-technology"
     ],
     "industry": "Technology",
     "region": "North America",
@@ -276,7 +307,10 @@
         "date": "2024-01-08"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "software-engineering"
+    ]
   },
   {
     "id": "evt-013",
@@ -285,7 +319,7 @@
     "date": "2024-01-09",
     "jobsCut": 83,
     "jobTypes": [
-      "content-writing"
+      "content-data"
     ],
     "industry": "Education Technology",
     "region": "North America",
@@ -301,7 +335,10 @@
         "date": "2024-01-09"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "content-writing"
+    ]
   },
   {
     "id": "evt-014",
@@ -310,7 +347,7 @@
     "date": "2024-01-09",
     "jobsCut": 0,
     "jobTypes": [
-      "content-writing"
+      "content-data"
     ],
     "industry": "Education Technology",
     "region": "North America",
@@ -326,7 +363,10 @@
         "date": "2024-01-09"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "content-writing"
+    ]
   },
   {
     "id": "evt-015",
@@ -362,7 +402,7 @@
     "date": "2024-01-19",
     "jobsCut": 100,
     "jobTypes": [
-      "content-writing"
+      "content-data"
     ],
     "industry": "Media & Entertainment",
     "region": "North America",
@@ -378,7 +418,10 @@
         "date": "2024-01-19"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "content-writing"
+    ]
   },
   {
     "id": "evt-017",
@@ -387,7 +430,7 @@
     "date": "2024-01-24",
     "jobsCut": 8000,
     "jobTypes": [
-      "general"
+      "company-wide"
     ],
     "industry": "Enterprise Software",
     "region": "Europe",
@@ -403,7 +446,10 @@
         "date": "2024-01-24"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "general"
+    ]
   },
   {
     "id": "evt-018",
@@ -463,7 +509,7 @@
     "date": "2024-02-01",
     "jobsCut": 230,
     "jobTypes": [
-      "general"
+      "company-wide"
     ],
     "industry": "Technology",
     "region": "North America",
@@ -479,7 +525,10 @@
         "date": "2024-02-01"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "general"
+    ]
   },
   {
     "id": "evt-021",
@@ -489,7 +538,7 @@
     "jobsCut": 1800,
     "jobTypes": [
       "customer-support",
-      "finance"
+      "finance-accounting"
     ],
     "industry": "Technology",
     "region": "North America",
@@ -505,7 +554,11 @@
         "date": "2024-07-10"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "customer-support",
+      "finance"
+    ]
   },
   {
     "id": "evt-022",
@@ -540,9 +593,9 @@
     "date": "2024-10-30",
     "jobsCut": 528,
     "jobTypes": [
-      "Managers",
-      "Product design",
-      "Engineering"
+      "management",
+      "product-design",
+      "engineering-technology"
     ],
     "industry": "Technology",
     "region": "North America",
@@ -558,7 +611,12 @@
         "date": "2024-10-30"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "Managers",
+      "Product design",
+      "Engineering"
+    ]
   },
   {
     "id": "evt-024",
@@ -567,7 +625,7 @@
     "date": "2025-02-01",
     "jobsCut": 1750,
     "jobTypes": [
-      "general"
+      "company-wide"
     ],
     "industry": "Enterprise Software",
     "region": "North America",
@@ -583,7 +641,10 @@
         "date": "2025-02-01"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "general"
+    ]
   },
   {
     "id": "evt-025",
@@ -618,9 +679,8 @@
     "date": "2025-05-05",
     "jobsCut": 1500,
     "jobTypes": [
-      "Assurance",
-      "Tax",
-      "Products & Technology"
+      "finance-accounting",
+      "engineering-technology"
     ],
     "industry": "Professional Services",
     "region": "North America",
@@ -636,7 +696,12 @@
         "date": "2025-05-05"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "Assurance",
+      "Tax",
+      "Products & Technology"
+    ]
   },
   {
     "id": "evt-026",
@@ -645,7 +710,7 @@
     "date": "2025-05-07",
     "jobsCut": 500,
     "jobTypes": [
-      "general"
+      "company-wide"
     ],
     "industry": "Enterprise Software",
     "region": "North America",
@@ -661,7 +726,10 @@
         "date": "2025-05-07"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "general"
+    ]
   },
   {
     "id": "evt-027",
@@ -695,7 +763,7 @@
     "date": "2025-07-01",
     "jobsCut": 15000,
     "jobTypes": [
-      "software-engineering",
+      "engineering-technology",
       "administrative"
     ],
     "industry": "Technology",
@@ -712,7 +780,11 @@
         "date": "2025-07-01"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "software-engineering",
+      "administrative"
+    ]
   },
   {
     "id": "evt-029",
@@ -773,7 +845,7 @@
     "date": "2025-07-28",
     "jobsCut": 12000,
     "jobTypes": [
-      "general"
+      "company-wide"
     ],
     "industry": "IT Services",
     "region": "Asia",
@@ -789,7 +861,10 @@
         "date": "2025-07-28"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "general"
+    ]
   },
   {
     "id": "evt-032",
@@ -798,8 +873,7 @@
     "date": "2025-08-01",
     "jobsCut": 450,
     "jobTypes": [
-      "content-writing",
-      "content-moderation"
+      "content-data"
     ],
     "industry": "Technology",
     "region": "Asia",
@@ -816,7 +890,11 @@
       }
     ],
     "verificationStatus": "verified",
-    "notes": "Estimated as 500; reports said 'hundreds'."
+    "notes": "Estimated as 500; reports said 'hundreds'.",
+    "jobTypesDetail": [
+      "content-writing",
+      "content-moderation"
+    ]
   },
   {
     "id": "evt-033",
@@ -825,7 +903,7 @@
     "date": "2025-08-14",
     "jobsCut": 221,
     "jobTypes": [
-      "software-engineering"
+      "engineering-technology"
     ],
     "industry": "Technology",
     "region": "North America",
@@ -841,7 +919,10 @@
         "date": "2025-08-14"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "software-engineering"
+    ]
   },
   {
     "id": "evt-034",
@@ -850,7 +931,7 @@
     "date": "2025-09-01",
     "jobsCut": 250,
     "jobTypes": [
-      "general"
+      "company-wide"
     ],
     "industry": "Online Marketplace",
     "region": "North America",
@@ -866,7 +947,10 @@
         "date": "2025-09-01"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "general"
+    ]
   },
   {
     "id": "evt-035",
@@ -926,8 +1010,7 @@
     "date": "2025-09-13",
     "jobsCut": 500,
     "jobTypes": [
-      "Data annotation",
-      "AI tutors"
+      "content-data"
     ],
     "industry": "Technology",
     "region": "North America",
@@ -943,7 +1026,11 @@
         "date": "2025-09-13"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "Data annotation",
+      "AI tutors"
+    ]
   },
   {
     "id": "evt-037",
@@ -952,7 +1039,7 @@
     "date": "2025-09-25",
     "jobsCut": 22000,
     "jobTypes": [
-      "general"
+      "company-wide"
     ],
     "industry": "Consulting",
     "region": "North America",
@@ -968,7 +1055,10 @@
         "date": "2025-09-25"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "general"
+    ]
   },
   {
     "id": "evt-038",
@@ -977,7 +1067,7 @@
     "date": "2025-10-01",
     "jobsCut": 388,
     "jobTypes": [
-      "general"
+      "company-wide"
     ],
     "industry": "Education Technology",
     "region": "North America",
@@ -993,7 +1083,10 @@
         "date": "2025-10-01"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "general"
+    ]
   },
   {
     "id": "evt-039",
@@ -1002,7 +1095,7 @@
     "date": "2025-10-01",
     "jobsCut": 100,
     "jobTypes": [
-      "design"
+      "product-design"
     ],
     "industry": "Technology",
     "region": "North America",
@@ -1018,7 +1111,10 @@
         "date": "2025-10-01"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "design"
+    ]
   },
   {
     "id": "evt-040",
@@ -1028,7 +1124,7 @@
     "jobsCut": 500,
     "jobTypes": [
       "administrative",
-      "finance"
+      "finance-accounting"
     ],
     "industry": "Enterprise Software",
     "region": "North America",
@@ -1044,7 +1140,11 @@
         "date": "2025-10-03"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "administrative",
+      "finance"
+    ]
   },
   {
     "id": "evt-074",
@@ -1053,7 +1153,7 @@
     "date": "2025-10-15",
     "jobsCut": 140,
     "jobTypes": [
-      "general"
+      "company-wide"
     ],
     "industry": "Financial Technology",
     "region": "North America",
@@ -1069,7 +1169,10 @@
         "date": "2025-10-15"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "general"
+    ]
   },
   {
     "id": "evt-041",
@@ -1178,7 +1281,7 @@
     "date": "2025-11-26",
     "jobsCut": 1800,
     "jobTypes": [
-      "general"
+      "company-wide"
     ],
     "industry": "Insurance",
     "region": "Europe",
@@ -1194,7 +1297,10 @@
         "date": "2025-11-26"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "general"
+    ]
   },
   {
     "id": "evt-046",
@@ -1228,7 +1334,7 @@
     "date": "2025-12-30",
     "jobsCut": 166,
     "jobTypes": [
-      "general"
+      "company-wide"
     ],
     "industry": "Media & Entertainment",
     "region": "Europe",
@@ -1244,7 +1350,10 @@
         "date": "2025-12-30"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "general"
+    ]
   },
   {
     "id": "evt-048",
@@ -1279,7 +1388,7 @@
     "date": "2026-01-12",
     "jobsCut": 119,
     "jobTypes": [
-      "general"
+      "company-wide"
     ],
     "industry": "E-commerce",
     "region": "South America",
@@ -1295,7 +1404,10 @@
         "date": "2026-01-12"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "general"
+    ]
   },
   {
     "id": "evt-050",
@@ -1330,7 +1442,7 @@
     "date": "2026-01-22",
     "jobsCut": 1000,
     "jobTypes": [
-      "general"
+      "company-wide"
     ],
     "industry": "Technology",
     "region": "North America",
@@ -1346,7 +1458,10 @@
         "date": "2026-01-22"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "general"
+    ]
   },
   {
     "id": "evt-052",
@@ -1380,7 +1495,7 @@
     "date": "2026-01-27",
     "jobsCut": 1500,
     "jobTypes": [
-      "general"
+      "company-wide"
     ],
     "industry": "Technology",
     "region": "North America",
@@ -1396,7 +1511,10 @@
         "date": "2026-01-27"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "general"
+    ]
   },
   {
     "id": "evt-054",
@@ -1430,7 +1548,7 @@
     "date": "2026-01-28",
     "jobsCut": 1700,
     "jobTypes": [
-      "general"
+      "company-wide"
     ],
     "industry": "Technology",
     "region": "Europe",
@@ -1446,7 +1564,10 @@
         "date": "2026-01-28"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "general"
+    ]
   },
   {
     "id": "evt-056",
@@ -1455,7 +1576,7 @@
     "date": "2026-01-29",
     "jobsCut": 4500,
     "jobTypes": [
-      "general"
+      "company-wide"
     ],
     "industry": "Consumer Goods & Manufacturing",
     "region": "North America",
@@ -1471,7 +1592,10 @@
         "date": "2026-01-29"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "general"
+    ]
   },
   {
     "id": "evt-057",
@@ -1531,7 +1655,7 @@
     "jobsCut": 800,
     "jobTypes": [
       "customer-support",
-      "content-writing",
+      "content-data",
       "sales-marketing"
     ],
     "industry": "Legal Services",
@@ -1548,7 +1672,12 @@
         "date": "2026-02-11"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "customer-support",
+      "content-writing",
+      "sales-marketing"
+    ]
   },
   {
     "id": "evt-060",
@@ -1559,7 +1688,7 @@
     "jobTypes": [
       "sales-marketing",
       "operations",
-      "design"
+      "product-design"
     ],
     "industry": "Technology",
     "region": "Asia",
@@ -1575,7 +1704,12 @@
         "date": "2026-02-20"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "sales-marketing",
+      "operations",
+      "design"
+    ]
   },
   {
     "id": "evt-061",
@@ -1584,7 +1718,7 @@
     "date": "2026-02-24",
     "jobsCut": 2000,
     "jobTypes": [
-      "software-engineering",
+      "engineering-technology",
       "operations"
     ],
     "industry": "Technology",
@@ -1601,7 +1735,11 @@
         "date": "2026-02-24"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "software-engineering",
+      "operations"
+    ]
   },
   {
     "id": "evt-075",
@@ -1610,10 +1748,9 @@
     "date": "2026-02-25",
     "jobsCut": 312,
     "jobTypes": [
-      "Sales",
-      "Revenue",
-      "R&D",
-      "Admin"
+      "sales-marketing",
+      "engineering-technology",
+      "administrative"
     ],
     "industry": "Technology",
     "region": "North America",
@@ -1629,7 +1766,13 @@
         "date": "2026-02-25"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "Sales",
+      "Revenue",
+      "R&D",
+      "Admin"
+    ]
   },
   {
     "id": "evt-062",
@@ -1664,10 +1807,9 @@
     "date": "2026-02-26",
     "jobsCut": 600,
     "jobTypes": [
-      "Executive assistants",
-      "Recruiters",
-      "Talent acquisition",
-      "Support staff"
+      "administrative",
+      "hr-recruiting",
+      "customer-support"
     ],
     "industry": "Professional Services",
     "region": "North America",
@@ -1683,7 +1825,13 @@
         "date": "2026-02-26"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "Executive assistants",
+      "Recruiters",
+      "Talent acquisition",
+      "Support staff"
+    ]
   },
   {
     "id": "evt-063",
@@ -1692,7 +1840,7 @@
     "date": "2026-03-02",
     "jobsCut": 4000,
     "jobTypes": [
-      "general"
+      "company-wide"
     ],
     "industry": "Technology",
     "region": "North America",
@@ -1708,7 +1856,10 @@
         "date": "2026-03-02"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "general"
+    ]
   },
   {
     "id": "evt-064",
@@ -1717,7 +1868,7 @@
     "date": "2026-03-11",
     "jobsCut": 1600,
     "jobTypes": [
-      "general"
+      "company-wide"
     ],
     "industry": "Technology",
     "region": "Asia",
@@ -1733,7 +1884,10 @@
         "date": "2026-03-11"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "general"
+    ]
   },
   {
     "id": "evt-065",
@@ -1769,8 +1923,8 @@
     "date": "2026-03-17",
     "jobsCut": 0,
     "jobTypes": [
-      "content-writing",
-      "data-analytics"
+      "content-data",
+      "engineering-technology"
     ],
     "industry": "Financial Services",
     "region": "North America",
@@ -1786,7 +1940,11 @@
         "date": "2026-03-17"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "content-writing",
+      "data-analytics"
+    ]
   },
   {
     "id": "evt-067",
@@ -1796,7 +1954,7 @@
     "jobsCut": 1250,
     "jobTypes": [
       "customer-support",
-      "finance"
+      "finance-accounting"
     ],
     "industry": "Financial Services",
     "region": "Europe",
@@ -1812,7 +1970,11 @@
         "date": "2026-03-18"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "customer-support",
+      "finance"
+    ]
   },
   {
     "id": "evt-068",
@@ -1821,7 +1983,7 @@
     "date": "2026-03-19",
     "jobsCut": 180,
     "jobTypes": [
-      "general"
+      "company-wide"
     ],
     "industry": "Financial Technology",
     "region": "Asia-Pacific",
@@ -1837,7 +1999,10 @@
         "date": "2026-03-19"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "general"
+    ]
   },
   {
     "id": "evt-069",
@@ -1846,7 +2011,7 @@
     "date": "2026-03-31",
     "jobsCut": 25000,
     "jobTypes": [
-      "software-engineering",
+      "engineering-technology",
       "operations"
     ],
     "industry": "Technology",
@@ -1870,7 +2035,11 @@
       }
     ],
     "verificationStatus": "verified",
-    "notes": "The 21,000 figure in the FY2026 10-K is cumulative for the fiscal year ended May 31, 2026 and includes the rounds already tracked here; jobsCut is intentionally left unchanged because using the cumulative figure would double-count. The 10-K also carries a forward-looking warning that AI 'may continue to result' in workforce reductions."
+    "notes": "The 21,000 figure in the FY2026 10-K is cumulative for the fiscal year ended May 31, 2026 and includes the rounds already tracked here; jobsCut is intentionally left unchanged because using the cumulative figure would double-count. The 10-K also carries a forward-looking warning that AI 'may continue to result' in workforce reductions.",
+    "jobTypesDetail": [
+      "software-engineering",
+      "operations"
+    ]
   },
   {
     "id": "evt-070",
@@ -1879,7 +2048,7 @@
     "date": "2026-04-04",
     "jobsCut": 200,
     "jobTypes": [
-      "general"
+      "company-wide"
     ],
     "industry": "Technology",
     "region": "North America",
@@ -1895,7 +2064,10 @@
         "date": "2026-04-04"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "general"
+    ]
   },
   {
     "id": "evt-077",
@@ -1904,9 +2076,9 @@
     "date": "2026-04-07",
     "jobsCut": 90,
     "jobTypes": [
-      "Engineering",
-      "Sales",
-      "Customer success"
+      "engineering-technology",
+      "sales-marketing",
+      "customer-support"
     ],
     "industry": "Technology",
     "region": "North America",
@@ -1922,7 +2094,12 @@
         "date": "2026-04-07"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "Engineering",
+      "Sales",
+      "Customer success"
+    ]
   },
   {
     "id": "evt-078",
@@ -1931,8 +2108,7 @@
     "date": "2026-04-14",
     "jobsCut": 1000,
     "jobTypes": [
-      "Mixed",
-      "Company-wide"
+      "company-wide"
     ],
     "industry": "Media/Entertainment",
     "region": "North America",
@@ -1948,7 +2124,11 @@
         "date": "2026-04-14"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "Mixed",
+      "Company-wide"
+    ]
   },
   {
     "id": "evt-079",
@@ -1957,8 +2137,7 @@
     "date": "2026-04-15",
     "jobsCut": 1000,
     "jobTypes": [
-      "Mixed",
-      "Company-wide"
+      "company-wide"
     ],
     "industry": "Technology",
     "region": "North America",
@@ -1974,7 +2153,11 @@
         "date": "2026-04-15"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "Mixed",
+      "Company-wide"
+    ]
   },
   {
     "id": "evt-080",
@@ -1983,9 +2166,8 @@
     "date": "2026-04-15",
     "jobsCut": 950,
     "jobTypes": [
-      "Customer experience",
-      "Implementation",
-      "Operations"
+      "customer-support",
+      "operations"
     ],
     "industry": "Technology",
     "region": "North America",
@@ -2001,7 +2183,12 @@
         "date": "2026-04-15"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "Customer experience",
+      "Implementation",
+      "Operations"
+    ]
   },
   {
     "id": "evt-081",
@@ -2010,8 +2197,8 @@
     "date": "2026-04-23",
     "jobsCut": 1400,
     "jobTypes": [
-      "Global operations",
-      "Technology"
+      "operations",
+      "engineering-technology"
     ],
     "industry": "Retail/Consumer Goods",
     "region": "North America",
@@ -2027,7 +2214,11 @@
         "date": "2026-04-23"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "Global operations",
+      "Technology"
+    ]
   },
   {
     "id": "evt-082",
@@ -2036,8 +2227,7 @@
     "date": "2026-04-23",
     "jobsCut": 8000,
     "jobTypes": [
-      "Mixed",
-      "Company-wide"
+      "company-wide"
     ],
     "industry": "Technology",
     "region": "North America",
@@ -2053,7 +2243,11 @@
         "date": "2026-04-23"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "Mixed",
+      "Company-wide"
+    ]
   },
   {
     "id": "evt-083",
@@ -2062,8 +2256,7 @@
     "date": "2026-05-05",
     "jobsCut": 700,
     "jobTypes": [
-      "Mixed",
-      "Company-wide"
+      "company-wide"
     ],
     "industry": "Financial Technology",
     "region": "North America",
@@ -2079,7 +2272,11 @@
         "date": "2026-05-05"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "Mixed",
+      "Company-wide"
+    ]
   },
   {
     "id": "evt-084",
@@ -2088,8 +2285,7 @@
     "date": "2026-05-07",
     "jobsCut": 1100,
     "jobTypes": [
-      "Mixed",
-      "Company-wide"
+      "company-wide"
     ],
     "industry": "Technology",
     "region": "North America",
@@ -2105,7 +2301,11 @@
         "date": "2026-05-07"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "Mixed",
+      "Company-wide"
+    ]
   },
   {
     "id": "evt-085",
@@ -2114,9 +2314,9 @@
     "date": "2026-05-07",
     "jobsCut": 151,
     "jobTypes": [
-      "Product",
-      "Engineering",
-      "Cross-functional"
+      "product-design",
+      "engineering-technology",
+      "company-wide"
     ],
     "industry": "Technology",
     "region": "North America",
@@ -2132,7 +2332,12 @@
         "date": "2026-05-07"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "Product",
+      "Engineering",
+      "Cross-functional"
+    ]
   },
   {
     "id": "evt-086",
@@ -2141,8 +2346,7 @@
     "date": "2026-05-13",
     "jobsCut": 4000,
     "jobTypes": [
-      "Mixed",
-      "Company-wide"
+      "company-wide"
     ],
     "industry": "Technology",
     "region": "North America",
@@ -2158,7 +2362,11 @@
         "date": "2026-05-13"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "Mixed",
+      "Company-wide"
+    ]
   },
   {
     "id": "evt-087",
@@ -2167,9 +2375,8 @@
     "date": "2026-05-21",
     "jobsCut": 220,
     "jobTypes": [
-      "Engineering",
-      "Product management",
-      "Design"
+      "engineering-technology",
+      "product-design"
     ],
     "industry": "Technology",
     "region": "North America",
@@ -2185,7 +2392,12 @@
         "date": "2026-05-21"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "Engineering",
+      "Product management",
+      "Design"
+    ]
   },
   {
     "id": "evt-088",
@@ -2194,8 +2406,7 @@
     "date": "2026-06-03",
     "jobsCut": 350,
     "jobTypes": [
-      "Mixed",
-      "Company-wide"
+      "company-wide"
     ],
     "industry": "Technology",
     "region": "North America",
@@ -2224,7 +2435,11 @@
         "date": "2026-06-03"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "Mixed",
+      "Company-wide"
+    ]
   },
   {
     "id": "evt-089",
@@ -2233,10 +2448,9 @@
     "date": "2026-07-07",
     "jobsCut": 170,
     "jobTypes": [
-      "Design",
-      "Product",
-      "Engineering",
-      "Cross-company"
+      "product-design",
+      "engineering-technology",
+      "company-wide"
     ],
     "industry": "Technology",
     "region": "Europe",
@@ -2270,7 +2484,13 @@
         "date": "2026-07-08"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "Design",
+      "Product",
+      "Engineering",
+      "Cross-company"
+    ]
   },
   {
     "id": "evt-090",
@@ -2279,7 +2499,7 @@
     "date": "2026-07-09",
     "jobsCut": 60,
     "jobTypes": [
-      "Legal analysts"
+      "legal"
     ],
     "industry": "Legal Technology",
     "region": "Middle East",
@@ -2308,7 +2528,10 @@
         "date": "2026-07-09"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "Legal analysts"
+    ]
   },
   {
     "id": "evt-091",
@@ -2317,7 +2540,7 @@
     "date": "2026-07-13",
     "jobsCut": 500,
     "jobTypes": [
-      "Engineering"
+      "engineering-technology"
     ],
     "industry": "Information Services",
     "region": "North America",
@@ -2346,7 +2569,10 @@
         "date": "2026-07-13"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "Engineering"
+    ]
   },
   {
     "id": "evt-092",
@@ -2355,8 +2581,7 @@
     "date": "2026-07-15",
     "jobsCut": 260,
     "jobTypes": [
-      "Mixed",
-      "Company-wide"
+      "company-wide"
     ],
     "industry": "Technology",
     "region": "North America",
@@ -2390,7 +2615,11 @@
         "date": "2026-07-15"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "Mixed",
+      "Company-wide"
+    ]
   },
   {
     "id": "evt-093",
@@ -2399,8 +2628,8 @@
     "date": "2026-07-22",
     "jobsCut": 0,
     "jobTypes": [
-      "Customer support",
-      "Community Operations"
+      "customer-support",
+      "operations"
     ],
     "industry": "Technology",
     "region": "North America",
@@ -2434,7 +2663,11 @@
         "date": "2026-07-22"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "Customer support",
+      "Community Operations"
+    ]
   },
   {
     "id": "evt-094",
@@ -2443,8 +2676,7 @@
     "date": "2026-07-22",
     "jobsCut": 620,
     "jobTypes": [
-      "Mixed",
-      "Company-wide"
+      "company-wide"
     ],
     "industry": "Technology",
     "region": "Middle East",
@@ -2472,7 +2704,11 @@
         "date": "2026-07-22"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "Mixed",
+      "Company-wide"
+    ]
   },
   {
     "id": "evt-095",
@@ -2481,9 +2717,8 @@
     "date": "2026-07-28",
     "jobsCut": 2600,
     "jobTypes": [
-      "Product",
-      "Technology",
-      "Engineering"
+      "product-design",
+      "engineering-technology"
     ],
     "industry": "Financial Services",
     "region": "North America",
@@ -2511,7 +2746,12 @@
         "date": "2026-07-28"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "Product",
+      "Technology",
+      "Engineering"
+    ]
   },
   {
     "id": "evt-096",
@@ -2520,9 +2760,9 @@
     "date": "2026-08-05",
     "jobsCut": 65,
     "jobTypes": [
-      "Engineering",
-      "Customer support",
-      "Property-management operations"
+      "engineering-technology",
+      "customer-support",
+      "operations"
     ],
     "industry": "Technology",
     "region": "North America",
@@ -2550,7 +2790,12 @@
         "date": "2026-08-05"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "Engineering",
+      "Customer support",
+      "Property-management operations"
+    ]
   },
   {
     "id": "evt-097",
@@ -2559,8 +2804,8 @@
     "date": "2026-08-14",
     "jobsCut": 0,
     "jobTypes": [
-      "Mixed",
-      "Engineering"
+      "company-wide",
+      "engineering-technology"
     ],
     "industry": "Technology",
     "region": "North America",
@@ -2576,7 +2821,11 @@
         "date": "2026-08-14"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "Mixed",
+      "Engineering"
+    ]
   },
   {
     "id": "evt-098",
@@ -2585,7 +2834,7 @@
     "date": "2026-08-17",
     "jobsCut": 60,
     "jobTypes": [
-      "Mixed"
+      "company-wide"
     ],
     "industry": "Cybersecurity",
     "region": "Middle East",
@@ -2601,7 +2850,10 @@
         "date": "2026-08-17"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "Mixed"
+    ]
   },
   {
     "id": "evt-099",
@@ -2610,7 +2862,7 @@
     "date": "2026-08-31",
     "jobsCut": 251,
     "jobTypes": [
-      "Corporate"
+      "administrative"
     ],
     "industry": "Financial Technology",
     "region": "North America",
@@ -2632,6 +2884,9 @@
         "date": "2026-08-31"
       }
     ],
-    "verificationStatus": "verified"
+    "verificationStatus": "verified",
+    "jobTypesDetail": [
+      "Corporate"
+    ]
   }
 ]

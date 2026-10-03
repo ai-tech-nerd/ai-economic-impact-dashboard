@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [Unreleased] - 2026-10-03 — Job category cleanup + stats widget
+
+### Changed
+- **Job categories normalized** (owner-approved): 65 inconsistent labels → 13 canonical categories (scripts/job-categories.mjs; labels in JOB_TYPE_LABELS). 88 entries rewritten; original wording kept in new `jobTypesDetail` (shown as chips on company pages). AI Job Creation untouched (role descriptions, not charted).
+- Deploy now runs scripts/validate-job-categories.mjs before the build; a non-canonical category fails the deploy.
+- Job Types chart note: an event can count in more than one category (35 events do), so categories sum to more than the total.
+- **/widget/stats rebuilt to match the new hero** (same shared component + getHeroBreakdown helper as the dashboard; dark/light/transparent themes kept). Embed snippets now use path URLs (/widget/stats, not legacy /#/) at height 560, with sizing guidance (~400 full width / 560 blog column / 730 mobile; measured, no horizontal overflow at 375-1100px).
+
 ## [Unreleased] - 2026-10-03 — Dashboard hero redesign; Jobs Never Created counted in total
 
 ### Changed (owner ruling)

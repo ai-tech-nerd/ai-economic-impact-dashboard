@@ -1,17 +1,19 @@
+// Canonical categories (owner-approved 2026-10-03); keep in sync with
+// scripts/job-categories.mjs, which the build-time validation checks.
 export const JOB_TYPE_LABELS: Record<string, string> = {
-  'customer-support': 'Customer Support',
-  'software-engineering': 'Software Engineering',
-  'data-entry': 'Data Entry',
-  'content-writing': 'Content & Writing',
-  'marketing': 'Marketing',
-  'sales': 'Sales',
-  'hr-recruiting': 'HR & Recruiting',
-  'finance-accounting': 'Finance & Accounting',
-  'legal': 'Legal',
-  'design': 'Design',
-  'administrative': 'Administrative',
-  'general': 'General / Multiple',
   'operations': 'Operations',
+  'administrative': 'Administrative & Back Office',
+  'company-wide': 'Company-wide / Mixed',
+  'engineering-technology': 'Engineering & Technology',
+  'hr-recruiting': 'HR & Recruiting',
+  'sales-marketing': 'Sales & Marketing',
+  'customer-support': 'Customer Support',
+  'finance-accounting': 'Finance & Accounting',
+  'product-design': 'Product & Design',
+  'content-data': 'Content & Data Work',
+  'management': 'Management',
+  'legal': 'Legal',
+  'manufacturing-field': 'Manufacturing & Field Work',
 };
 
 export const INDUSTRY_COLORS: Record<string, string> = {

@@ -7,6 +7,7 @@ import { formatNumber, formatDate } from '../utils/formatters';
 import { SourceCitation } from '../components/shared/SourceCitation';
 import { RoboticsBadge, isRobotics } from '../components/shared/RoboticsBadge';
 import type { DisplacementEvent, CompanyProfile, AIMilestone } from '../types';
+import { JOB_TYPE_LABELS } from '../utils/constants';
 
 interface CompanyPageProps {
   events: DisplacementEvent[];
@@ -577,7 +578,7 @@ function CompanyDetail({
                   </h3>
                 </div>
                 <div className="flex flex-wrap gap-1">
-                  {evt.jobTypes.map((jt) => (
+                  {(evt.jobTypesDetail ?? evt.jobTypes.map((jt) => JOB_TYPE_LABELS[jt] || jt)).map((jt) => (
                     <span
                       key={jt}
                       className="text-xs bg-primary-50 text-primary-700 px-2 py-0.5 rounded-full"
@@ -615,7 +616,7 @@ function CompanyDetail({
                   </h3>
                 </div>
                 <div className="flex flex-wrap gap-1">
-                  {evt.jobTypes.map((jt) => (
+                  {(evt.jobTypesDetail ?? evt.jobTypes.map((jt) => JOB_TYPE_LABELS[jt] || jt)).map((jt) => (
                     <span
                       key={jt}
                       className="text-xs bg-warning-50 text-warning-700 px-2 py-0.5 rounded-full"

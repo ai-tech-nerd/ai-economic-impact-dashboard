@@ -26,6 +26,7 @@ jobs:
           node-version: '20'
           cache: 'npm'
       - run: npm ci
+      - run: node scripts/validate-job-categories.mjs
       - run: npm run build
       # Per-route HTML with static SEO content injected from the verified
       # JSON (real content in the raw source for crawlers; React replaces

@@ -8,16 +8,7 @@ import { JobTypesChart } from '../components/dashboard/JobTypesChart';
 import { IndustryBreakdown } from '../components/dashboard/IndustryBreakdown';
 import { SourceArchive } from '../components/dashboard/SourceArchive';
 import { CardEmbedButton } from '../components/ui/CardEmbedButton';
-import {
-  getTotalJobsCut,
-  getCompanySummary,
-  getIndustryBreakdown,
-  getTopJobTypes,
-  getCountedNeverCreated,
-  getFutureNeverCreated,
-  sumNeverCreated,
-} from '../utils/dataTransformers';
-import { JOB_TYPE_LABELS } from '../utils/constants';
+import { getHeroBreakdown } from '../utils/dataTransformers';
 import { formatNumber } from '../utils/formatters';
 import type { DisplacementEvent, NeverCreatedEntry } from '../types';
 import { JobsNeverCreatedCard } from '../components/dashboard/JobsNeverCreatedCard';
@@ -33,15 +24,8 @@ interface DashboardPageProps {
 export function DashboardPage({ events, plannedEvents, creationEvents, neverCreated = [] }: DashboardPageProps) {
   const location = useLocation();
   const isEmbedOrWidget = location.pathname.startsWith('/embed') || location.pathname.startsWith('/widget');
-  const layoffs = getTotalJobsCut(events);
-  const neverCreatedCounted = sumNeverCreated(getCountedNeverCreated(neverCreated));
-  // Headline = layoffs + Jobs Never Created already lost. Planned cuts and
-  // future never-created estimates are shown but never counted.
-  const total = layoffs + neverCreatedCounted;
-  const companies = getCompanySummary(events);
-  const plannedTotal = plannedEvents.reduce((sum, e) => sum + e.jobsCut, 0);
-  const topIndustry = getIndustryBreakdown(events)[0];
-  const topJobType = getTopJobTypes(events, 1)[0];
+  const hero = getHeroBreakdown(events, plannedEvents, creationEvents, neverCreated);
+  const plannedTotal = hero.plannedCuts;
 
   // "Data updated" indicator. Reads public/data/verified/meta.json —
   // dataLastUpdated must be bumped by the publish automation and by any
@@ -81,24 +65,7 @@ export function DashboardPage({ events, plannedEvents, creationEvents, neverCrea
             Data updated: <span className="font-medium text-surface-700">{dataUpdated}</span>
           </p>
         )}
-        <TotalCounter
-          total={total}
-          companyCount={companies.length}
-          breakdown={{
-            layoffs,
-            eventCount: events.filter((e) => !e.isProjection).length,
-            neverCreated: neverCreatedCounted,
-            robotics: getTotalJobsCut(events.filter((e) => e.displacementMode === 'robotics')),
-            jobsCreated: creationEvents.reduce((sum, e) => sum + (e.jobsCreated ?? 0), 0),
-            topIndustry: topIndustry && { name: topIndustry.industry, count: topIndustry.count },
-            topJobType: topJobType && {
-              name: JOB_TYPE_LABELS[topJobType.type] || topJobType.type,
-              count: topJobType.count,
-            },
-            plannedCuts: plannedTotal,
-            futureNeverCreated: sumNeverCreated(getFutureNeverCreated(neverCreated)),
-          }}
-        />
+        <TotalCounter data={hero} showEmbedButton />
 
         <TrendLine events={events} neverCreated={neverCreated} />
 
