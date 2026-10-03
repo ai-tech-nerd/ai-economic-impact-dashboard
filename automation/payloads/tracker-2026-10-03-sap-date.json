@@ -1,0 +1,20 @@
+{
+ "set_columns": [
+  {
+   "tab_aliases": [
+    "Planned/Announced",
+    "Planned_Announced"
+   ],
+   "column": "Date Announced",
+   "rows": [
+    {
+     "match": {
+      "Company": "SAP",
+      "Date Announced": "2025-04-24"
+     },
+     "value": "2025-09-24"
+    }
+   ]
+  }
+ ]
+}
