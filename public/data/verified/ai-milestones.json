@@ -7481,6 +7481,10 @@
         "publisher": "NBC News",
         "date": "2026-09-29"
       }
+    ],
+    "types": [
+      "company-launch",
+      "model-release"
     ]
   },
   {
