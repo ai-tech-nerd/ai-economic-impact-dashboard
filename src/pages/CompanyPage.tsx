@@ -170,12 +170,24 @@ const COMPANY_DISPLAY: Record<string, { name: string; description: string }> = {
     name: 'Amazon',
     description: 'AWS cloud leader investing heavily in AI infrastructure, Alexa+, and AI-powered logistics and automation.',
   },
+  amd: {
+    name: 'AMD',
+    description: 'Chipmaker competing with Nvidia in AI accelerators; acquiring World Labs for spatial intelligence and world models.',
+  },
+  typesafe: {
+    name: 'TypeSafe AI',
+    description: 'AI lab building "System One" models that return typed, probability-calibrated decisions as a fast alternative to LLMs.',
+  },
+  instinct: {
+    name: 'Instinct',
+    description: 'Personal AI agent startup that books and buys on users\' behalf; raised $1B at a $10B valuation in 2026.',
+  },
 };
 
 // Country/jurisdiction slugs to exclude from company listings
 const COUNTRY_SLUGS = new Set([
   'eu', 'us', 'uk', 'china', 'singapore', 'canada', 'brazil',
-  'south-korea', 'india', 'oecd', 'unesco', 'us-government',
+  'south-korea', 'india', 'oecd', 'unesco', 'us-government', 'un',
 ]);
 
 const TYPE_COLORS: Record<string, string> = {

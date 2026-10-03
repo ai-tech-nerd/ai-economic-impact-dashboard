@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [Unreleased] - 2026-10-03 — AI Advances catch-up (Sep 15 → Oct 2)
+
+### Added
+- 20 milestones (ms-300–319; 409 total), research + verification pass (all confirmed; corrections applied: OpenAI Australia credits US$1B / A$1.42B; Sonnet 5.5 cheaper per task, not per token; Accenture $1B is each party's commitment). Includes TypeSafe Jev (09-15), Anthropic–Accenture embedded evaluator, California AI oversight/kill-switch EO, Grok 4.7, UN loss-of-control brief, Claude Opus 5.5 and Sonnet 5.5, GPT-6 Sol/Luna, Meta Connect Muse upgrades, Claude ART enzyme discovery, Akamai–Anthropic $11.6B, Microsoft Copilot app, AMD–World Labs $8.2B, Instinct $1B, OpenAI Dots, GPT-6.1 Sol, GPT-6.1 Astra shelved + Australia apology, Gemini 4 Argon, Claude Frontier Academy, Meta Muse Gadgets.
+- Rejected: OpenAI $1.4T raise talks, Cerebras (2025), Muse Spark 1.4 leak, Haiku 5.5 (not released), Grok 10-01 claims, UK bill (aggregator only).
+- Company display names for AMD, TypeSafe AI, Instinct; 'un' treated as a jurisdiction, not a company.
+
 ## [Unreleased] - 2026-10-03 — Job category cleanup + stats widget
 
 ### Changed
