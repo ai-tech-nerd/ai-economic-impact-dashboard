@@ -3,12 +3,14 @@
 
 | | |
 |---|---|
-| **Version** | 1.1 |
-| **Date** | 2026-08-11 |
+| **Version** | 1.2 |
+| **Date** | 2026-10-03 |
 | **Owner** | Michael Kristof |
 | **Status** | Official |
 | **Live Site** | https://aishift.michaelkristof.com (custom domain via public/CNAME; also reachable at https://ai-tech-nerd.github.io/ai-economic-impact-dashboard/) |
 | **Source** | https://github.com/ai-tech-nerd/ai-economic-impact-dashboard |
+
+> **v1.2 (2026-10-03):** headline metric redefined as "Total Jobs Displaced by AI" (verified layoffs plus realized Jobs Never Created); robot and autonomous-system layoffs added to scope; new Jobs Never Created data product; 13 canonical job categories; dashboard hero redesign and stats widget rebuild; social share images and per-company static pages; weekly research cron live with a fourth category (never); counts refreshed.
 
 > **v1.1 (2026-08-11):** search-facing positioning ("Jobs Lost to AI") and per-route SEO principle added; feature inventory updated (Data updated indicator, AI Advances order toggle and Public Release badge, predictions "as of" convention, Needs Manual Capture flow); data counts refreshed (9 predictions, publicRelease flags); pipeline build status added (Workflow A built, sheet prep scripted, weekly Monday cadence, cost-control principle).
 
@@ -80,7 +82,7 @@ Every event links to a source-archive page that proves provenance without reprod
 - An archive.org (Wayback Machine) backup link
 - Structured event metadata (date, company, jobs, category) and prev/next navigation
 
-**Full-text reproduction is never published.** All archive pages (126 as of this document) use the excerpt-only format.
+**Full-text reproduction is never published.** All archive pages (131 as of 2026-10-03) use the excerpt-only format.
 
 ### 3.3 Hedged Numbers Preserved Verbatim
 
@@ -99,6 +101,22 @@ This follows the owner's tech-transition framework: technology transitions histo
 
 Nothing reaches the public dashboard without explicit owner approval. Automation may research, structure, score, and stage candidates, but the review-and-approve step between research and anything public is manual, permanent, and has no bypass path.
 
+### 3.6 Headline Metric and Counting Rules
+
+The headline is **"Total Jobs Displaced by AI" = verified layoffs + realized Jobs Never Created** (see 3.8): 329,306 as of 2026-10-03, which is 328,106 + 1,200. Planned cuts and future estimates (entries flagged `isProjection`) are shown separately and never counted, and AI job creation is shown but is not part of the total. The home-page H1 "Jobs Lost to AI" is a search-facing choice (see Section 1); the page description explains that the total combines layoffs with jobs companies stopped filling.
+
+### 3.7 Robots and Autonomous Systems Count as AI Displacement
+
+Owner ruling, 2026-10-02: layoffs caused by AI-powered robots and autonomous systems count as AI displacement, under the same attribution gate as software AI (Section 3.1). These entries carry `displacementMode: "robotics"`; everything else is software AI. Tagged so far: UPS (evt-025, 20,000 cut; plan-011, 30,000 planned) and Ocado (evt-062, 1,000 cut), 21,000 robotics jobs in the layoff total. The dashboard shows the robotics share separately (violet), with a "Robotics" badge on affected rows. A backfill of the full window (2022-11-30 to 2026-10-02) found no further robot-driven events that cleared the gate.
+
+### 3.8 Jobs Never Created
+
+Owner-approved name for work given to AI or robots instead of new hires or replacements. It is a separate category from layoffs, with its own gate: the entry needs either a **company-stated number**, or a **company-stated ratio applied to a stated or official baseline**, with the math shown in the entry's `estimateBasis`. Figures a company disputes are flagged and excluded. Realized entries count toward the headline; multi-year future estimates are shown but not counted. Current entries: IBM 7,800 (future estimate), Klarna 1,200 (realized, counted), DBS 4,000 (future estimate). IBM and Klarna were moved out of the layoffs and planned datasets because no one was laid off; positions were simply not refilled.
+
+### 3.9 Canonical Job Categories
+
+Job categories are normalized to **13 canonical categories** (defined in `scripts/job-categories.mjs`). The source's original wording is kept in `jobTypesDetail` and shown as chips on company pages. The deploy fails if any entry uses a non-canonical value. Because one event can belong to more than one category (35 events do), the Job Types chart categories sum to more than the total.
+
 ---
 
 ## 4. Feature Inventory
@@ -106,19 +124,19 @@ Nothing reaches the public dashboard without explicit owner approval. Automation
 ### 4.1 The Six Pages
 
 **Dashboard** (`/`)
-A real-time summary of total verified jobs displaced by AI, broken down by company, industry, job type, and trend over time. Animated counters, a cumulative trend line, top job-category and industry charts, a sortable company table, plus compact Planned/Announced and AI Job Creation sections with headline totals. A **"Data updated: <date>" indicator** reads `public/data/verified/meta.json` (`dataLastUpdated`); the contract is that every data commit bumps this date, and the publish automation will maintain it.
+A real-time summary of total jobs displaced by AI, broken down by company, industry, job type, and trend over time. The hero shows the big headline total on the left with tiles on the right (Layoffs, Jobs Never Created, Robotics "of layoffs", AI Jobs Created marked "not in total", Most Impacted Industry, Top Job Category) and a strip below labeled "Not included in total" (planned cuts and future jobs never created). It stacks on mobile. Below it: a stacked cumulative trend chart (Robotics, Software AI, Jobs Never Created), top job-category and industry charts, a sortable company table, a Jobs Never Created card, plus compact Planned/Announced and AI Job Creation sections with headline totals. A **"Data updated: <date>" indicator** reads `public/data/verified/meta.json` (`dataLastUpdated`); the contract is that every data commit bumps this date, and the publish automation will maintain it.
 
 **Predictions** (`/predictions`)
 Forward-looking estimates of which job categories face the highest displacement risk over 3-month, 6-month, 12-month, and 3-to-5-year timeframes, with risk levels, confidence ranges, and methodology transparency. Convention: every prediction's basis opens with its grounding date ("As of Aug 2026: ..."), the set is re-grounded against current data on a roughly quarterly cadence, and every figure is labeled as a projection, never a verified event.
 
 **Timeline** (`/timeline`)
-Two ways to experience the data over time: a slider mode with play/pause/speed controls to scrub through the timeline and watch events accumulate, and a story mode that walks through narrative chapters from ChatGPT's growth to 100 million users through the first AI-driven layoffs to the current acceleration.
+Two ways to experience the data over time (the running counter and chart include realized Jobs Never Created): a slider mode with play/pause/speed controls to scrub through the timeline and watch events accumulate, and a story mode that walks through narrative chapters from ChatGPT's growth to 100 million users through the first AI-driven layoffs to the current acceleration.
 
 **AI Advances** (`/ai-advances`)
-A visual timeline of major AI milestones: model releases, company launches, acquisitions, partnerships and funding deals, regulatory actions, and technical breakthroughs, filterable by type, company, and country. Newest-first by default with an order toggle, and a **"Public release" badge** driven by the optional `publicRelease` field (8 milestones flagged as of 2026-08-11).
+A visual timeline of major AI milestones: model releases, company launches, acquisitions, partnerships and funding deals, regulatory actions, and technical breakthroughs, filterable by type, company, and country. Newest-first by default with an order toggle, and a **"Public release" badge** driven by the optional `publicRelease` field (6 milestones flagged as of 2026-10-03).
 
 **Companies** (`/companies/:id?`)
-Searchable profiles of AI companies (OpenAI, Anthropic, Google, Meta, xAI, and more) with drill-down detail pages showing per-company milestone timelines, displacement events with sources, and key stats. Formal company names are used throughout.
+Searchable profiles of AI companies (OpenAI, Anthropic, Google, Meta, xAI, and more) with drill-down detail pages showing per-company milestone timelines, displacement events with sources, job-category chips (original wording), and key stats. Formal company names are used throughout. Every company has its own static, crawlable page (147 as of 2026-10-03) with its own title, description, and share image.
 
 **Learn & Prepare** (`/learn`)
 A practical resource hub adapted from "The AI Shift" guide, in six tabbed sections: Free AI Tools, the CRAFT prompt framework, a 30-Day Action Plan, Irreplaceable Skills, Free Courses (from Anthropic, Google, DeepLearning.AI, IBM, NVIDIA, and Microsoft), and Privacy & Safety.
@@ -127,12 +145,18 @@ A practical resource hub adapted from "The AI Shift" guide, in six tabbed sectio
 
 The product is embeddable so its data can travel:
 
-- **Widgets** (single components): `/widget/stats`, `/widget/trend`, `/widget/job-types`, `/widget/industry`, `/widget/planned`, `/widget/creation`, `/widget/companies`
+- **Widgets** (single components): `/widget/stats` (mirrors the dashboard hero; dark, light, and transparent themes), `/widget/trend`, `/widget/job-types`, `/widget/industry`, `/widget/planned`, `/widget/creation`, `/widget/companies`
 - **Full-page embeds**: `/embed/dashboard`, `/embed/predictions`, `/embed/timeline`, `/embed/ai-advances`, `/embed/companies/:id?`, `/embed/learn`
 
-### 4.3 Source Archive
+Embed snippets use path URLs; the stats widget defaults to height 560 (about 400 full width, 560 in a blog column, 730 on mobile).
 
-Every displacement event links to an excerpt-format archive page (see 3.2), chained with prev/next navigation and indexed in a manifest. The archive is the product's proof layer: it lets any user verify that a claimed event was really reported, as reported, even if the original article moves or disappears.
+### 4.3 Social Sharing and Static Pages
+
+Every page has a branded 1200x630 share image (6 section pages, 147 company pages, 131 Source Archive pages) generated at deploy from live data, so shared links preview correctly and carry the current numbers. Each page also has its own X/Twitter and Open Graph title and description. Company pages are pre-rendered as static HTML so shared company links preview correctly and are crawlable.
+
+### 4.4 Source Archive
+
+Every displacement event links to an excerpt-format archive page (see 3.2), chained with prev/next navigation and indexed in a manifest. The archive has four tabs: Jobs Displaced, Planned/Announced, Jobs Created, and Jobs Never Created. The archive is the product's proof layer: it lets any user verify that a claimed event was really reported, as reported, even if the original article moves or disappears.
 
 **Needs Manual Capture flow:** when a source cannot be captured automatically (paywall or bot wall that survives the fallback chain), the event is stamped "Needs Manual Capture" and skipped rather than half-published. The owner captures the screenshot in a logged-in browser, drops it into the page folder, and the next pass completes the page. A broken or block-page capture is never published.
 
@@ -140,16 +164,17 @@ Every displacement event links to an excerpt-format archive page (see 3.2), chai
 
 ## 5. Data Products
 
-Four datasets, published as static JSON in the repo and fetched at runtime. Counts as of 2026-08-11:
+Five datasets, published as static JSON in the repo and fetched at runtime. Counts as of 2026-10-03:
 
 | Dataset | Count | Contents |
 |---|---|---|
-| Displacement events | **96** (95 displayed; 1 IBM projection excluded from totals) | Verified AI-attributed job cuts: 328,995 jobs across 80 companies, each with source link and archive page |
-| Planned / announced | **17** | Announced-but-not-executed reductions, freezes, and restructurings attributed to AI, with status (Hiring Freeze, In Progress, Announced, Announced (early stage)) |
-| Job creation | **14** | AI-driven hiring, each tagged `creationCategory` (8 ai-adoption-roles, 6 support), with a numeric `jobsCreated` field (undisclosed counts excluded from totals) |
-| AI milestones | **370** | Model releases, company launches, acquisitions, partnerships, funding, regulations, and breakthroughs through 2026-08-08 (pre-2022 historical backfill included); 8 entries carry the `publicRelease` badge flag, and the ChatGPT launch milestone (ms-029, 2022-11-30) was enriched 2026-08-11 |
+| Displacement events | **96** | Verified AI-attributed job cuts: 328,106 jobs across 81 companies, each with source link and archive page; 2 entries tagged `displacementMode: "robotics"` |
+| Planned / announced | **15** | Announced-but-not-executed reductions and restructurings attributed to AI (151,900 planned jobs; not counted in the headline) |
+| Job creation | **16** | AI-driven hiring, each tagged `creationCategory` (adoption vs support), with a numeric `jobsCreated` field (undisclosed counts excluded from totals) |
+| Jobs Never Created | **3** | Work given to AI/robots instead of new hires (IBM, Klarna, DBS), each with the stated basis and math; 1,200 realized and counted, 11,800 future estimates not counted |
+| AI milestones | **420** | Model releases, company launches, acquisitions, partnerships, funding, regulations, and breakthroughs through 2026-10-02 (pre-2022 historical backfill included); some carry multiple types (e.g. OpenAI Dots is both a company launch and a model release); 6 entries carry the `publicRelease` badge flag |
 
-Supporting data: company profiles and predictions (**9** predictions across four timeframes, re-grounded "As of Aug 2026"), the archive manifest (126 pages), and `meta.json` (`dataLastUpdated`, the "Data updated" indicator contract).
+Supporting data: company profiles and predictions (**9** predictions across four timeframes, re-grounded "As of Aug 2026"), the archive manifest (131 pages: 96 layoffs, 15 planned, 16 created, 4 never created), and `meta.json` (`dataLastUpdated`, the "Data updated" indicator contract).
 
 The owner's tracker spreadsheet is the curation source of truth; the dashboard JSON is the published form and the two are kept in sync at publish time.
 
@@ -161,7 +186,7 @@ The data pipeline is a first-class part of the product because the verification 
 
 ### 6.1 Three Stages
 
-1. **Research (automated).** A query-bank sweep (seeded from the owner's search-term bank, expanded with phrases proven during the August 2026 backfill, such as SEC-filing and earnings-call queries) finds candidate events. Each candidate is structured to the target schema, passed through the attribution gate (Section 3.1: valid attributor check, targeted company-denial search, confidence score with the 70 floor), deduplicated against staging, the tracker, and the published JSON, then appended to the staging sheet (see the local automation brief) with its confidence, attribution source, and decisive quote. A digest email summarizes every run, including zero-result runs.
+1. **Research (automated).** A query-bank sweep across four categories (losses, planned, created, and never for Jobs Never Created) seeded from the owner's search-term bank, expanded with phrases proven during the August 2026 backfill, such as SEC-filing and earnings-call queries, finds candidate events. Each candidate is structured to the target schema, passed through the attribution gate (Section 3.1: valid attributor check, targeted company-denial search, confidence score with the 70 floor), deduplicated against staging, the tracker, and the published JSON, then appended to the staging sheet (see the local automation brief) with its confidence, attribution source, and decisive quote. A digest email summarizes every run, including zero-result runs.
 
 2. **Review and approval (manual, the veto point).** The owner reads the staged candidates, edits any cell, and sets an approval dropdown. The row's content at publish time is what ships. Rejected rows are kept as a record and feed the dedup so they are never re-proposed.
 
@@ -173,17 +198,18 @@ A lighter weekly workflow follows the same pattern for AI Advances milestones (s
 
 Per the approved implementation plan (2026-08-11), the automation runs on **GitHub Actions** in the dashboard repo: scheduled workflows, no always-on hardware, every run auditable in the Actions log. Estimated operating cost is roughly $5 to $10 per month (API usage; hosting, archiving, and scheduling are free). The earlier n8n/local-machine design is superseded for the runner while its schemas, attribution gate, and acceptance criteria carry forward. Details, schemas, and credentials setup live in the local automation brief and implementation plan; they are intentionally not reproduced here.
 
-### 6.3 Build Status (as of 2026-08-11)
+### 6.3 Build Status (as of 2026-10-03)
 
-- **Workflow A (Research) is built.** `automation/research.py` plus `.github/workflows/research.yml`, manual dispatch only; the weekly cron (Mondays 6:00 AM CT) is written but commented out pending 2 to 3 audited manual runs. 29 offline unit tests pass; live API/Sheets/SMTP paths remain UNTESTED until credentials exist (see automation/README.md).
+- **Workflow A (Research) is built, validated, and scheduled.** `automation/research.py` plus `.github/workflows/research.yml`. Validated by a dry run (35053235405) and a live run (35468244974); the **weekly cron has been live since 2026-09-19** (Mondays 6:00 AM CT). It sweeps four categories: losses, planned, created, and never. Sheets calls retry after a transient stale-TLS error. The staging-append path stays UNTESTED until a run actually stages rows (quiet weeks stage zero by design).
 - **Sheet prep is scripted and validated as idempotent** (`automation/sheet_prep.py` plus the manual-dispatch `sheet-prep.yml` workflow, dry-run by default): control columns, Approval dropdowns, and the AI Advances tab.
-- **Cadence decision:** research runs weekly, Mondays 6:00 AM CT (owner decision 2026-08-11), not every 2 days as first drafted.
+- **Cadence decision:** research runs weekly, Mondays 6:00 AM CT (owner decision 2026-08-11), not every 2 days as first drafted. It is now enabled.
 - **Cost control is a product principle: pipelines never default to premium models.** The research model defaults to `claude-sonnet-5` with hard spend caps (max 10 web searches and 10,000 output tokens per category, env-overridable) and per-category usage logging on every run. Context: 2026-08-11 dry runs on the premium tier burned roughly $36; Sonnet with caps bounds a full run to roughly $1 to $3.
+- **Tracker utility:** `automation/tracker_append.py` (with the manual-dispatch Tracker Append workflow) pushes reviewed, committed payloads to the live tracker sheet through the service account, replacing manual pasting. The tracker has a "Category" column (canonical category labels) and a "Jobs Never Created" tab; future publish automation must fill Category on new rows.
 - **Workflows B (Publish) and C (Advances) are not yet built.** Workflow B must bump `public/data/verified/meta.json` (`dataLastUpdated`) on every data commit; that contract also binds any manual data commit in the meantime.
 
 ### 6.4 Validation Before Automation
 
-The August 2026 backfill ran this exact pipeline manually (parallel research agents, owner review, adversarial verification that struck 9 of 26 researched events, owner rulings, then conversion and browser-verified builds) and serves as the template and acceptance benchmark for the automated build.
+The pipeline was validated by manual dry and live runs before the cron was enabled (6.3). The August 2026 backfill ran this exact pipeline manually (parallel research agents, owner review, adversarial verification that struck 9 of 26 researched events, owner rulings, then conversion and browser-verified builds) and serves as the template and acceptance benchmark for the automated build.
 
 ---
 
@@ -212,7 +238,7 @@ Pipeline acceptance criteria (from the automation brief) additionally require: c
 ## 9. Future Roadmap
 
 - **Phase 3 (project brief): data expansion and refinements.**
-- **Automation build** per the approved GitHub Actions plan: research workflow first (schedule off, manual validation runs), then the approval signal, then the publish workflow against a single test row, then the weekly AI Advances workflow, then retire the manual process.
+- **Automation build** per the approved GitHub Actions plan: research workflow (done, cron live), then the approval signal, then the publish workflow against a single test row, then the weekly AI Advances workflow, then retire the manual process.
 - **Additional automated content types**: Predictions, Timeline, and AI Advances research queries beyond the initial milestone sweep (schemas pending).
 - **Weekly AI Displacement Brief**: a packaged insight product reading the approved data (deferred; reuses the pipeline).
 - **AI company profiles / milestones tracker automation**: same architecture, different queries (deferred).
@@ -231,3 +257,4 @@ React 19, TypeScript, Vite, Tailwind CSS 4, Recharts, Framer Motion, React Route
 |---|---|---|
 | 1.0 | 2026-08-11 | Initial official PRD |
 | 1.1 | 2026-08-11 | "Jobs Lost to AI" positioning and per-route SEO principle; Data updated indicator, AI Advances toggle/badge, predictions "as of" convention, Needs Manual Capture flow; counts refreshed (9 predictions, publicRelease flags); pipeline build status (Workflow A built, weekly Monday cadence, sonnet-default cost-control principle, meta.json contract) |
+| 1.2 | 2026-10-03 | Headline redefined as Total Jobs Displaced by AI (layoffs + realized Jobs Never Created; planned and future estimates never counted); robot/autonomous-system layoffs in scope (`displacementMode`); Jobs Never Created data product and gate; 13 canonical job categories; dashboard hero redesign and stats widget; social share images and static company pages; Workflow A validated and weekly cron live with a fourth category; tracker_append utility; counts refreshed (96 events, 81 companies, 420 milestones, 131 archive pages, 147 company pages) |

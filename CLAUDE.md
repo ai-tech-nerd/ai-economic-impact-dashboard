@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-**Last Updated:** 2026-04-26
+**Last Updated:** 2026-10-03 (template sections added 2026-09-22)
 
 > **Version Note**: Update version numbers in package.json and README.md with each release.
 
@@ -40,7 +40,9 @@ If deeper context is needed, review:
 - **Be concise and use verified information only** - Never provide suggestions without verification - See "VERIFICATION RULES"
 - **Update project notes/** - After every feature, fix, or failed attempt - See "NOTES DIRECTORY" section below
 - **Update CHANGELOG.md** after every significant change
+- **Update MODEL_REGISTRY.md** - When an AI model is added, changed, or removed in this project, update `/Users/Michael/Dropbox/ai-knowledge-base/MODEL_REGISTRY.md` in the same session: the project's Quick Reference row(s) and the Models by Provider table. It is a fact registry, edited directly, not through `_inbox/`
 - **Update SESSION_SUMMARY.md** at session end - Brief summary for next session handoff
+- **Route learnings by scope** - Project facts go in this project's files (SYNC DOCS). Anything that applies to every project, to the business, or to a client goes to `/Users/Michael/Dropbox/ai-knowledge-base/_inbox/` for review, never directly into `policies/`, `agent-workflows/`, `business/`, or `clients/`. See "LEARNINGS INBOX" section below
 - **Update CLAUDE.md** - After every correction so you don't make that mistake again
 - **NEVER delete any files without explicit permission** - See "FILE DELETION RULES" section below
 - Do NOT modify or delete files in `_ignore/` or backup files
@@ -132,73 +134,56 @@ See `workflow-requirements.md` → "Incident 3: Code Change Without Understandin
 
 ---
 
+## LEARNINGS INBOX (MANDATORY)
+
+**Location:** `/Users/Michael/Dropbox/ai-knowledge-base/_inbox/`
+
+Global rules, business facts, and client facts are never written directly into the knowledge base. They are proposed in the inbox and Michael approves them.
+
+### Scope tag
+
+Every learning gets one scope before it is written anywhere:
+
+| Scope | Meaning | Goes to |
+|-------|---------|---------|
+| `project` | Only this codebase | This project's files, via SYNC DOCS |
+| `all-projects` | How Michael works, any stack | `_inbox/` |
+| `business` | Pricing, positioning, customers | `_inbox/` |
+| `client:<name>` | A specific client | `_inbox/` |
+
+### When to write to the inbox
+
+During SYNC DOCS, or whenever Michael corrects you, states a preference, or gives business or client context that is not specific to this project. Append to `_inbox/<YYYY-MM-DD>_<project>.md`. If creating it, start it with `# Inbox: <project>, <date>` and the line `**Default is keep.** Tick Drop to reject, or tick Change target and type the file after the colon. Then run /process-inbox <project> to get the AI's decisions in the file, review them, and run /process-inbox <project> apply.` Each item in this exact shape:
+
+```
+**G-1** [CORRECTION] Learned YYYY-MM-DD
+<one-sentence statement, plain language>
+Why: <what happened, with date>
+- Target: <knowledge-base file> → <section>
+- Insert: "<text> (Origin: <project>, YYYY-MM-DD)"
+- [ ] Drop
+- [ ] Change target to:
+```
+
+IDs: G-n for all-projects, B-n business, K-n client. Michael runs `/process-inbox <project>` (AI decisions written into the file), reviews, then `/process-inbox <project> apply`. Do not run either yourself.
+
+### Do not
+
+- Edit `policies/`, `agent-workflows/`, `business/`, or `clients/` directly
+- Put project-only facts in the inbox
+
+---
+
+
 ## SESSION LOGS (REFERENCE ONLY)
 
-**Location:** `/Users/Michael/Dropbox/ai-projects/session-logs/`
+**Location:** `/Users/Michael/Dropbox/ai-projects/session-logs/ai-economic-impact-dashboard/`
 
-Master repository for session logs and cross-project learnings.
+Do NOT read at session start. Sessions are saved automatically as `.jsonl` on exit and before compaction by the hook in `~/.claude/settings.json`.
 
-**DO NOT read at session start** - Only access when user explicitly references it.
+When the user says **"SaveSession"**, invoke the `save-session` skill (`~/.claude/skills/save-session/SKILL.md`): it writes the complete raw transcript, never a summary.
 
-### Structure
-
-session-logs/
-├── README.md
-├── ai-economic-impact-dashboard/
-│   └── YYYY-MM-DD_HH-MM_description.md
-└── ...
-
-### SaveSession Trigger
-
-**IMPORTANT:** Sessions are automatically saved on exit and before context compaction via hooks in `~/.claude/settings.json`. The manual "SaveSession" command below is a backup for mid-session saves.
-
-When user says **"SaveSession"**, you MUST:
-
-1. **Create the file:**
-
-   session-logs/ai-economic-impact-dashboard/YYYY-MM-DD_HH-MM_description.md
-
-   (24-hour military time, e.g., `2026-03-14_15-30_video-chunking-fix.md`)
-
-2. **Write the COMPLETE RAW conversation** - NOT a summary. Include:
-   - Every user message (verbatim)
-   - Every Claude response (verbatim)
-   - All tool calls and their outputs
-   - All code snippets shown
-   - All errors encountered
-
-3. **Format as a transcript:**
-   # Session Log: [Brief Description]
-   **Date:** [Date]
-   **Project:** ai-economic-impact-dashboard
-
-   ---
-
-   ## USER:
-   [Exact user message]
-
-   ## CLAUDE:
-   [Exact Claude response including any code blocks]
-
-   ## USER:
-   [Next user message]
-
-   ...continue for entire conversation...
-
-**DO NOT:**
-- Summarize or condense the conversation
-- Skip "unimportant" messages
-- Paraphrase what was said
-- Create a "lessons learned" document instead of the transcript
-
-**WHY:** Session logs are used to understand exactly what was tried, what failed, and what the actual error messages were. Summaries lose critical debugging details.
-
-### When to Access
-
-Only read session logs when:
-- User explicitly asks to review previous sessions
-- User references a specific past session
-- User asks "what was tried before" or similar
+Read session logs only when the user explicitly asks to review a previous session or what was tried before. Learnings are mined from them by `/extract-sessions` into `_inbox/`; see LEARNINGS INBOX above.
 
 ---
 
@@ -224,7 +209,7 @@ Only read session logs when:
 | Styling | Tailwind CSS 4 |
 | Charts | Recharts |
 | Animation | Framer Motion |
-| Routing | React Router (HashRouter) |
+| Routing | React Router (BrowserRouter + spa-github-pages 404 fallback) |
 | SEO | react-helmet-async |
 | Data | Static JSON files |
 
@@ -248,10 +233,14 @@ Only read session logs when:
 - All data in `public/data/verified/` as JSON files (root `data/verified/` is stale — do not use)
 - `job-displacement-events.json` - Displacement events with sources
 - `planned-layoffs.json` / `ai-job-creation.json` - Planned cuts and AI-driven job creation (creationCategory: adoption vs support)
-- `ai-milestones.json` - AI milestones (370 as of 2026-08-11)
+- `ai-milestones.json` - AI milestones (420 as of 2026-10-03); optional `types[]` for multi-type entries
+- `jobs-never-created.json` - Jobs Never Created (work given to AI/robots instead of hiring). Realized entries count in the headline; `isProjection` future estimates and `disputed` entries never do
 - `predictions.json` - Projections by timeframe, re-grounded "as of" dates
 - `meta.json` - dataLastUpdated (MUST be bumped on every data commit; drives the "Data updated" indicator)
 - `company-profiles.json` - Optional company blurbs (pages degrade gracefully without entries)
+- Events/planned: `jobTypes` must be one of 13 canonical slugs (`scripts/job-categories.mjs`; deploy fails otherwise), original wording in `jobTypesDetail`; `displacementMode: "robotics"` marks robot/autonomous-system cuts
+- Headline "Total Jobs Displaced by AI" = layoffs + realized Jobs Never Created; computed only in `getHeroBreakdown` (dashboard + /widget/stats) and mirrored in `scripts/prerender-seo.mjs` and `scripts/og/generate.mjs`
+- Share images + static company pages + sitemap are generated at deploy (`scripts/prerender-seo.mjs`, `scripts/og/`); deploy order: validate categories, build, prerender, og
 - Fetched at runtime via `useData` hook; full schemas in docs/PROJECT_ARCHITECTURE.md
 
 ---
@@ -260,6 +249,15 @@ Only read session logs when:
 
 ### Routing: BrowserRouter + 404.html fallback (changed 2026-08-11)
 The app now uses BrowserRouter with the spa-github-pages 404.html redirect so routes are real, Google-indexable URLs. Do NOT switch back to HashRouter — it made every page invisible to crawlers. A shim in index.html redirects legacy #/ links and embeds.
+
+### JSON edits must preserve formatting (2026-10-02)
+Data files are indent=2 with ensure_ascii matching the original. Rewriting with different settings rewrote all of ai-milestones.json once. Check `git diff --stat` after every data edit.
+
+### Never trust summarized tables from WebFetch (2026-10-02)
+A WebFetch summary invented half of a report's top-10 table. Verify figures against raw page text, and read image-based tables from the image itself.
+
+### Tracker sheet writes go through tracker_append.py (2026-10-03)
+Commit a payload in automation/payloads/, dry-run via the Tracker Append workflow, then run live. Deletes and set_columns refuse ambiguous matches; appends are not idempotent, so never re-run a payload live.
 
 ### Data Verification Standards
 Every displacement event must link to primary sources. Cross-reference with research to distinguish AI-driven displacement from other factors.
