@@ -1,0 +1,53 @@
+{
+ "appends": [
+  {
+   "tab_aliases": [
+    "AI Job Losses Tracker",
+    "AI Job Losses"
+   ],
+   "rows": [
+    {
+     "Date": "2026-05-13",
+     "Company": "Bird (formerly MessageBird)",
+     "Number of Jobs": "~20% (est. ~30; company gave no number)",
+     "Job Position/Category": "Engineering and operations teams (mostly Europe)",
+     "Category": "Engineering & Technology, Operations",
+     "Reason Given": "CEO Robert Vis: \"The second is AI. It has changed how we work, and tasks that required dedicated headcount even a few years ago no longer do.\" First driver: geography (moving closer to US customers).",
+     "Source Link": "https://emailexpert.com/bird-to-cut-european-headcount-by-20-as-vis-says-companys-future-has-shifted-to-the-us/"
+    }
+   ]
+  },
+  {
+   "tab_aliases": [
+    "Planned/Announced",
+    "Planned_Announced"
+   ],
+   "rows": [
+    {
+     "Date Announced": "2026-09-30",
+     "Company": "BMW",
+     "Jobs Announced/Planned": "~13 (20% of ~65 SVPs; SVP count from unnamed source)",
+     "Jobs Already Cut": "0",
+     "Status": "Announced",
+     "Job Position/Category": "Senior vice presidents, cascading to lower management",
+     "Category": "Management",
+     "Timeline": "By mid-2027",
+     "Reason Given": "BMW: 20% reduction of SVPs \"through the efficient use of artificial intelligence\"; CFO Walter Mertl: agentic AI \"will be a game-changer\".",
+     "Source Link": "https://www.businesstoday.in/jobs/story/bmw-to-cut-20-of-senior-management-roles-with-ai-as-it-pushes-for-cost-savings-559029-2026-10-01"
+    },
+    {
+     "Date Announced": "2026-10-01",
+     "Company": "FICO (Fair Isaac)",
+     "Jobs Announced/Planned": "~15% of positions (est. ~572 from FY2025 10-K headcount of 3,811)",
+     "Jobs Already Cut": "0",
+     "Status": "In Progress",
+     "Job Position/Category": "Positions across the company",
+     "Category": "Company-wide / Mixed",
+     "Timeline": "Substantially complete by end of fiscal Q3 2027",
+     "Reason Given": "8-K: fewer layers, simpler structure, optimized processes and tools, and \"integrating AI-driven product development\"; AI is one of four levers.",
+     "Source Link": "https://www.sec.gov/Archives/edgar/data/0000814547/000119312526415732/d127042d8k.htm"
+    }
+   ]
+  }
+ ]
+}

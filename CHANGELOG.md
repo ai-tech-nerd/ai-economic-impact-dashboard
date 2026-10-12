@@ -15,9 +15,12 @@ All notable changes to this project will be documented in this file.
 - Owner-forwarded: HubSpot ~660 (CEO: "not driven by AI-related efficiencies"), Amazon 121 WARN and ~1,000 Stores round, One Zero Bank, Atlassian (commentary; March event already recorded).
 - Digests: Admiral (denial), Microsoft, Intuit, Disney, Reach, McClatchy, Flock Safety, Entain, Stellantis and others.
 
-### Pending owner decision
-- BMW: "about 65 SVPs" (so ~13) is from an unnamed source, not BMW; held.
-- FICO: 15% of 3,811 (FY2025 10-K) ≈ 572; AI is one listed lever in the 8-K. Bird: first company AI attribution is the ~20% round of May 2026 (headcount unstated). Axis Bank: no company statement ties the decline to AI; bank says AI's headcount effect "had not yet fully emerged".
+### Added on owner approval (estimates flagged in each entry)
+- plan BMW (2026-09-30): ~13 = 20% of ~65 SVPs (SVP count from an unnamed source via Bloomberg), by mid-2027.
+- plan FICO (2026-10-01): ~572 = 15% of 3,811 (FY2025 10-K); AI one of four levers in the 8-K.
+- evt Bird (2026-05-13): ~30 = ~20% of ~150 (company gave no number); first round Bird itself attributed to AI. Cumulative "1,000 to 120" not added (would double count).
+- Archive pages + screenshots for all three; nav chain re-sequenced.
+- Not added: Axis Bank (bank says AI's headcount effect "had not yet fully emerged").
 
 ## [Unreleased] - 2026-10-03 — Social share images + page metadata
 

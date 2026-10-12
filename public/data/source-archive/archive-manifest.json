@@ -26,6 +26,32 @@
     "article_file": ""
   },
   {
+    "dir_name": "2026-10-01-fico-planned",
+    "date": "2026-10-01",
+    "company": "FICO (Fair Isaac)",
+    "jobs": "~15% (est. ~572)",
+    "category": "Company-wide",
+    "tab": "planned",
+    "type": "planned",
+    "reason": "8-K: fewer layers, simpler structure, optimized processes and \"integrating AI-driven product development\"; 15% of positions.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/0000814547/000119312526415732/d127042d8k.htm",
+    "screenshot_file": "2026-10-01-fico-planned-screenshot.png",
+    "article_file": ""
+  },
+  {
+    "dir_name": "2026-09-30-bmw-planned",
+    "date": "2026-09-30",
+    "company": "BMW",
+    "jobs": "~13 (20% of SVPs)",
+    "category": "Senior management",
+    "tab": "planned",
+    "type": "planned",
+    "reason": "BMW: 20% reduction of senior VPs \"through the efficient use of artificial intelligence\"; CFO: agentic AI \"will be a game-changer\".",
+    "source_url": "https://www.businesstoday.in/jobs/story/bmw-to-cut-20-of-senior-management-roles-with-ai-as-it-pushes-for-cost-savings-559029-2026-10-01",
+    "screenshot_file": "2026-09-30-bmw-planned-screenshot.png",
+    "article_file": ""
+  },
+  {
     "dir_name": "2026-09-09-google-finland",
     "date": "2026-09-09",
     "company": "Google (Finland)",
@@ -361,6 +387,19 @@
     "reason": "CEO Chuck Robbins blog post: 'We are making strategic investments in our employees' use of AI across the company.' Restructuring to redirect investments toward AI chips, fiber optics, and security. SEC filing: up to $1 billion in restructuring costs (mostly severance), $450M this quarter, remainder in FY27. Notifications began May 14. TechCrunch headline: 'Cisco cuts nearly 4,000 jobs to spend more on AI, reports record quarterly revenue.' Cisco offering one year of access to Cisco U courses including AI certifications. Robbins separately said he 'did not want AI to become the excuse' but company's own communications tie the cuts to funding AI investments. Separate event from Aug 2025 (~221) and 2024 (~6,000) cuts.",
     "source_url": "https://techcrunch.com/2026/05/14/cisco-cuts-nearly-4000-jobs-to-spend-more-on-ai-reports-record-quarterly-revenue/",
     "screenshot_file": "2026-05-13-cisco-screenshot.png",
+    "article_file": ""
+  },
+  {
+    "dir_name": "2026-05-13-bird",
+    "date": "2026-05-13",
+    "company": "Bird (formerly MessageBird)",
+    "jobs": "~20% (est. ~30)",
+    "category": "Engineering & operations (mostly Europe)",
+    "tab": "main",
+    "type": "layoff",
+    "reason": "CEO Robert Vis: \"The second is AI. It has changed how we work, and tasks that required dedicated headcount even a few years ago no longer do.\"",
+    "source_url": "https://emailexpert.com/bird-to-cut-european-headcount-by-20-as-vis-says-companys-future-has-shifted-to-the-us/",
+    "screenshot_file": "2026-05-13-bird-screenshot.png",
     "article_file": ""
   },
   {

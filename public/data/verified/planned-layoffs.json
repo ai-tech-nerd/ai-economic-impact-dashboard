@@ -515,5 +515,71 @@
     "verificationStatus": "verified",
     "status": "announced",
     "timeline": "Completed Q4 2026"
+  },
+  {
+    "id": "plan-019",
+    "company": "bmw",
+    "companyName": "BMW",
+    "date": "2026-09-30",
+    "jobsCut": 13,
+    "jobTypes": [
+      "management"
+    ],
+    "jobTypesDetail": [
+      "Senior vice presidents (20% reduction), cascading to lower management levels"
+    ],
+    "industry": "Automotive",
+    "region": "Europe",
+    "country": "DE",
+    "aiReplacement": true,
+    "reasonGiven": "BMW Capital Market Day: \"Leadership structures through a 20% reduction\" of senior vice presidents, becoming more agile \"through the efficient use of artificial intelligence.\" CFO Walter Mertl: \"Consistent use of agentic AI applications across all areas of the company will be a game-changer for more agile and efficient development, leaner structures and faster decision-making.\"",
+    "description": "BMW plans to cut about 20% of senior management roles by mid-2027 using AI. Count of 13 = 20% of roughly 65 SVPs; the 65 comes from 'a person familiar with the company's structure' (Bloomberg), not BMW. Press estimates about 100 high-level jobs across two levels. Separate from BMW's ~8,000 white-collar reduction agreed in July 2026, which was not attributed to AI.",
+    "sources": [
+      {
+        "url": "https://www.businesstoday.in/jobs/story/bmw-to-cut-20-of-senior-management-roles-with-ai-as-it-pushes-for-cost-savings-559029-2026-10-01",
+        "title": "BMW to cut 20% of senior management roles with AI as it pushes for cost savings",
+        "publisher": "Business Today (citing Bloomberg)",
+        "date": "2026-10-01"
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "announced",
+    "timeline": "By mid-2027"
+  },
+  {
+    "id": "plan-020",
+    "company": "fico",
+    "companyName": "FICO (Fair Isaac)",
+    "date": "2026-10-01",
+    "jobsCut": 572,
+    "jobTypes": [
+      "company-wide"
+    ],
+    "jobTypesDetail": [
+      "Positions across the company"
+    ],
+    "industry": "Financial Services",
+    "region": "North America",
+    "country": "US",
+    "aiReplacement": true,
+    "reasonGiven": "FICO 8-K (Item 2.05): plan of workforce reduction \"by reducing the number of layers in the organization, simplifying the operating structure, optimizing processes and tools, and integrating AI-driven product development. This plan involves the elimination of approximately 15% of positions across the Company.\" Affected employees notified beginning the week of October 5, 2026; substantially complete by end of fiscal Q3 2027.",
+    "description": "FICO is eliminating about 15% of positions. Count of 572 is estimated: 15% of the 3,811 employees in FICO's FY2025 10-K ('As of September 30, 2025, we employed 3,811 persons'); FICO stated no number. AI is one of four listed levers, not stated as replacing the roles; FICO's statement to Reuters did not mention AI.",
+    "sources": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/0000814547/000119312526415732/d127042d8k.htm",
+        "title": "Fair Isaac Corp Form 8-K, Item 2.05",
+        "publisher": "SEC EDGAR",
+        "date": "2026-10-06"
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/814547/000081454725000030/fico-20250930.htm",
+        "title": "Fair Isaac Corp Form 10-K FY2025 (Human Capital)",
+        "publisher": "SEC EDGAR",
+        "date": "2025-11"
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "announced",
+    "timeline": "Substantially complete by end of fiscal Q3 2027"
   }
 ]

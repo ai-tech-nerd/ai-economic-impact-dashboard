@@ -2888,5 +2888,40 @@
       }
     ],
     "verificationStatus": "verified"
+  },
+  {
+    "id": "evt-101",
+    "company": "bird",
+    "companyName": "Bird (formerly MessageBird)",
+    "date": "2026-05-13",
+    "jobsCut": 30,
+    "jobTypes": [
+      "engineering-technology",
+      "operations"
+    ],
+    "jobTypesDetail": [
+      "Engineering and operations teams (mostly Europe)"
+    ],
+    "industry": "Technology",
+    "region": "Europe",
+    "country": "NL",
+    "aiReplacement": true,
+    "reasonGiven": "CEO Robert Vis, note to employees: \"The second is AI. It has changed how we work, and tasks that required dedicated headcount even a few years ago no longer do.\" The first stated driver was geography (moving teams closer to US customers). About 20% of headcount, mostly in Europe; Bird gave no number.",
+    "description": "Bird cut about 20% of its headcount, mostly in Europe, citing a shift to US customers and AI. This is the first round Bird itself attributed to AI; earlier rounds (2022, 2024, Feb 2025) were not company-attributed to AI. Count of 30 is an estimate (about 20% of roughly 150 staff after the Feb 2025 cut) approved by the owner; Bird did not state a number. Not added: Bird's cumulative 'more than 1,000 to 120' figure (Sep 2026), which spans all rounds.",
+    "sources": [
+      {
+        "url": "https://emailexpert.com/bird-to-cut-european-headcount-by-20-as-vis-says-companys-future-has-shifted-to-the-us/",
+        "title": "Bird to Cut European Headcount by 20% as Vis Says Company's Future Has Shifted to the US",
+        "publisher": "emailexpert",
+        "date": "2026-05-13"
+      },
+      {
+        "url": "https://tech.eu/2026/09/23/bird-raises-450m-in-debt-headcount-cut-from-1000-to-120/",
+        "title": "Bird raises $450M in debt; headcount cut from 1,000 to 120",
+        "publisher": "tech.eu",
+        "date": "2026-09-23"
+      }
+    ],
+    "verificationStatus": "verified"
   }
 ]
