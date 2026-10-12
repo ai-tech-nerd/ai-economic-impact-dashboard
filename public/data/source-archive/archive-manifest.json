@@ -1,5 +1,31 @@
 [
   {
+    "dir_name": "2026-10-08-honeybook",
+    "date": "2026-10-08",
+    "company": "HoneyBook",
+    "jobs": "~30-35 (14%)",
+    "category": "Company-wide (mostly Israel)",
+    "tab": "main",
+    "type": "layoff",
+    "reason": "Company: reorganization \"aligning our structure and workflows with the AI era\"; headcount from Calcalist.",
+    "source_url": "https://www.calcalistech.com/ctechnews/article/syg9pbhizx",
+    "screenshot_file": "2026-10-08-honeybook-screenshot.png",
+    "article_file": ""
+  },
+  {
+    "dir_name": "2026-10-06-dnb-planned",
+    "date": "2026-10-06",
+    "company": "DNB",
+    "jobs": "~400 FTEs (planned)",
+    "category": "Technology & Services",
+    "tab": "planned",
+    "type": "planned",
+    "reason": "DNB release: agentic AI replaces tasks previously handled manually; CEO: \"AI is changing the way we work.\" Downsizing completed Q4 2026.",
+    "source_url": "https://www.inderes.dk/releases/dnb-dnb-is-making-organisational-changes-in-technology-and-services",
+    "screenshot_file": "2026-10-06-dnb-planned-screenshot.png",
+    "article_file": ""
+  },
+  {
     "dir_name": "2026-09-09-google-finland",
     "date": "2026-09-09",
     "company": "Google (Finland)",

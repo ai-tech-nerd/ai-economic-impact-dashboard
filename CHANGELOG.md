@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file.
 
+## [Unreleased] - 2026-10-12 — Google Alerts digest review; DNB, HoneyBook, CA SB 951
+
+### Added
+- Research now includes the owner's Gmail "Google Alert – Daily Digest" emails (owner instruction). First pass: 22 digests (Sep 15 – Oct 12), ~250 unique stories, ~30 company-specific, gate-checked.
+- evt (HoneyBook, 2026-10-08): ~30-35 (14% of 255), company cites "aligning our structure and workflows with the AI era"; counted at 30. Archive page + screenshot.
+- plan (DNB, 2026-10-06): ~400 FTEs by Q4 2026; DNB release: agentic AI "replaces tasks that were previously handled manually". Archive page + screenshot (cookie banner dismissed).
+- AI Advances: California SB 951 (AI-caused layoffs labeled "technology displacement" in Cal-WARN notices from 2027-01-01; EDD report on jobs left unfilled because of AI by 2028) with SB 947 noted.
+- Headline 329,306 → 329,336; 97 layoff events; 82 companies.
+
+### Struck (company did not attribute to AI, or denied it)
+- Owner-forwarded: HubSpot ~660 (CEO: "not driven by AI-related efficiencies"), Amazon 121 WARN and ~1,000 Stores round, One Zero Bank, Atlassian (commentary; March event already recorded).
+- Digests: Admiral (denial), Microsoft, Intuit, Disney, Reach, McClatchy, Flock Safety, Entain, Stellantis and others.
+
+### Pending owner decision
+- BMW: "about 65 SVPs" (so ~13) is from an unnamed source, not BMW; held.
+- FICO: 15% of 3,811 (FY2025 10-K) ≈ 572; AI is one listed lever in the 8-K. Bird: first company AI attribution is the ~20% round of May 2026 (headcount unstated). Axis Bank: no company statement ties the decline to AI; bank says AI's headcount effect "had not yet fully emerged".
+
 ## [Unreleased] - 2026-10-03 — Social share images + page metadata
 
 ### Added

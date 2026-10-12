@@ -484,5 +484,36 @@
       "Operations",
       "Roles subject to automation"
     ]
+  },
+  {
+    "id": "plan-018",
+    "company": "dnb",
+    "companyName": "DNB",
+    "date": "2026-10-06",
+    "jobsCut": 400,
+    "jobTypes": [
+      "engineering-technology",
+      "operations"
+    ],
+    "jobTypesDetail": [
+      "Technology & Services (KYC, customer data control, technology development and coding)"
+    ],
+    "industry": "Financial Services",
+    "region": "Europe",
+    "country": "NO",
+    "aiReplacement": true,
+    "reasonGiven": "DNB stock exchange release: \"the Group has adopted agentic AI in several parts of its operations. This technology replaces tasks that were previously handled manually\"; the changes \"entail a reduction in the workforce of about 400 full-time equivalents (FTEs).\" CEO Kjerstin Braathen: \"AI is changing the way we work and how we deliver services to our customers. We are already seeing considerable gains, and are therefore adapting our organisation to a new reality.\"",
+    "description": "DNB (Norway's largest bank) plans to cut about 400 FTEs in its Technology & Services unit, with the downsizing completed in Q4 2026. The release does not say whether reductions come through layoffs, voluntary packages or attrition.",
+    "sources": [
+      {
+        "url": "https://www.inderes.dk/releases/dnb-dnb-is-making-organisational-changes-in-technology-and-services",
+        "title": "DNB is making organisational changes in Technology & Services",
+        "publisher": "DNB Bank ASA (stock exchange release via Inderes)",
+        "date": "2026-10-06"
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "announced",
+    "timeline": "Completed Q4 2026"
   }
 ]

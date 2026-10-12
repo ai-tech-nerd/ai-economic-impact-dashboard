@@ -7804,6 +7804,30 @@
     "publicRelease": true
   },
   {
+    "id": "ms-331",
+    "company": "us",
+    "date": "2026-09-30",
+    "type": "regulation",
+    "name": "California Requires Layoff Notices to Disclose AI Job Displacement (SB 951)",
+    "description": "Gov. Newsom signed SB 951, amending Cal-WARN: from Jan 1, 2027, layoff notices caused in whole or substantial part by AI or automation must begin \"This notice is for a technology displacement\" and list the number of AI-attributable layoffs, the job functions being automated and the type of technology. The state must publish notice summaries and report on jobs permanently left unfilled because of AI ('technological cessation in hiring') by 2028. Signed alongside SB 947 ('No Robo Bosses'), which from July 2027 bars relying solely on automated systems to discipline or fire workers.",
+    "category": "government",
+    "significance": "high",
+    "sources": [
+      {
+        "url": "https://news.bloomberglaw.com/daily-labor-report/newsom-signs-bill-mandating-notice-of-ai-related-mass-layoffs",
+        "title": "AI-Related Mass Layoff Notices Required in New California Law",
+        "publisher": "Bloomberg Law",
+        "date": "2026-09-30"
+      },
+      {
+        "url": "https://www.littler.com/news-analysis/asap/california-amends-its-warn-act-again",
+        "title": "California Amends Its WARN Act Again",
+        "publisher": "Littler",
+        "date": "2026-10-01"
+      }
+    ]
+  },
+  {
     "id": "ms-328",
     "company": "tavus",
     "date": "2026-10-01",

@@ -1,0 +1,41 @@
+{
+ "appends": [
+  {
+   "tab_aliases": [
+    "AI Job Losses Tracker",
+    "AI Job Losses"
+   ],
+   "rows": [
+    {
+     "Date": "2026-10-08",
+     "Company": "HoneyBook",
+     "Number of Jobs": "~30-35 (approx. 14% of 255)",
+     "Job Position/Category": "Mixed (mostly Israel)",
+     "Category": "Company-wide / Mixed",
+     "Reason Given": "Company statement: reorganization \"aligning our structure and workflows with the AI era, while integrating AI into our product and value proposition for customers.\" Headcount per Calcalist.",
+     "Source Link": "https://www.calcalistech.com/ctechnews/article/syg9pbhizx"
+    }
+   ]
+  },
+  {
+   "tab_aliases": [
+    "Planned/Announced",
+    "Planned_Announced"
+   ],
+   "rows": [
+    {
+     "Date Announced": "2026-10-06",
+     "Company": "DNB",
+     "Jobs Announced/Planned": "about 400 FTEs",
+     "Jobs Already Cut": "0",
+     "Status": "Announced",
+     "Job Position/Category": "Technology & Services (KYC, customer data control, technology development and coding)",
+     "Category": "Engineering & Technology, Operations",
+     "Timeline": "Completed Q4 2026",
+     "Reason Given": "DNB release: agentic AI \"replaces tasks that were previously handled manually\"; CEO Kjerstin Braathen: \"AI is changing the way we work and how we deliver services to our customers.\"",
+     "Source Link": "https://www.inderes.dk/releases/dnb-dnb-is-making-organisational-changes-in-technology-and-services"
+    }
+   ]
+  }
+ ]
+}

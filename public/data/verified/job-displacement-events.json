@@ -2860,5 +2860,33 @@
     "jobTypesDetail": [
       "Corporate"
     ]
+  },
+  {
+    "id": "evt-100",
+    "company": "honeybook",
+    "companyName": "HoneyBook",
+    "date": "2026-10-08",
+    "jobsCut": 30,
+    "jobTypes": [
+      "company-wide"
+    ],
+    "jobTypesDetail": [
+      "Mixed (mostly Israel)"
+    ],
+    "industry": "Technology",
+    "region": "Middle East",
+    "country": "IL",
+    "aiReplacement": true,
+    "reasonGiven": "Company statement to Calcalist: \"HoneyBook is undergoing a reorganization process aimed at aligning our structure and workflows with the AI era, while integrating AI into our product and value proposition for customers.\" Calcalist reports approximately 14% of its 255-strong workforce, around 30 to 35 employees, mostly in Israel; the company gave no number. Counted at the low end (30).",
+    "description": "HoneyBook laid off around 30 to 35 employees (approximately 14% of 255), mostly in Israel, in a reorganization the company says aligns its structure and workflows with the AI era. Headcount figures are Calcalist's reporting; the company statement gives none. Soft attribution (AI-era reorganization), consistent with the Pentera precedent.",
+    "sources": [
+      {
+        "url": "https://www.calcalistech.com/ctechnews/article/syg9pbhizx",
+        "title": "HoneyBook lays off 14% of workforce in AI-driven restructuring",
+        "publisher": "Calcalist (Ctech)",
+        "date": "2026-10-08"
+      }
+    ],
+    "verificationStatus": "verified"
   }
 ]
