@@ -163,6 +163,7 @@ Why: <what happened, with date>
 - Insert: "<text> (Origin: <project>, YYYY-MM-DD)"
 - [ ] Drop
 - [ ] Change target to:
+- [ ] Project only
 ```
 
 IDs: G-n for all-projects, B-n business, K-n client. Michael runs `/process-inbox <project>` (AI decisions written into the file), reviews, then `/process-inbox <project> apply`. Do not run either yourself.
@@ -233,7 +234,7 @@ Read session logs only when the user explicitly asks to review a previous sessio
 - All data in `public/data/verified/` as JSON files (root `data/verified/` is stale — do not use)
 - `job-displacement-events.json` - Displacement events with sources
 - `planned-layoffs.json` / `ai-job-creation.json` - Planned cuts and AI-driven job creation (creationCategory: adoption vs support)
-- `ai-milestones.json` - AI milestones (420 as of 2026-10-03); optional `types[]` for multi-type entries
+- `ai-milestones.json` - AI milestones (421 as of 2026-10-12); optional `types[]` for multi-type entries
 - `jobs-never-created.json` - Jobs Never Created (work given to AI/robots instead of hiring). Realized entries count in the headline; `isProjection` future estimates and `disputed` entries never do
 - `predictions.json` - Projections by timeframe, re-grounded "as of" dates
 - `meta.json` - dataLastUpdated (MUST be bumped on every data commit; drives the "Data updated" indicator)
@@ -258,6 +259,12 @@ A WebFetch summary invented half of a report's top-10 table. Verify figures agai
 
 ### Tracker sheet writes go through tracker_append.py (2026-10-03)
 Commit a payload in automation/payloads/, dry-run via the Tracker Append workflow, then run live. Deletes and set_columns refuse ambiguous matches; appends are not idempotent, so never re-run a payload live.
+
+### Research includes Google Alerts digests (2026-10-12)
+Every research pass also reviews Gmail "Google Alert – Daily Digest" emails since the last sweep. Digest links are leads only; verify each against the company's own statement. Widely reported "AI restructurings" are often denied by the company (HubSpot, Admiral), so headlines never qualify on their own.
+
+### Percentage-only announcements (2026-10-12)
+When a company states only a percentage, record the count as an estimate from a company-stated or reported headcount and write the method into the entry and the sheet row (FICO, BMW, Bird).
 
 ### Data Verification Standards
 Every displacement event must link to primary sources. Cross-reference with research to distinguish AI-driven displacement from other factors.

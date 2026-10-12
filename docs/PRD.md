@@ -82,7 +82,7 @@ Every event links to a source-archive page that proves provenance without reprod
 - An archive.org (Wayback Machine) backup link
 - Structured event metadata (date, company, jobs, category) and prev/next navigation
 
-**Full-text reproduction is never published.** All archive pages (131 as of 2026-10-03) use the excerpt-only format.
+**Full-text reproduction is never published.** All archive pages (136 as of 2026-10-12) use the excerpt-only format.
 
 ### 3.3 Hedged Numbers Preserved Verbatim
 
@@ -103,7 +103,7 @@ Nothing reaches the public dashboard without explicit owner approval. Automation
 
 ### 3.6 Headline Metric and Counting Rules
 
-The headline is **"Total Jobs Displaced by AI" = verified layoffs + realized Jobs Never Created** (see 3.8): 329,306 as of 2026-10-03, which is 328,106 + 1,200. Planned cuts and future estimates (entries flagged `isProjection`) are shown separately and never counted, and AI job creation is shown but is not part of the total. The home-page H1 "Jobs Lost to AI" is a search-facing choice (see Section 1); the page description explains that the total combines layoffs with jobs companies stopped filling.
+The headline is **"Total Jobs Displaced by AI" = verified layoffs + realized Jobs Never Created** (see 3.8): 329,366 as of 2026-10-12, which is 328,166 + 1,200. Planned cuts and future estimates (entries flagged `isProjection`) are shown separately and never counted, and AI job creation is shown but is not part of the total. The home-page H1 "Jobs Lost to AI" is a search-facing choice (see Section 1); the page description explains that the total combines layoffs with jobs companies stopped filling.
 
 ### 3.7 Robots and Autonomous Systems Count as AI Displacement
 
@@ -152,7 +152,7 @@ Embed snippets use path URLs; the stats widget defaults to height 560 (about 400
 
 ### 4.3 Social Sharing and Static Pages
 
-Every page has a branded 1200x630 share image (6 section pages, 147 company pages, 131 Source Archive pages) generated at deploy from live data, so shared links preview correctly and carry the current numbers. Each page also has its own X/Twitter and Open Graph title and description. Company pages are pre-rendered as static HTML so shared company links preview correctly and are crawlable.
+Every page has a branded 1200x630 share image (6 section pages, 152 company pages, 136 Source Archive pages as of 2026-10-12) generated at deploy from live data, so shared links preview correctly and carry the current numbers. Each page also has its own X/Twitter and Open Graph title and description. Company pages are pre-rendered as static HTML so shared company links preview correctly and are crawlable.
 
 ### 4.4 Source Archive
 
@@ -168,13 +168,13 @@ Five datasets, published as static JSON in the repo and fetched at runtime. Coun
 
 | Dataset | Count | Contents |
 |---|---|---|
-| Displacement events | **96** | Verified AI-attributed job cuts: 328,106 jobs across 81 companies, each with source link and archive page; 2 entries tagged `displacementMode: "robotics"` |
-| Planned / announced | **15** | Announced-but-not-executed reductions and restructurings attributed to AI (151,900 planned jobs; not counted in the headline) |
+| Displacement events | **98** | Verified AI-attributed job cuts: 328,166 jobs across 83 companies, each with source link and archive page; 2 entries tagged `displacementMode: "robotics"` |
+| Planned / announced | **18** | Announced-but-not-executed reductions and restructurings attributed to AI (152,885 planned jobs; not counted in the headline). Where a company states only a percentage, the count is estimated from a company-stated or reported headcount and the method is written into the entry (e.g. FICO 15% of 3,811; BMW 20% of ~65 SVPs) |
 | Job creation | **16** | AI-driven hiring, each tagged `creationCategory` (adoption vs support), with a numeric `jobsCreated` field (undisclosed counts excluded from totals) |
 | Jobs Never Created | **3** | Work given to AI/robots instead of new hires (IBM, Klarna, DBS), each with the stated basis and math; 1,200 realized and counted, 11,800 future estimates not counted |
-| AI milestones | **420** | Model releases, company launches, acquisitions, partnerships, funding, regulations, and breakthroughs through 2026-10-02 (pre-2022 historical backfill included); some carry multiple types (e.g. OpenAI Dots is both a company launch and a model release); 6 entries carry the `publicRelease` badge flag |
+| AI milestones | **421** | Model releases, company launches, acquisitions, partnerships, funding, regulations, and breakthroughs through 2026-10-02, plus California SB 951 (pre-2022 historical backfill included); some carry multiple types (e.g. OpenAI Dots is both a company launch and a model release); 6 entries carry the `publicRelease` badge flag |
 
-Supporting data: company profiles and predictions (**9** predictions across four timeframes, re-grounded "As of Aug 2026"), the archive manifest (131 pages: 96 layoffs, 15 planned, 16 created, 4 never created), and `meta.json` (`dataLastUpdated`, the "Data updated" indicator contract).
+Supporting data: company profiles and predictions (**9** predictions across four timeframes, re-grounded "As of Aug 2026"), the archive manifest (136 pages: 98 layoffs, 18 planned, 16 created, 4 never created), and `meta.json` (`dataLastUpdated`, the "Data updated" indicator contract).
 
 The owner's tracker spreadsheet is the curation source of truth; the dashboard JSON is the published form and the two are kept in sync at publish time.
 
@@ -193,6 +193,8 @@ The data pipeline is a first-class part of the product because the verification 
 3. **Publish (automated, approval-triggered).** For each approved row, sequentially and idempotently: append to the live tracker, generate the dashboard JSON entry, capture a screenshot (with a bot-wall fallback chain), trigger an archive.org Save Page Now, generate the excerpt archive page with manifest and navigation updates, commit, and let GitHub Pages deploy. Paywalled or blocked sources are stamped "Needs Manual Capture" and skipped, never half-published; the owner supplies the screenshot manually and the next run completes the row.
 
 A lighter weekly workflow follows the same pattern for AI Advances milestones (staged, approved, appended to the milestones JSON; no archive pages, since milestones cite sources directly).
+
+**Lead sources.** Besides web search (queries.yml), research reviews the owner's Google Alerts daily digest emails (subject "Google Alert – Daily Digest") for candidate stories. Digest links are leads only; every story is verified against the company's own statement or filing under the attribution gate. Workflow A cannot read Gmail yet (would need new credentials; owner approval required), so digests are reviewed in interactive research sessions.
 
 ### 6.2 Runner
 
@@ -258,3 +260,4 @@ React 19, TypeScript, Vite, Tailwind CSS 4, Recharts, Framer Motion, React Route
 | 1.0 | 2026-08-11 | Initial official PRD |
 | 1.1 | 2026-08-11 | "Jobs Lost to AI" positioning and per-route SEO principle; Data updated indicator, AI Advances toggle/badge, predictions "as of" convention, Needs Manual Capture flow; counts refreshed (9 predictions, publicRelease flags); pipeline build status (Workflow A built, weekly Monday cadence, sonnet-default cost-control principle, meta.json contract) |
 | 1.2 | 2026-10-03 | Headline redefined as Total Jobs Displaced by AI (layoffs + realized Jobs Never Created; planned and future estimates never counted); robot/autonomous-system layoffs in scope (`displacementMode`); Jobs Never Created data product and gate; 13 canonical job categories; dashboard hero redesign and stats widget; social share images and static company pages; Workflow A validated and weekly cron live with a fourth category; tracker_append utility; counts refreshed (96 events, 81 companies, 420 milestones, 131 archive pages, 147 company pages) |
+| 1.3 | 2026-10-12 | Research sources now include the owner's Google Alerts daily digests (Gmail) as leads, gate unchanged; percentage-only announcements recorded with a documented headcount estimate; counts refreshed (98 events, 83 companies, 18 planned, 421 milestones, 136 archive pages, 152 company pages) |

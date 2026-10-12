@@ -4,6 +4,7 @@ Task-by-task documentation. Check here before starting work — past attempts an
 
 | Task | Folder | Status |
 |------|--------|--------|
+| Google Alerts digest review + Oct adds (DNB, HoneyBook, BMW, FICO, Bird, SB 951) | [google-alerts-2026-10/](google-alerts-2026-10/README.md) | Done 2026-10-12 |
 | Share images, page metadata, static company pages | [share-images/](share-images/README.md) | Shipped 2026-10-03 |
 | Jobs Never Created category (+ counted in headline, tracker tab) | [jobs-never-created/](jobs-never-created/README.md) | Shipped 2026-10-03 |
 | Anthropic robots report, robot displacement scope, robotics visuals | [robots-report-2026-10/](robots-report-2026-10/README.md) | Shipped 2026-10-02 |

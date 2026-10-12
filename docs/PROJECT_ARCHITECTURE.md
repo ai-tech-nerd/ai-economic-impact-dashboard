@@ -206,7 +206,7 @@ Search-facing naming: the home H1 and titles are search-phrase-led ("Jobs Lost t
 | `<Seo>` component | `src/components/shared/Seo.tsx` | Per-route `<title>`, meta description, canonical, og: tags (including `og:image`), and `twitter:title` / `twitter:description` / `twitter:image` via react-helmet-async (provider in `App.tsx`); every main page calls it. A `shareImage(path)` mapping picks the image: `/` → `/og/index.png`, `/companies/<id>` → `/og/company/<id>.png`, other routes → `/og/<route>.png` |
 | Prerender script | `scripts/prerender-seo.mjs` | Build-time per-route static HTML; `applyHead()` writes every head tag (title, description, canonical, og:, twitter:) for routes and company pages; its `ROUTES` table must stay in sync with the `<Seo>` calls |
 | Static company pages | `scripts/prerender-seo.mjs` | Writes 147 pages `dist/companies/<id>.html`, each with its own title, description, canonical, share image, and static content. Because GitHub Pages may resolve `/companies` to the `companies/` folder (while `/companies.html` also exists), it also writes `dist/companies/index.html` as a mirror of the companies listing page. The company list comes from `companyRecords()` in `scripts/og/site-data.mjs` |
-| `sitemap.xml` / `robots.txt` | `public/` (robots), generated sitemap in `dist/` | `prerender-seo.mjs` generates `dist/sitemap.xml` at deploy: 153 urls (6 routes + 147 company pages), `lastmod` = `meta.dataLastUpdated`. Robots allows all and points at the sitemap |
+| `sitemap.xml` / `robots.txt` | `public/` (robots), generated sitemap in `dist/` | `prerender-seo.mjs` generates `dist/sitemap.xml` at deploy: 158 urls (6 routes + 152 company pages, as of 2026-10-12), `lastmod` = `meta.dataLastUpdated`. Robots allows all and points at the sitemap |
 | JSON-LD | inline in `index.html` | `@graph` with `WebSite` (+ `alternateName`) and `Dataset` nodes |
 | Canonical strategy | `Seo.tsx` (`path` prop) + prerender | Canonical is always `https://aishift.michaelkristof.com<path>`; embed/widget variants of a page pass the main-site path so crawlers canonicalize to it |
 | Hash-link shim | inline script in `index.html` | Rewrites legacy HashRouter URLs (`/#/predictions`, `/#/embed/dashboard`, `/#/widget/stats`) to path URLs via `history.replaceState`, so old links and embeds keep working |
@@ -233,11 +233,11 @@ Canonical datasets live in **`public/data/verified/`** (Vite copies `public/` in
 
 | File | Entries | ID scheme | Notes |
 |---|---|---|---|
-| `job-displacement-events.json` | 96 | `evt-NNN` | All 96 counted (328,106 jobs, 81 companies); none currently `isProjection` |
-| `planned-layoffs.json` | 15 | `plan-NNN` | 151,900 planned jobs, never counted in the headline |
+| `job-displacement-events.json` | 98 | `evt-NNN` | All 98 counted (328,166 jobs, 83 companies); none currently `isProjection` |
+| `planned-layoffs.json` | 18 | `plan-NNN` | 152,885 planned jobs, never counted in the headline |
 | `ai-job-creation.json` | 16 | `create-NNN` | `ai-adoption-roles` and `support` categories |
 | `jobs-never-created.json` | 3 | `never-NNN` | IBM, Klarna, DBS (Section 5.9) |
-| `ai-milestones.json` | 420 | `ms-NNN` and `ms-bNNN` | `b` prefix = pre-2022 historical backfill entries |
+| `ai-milestones.json` | 421 | `ms-NNN` and `ms-bNNN` | `b` prefix = pre-2022 historical backfill entries |
 | `company-profiles.json` | 0 | `[]` | Empty array; company pages derive from other datasets |
 | `predictions.json` | 9 | `pred-NNN` | Across the four timeframe buckets; re-grounded "As of Aug 2026" (see 5.7) |
 | `meta.json` | n/a | n/a | `{ dataLastUpdated: "YYYY-MM-DD" }` + a `_comment`; drives the dashboard's "Data updated" indicator (see 5.8) |
@@ -327,7 +327,7 @@ Same base shape with `status: "creation"`, `jobsCut: 0`, `aiReplacement: false`,
 
 ### 5.5 ai-milestones.json
 
-420 entries covering 1943 through 2026-10-02. `type` enum (6 values, counts): `model-release` (113), `breakthrough` (99), `company-launch` (98), `regulation` (41), `partnership` (40), `acquisition` (29).
+421 entries covering 1943 through 2026-10-02 (counts below as of 2026-10-03; SB 951 regulation added 2026-10-12). `type` enum (6 values, counts): `model-release` (113), `breakthrough` (99), `company-launch` (98), `regulation` (41), `partnership` (40), `acquisition` (29).
 
 **Dominant schema** (319 entries): `id, company, date, type, name, description, category, significance ("high"|"medium"|"low"), sources[]`. A further 33 entries add an optional `types: MilestoneType[]` array for multi-type milestones (the scalar `type` remains the primary); e.g. OpenAI Dots carries company-launch + model-release so it appears under both filters.
 
@@ -367,19 +367,19 @@ Added 2026-10-02 (owner-approved name): work given to AI or robots instead of ne
 - **Gate:** a company-stated number, or a company-stated ratio applied to a stated or official baseline, with the math in `estimateBasis`. A figure the company disputes is entered as `disputed` (shown flagged) or not entered at all (e.g. Amazon 600K).
 - **Counting:** `status: 'verified'` and not `isProjection` counts toward the headline total (Klarna 1,200). `isProjection: true` entries are future multi-year estimates, shown but never counted (IBM 7,800 over five years, DBS 4,000 over three years). `disputed` entries are excluded from both groups.
 - **Current entries (3):** never-001 IBM (7,800, CEO-stated 30% of about 26,000 back-office roles), never-002 Klarna (1,200, 5,000 to 3,800 via freeze and attrition), never-003 DBS (4,000, contract and temp roles not renewed).
-- Never added to the layoff totals. `getHeroBreakdown` sums it into `total` only through `getCountedNeverCreated`. The headline as of 2026-10-03 is 329,306 (328,106 layoffs + 1,200).
+- Never added to the layoff totals. `getHeroBreakdown` sums it into `total` only through `getCountedNeverCreated`. The headline as of 2026-10-12 is 329,366 (328,166 layoffs + 1,200).
 
 ---
 
 ## 6. Source Archive Subsystem
 
-Location: `public/data/source-archive/`. Purpose: durable, copyright-safe provenance for every tracked event — meta facts, a verbatim short excerpt, a full-page screenshot, and the live source link. 131 event pages as of 2026-10-03 (96 main, 15 planned, 16 created, 4 never), all in excerpt-only format.
+Location: `public/data/source-archive/`. Purpose: durable, copyright-safe provenance for every tracked event — meta facts, a verbatim short excerpt, a full-page screenshot, and the live source link. 136 event pages as of 2026-10-12 (98 main, 18 planned, 16 created, 4 never), all in excerpt-only format.
 
 ### 6.1 Directory anatomy
 
 ```
 public/data/source-archive/
-├── archive-manifest.json        Machine-readable index (131 entries) - drives the SPA list
+├── archive-manifest.json        Machine-readable index (136 entries) - drives the SPA list
 ├── index.html, app.js, style.css   Legacy standalone archive index + filter JS + SHARED CSS
 ├── HANDOVER.md                  Older subsystem doc (partly stale: says 78 pages, full-text era)
 ├── txt/                         89 full-article .txt files - kept intentionally as a LOCAL
@@ -523,6 +523,9 @@ As implemented in `research.yml` / `sheet-prep.yml` / automation/README.md: `ANT
 
 ---
 
+### 8.x Research lead sources (2026-10-12)
+Interactive research also reads Gmail threads with subject "Google Alert – Daily Digest" (via the Gmail connector) and gate-checks company-specific stories. Digests are ~250 KB each; a subagent extracts headlines and links. Not wired into Workflow A (no Gmail credentials in Actions).
+
 ## 9. Operational Runbook Pointers
 
 - **Dev server:** `.claude/launch.json` defines configuration "dashboard": node runs `node_modules/.bin/vite --port 5173`. Equivalent manual command: `npm run dev`.
@@ -538,7 +541,7 @@ As implemented in `research.yml` / `sheet-prep.yml` / automation/README.md: `ANT
 
 ## 10. Known Gotchas and Lessons Learned
 
-1. **Dual data directories (partially resolved 2026-08-11).** Repo-root `data/verified/` is a stale legacy copy while `public/data/verified/` is canonical (96 events / 420 milestones). The deploy workflow's stale `cp -r data/verified dist/data/verified` step has been **removed** (replaced by the prerender step). Remaining: the stale root `data/` directory (`pending/`, `schemas/`, `verified/`) still exists pending owner-approved deletion (file-deletion rules apply), and `CLAUDE.md`'s Key Files / Data Architecture sections still point at `data/verified/` and cite "207 milestones" (stale; its routing section is updated, but the tech-stack table also still says HashRouter).
+1. **Dual data directories (partially resolved 2026-08-11).** Repo-root `data/verified/` is a stale legacy copy while `public/data/verified/` is canonical (98 events / 421 milestones). The deploy workflow's stale `cp -r data/verified dist/data/verified` step has been **removed** (replaced by the prerender step). Remaining: the stale root `data/` directory (`pending/`, `schemas/`, `verified/`) still exists pending owner-approved deletion (file-deletion rules apply), CLAUDE.md was corrected 2026-10-03 (public/data/verified/ canonical, BrowserRouter).
 2. **BrowserRouter + 404.html fallback is the routing setup** (since 2026-08-11) — deep links work via the spa-github-pages redirect; do not revert to HashRouter (kills SEO).
 3. **`isProjection` entries are excluded from every total.** No layoff event uses it today (IBM evt-007 moved to Jobs Never Created); the flag now marks future Never-Created estimates (IBM, DBS). Adding a projection without the flag inflates the headline number.
 4. **Counter animations freeze in hidden panes** (requestAnimationFrame throttling). Not a data bug; verify against the JSON.
@@ -581,5 +584,6 @@ As implemented in `research.yml` / `sheet-prep.yml` / automation/README.md: `ANT
 |---|---|---|
 | 1.1 | 2026-08-11 | BrowserRouter + 404 fallback, per-route prerender, SEO subsystem, meta.json contract, Workflow A build status |
 | 1.2 | 2026-10-03 | Jobs Never Created dataset and `getHeroBreakdown` hero; robotics `displacementMode`, `jobTypesDetail`, 13 canonical job categories and deploy validation; themed `TotalCounter`, `RoboticsBadge`, stacked `TrendLine`, `/widget/stats` embed sizing; share-image subsystem (`scripts/og/`), static company pages, generated sitemap, per-page og/twitter tags; archive `never` tab; deploy order updated; weekly cron live, `retry_transport`, `tracker_append.py`; new gotchas 18-23; counts refreshed |
+| 1.3 | 2026-10-12 | Counts refreshed; Google Alerts digests documented as a research lead source; stale CLAUDE.md gotcha resolved |
 
 *End of document.*
